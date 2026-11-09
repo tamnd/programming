@@ -1,0 +1,32 @@
+java:
+  status: absent
+  reason: the language has no async functions and no await.
+  alternative: virtual threads (JEP 444) with blocking code, or CompletableFuture with callbacks.
+c:
+  status: absent
+  reason: the standard has no coroutines and no event loop.
+  alternative: callbacks with an event library, or one thread for each blocking job.
+go:
+  status: absent
+  reason: the language has no async functions and no await.
+  alternative: goroutines and channels; the runtime multiplexes goroutines onto threads.
+powershell:
+  status: absent
+  reason: a script block cannot suspend and resume.
+  alternative: thread jobs (Start-ThreadJob) and ForEach-Object -Parallel.
+bash:
+  status: absent
+  reason: a function cannot suspend and resume.
+  alternative: background processes with & and wait.
+sql:
+  status: n/a
+  reason: a query does not control its own scheduling.
+regex:
+  status: n/a
+  reason: a pattern has no control flow over time.
+html:
+  status: n/a
+  reason: markup has no control flow.
+css:
+  status: n/a
+  reason: style rules have no control flow.
