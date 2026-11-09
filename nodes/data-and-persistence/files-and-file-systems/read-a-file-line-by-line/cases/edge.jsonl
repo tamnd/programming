@@ -1,0 +1,10 @@
+{"name":"empty","class":["empty"],"args":{"path":"fixtures/empty.txt"},"expect":[0,0]}
+{"name":"only-newline","class":["empty-line"],"args":{"path":"fixtures/only-newline.txt"},"expect":[1,0]}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"fixtures/no-final-newline.txt"},"expect":[3,5]}
+{"name":"crlf","class":["crlf"],"args":{"path":"fixtures/crlf.txt"},"expect":[3,5]}
+{"name":"crlf-no-final-newline","class":["crlf","no-final-newline"],"args":{"path":"fixtures/crlf-no-final-newline.txt"},"expect":[3,5]}
+{"name":"mixed-endings","class":["crlf"],"args":{"path":"fixtures/mixed-endings.txt"},"expect":[3,5]}
+{"name":"whitespace","class":["whitespace"],"args":{"path":"fixtures/whitespace.txt"},"expect":[1,17]}
+{"name":"backslashes","class":["backslash"],"args":{"path":"fixtures/backslashes.txt"},"expect":[1,11]}
+{"name":"long-line","class":["long-line"],"args":{"path":"fixtures/long-line.txt"},"expect":[2,1048576]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"fixtures/non-ascii.txt"},"expect":[3,10]}
