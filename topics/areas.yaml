@@ -1,0 +1,788 @@
+# SPDX-License-Identifier: CC0-1.0
+# The topic tree of spec 05.2. Each node has one primary area, and the node directory is nodes/<top>/<sub>/<slug>/. The language trees are under nodes/languages/<lang>/ and get their sub-areas from topics/languages.yaml.
+# The tree is a draft until milestone M1. A change to this file is its own pull request, with a note on what the area holds and what it does not.
+- id: foundations
+  name: Foundations
+  summary: What a program is, how a machine runs it and how a machine stores numbers and text.
+  children:
+    - id: what-a-program-is
+      name: What a program is
+    - id: computation-in-practice
+      name: Computation in practice
+    - id: bits-and-representation
+      name: Bits and representation
+    - id: numbers-in-machines
+      name: Numbers in machines
+    - id: characters-and-text
+      name: Characters and text
+    - id: the-machine-model
+      name: The machine model
+    - id: the-stack-and-the-heap
+      name: The stack and the heap
+    - id: compilation-and-interpretation
+      name: Compilation and interpretation
+    - id: hello-world
+      name: Hello world
+- id: paradigms
+  name: Paradigms
+  summary: The main styles of programming and the ideas of each style.
+  children:
+    - id: imperative
+      name: Imperative programming
+    - id: procedural
+      name: Procedural programming
+    - id: structured
+      name: Structured programming
+    - id: object-oriented
+      name: Object-oriented programming
+    - id: functional
+      name: Functional programming
+    - id: logic
+      name: Logic programming
+    - id: declarative
+      name: Declarative programming
+    - id: dataflow-and-reactive
+      name: Dataflow and reactive programming
+    - id: array
+      name: Array programming
+    - id: concatenative
+      name: Concatenative programming
+    - id: event-driven
+      name: Event-driven programming
+    - id: aspect-oriented
+      name: Aspect-oriented programming
+    - id: actor
+      name: The actor model
+    - id: multi-paradigm
+      name: Multi-paradigm design
+- id: syntax-and-semantics
+  name: Syntax and semantics
+  summary: How the text of a program is read and what it means.
+  children:
+    - id: lexical-structure
+      name: Lexical structure
+    - id: grammars-and-notation
+      name: Grammars and notation
+    - id: expressions-and-statements
+      name: Expressions and statements
+    - id: evaluation-order
+      name: Evaluation order
+    - id: scope-and-binding
+      name: Scope and binding
+    - id: formal-semantics
+      name: Formal semantics for programmers
+    - id: undefined-behaviour
+      name: Undefined and implementation-defined behaviour
+- id: types
+  name: Types
+  summary: Type systems and how they find errors before or during a run.
+  children:
+    - id: type-systems
+      name: Type systems
+    - id: static-and-dynamic-checking
+      name: Static and dynamic checking
+    - id: type-inference
+      name: Type inference
+    - id: generics
+      name: Generics and parametric polymorphism
+    - id: subtyping-and-variance
+      name: Subtyping and variance
+    - id: algebraic-data-types
+      name: Algebraic data types
+    - id: gradual-typing
+      name: Gradual typing
+    - id: dependent-and-refinement-types
+      name: Dependent and refinement types
+    - id: nullability
+      name: Nullability
+    - id: type-classes-and-traits
+      name: Type classes and traits
+    - id: erasure-and-reification
+      name: Type erasure and reification
+    - id: units-of-measure
+      name: Units of measure
+- id: data-and-values
+  name: Data and values
+  summary: The values that a program works on, and the collections that hold them.
+  children:
+    - id: primitive-types
+      name: Primitive types
+    - id: strings
+      name: Strings and string handling
+    - id: collections
+      name: Collections
+    - id: value-and-reference-semantics
+      name: Value and reference semantics
+    - id: mutability
+      name: Mutability and immutability
+    - id: equality-and-identity
+      name: Equality and identity
+    - id: hashing-in-practice
+      name: Hashing in practice
+    - id: serialization
+      name: Serialization
+    - id: copying
+      name: Copying
+    - id: dates-and-times
+      name: Dates and times
+    - id: money-and-decimals
+      name: Money and decimals
+- id: functions-and-abstraction
+  name: Functions and abstraction
+  summary: Functions, closures, modules and the other ways to name and hide a part of a program.
+  children:
+    - id: functions-and-procedures
+      name: Functions and procedures
+    - id: parameters-and-arguments
+      name: Parameters and arguments
+    - id: recursion-and-tail-calls
+      name: Recursion and tail calls
+    - id: functions-as-values
+      name: First-class and higher-order functions
+    - id: closures-and-scope
+      name: Closures and scope
+    - id: currying-and-partial-application
+      name: Currying and partial application
+    - id: lazy-evaluation
+      name: Lazy evaluation
+    - id: continuations
+      name: Continuations
+    - id: generators-and-coroutines
+      name: Generators and coroutines
+    - id: modules-and-namespaces
+      name: Modules and namespaces
+    - id: information-hiding
+      name: Information hiding
+- id: objects-and-classes
+  name: Objects and classes
+  summary: Objects, classes, prototypes and the ways that they share behaviour.
+  children:
+    - id: objects
+      name: Objects
+    - id: classes
+      name: Classes
+    - id: prototypes
+      name: Prototypes
+    - id: encapsulation
+      name: Encapsulation
+    - id: inheritance
+      name: Inheritance
+    - id: interfaces-and-protocols
+      name: Interfaces and protocols
+    - id: polymorphism-and-dispatch
+      name: Polymorphism and dispatch
+    - id: composition
+      name: Composition over inheritance
+    - id: construction-and-initialization
+      name: Constructors and initialization
+    - id: object-lifecycle
+      name: Object lifecycle
+    - id: the-expression-problem
+      name: The expression problem
+- id: memory-and-resources
+  name: Memory and resources
+  summary: How a program gets memory and other resources and gives them back.
+  children:
+    - id: allocation
+      name: Allocation
+    - id: manual-memory-management
+      name: Manual memory management
+    - id: garbage-collection
+      name: Garbage collection
+    - id: ownership-and-borrowing
+      name: Ownership and borrowing
+    - id: raii
+      name: RAII and deterministic destruction
+    - id: smart-pointers
+      name: Smart pointers
+    - id: memory-safety
+      name: Memory safety
+    - id: leaks
+      name: Leaks
+    - id: arenas-and-pools
+      name: Arenas and pools
+    - id: resource-handles
+      name: Resource handles
+- id: errors-and-control
+  name: Errors and control flow
+  summary: Control structures, and the ways that a program reports and handles errors.
+  children:
+    - id: control-structures
+      name: Control structures
+    - id: exceptions
+      name: Exceptions
+    - id: error-values
+      name: Error values and result types
+    - id: panics-and-aborts
+      name: Panics and aborts
+    - id: assertions-and-contracts
+      name: Assertions and contracts
+    - id: non-local-exits
+      name: Non-local exits
+    - id: cleanup
+      name: Cleanup
+    - id: retries-and-timeouts
+      name: Retries and timeouts
+- id: concurrency-and-parallelism
+  name: Concurrency and parallelism
+  summary: Programs that do more than one thing at a time.
+  children:
+    - id: processes-and-threads
+      name: Processes and threads
+    - id: shared-memory-and-locks
+      name: Shared memory and locks
+    - id: atomics-and-memory-models
+      name: Atomics and memory models
+    - id: message-passing
+      name: Message passing
+    - id: async-and-event-loops
+      name: Async and event loops
+    - id: futures-and-promises
+      name: Futures and promises
+    - id: actors
+      name: Actors
+    - id: csp-and-channels
+      name: CSP and channels
+    - id: structured-concurrency
+      name: Structured concurrency
+    - id: data-parallelism
+      name: Data parallelism
+    - id: gpu-programming
+      name: GPU programming
+    - id: races-and-deadlocks
+      name: Races and deadlocks
+- id: metaprogramming
+  name: Metaprogramming
+  summary: Programs that read, change or make programs.
+  children:
+    - id: reflection
+      name: Reflection and introspection
+    - id: macros
+      name: Macros
+    - id: compile-time-evaluation
+      name: Templates and compile-time evaluation
+    - id: code-generation
+      name: Code generation
+    - id: annotations-and-attributes
+      name: Annotations and attributes
+    - id: decorators
+      name: Decorators
+    - id: eval
+      name: Eval
+    - id: homoiconicity
+      name: Homoiconicity
+    - id: embedded-dsls
+      name: Embedded DSLs
+- id: language-implementation
+  name: Language implementation
+  summary: How compilers, interpreters and runtimes work.
+  children:
+    - id: lexing-and-parsing
+      name: Lexing and parsing
+    - id: asts-and-irs
+      name: ASTs and IRs
+    - id: interpreters
+      name: Interpreters
+    - id: compilers
+      name: Compilers
+    - id: jit-compilation
+      name: JIT compilation
+    - id: virtual-machines
+      name: Virtual machines
+    - id: runtime-systems
+      name: Runtime systems
+    - id: linking-and-loading
+      name: Linking and loading
+    - id: abis-and-calling-conventions
+      name: ABIs and calling conventions
+    - id: garbage-collector-implementation
+      name: Garbage collector implementation
+    - id: webassembly
+      name: WebAssembly as a target
+    - id: language-servers
+      name: Language servers
+- id: languages
+  name: Languages
+  summary: The catalogue of programming languages. Each language of the register has a guide with the same parts.
+- id: software-design
+  name: Software design
+  summary: Design principles, design patterns and architecture.
+  children:
+    - id: design-principles
+      name: Design principles
+    - id: creational-patterns
+      name: Creational patterns
+    - id: structural-patterns
+      name: Structural patterns
+    - id: behavioral-patterns
+      name: Behavioral patterns
+    - id: architecture
+      name: Architecture styles and patterns
+    - id: domain-driven-design
+      name: Domain-driven design
+    - id: api-design
+      name: API design
+    - id: modularity
+      name: Modularity
+    - id: design-for-change
+      name: Design for change
+- id: construction-practice
+  name: Construction practice
+  summary: How to write code that people can read and change.
+  children:
+    - id: naming
+      name: Naming
+    - id: readable-code
+      name: Readable code
+    - id: comments-and-documentation
+      name: Comments and documentation in code
+    - id: style-and-formatting
+      name: Code style and formatting
+    - id: code-smells
+      name: Code smells
+    - id: refactoring
+      name: Refactoring
+    - id: code-review
+      name: Code review
+    - id: technical-debt
+      name: Technical debt
+    - id: defensive-programming
+      name: Defensive programming
+    - id: legacy-code
+      name: Working with legacy code
+    - id: pair-and-mob-programming
+      name: Pair and mob programming
+- id: testing
+  name: Testing
+  summary: How to find defects by running the program.
+  children:
+    - id: levels-of-testing
+      name: Unit, integration and end-to-end testing
+    - id: test-doubles
+      name: Test doubles
+    - id: test-design
+      name: Test design techniques
+    - id: property-based-testing
+      name: Property-based testing
+    - id: fuzzing
+      name: Fuzzing
+    - id: mutation-testing
+      name: Mutation testing
+    - id: snapshot-testing
+      name: Snapshot and golden testing
+    - id: coverage
+      name: Coverage
+    - id: tdd-and-bdd
+      name: TDD and BDD
+    - id: test-frameworks
+      name: Test frameworks
+    - id: flaky-tests
+      name: Flaky tests
+    - id: testing-concurrency
+      name: Testing concurrency
+- id: debugging-and-observability
+  name: Debugging and observability
+  summary: How to find the cause of a defect, and how to see what a running program does.
+  children:
+    - id: debugging-methods
+      name: Debugging methods
+    - id: debuggers
+      name: Debuggers
+    - id: core-dumps
+      name: Core dumps
+    - id: logging
+      name: Logging
+    - id: tracing
+      name: Tracing
+    - id: metrics
+      name: Metrics
+    - id: profiling
+      name: Profiling as diagnosis
+    - id: sanitizers
+      name: Sanitizers
+    - id: bug-reports
+      name: Reproducible bug reports
+    - id: post-mortems
+      name: Post-mortems
+- id: tools-and-workflow
+  name: Tools and workflow
+  summary: The tools that programmers use each day.
+  children:
+    - id: the-shell
+      name: The shell and the command line
+    - id: editors-and-ides
+      name: Editors and IDEs
+    - id: version-control
+      name: Version control
+    - id: build-systems
+      name: Build systems
+    - id: package-managers
+      name: Package managers and dependencies
+    - id: ci-cd
+      name: Continuous integration and delivery
+    - id: containers
+      name: Containers for developers
+    - id: documentation-tools
+      name: Documentation tools
+    - id: code-search
+      name: Code search
+    - id: environment-management
+      name: Dotfiles and environment management
+- id: program-analysis-and-verification
+  name: Program analysis and verification
+  summary: The methods and the tools that find defects in a program or prove that it is correct.
+  children:
+    - id: static-analysis
+      name: Static analysis
+    - id: linters-and-type-checkers
+      name: Linters and type checkers
+    - id: abstract-interpretation
+      name: Abstract interpretation
+    - id: symbolic-execution
+      name: Symbolic execution
+    - id: model-checking
+      name: Model checking
+    - id: deductive-verification
+      name: Deductive verification
+    - id: proof-assistants
+      name: Proof assistants for programs
+    - id: design-by-contract
+      name: Design by contract
+    - id: runtime-verification
+      name: Runtime verification
+- id: performance
+  name: Performance
+  summary: How to measure the cost of a program and how to make it smaller.
+  children:
+    - id: measuring
+      name: Measuring
+    - id: complexity-in-practice
+      name: Complexity in practice
+    - id: caches-and-memory-layout
+      name: Caches and memory layout
+    - id: allocation-cost
+      name: Allocation cost
+    - id: vectorization
+      name: Vectorization
+    - id: compiler-optimizations
+      name: Compiler optimizations
+    - id: concurrency-for-speed
+      name: Concurrency for speed
+    - id: io-performance
+      name: I/O performance
+    - id: latency-and-throughput
+      name: Latency and throughput
+- id: security
+  name: Secure programming
+  summary: Weaknesses in code and how to prevent them.
+  children:
+    - id: weakness-catalogue
+      name: The weakness catalogue
+    - id: injection
+      name: Injection
+    - id: memory-safety-weaknesses
+      name: Memory-safety weaknesses
+    - id: authentication-and-sessions
+      name: Authentication and sessions
+    - id: cryptography-use
+      name: Cryptography use
+    - id: secrets-handling
+      name: Secrets handling
+    - id: input-validation
+      name: Input validation and output encoding
+    - id: supply-chain
+      name: Supply-chain security
+    - id: secure-defaults
+      name: Secure defaults
+    - id: sandboxing
+      name: Sandboxing
+    - id: threat-modelling
+      name: Threat modelling for programmers
+- id: software-engineering-process
+  name: Software engineering process
+  summary: How teams plan, build, release and maintain software.
+  children:
+    - id: requirements
+      name: Requirements in practice
+    - id: estimation
+      name: Estimation
+    - id: methodologies
+      name: Methodologies
+    - id: releases-and-versioning
+      name: Releases and versioning
+    - id: maintenance
+      name: Maintenance
+    - id: metrics
+      name: Metrics
+    - id: documentation
+      name: Documentation
+    - id: team-practice
+      name: Team practice
+    - id: laws-of-software
+      name: Laws of software
+    - id: ethics
+      name: Ethics and professional practice
+- id: open-source-and-licensing
+  name: Open source and licensing
+  summary: Free and open-source software, licences and how projects work together.
+  children:
+    - id: free-and-open-source
+      name: Free and open-source software
+    - id: licences
+      name: Licences
+    - id: contribution
+      name: Contribution practice
+    - id: governance
+      name: Governance and foundations
+    - id: copyright-and-patents
+      name: Copyright and patents for programmers
+    - id: export-rules
+      name: Export rules
+- id: data-and-persistence
+  name: Data and persistence
+  summary: Databases, data formats, text encodings and files.
+  children:
+    - id: sql
+      name: SQL
+    - id: relational-modelling
+      name: Relational modelling
+    - id: transactions-and-isolation
+      name: Transactions and isolation
+    - id: orms
+      name: ORMs
+    - id: nosql
+      name: NoSQL models
+    - id: data-formats
+      name: Data formats
+    - id: regular-expressions
+      name: Regular expressions
+    - id: text-encodings
+      name: Text encodings and Unicode
+    - id: files-and-file-systems
+      name: Files and file systems
+    - id: caching
+      name: Caching
+- id: systems-programming
+  name: Systems programming
+  summary: Programs that work close to the operating system and the hardware.
+  children:
+    - id: the-os-interface
+      name: The OS interface
+    - id: processes-and-signals
+      name: Processes and signals
+    - id: file-descriptors-and-io
+      name: File descriptors and I/O models
+    - id: memory-mapping
+      name: Memory mapping
+    - id: ipc
+      name: Inter-process communication
+    - id: sockets
+      name: Networking sockets
+    - id: low-level-c-and-rust
+      name: Low-level C and Rust
+    - id: assembly-language
+      name: Assembly language
+    - id: linkers-and-object-files
+      name: Linkers and object files
+    - id: the-kernel
+      name: The kernel from a programmer's view
+- id: web-development
+  name: Web development
+  summary: Programs that run in a browser or answer HTTP requests.
+  children:
+    - id: http
+      name: HTTP for programmers
+    - id: html
+      name: HTML
+    - id: css
+      name: CSS
+    - id: dom-and-web-apis
+      name: The DOM and Web APIs
+    - id: front-end-frameworks
+      name: Front-end frameworks
+    - id: back-end-frameworks
+      name: Back-end frameworks
+    - id: apis
+      name: REST, GraphQL and RPC
+    - id: authentication-flows
+      name: Authentication flows
+    - id: web-performance
+      name: Web performance
+    - id: accessibility
+      name: Accessibility in code
+    - id: browsers-as-runtimes
+      name: Browsers as runtimes
+- id: mobile-and-desktop
+  name: Mobile and desktop
+  summary: Apps for phones and for desktop computers.
+  children:
+    - id: android
+      name: Android
+    - id: ios
+      name: iOS
+    - id: cross-platform
+      name: Cross-platform frameworks
+    - id: desktop-gui
+      name: Desktop GUI toolkits
+    - id: ui-programming-models
+      name: UI programming models
+    - id: packaging-and-distribution
+      name: App packaging and distribution
+- id: distributed-and-cloud
+  name: Distributed and cloud programming
+  summary: Programs that run on many computers and on cloud platforms.
+  children:
+    - id: distributed-systems
+      name: Distributed systems for programmers
+    - id: microservices
+      name: Microservices
+    - id: queues-and-streams
+      name: Message queues and streams
+    - id: cloud-platforms
+      name: Cloud platforms
+    - id: infrastructure-as-code
+      name: Infrastructure as code
+    - id: serverless
+      name: Serverless
+    - id: kubernetes
+      name: Kubernetes for developers
+    - id: site-reliability
+      name: Site reliability engineering
+- id: data-science-and-ml-programming
+  name: Data science and ML programming
+  summary: The tools that data scientists and ML engineers program with.
+  children:
+    - id: notebooks
+      name: Notebooks
+    - id: dataframes
+      name: Dataframes
+    - id: array-programming
+      name: Array programming libraries
+    - id: plotting
+      name: Plotting libraries
+    - id: ml-frameworks
+      name: ML frameworks
+    - id: data-pipelines
+      name: Data pipelines
+    - id: reproducibility
+      name: Reproducibility
+- id: ai-assisted-programming
+  name: AI-assisted programming
+  summary: Programming with language models and coding agents.
+  children:
+    - id: code-completion
+      name: Code completion
+    - id: coding-agents
+      name: Coding agents
+    - id: prompting-for-code
+      name: Prompting for code
+    - id: tool-use-and-mcp
+      name: Tool use and MCP
+    - id: evaluation
+      name: Evaluation of generated code
+    - id: review-of-generated-code
+      name: Review of AI-written code
+    - id: provenance
+      name: Licensing and provenance of generated code
+- id: graphics-and-games-programming
+  name: Graphics and games programming
+  summary: Graphics APIs, shaders, game loops and audio.
+  children:
+    - id: graphics-apis
+      name: Graphics APIs
+    - id: shaders
+      name: Shaders and shading languages
+    - id: game-loops
+      name: Game loops
+    - id: game-engines
+      name: Game engines
+    - id: audio-programming
+      name: Audio programming
+- id: scientific-and-hpc
+  name: Scientific and high-performance computing
+  summary: Numerical programs and programs that run on large machines.
+  children:
+    - id: numerical-languages
+      name: Numerical languages
+    - id: mpi
+      name: MPI
+    - id: openmp
+      name: OpenMP
+    - id: accelerators
+      name: CUDA and other accelerators
+    - id: numerical-pitfalls
+      name: Numerical pitfalls
+    - id: reproducible-science
+      name: Reproducible scientific software
+- id: embedded-and-hardware
+  name: Embedded and hardware
+  summary: Programs for small devices, and languages that describe hardware.
+  children:
+    - id: microcontrollers
+      name: Microcontrollers
+    - id: real-time
+      name: Real-time programming
+    - id: interrupts
+      name: Interrupts
+    - id: bare-metal
+      name: Bare-metal C and Rust
+    - id: hdls
+      name: Hardware description languages
+    - id: fpga
+      name: FPGA programming
+    - id: plc-languages
+      name: PLC languages
+    - id: safety-critical-standards
+      name: Safety-critical coding standards
+- id: domain-programming
+  name: Domain programming
+  summary: Programming for a special field, from spreadsheets to robots.
+  children:
+    - id: spreadsheets
+      name: Spreadsheets and formula languages
+    - id: financial
+      name: Financial programming
+    - id: bioinformatics
+      name: Bioinformatics programming
+    - id: smart-contracts
+      name: Smart contracts
+    - id: robotics
+      name: Robotics
+    - id: automation-and-scripting
+      name: Automation and scripting
+    - id: education-languages
+      name: Education languages
+    - id: creative-coding
+      name: Creative coding
+- id: history-and-culture
+  name: History and culture
+  summary: The history of programming, its people and its culture.
+  children:
+    - id: history-by-period
+      name: History by period
+    - id: the-canon
+      name: Landmark works
+    - id: people
+      name: People
+    - id: organizations
+      name: Organizations
+    - id: events
+      name: Events
+    - id: folklore-and-jargon
+      name: Folklore and jargon
+    - id: communities
+      name: Programming culture and communities
+- id: learning-programming
+  name: Learning programming
+  summary: How people learn to program, and the common mistakes of learners.
+  children:
+    - id: how-people-learn
+      name: How people learn to program
+    - id: curricula
+      name: Curricula
+    - id: misconceptions
+      name: Common misconceptions
+    - id: practice-sites
+      name: Exercises and practice sites
+    - id: notional-machines
+      name: Notional machines

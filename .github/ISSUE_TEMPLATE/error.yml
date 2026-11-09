@@ -1,0 +1,18 @@
+name: Error on a page
+description: A page has a wrong claim, a wrong version, an example that does not run or a broken link.
+labels: ["type: error", "status: triage"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page
+      description: For example https://programming.tamnd.com/closures/#in-languages
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong
+      description: Quote the part and say why it is wrong. Give a source, a version or a program that shows the problem if you can.
+    validations:
+      required: true

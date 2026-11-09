@@ -1,0 +1,29 @@
+name: New node
+description: Ask for a page about a concept, a language feature, a task, a tool or another item of programming.
+labels: ["type: node", "status: triage"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: For example "Python pattern matching" or "the builder pattern".
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [concept, feature, language, release, task, pattern, technique, practice, tool, library, format, standard, weakness, diagnostic, person, work, other]
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Give one or two good sources, for example a section of the language reference or a proposal.
+  - type: checkboxes
+    id: write
+    attributes:
+      label: Help
+      options:
+        - label: I want to write this node.

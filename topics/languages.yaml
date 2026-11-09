@@ -1,0 +1,77 @@
+# SPDX-License-Identifier: CC0-1.0
+# The language template of spec 05.3. Each language of the register gets these sub-areas under /<lang>/. A language may add sub-areas in nodes/languages/<lang>/areas.yaml, with a reason.
+- id: overview
+  name: Overview and history
+  summary: The language node, its design goals, history, editions and releases, implementations.
+- id: getting-started
+  name: Getting started
+  summary: Install, toolchain, hello world, the REPL, running a program, project layout.
+- id: syntax
+  name: Lexical structure and syntax
+  summary: Tokens, comments, identifiers, literals, operators and precedence, statements and expressions, the grammar.
+- id: values-and-types
+  name: Values and types
+  summary: The built-in types, numbers, text, booleans, null and its friends, type conversions, the type system of the language.
+- id: variables-and-scope
+  name: Variables, binding and scope
+  summary: Declarations, constants, scope rules, shadowing, lifetime.
+- id: control-flow
+  name: Control flow
+  summary: Conditionals, loops, pattern matching, jumps, labelled blocks.
+- id: functions
+  name: Functions
+  summary: Definitions, parameters, returns, closures, recursion, lambdas, overloading.
+- id: collections
+  name: Built-in collections
+  summary: Arrays, lists, maps, sets, tuples, slices, ranges, iteration protocols, comprehensions.
+- id: strings-and-text
+  name: Strings and text
+  summary: String types, encodings, formatting and interpolation, regex support, Unicode handling.
+- id: user-types
+  name: User-defined types
+  summary: Structs, records, classes, enums, unions, interfaces, traits, protocols, generics.
+- id: errors
+  name: Errors and exceptions
+  summary: The error model, the exception hierarchy, error values, panics, cleanup.
+- id: memory
+  name: Memory and resources
+  summary: Allocation, the GC or ownership model, destructors, resource handling, unsafe code.
+- id: modules-and-packages
+  name: Modules, packages and builds
+  summary: The module system, imports, visibility, packages, the package manager, the build tool, publishing.
+- id: concurrency
+  name: Concurrency and parallelism
+  summary: Threads, async, channels, the memory model of the language, synchronization in its stdlib.
+- id: metaprogramming
+  name: Metaprogramming
+  summary: Macros, reflection, annotations, decorators, code generation, compile-time evaluation.
+- id: stdlib
+  name: The standard library
+  summary: A map of the standard library; the api cards hang here (one api group per module or package).
+- id: io-and-os
+  name: I/O, files and the OS
+  summary: Files, paths, processes, environment, time, networking from the stdlib.
+- id: testing
+  name: Testing
+  summary: The test frameworks, assertions, mocking, test runners and conventions.
+- id: tooling
+  name: Tooling
+  summary: Compilers and interpreters, debuggers, profilers, linters, formatters, LSP, notebooks.
+- id: ecosystem
+  name: Ecosystem
+  summary: The main libraries and frameworks by need, the community, the governance and proposal process.
+- id: performance
+  name: Performance
+  summary: The cost model, optimization guidance, the profiling workflow, the compilation and runtime knobs.
+- id: interop
+  name: Interoperability
+  summary: FFI, calling C, embedding, the ABI, interop with the platform languages.
+- id: idioms-and-style
+  name: Idioms and style
+  summary: The style guide, the idioms, what code in this language should look like, naming conventions.
+- id: pitfalls
+  name: Pitfalls
+  summary: The known traps, each as a feature or a short node, linked to diagnostics and weaknesses.
+- id: versions
+  name: Versions and migration
+  summary: The release nodes, the migration guides between major versions, deprecations and removals.
