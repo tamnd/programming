@@ -1,0 +1,13 @@
+sql:
+  status: absent
+  reason: a statement has no handler; a failing statement ends with an error that goes to the host program.
+  alternative: an EXCEPTION clause in a PL/pgSQL block, or TRY...CATCH in Transact-SQL.
+regex:
+  status: n/a
+  reason: a pattern does not raise or handle errors.
+html:
+  status: n/a
+  reason: markup does not raise or handle errors.
+css:
+  status: n/a
+  reason: style rules do not raise or handle errors.

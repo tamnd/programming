@@ -1,0 +1,9 @@
+regex:
+  status: n/a
+  reason: a pattern has no typed values.
+html:
+  status: n/a
+  reason: markup has no expressions that have types.
+css:
+  status: n/a
+  reason: style rules have no expressions that have types.
