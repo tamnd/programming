@@ -1,0 +1,82 @@
+# The releases of C++ (spec 09.1): the editions of the international standard ISO/IEC 14882, from C++98 to C++23, and C++26 as a draft.
+# The model: a standard has no end of life. ISO marks an edition withdrawn (stage 95.99) when a later edition replaces it, so eol is null for every edition. endoflife.date does not cover C++ (spec 9.3), so there is no cross-check.
+# Compiler and library releases are in implementations.yaml. The guide states facts for C++23 as the working draft N4950 describes it.
+# Sources: the ISO pages of each edition (https://www.iso.org/standard/<id>.html; status, publication month, edition, stage); https://www.open-std.org/jtc1/sc22/wg21/docs/standards (WG21 dates and working drafts); N5051 and N5056 for C++26. Checked 2026-11-10.
+- version: C++26
+  status: draft
+  iso: ISO/IEC DIS 14882
+  edition: 8
+  iso_stage: "40.60 Close of voting"
+  released: null
+  eol: null
+  eol_rule: a standard has no end of life
+  draft: N5050
+  notes: N5051 says that N5050 forms the basis of the DIS for C++26. N5056 (2026-07-28) says that the next edition is in DIS ballot, on schedule to be completed in 2026. ISO gives no result of the vote.
+  url: https://www.iso.org/standard/91179.html
+- version: C++23
+  status: published
+  iso: ISO/IEC 14882:2024
+  edition: 7
+  iso_stage: "90.92 International Standard to be revised"
+  released: 2024-10
+  eol: null
+  eol_rule: a standard has no end of life
+  draft: N4950
+  notes: ISO says that the DIS 14882 is expected to replace this edition.
+  url: https://www.iso.org/standard/83626.html
+- version: C++20
+  status: withdrawn
+  iso: ISO/IEC 14882:2020
+  edition: 6
+  iso_stage: "95.99"
+  released: 2020-12
+  eol: null
+  draft: N4849
+  url: https://www.iso.org/standard/79358.html
+- version: C++17
+  status: withdrawn
+  iso: ISO/IEC 14882:2017
+  edition: 5
+  iso_stage: "95.99"
+  released: 2017-12
+  eol: null
+  draft: N4659
+  url: https://www.iso.org/standard/68564.html
+- version: C++14
+  status: withdrawn
+  iso: ISO/IEC 14882:2014
+  edition: 4
+  iso_stage: "95.99"
+  released: 2014-12
+  eol: null
+  draft: N3797
+  url: https://www.iso.org/standard/64029.html
+- version: C++11
+  status: withdrawn
+  iso: ISO/IEC 14882:2011
+  edition: 3
+  iso_stage: "95.99"
+  released: 2011-09
+  eol: null
+  draft: N3242
+  notes: WG21 gives the publication date 2011-09-01.
+  url: https://www.iso.org/standard/50372.html
+- version: C++03
+  status: withdrawn
+  iso: ISO/IEC 14882:2003
+  edition: 2
+  iso_stage: "95.99"
+  released: 2003-10
+  eol: null
+  draft: N1316
+  notes: WG21 gives the publication date 2003-10-16.
+  url: https://www.iso.org/standard/38110.html
+- version: C++98
+  status: withdrawn
+  iso: ISO/IEC 14882:1998
+  edition: 1
+  iso_stage: "95.99"
+  released: 1998-09
+  eol: null
+  notes: WG21 gives the publication date 1998-09-01.
+  url: https://www.iso.org/standard/25845.html

@@ -1,0 +1,33 @@
+# The implementations of C (spec 04.4, 09.2). compat: true marks the columns of the compat tables (registers/implementations.yaml: iso-c, gcc, clang, msvc). iso-c is the standard ISO/IEC 9899 (releases.yaml), not a compiler. c23 is the level of C23 support that the compiler's own status page states. latest is the newest release on its official release page. Checked 2026-11-10.
+- id: iso-c
+  name: ISO C
+  compat: true
+  standard: true
+  note: The standard itself. The edition in force is ISO/IEC 9899:2024 (C23); WG14 works on C2y.
+  latest: {v: C23, date: 2024-10-31}
+  licence: ISO copyright
+  source: https://www.iso.org/standard/82075.html
+- id: gcc
+  name: GCC
+  compat: true
+  c23: supported
+  note: The C status page lists every C23 feature with the GCC version that added it, and gnu23 (C23 with GNU extensions) is the default from GCC 15. C2y support is experimental and incomplete (-std=c2y).
+  latest: {v: "16.2", date: 2026-08-07}
+  licence: GPL-3.0
+  source: https://gcc.gnu.org/projects/c-status.html
+- id: clang
+  name: Clang
+  compat: true
+  c23: partial
+  note: The C status page marks C23 as Partial. -std=c23 is available from Clang 18 (-std=c2x from Clang 9); constexpr objects and #embed arrived in Clang 19. The release is the newest release of the LLVM project.
+  latest: {v: 23.1.5, date: 2026-11-03}
+  licence: Apache-2.0 WITH LLVM-exception
+  source: https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5
+- id: msvc
+  name: MSVC
+  compat: true
+  c23: partial
+  note: The conformance page marks the C23 core language as Partial. typeof, attributes and #elifdef are supported; auto, constexpr objects, nullptr, #embed and _BitInt are not, and variable length arrays, which the page lists as an optional C11 feature, are not either. The release is Visual Studio 2026 version 18.11.3. MSVC Build Tools 14.51 is the default toolset from version 18.6.0.
+  latest: {v: 18.11.3, date: 2026-10-29}
+  licence: proprietary
+  source: https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes

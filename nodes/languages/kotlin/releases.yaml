@@ -1,0 +1,45 @@
+# The releases of Kotlin (spec 09.1). Release lines (2.x) with the first language release (2.x.0), the newest release of the line on 2026-11-10 and the end of support.
+# Policy (https://kotlinlang.org/docs/releases.html#standard-library-security-support and https://kotlinlang.org/docs/security.html): starting with Kotlin 2.4.0, the Kotlin standard library for the JVM has an 18-month support window for each release line. The official pages state no support window for the lines before 2.4, so their eol is null.
+# endoflife.date (https://endoflife.date/api/v1/products/kotlin/, eol labelled Security Support) ends each line before 2.4 on the release day of the next line (2.3 on 2026-06-03, 2.2 on 2025-12-16, 2.1 on 2025-06-23, 2.0 on 2024-11-27) and gives no end date for 2.4.
+# Sources: https://kotlinlang.org/docs/releases.html#release-history (dates; Upcoming Kotlin releases: 2.5.0 planned for December 2026, 2.5.20 planned for March 2027); https://github.com/JetBrains/kotlin/releases (cross-check; 2.5.0-Beta2 on 2026-10-21). The header of whatsnew24.html says "Released: July 14, 2026", the date of 2.4.10; the release history and GitHub give 2026-06-03 for 2.4.0. Checked 2026-11-10.
+- version: "2.5"
+  status: beta
+  released: 2026-12
+  planned: true
+  eol: null
+  eol_rule: 18 months after the release of 2.5.0 (security support of the standard library for the JVM)
+  notes: https://kotlinlang.org/docs/whatsnew-eap.html
+- version: "2.4"
+  status: supported
+  released: 2026-06-03
+  latest: {v: 2.4.21, date: 2026-10-08}
+  eol: 2027-12-03
+  notes: https://kotlinlang.org/docs/whatsnew24.html
+- version: "2.3"
+  status: superseded
+  released: 2025-12-16
+  latest: {v: 2.3.21, date: 2026-04-23}
+  eol: null
+  eol_rule: none stated by JetBrains
+  notes: https://kotlinlang.org/docs/whatsnew23.html
+- version: "2.2"
+  status: superseded
+  released: 2025-06-23
+  latest: {v: 2.2.21, date: 2025-10-23}
+  eol: null
+  eol_rule: none stated by JetBrains
+  notes: https://kotlinlang.org/docs/whatsnew22.html
+- version: "2.1"
+  status: superseded
+  released: 2024-11-27
+  latest: {v: 2.1.21, date: 2025-05-13}
+  eol: null
+  eol_rule: none stated by JetBrains
+  notes: https://kotlinlang.org/docs/whatsnew21.html
+- version: "2.0"
+  status: superseded
+  released: 2024-05-21
+  latest: {v: 2.0.21, date: 2024-10-10}
+  eol: null
+  eol_rule: none stated by JetBrains
+  notes: https://kotlinlang.org/docs/whatsnew20.html
