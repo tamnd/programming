@@ -51,7 +51,7 @@
       name: Event-driven programming
     - id: aspect-oriented
       name: Aspect-oriented programming
-    - id: actor
+    - id: actor-oriented
       name: The actor model
     - id: multi-paradigm
       name: Multi-paradigm design
@@ -187,7 +187,7 @@
       name: Allocation
     - id: manual-memory-management
       name: Manual memory management
-    - id: garbage-collection
+    - id: automatic-memory-management
       name: Garbage collection
     - id: ownership-and-borrowing
       name: Ownership and borrowing
@@ -239,7 +239,7 @@
       name: Async and event loops
     - id: futures-and-promises
       name: Futures and promises
-    - id: actors
+    - id: actor-systems
       name: Actors
     - id: csp-and-channels
       name: CSP and channels
@@ -370,7 +370,7 @@
       name: Mutation testing
     - id: snapshot-testing
       name: Snapshot and golden testing
-    - id: coverage
+    - id: test-coverage
       name: Coverage
     - id: tdd-and-bdd
       name: TDD and BDD
@@ -394,8 +394,8 @@
       name: Logging
     - id: tracing
       name: Tracing
-    - id: metrics
-      name: Metrics
+    - id: runtime-metrics
+      name: Runtime metrics
     - id: profiling
       name: Profiling as diagnosis
     - id: sanitizers
@@ -512,8 +512,8 @@
       name: Releases and versioning
     - id: maintenance
       name: Maintenance
-    - id: metrics
-      name: Metrics
+    - id: engineering-metrics
+      name: Engineering metrics
     - id: documentation
       name: Documentation
     - id: team-practice
@@ -542,7 +542,7 @@
   name: Data and persistence
   summary: Databases, data formats, text encodings and files.
   children:
-    - id: sql
+    - id: sql-in-practice
       name: SQL
     - id: relational-modelling
       name: Relational modelling
@@ -592,9 +592,9 @@
   children:
     - id: http
       name: HTTP for programmers
-    - id: html
+    - id: html-and-markup
       name: HTML
-    - id: css
+    - id: css-and-layout
       name: CSS
     - id: dom-and-web-apis
       name: The DOM and Web APIs
@@ -762,9 +762,9 @@
       name: History by period
     - id: the-canon
       name: Landmark works
-    - id: people
+    - id: notable-people
       name: People
-    - id: organizations
+    - id: notable-organizations
       name: Organizations
     - id: events
       name: Events
