@@ -1,0 +1,9 @@
+[package]
+name = "example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+saphyr = "=0.3.3"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde-saphyr = "=2.1.1"

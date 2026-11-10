@@ -1,0 +1,27 @@
+c:
+  status: idiom
+  reason: ISO C has no SemVer type and no regular expressions; split the text with strchr or sscanf, check each identifier by hand, and compare with the rules of item 11.
+  alternative: POSIX regcomp and regexec, where the platform has them.
+kotlin:
+  status: idiom
+  reason: the Kotlin standard library has no SemVer type; Regex accepts the official numbered regex, and a Comparable data class gives the order of item 11. No example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: a Java library such as semver4j on the JVM.
+sql:
+  status: idiom
+  reason: SQL has no SemVer type, and ORDER BY on the text column gives a string sort; store major, minor and patch in integer columns and sort on them, with a flag that puts a pre-release before its release.
+bash:
+  status: library
+  reason: Bash has no SemVer type and no SemVer comparison.
+  alternative: the command-line tool semver of the npm package semver.
+powershell:
+  status: stdlib
+  reason: the type accelerator [semver] maps to System.Management.Automation.SemanticVersion, an implementation of semantic versioning in the PowerShell SDK. No example file because PowerShell is not installed on the machine that recorded the examples.
+regex:
+  status: idiom
+  reason: the specification gives two regular expressions that check the syntax and capture the parts; a regular expression cannot compute precedence.
+html:
+  status: n/a
+  reason: markup has no version values to compare.
+css:
+  status: n/a
+  reason: style sheets have no version values to compare.
