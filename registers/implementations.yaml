@@ -1,0 +1,178 @@
+# SPDX-License-Identifier: CC0-1.0
+# The implementation columns of the compat entries of each language (spec 09.2). A column with main: true counts for the computed status (09.5). A column with standard: true is the language standard, not a program.
+# releases lists the releases of an implementation, oldest first. Rule K02 checks each version of a compat entry against it, and prog compat probe takes the release before version_added from it.
+# image and run tell prog compat probe how to run a probe on a release: {v} is the version and {file} is the probe file.
+# Sources: CPython from python/release-status release-cycle.json, Rust from RELEASES.md of rust-lang/rust, PyPy from the PyPy index of release notes, GraalPy and MicroPython from their GitHub releases. Read on 2026-11-10.
+
+python:
+  - id: cpython
+    name: CPython
+    main: true
+    image: "python:{v}-slim"
+    run: [python, "{file}"]
+    releases: ["3.0", "3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10", "3.11", "3.12", "3.13", "3.14", "3.15"]
+  - id: pypy
+    name: PyPy
+    main: true
+    releases: ["2.0", "2.0.1", "2.0.2", "2.1", "2.2", "2.2.1", "2.3", "2.3.1", "2.4", "2.5.0", "2.5.1", "2.6.0", "2.6.1", "4.0.0", "4.0.1", "5.0", "5.0.1", "5.1", "5.1.1", "5.3.1", "5.4.1", "5.7.1", "5.10.1", "7.0.0", "7.1.0", "7.1.1", "7.2.0", "7.3.0", "7.3.1", "7.3.2", "7.3.3", "7.3.4", "7.3.5", "7.3.6", "7.3.7", "7.3.8", "7.3.9", "7.3.10", "7.3.11", "7.3.12", "7.3.13", "7.3.14", "7.3.15", "7.3.16", "7.3.17", "7.3.18", "7.3.19", "7.3.20", "7.3.21", "7.3.22", "7.3.23", "8.0.0", "8.0.1"]
+  - id: graalpy
+    name: GraalPy
+    releases: ["23.0.0", "23.0.1", "23.1.0", "23.1.1", "23.1.2", "24.0.0", "24.0.1", "24.0.2", "24.1.0", "24.1.1", "24.1.2", "24.2.0", "24.2.1", "24.2.2", "25.0.0", "25.0.1", "25.0.2", "25.0.3", "25.1.3", "25.2.4", "25.3.4", "25.4.4", "25.5.5"]
+  - id: micropython
+    name: MicroPython
+    releases: ["1.9.2", "1.9.3", "1.9.4", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20.0", "1.21.0", "1.22.0", "1.22.1", "1.22.2", "1.23.0", "1.24.0", "1.24.1", "1.25.0", "1.26.0", "1.26.1", "1.27.0", "1.28.0", "1.29.0"]
+rust:
+  - id: rustc
+    name: rustc
+    main: true
+    image: "rust:{v}-slim"
+    run: [sh, -c, "rustc --edition {edition} -o /tmp/probe {file} && /tmp/probe"]
+    releases: ["1.0.0", "1.1.0", "1.2.0", "1.3.0", "1.4.0", "1.5.0", "1.6.0", "1.7.0", "1.8.0", "1.9.0", "1.10.0", "1.11.0", "1.12.0", "1.12.1", "1.13.0", "1.14.0", "1.15.0", "1.15.1", "1.16.0", "1.17.0", "1.18.0", "1.19.0", "1.20.0", "1.21.0", "1.22.0", "1.22.1", "1.23.0", "1.24.0", "1.24.1", "1.25.0", "1.26.0", "1.26.1", "1.26.2", "1.27.0", "1.27.1", "1.27.2", "1.28.0", "1.29.0", "1.29.1", "1.29.2", "1.30.0", "1.30.1", "1.31.0", "1.31.1", "1.32.0", "1.33.0", "1.34.0", "1.34.1", "1.34.2", "1.35.0", "1.36.0", "1.37.0", "1.38.0", "1.39.0", "1.40.0", "1.41.0", "1.41.1", "1.42.0", "1.43.0", "1.43.1", "1.44.0", "1.44.1", "1.45.0", "1.45.1", "1.45.2", "1.46.0", "1.47.0", "1.48.0", "1.49.0", "1.50.0", "1.51.0", "1.52.0", "1.52.1", "1.53.0", "1.54.0", "1.55.0", "1.56.0", "1.56.1", "1.57.0", "1.58.0", "1.58.1", "1.59.0", "1.60.0", "1.61.0", "1.62.0", "1.62.1", "1.63.0", "1.64.0", "1.65.0", "1.66.0", "1.66.1", "1.67.0", "1.67.1", "1.68.0", "1.68.1", "1.68.2", "1.69.0", "1.70.0", "1.71.0", "1.71.1", "1.72.0", "1.72.1", "1.73.0", "1.74.0", "1.74.1", "1.75.0", "1.76.0", "1.77.0", "1.77.1", "1.77.2", "1.78.0", "1.79.0", "1.80.0", "1.80.1", "1.81.0", "1.82.0", "1.83.0", "1.84.0", "1.84.1", "1.85.0", "1.85.1", "1.86.0", "1.87.0", "1.88.0", "1.89.0", "1.90.0", "1.91.0", "1.91.1", "1.92.0", "1.93.0", "1.93.1", "1.94.0", "1.94.1", "1.95.0", "1.96.0", "1.96.1", "1.97.0", "1.97.1", "1.98.0", "1.98.1", "1.99.0", "1.99.1"]
+javascript:
+  - id: ecmascript
+    name: ECMAScript
+    standard: true
+  - id: v8
+    name: "V8 (Node.js)"
+    main: true
+  - id: spidermonkey
+    name: SpiderMonkey
+    main: true
+  - id: javascriptcore
+    name: JavaScriptCore
+    main: true
+  - id: bun
+    name: Bun
+  - id: deno
+    name: Deno
+typescript:
+  - id: tsc
+    name: tsc
+    main: true
+java:
+  - id: jls
+    name: The Java Language Specification
+    standard: true
+  - id: openjdk
+    name: OpenJDK
+    main: true
+c:
+  - id: iso-c
+    name: ISO C
+    standard: true
+  - id: gcc
+    name: GCC
+    main: true
+  - id: clang
+    name: Clang
+    main: true
+  - id: msvc
+    name: MSVC
+    main: true
+cpp:
+  - id: iso-cpp
+    name: "ISO C++"
+    standard: true
+  - id: gcc
+    name: GCC
+    main: true
+  - id: clang
+    name: Clang
+    main: true
+  - id: msvc
+    name: MSVC
+    main: true
+  - id: libstdcxx
+    name: "libstdc++"
+  - id: libcxx
+    name: "libc++"
+  - id: msvc-stl
+    name: MSVC STL
+csharp:
+  - id: csharp
+    name: "The C# language version"
+    standard: true
+  - id: dotnet
+    name: ".NET (Roslyn and the runtime)"
+    main: true
+go:
+  - id: gc
+    name: gc
+    main: true
+  - id: gccgo
+    name: gccgo
+  - id: tinygo
+    name: TinyGo
+kotlin:
+  - id: kotlin-jvm
+    name: Kotlin/JVM
+    main: true
+  - id: kotlin-native
+    name: Kotlin/Native
+  - id: kotlin-js
+    name: Kotlin/JS
+  - id: kotlin-wasm
+    name: Kotlin/Wasm
+sql:
+  - id: iso-sql
+    name: ISO SQL
+    standard: true
+  - id: postgresql
+    name: PostgreSQL
+    main: true
+  - id: mysql
+    name: MySQL
+    main: true
+  - id: mariadb
+    name: MariaDB
+  - id: sqlite
+    name: SQLite
+    main: true
+  - id: sqlserver
+    name: SQL Server
+  - id: oracle
+    name: Oracle Database
+  - id: duckdb
+    name: DuckDB
+bash:
+  - id: posix
+    name: POSIX sh
+    standard: true
+  - id: bash
+    name: Bash
+    main: true
+  - id: dash
+    name: dash
+  - id: zsh
+    name: zsh
+  - id: ksh93
+    name: ksh93
+  - id: busybox
+    name: BusyBox ash
+regex:
+  - id: pcre2
+    name: PCRE2
+    main: true
+  - id: ecmascript
+    name: ECMAScript
+    main: true
+  - id: python-re
+    name: Python re
+    main: true
+  - id: java
+    name: java.util.regex
+    main: true
+  - id: dotnet
+    name: .NET
+    main: true
+  - id: re2
+    name: RE2
+  - id: rust-regex
+    name: Rust regex
+  - id: posix-ere
+    name: POSIX ERE
+    standard: true
+  - id: oniguruma
+    name: Oniguruma
+  - id: icu
+    name: ICU

@@ -1,0 +1,5 @@
+# The expected output of each probe, and the error that the release before the version_added must give (spec 09.4).
+match_basic.py: {output: "north\n", fails_with: "SyntaxError"}
+match_class.py: {output: "2\n", fails_with: "SyntaxError"}
+match_soft_keyword.py: {output: "1\n", fails_with: "SyntaxError"}
+match_unary_plus.py: {output: "plus one\n", fails_with: "SyntaxError"}

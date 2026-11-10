@@ -1,0 +1,6 @@
+# The expected output of each probe, and the error that the release before the version_added must give (spec 09.4).
+# Before Rust 1.31.0 the edition 2018 is not stable, and before Rust 1.85.0 the edition 2024 is not stable, so the error can name the edition.
+move.rs: {output: "hi hi\n"}
+nll_last_use.rs: {output: "9\n4\n", fails_with: "E0502|edition"}
+two_phase.rs: {output: "[1, 2, 2]\n", fails_with: "E0502|edition"}
+tail_temporary.rs: {output: "3\n", fails_with: "E0597|edition"}
