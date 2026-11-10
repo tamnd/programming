@@ -1,0 +1,16 @@
+bash:
+  status: idiom
+  reason: Bash has no references to values. A function gets the name of a variable and assigns to it with printf -v or through a nameref made by declare -n or local -n. The node shows the printf -v form in a run block.
+  alternative: a global variable, or output on stdout that the caller captures with command substitution.
+sql:
+  status: n/a
+  reason: a query works on values in rows, with no addresses. A row refers to another row by the value of a key, which is a foreign key, not a pointer.
+regex:
+  status: n/a
+  reason: a pattern has no variables in memory. A backreference refers to captured text, not to a value in memory.
+html:
+  status: n/a
+  reason: markup has no variables in memory. An id and a link that names it refer to an element by name.
+css:
+  status: n/a
+  reason: style rules have no variables in memory.

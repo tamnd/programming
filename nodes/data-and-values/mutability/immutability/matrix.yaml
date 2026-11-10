@@ -1,0 +1,15 @@
+bash:
+  status: native
+  reason: the readonly builtin marks a variable, so a later assignment or unset fails. The protection belongs to the name.
+sql:
+  status: n/a
+  reason: a query has no objects that code shares and changes.
+regex:
+  status: n/a
+  reason: a pattern has no values to change.
+html:
+  status: n/a
+  reason: markup has no program values.
+css:
+  status: n/a
+  reason: style rules have no program values.
