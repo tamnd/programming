@@ -1,12 +1,12 @@
 # SPDX-License-Identifier: CC0-1.0
 # The runner images of prog test (spec 07.6), pinned by digest. The Images workflow of tamnd/programming-agent builds them from images/ and pushes them to ghcr.io with build provenance. To update an image, take its digest from the summary of that workflow.
-python: ghcr.io/tamnd/algo-runner-python@sha256:aae55f23bbcd4f4bceb44e5991aecf53134145a708f84bdd78bd77512c9b38f1
-go: ghcr.io/tamnd/algo-runner-go@sha256:63a83bdcaac73cc0691a76e8249e5867926745165751c7211476bc152dc2ee1d
-rust: ghcr.io/tamnd/algo-runner-rust@sha256:36b20b78c57d4fae5c36c8c72e2fc3f901e5d485a7e79da1b8f47630f562479c
-c: ghcr.io/tamnd/algo-runner-gcc@sha256:8d85c5af1f73049528bcaadfff15742efd5abca9154a3a7384fed854a0c4d60a
-cpp: ghcr.io/tamnd/algo-runner-gcc@sha256:8d85c5af1f73049528bcaadfff15742efd5abca9154a3a7384fed854a0c4d60a
-javascript: ghcr.io/tamnd/algo-runner-node@sha256:310dcebd6b6ed59ed8edceec4ef18755371e9640f5547d335266ed03cdd1a0b8
-typescript: ghcr.io/tamnd/algo-runner-node@sha256:310dcebd6b6ed59ed8edceec4ef18755371e9640f5547d335266ed03cdd1a0b8
-java: ghcr.io/tamnd/algo-runner-jvm@sha256:0cf342a5d4db6b091db02bbe6e709c0b27e69a7a8235b3cf32b866ee3786c209
-kotlin: ghcr.io/tamnd/algo-runner-jvm@sha256:0cf342a5d4db6b091db02bbe6e709c0b27e69a7a8235b3cf32b866ee3786c209
-csharp: ghcr.io/tamnd/algo-runner-dotnet@sha256:e7fc1b63237cfd2facf921e0a6816dcb929ee7add52212878a3510f478f8d572
+python: ghcr.io/tamnd/prog-runner-python@sha256:796bf376beba1d21ef622a2c38573f2de3f2bc3dea60fa15328699da6bf38953
+go: ghcr.io/tamnd/prog-runner-go@sha256:3d56d4e9ef94d47c7217df29901bc8ee2c017fbcfee6e432294fa0d477b5822a
+rust: ghcr.io/tamnd/prog-runner-rust@sha256:1bb396574dce6cdc05f84cee0e7377ea67e85f13cedae23f1138650516da670a
+c: ghcr.io/tamnd/prog-runner-gcc@sha256:0f9a10768d42b4ca1d0856d4138cb2c18ef0654c4efb98ad0acef2e8ad9481fe
+cpp: ghcr.io/tamnd/prog-runner-gcc@sha256:0f9a10768d42b4ca1d0856d4138cb2c18ef0654c4efb98ad0acef2e8ad9481fe
+javascript: ghcr.io/tamnd/prog-runner-node@sha256:75a64e3f51552af842d9fd04e74971604e72c203fa257c8f3e6fc2741cb78912
+typescript: ghcr.io/tamnd/prog-runner-node@sha256:75a64e3f51552af842d9fd04e74971604e72c203fa257c8f3e6fc2741cb78912
+java: ghcr.io/tamnd/prog-runner-jvm@sha256:79ecaa224617691184d050c556bf36b9da661585b612ebaa4ff3a7ddf49b47a9
+kotlin: ghcr.io/tamnd/prog-runner-jvm@sha256:79ecaa224617691184d050c556bf36b9da661585b612ebaa4ff3a7ddf49b47a9
+csharp: ghcr.io/tamnd/prog-runner-dotnet@sha256:c34948d359242848df5735ed64692bb1855d04dd4ea16fadf896c607965fbc12
