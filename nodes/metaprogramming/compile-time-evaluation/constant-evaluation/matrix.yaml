@@ -1,0 +1,33 @@
+python:
+  status: absent
+  reason: Python has no compile-time evaluation step in the language. A module-level name in capital letters is a constant by convention only.
+  alternative: compute the value once at import time and assign it to a module-level name.
+javascript:
+  status: absent
+  reason: const makes a binding that cannot be reassigned, and the value is computed at run time.
+  alternative: compute the value once when the module loads.
+typescript:
+  status: idiom
+  reason: members of a const enum can use only constant enum expressions, and the compiler inlines them at each use; no example file because Node.js type stripping does not support enums.
+  alternative: a const binding of JavaScript computed at run time.
+kotlin:
+  status: native
+  reason: const val declares a compile-time constant of a primitive type or String that the compiler inlines; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: absent
+  reason: the language has no constant expressions that a compiler evaluates before the script runs.
+bash:
+  status: absent
+  reason: the shell has no compile step in which to evaluate expressions.
+sql:
+  status: n/a
+  reason: a query has no user-defined compile-time computation.
+regex:
+  status: n/a
+  reason: a pattern has no expressions to evaluate.
+html:
+  status: n/a
+  reason: markup has no expressions to evaluate.
+css:
+  status: n/a
+  reason: style rules have no compile step.

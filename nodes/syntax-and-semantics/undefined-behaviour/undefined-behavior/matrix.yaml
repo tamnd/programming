@@ -1,0 +1,21 @@
+kotlin:
+  status: absent
+  reason: Kotlin on the JVM has the defined integer overflow and the bounds checks of Java; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: absent
+  reason: PowerShell runs managed .NET code and has no pointer operations; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: absent
+  reason: the shell has no pointers and no access to raw memory.
+sql:
+  status: absent
+  reason: a query has no pointers and no access to raw memory.
+regex:
+  status: n/a
+  reason: a pattern has no arithmetic and no memory access.
+html:
+  status: n/a
+  reason: markup has no arithmetic and no memory access.
+css:
+  status: n/a
+  reason: style rules have no memory access.

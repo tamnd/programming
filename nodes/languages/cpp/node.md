@@ -352,7 +352,7 @@ int main() {
 
 The unsigned subtraction wraps around. `b` is a copy of `a`, so a change through the reference `first` changes only `a`.
 
-**Undefined behavior.** The standard defines undefined behavior as "behavior for which this document imposes no requirements". An implementation does not have to diagnose it.[^17] Signed overflow, a data race and access to an object after its lifetime has ended are examples.[^15][^18][^19] A program on this site never shows undefined behavior as working code.
+**Undefined behavior.** The standard defines undefined behavior as "behavior for which this document imposes no requirements". An implementation does not have to diagnose it.[^17] Signed overflow, a data race and access to an object after its lifetime has ended are examples.[^15][^18][^19] A program on this site never shows undefined behavior as working code. See [[undefined-behavior]].
 
 **Memory.** The storage of an automatic object lasts until its block exits. A `new` expression creates an object with dynamic storage duration, and a `delete` expression destroys it.[^19] A pointer to an object whose lifetime has ended can be used only in limited ways. A use outside those ways has undefined behavior ([[use-after-free]]).[^19] Core Guideline R.11 says to avoid calling `new` and `delete` explicitly, and to give the pointer to a resource handle.[^5] A handle frees its resource in its destructor ([[resource-acquisition-is-initialization]]). See [[stack-and-heap]] and [[explicit-memory-management]].
 
