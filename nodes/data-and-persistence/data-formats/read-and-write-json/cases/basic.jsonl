@@ -1,0 +1,3 @@
+{"name":"member","class":["nested-path"],"args":{"text":"{\"name\": \"Ada\", \"born\": 1815}","path":["name"]},"expect":"\"Ada\""}
+{"name":"whole-document","class":["key-order"],"args":{"text":"{\"b\": [1, 2], \"a\": true}","path":[]},"expect":"{\"a\":true,\"b\":[1,2]}"}
+{"name":"nested-path","class":["nested-path","array-index"],"args":{"text":"{\"user\": {\"tags\": [\"x\", \"y\"]}}","path":["user","tags","1"]},"expect":"\"y\""}

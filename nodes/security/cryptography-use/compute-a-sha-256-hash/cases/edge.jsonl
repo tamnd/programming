@@ -1,0 +1,10 @@
+{"name":"empty","class":["empty"],"args":{"text":""},"expect":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}
+{"name":"a-55","class":["padding-boundary"],"args":{"text":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},"expect":"9f4390f8d30c2dd92ec9f095b65e2b9ae9b0a925a5258e241c9f1e910f734318"}
+{"name":"a-56","class":["padding-boundary"],"args":{"text":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},"expect":"b35439a4ac6f0948b6d6f9e3c6af0f5f590ce20f1bde7090ef7970686ec6738a"}
+{"name":"a-63","class":["padding-boundary"],"args":{"text":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},"expect":"7d3e74a05d7db15bce4ad9ec0658ea98e3f06eeecf16b4c6fff2da457ddc2f34"}
+{"name":"a-64","class":["padding-boundary"],"args":{"text":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},"expect":"ffe054fe7ae0cb6dc65c3af9b61d5209f439851db43d0ba5997337df154668eb"}
+{"name":"multi-block-112","class":["multi-block"],"args":{"text":"abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu"},"expect":"cf5b16a778af8380036ce59e7b0492370b249b11e8f07a51afac45037afee9d1"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"text":"naïve café 日本語 🙂"},"expect":"9c53e090acd67abd65c64ee431a36bdc36c3fd86341f5814a94d1b901ca9ed8d"}
+{"name":"nfc-cafe","class":["normalization","non-ascii"],"args":{"text":"caf\u00e9"},"expect":"850f7dc43910ff890f8879c0ed26fe697c93a067ad93a7d50f466a7028a9bf4e"}
+{"name":"nfd-cafe","class":["normalization","non-ascii"],"args":{"text":"cafe\u0301"},"expect":"81ef060bcd98adc7824eb5c1ada83c32491b16018e11e79f00ab9d09e04b015a"}
+{"name":"trailing-newline","class":["newline"],"args":{"text":"abc\n"},"expect":"edeaaff3f1774ad2888673770c6d64097e391bc362d7d6fb34982ddf0efd18cb"}

@@ -1,0 +1,15 @@
+{"name":"empty-standard","class":["empty"],"args":{"data":"","alphabet":"standard"},"expect":""}
+{"name":"empty-url","class":["empty","url"],"args":{"data":"","alphabet":"url"},"expect":""}
+{"name":"two-pad-chars","class":["padding","zero-bytes"],"args":{"data":"00","alphabet":"standard"},"expect":"AA=="}
+{"name":"one-pad-char","class":["padding","zero-bytes"],"args":{"data":"0000","alphabet":"standard"},"expect":"AAA="}
+{"name":"zero-bytes","class":["zero-bytes"],"args":{"data":"000000","alphabet":"standard"},"expect":"AAAA"}
+{"name":"plus-and-slash","class":["alphabet","padding"],"args":{"data":"fbff","alphabet":"standard"},"expect":"+/8="}
+{"name":"minus-and-underscore","class":["alphabet","url"],"args":{"data":"fbff","alphabet":"url"},"expect":"-_8"}
+{"name":"all-62-standard","class":["alphabet"],"args":{"data":"fbefbe","alphabet":"standard"},"expect":"++++"}
+{"name":"all-62-url","class":["alphabet","url"],"args":{"data":"fbefbe","alphabet":"url"},"expect":"----"}
+{"name":"all-63-standard","class":["alphabet"],"args":{"data":"ffffff","alphabet":"standard"},"expect":"////"}
+{"name":"all-63-url","class":["alphabet","url"],"args":{"data":"ffffff","alphabet":"url"},"expect":"____"}
+{"name":"url-one-byte","class":["url","padding"],"args":{"data":"66","alphabet":"url"},"expect":"Zg"}
+{"name":"url-two-bytes","class":["url","padding"],"args":{"data":"666f","alphabet":"url"},"expect":"Zm8"}
+{"name":"non-ascii-standard","class":["non-ascii"],"args":{"data":"c3a9e282acf09f9982","alphabet":"standard"},"expect":"w6nigqzwn5mC"}
+{"name":"non-ascii-url","class":["non-ascii","url"],"args":{"data":"c3a9e282acf09f9982","alphabet":"url"},"expect":"w6nigqzwn5mC"}

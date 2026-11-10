@@ -1,0 +1,26 @@
+{"name":"big-int","class":["big-int"],"args":{"text":"{\"id\": 9007199254740993}","path":["id"]},"expect":"9007199254740993"}
+{"name":"beyond-int64","class":["big-int"],"args":{"text":"[18446744073709551617, -18446744073709551617]","path":[]},"expect":"[18446744073709551617,-18446744073709551617]"}
+{"name":"int64-bounds","class":["big-int"],"args":{"text":"[-9223372036854775808, 9223372036854775807]","path":[]},"expect":"[-9223372036854775808,9223372036854775807]"}
+{"name":"negative-zero","class":["negative-zero"],"args":{"text":"[-0, 0]","path":[]},"expect":"[0,0]"}
+{"name":"duplicate-name","class":["duplicate-name"],"args":{"text":"{\"a\": 1, \"a\": 2}","path":["a"]},"expect":"2"}
+{"name":"duplicate-name-whole","class":["duplicate-name","key-order"],"args":{"text":"{\"a\": 1, \"b\": 0, \"a\": {\"c\": 3}}","path":[]},"expect":"{\"a\":{\"c\":3},\"b\":0}"}
+{"name":"array-index-10","class":["array-index"],"args":{"text":"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, \"ten\"]","path":["10"]},"expect":"\"ten\""}
+{"name":"numeric-name","class":["array-index"],"args":{"text":"{\"0\": \"zero\", \"1\": \"one\"}","path":["0"]},"expect":"\"zero\""}
+{"name":"key-order-ascii","class":["key-order"],"args":{"text":"{\"b\": 1, \"a\": 2, \"B\": 3, \"10\": 4, \"9\": 5}","path":[]},"expect":"{\"10\":4,\"9\":5,\"B\":3,\"a\":2,\"b\":1}"}
+{"name":"key-order-prefix","class":["key-order"],"args":{"text":"{\"ab\": 1, \"a\": 2, \"\": 3}","path":[]},"expect":"{\"\":3,\"a\":2,\"ab\":1}"}
+{"name":"key-order-astral","class":["key-order","non-ascii"],"args":{"text":"{\"😀\": 1, \"ﬁ\": 2, \"é\": 3}","path":[]},"expect":"{\"é\":3,\"ﬁ\":2,\"😀\":1}"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"text":"[\"Zürich\", \"日本語\", \"😀\"]","path":[]},"expect":"[\"Zürich\",\"日本語\",\"😀\"]"}
+{"name":"escaped-non-ascii","class":["non-ascii","escapes"],"args":{"text":"[\"\\u00e9\\ud83d\\ude00\"]","path":["0"]},"expect":"\"é😀\""}
+{"name":"escapes","class":["escapes"],"args":{"text":"[\"q\\\" b\\\\ s\\/ t\\t n\\n r\\r\"]","path":[]},"expect":"[\"q\\\" b\\\\ s/ t\\t n\\n r\\r\"]"}
+{"name":"control-chars","class":["escapes"],"args":{"text":"[\"\\u0000\\u001f\\b\\f\\u007f\"]","path":[]},"expect":"[\"\\u0000\\u001f\\b\\f\u007f\"]"}
+{"name":"html-chars","class":["html-chars"],"args":{"text":"{\"html\": \"<a href='x'>&amp;</a>\"}","path":["html"]},"expect":"\"<a href='x'>&amp;</a>\""}
+{"name":"empty-containers","class":["empty-containers"],"args":{"text":"{\"a\": {}, \"b\": [], \"c\": \"\"}","path":[]},"expect":"{\"a\":{},\"b\":[],\"c\":\"\"}"}
+{"name":"scalar-root","class":["scalar-root"],"args":{"text":"42","path":[]},"expect":"42"}
+{"name":"string-root","class":["scalar-root"],"args":{"text":"\"text\"","path":[]},"expect":"\"text\""}
+{"name":"whitespace","class":["whitespace","scalar-root"],"args":{"text":" \n\ttrue\r\n ","path":[]},"expect":"true"}
+{"name":"whitespace-inside","class":["whitespace"],"args":{"text":"\n{ \"a\" :\t[ 1 , 2 ] }\r\n","path":[]},"expect":"{\"a\":[1,2]}"}
+{"name":"deep-path","class":["nested-path","array-index"],"args":{"text":"{\"a\": [{\"b\": [[1, {\"c\": \"deep\"}]]}]}","path":["a","0","b","0","1","c"]},"expect":"\"deep\""}
+{"name":"null-member","class":["falsy"],"args":{"text":"{\"a\": null}","path":["a"]},"expect":"null"}
+{"name":"false-member","class":["falsy"],"args":{"text":"{\"a\": false, \"b\": 0}","path":["a"]},"expect":"false"}
+{"name":"proto-name","class":["inherited-name"],"args":{"text":"{\"__proto__\": {\"x\": 1}, \"constructor\": 2}","path":[]},"expect":"{\"__proto__\":{\"x\":1},\"constructor\":2}"}
+{"name":"proto-path","class":["inherited-name"],"args":{"text":"{\"__proto__\": {\"x\": 1}}","path":["__proto__","x"]},"expect":"1"}

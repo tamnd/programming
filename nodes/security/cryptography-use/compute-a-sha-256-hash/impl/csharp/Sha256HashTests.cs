@@ -1,0 +1,62 @@
+// SPDX-License-Identifier: MIT
+// Part of https://programming.tamnd.com/compute-a-sha-256-hash/.
+
+using Xunit;
+
+public sealed class Sha256HashTests : IDisposable
+{
+    private readonly string dir = Directory.CreateTempSubdirectory("sha256-").FullName;
+
+    public void Dispose() => Directory.Delete(dir, recursive: true);
+
+    public static TheoryData<string, string, string> TextCases => new()
+    {
+        { "abc", "abc", "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad" },
+        { "two-block-56", "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq", "248d6a61d20638b8e5c026930c3e6039a33ce45964ff2167f6ecedd419db06c1" },
+        { "fox", "The quick brown fox jumps over the lazy dog", "d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592" },
+        { "empty", "", "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+        { "a-55", new string('a', 55), "9f4390f8d30c2dd92ec9f095b65e2b9ae9b0a925a5258e241c9f1e910f734318" },
+        { "a-56", new string('a', 56), "b35439a4ac6f0948b6d6f9e3c6af0f5f590ce20f1bde7090ef7970686ec6738a" },
+        { "a-63", new string('a', 63), "7d3e74a05d7db15bce4ad9ec0658ea98e3f06eeecf16b4c6fff2da457ddc2f34" },
+        { "a-64", new string('a', 64), "ffe054fe7ae0cb6dc65c3af9b61d5209f439851db43d0ba5997337df154668eb" },
+        { "multi-block-112", "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu", "cf5b16a778af8380036ce59e7b0492370b249b11e8f07a51afac45037afee9d1" },
+        { "non-ascii", "naïve café 日本語 \U0001F642", "9c53e090acd67abd65c64ee431a36bdc36c3fd86341f5814a94d1b901ca9ed8d" },
+        { "nfc-cafe", "caf\u00e9", "850f7dc43910ff890f8879c0ed26fe697c93a067ad93a7d50f466a7028a9bf4e" },
+        { "nfd-cafe", "cafe\u0301", "81ef060bcd98adc7824eb5c1ada83c32491b16018e11e79f00ab9d09e04b015a" },
+        { "trailing-newline", "abc\n", "edeaaff3f1774ad2888673770c6d64097e391bc362d7d6fb34982ddf0efd18cb" },
+    };
+
+    // From cases/files.jsonl.
+    public static TheoryData<string, byte[], string> FileCases => new()
+    {
+        { "abc-file", "abc"u8.ToArray(), "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad" },
+        { "abc-newline-file", "abc\n"u8.ToArray(), "edeaaff3f1774ad2888673770c6d64097e391bc362d7d6fb34982ddf0efd18cb" },
+        { "abc-crlf-file", "abc\r\n"u8.ToArray(), "552bab6864c7a7b69a502ed1854b9245c0e1a30f008aaa0b281da62585fdb025" },
+        { "empty-file", [], "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+        { "binary-file", [0x00, 0x01, 0xff], "26a66b061e8f48f39927c312f25293959729eee95978e2892d49d3512a5cc092" },
+        // One million repetitions of "a": more than one chunk.
+        { "million-a-file", Enumerable.Repeat((byte)'a', 1_000_000).ToArray(), "cdc76e5c9914fb9281a1c7e284d73e67f1809a48a497200e046d39ccc7112cd0" },
+    };
+
+    [Theory]
+    [MemberData(nameof(TextCases))]
+    public void HashesText(string name, string text, string want)
+    {
+        Assert.True(want == Sha256Hash.Sha256Text(text), name);
+    }
+
+    [Theory]
+    [MemberData(nameof(FileCases))]
+    public void HashesFile(string name, byte[] data, string want)
+    {
+        string path = Path.Combine(dir, "in.bin");
+        File.WriteAllBytes(path, data);
+        Assert.True(want == Sha256Hash.Sha256File(path), name);
+    }
+
+    [Fact]
+    public void MissingFile()
+    {
+        Assert.Throws<FileNotFoundException>(() => Sha256Hash.Sha256File(Path.Combine(dir, "missing.txt")));
+    }
+}

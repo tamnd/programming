@@ -1,0 +1,18 @@
+# The contract of the task "base64 encode and decode" (spec 10.2). The alphabets are those of RFC 4648 sections 4 and 5. The decoder is strict: it accepts only the text that the encoder gives, so each byte string has exactly one valid encoding in each alphabet.
+problem: base64-encode-and-decode
+entry: encode
+params:
+  - name: data
+    type: string
+    pre: "the input bytes, any length from 0, written in the cases as lowercase hexadecimal with two digits for each byte; each solution takes a byte array, not a string"
+  - name: alphabet
+    type: string
+    pre: "standard for the alphabet of RFC 4648 section 4 (62 is +, 63 is /), or url for the alphabet of RFC 4648 section 5 (62 is -, 63 is _)"
+returns:
+  type: string
+  post: "the Base64 text of data, with no line break and no white space; the pad bits of the last character are zero; standard pads the text with = to a multiple of 4 characters; url adds no padding, so its length mod 4 is 0, 2 or 3"
+checker: exact
+edge_classes: [empty, padding, zero-bytes, alphabet, url, non-ascii]
+# The toolchain has one entry for each contract, and it loads only the basic, edge and regress case files. Two more case files hold the decode function, and each solution tests them too.
+# cases/decode.jsonl: decode(text, alphabet) -> bytes, written in the cases as lowercase hexadecimal. It is the inverse of encode: decode(encode(data, a), a) == data.
+# cases/errors.jsonl: the text on which decode must report the error invalid and return no bytes. decode accepts a text only when it is exactly encode(d, alphabet) for some bytes d. So it rejects a character outside the alphabet (+ or / in url, - or _ in standard, any non-ASCII character), white space and line breaks, a missing, extra or misplaced =, any = in url, a length that is 1 mod 4, and a last character whose pad bits are not zero.

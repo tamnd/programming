@@ -1,0 +1,8 @@
+{"name":"rfc-f","args":{"data":"66","alphabet":"standard"},"expect":"Zg=="}
+{"name":"rfc-fo","args":{"data":"666f","alphabet":"standard"},"expect":"Zm8="}
+{"name":"rfc-foo","args":{"data":"666f6f","alphabet":"standard"},"expect":"Zm9v"}
+{"name":"rfc-foob","args":{"data":"666f6f62","alphabet":"standard"},"expect":"Zm9vYg=="}
+{"name":"rfc-fooba","args":{"data":"666f6f6261","alphabet":"standard"},"expect":"Zm9vYmE="}
+{"name":"rfc-foobar","args":{"data":"666f6f626172","alphabet":"standard"},"expect":"Zm9vYmFy"}
+{"name":"hello-standard","args":{"data":"48656c6c6f2c20776f726c6421","alphabet":"standard"},"expect":"SGVsbG8sIHdvcmxkIQ=="}
+{"name":"hello-url","args":{"data":"48656c6c6f2c20776f726c6421","alphabet":"url"},"expect":"SGVsbG8sIHdvcmxkIQ"}

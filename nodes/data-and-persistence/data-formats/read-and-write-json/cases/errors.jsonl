@@ -1,0 +1,29 @@
+{"name":"trailing-comma-array","args":{"text":"[1, 2,]","path":[]},"error":"invalid-json"}
+{"name":"trailing-comma-object","args":{"text":"{\"a\": 1,}","path":[]},"error":"invalid-json"}
+{"name":"single-quotes","args":{"text":"{'a': 1}","path":[]},"error":"invalid-json"}
+{"name":"unquoted-name","args":{"text":"{a: 1}","path":[]},"error":"invalid-json"}
+{"name":"nan","args":{"text":"[NaN]","path":[]},"error":"invalid-json"}
+{"name":"infinity","args":{"text":"[Infinity]","path":[]},"error":"invalid-json"}
+{"name":"negative-infinity","args":{"text":"-Infinity","path":[]},"error":"invalid-json"}
+{"name":"leading-zero","args":{"text":"[01]","path":[]},"error":"invalid-json"}
+{"name":"plus-sign","args":{"text":"+1","path":[]},"error":"invalid-json"}
+{"name":"hex-number","args":{"text":"0x10","path":[]},"error":"invalid-json"}
+{"name":"empty-text","args":{"text":"","path":[]},"error":"invalid-json"}
+{"name":"whitespace-only","args":{"text":" \n","path":[]},"error":"invalid-json"}
+{"name":"trailing-data","args":{"text":"[1] x","path":[]},"error":"invalid-json"}
+{"name":"two-values","args":{"text":"1 2","path":[]},"error":"invalid-json"}
+{"name":"comment","args":{"text":"{\"a\": 1} // note","path":[]},"error":"invalid-json"}
+{"name":"byte-order-mark","args":{"text":"\ufeff{\"a\": 1}","path":[]},"error":"invalid-json"}
+{"name":"raw-control-char","args":{"text":"[\"a\tb\"]","path":[]},"error":"invalid-json"}
+{"name":"bad-escape","args":{"text":"[\"\\x41\"]","path":[]},"error":"invalid-json"}
+{"name":"unclosed","args":{"text":"[1, 2","path":[]},"error":"invalid-json"}
+{"name":"missing-name","args":{"text":"{\"a\": 1}","path":["b"]},"error":"not-found"}
+{"name":"inherited-name","args":{"text":"{\"a\": 1}","path":["toString"]},"error":"not-found"}
+{"name":"array-length","args":{"text":"[1, 2]","path":["length"]},"error":"not-found"}
+{"name":"index-out-of-range","args":{"text":"[1, 2]","path":["2"]},"error":"not-found"}
+{"name":"index-leading-zero","args":{"text":"[1, 2]","path":["01"]},"error":"not-found"}
+{"name":"index-negative","args":{"text":"[1, 2]","path":["-1"]},"error":"not-found"}
+{"name":"index-plus","args":{"text":"[1, 2]","path":["+1"]},"error":"not-found"}
+{"name":"index-non-ascii-digit","args":{"text":"[1, 2]","path":["١"]},"error":"not-found"}
+{"name":"through-scalar","args":{"text":"{\"a\": 1}","path":["a","b"]},"error":"not-found"}
+{"name":"through-null","args":{"text":"{\"a\": null}","path":["a","b"]},"error":"not-found"}

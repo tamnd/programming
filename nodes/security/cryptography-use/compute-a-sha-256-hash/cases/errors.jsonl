@@ -1,0 +1,1 @@
+{"name":"missing-file","args":{"path":"fixtures/missing.txt"},"error":"not-found","why":"the file does not exist; the function reports the error and returns no hash"}
