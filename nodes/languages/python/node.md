@@ -207,18 +207,7 @@ Five words occur once. `most_common` puts elements with equal counts in the orde
 
 ## The language at a glance
 
-| Property | Python |
-|---|---|
-| Class | general-purpose programming language |
-| Paradigms | imperative, object-oriented, functional, procedural |
-| Typing | dynamic and strong; checked at run time; optional static checking by separate tools |
-| Memory | garbage-collected (CPython: reference counting plus a cycle collector) |
-| Execution | compiled to bytecode and interpreted; a JIT compiler in PyPy and an experimental one in CPython |
-| Appeared | 1991 |
-| Designer | Guido van Rossum |
-| Definition | The Python Language Reference; there is no ISO or ECMA standard |
-| Reference implementation | CPython, under the PSF License Version 2 |
-| File extensions | `.py`, `.pyi`, `.pyw`[^5] |
+A source file has the extension `.py`. A stub file, which holds only type hints for type checkers, has `.pyi`. On Windows, a file with `.pyw` runs with no console window.[^5]
 
 **Types.** Each value is an object, and each object has a type. A name has no type. An assignment binds the name to an object, and a later assignment can bind it to an object of another type.[^6] The interpreter checks types when an operation runs, and it does not convert between unrelated types on its own. Integers have unlimited precision.[^7]
 
