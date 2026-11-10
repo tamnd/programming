@@ -1,4 +1,4 @@
-```typescript run id=cart
+```typescript test id=cart
 import { test } from "node:test";
 import assert from "node:assert/strict";
 
@@ -28,10 +28,10 @@ test("rejects negative quantity", () => {
 });
 ```
 
-```output for=cart match=regex
-✔ empty cart is zero \(\d+\.\d+ms\)
-✔ sums price times quantity \(\d+\.\d+ms\)
-✔ rejects negative quantity \(\d+\.\d+ms\)
+```output
+✔ empty cart is zero ($TIME)
+✔ sums price times quantity ($TIME)
+✔ rejects negative quantity ($TIME)
 ℹ tests 3
 ℹ suites 0
 ℹ pass 3
@@ -39,7 +39,7 @@ test("rejects negative quantity", () => {
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms \d+\.\d+
+ℹ duration_ms $TIME
 ```
 
 - Verdict: stdlib. TypeScript has no test runner of its own. It uses the runners of JavaScript, and the type checker adds types to the tests: here `node:test` and `node:assert`, run by Node.js after it strips the types.

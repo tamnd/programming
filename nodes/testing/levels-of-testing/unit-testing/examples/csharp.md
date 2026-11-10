@@ -1,4 +1,4 @@
-```csharp norun reason=fragment id=cart file=CartTests.cs
+```csharp test id=cart deps=deps/csharp/Cart.Tests.csproj file=CartTests.cs timeout=30
 using Xunit;
 
 public record Item(int Price, int Quantity);
@@ -44,10 +44,11 @@ public class CartTests
 }
 ```
 
-The command `dotnet test`, in a test project that references the packages `xunit`, `xunit.runner.visualstudio` and `Microsoft.NET.Test.Sdk`, prints at the end:
+```output
+Test run for $WORK/bin/Debug/net10.0/Cart.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
 
-```text
-Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 12 ms - Cart.Tests.dll (net10.0)
+Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: $TIME - Cart.Tests.dll (net10.0)
 ```
 
 - Verdict: library. .NET has no test framework in its base class library. xUnit.net, NUnit and MSTest are packages, and `dotnet test` runs any of them through the test platform.

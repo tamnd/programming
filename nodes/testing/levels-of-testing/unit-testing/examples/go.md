@@ -1,4 +1,4 @@
-```go norun reason=fragment id=cart file=cart.go
+```go norun reason=fragment group=cart id=cart file=cart.go
 package cart
 
 import "fmt"
@@ -22,7 +22,7 @@ func Total(items []Item) (int, error) {
 }
 ```
 
-```go norun reason=fragment id=cart-test file=cart_test.go
+```go test group=cart id=cart-test file=cart_test.go
 package cart
 
 import "testing"
@@ -56,19 +56,17 @@ func TestTotalRejectsNegativeQuantity(t *testing.T) {
 }
 ```
 
-The command `go test -v` in the directory of the two files prints:
-
-```text
+```output
 === RUN   TestTotal
 === RUN   TestTotal/empty_cart_is_zero
 === RUN   TestTotal/sums_price_times_quantity
---- PASS: TestTotal (0.00s)
-    --- PASS: TestTotal/empty_cart_is_zero (0.00s)
-    --- PASS: TestTotal/sums_price_times_quantity (0.00s)
+--- PASS: TestTotal ($TIME)
+    --- PASS: TestTotal/empty_cart_is_zero ($TIME)
+    --- PASS: TestTotal/sums_price_times_quantity ($TIME)
 === RUN   TestTotalRejectsNegativeQuantity
---- PASS: TestTotalRejectsNegativeQuantity (0.00s)
+--- PASS: TestTotalRejectsNegativeQuantity ($TIME)
 PASS
-ok  	example.com/cart	0.173s
+ok  	example	$TIME
 ```
 
 - Verdict: stdlib. The `testing` package and the `go test` command are part of the Go distribution. A file whose name ends in `_test.go` holds the tests, and `go build` leaves it out.

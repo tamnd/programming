@@ -1,4 +1,4 @@
-```rust run id=cart flags="--test" args="--test-threads=1"
+```rust test id=cart
 pub fn cart_total(items: &[(i64, i64)]) -> Result<i64, String> {
     let mut total = 0;
     for &(price, quantity) in items {
@@ -34,14 +34,14 @@ mod tests {
 }
 ```
 
-```output for=cart match=regex
+```output
 
 running 3 tests
 test tests::empty_cart_is_zero ... ok
 test tests::rejects_negative_quantity ... ok
 test tests::sums_price_times_quantity ... ok
 
-test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in \d+\.\d+s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in $TIME
 ```
 
 - Verdict: native. The `#[test]` attribute is part of the language, and the compiler builds a test harness from the functions that carry it. `cargo test` builds the crate with `rustc --test` and runs the result; this page runs `rustc --test` directly.

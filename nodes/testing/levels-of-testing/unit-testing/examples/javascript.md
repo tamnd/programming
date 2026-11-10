@@ -1,4 +1,4 @@
-```javascript run id=cart
+```javascript test id=cart
 import { test } from "node:test";
 import assert from "node:assert/strict";
 
@@ -26,10 +26,10 @@ test("rejects negative quantity", () => {
 });
 ```
 
-```output for=cart match=regex
-✔ empty cart is zero \(\d+\.\d+ms\)
-✔ sums price times quantity \(\d+\.\d+ms\)
-✔ rejects negative quantity \(\d+\.\d+ms\)
+```output
+✔ empty cart is zero ($TIME)
+✔ sums price times quantity ($TIME)
+✔ rejects negative quantity ($TIME)
 ℹ tests 3
 ℹ suites 0
 ℹ pass 3
@@ -37,7 +37,7 @@ test("rejects negative quantity", () => {
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms \d+\.\d+
+ℹ duration_ms $TIME
 ```
 
 - Verdict: stdlib. Node.js has the test runner `node:test` and the assertion module `node:assert` in its standard library. Run the file with `node`, or run `node --test` to find and run all test files.

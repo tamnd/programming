@@ -1,4 +1,4 @@
-```java norun reason=fragment id=cart file=CartTest.java
+```java test id=cart file=CartTest.java
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -40,9 +40,7 @@ class CartTest {
 }
 ```
 
-The JUnit Platform console launcher, run with `--details=tree` on the compiled class, prints:
-
-```text
+```output
 ╷
 ├─ JUnit Platform Suite ✔
 ├─ JUnit Jupiter ✔
@@ -52,7 +50,7 @@ The JUnit Platform console launcher, run with `--details=tree` on the compiled c
 │     └─ sumsPriceTimesQuantity() ✔
 └─ JUnit Vintage ✔
 
-Test run finished after 218 ms
+Test run finished after $TIME
 [         4 containers found      ]
 [         0 containers skipped    ]
 [         4 containers started    ]
@@ -65,7 +63,6 @@ Test run finished after 218 ms
 [         0 tests aborted         ]
 [         3 tests successful      ]
 [         0 tests failed          ]
-
 ```
 
 - Verdict: library. The Java standard library has no test framework. JUnit is the usual one. Its programming model, JUnit Jupiter, is in the `org.junit.jupiter` packages. Maven and Gradle run it in their test phase, and the console launcher runs it from the command line.

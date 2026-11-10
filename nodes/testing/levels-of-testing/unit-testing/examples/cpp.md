@@ -1,4 +1,4 @@
-```cpp norun reason=fragment id=cart file=cart_test.cpp
+```cpp test id=cart deps=deps/cpp/vcpkg.json file=cart_test.cpp
 #include <gtest/gtest.h>
 
 #include <stdexcept>
@@ -34,23 +34,21 @@ TEST(CartTotal, RejectsNegativeQuantity) {
 }
 ```
 
-Built with `-lgtest -lgtest_main` and run, the program prints:
-
-```text
-Running main() from /private/tmp/googletest-20260810-2279-a5yc4x/googletest-1.18.0/googletest/src/gtest_main.cc
+```output
+Running main() from gtest_main.cc
 [==========] Running 3 tests from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 3 tests from CartTotal
 [ RUN      ] CartTotal.EmptyCartIsZero
-[       OK ] CartTotal.EmptyCartIsZero (0 ms)
+[       OK ] CartTotal.EmptyCartIsZero ($TIME)
 [ RUN      ] CartTotal.SumsPriceTimesQuantity
-[       OK ] CartTotal.SumsPriceTimesQuantity (0 ms)
+[       OK ] CartTotal.SumsPriceTimesQuantity ($TIME)
 [ RUN      ] CartTotal.RejectsNegativeQuantity
-[       OK ] CartTotal.RejectsNegativeQuantity (0 ms)
-[----------] 3 tests from CartTotal (0 ms total)
+[       OK ] CartTotal.RejectsNegativeQuantity ($TIME)
+[----------] 3 tests from CartTotal ($TIME total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test suite ran. (0 ms total)
+[==========] 3 tests from 1 test suite ran. ($TIME total)
 [  PASSED  ] 3 tests.
 ```
 

@@ -1,4 +1,4 @@
-```python run id=cart
+```python test id=cart
 import unittest
 
 
@@ -28,10 +28,13 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-```output for=cart stream=stderr match=regex
-\.\.\.
--{70}
-Ran 3 tests in \d+\.\d+s
+```output stream=stderr
+test_empty_cart_is_zero (test_main.CartTotalTest.test_empty_cart_is_zero) ... ok
+test_rejects_negative_quantity (test_main.CartTotalTest.test_rejects_negative_quantity) ... ok
+test_sums_price_times_quantity (test_main.CartTotalTest.test_sums_price_times_quantity) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in $TIME
 
 OK
 ```
