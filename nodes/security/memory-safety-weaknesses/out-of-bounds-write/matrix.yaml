@@ -1,0 +1,28 @@
+kotlin:
+  status: native
+  reason: on the JVM, Kotlin arrays and lists are checked at run time as in the Java example; a bad index throws an exception and the write does not happen.
+  alternative: getOrNull and an explicit range check where the index comes from input.
+typescript:
+  status: native
+  reason: TypeScript runs on a JavaScript engine, which checks typed array indexes against the buffer as in the JavaScript example; the type system does not check index ranges.
+  alternative: an explicit range check; a write past the end of a typed array is dropped without an error.
+powershell:
+  status: native
+  reason: PowerShell arrays are .NET arrays, and the runtime checks each index as in the C# example.
+  alternative: compare the index with the Count property before the write.
+bash:
+  status: native
+  reason: Bash arrays are sparse, so an assignment to any index creates an element and does not write outside the array.
+  alternative: compare the index with the number of elements, ${#array[@]}, where the index comes from input.
+sql:
+  status: n/a
+  reason: SQL has no pointers or raw buffers; out-of-bounds writes happen inside database engines, which are written in C and C++.
+html:
+  status: n/a
+  reason: markup has no memory operations; the parser in the browser is where an overflow can happen.
+css:
+  status: n/a
+  reason: style sheets have no memory operations.
+regex:
+  status: n/a
+  reason: a pattern has no memory operations; the regex engine is where an overflow can happen.
