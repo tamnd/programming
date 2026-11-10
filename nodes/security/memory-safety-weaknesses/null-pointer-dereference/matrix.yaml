@@ -1,0 +1,29 @@
+kotlin:
+  status: native
+  reason: a Kotlin type does not include null unless it has a ?, and the compiler refuses a member access on a nullable type without a check; the documentation lists the only causes of a NullPointerException as an explicit throw, the !! operator, initialization issues and Java interoperation.
+  alternative: safe calls (?.), the Elvis operator (?:) and smart casts after a null check; avoid !! on values from input.
+typescript:
+  status: native
+  reason: with strictNullChecks, null and undefined have their own types, and a use where a value is expected is a type error.
+  alternative: turn on strict in tsconfig.json and narrow with a check or ?. before a use, as in the JavaScript example.
+powershell:
+  status: absent
+  reason: a variable can hold $null, and a method call on $null raises an error at run time; nothing checks for it before the script runs.
+  alternative: test with $null -eq $value before the use, and run with Set-StrictMode to find variables that are not set.
+bash:
+  status: n/a
+  reason: Bash has no pointers or object references; an unset variable expands to an empty string.
+  alternative: set -u makes the use of an unset variable an error.
+sql:
+  status: n/a
+  reason: SQL NULL is a value in three-valued logic, not a pointer; a comparison with NULL is unknown, not a crash.
+  alternative: use NOT NULL constraints and IS NULL tests.
+regex:
+  status: n/a
+  reason: a pattern has no pointers or references.
+html:
+  status: n/a
+  reason: markup has no pointers or references.
+css:
+  status: n/a
+  reason: a style sheet has no pointers or references.

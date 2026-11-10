@@ -1,0 +1,40 @@
+c:
+  status: n/a
+  reason: CSRF is a weakness of web applications; C has no web server in its standard library, and the defence is in the HTTP layer that the program uses.
+  alternative: use the CSRF check of the web server or framework.
+cpp:
+  status: n/a
+  reason: C++ has no web server in its standard library; the defence is in the HTTP layer that the program uses.
+  alternative: use the CSRF check of the web server or framework.
+rust:
+  status: n/a
+  reason: the Rust standard library has no web server; the defence is in the web framework.
+  alternative: use the CSRF or origin check of the framework, and compare tokens in constant time.
+kotlin:
+  status: idiom
+  reason: Kotlin has no web server in its standard library; on the JVM, Kotlin web applications use framework protection, as in the Java example.
+  alternative: keep the framework's CSRF protection on, and use SecureRandom and MessageDigest.isEqual for custom tokens.
+typescript:
+  status: idiom
+  reason: the defence is on the server, and TypeScript code on Node.js uses the same crypto functions and middleware as the JavaScript example.
+  alternative: a CSRF middleware, or a check of Sec-Fetch-Site with an Origin fallback.
+powershell:
+  status: n/a
+  reason: PowerShell scripts are rarely web applications that browsers call with cookies.
+  alternative: when a script serves HTTP, put it behind a server that checks tokens or Sec-Fetch-Site.
+bash:
+  status: n/a
+  reason: Bash does not serve web applications to browsers.
+sql:
+  status: n/a
+  reason: the database does not see the browser request; the check belongs to the web application.
+regex:
+  status: n/a
+  reason: a pattern does not handle requests; a regex check of the Referer header is weaker than an exact comparison of the Origin.
+html:
+  status: idiom
+  reason: an HTML form is the usual carrier of the forged request; the defence in markup is the hidden token field that the server puts in each form.
+  alternative: method="post" for every form that changes state, with a hidden token field from the server.
+css:
+  status: n/a
+  reason: a style sheet does not send state-changing requests.

@@ -1,0 +1,29 @@
+kotlin:
+  status: stdlib
+  reason: Kotlin Int and Long wrap on overflow, and the compiler does not report it; on the JVM, Math.multiplyExact and Math.addExact throw ArithmeticException, as in the Java example.
+  alternative: Math.addExact and Math.multiplyExact, or java.math.BigInteger for values with no natural limit.
+typescript:
+  status: idiom
+  reason: TypeScript numbers are JavaScript numbers, which lose precision above Number.MAX_SAFE_INTEGER; the type system does not track ranges.
+  alternative: Number.isSafeInteger checks, as in the JavaScript example, or the bigint type.
+powershell:
+  status: native
+  reason: when the result of an arithmetic operation is too large for its type, PowerShell widens the type of the result, for example from Int32 to Double, which can lose precision.
+  alternative: cast to [decimal], which raises an error when a result is too large.
+bash:
+  status: absent
+  reason: the Bash manual says that arithmetic uses the largest fixed-width integers available, with no check for overflow.
+  alternative: check the operands against the limits before the operation, or do the arithmetic in another language.
+sql:
+  status: n/a
+  reason: the behavior on overflow depends on the database engine and the column type; the weakness is in the engine and in the application that converts the values.
+  alternative: use column types with enough width, and check values in the application before they go in.
+regex:
+  status: n/a
+  reason: a pattern has no arithmetic.
+html:
+  status: n/a
+  reason: markup has no arithmetic.
+css:
+  status: n/a
+  reason: a style sheet does not compute sizes, counts or indices for a program.
