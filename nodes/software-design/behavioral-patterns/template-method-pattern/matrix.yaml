@@ -1,0 +1,28 @@
+kotlin:
+  status: idiom
+  reason: classes and members are final unless marked open, so a template method in an abstract class is fixed by default, and the steps are abstract or open members; no example is executed here because the test image has no kotlinc.
+  alternative: a function that takes the steps as function parameters, with default values for the hooks.
+c:
+  status: idiom
+  reason: C has no inheritance, but a function can run the fixed steps and call the varying steps through a struct of function pointers, as qsort calls its comparison function.
+  alternative: a function that takes one function pointer and a context pointer for each step.
+sql:
+  status: n/a
+  reason: SQL has no classes and no methods to override.
+bash:
+  status: idiom
+  reason: a script can run fixed steps and call functions by name for the varying steps, and a sourced file can define those functions before the call; a function that is not defined can fall back to a default.
+  alternative: pass the name of a function as an argument, and call it with "$1".
+powershell:
+  status: idiom
+  reason: PowerShell classes support inheritance and method overrides, so a base class method can call methods that a subclass overrides; no example is executed here because the test image has no pwsh.
+  alternative: a function that takes script blocks for the varying steps.
+regex:
+  status: n/a
+  reason: a pattern has no algorithm with steps to override.
+html:
+  status: n/a
+  reason: markup has no algorithms; the template element holds markup to copy, which is a different idea.
+css:
+  status: n/a
+  reason: style rules have no algorithm with steps to override.

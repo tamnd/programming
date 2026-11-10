@@ -22,7 +22,7 @@ see_also: [adapter-pattern, strategy-pattern, closures, observer-pattern]
 sources:
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 4, Decorator, page 175 (Intent, Also Known As, Motivation, Participants, Consequences, Implementation, Known Uses, Related Patterns)
+    locator: Chapter 4, Decorator (Intent, Also Known As, Motivation, Participants, Consequences, Implementation, Known Uses, Related Patterns)
   - book: isbn:9780321213358
     title: Joshua Kerievsky, Refactoring to Patterns, Addison-Wesley, 2004
     locator: Chapter 7, Simplification, Move Embellishment to Decorator (problem and solution)
@@ -76,7 +76,7 @@ sources:
     locator: StripPrefix, lines 2406 to 2425
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 4, Proxy, page 207 (Intent, Applicability, Related Patterns)
+    locator: Chapter 4, Proxy (Intent, Applicability, Related Patterns)
 ---
 
 ## Intent

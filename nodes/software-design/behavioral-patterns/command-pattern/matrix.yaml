@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: an interface with execute and undo, or a pair of lambdas, gives the pattern, and a sealed class gives commands as data; no example is executed here because the test image has no kotlinc.
+  alternative: a function type such as () -> Unit for a command with no undo.
+sql:
+  status: n/a
+  reason: a statement is a request, but SQL has no values that hold statements to run later; a transaction with ROLLBACK undoes changes, which is a different mechanism.
+bash:
+  status: idiom
+  reason: a function name, or an array that holds a command and its arguments, can be stored and run later with "${cmd[@]}"; a script can keep an array of such commands as a queue.
+  alternative: a trap that runs a stored command when the script exits.
+powershell:
+  status: idiom
+  reason: a script block is a value that holds code, and a list of pairs of script blocks gives execute and undo; no example is executed here because the test image has no pwsh.
+  alternative: a class with Execute and Undo methods.
+regex:
+  status: n/a
+  reason: a pattern holds no requests to run.
+html:
+  status: n/a
+  reason: markup holds no requests to run; a button's action comes from JavaScript or a form submission.
+css:
+  status: n/a
+  reason: style rules hold no requests to run.

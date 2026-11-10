@@ -1,0 +1,27 @@
+kotlin:
+  status: idiom
+  reason: Kotlin interfaces and classes give the classic form, and an object declaration can be a concrete factory with one instance; no example is executed here because the test image has no kotlinc.
+  alternative: a data class whose properties are factory functions, one for each product.
+c:
+  status: idiom
+  reason: C has no classes, but a struct of function pointers can hold one create function for each product, and each family gives one such struct.
+  alternative: a set of functions chosen at link time, one object file for each family.
+sql:
+  status: n/a
+  reason: a query creates rows, not objects, and has no interfaces to hide a family of classes behind.
+bash:
+  status: n/a
+  reason: Bash has no objects and no classes to create.
+powershell:
+  status: idiom
+  reason: PowerShell classes support interfaces and inheritance, so the classic form works; no example is executed here because the test image has no pwsh.
+  alternative: a hashtable of script blocks, one for each product of the family.
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: n/a
+  reason: markup creates no objects.
+css:
+  status: n/a
+  reason: style rules create no objects.

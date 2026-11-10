@@ -21,7 +21,7 @@ see_also: [strategy-pattern, singleton-pattern, extract-function, closures]
 sources:
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 3, Factory Method, page 107 (Intent, Also Known As, Motivation, Participants, Consequences, Implementation, Related Patterns)
+    locator: Chapter 3, Factory Method (Intent, Also Known As, Motivation, Participants, Consequences, Implementation, Related Patterns)
   - url: https://norvig.com/design-patterns/design-patterns.pdf
     title: Peter Norvig, Design Patterns in Dynamic Programming, Object World, May 1996
     locator: slide 10 (first-class types make Abstract-Factory, Flyweight, Factory-Method, State, Proxy and Chain-Of-Responsibility simpler)
@@ -75,7 +75,7 @@ sources:
     locator: iterator, lines 1029 to 1031
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 3, Abstract Factory, page 87 (Implementation, factories as singletons)
+    locator: Chapter 3, Abstract Factory (Implementation, factories as singletons)
 ---
 
 ## Intent

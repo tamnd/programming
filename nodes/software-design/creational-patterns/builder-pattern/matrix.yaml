@@ -1,0 +1,29 @@
+kotlin:
+  status: native
+  reason: Kotlin has named arguments and parameters with default values, so a constructor call names each part and leaves out the defaults; no example is executed here because the test image has no kotlinc.
+  alternative: a builder class with a lambda that sets its parts, for parts that arrive across many statements.
+c:
+  status: idiom
+  reason: C has no named or default arguments, but a designated initializer names the members of a struct, and the members that it leaves out are set to zero.
+  alternative: a function that takes a pointer to an options struct, with zero meaning the default.
+sql:
+  status: idiom
+  reason: an INSERT statement names its columns, and a column that it leaves out takes the value of its DEFAULT clause, so the statement does the work of named parts with defaults.
+  alternative: a NOT NULL or CHECK constraint, which checks the parts as a build method does.
+bash:
+  status: idiom
+  reason: a script collects the arguments of a command in an array, adds to it under conditions, and then runs the command with "${args[@]}"; this is a builder for a command line.
+  alternative: environment variables with default values from ${name:-default}.
+powershell:
+  status: idiom
+  reason: splatting passes a hashtable of named parameters to a command, and the script can add keys to the hashtable before the call; no example is executed here because the test image has no pwsh.
+  alternative: a function with named parameters that have default values.
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: n/a
+  reason: markup creates no objects.
+css:
+  status: n/a
+  reason: style rules create no objects.
