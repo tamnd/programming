@@ -1,0 +1,42 @@
+cpp:
+  status: idiom
+  reason: C++ has the same stack and allocation limits as C; std::vector and std::string grow on demand, so a size from the input needs a check before reserve or resize.
+  alternative: a depth counter in recursive code, a maximum size checked before each allocation, and std::regex only for patterns without nested quantifiers.
+csharp:
+  status: stdlib
+  reason: Regex accepts a match timeout and throws RegexMatchTimeoutException, RegexOptions.NonBacktracking gives a linear-time engine, and System.Text.Json has a MaxDepth option; ASP.NET Core adds request size limits.
+  alternative: a match timeout or the non-backtracking option for untrusted input, and a maximum request body size on the server.
+rust:
+  status: idiom
+  reason: Read::take caps a read, and safe Rust prevents memory corruption, but deep recursion still overflows the stack and the process stops; the regex crate, which is not in the standard library, runs in linear time.
+  alternative: Read::take with the limit plus one byte, a depth counter in recursive code, and a linear-time regular expression engine.
+kotlin:
+  status: idiom
+  reason: on the JVM, Kotlin has the same StackOverflowError and the same backtracking java.util.regex engine as the Java example.
+  alternative: a depth counter, InputStream.readNBytes with a limit, and patterns without nested quantifiers.
+typescript:
+  status: idiom
+  reason: TypeScript on Node.js uses the same byte counter and server timeouts as the JavaScript example.
+  alternative: a body reader with a size limit, and the headersTimeout and requestTimeout settings of the server.
+sql:
+  status: native
+  reason: a query whose cost depends on input, such as a search with a pattern or a large OFFSET, can use the database for a long time; databases have statement timeouts and limits on result size.
+  alternative: a statement timeout for the application role, LIMIT with a maximum page size, and indexes for the searches that users can start.
+bash:
+  status: idiom
+  reason: a script that reads input with no limit or starts a process for each line can use all memory or processes; ulimit sets limits for the shell and its children.
+  alternative: ulimit for memory, processes and file size, timeout for each command, and head -c to cap the input.
+powershell:
+  status: idiom
+  reason: Get-Content and Invoke-WebRequest read the whole content by default; .NET Regex in PowerShell accepts a match timeout.
+  alternative: read with a size check, and construct System.Text.RegularExpressions.Regex with a timeout for untrusted input.
+html:
+  status: n/a
+  reason: the maxlength attribute limits a form field in the browser, but the server must check the size of every request.
+css:
+  status: n/a
+  reason: style sheets do not receive requests.
+regex:
+  status: native
+  reason: backtracking engines can take exponential time on patterns with nested quantifiers or overlapping alternatives; linear-time engines such as RE2 and Go regexp do not.
+  alternative: a linear-time engine for untrusted input, patterns without nested quantifiers, possessive quantifiers or atomic groups where supported, and a length limit before the match.

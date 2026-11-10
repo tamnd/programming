@@ -1,0 +1,39 @@
+cpp:
+  status: stdlib
+  reason: std::from_chars in <charconv> reports the end of the number and an error code, with no locale and no white space skipping; the caller adds the range and format checks.
+  alternative: a parse function that returns std::optional or std::expected of a type whose constructor is private.
+csharp:
+  status: stdlib
+  reason: int.TryParse with NumberStyles.None and CultureInfo.InvariantCulture accepts ASCII digits only; the default style also accepts white space and a sign.
+  alternative: a record with validation in its constructor, or the attributes of System.ComponentModel.DataAnnotations such as Range and RegularExpression.
+kotlin:
+  status: stdlib
+  reason: String.toIntOrNull returns null for text that is not a number; on the JVM it follows the rules of Integer.parseInt, as in the Java example.
+  alternative: a value class with a private constructor and a factory function that parses.
+typescript:
+  status: idiom
+  reason: types exist only at compile time; a value typed as number at an API boundary is whatever the JSON held, so the program parses it at run time as in the JavaScript example.
+  alternative: a parse function that returns a branded type, so the rest of the code accepts only parsed values.
+sql:
+  status: native
+  reason: CHECK constraints, NOT NULL, foreign keys and typed columns reject bad values when the row is written, as a last layer behind the application.
+  alternative: CHECK (quantity BETWEEN 1 AND 100) on the column, and a foreign key to the table of products.
+bash:
+  status: idiom
+  reason: every variable is a string; a script tests the form with [[ $value =~ ^[0-9]{1,3}$ ]] before it uses the value in arithmetic, because $(( )) evaluates its operand as an expression.
+  alternative: a program in a language with typed parsing for input that is more than a single token.
+powershell:
+  status: stdlib
+  reason: the -match operator and [int]::TryParse check and convert, and the ValidateRange and ValidatePattern attributes check script parameters.
+  alternative: parameter validation attributes on each function that receives input.
+html:
+  status: native
+  reason: the attributes required, min, max, maxlength and pattern check form fields in the browser, which gives feedback to the user but is not a control, because the request can be sent without the form.
+  alternative: the same rules again on the server.
+css:
+  status: n/a
+  reason: style sheets do not receive input to validate.
+regex:
+  status: native
+  reason: an anchored pattern is the usual tool for an allow list of the form of a field; the meaning of $, \d and the case flags differs between engines.
+  alternative: a full match API such as re.fullmatch or Matcher.matches, ASCII character classes, and a length limit before matching.

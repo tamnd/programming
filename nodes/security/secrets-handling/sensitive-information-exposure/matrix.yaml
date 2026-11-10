@@ -1,0 +1,43 @@
+c:
+  status: idiom
+  reason: C has no logging or formatting hooks for secret types; a secret is a plain buffer, and a printf of the wrong variable or a core dump can show it.
+  alternative: keep secrets in one buffer that only a few functions read, clear it after use with a write the compiler cannot remove, such as memset_explicit in C23, and never pass it to a log function.
+cpp:
+  status: idiom
+  reason: C++ has no standard secret type; a class without an operator<< and with a destructor that clears its buffer keeps the value out of streams and logs.
+  alternative: a Secret class that has no stream operator and gives the value only through a named method.
+csharp:
+  status: library
+  reason: ASP.NET Core shows the developer exception page only in the Development environment, and its logging can redact values with a redactor; these are part of the .NET platform, not of the base class library.
+  alternative: a generic error response with a trace id, and a record that overrides ToString for any type that holds a secret.
+kotlin:
+  status: idiom
+  reason: a data class generates a toString with every property, as a Java record does; the fix is the same as in the Java example.
+  alternative: override toString in the data class, or keep the secret in a class that is not a data class.
+typescript:
+  status: idiom
+  reason: TypeScript on Node.js has the same risks as the JavaScript example; types do not stop extra fields from reaching JSON.stringify at run time.
+  alternative: a function that builds the response object field by field, with a return type that lists only the public fields.
+sql:
+  status: native
+  reason: database error messages can name tables, columns and values; GRANT on columns and views limits what a role can read.
+  alternative: catch database errors in the application and log them, and give the application role access only to the columns that it needs.
+bash:
+  status: idiom
+  reason: set -x prints each command with its expanded arguments, so a secret in a variable goes to the trace; a secret on the command line is also visible to other users in the process list.
+  alternative: turn off tracing around commands that use secrets, and pass secrets through a file with mode 600 or through standard input.
+powershell:
+  status: idiom
+  reason: transcripts and script block logging can record commands and values; a plain string variable that holds a password shows in that output.
+  alternative: read secrets with Get-Credential or Read-Host -AsSecureString, and keep them out of command arguments.
+html:
+  status: native
+  reason: comments, hidden fields and source maps in a page reach every visitor; a debug page or an error page can contain internal paths and versions.
+  alternative: remove comments and debug data in the build, and serve a fixed error page.
+css:
+  status: n/a
+  reason: hiding an element with CSS does not remove its content from the response.
+regex:
+  status: native
+  reason: patterns are a common way to mask secrets in logs, but a pattern finds only the forms that its author expected.
+  alternative: stop secrets at the source with a type that does not print them, and use patterns only as a second layer.
