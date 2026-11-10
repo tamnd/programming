@@ -1,0 +1,13 @@
+# The contract of the task "read a CSV file" (spec 10.2). The format is RFC 4180 with a header line, read as UTF-8.
+problem: read-a-csv-file
+entry: read_csv
+params:
+  - name: path
+    type: string
+    pre: "the path of a UTF-8 file, relative to the node directory, with an optional byte order mark at the start; commas separate the fields, and LF or CRLF ends a record; a field that holds a comma, a double quote or a line break is enclosed in double quotes, and a double quote in it is written twice; a field that is not enclosed holds no double quote; no CR stands alone; the first record is the header, and its names are distinct; no field is longer than 100000 characters"
+returns:
+  type: "list<map<string, string>>"
+  post: "one map for each record after the header, in file order, from each name of the header to the field in the same column; a line with no characters outside a quoted field is skipped, so an empty file, a header with no records and an empty last line add no record; the byte order mark is not part of the first name; spaces are part of a field; a line break inside a quoted field is returned as LF, also when the file has CRLF"
+checker: exact
+edge_classes: [quoted, newline-in-field, crlf, no-final-newline, empty-line, empty-field, whitespace, empty, bom, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and return no records: field-count when a record has more or fewer fields than the header, bad-quote when a quoted field has no closing quote or has text after its closing quote, and not-found when the file does not exist.

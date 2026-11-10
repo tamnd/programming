@@ -1,0 +1,11 @@
+{"name":"zero","class":["zero"],"args":{"start_ns":123456789,"end_ns":123456789},"expect":"0.000 ms"}
+{"name":"under-one-microsecond","class":["truncation"],"args":{"start_ns":0,"end_ns":999},"expect":"0.000 ms"}
+{"name":"truncate-not-round","class":["truncation"],"args":{"start_ns":0,"end_ns":1999999},"expect":"1.999 ms"}
+{"name":"leading-zero-in-fraction","class":["leading-zeros"],"args":{"start_ns":0,"end_ns":1005000},"expect":"1.005 ms"}
+{"name":"exact-ms","class":["leading-zeros"],"args":{"start_ns":0,"end_ns":7000000},"expect":"7.000 ms"}
+{"name":"one-hour","class":["large"],"args":{"start_ns":0,"end_ns":3600000000000},"expect":"3600000.000 ms"}
+{"name":"negative-readings","class":["negative-readings"],"args":{"start_ns":-5000000,"end_ns":-3500000},"expect":"1.500 ms"}
+{"name":"across-zero","class":["negative-readings"],"args":{"start_ns":-1000000,"end_ns":500000},"expect":"1.500 ms"}
+{"name":"beyond-2-pow-53","class":["precision"],"args":{"start_ns":9007199254740993,"end_ns":9007199255741992},"expect":"1.000 ms"}
+{"name":"near-int64-max","class":["int64-limit"],"args":{"start_ns":9223372035854775807,"end_ns":9223372036854775807},"expect":"1000.000 ms"}
+{"name":"near-int64-min","class":["int64-limit"],"args":{"start_ns":-9223372036854775808,"end_ns":-9223372035854775808},"expect":"1000.000 ms"}

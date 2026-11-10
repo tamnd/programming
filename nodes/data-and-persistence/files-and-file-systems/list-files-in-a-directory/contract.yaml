@@ -1,0 +1,16 @@
+# The contract of the task "list files in a directory" (spec 10.2). A case gives the tree that the test makes in a new empty directory, and the solution lists that directory.
+problem: list-files-in-a-directory
+entry: list_entries
+params:
+  - name: tree
+    type: list<string>
+    pre: "the entries that the test makes in a new empty directory before the call, in this order; a name that ends in / is a directory, 'link -> target' is a symbolic link with that target, and each other name is an empty file; names are UTF-8 with no control characters and no characters outside the Basic Multilingual Plane, and no two names in one directory differ only in letter case; the call gets the path of the new directory"
+  - name: recursive
+    type: bool
+    pre: "true to list the whole tree, false to list only the entries of the directory itself"
+returns:
+  type: list<string>
+  post: "the path of each entry relative to the directory, with / between the parts; a directory has a / at the end; a symbolic link is listed with no / and is never followed, also when it points to a directory; . and .. are not listed; names that start with . are listed; the list is in ascending order of Unicode code points"
+checker: exact
+edge_classes: [empty, hidden, sort-order, nested, symlink, special-chars, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and return no list. There the call gets the path in args.path, relative to the new directory: not-found when the path does not exist, not-a-directory when it names a file.

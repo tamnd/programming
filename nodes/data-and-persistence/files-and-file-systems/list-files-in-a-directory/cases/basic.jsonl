@@ -1,0 +1,3 @@
+{"name":"flat","args":{"tree":["b.txt","a.txt","c.txt"],"recursive":false},"expect":["a.txt","b.txt","c.txt"]}
+{"name":"nested","class":["nested"],"args":{"tree":["docs/","docs/guide.md","docs/img/","docs/img/logo.png","readme.md"],"recursive":true},"expect":["docs/","docs/guide.md","docs/img/","docs/img/logo.png","readme.md"]}
+{"name":"nested-shallow","class":["nested"],"args":{"tree":["docs/","docs/guide.md","docs/img/","docs/img/logo.png","readme.md"],"recursive":false},"expect":["docs/","readme.md"]}

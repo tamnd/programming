@@ -1,0 +1,3 @@
+{"name":"one-and-a-half-ms","args":{"start_ns":1000000000,"end_ns":1001500000},"expect":"1.500 ms"}
+{"name":"seconds","args":{"start_ns":0,"end_ns":2345678901},"expect":"2345.678 ms"}
+{"name":"under-one-ms","args":{"start_ns":50000,"end_ns":750000},"expect":"0.700 ms"}

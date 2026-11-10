@@ -1,0 +1,16 @@
+{"name":"quoted-comma","class":["quoted"],"args":{"path":"fixtures/quoted-comma.csv"},"expect":[{"name":"Lovelace, Ada","born":"1815"}]}
+{"name":"escaped-quote","class":["quoted"],"args":{"path":"fixtures/escaped-quote.csv"},"expect":[{"id":"1","quote":"She said \"hi\"."}]}
+{"name":"quoted-header","class":["quoted"],"args":{"path":"fixtures/quoted-header.csv"},"expect":[{"first name":"Ada","last name":"Lovelace"}]}
+{"name":"newline-in-field","class":["newline-in-field"],"args":{"path":"fixtures/newline-in-field.csv"},"expect":[{"id":"1","address":"12 High St\nLeeds"}]}
+{"name":"crlf-in-field","class":["newline-in-field","crlf"],"args":{"path":"fixtures/crlf-in-field.csv"},"expect":[{"id":"1","address":"12 High St\nLeeds"}]}
+{"name":"blank-line-in-field","class":["newline-in-field"],"args":{"path":"fixtures/blank-line-in-field.csv"},"expect":[{"id":"1","note":"one\n\ntwo"}]}
+{"name":"empty-last-line","class":["empty-line"],"args":{"path":"fixtures/empty-last-line.csv"},"expect":[{"a":"1","b":"2"}]}
+{"name":"blank-lines","class":["empty-line"],"args":{"path":"fixtures/blank-lines.csv"},"expect":[{"a":"1","b":"2"},{"a":"3","b":"4"}]}
+{"name":"empty-fields","class":["empty-field"],"args":{"path":"fixtures/empty-fields.csv"},"expect":[{"a":"","b":"","c":""}]}
+{"name":"quoted-empty","class":["empty-field"],"args":{"path":"fixtures/quoted-empty.csv"},"expect":[{"name":""}]}
+{"name":"spaces","class":["whitespace"],"args":{"path":"fixtures/spaces.csv"},"expect":[{"a":" x ","b":" y "}]}
+{"name":"header-only","class":["empty"],"args":{"path":"fixtures/header-only.csv"},"expect":[]}
+{"name":"empty-file","class":["empty"],"args":{"path":"fixtures/empty-file.csv"},"expect":[]}
+{"name":"bom","class":["bom"],"args":{"path":"fixtures/bom.csv"},"expect":[{"name":"Ada","age":"36"}]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"fixtures/non-ascii.csv"},"expect":[{"city":"Zürich","country":"Schweiz"},{"city":"東京","country":"日本"}]}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"fixtures/no-final-newline.csv"},"expect":[{"name":"Ada","age":"36"},{"name":"Alan","age":"41"}]}

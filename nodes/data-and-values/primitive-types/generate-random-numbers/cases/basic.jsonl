@@ -1,0 +1,4 @@
+{"name":"coin","args":{"words":[5,2,7],"lo":0,"hi":1,"count":3},"expect":[1,0,1]}
+{"name":"no-results","args":{"words":[],"lo":1,"hi":6,"count":0},"expect":[]}
+{"name":"die","args":{"words":[7,12,1000000,4294967295],"lo":1,"hi":6,"count":4},"expect":[2,1,5,4]}
+{"name":"negative-range","args":{"words":[100,2000000000,4294967294],"lo":-10,"hi":10,"count":3},"expect":[6,-5,-8]}
