@@ -1,0 +1,37 @@
+# The implementations of Rust (spec 04.4, 09.2). compat: true marks the columns of the compat tables (registers/implementations.yaml: rustc). Checked 2026-11-10.
+# The Cranelift and GCC code generation back ends of rustc are not separate implementations: https://rustc-dev-guide.rust-lang.org/backend/codegen.html
+- id: rustc
+  name: rustc
+  compat: true
+  reference: true
+  rust: "1.99"
+  editions: ["2015", "2018", "2021", "2024"]
+  note: The compiler of the Rust project. It usually generates code through LLVM.
+  latest: {v: 1.99.1, date: 2026-10-15}
+  licence: MIT OR Apache-2.0
+  source: https://blog.rust-lang.org/2026/10/15/Rust-1.99.1/
+- id: ferrocene
+  name: Ferrocene
+  compat: false
+  variant_of: rustc
+  rust: "1.97"
+  note: A downstream of rustc, qualified for safety-critical use. 26.08.0 includes the changes of Rust 1.96.0 to 1.97.1.
+  latest: {v: 26.08.0, date: 2026-10-16}
+  licence: MIT OR Apache-2.0
+  source: https://ferrocene.dev/blogs/ferrocene-26080/
+- id: gccrs
+  name: gccrs
+  compat: false
+  rust: "1.49"
+  note: An experimental GCC front end. The GCC 15 notes target core from Rust 1.49; the GCC 14 notes say that it cannot compile the standard library. The GCC 16 notes have no Rust entry. The release is the newest GCC release.
+  latest: {v: "16.2", date: 2026-08-07}
+  licence: GPL-3.0-or-later
+  source: https://gcc.gnu.org/gcc-15/changes.html#rust
+- id: mrustc
+  name: mrustc
+  compat: false
+  rust: "1.90"
+  note: A compiler written in C++ that emits C, made to bootstrap rustc. The project has tags but no GitHub releases; the date is the date of the tagged commit.
+  latest: {v: 0.12.0, date: 2026-02-17}
+  licence: MIT
+  source: https://github.com/thepowersgang/mrustc/tree/v0.12.0

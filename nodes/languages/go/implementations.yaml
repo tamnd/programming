@@ -1,0 +1,42 @@
+# The implementations of Go (spec 04.4, 09.2). compat: true marks the columns of the compat tables (registers/implementations.yaml: gc, gccgo, tinygo). Checked 2026-11-10.
+- id: gc
+  name: gc
+  compat: true
+  reference: true
+  go: "1.27"
+  note: The default compiler of the go command.
+  latest: {v: 1.27.3, date: 2026-10-19}
+  licence: BSD-3-Clause
+  source: https://go.dev/doc/devel/release#go1.27.minor
+- id: gccgo
+  name: gccgo
+  compat: true
+  go: "1.18"
+  note: GCC 12 and 13 implement the Go 1.18 standard library without generics. The GCC 14, 15 and 16 release notes have no Go entry. The release is the newest GCC release.
+  latest: {v: "16.2", date: 2026-08-07}
+  licence: GPL-3.0
+  source: https://gcc.gnu.org/gcc-13/changes.html#go
+- id: tinygo
+  name: TinyGo
+  compat: true
+  go: ["1.25", "1.26", "1.27"]
+  note: An LLVM-based compiler for microcontrollers, WebAssembly and command-line tools.
+  latest: {v: 0.44.0, date: 2026-10-28}
+  licence: BSD-3-Clause
+  source: https://github.com/tinygo-org/tinygo/releases/tag/v0.44.0
+- id: gopherjs
+  name: GopherJS
+  compat: false
+  go: "1.21"
+  note: Compiles Go to JavaScript.
+  latest: {v: 1.21.0, date: 2026-06-26}
+  licence: BSD-2-Clause
+  source: https://github.com/gopherjs/gopherjs/releases/tag/v1.21.0
+- id: yaegi
+  name: Yaegi
+  compat: false
+  go: ["1.21", "1.22"]
+  note: An interpreter on top of the Go runtime. The Go versions are those that its README states.
+  latest: {v: 0.16.3, date: 2026-11-05}
+  licence: Apache-2.0
+  source: https://github.com/traefik/yaegi/releases/tag/v0.16.3

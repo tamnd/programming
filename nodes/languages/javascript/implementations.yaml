@@ -1,0 +1,112 @@
+# The implementations of JavaScript (spec 04.4, 09.2, 09.3). compat: true marks the columns of the compat tables. The ecmascript column of the register is the standard ECMA-262 (releases.yaml), not an implementation. Checked 2026-11-10.
+- id: v8
+  name: V8 (Node.js)
+  compat: true
+  engine: V8
+  runtime: Node.js
+  note: Node.js 26.13.0 ships V8 14.6.202.34. The lines below are the Node.js release lines; dates from schedule.json, newest releases from index.json.
+  latest: {v: 26.13.0, date: 2026-10-28}
+  licence: MIT (Node.js), BSD-3-Clause (V8)
+  source: https://nodejs.org/dist/index.json
+  lines:
+    - line: "27"
+      status: alpha
+      alpha: 2026-10-28
+      released: 2027-04-22
+      planned: true
+      latest: {v: 27.0.0-alpha.0.0.0, date: 2026-10-29}
+      v8: 15.6.75.25
+      lts: 2027-10-20
+      eol: 2030-04-30
+    - line: "26"
+      codename: Lithium
+      status: active-lts
+      released: 2026-05-05
+      latest: {v: 26.13.0, date: 2026-10-28}
+      v8: 14.6.202.34
+      lts: 2026-10-28
+      maintenance: 2027-10-20
+      eol: 2029-04-30
+    - line: "25"
+      status: end-of-life
+      released: 2025-10-15
+      latest: {v: 25.9.0, date: 2026-03-31}
+      eol: 2026-06-01
+    - line: "24"
+      codename: Krypton
+      status: maintenance-lts
+      released: 2025-05-06
+      latest: {v: 24.22.2, date: 2026-10-27}
+      v8: 13.6.233.17
+      lts: 2025-10-28
+      maintenance: 2026-10-20
+      eol: 2028-04-30
+    - line: "22"
+      codename: Jod
+      status: maintenance-lts
+      released: 2024-04-24
+      latest: {v: 22.23.4, date: 2026-10-20}
+      v8: 12.4.254.21
+      lts: 2024-10-29
+      maintenance: 2025-10-21
+      eol: 2027-04-30
+    - line: "20"
+      codename: Iron
+      status: end-of-life
+      released: 2023-04-18
+      latest: {v: 20.20.2, date: 2026-03-24}
+      eol: 2026-04-30
+- id: spidermonkey
+  name: SpiderMonkey
+  compat: true
+  engine: SpiderMonkey
+  runtime: Firefox
+  latest: {v: 159.0.1, date: 2026-11-03}
+  note: The newest release of Firefox, which ships SpiderMonkey.
+  licence: MPL-2.0
+  source: https://product-details.mozilla.org/1.0/firefox.json
+- id: javascriptcore
+  name: JavaScriptCore
+  compat: true
+  engine: JavaScriptCore
+  runtime: Safari (WebKit)
+  latest: {v: "27.2", date: 2026-10-26}
+  note: The newest release of Safari, which ships JavaScriptCore.
+  licence: LGPL-2.0-or-later AND BSD-2-Clause
+  source: https://developer.apple.com/documentation/safari-release-notes/safari-27_2-release-notes
+- id: bun
+  name: Bun
+  compat: true
+  engine: JavaScriptCore
+  runtime: Bun
+  latest: {v: 1.4.4, date: 2026-10-22}
+  note: Bun statically links JavaScriptCore, which is LGPL-2.
+  licence: MIT
+  source: https://github.com/oven-sh/bun/releases/tag/bun-v1.4.4
+- id: deno
+  name: Deno
+  compat: true
+  engine: V8
+  runtime: Deno
+  latest: {v: 2.9.8, date: 2026-10-21}
+  licence: MIT
+  source: https://github.com/denoland/deno/releases/tag/v2.9.8
+- id: graaljs
+  name: GraalJS
+  compat: false
+  engine: GraalJS
+  runtime: GraalVM
+  javascript: ES2026
+  latest: {v: 25.5.5.0.3, date: 2026-11-03}
+  licence: UPL-1.0
+  source: https://github.com/oracle/graaljs/releases/tag/graal-25.5.5.0.3
+- id: quickjs
+  name: QuickJS
+  compat: false
+  engine: QuickJS
+  runtime: embedded in C programs
+  javascript: ES2025
+  latest: {v: 2026-06-04, date: 2026-06-04}
+  note: QuickJS names its releases by date.
+  licence: MIT
+  source: https://bellard.org/quickjs/
