@@ -1,0 +1,3 @@
+{"name":"ascii","args":{"s":"hello"},"expect":"olleh"}
+{"name":"two-words","args":{"s":"abc def"},"expect":"fed cba"}
+{"name":"palindrome","args":{"s":"racecar"},"expect":"racecar"}

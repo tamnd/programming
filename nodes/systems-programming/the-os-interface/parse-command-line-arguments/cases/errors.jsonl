@@ -1,0 +1,8 @@
+{"name":"unknown-short","args":{"args":["-x","a.txt"]},"error":"usage"}
+{"name":"unknown-long","args":{"args":["--color","a.txt"]},"error":"usage"}
+{"name":"missing-value","args":{"args":["-n"]},"error":"usage"}
+{"name":"missing-value-long","args":{"args":["--limit"]},"error":"usage"}
+{"name":"not-a-number","args":{"args":["-n","ten","a.txt"]},"error":"usage"}
+{"name":"not-a-number-long","args":{"args":["--limit=ten"]},"error":"usage"}
+{"name":"empty-value","args":{"args":["--limit=","a.txt"]},"error":"usage"}
+{"name":"verbose-with-value","args":{"args":["--verbose=yes"]},"error":"usage"}

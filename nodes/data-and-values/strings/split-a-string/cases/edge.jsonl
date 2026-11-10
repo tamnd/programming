@@ -1,0 +1,13 @@
+{"name":"empty","class":["empty"],"args":{"s":"","sep":",","limit":0},"expect":[""]}
+{"name":"no-separator","class":["no-separator"],"args":{"s":"abc","sep":",","limit":0},"expect":["abc"]}
+{"name":"leading-separator","class":["leading"],"args":{"s":",a,b","sep":",","limit":0},"expect":["","a","b"]}
+{"name":"trailing-separators","class":["trailing"],"args":{"s":"a,b,,","sep":",","limit":0},"expect":["a","b","",""]}
+{"name":"adjacent-separators","class":["adjacent"],"args":{"s":"a,,b","sep":",","limit":0},"expect":["a","","b"]}
+{"name":"only-separator","class":["only-separator"],"args":{"s":",","sep":",","limit":0},"expect":["",""]}
+{"name":"overlapping-match","class":["overlap"],"args":{"s":"aaa","sep":"aa","limit":0},"expect":["","a"]}
+{"name":"dot-separator","class":["metacharacter"],"args":{"s":"192.168.0.1","sep":".","limit":0},"expect":["192","168","0","1"]}
+{"name":"pipe-separator","class":["metacharacter"],"args":{"s":"a|b|c","sep":"|","limit":0},"expect":["a","b","c"]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"s":"día→naïve→日本→🙂","sep":"→","limit":0},"expect":["día","naïve","日本","🙂"]}
+{"name":"limit-one","class":["limit"],"args":{"s":"a,b,c","sep":",","limit":1},"expect":["a,b,c"]}
+{"name":"limit-above-count","class":["limit"],"args":{"s":"a,b","sep":",","limit":5},"expect":["a","b"]}
+{"name":"limit-keeps-trailing-empty","class":["limit","trailing"],"args":{"s":"a,b,","sep":",","limit":3},"expect":["a","b",""]}

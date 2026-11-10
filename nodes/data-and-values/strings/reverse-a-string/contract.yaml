@@ -1,0 +1,15 @@
+# The contract of the task "reverse a string" (spec 10.2). Each solution reverses the order of the Unicode code points of the string.
+problem: reverse-a-string
+entry: reverse_code_points
+params:
+  - name: s
+    type: string
+    pre: "a string of Unicode scalar values: valid UTF-8 where the language stores bytes, valid UTF-16 where it stores 16-bit units"
+returns:
+  type: string
+  post: "the same code points in the opposite order; the result has the same length as s in bytes, in UTF-16 units and in code points"
+checker: exact
+edge_classes: [empty, single, non-ascii, astral, combining, flag]
+# The toolchain reads only basic, edge and regress cases. Two more files use the same format.
+# cases/graphemes.jsonl holds the cases of a second entry, reverse_graphemes(s: string) -> string, which reverses the order of the extended grapheme clusters of UAX #29. The JavaScript, TypeScript, Java and C# solutions have it, because their standard libraries find grapheme boundaries.
+# cases/errors.jsonl holds byte strings, in hex, that are not valid UTF-8. The C, C++, Go and Bash solutions take bytes, and they must report the error invalid-utf8 and return no result.

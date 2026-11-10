@@ -1,0 +1,5 @@
+{"name":"comma","args":{"s":"a,b,c","sep":",","limit":0},"expect":["a","b","c"]}
+{"name":"csv-line","args":{"s":"Ada,1815,London","sep":",","limit":0},"expect":["Ada","1815","London"]}
+{"name":"multi-char-separator","args":{"s":"a::b::c","sep":"::","limit":0},"expect":["a","b","c"]}
+{"name":"space-separator","args":{"s":"one two  three","sep":" ","limit":0},"expect":["one","two","","three"]}
+{"name":"limit-two","args":{"s":"key=value=more","sep":"=","limit":2},"expect":["key","value=more"]}

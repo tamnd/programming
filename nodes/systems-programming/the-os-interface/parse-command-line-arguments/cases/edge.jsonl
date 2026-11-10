@@ -1,0 +1,12 @@
+{"name":"no-args","class":["empty"],"args":{"args":[]},"expect":[false,10,[]]}
+{"name":"long-equals","class":["long-equals"],"args":{"args":["--limit=7","notes.md"]},"expect":[false,7,["notes.md"]]}
+{"name":"repeated","class":["repeated"],"args":{"args":["-n","3","--limit","5","a.txt"]},"expect":[false,5,["a.txt"]]}
+{"name":"zero","class":["zero"],"args":{"args":["-n","0","a.txt"]},"expect":[false,0,["a.txt"]]}
+{"name":"end-of-options","class":["end-of-options"],"args":{"args":["-v","--","-n","--limit=4"]},"expect":[true,10,["-n","--limit=4"]]}
+{"name":"only-terminator","class":["end-of-options"],"args":{"args":["--"]},"expect":[false,10,[]]}
+{"name":"second-terminator","class":["end-of-options"],"args":{"args":["--","--"]},"expect":[false,10,["--"]]}
+{"name":"dash","class":["dash"],"args":{"args":["-"]},"expect":[false,10,["-"]]}
+{"name":"dash-after-option","class":["dash"],"args":{"args":["-n","2","-","b.txt"]},"expect":[false,2,["-","b.txt"]]}
+{"name":"empty-arg","class":["empty-arg"],"args":{"args":[""]},"expect":[false,10,[""]]}
+{"name":"space","class":["space"],"args":{"args":["-v","my file.txt"]},"expect":[true,10,["my file.txt"]]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"args":["--limit=4","日本語.txt","café.md"]},"expect":[false,4,["日本語.txt","café.md"]]}

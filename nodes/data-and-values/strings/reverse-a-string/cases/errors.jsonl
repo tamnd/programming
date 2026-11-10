@@ -1,0 +1,4 @@
+{"name":"invalid-byte","args":{"bytes":"fffe"},"error":"invalid-utf8"}
+{"name":"truncated","args":{"bytes":"636166c3"},"error":"invalid-utf8"}
+{"name":"encoded-surrogate","args":{"bytes":"61eda08062"},"error":"invalid-utf8"}
+{"name":"overlong","args":{"bytes":"c0af"},"error":"invalid-utf8"}

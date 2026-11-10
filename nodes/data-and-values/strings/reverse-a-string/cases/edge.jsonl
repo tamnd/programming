@@ -1,0 +1,8 @@
+{"name":"empty","class":["empty"],"args":{"s":""},"expect":""}
+{"name":"single","class":["single"],"args":{"s":"a"},"expect":"a"}
+{"name":"two-byte","class":["non-ascii"],"args":{"s":"naïve"},"expect":"evïan"}
+{"name":"three-byte","class":["non-ascii"],"args":{"s":"日本語"},"expect":"語本日"}
+{"name":"astral","class":["astral"],"args":{"s":"a🙂b"},"expect":"b🙂a"}
+{"name":"two-astral","class":["astral"],"args":{"s":"🙂😀"},"expect":"😀🙂"}
+{"name":"combining-mark","class":["combining"],"args":{"s":"e\u0301x"},"expect":"x\u0301e"}
+{"name":"flag","class":["flag","astral"],"args":{"s":"🇫🇷"},"expect":"🇷🇫"}

@@ -1,0 +1,21 @@
+# The contract of the task "split a string" (spec 10.2). The separator is a literal string, not a pattern, and every empty field stays in the result.
+problem: split-a-string
+entry: split
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+  - name: sep
+    type: string
+    pre: "a literal separator of one or more characters; no character in it has a special meaning"
+  - name: limit
+    type: int
+    pre: "0 for no limit, or the largest number of fields, from 1"
+returns:
+  type: "list<string>"
+  post: "the fields of s between the occurrences of sep, found from left to right without overlap; empty fields stay, so k occurrences give k + 1 fields and the empty string gives one empty field; with a limit n, the split stops after n - 1 occurrences and the last field holds the rest of s"
+checker: exact
+edge_classes: [empty, no-separator, leading, trailing, adjacent, only-separator, overlap, metacharacter, non-ascii, limit]
+# The toolchain has one entry for each contract. Two more entries are in other case files, and each solution tests them too.
+# cases/whitespace.jsonl: split_whitespace(s) -> list<string>. The fields are the runs of characters between runs of space, tab and LF. A leading or trailing run gives no field, and a string of only white space gives no fields. Pre: the only white space characters in s are space, tab and LF.
+# cases/regex.jsonl: split_regex(s, pattern) -> list<string>, with the rules of split and no limit, but sep is a regular expression. Pre: the pattern uses only literal characters, bracket expressions, * and +, so that every engine reads it the same way; it has no group and it never matches the empty string. The Rust standard library has no regular expressions, so the Rust solution has no split_regex.
