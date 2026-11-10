@@ -1,0 +1,16 @@
+bash:
+  status: idiom
+  reason: functions are not values, but a command name can come from a variable, so a function name in a variable acts as a function argument.
+  alternative: pass the name of a function and call it as "$f" args.
+sql:
+  status: n/a
+  reason: a query has no function values.
+regex:
+  status: n/a
+  reason: a pattern has no functions.
+html:
+  status: n/a
+  reason: markup has no functions.
+css:
+  status: n/a
+  reason: style rules have no function values.

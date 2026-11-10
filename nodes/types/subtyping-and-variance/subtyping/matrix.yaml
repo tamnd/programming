@@ -1,0 +1,16 @@
+sql:
+  status: absent
+  reason: a table or a row type has no subtype relation in the SQL of the examples.
+  alternative: PostgreSQL table inheritance, where a child table created with INHERITS has the columns of its parent and a query on the parent can include the rows of the children.
+bash:
+  status: n/a
+  reason: Bash has no types, only strings and arrays of strings.
+regex:
+  status: n/a
+  reason: a pattern has no types.
+html:
+  status: n/a
+  reason: markup has no types.
+css:
+  status: n/a
+  reason: style rules have no types.
