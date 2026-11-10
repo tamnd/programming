@@ -1,0 +1,44 @@
+python:
+  status: n/a
+  reason: the interpreter checks every index and frees an object only when no reference to it is left, so Python code cannot reach memory outside an object.
+  alternative: build CPython or a C extension with -fsanitize=address to check the C code under it.
+javascript:
+  status: n/a
+  reason: the engine checks every index into a typed array and collects garbage, so script cannot reach freed memory or memory outside a buffer.
+  alternative: native addons in C or C++ are built and tested with ASan.
+typescript:
+  status: n/a
+  reason: TypeScript runs on a JavaScript engine, which checks bounds and collects garbage.
+java:
+  status: n/a
+  reason: the JVM checks every array access and collects garbage, so Java code cannot overflow a buffer or use freed memory.
+  alternative: JNI code in C or C++ is built with ASan.
+go:
+  status: n/a
+  reason: Go checks every index and slice expression and collects garbage.
+  alternative: go build -asan links Go code with C code built with ASan through cgo, on linux/arm64, linux/amd64 and linux/loong64 only.
+csharp:
+  status: n/a
+  reason: the runtime checks array and span accesses and collects garbage; only unsafe code with pointers can go out of bounds.
+  alternative: native libraries that C# calls through P/Invoke are built with ASan.
+kotlin:
+  status: n/a
+  reason: on the JVM, every array access is checked and memory is collected, as in Java; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: n/a
+  reason: PowerShell objects are .NET objects, which are bounds-checked and collected.
+bash:
+  status: n/a
+  reason: Bash has no pointers and no manual memory management.
+sql:
+  status: n/a
+  reason: a query does not address memory.
+regex:
+  status: n/a
+  reason: a pattern does not address memory.
+html:
+  status: n/a
+  reason: markup does not address memory.
+css:
+  status: n/a
+  reason: style rules do not address memory.

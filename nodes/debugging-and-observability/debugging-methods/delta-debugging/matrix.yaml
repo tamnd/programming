@@ -1,0 +1,23 @@
+kotlin:
+  status: idiom
+  reason: the algorithm uses only strings, lists and a function value, as in Java; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: the Java program, which runs on the same JVM.
+bash:
+  status: idiom
+  reason: substring expansion ${text:offset:length} cuts the parts, and a function or a separate command serves as the test through its exit status.
+  alternative: git bisect run and other tools call a test script and read its exit status.
+powershell:
+  status: idiom
+  reason: String.Substring cuts the parts and a script block serves as the test; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query cannot run the program under test; a tool in a general language reduces a failing query or data set.
+regex:
+  status: n/a
+  reason: a pattern cannot run a test or repeat a search over parts of its input.
+html:
+  status: n/a
+  reason: HTML is a common input that delta debugging reduces, but a document cannot hold the algorithm.
+css:
+  status: n/a
+  reason: a style sheet can be the input that delta debugging reduces, but it cannot hold the algorithm.

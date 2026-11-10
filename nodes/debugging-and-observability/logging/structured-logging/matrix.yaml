@@ -1,0 +1,22 @@
+kotlin:
+  status: stdlib
+  reason: Kotlin's own standard library has no logger, but on the JVM a Kotlin program calls System.Logger and java.util.logging of the JDK, as in the Java example; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: printf writes a record with key=value pairs to standard error; the shell has no levels and no escaping of values.
+  alternative: the logger command sends a message to the system log on systems that have one.
+powershell:
+  status: idiom
+  reason: Write-Debug, Write-Verbose, Write-Information, Write-Warning and Write-Error write to separate streams, which act as levels; a record with fields is a hashtable converted with ConvertTo-Json; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query does not write log records; the database server keeps its own logs.
+regex:
+  status: n/a
+  reason: a pattern cannot write a record, although patterns often parse log lines.
+html:
+  status: n/a
+  reason: markup cannot write a record.
+css:
+  status: n/a
+  reason: a style sheet cannot write a record.
