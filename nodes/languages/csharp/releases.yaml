@@ -1,0 +1,49 @@
+# The releases of C# (spec 09.1). Keyed by C# version: each C# version ships with one major release of .NET and is the default language version for that target (the Defaults table of https://learn.microsoft.com/dotnet/csharp/language-reference/language-versioning). The dotnet field names that release; released, latest, lts, status and eol are those of the .NET release.
+# Sources: https://dotnet.microsoft.com/platform/support/policy/dotnet-core (dates, release types, statuses, end of support; "even-numbered releases are LTS", STS gets two years); https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json and <channel>/releases.json (newest patches, csharp-version of each SDK); https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-version-history and csharp-15 (C# versions); https://endoflife.date/api/v1/products/dotnet/ (cross-check). The support for .NET 8 and .NET 9 ends on 2026-11-10, the date of the check. Checked 2026-11-10.
+- version: "15"
+  dotnet: "11"
+  status: go-live
+  released: null
+  planned: true
+  latest: {v: 11.0.0-rc.3, date: 2026-10-25, prerelease: true}
+  eol: null
+  eol_rule: two years after the release of .NET 11 (STS)
+  notes: https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-15
+- version: "14"
+  dotnet: "10"
+  lts: true
+  status: active
+  released: 2025-11-11
+  latest: {v: 10.0.14, date: 2026-10-25}
+  eol: 2028-11-14
+  notes: https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-14
+- version: "13"
+  dotnet: "9"
+  status: maintenance
+  released: 2024-11-12
+  latest: {v: 9.0.22, date: 2026-10-25}
+  eol: 2026-11-10
+  notes: https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-13
+- version: "12"
+  dotnet: "8"
+  lts: true
+  status: maintenance
+  released: 2023-11-14
+  latest: {v: 8.0.33, date: 2026-10-25}
+  eol: 2026-11-10
+  notes: https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-12
+- version: "11"
+  dotnet: "7"
+  status: end-of-life
+  released: 2022-11-08
+  latest: {v: 7.0.20, date: 2024-05-28}
+  eol: 2024-05-14
+  notes: https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-11
+- version: "10"
+  dotnet: "6"
+  lts: true
+  status: end-of-life
+  released: 2021-11-08
+  latest: {v: 6.0.36, date: 2024-11-12}
+  eol: 2024-11-12
+  notes: https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-10

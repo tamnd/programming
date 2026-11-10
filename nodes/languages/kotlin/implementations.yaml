@@ -1,0 +1,43 @@
+# The implementations of Kotlin (spec 04.4, 09.2). The four entries are the targets of one compiler, the Kotlin compiler of JetBrains (https://github.com/JetBrains/kotlin), not separate implementations. compat: true marks the columns of the compat tables (registers/implementations.yaml: kotlin-jvm is the main column).
+# Sources: https://kotlinlang.org/docs/components-stability.html#current-stability-of-kotlin-components (stability levels); https://github.com/JetBrains/kotlin/releases/tag/v2.4.21 (newest release); https://github.com/JetBrains/kotlin/blob/v2.4.21/license/README.md (licence). Checked 2026-11-10.
+- id: kotlin-jvm
+  name: Kotlin/JVM
+  compat: true
+  reference: true
+  kotlin: "2.4"
+  stability: stable
+  stable_since: 1.0.0
+  note: Compiles to Java-compatible bytecode, for Java 8 by default and for Java 9 to 26 on request. It also targets Android.
+  latest: {v: 2.4.21, date: 2026-10-08}
+  licence: Apache-2.0
+  source: https://kotlinlang.org/docs/faq.html#what-does-kotlin-compile-down-to
+- id: kotlin-native
+  name: Kotlin/Native
+  compat: true
+  kotlin: "2.4"
+  stability: stable
+  stable_since: 1.9.0
+  note: An LLVM-based back end and a native standard library. The binaries run without a virtual machine on Linux, Windows (MinGW), the Android NDK and Apple platforms.
+  latest: {v: 2.4.21, date: 2026-10-08}
+  licence: Apache-2.0
+  source: https://kotlinlang.org/docs/native-overview.html
+- id: kotlin-js
+  name: Kotlin/JS
+  compat: true
+  kotlin: "2.4"
+  stability: stable
+  stable_since: 1.3.0
+  note: Transpiles Kotlin, the standard library and compatible dependencies to JavaScript (ES5, ES2015 or ES2020).
+  latest: {v: 2.4.21, date: 2026-10-08}
+  licence: Apache-2.0
+  source: https://kotlinlang.org/docs/js-overview.html
+- id: kotlin-wasm
+  name: Kotlin/Wasm
+  compat: true
+  kotlin: "2.4"
+  stability: beta
+  stable_since: null
+  note: Compiles to WebAssembly. Beta since 2.2.20. In a browser it needs the WebAssembly garbage collection and legacy exception handling proposals; outside the browser it can use WASI.
+  latest: {v: 2.4.21, date: 2026-10-08}
+  licence: Apache-2.0
+  source: https://kotlinlang.org/docs/wasm-overview.html

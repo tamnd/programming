@@ -1,0 +1,26 @@
+# The implementations of C# (spec 04.4, 09.2). compat: true marks the columns of the compat tables (registers/implementations.yaml: dotnet; csharp is the language version, the standard, not an implementation). The csharp key is the default C# version of the newest stable release. Checked 2026-11-10.
+- id: dotnet
+  name: .NET (SDK and runtime)
+  compat: true
+  reference: true
+  csharp: "14"
+  note: The runtime 10.0.14 comes with the SDK 10.0.403, which holds the Roslyn C# compiler. .NET 11 is at 11.0.0-rc.3 (2026-10-25), a go-live release candidate with C# 15.
+  latest: {v: 10.0.14, date: 2026-10-25}
+  licence: MIT
+  source: https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json
+- id: roslyn
+  name: Roslyn (Microsoft.CodeAnalysis.CSharp)
+  compat: false
+  csharp: "14"
+  note: The .NET Compiler Platform, the C# compiler of the .NET SDK, also published as a NuGet library for code analysis tools.
+  latest: {v: 5.9.0, date: 2026-08-17}
+  licence: MIT
+  source: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/5.9.0
+- id: mono
+  name: Mono
+  compat: false
+  csharp: null
+  note: An open source implementation of .NET Framework based on the ECMA standards. The last major release was in July 2019 and the last patch release in February 2024; WineHQ is now the steward of the project. The date is the date of the commit of the tag mono-6.12.0.206.
+  latest: {v: 6.12.0.206, date: 2024-02-13}
+  licence: MIT
+  source: https://github.com/mono/mono

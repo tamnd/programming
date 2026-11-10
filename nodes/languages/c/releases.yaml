@@ -1,0 +1,76 @@
+# The releases of C (spec 09.1): the editions of the standard ISO/IEC 9899, from ANSI X3.159-1989 to C23, and C2y, which WG14 is writing now. A standard has no end of life, and endoflife.date has no entry for C. So each entry has eol: null, and status gives the state of the document as its publisher states it: current for C23 (the WG14 home page calls it "the current C programming language standard"), withdrawn for the older ISO editions (the ISO catalogue gives the date of withdrawal as withdrawn), superseded for the ANSI standard of 1989 (ISO/IEC 9899:1990 took its place; no ANSI status page was checked), in-development for C2y.
+# std is the value of __STDC_VERSION__ for the edition (N3220, Annex M; C89 and C90 define no value). draft is the public draft that WG14 lists as similar to the edition.
+# Sources: https://www.open-std.org/jtc1/sc22/wg14/www/projects (revisions, similar drafts, milestones); https://www.iso.org/standard/<id>.html (publication and withdrawal dates from the life cycle of each edition); https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub160.pdf (ANSI approval date); https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf (Annex M). Checked 2026-11-10.
+- version: C2y
+  status: in-development
+  released: null
+  planned: true
+  draft: n3998
+  eol: null
+  note: ISO has not published C2y. WG14 lists the working draft N3998 of 2026-10-25 and gives no publication date.
+  url: https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3998.pdf
+- version: C23
+  iso: ISO/IEC 9899:2024
+  edition: 5
+  std: 202311L
+  status: current
+  released: 2024-10-31
+  draft: n3220
+  eol: null
+  url: https://www.iso.org/standard/82075.html
+- version: C17
+  iso: ISO/IEC 9899:2018
+  edition: 4
+  std: 201710L
+  status: withdrawn
+  released: 2018-07-05
+  withdrawn: 2024-10-31
+  draft: n2310
+  eol: null
+  url: https://www.iso.org/standard/74528.html
+- version: C11
+  iso: ISO/IEC 9899:2011
+  edition: 3
+  std: 201112L
+  status: withdrawn
+  released: 2011-12-08
+  withdrawn: 2018-07-05
+  draft: n1570
+  eol: null
+  url: https://www.iso.org/standard/57853.html
+- version: C99
+  iso: ISO/IEC 9899:1999
+  edition: 2
+  std: 199901L
+  status: withdrawn
+  released: 1999-12-16
+  withdrawn: 2011-12-08
+  draft: n1256
+  eol: null
+  url: https://www.iso.org/standard/29237.html
+- version: C95
+  iso: ISO/IEC 9899:1990/Amd 1:1995
+  std: 199409L
+  status: withdrawn
+  released: 1995-03-30
+  withdrawn: 1999-12-16
+  draft: null
+  eol: null
+  note: An amendment to C90, not a new edition.
+  url: https://www.iso.org/standard/23909.html
+- version: C90
+  iso: ISO/IEC 9899:1990
+  edition: 1
+  status: withdrawn
+  released: 1990-12-20
+  withdrawn: 1999-12-16
+  draft: null
+  eol: null
+  url: https://www.iso.org/standard/17782.html
+- version: C89
+  ansi: ANSI X3.159-1989
+  status: superseded
+  released: 1989-12-14
+  draft: null
+  eol: null
+  url: https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub160.pdf
