@@ -1,0 +1,19 @@
+powershell:
+  status: idiom
+  reason: hashtables can stand for the nodes and a switch on a kind field can select the case; no example file because PowerShell is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: functions, recursion and associative arrays can hold a small tree and walk it, but every value is a string in a global variable, so the interpreter is slow and hard to read.
+  alternative: an interpreter written in a general language, called from the script.
+sql:
+  status: n/a
+  reason: a query language is not a host for an evaluator over a tree of statements.
+regex:
+  status: n/a
+  reason: a pattern language has no data structures and no recursion over them.
+html:
+  status: n/a
+  reason: markup has no evaluation.
+css:
+  status: n/a
+  reason: style rules have no recursion over data.
