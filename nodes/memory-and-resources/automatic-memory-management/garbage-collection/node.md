@@ -216,6 +216,29 @@ A generational collector divides the heap by age. Most objects die soon after th
 
 A concurrent collector marks objects while the program runs, so the program changes the graph during the trace. The usual model colours each object white (not reached yet), grey (reached, but its references not yet scanned) or black (reached and scanned). The collector is correct when no black object points to a white object, because then every white object that is left at the end is garbage. A write barrier keeps this invariant when the program stores a pointer.[^4]
 
+The pseudocode shows a mark-sweep collection with the three colours. `DROP` is the reference counting update, for comparison. The scene below runs both on small heaps.
+
+```pseudo
+DROP(x)                                   ▷ reference counting: one reference to x goes away
+L1  count(x) ← count(x) − 1
+L2  if count(x) = 0 then
+L3      for each reference from x to an object y do DROP(y)
+L4      free x
+
+COLLECT()                                 ▷ tracing: mark from the roots, then sweep
+L5  colour each object of the heap white
+L6  for each root r do
+L7      if r refers to a white object y then colour y grey
+L8  while some object is grey do
+L9      take a grey object x
+L10     for each reference from x to an object y do
+L11         if y is white then colour y grey
+L12     colour x black                    ▷ no black object refers to a white object
+L13 for each object x of the heap do       ▷ the sweep
+L14     if x is white then free x
+L15     else colour x white               ▷ ready for the next collection
+```
+
 CPython finds cycles with a variant of tracing that does not need the roots. For each container object in the generation that it collects, it copies the reference count and then subtracts each reference that comes from inside the set. An object with a count above zero after this step has a reference from outside, so it is reachable. Everything that these objects reach is reachable too. The rest is a group of objects that refer only to each other, and the collector frees them.[^8] A collection of the youngest generation starts when the number of allocations minus deallocations passes the first threshold.[^7]
 
 ```python run id=threshold
