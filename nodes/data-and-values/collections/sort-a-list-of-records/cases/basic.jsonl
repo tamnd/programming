@@ -1,0 +1,2 @@
+{"name":"mixed","args":{"employees":[["Ada","eng",120],["Bob","sales",90],["Cy","eng",150],["Di","ops",100]]},"expect":[["Cy","eng",150],["Ada","eng",120],["Di","ops",100],["Bob","sales",90]]}
+{"name":"same-salary-other-dept","args":{"employees":[["Ann","ops",100],["Ben","eng",100],["Cat","hr",100]]},"expect":[["Ben","eng",100],["Cat","hr",100],["Ann","ops",100]]}

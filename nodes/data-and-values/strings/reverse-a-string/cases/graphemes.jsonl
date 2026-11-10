@@ -1,0 +1,8 @@
+{"name":"ascii","args":{"s":"abc"},"expect":"cba"}
+{"name":"empty","args":{"s":""},"expect":""}
+{"name":"combining-mark","args":{"s":"e\u0301x"},"expect":"xe\u0301"}
+{"name":"flags","args":{"s":"🇫🇷🇩🇪"},"expect":"🇩🇪🇫🇷"}
+{"name":"zwj-family","args":{"s":"a👨\u200d👩\u200d👧b"},"expect":"b👨\u200d👩\u200d👧a"}
+{"name":"skin-tone","args":{"s":"👍🏽!"},"expect":"!👍🏽"}
+{"name":"crlf","args":{"s":"a\r\nb"},"expect":"b\r\na"}
+{"name":"hangul-jamo","args":{"s":"\u1100\u1161x"},"expect":"x\u1100\u1161"}

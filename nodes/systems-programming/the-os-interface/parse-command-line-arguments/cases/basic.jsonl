@@ -1,0 +1,3 @@
+{"name":"files-only","args":{"args":["a.txt","b.txt"]},"expect":[false,10,["a.txt","b.txt"]]}
+{"name":"short-options","args":{"args":["-v","-n","3","a.txt"]},"expect":[true,3,["a.txt"]]}
+{"name":"long-options","args":{"args":["--verbose","--limit","5","a.txt","b.txt"]},"expect":[true,5,["a.txt","b.txt"]]}

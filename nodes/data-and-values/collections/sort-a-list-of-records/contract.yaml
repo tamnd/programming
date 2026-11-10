@@ -1,0 +1,13 @@
+# The contract of the task "sort a list of records" (spec 10.2). Each record is an employee (name, dept, salary). The sort orders by dept, then by salary from high to low, and keeps the input order of records with equal keys.
+problem: sort-a-list-of-records
+entry: sort_employees
+params:
+  - name: employees
+    type: "list<tuple<string, string, int>>"
+    pre: "each record is (name, dept, salary); name and dept hold only characters below U+D800 and no tab or newline, so UTF-8 byte order, UTF-16 code unit order and code point order agree; salary fits in a signed 32-bit integer"
+returns:
+  type: "list<tuple<string, string, int>>"
+  post: "the same records, ordered by dept in code point order, then by salary from high to low; records with the same dept and salary keep their input order (a stable sort)"
+checker: exact
+edge_classes: [empty, single, sorted, reversed, ties, case, non-ascii, negative, overflow]
+# The toolchain loads only basic, edge and regress cases. cases/locale.jsonl holds the cases of a second function, sort_names(names: list<string>, locale: string) -> list<string>, which orders names by the collation rules of a locale. Only the JavaScript, TypeScript and Java solutions implement it, because Node.js and the JDK carry their own collation data. The .NET comparer of a culture depends on ICU on Linux, and other standard libraries depend on the locales that the machine has.

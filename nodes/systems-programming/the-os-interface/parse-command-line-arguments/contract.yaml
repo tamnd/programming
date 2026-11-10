@@ -1,0 +1,13 @@
+# The contract of the task "parse command-line arguments" (spec 10.2). Each solution parses the arguments of the tool "count [-v | --verbose] [-n N | --limit N | --limit=N] [--] [FILE...]", without the program name, and reports a usage error as a value or an exception, not by an exit of the process.
+problem: parse-command-line-arguments
+entry: parse_args
+params:
+  - name: args
+    type: list<string>
+    pre: "the arguments after the program name; no option follows a file operand; short options are not grouped (no -vn3) and a value of -n is a separate argument (no -n3 and no -n=3); a long option is not abbreviated; N is a decimal number from 0 to 2147483647 with no sign and no leading zero"
+returns:
+  type: "tuple<bool, int, list<string>>"
+  post: "(verbose, limit, files): verbose is true if -v or --verbose occurs; limit is the value of the last -n or --limit, or 10; files are the operands in their order; the first -- ends the options and is not a file, and every argument after it is a file; a lone - is a file"
+checker: exact
+edge_classes: [empty, long-equals, repeated, zero, end-of-options, dash, empty-arg, space, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the argument lists on which each solution must report a usage error and return no result: an unknown option, an option with no value, a value that is not a decimal number, and a value given to --verbose.

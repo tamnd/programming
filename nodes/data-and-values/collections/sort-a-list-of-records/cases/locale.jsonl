@@ -1,0 +1,8 @@
+{"name":"en-accents","args":{"names":["zebra","Émile","apple","Eve","eagle"],"locale":"en"},"expect":["apple","eagle","Émile","Eve","zebra"]}
+{"name":"en-case","args":{"names":["b","B","a","A"],"locale":"en"},"expect":["a","A","b","B"]}
+{"name":"en-accent-order","args":{"names":["resume","résumé","Resume","rèsume"],"locale":"en"},"expect":["resume","Resume","résumé","rèsume"]}
+{"name":"sv-letters","args":{"names":["ö","z","o","a","å","ä"],"locale":"sv"},"expect":["a","o","z","å","ä","ö"]}
+{"name":"sv-names","args":{"names":["Örjan","Zara","Olof","Åsa","Anna","Ärla"],"locale":"sv"},"expect":["Anna","Olof","Zara","Åsa","Ärla","Örjan"]}
+{"name":"de-umlaut","args":{"names":["Äpfel","Zebra","Apfel","apfel"],"locale":"de"},"expect":["apfel","Apfel","Äpfel","Zebra"]}
+{"name":"da-aa","args":{"names":["Aase","Zelda","Ågot","Øjvind","Ærø"],"locale":"da"},"expect":["Zelda","Ærø","Øjvind","Ågot","Aase"]}
+{"name":"es-enye","args":{"names":["llama","luz","lzx","ñu","nube","oso"],"locale":"es"},"expect":["llama","luz","lzx","nube","ñu","oso"]}

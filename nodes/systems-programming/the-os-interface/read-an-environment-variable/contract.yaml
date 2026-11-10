@@ -1,0 +1,19 @@
+# The contract of the task "read an environment variable" (spec 10.2). Each solution reads one variable from the environment of its own process. The rules are those of POSIX: a name is case-sensitive, and a value is a string that can be empty.
+problem: read-an-environment-variable
+entry: get_env
+params:
+  - name: env
+    type: "map<string, string>"
+    pre: "the variables that the test puts in the environment of the process before the call; the test removes the variable called name when env does not hold it; get_env does not get env as an argument, it reads the environment"
+  - name: name
+    type: string
+    pre: "a name that is not empty and holds no '=' and no NUL"
+  - name: default
+    type: string
+    pre: "any string, also the empty string"
+returns:
+  type: string
+  post: "the value of the variable called name when the environment holds it, also when the value is the empty string; else default"
+checker: exact
+edge_classes: [missing, empty, spaces, equals, newline, non-ascii, case, inherited-name]
+# The values in the cases are UTF-8. POSIX allows any bytes except NUL in a value, but JSON cannot hold such bytes, so no case file holds them. With such a value, Rust env::var gives VarError::NotUnicode, and the Rust test checks that. Python decodes the bytes with the surrogateescape error handler.

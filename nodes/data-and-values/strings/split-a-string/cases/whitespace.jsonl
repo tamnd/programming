@@ -1,0 +1,6 @@
+{"name":"single-spaces","args":{"s":"a b c"},"expect":["a","b","c"]}
+{"name":"runs-and-ends","args":{"s":"  lead  and trail  "},"expect":["lead","and","trail"]}
+{"name":"tabs-and-newlines","args":{"s":"a\t\tb\nc\n"},"expect":["a","b","c"]}
+{"name":"one-word","args":{"s":"word"},"expect":["word"]}
+{"name":"empty","args":{"s":""},"expect":[]}
+{"name":"only-white-space","args":{"s":" \t\n "},"expect":[]}

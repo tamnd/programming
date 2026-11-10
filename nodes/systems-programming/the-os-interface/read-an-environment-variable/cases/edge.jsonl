@@ -1,0 +1,9 @@
+{"name":"missing","class":["missing"],"args":{"env":{},"name":"APP_PORT","default":"80"},"expect":"80"}
+{"name":"empty-value","class":["empty"],"args":{"env":{"APP_MODE":""},"name":"APP_MODE","default":"production"},"expect":""}
+{"name":"empty-default","class":["missing","empty"],"args":{"env":{},"name":"APP_MODE","default":""},"expect":""}
+{"name":"spaces","class":["spaces"],"args":{"env":{"APP_TITLE":"  two  spaces  "},"name":"APP_TITLE","default":"none"},"expect":"  two  spaces  "}
+{"name":"equals","class":["equals"],"args":{"env":{"APP_QUERY":"key=value=more"},"name":"APP_QUERY","default":"none"},"expect":"key=value=more"}
+{"name":"newline","class":["newline"],"args":{"env":{"APP_TEXT":"first\nsecond"},"name":"APP_TEXT","default":"none"},"expect":"first\nsecond"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"env":{"APP_GREETING":"xin chào, 日本語, 🙂"},"name":"APP_GREETING","default":"none"},"expect":"xin chào, 日本語, 🙂"}
+{"name":"case","class":["case"],"args":{"env":{"APP_PORT":"8080"},"name":"app_port","default":"80"},"expect":"80"}
+{"name":"inherited-name","class":["inherited-name"],"args":{"env":{},"name":"toString","default":"none"},"expect":"none"}

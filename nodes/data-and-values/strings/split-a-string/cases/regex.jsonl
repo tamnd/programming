@@ -1,0 +1,6 @@
+{"name":"comma-or-semicolon","args":{"s":"a, b;c ,d","pattern":"[ ]*[,;][ ]*"},"expect":["a","b","c","d"]}
+{"name":"digit-runs","args":{"s":"a1b22c333","pattern":"[0-9]+"},"expect":["a","b","c",""]}
+{"name":"adjacent-matches","args":{"s":"a,;b","pattern":"[,;]"},"expect":["a","","b"]}
+{"name":"leading-and-trailing","args":{"s":";a;","pattern":";"},"expect":["","a",""]}
+{"name":"empty","args":{"s":"","pattern":"[,;]"},"expect":[""]}
+{"name":"no-match","args":{"s":"abc","pattern":"[0-9]+"},"expect":["abc"]}
