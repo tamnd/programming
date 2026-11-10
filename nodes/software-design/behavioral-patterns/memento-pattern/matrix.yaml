@@ -1,0 +1,26 @@
+c:
+  status: idiom
+  reason: an opaque struct type declared in a header and defined in the source file of the originator; the caretaker holds a pointer to it and cannot read its fields.
+kotlin:
+  status: idiom
+  reason: a nested class with a private constructor and private properties, or a data class whose copy function makes the snapshot; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, with a nested class whose members are private.
+sql:
+  status: idiom
+  reason: SAVEPOINT and ROLLBACK TO SAVEPOINT save and restore the state of a transaction, and the database, not the client, holds the saved state.
+bash:
+  status: n/a
+  reason: the shell has no objects with private state; a copy of a variable or a file before a change is the nearest form.
+powershell:
+  status: idiom
+  reason: a class with hidden properties and a method that returns a copy of them; no example is executed here because the test image has no pwsh.
+  alternative: the C# example, with an empty interface and a private nested record.
+regex:
+  status: n/a
+  reason: a pattern has no state to save.
+html:
+  status: n/a
+  reason: markup has no code; history.pushState in the DOM API is a caretaker, but it belongs to JavaScript.
+css:
+  status: n/a
+  reason: style rules have no state to save.

@@ -1,0 +1,26 @@
+c:
+  status: idiom
+  reason: an abstraction struct holds a pointer to an implementor struct of function pointers and a context pointer; an opaque pointer to an incomplete struct type in a header is the Pimpl form.
+kotlin:
+  status: idiom
+  reason: an abstract class holds a property of an interface type, as in Java; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, with an interface and an abstract class.
+sql:
+  status: n/a
+  reason: SQL has no classes or interfaces to split into two hierarchies.
+bash:
+  status: n/a
+  reason: the shell has no types; a variable that holds the name of a function to call is the nearest form.
+powershell:
+  status: idiom
+  reason: a class can hold a property whose type is an abstract base class or an interface; no example is executed here because the test image has no pwsh.
+  alternative: a class that holds a scriptblock or an object with known methods.
+regex:
+  status: n/a
+  reason: a pattern has no abstractions or implementations to separate.
+html:
+  status: n/a
+  reason: markup has no classes or interfaces.
+css:
+  status: n/a
+  reason: style rules have no classes or interfaces in the sense of the pattern.
