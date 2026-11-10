@@ -1,0 +1,44 @@
+c:
+  status: library
+  reason: ISO C has no network client; programs use a library such as libcurl, where CURLOPT_FOLLOWLOCATION is off unless the program turns it on and CURLOPT_PROTOCOLS_STR limits the schemes.
+  alternative: an allow-list of hosts, a scheme limit and no redirects in the libcurl options, and a check of the connected address.
+cpp:
+  status: library
+  reason: the C++ standard library has no HTTP client; programs use libcurl or a C++ HTTP library, with the same weakness and the same checks.
+  alternative: the options of the HTTP library for schemes and redirects, and an allow-list of destinations.
+rust:
+  status: library
+  reason: the Rust standard library has TCP sockets but no HTTP client; crates such as reqwest follow redirects by default.
+  alternative: a redirect policy of none in the client, an allow-list of hosts on the parsed URL, and a check of the resolved address before the connection.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses java.net.http.HttpClient as in the Java example; its redirect policy is NEVER unless the program chooses another.
+  alternative: the allow-list check of the Java example on the parsed URI.
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses fetch and URL as in the JavaScript example; the types do not tell an internal address from a public one.
+  alternative: the allow-list of origins and redirect "error", as in the JavaScript example.
+csharp:
+  status: stdlib
+  reason: HttpClient follows redirects when HttpClientHandler.AllowAutoRedirect is true, which is the default; SocketsHttpHandler.ConnectCallback can check the address before the connection.
+  alternative: AllowAutoRedirect set to false, an allow-list check on the parsed Uri, and a ConnectCallback that refuses internal addresses.
+powershell:
+  status: stdlib
+  reason: Invoke-WebRequest and Invoke-RestMethod fetch any URL that a script passes to them and follow redirects.
+  alternative: compare the parsed [uri] with an allow-list before the call, and pass -MaximumRedirection 0.
+bash:
+  status: absent
+  reason: Bash has no HTTP client; a script that passes a URL from input to curl or wget has the weakness.
+  alternative: an allow-list check of the host before the call, curl --proto =https to limit the scheme, and no -L option so that curl does not follow redirects.
+sql:
+  status: n/a
+  reason: standard SQL has no statement that fetches a URL; database extensions that make network requests need the same allow-list.
+regex:
+  status: n/a
+  reason: a pattern does not send requests; a regular expression on URL text is a weak check, so parse the URL and compare the parts.
+html:
+  status: n/a
+  reason: markup makes requests from the browser, not from the server.
+css:
+  status: n/a
+  reason: style sheets make requests from the browser, not from the server.

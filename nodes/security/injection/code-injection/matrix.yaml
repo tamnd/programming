@@ -1,0 +1,45 @@
+c:
+  status: n/a
+  reason: C is compiled ahead of time and has no eval; the related weaknesses are loading a library with dlopen from a path in input, and memory corruption, which is not this weakness.
+cpp:
+  status: n/a
+  reason: C++ is compiled ahead of time and has no eval; loading a plugin from a path in input is the related risk.
+rust:
+  status: n/a
+  reason: Rust is compiled ahead of time and has no eval; an embedded script engine from a crate brings back the weakness.
+java:
+  status: library
+  reason: Java SE has no eval and no bundled script engine since JDK 15 removed Nashorn; expression languages such as SpEL, OGNL and MVEL, and template engines, evaluate text from input (CWE-917).
+  alternative: keep expressions and templates in the code, pass input as variables, and use the restricted evaluation contexts of the library.
+kotlin:
+  status: library
+  reason: as in Java, the risk comes from expression languages, template engines and script engines on the class path.
+  alternative: the same as in Java.
+csharp:
+  status: library
+  reason: .NET has no eval; the Roslyn scripting API is a NuGet package, and Razor templates and expression libraries can compile text from input.
+  alternative: parse a small grammar, or map names from input to delegates in a dictionary.
+typescript:
+  status: stdlib
+  reason: TypeScript compiles to JavaScript and has the same eval, Function and setTimeout forms; the types do not mark text as code.
+  alternative: the parser of the JavaScript example and the same ESLint rules.
+bash:
+  status: native
+  reason: eval, source and bash -c run text as shell code; this is the shell form of os-command-injection.
+  alternative: pass input as arguments and arrays, never through eval; see os-command-injection.
+powershell:
+  status: native
+  reason: Invoke-Expression runs a string as PowerShell code, and so do ScriptBlock.Create and Add-Type with source text.
+  alternative: call cmdlets with parameters and splatting; PSScriptAnalyzer rule AvoidUsingInvokeExpression flags the call.
+sql:
+  status: n/a
+  reason: dynamic SQL built from input is sql-injection.
+regex:
+  status: n/a
+  reason: a pattern does not run code; a pattern from input is a denial-of-service risk, not code injection.
+html:
+  status: n/a
+  reason: script from input in a page is cross-site-scripting.
+css:
+  status: n/a
+  reason: style sheets do not run code on the server.
