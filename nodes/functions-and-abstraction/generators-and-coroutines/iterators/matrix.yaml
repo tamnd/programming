@@ -1,0 +1,12 @@
+sql:
+  status: n/a
+  reason: a query describes a result set, and the database decides how to visit the rows.
+regex:
+  status: n/a
+  reason: a pattern has no loops over values.
+html:
+  status: n/a
+  reason: markup has no loops.
+css:
+  status: n/a
+  reason: style rules have no loops.

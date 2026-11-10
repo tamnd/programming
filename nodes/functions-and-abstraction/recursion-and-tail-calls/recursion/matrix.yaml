@@ -1,0 +1,10 @@
+regex:
+  status: absent
+  reason: the regex dialects of ECMAScript, Python re, Go regexp and the Rust regex crate have no way for a pattern to refer to itself.
+  alternative: the recursive patterns of PCRE2, such as (?R), or a parser written in a general language.
+html:
+  status: n/a
+  reason: markup has no functions that can call themselves.
+css:
+  status: n/a
+  reason: style rules have no functions that can call themselves.
