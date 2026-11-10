@@ -1,0 +1,21 @@
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM runs under JDK Flight Recorder and uses the jdk.jfr API, as in the Java example; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: the shell has no profiler; the time keyword measures one pipeline, and a tool outside the shell samples the processes that a script starts.
+powershell:
+  status: idiom
+  reason: Measure-Command measures the time of a script block; there is no profiler that samples the call stacks of a script; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query has no call stack to profile; the database server explains and measures the plan of a query instead.
+regex:
+  status: n/a
+  reason: a pattern has no functions to profile.
+html:
+  status: n/a
+  reason: markup does not run code to profile.
+css:
+  status: n/a
+  reason: a style sheet does not run code to profile.

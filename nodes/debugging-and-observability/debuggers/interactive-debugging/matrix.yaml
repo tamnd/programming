@@ -1,0 +1,21 @@
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM runs under the same debuggers as Java, through the Java Platform Debugger Architecture of the JDK; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: set -x prints each command and its arguments as the shell runs it, which traces a script without a debugger; the page has no example of it.
+powershell:
+  status: stdlib
+  reason: the Set-PSBreakpoint cmdlet sets line, command and variable breakpoints, and the prompt changes to DBG at a breakpoint; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query has no call stack to step through; the database server explains the plan of a query instead.
+regex:
+  status: n/a
+  reason: a pattern has no statements to stop at.
+html:
+  status: n/a
+  reason: markup does not run code; the debugger of a browser stops in the scripts of a page, not in the markup.
+css:
+  status: n/a
+  reason: a style sheet does not run code to stop at.
