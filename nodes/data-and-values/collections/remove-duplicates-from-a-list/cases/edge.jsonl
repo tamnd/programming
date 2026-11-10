@@ -1,0 +1,12 @@
+{"name":"empty","class":["empty"],"args":{"items":[]},"expect":[]}
+{"name":"single","class":["single"],"args":{"items":["a"]},"expect":["a"]}
+{"name":"all-same","class":["all-same"],"args":{"items":["x","x","x"]},"expect":["x"]}
+{"name":"no-duplicates","class":["no-duplicates"],"args":{"items":["c","a","b"]},"expect":["c","a","b"]}
+{"name":"not-adjacent","class":["not-adjacent"],"args":{"items":["a","b","a","b"]},"expect":["a","b"]}
+{"name":"adjacent","class":["adjacent"],"args":{"items":["a","a","b","b","a"]},"expect":["a","b"]}
+{"name":"empty-string","class":["empty-string"],"args":{"items":["","a","","b"]},"expect":["","a","b"]}
+{"name":"case","class":["case"],"args":{"items":["a","A","a"]},"expect":["a","A"]}
+{"name":"normalization","class":["normalization"],"args":{"items":["\u00e9","e\u0301","\u00e9"]},"expect":["\u00e9","e\u0301"]}
+{"name":"whitespace","class":["whitespace"],"args":{"items":[" a","a","a "," a"]},"expect":[" a","a","a "]}
+{"name":"number-like","class":["number-like"],"args":{"items":["1","01","1.0","1"]},"expect":["1","01","1.0"]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"items":["日本","🙂","日本","🙂","ü"]},"expect":["日本","🙂","ü"]}

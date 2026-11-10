@@ -1,0 +1,10 @@
+{"name":"metacharacters","class":["metacharacters"],"args":{"argv":["printf","%s|","a b","$HOME","*","x;y","\"q\"","'s'"]},"expect":[0,"a b|$HOME|*|x;y|\"q\"|'s'|",""]}
+{"name":"empty-argument","class":["empty-argument"],"args":{"argv":["printf","[%s]",""]},"expect":[0,"[]",""]}
+{"name":"newline-argument","class":["newline-argument"],"args":{"argv":["printf","%s","line one\nline two"]},"expect":[0,"line one\nline two",""]}
+{"name":"trailing-newlines","class":["trailing-newline"],"args":{"argv":["printf","a\\n\\n"]},"expect":[0,"a\n\n",""]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"argv":["printf","%s\\n","xin chào, 日本語, 🙂"]},"expect":[0,"xin chào, 日本語, 🙂\n",""]}
+{"name":"stderr-only","class":["stderr-only"],"args":{"argv":["sh","-c","echo warning >&2"]},"expect":[0,"","warning\n"]}
+{"name":"no-output","class":["no-output"],"args":{"argv":["true"]},"expect":[0,"",""]}
+{"name":"false","class":["nonzero-status","no-output"],"args":{"argv":["false"]},"expect":[1,"",""]}
+{"name":"status-255","class":["nonzero-status"],"args":{"argv":["sh","-c","exit 255"]},"expect":[255,"",""]}
+{"name":"empty-stdin","class":["empty-stdin"],"args":{"argv":["sh","-c","if read -r line; then echo got; else echo eof; fi"]},"expect":[0,"eof\n",""]}

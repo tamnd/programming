@@ -1,0 +1,3 @@
+{"name":"new-file","class":["new-file"],"args":{"path":"out.txt","text":"alpha\nbeta\n","mode":"truncate","file":null},"expect":"alpha\nbeta\n"}
+{"name":"append-existing","class":["append"],"args":{"path":"out.txt","text":"two\n","mode":"append","file":"one\n"},"expect":"one\ntwo\n"}
+{"name":"atomic-replace","args":{"path":"out.txt","text":"new\n","mode":"atomic","file":"old\n"},"expect":"new\n"}

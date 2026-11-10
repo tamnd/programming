@@ -1,0 +1,23 @@
+# The contract of the task "write a file" (spec 10.2). Each solution writes a string to a file as UTF-8 with no byte order mark and with no change to the line terminators, in one of three modes: truncate, append, or atomic replace through a temporary file in the same directory.
+problem: write-a-file
+entry: write_text
+params:
+  - name: path
+    type: string
+    pre: "the path of the file, in a directory that the test makes; the name is not a directory"
+  - name: text
+    type: string
+    pre: "any string with no NUL and no unpaired surrogate"
+  - name: mode
+    type: string
+    pre: "truncate, append or atomic"
+  - name: file
+    type: option<string>
+    mode: inout
+    pre: "the content of the file at path before the call, as UTF-8; null when no file is there"
+returns:
+  type: unit
+  post: "file is the content of the file after the call. truncate: the file holds the bytes of text and no old byte. append: the old content, then the bytes of text, with nothing between them. atomic: the file holds the bytes of text, and the directory holds no other new file. In each mode the bytes are the UTF-8 encoding of text with no byte order mark, and each \\n, \\r\\n and \\r stays as it is"
+checker: exact
+edge_classes: [new-file, truncate, append, empty, no-final-newline, non-ascii, line-ends, backslash, format-chars]
+# The toolchain has no field for errors yet, and it loads only the basic, edge and regress case files. cases/errors.jsonl holds the inputs on which each solution must report an error: not-found when the parent directory does not exist (no file is made), and rename-failed when path names an existing directory in atomic mode (the directory stays, and no temporary file stays behind).

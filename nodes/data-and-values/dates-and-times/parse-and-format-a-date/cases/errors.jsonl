@@ -1,0 +1,18 @@
+{"name":"no-offset","args":{"timestamp":"2026-11-10T12:00:00"},"error":"invalid-timestamp"}
+{"name":"date-only","args":{"timestamp":"2026-11-10"},"error":"invalid-timestamp"}
+{"name":"space-separator","args":{"timestamp":"2026-11-10 12:00:00Z"},"error":"invalid-timestamp"}
+{"name":"no-seconds","args":{"timestamp":"2026-11-10T12:00Z"},"error":"invalid-timestamp"}
+{"name":"offset-no-colon","args":{"timestamp":"2026-11-10T12:00:00+0700"},"error":"invalid-timestamp"}
+{"name":"offset-hours-only","args":{"timestamp":"2026-11-10T12:00:00+07"},"error":"invalid-timestamp"}
+{"name":"not-a-leap-year","args":{"timestamp":"2026-02-29T12:00:00Z"},"error":"invalid-timestamp"}
+{"name":"april-31","args":{"timestamp":"2026-04-31T12:00:00Z"},"error":"invalid-timestamp"}
+{"name":"month-13","args":{"timestamp":"2026-13-01T12:00:00Z"},"error":"invalid-timestamp"}
+{"name":"day-zero","args":{"timestamp":"2026-11-00T12:00:00Z"},"error":"invalid-timestamp"}
+{"name":"hour-24","args":{"timestamp":"2026-11-10T24:00:00Z"},"error":"invalid-timestamp"}
+{"name":"minute-60","args":{"timestamp":"2026-11-10T12:60:00Z"},"error":"invalid-timestamp"}
+{"name":"leap-second","args":{"timestamp":"2016-12-31T23:59:60Z"},"error":"invalid-timestamp"}
+{"name":"offset-hour-24","args":{"timestamp":"2026-11-10T12:00:00+24:00"},"error":"invalid-timestamp"}
+{"name":"offset-minute-60","args":{"timestamp":"2026-11-10T12:00:00+07:60"},"error":"invalid-timestamp"}
+{"name":"comma-fraction","args":{"timestamp":"2026-11-10T12:00:00,5Z"},"error":"invalid-timestamp"}
+{"name":"trailing-space","args":{"timestamp":"2026-11-10T12:00:00Z "},"error":"invalid-timestamp"}
+{"name":"empty","args":{"timestamp":""},"error":"invalid-timestamp"}

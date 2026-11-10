@@ -1,0 +1,15 @@
+# The contract of the task "run a subprocess" (spec 10.2). Each solution starts a program with a list of arguments and no shell, waits for it to exit, and returns its exit status and the text it wrote to standard output and standard error.
+problem: run-a-subprocess
+entry: run
+params:
+  - name: argv
+    type: "list<string>"
+    pre: "at least one element, and no element holds a NUL; argv[0] is the name of a program that the solution finds through PATH, or a path to the program; the elements after argv[0] go to the program with no change; the program writes UTF-8 text, and it exits and is not stopped by a signal"
+returns:
+  type: "tuple<int, string, string>"
+  post: "(status, stdout, stderr): the exit status of the program, 0 to 255, and all of the text that the program wrote to standard output and to standard error, with no change; the standard input of the program is empty, so a read gets end of file at once; the program gets the environment and the working directory of the caller"
+checker: exact
+edge_classes: [metacharacters, empty-argument, newline-argument, trailing-newline, non-ascii, stderr-only, no-output, nonzero-status, empty-stdin]
+# A status that is not 0 is a result, not an error. The cases use only printf, echo, cat, true, false and sh, which POSIX requires.
+# The toolchain loads only cases/basic.jsonl, cases/edge.jsonl and cases/regress.jsonl. It has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report the error not-found and return no result: no program with the name argv[0] is in PATH.
+# The cases cannot show a large output in JSON. So each test also runs a program that writes 1 MiB to standard output and then 1 MiB to standard error, and checks the lengths. A solution that reads one stream to its end before it reads the other can deadlock on this program.

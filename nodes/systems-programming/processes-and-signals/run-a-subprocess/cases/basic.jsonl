@@ -1,0 +1,4 @@
+{"name":"hello","args":{"argv":["printf","hello"]},"expect":[0,"hello",""]}
+{"name":"two-arguments","args":{"argv":["echo","one","two"]},"expect":[0,"one two\n",""]}
+{"name":"exit-status","args":{"argv":["sh","-c","exit 3"]},"expect":[3,"",""]}
+{"name":"both-streams","args":{"argv":["sh","-c","echo out; echo err >&2; exit 2"]},"expect":[2,"out\n","err\n"]}

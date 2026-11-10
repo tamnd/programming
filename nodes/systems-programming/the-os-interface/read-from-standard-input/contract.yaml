@@ -1,0 +1,14 @@
+# The contract of the task "read from standard input" (spec 10.2). Each solution reads its standard input to the end of input, line by line, and returns the lines. A line ends with a newline or CRLF, and the contract also accepts a last line with no newline.
+problem: read-from-standard-input
+entry: read_lines
+params:
+  - name: stdin
+    type: string
+    pre: 'the bytes that the test puts on the standard input of the process before the call; UTF-8 text with no byte order mark; LF or CRLF ends a line, and no CR stands alone; read_lines does not get stdin as an argument, it reads standard input'
+returns:
+  type: "list<string>"
+  post: 'the lines in order, each without its "\n" or "\r\n"; a last line with no newline is also a line; an empty input gives []'
+checker: exact
+edge_classes: [empty, empty-line, no-final-newline, crlf, trailing-blank-line, whitespace, backslash, non-ascii]
+# The toolchain loads only cases/basic.jsonl, cases/edge.jsonl and cases/regress.jsonl.
+# The native tests also have the case long-line: a line of 1 MiB (1,048,576 bytes of "x"), then the line "end". No case file holds it, because JSON would put it on one line of 1 MiB. The Go solution needs it, because the default buffer of bufio.Scanner stops at a line of 64 KiB.

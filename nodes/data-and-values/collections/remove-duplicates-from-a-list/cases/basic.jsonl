@@ -1,0 +1,2 @@
+{"name":"repeats","args":{"items":["apple","pear","apple","fig","pear"]},"expect":["apple","pear","fig"]}
+{"name":"words","args":{"items":["to","be","or","not","to","be"]},"expect":["to","be","or","not"]}
