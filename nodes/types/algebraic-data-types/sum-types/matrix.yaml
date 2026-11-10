@@ -1,0 +1,24 @@
+kotlin:
+  status: native
+  reason: a sealed class or sealed interface fixes its direct subclasses at compile time, and a when expression over it needs no else branch when it covers every subclass; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: absent
+  reason: PowerShell has classes and enums, but no type whose value is one of a closed set of cases with their own data; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: a hashtable or an object with a kind property, and a switch statement on that property with a default branch that throws.
+bash:
+  status: n/a
+  reason: Bash has no types, only strings and arrays of strings.
+  alternative: a string that holds the kind, with separate variables for the data of each kind, and a case statement on the kind.
+sql:
+  status: absent
+  reason: a table column has one type, and the SQL of the examples has no column type whose value is one of several cases.
+  alternative: a kind column and one nullable column for each field of each case, with CHECK constraints that tie each kind to its columns.
+regex:
+  status: n/a
+  reason: a pattern has no types.
+html:
+  status: n/a
+  reason: markup has no types.
+css:
+  status: n/a
+  reason: style rules have no types.
