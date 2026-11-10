@@ -1,0 +1,24 @@
+kotlin:
+  status: library
+  reason: the Kotlin standard library and Gradle have no mutation tool.
+  alternative: PIT mutates JVM bytecode, and arcmutate, from the PIT team, extends it with support for Kotlin.
+powershell:
+  status: idiom
+  reason: PowerShell has no mutation tool in the language or its core modules.
+  alternative: a script that edits a copy of the source, runs the tests and checks the result.
+bash:
+  status: idiom
+  reason: Bash has no mutation tool.
+  alternative: a script that edits a copy of the source with sed, runs the tests and checks the exit status.
+sql:
+  status: n/a
+  reason: queries are tested through the program or the database that runs them.
+regex:
+  status: n/a
+  reason: a pattern is tested through the program that uses it.
+html:
+  status: n/a
+  reason: markup has no test suite to measure in this sense.
+css:
+  status: n/a
+  reason: style rules have no test suite to measure in this sense.

@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: the Kotlin standard library has no mock facility; a test passes a class or an object expression that implements an interface.
+  alternative: MockK or Mockito, which are libraries.
+powershell:
+  status: library
+  reason: PowerShell has no test doubles in the language or its core modules.
+  alternative: the Mock command of the Pester module, which replaces a command for the scope of a test.
+bash:
+  status: idiom
+  reason: Bash has no mock facility, but the shell finds a function before a builtin or a program with the same name.
+  alternative: define a shell function with the name of the command, then source the script under test.
+sql:
+  status: n/a
+  reason: a query has no components to replace.
+regex:
+  status: n/a
+  reason: a pattern has no components to replace.
+html:
+  status: n/a
+  reason: markup has no components to replace.
+css:
+  status: n/a
+  reason: style rules have no components to replace.
