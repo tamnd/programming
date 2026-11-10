@@ -1,0 +1,19 @@
+kotlin:
+  status: idiom
+  reason: a class or an object declaration over internal classes is the facade, and the internal modifier hides the subsystem from other modules; no example is executed here because the test image has no kotlinc.
+bash:
+  status: idiom
+  reason: a script, or a function in a sourced file, can run several commands in the right order and stop on the first failure; the commands stay available to any caller, as the subsystem classes do.
+  alternative: a Makefile target that names the steps of a task.
+powershell:
+  status: idiom
+  reason: a module with Export-ModuleMember, or a manifest that lists the exported functions, shows the facade functions and hides the helpers; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no subsystem to put a front on.
+html:
+  status: n/a
+  reason: markup has no subsystem of classes; a web component can hide its inner markup in a shadow tree, but its interface is defined in JavaScript.
+css:
+  status: n/a
+  reason: style rules have no subsystem to put a front on; custom properties can expose a few settings of a component's styles, which is the closest idea.
