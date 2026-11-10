@@ -1,0 +1,17 @@
+sql:
+  status: absent
+  reason: a query cannot hold or pass a function value, so it cannot choose an algorithm through an interface.
+  alternative: a CASE expression on a column that names the plan, or a table of parameters for one formula, joined to the rows.
+powershell:
+  status: idiom
+  reason: a script block is a value, so a variable that holds a script block is a strategy, called with the & operator; no example is executed here because the test image has no pwsh.
+  alternative: a class with a method, or a script block in a hashtable keyed by the name of the plan.
+regex:
+  status: n/a
+  reason: a pattern has no functions and no algorithms to choose between.
+html:
+  status: n/a
+  reason: markup has no functions.
+css:
+  status: n/a
+  reason: style rules have no functions to choose between.
