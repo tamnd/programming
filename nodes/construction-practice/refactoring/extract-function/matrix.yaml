@@ -1,0 +1,29 @@
+c:
+  status: idiom
+  reason: C has functions; a fragment that changes several locals takes pointers to them or returns a struct.
+  alternative: clangd has an ExtractFunction tweak for C and C++.
+kotlin:
+  status: idiom
+  reason: Kotlin has top-level, member and local functions, and a fragment that computes two values can return a Pair or a data class.
+  alternative: IntelliJ IDEA has the Extract Function refactoring for Kotlin.
+powershell:
+  status: idiom
+  reason: PowerShell has functions with parameters; a function returns the objects that it writes to the output stream.
+  alternative: move the fragment into a function with a param block and use its output.
+bash:
+  status: idiom
+  reason: Bash has functions, but a function returns only an exit status; a value comes back through standard output or a global variable.
+  alternative: move the fragment into a function and capture its output with command substitution.
+sql:
+  status: idiom
+  reason: a query has no local functions, but a subquery can move into a common table expression or a view.
+  alternative: WITH clauses, views, or the functions of a database such as PostgreSQL.
+regex:
+  status: n/a
+  reason: a pattern has no functions.
+html:
+  status: n/a
+  reason: markup has no functions.
+css:
+  status: n/a
+  reason: style rules have no functions to extract.
