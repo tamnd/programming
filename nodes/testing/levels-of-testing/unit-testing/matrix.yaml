@@ -1,0 +1,25 @@
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no test runner; kotlin.test is a separate library that runs on JUnit or TestNG.
+  alternative: kotlin.test or JUnit Jupiter, run by Gradle or Maven.
+powershell:
+  status: library
+  reason: PowerShell has no test framework in the language or its core modules.
+  alternative: the Pester module, with Describe, It and Should.
+bash:
+  status: library
+  reason: Bash has no test framework; a test is a script that checks exit statuses.
+  alternative: bats-core, or a script with set -e and the test command.
+sql:
+  status: library
+  reason: standard SQL has no test framework.
+  alternative: pgTAP for PostgreSQL, tSQLt for SQL Server, or queries that compare results with expected rows.
+regex:
+  status: n/a
+  reason: a pattern is tested through the language that uses it.
+html:
+  status: n/a
+  reason: markup has no units to call; it is tested through a browser.
+css:
+  status: n/a
+  reason: style rules have no units to call; they are tested through a browser.
