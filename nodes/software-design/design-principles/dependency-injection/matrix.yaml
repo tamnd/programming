@@ -1,0 +1,23 @@
+kotlin:
+  status: idiom
+  reason: an interface for each role and a primary constructor with val parameters; a fun interface lets a lambda fill a role with one method; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, with interfaces, final fields and a lambda for the clock.
+sql:
+  status: n/a
+  reason: a query has no objects that receive collaborators; parameters of a prepared statement pass values, not services.
+bash:
+  status: idiom
+  reason: a function takes the name of another function or command as an argument and calls it, or reads it from an environment variable, so a test can pass a stub command.
+powershell:
+  status: idiom
+  reason: a class whose constructor takes its collaborators, or a function with a script block parameter for a role with one operation; no example is executed here because the test image has no pwsh.
+  alternative: the C# example, with interfaces and a primary constructor.
+regex:
+  status: n/a
+  reason: a pattern has no objects or collaborators.
+html:
+  status: n/a
+  reason: markup has no objects that receive collaborators.
+css:
+  status: n/a
+  reason: style rules have no objects or collaborators.

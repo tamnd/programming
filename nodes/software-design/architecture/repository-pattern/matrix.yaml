@@ -1,0 +1,27 @@
+c:
+  status: idiom
+  reason: a struct of function pointers and a context pointer gives the interface, and an implementation over SQLite or over an array fills it; there is no example here because the C example of dependency-injection shows the same wiring.
+  alternative: the C++ example, with an abstract class and std::optional.
+kotlin:
+  status: idiom
+  reason: an interface with suspend or plain functions, and a data class whose copy function returns the changed order; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, with an interface, Optional and a record.
+sql:
+  status: n/a
+  reason: SQL is the storage behind a repository; a view or a stored procedure can give a named query, but the collection-like interface belongs to the client language.
+bash:
+  status: n/a
+  reason: the shell has no domain objects to map to rows.
+powershell:
+  status: idiom
+  reason: a class with Add, Get, ByCustomer and Update methods over a hashtable or a database command; no example is executed here because the test image has no pwsh.
+  alternative: the C# example, with an interface and an immutable record.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: markup has no objects and no storage.
+css:
+  status: n/a
+  reason: style rules have no objects and no storage.

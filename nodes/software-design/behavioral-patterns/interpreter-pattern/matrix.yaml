@@ -1,0 +1,23 @@
+kotlin:
+  status: idiom
+  reason: a sealed interface with a data class for each rule, and a when expression that the compiler checks for every subtype; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, with a sealed interface, records and a switch with record patterns.
+sql:
+  status: n/a
+  reason: a query language has no objects that form a tree for a user-defined grammar; the database already interprets SQL, and a rule table with fixed columns is the usual answer.
+bash:
+  status: n/a
+  reason: the shell has no tree structures, since its arrays hold only strings; a case statement over tokens can evaluate a flat command language, but not a nested one.
+powershell:
+  status: idiom
+  reason: an abstract class with a class for each rule and a method that evaluates it; no example is executed here because the test image has no pwsh.
+  alternative: the C# example, with an abstract record and a subclass for each rule.
+regex:
+  status: n/a
+  reason: a pattern cannot build or walk a tree; regular expressions are a language that an interpreter evaluates, not a host for one.
+html:
+  status: n/a
+  reason: markup has no code that evaluates a sentence.
+css:
+  status: n/a
+  reason: style rules have no code that evaluates a sentence.
