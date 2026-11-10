@@ -1,0 +1,23 @@
+kotlin:
+  status: native
+  reason: the interfaces Iterable and Iterator, with operator next and hasNext, drive the for loop, and the sequence builder writes an iterator with yield; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, which uses the same Iterable and Iterator interfaces of the JVM.
+sql:
+  status: idiom
+  reason: a cursor (DECLARE, OPEN, FETCH, CLOSE) steps through the rows of a query one at a time, and the database, not the client, keeps the position; set-based queries make it rare.
+bash:
+  status: idiom
+  reason: a function writes one element per line and a while read loop takes them one at a time through a pipe; the shell has no iterator objects.
+powershell:
+  status: native
+  reason: the pipeline and foreach enumerate any .NET IEnumerable one element at a time, and a function that writes to the output stream acts as a generator; no example is executed here because the test image has no pwsh.
+  alternative: the C# example, with IEnumerable and yield return.
+regex:
+  status: n/a
+  reason: a pattern has no collections to traverse; the match iterators of each language belong to that language.
+html:
+  status: n/a
+  reason: markup has no code that traverses a collection.
+css:
+  status: n/a
+  reason: style rules have no collections and no traversal.

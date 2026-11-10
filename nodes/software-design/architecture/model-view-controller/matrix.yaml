@@ -1,0 +1,27 @@
+c:
+  status: idiom
+  reason: a model struct holds an array of function pointers with context pointers, and each view registers a callback; there is no example here because the C example of observer-pattern shows the same callback list.
+  alternative: the C++ example, with std::function observers and const access to the items.
+kotlin:
+  status: idiom
+  reason: a model class with a list of function observers and view classes that subscribe in init blocks; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, with Runnable observers and a record for the item.
+sql:
+  status: n/a
+  reason: SQL can hold the model's data, but it has no views of the user interface and no user input to interpret.
+bash:
+  status: n/a
+  reason: the shell has no objects for a model to notify; a script reads input and prints output in one flow.
+powershell:
+  status: idiom
+  reason: a class with a list of scriptblock observers, view functions that subscribe, and a controller that parses the command lines; no example is executed here because the test image has no pwsh.
+  alternative: the C# example, with an event and lambda views.
+regex:
+  status: n/a
+  reason: a pattern has no model, no view and no input loop.
+html:
+  status: n/a
+  reason: HTML is the output of a view in web MVC, not a place for the pattern.
+css:
+  status: n/a
+  reason: style rules present a view; they hold no model and read no input.
