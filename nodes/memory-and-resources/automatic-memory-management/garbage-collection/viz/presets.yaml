@@ -1,0 +1,19 @@
+- name: A simple heap
+  input:
+    objects: [{id: A, x: 0.5, y: 0}, {id: B, x: 0.88, y: 0}, {id: C, x: 0.5, y: 0.5}, {id: D, x: 0.5, y: 1}, {id: E, x: 0.88, y: 1}]
+    refs: [[A, B], [C, B], [D, E]]
+    roots: [{name: x, kind: stack, to: A, y: 0}, {name: g, kind: global, to: C, y: 0.5}]
+  note: The mark reaches A, B and C. The sweep frees D and E.
+- name: An unreachable cycle
+  input:
+    objects: [{id: A, x: 0.5, y: 0}, {id: B, x: 0.88, y: 0}, {id: C, x: 0.5, y: 0.6}, {id: D, x: 0.88, y: 0.6}, {id: E, x: 0.69, y: 1}]
+    refs: [[A, B], [B, A], [C, D], [D, E], [E, C]]
+    roots: [{name: x, kind: stack, to: A, y: 0}, {name: g, kind: global, to: B, y: 0.5}]
+  note: A and B form a cycle that a root reaches, so they stay. C, D and E form a cycle that no root reaches, so the sweep frees them.
+- name: A reference counting comparison
+  input:
+    objects: [{id: A, x: 0.5, y: 0}, {id: B, x: 0.88, y: 0}, {id: C, x: 0.5, y: 0.5}, {id: D, x: 0.88, y: 0.5}, {id: E, x: 0.5, y: 1}, {id: F, x: 0.88, y: 1}]
+    refs: [[A, B], [C, D], [D, C], [E, F]]
+    roots: [{name: x, kind: stack, to: A, y: 0}, {name: y, kind: stack, to: C, y: 0.5}, {name: z, kind: stack, to: E, y: 1}]
+    drop: [z, y]
+  note: Reference counting frees E and F at once, but the counts of C and D never reach 0. The tracing collection frees C and D.
