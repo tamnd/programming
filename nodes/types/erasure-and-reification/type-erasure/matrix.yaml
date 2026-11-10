@@ -1,0 +1,29 @@
+javascript:
+  status: n/a
+  reason: JavaScript has no static types, so the compiler has nothing to erase; each value carries its own type at run time.
+  alternative: typeof and instanceof test the type of a value at run time.
+c:
+  status: absent
+  reason: ISO C has no type parameters and keeps no type information at run time; a void * does not record the type of the object that it points to.
+  alternative: a struct with a tag field that names the type of its payload.
+kotlin:
+  status: native
+  reason: Kotlin erases type arguments on the JVM, as Java does, and an inline function can declare a reified type parameter that is known at each call site; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: stdlib
+  reason: PowerShell uses the generic types of .NET, and the .NET runtime keeps their type arguments; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has no static types, so there is nothing to erase.
+sql:
+  status: n/a
+  reason: a query has no generic types and no type arguments.
+regex:
+  status: n/a
+  reason: a pattern has no types.
+html:
+  status: n/a
+  reason: markup has no types.
+css:
+  status: n/a
+  reason: style rules have no types.

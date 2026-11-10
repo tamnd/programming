@@ -1,0 +1,24 @@
+javascript:
+  status: n/a
+  reason: JavaScript has no static types, so there is no static type to infer; a variable can hold a value of any type.
+kotlin:
+  status: native
+  reason: val and var take the type of their initializer, and a function with an expression body gets an inferred return type; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: n/a
+  reason: PowerShell variables are loosely typed and hold a value of any .NET type; a type attribute such as [int] constrains a variable and converts each value that is assigned to it.
+sql:
+  status: n/a
+  reason: a query declares no variables; the types of the columns come from the table definitions.
+bash:
+  status: n/a
+  reason: Bash has no types, only strings and arrays of strings.
+regex:
+  status: n/a
+  reason: a pattern has no types.
+html:
+  status: n/a
+  reason: markup has no types.
+css:
+  status: n/a
+  reason: style rules have no types.

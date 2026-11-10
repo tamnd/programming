@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: numeric types are not subtypes of one another, so an Int needs toLong() or toDouble() to become a Long or a Double; as throws ClassCastException and as? returns null; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: native
+  reason: the left operand of an operator usually decides the type, and PowerShell converts the right operand to it; a cast such as [int]'43' converts explicitly; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: CAST(value AS type) converts explicitly; the implicit conversions between text and numbers differ from one database engine to another.
+regex:
+  status: n/a
+  reason: a pattern matches text and has no other types.
+html:
+  status: n/a
+  reason: markup has no types to convert between.
+css:
+  status: n/a
+  reason: style rules have no conversions between types.
