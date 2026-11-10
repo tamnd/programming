@@ -1,0 +1,46 @@
+c:
+  status: idiom
+  reason: C has no authorization library in its standard library; checks are written by hand, and an unchecked return value or an uninitialized variable can turn a failed check into success.
+  alternative: one function that returns allow only at the end of a successful path, with every error path returning deny.
+cpp:
+  status: idiom
+  reason: C++ has no authorization library in its standard library; an enum class for roles and permissions gives exact comparisons.
+  alternative: an enum class Permission and a std::set or bit mask of permissions for each role, checked in one function.
+csharp:
+  status: library
+  reason: ASP.NET Core has policy-based authorization and resource-based authorization with IAuthorizationService; it is part of the .NET platform, not of the base class library.
+  alternative: a policy with a requirement that receives the resource, so the check uses the object that the handler acts on.
+rust:
+  status: idiom
+  reason: the Rust standard library has no authorization layer; enums with exhaustive match make each role decide each permission.
+  alternative: an enum of roles and a match that returns the permissions, with no wildcard arm, so a new role does not compile until it is handled.
+kotlin:
+  status: idiom
+  reason: on the JVM, Kotlin uses enums and sets as in the Java example, or the authorization features of the framework.
+  alternative: an enum class of roles with a set of permissions, and a when expression without an else branch.
+typescript:
+  status: idiom
+  reason: TypeScript on Node.js has the same server-side rule as the JavaScript example; a union type of permission names catches a misspelled permission at compile time.
+  alternative: a union type of permission names and a Record from role to a set of permissions.
+sql:
+  status: native
+  reason: GRANT and REVOKE control access by database role, and some databases add row-level security; the application must still pass the right user and the right object.
+  alternative: row-level security policies or a WHERE clause on the owner or the parent, so a query cannot return an object outside the scope of the user.
+bash:
+  status: idiom
+  reason: a script that compares a user or group name with a pattern, such as [[ $role == admin* ]], has the prefix mistake; file permissions and sudo rules are the usual controls.
+  alternative: compare exact names with [[ $role == "admin" ]], and rely on the operating system for access to files.
+powershell:
+  status: idiom
+  reason: PowerShell scripts compare strings case-insensitively by default with -eq and -like, which matters when a role name differs only in case or matches a wildcard.
+  alternative: compare exact values with -ceq, and check group membership through the operating system, not through a name pattern.
+html:
+  status: n/a
+  reason: a page can disable or hide a control, which is a check in the client only; the server must make the decision.
+css:
+  status: n/a
+  reason: hiding an element with CSS does not stop the request that it would send.
+regex:
+  status: native
+  reason: patterns that match roles or paths in a policy are a common source of loose matches; an unanchored pattern or a case-insensitive flag can match more than the policy means.
+  alternative: exact string comparison for roles, and anchored patterns with a full match for paths, tested with names that are close to the allowed ones.

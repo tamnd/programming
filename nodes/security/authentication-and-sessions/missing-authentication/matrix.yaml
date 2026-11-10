@@ -1,0 +1,45 @@
+c:
+  status: idiom
+  reason: C has no HTTP server in its standard library; a C service or a device firmware checks the caller by hand in the code that reads each command, on every port and every serial console.
+  alternative: one function that every command handler passes through, with commands denied until the session is authenticated.
+cpp:
+  status: idiom
+  reason: C++ has no HTTP server in its standard library; the check belongs in the request layer of the server or framework.
+  alternative: one dispatcher that authenticates the request before it calls any handler, with public routes listed by name.
+csharp:
+  status: library
+  reason: ASP.NET Core has authentication middleware and the Authorize and AllowAnonymous attributes; it is part of the .NET platform, not of the base class library.
+  alternative: a fallback authorization policy that requires an authenticated user, so that an endpoint is public only with AllowAnonymous.
+rust:
+  status: idiom
+  reason: the Rust standard library has no HTTP server; web frameworks give middleware and extractors that reject a request without credentials.
+  alternative: a handler argument type that can only be built from an authenticated request, so a handler that takes it cannot run for a request without credentials.
+kotlin:
+  status: idiom
+  reason: on the JVM, Kotlin services use the same pattern as the Java example, or the authentication features of the framework.
+  alternative: a routing function that wraps every route in the authentication check unless the route is marked public.
+typescript:
+  status: idiom
+  reason: TypeScript on Node.js uses the same dispatcher or middleware as the JavaScript example.
+  alternative: a route type with a required public flag, so the compiler asks the developer to decide for each route.
+sql:
+  status: native
+  reason: a database server authenticates each connection; the weakness appears when a database or its admin port listens on a reachable address with authentication off or with a trust rule for all hosts.
+  alternative: require a password or a certificate for every connection, and bind the server to a private address.
+bash:
+  status: idiom
+  reason: scripts do not serve requests themselves; the risk is a script that starts a listener or a debug server on a public address.
+  alternative: bind tools that a script starts to 127.0.0.1, and put a check in front of any command that a remote caller can trigger.
+powershell:
+  status: idiom
+  reason: PowerShell remoting authenticates by default; a script that starts its own listener with System.Net.HttpListener must check each request itself.
+  alternative: use remoting with its authentication, or check the user of each HttpListener request before any action.
+html:
+  status: n/a
+  reason: a page can hide an admin link, but the server must authenticate the request that the link sends.
+css:
+  status: n/a
+  reason: style sheets do not receive requests.
+regex:
+  status: n/a
+  reason: a regular expression can match the paths that are public, but it does not authenticate anyone; an unanchored or loose pattern can make a protected path look public.
