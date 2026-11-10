@@ -1,0 +1,24 @@
+c:
+  status: idiom
+  reason: an enum for the states and a switch on the state and the event give the table form; a struct of function pointers for each state, with a pointer to the current one, gives the object form.
+  alternative: a function pointer that returns the next state function, as the Go lexer does with stateFn.
+kotlin:
+  status: idiom
+  reason: a sealed interface with an object for each state gives state objects, and a when expression on a sealed type or an enum must be exhaustive; no example is executed here because the test image has no kotlinc.
+  alternative: an enum class whose constants override abstract members, as in the Java example.
+sql:
+  status: idiom
+  reason: a state column holds the state, and a table of allowed pairs of old and next states, checked by a trigger on each update, rejects a wrong transition; SQL has no state objects with behaviour.
+powershell:
+  status: idiom
+  reason: a switch on a string such as "$state:$event" gives the table form, and a class for each state gives the object form; no example is executed here because the test image has no pwsh.
+  alternative: a hashtable that maps a state and an event to the next state.
+regex:
+  status: n/a
+  reason: a regular expression can be compiled to a finite automaton, but a pattern has no objects or actions that change with a state.
+html:
+  status: n/a
+  reason: markup has no behaviour that changes with a state; the state of a page lives in JavaScript or on the server.
+css:
+  status: n/a
+  reason: pseudo-classes such as :checked select styles by the state of an element, but style rules have no transitions and no behaviour.

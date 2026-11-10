@@ -1,0 +1,27 @@
+c:
+  status: idiom
+  reason: an array of function pointers, each of which returns a code that says whether it handled the request, and a loop that stops at the first handler that did, give the list form; a struct with a pointer to the next struct gives the linked form.
+  alternative: a function pointer for the next link, passed to each handler with a context pointer for its state.
+kotlin:
+  status: idiom
+  reason: handlers are lambdas of the request and next, folded into a chain with foldRight, as in the TypeScript example; no example is executed here because the test image has no kotlinc.
+  alternative: an abstract class with a successor property, as in the Java example.
+sql:
+  status: idiom
+  reason: COALESCE over a list of lookups, or a CASE with one branch for each handler, returns the first answer that is not NULL; SQL has no handler objects that hold state or call a successor.
+bash:
+  status: idiom
+  reason: a list of function names and a loop that calls each one until a function returns status 0 gives the list form; a function can also take the name of the next function as an argument.
+powershell:
+  status: idiom
+  reason: an array of script blocks, each called with the request and a script block for the rest of the chain, gives the middleware form; no example is executed here because the test image has no pwsh.
+  alternative: a loop over the script blocks that stops at the first one that returns a value.
+regex:
+  status: n/a
+  reason: alternation tries each branch in order until one matches, but a pattern has no handlers that act on a request.
+html:
+  status: n/a
+  reason: markup has no handlers; event bubbling through the element tree is run by the DOM and handled in JavaScript.
+css:
+  status: n/a
+  reason: the cascade picks one value for each property from many rules, but style rules do not pass requests to each other.

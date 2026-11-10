@@ -1,0 +1,25 @@
+c:
+  status: idiom
+  reason: a tagged union, a struct with an enum tag and a union of node types, plays the role of a sum type, and each operation is a function with a switch on the tag; GCC and Clang warn with -Wswitch about an enum constant that a switch without a default leaves out, but nothing checks that the tag matches the union member that is read.
+  alternative: a struct of function pointers, one for each node kind, passed to a walk function as the visitor.
+kotlin:
+  status: idiom
+  reason: a sealed interface with data classes for the nodes and a when expression that must cover each subtype give the functional form, and an interface with accept gives the classic form; no example is executed here because the test image has no kotlinc.
+sql:
+  status: n/a
+  reason: SQL has no object structures with operations to add; a recursive common table expression can walk a tree stored in a table, but each query is a separate statement and not a visitor.
+bash:
+  status: n/a
+  reason: the shell has no data types for trees and no dispatch on the type of a value.
+powershell:
+  status: idiom
+  reason: classes and a switch on the type of each node, or a hashtable of script blocks keyed by the type name, give the pattern; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no object structures and no operations to add.
+html:
+  status: n/a
+  reason: markup is a tree, but operations on the DOM tree belong to JavaScript, for example a TreeWalker.
+css:
+  status: n/a
+  reason: selectors match elements of a tree, but style rules do not define operations on it.
