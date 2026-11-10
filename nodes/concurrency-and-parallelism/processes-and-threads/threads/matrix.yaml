@@ -1,0 +1,16 @@
+bash:
+  status: absent
+  reason: the shell has no threads; each command in the background is a separate process.
+  alternative: background processes started with & and waited for with wait.
+sql:
+  status: n/a
+  reason: a query states a result, and the database engine decides how many threads compute it.
+regex:
+  status: n/a
+  reason: a pattern has no threads of control.
+html:
+  status: n/a
+  reason: markup has no threads of control.
+css:
+  status: n/a
+  reason: style rules have no threads of control.

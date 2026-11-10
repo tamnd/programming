@@ -1,0 +1,16 @@
+bash:
+  status: absent
+  reason: Bash has no threads; background jobs are separate processes that share no variables.
+  alternative: the flock(1) command of util-linux, which locks a file between processes; it is not part of Bash.
+sql:
+  status: n/a
+  reason: SQL statements have no threads and no shared variables; the database system controls concurrent transactions.
+regex:
+  status: n/a
+  reason: a pattern has no threads.
+html:
+  status: n/a
+  reason: markup has no threads.
+css:
+  status: n/a
+  reason: style rules have no threads.
