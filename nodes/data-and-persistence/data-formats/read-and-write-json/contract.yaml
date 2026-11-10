@@ -1,0 +1,17 @@
+# The contract of the task "read and write JSON" (spec 10.2). Each solution parses a JSON text with the JSON library of its standard library, follows a path of names and indexes to one value, and writes that value back as canonical JSON text.
+problem: read-and-write-json
+entry: json_get
+params:
+  - name: text
+    type: string
+    pre: "a JSON text as in RFC 8259. Each number in it is an integer with no fraction and no exponent and with at most 4300 digits. No string in it holds an unpaired surrogate, U+2028 or U+2029, as a character or as an escape. Arrays and objects nest at most 64 levels deep"
+  - name: path
+    type: list<string>
+    pre: "the names and indexes to follow from the root; an empty list selects the root"
+returns:
+  type: string
+  post: "the value at the path as canonical JSON text. A path element selects the member of that name in an object, and the element at that index in an array, where the index is written in decimal with ASCII digits and no sign or leading zero. When a name occurs more than once in an object, the last member wins. The canonical text has no white space outside strings, and each object has its members sorted by name in code point order. Each integer is written in full with no plus sign, and -0 is written as 0. Each string escapes the quotation mark and the reverse solidus, writes the control characters U+0008, U+0009, U+000A, U+000C and U+000D as \\b, \\t, \\n, \\f and \\r, writes each other control character below U+0020 as \\u00 and two lowercase hexadecimal digits, and writes every other character as itself"
+checker: exact
+edge_classes: [nested-path, big-int, negative-zero, duplicate-name, array-index, key-order, non-ascii, escapes, html-chars, empty-containers, scalar-root, whitespace, falsy, inherited-name]
+# The toolchain has no field for errors yet, and it loads only the basic, edge and regress case files. cases/errors.jsonl holds the inputs on which each solution must report an error: invalid-json when the text is not a JSON text (a trailing comma, single quotes, NaN, Infinity, a leading zero, an empty text, data after the value, a comment, a byte order mark, a raw control character in a string), and not-found when the path names no value (a missing name, an inherited property, an index out of range or not in the canonical decimal form, or a step through a scalar).
+# The standard libraries of Java, Rust, C, C++ and Bash have no JSON parser, so this task has no solution in those languages. matrix.yaml holds the verdict for each one and the library that is used instead.

@@ -1,0 +1,5 @@
+{"name":"decimal","args":{"s":"42","base":10},"expect":42}
+{"name":"negative","args":{"s":"-17","base":10},"expect":-17}
+{"name":"hex","args":{"s":"ff","base":16},"expect":255}
+{"name":"binary","args":{"s":"101010","base":2},"expect":42}
+{"name":"base-36","args":{"s":"zz","base":36},"expect":1295}

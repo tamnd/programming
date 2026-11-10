@@ -1,0 +1,4 @@
+{"name":"sentence","args":{"text":"the cat and the hat and the bat","n":3},"expect":[["the",3],["and",2],["bat",1]]}
+{"name":"all-words","args":{"text":"one two two three three three","n":10},"expect":[["three",3],["two",2],["one",1]]}
+{"name":"punctuation","args":{"text":"Stop. Stop, stop! Go?","n":2},"expect":[["stop",3],["go",1]]}
+{"name":"lines","args":{"text":"red green\nblue red\ngreen red\n","n":2},"expect":[["red",3],["green",2]]}

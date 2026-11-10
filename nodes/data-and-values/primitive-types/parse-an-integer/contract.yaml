@@ -1,0 +1,16 @@
+# The contract of the task "parse an integer" (spec 10.2). The syntax is strict: an optional sign and the digits of the base, with nothing before, between or after them. Each solution reports bad text and a value outside the signed 64-bit range as two different errors.
+problem: parse-an-integer
+entry: parse_integer
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+  - name: base
+    type: int
+    pre: "the radix, from 2 to 36"
+returns:
+  type: int
+  post: "the value of s when s is one optional + or - and then one or more ASCII digits of the base: 0 to 9 for the values 0 to 9, and a to z or A to Z for the values 10 to 35, each value below base; s has no white space, no underscore, no separator, no prefix such as 0x, no point and no exponent; the value is from -2^63 to 2^63 - 1; leading zeros are allowed and do not change the base"
+checker: exact
+edge_classes: [sign, zero, leading-zeros, long, max, min, radix, case, precision]
+# The toolchain has no field for errors yet, and it loads only the basic, edge and regress case files. cases/errors.jsonl holds the inputs on which each solution must report an error and return no value: invalid when s does not have the syntax above, and out-of-range when s has the syntax but its value is below -2^63 or above 2^63 - 1. A solution reports the two errors in two ways that a caller can tell apart. A string with a bad character and also too many digits may give either error, so no case has both.

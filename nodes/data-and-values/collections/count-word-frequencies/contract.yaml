@@ -1,0 +1,15 @@
+# The contract of the task "count word frequencies" (spec 10.2). Each solution splits the text into words, changes each word to lower case, counts the words in a map, and returns the n most frequent words. Words with the same count are in code point order, so the result does not depend on the order of a hash map.
+problem: count-word-frequencies
+entry: top_words
+params:
+  - name: text
+    type: string
+    pre: "Unicode text with no character at or above U+D800, so UTF-8 byte order, UTF-16 code unit order and code point order agree; the only white space and punctuation characters in it are ASCII; the only upper case letters in it are A to Z"
+  - name: n
+    type: int
+    pre: "0 or more"
+returns:
+  type: "list<tuple<string, int>>"
+  post: "(word, count) pairs. A word is a maximal run of characters that are ASCII letters, ASCII digits or not ASCII; every other ASCII character, such as a space, a newline, an apostrophe, a hyphen or an underscore, ends a word. Each word is changed to lower case (A to Z become a to z) before it is counted. The pairs are sorted by count from high to low, then by word in code point order. The list holds the first n pairs, or all of them when there are fewer; text with no words gives []"
+checker: exact
+edge_classes: [empty, no-words, case, ties, fold-before-sort, n-zero, n-above-count, non-ascii, code-point-order, apostrophe, digits, separators]

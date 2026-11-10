@@ -1,0 +1,5 @@
+{"name":"abc-file","args":{"path":"fixtures/abc.txt"},"expect":"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"}
+{"name":"abc-newline-file","args":{"path":"fixtures/abc-newline.txt"},"expect":"edeaaff3f1774ad2888673770c6d64097e391bc362d7d6fb34982ddf0efd18cb"}
+{"name":"abc-crlf-file","args":{"path":"fixtures/abc-crlf.txt"},"expect":"552bab6864c7a7b69a502ed1854b9245c0e1a30f008aaa0b281da62585fdb025"}
+{"name":"empty-file","args":{"path":"fixtures/empty.txt"},"expect":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}
+{"name":"binary-file","args":{"path":"fixtures/binary.bin"},"expect":"26a66b061e8f48f39927c312f25293959729eee95978e2892d49d3512a5cc092"}

@@ -1,0 +1,17 @@
+{"name":"rfc-empty","args":{"text":"","alphabet":"standard"},"expect":""}
+{"name":"rfc-f","args":{"text":"Zg==","alphabet":"standard"},"expect":"66"}
+{"name":"rfc-fo","args":{"text":"Zm8=","alphabet":"standard"},"expect":"666f"}
+{"name":"rfc-foo","args":{"text":"Zm9v","alphabet":"standard"},"expect":"666f6f"}
+{"name":"rfc-foob","args":{"text":"Zm9vYg==","alphabet":"standard"},"expect":"666f6f62"}
+{"name":"rfc-fooba","args":{"text":"Zm9vYmE=","alphabet":"standard"},"expect":"666f6f6261"}
+{"name":"rfc-foobar","args":{"text":"Zm9vYmFy","alphabet":"standard"},"expect":"666f6f626172"}
+{"name":"empty-url","args":{"text":"","alphabet":"url"},"expect":""}
+{"name":"url-foob","args":{"text":"Zm9vYg","alphabet":"url"},"expect":"666f6f62"}
+{"name":"url-fooba","args":{"text":"Zm9vYmE","alphabet":"url"},"expect":"666f6f6261"}
+{"name":"url-foobar","args":{"text":"Zm9vYmFy","alphabet":"url"},"expect":"666f6f626172"}
+{"name":"plus-and-slash","args":{"text":"+/8=","alphabet":"standard"},"expect":"fbff"}
+{"name":"minus-and-underscore","args":{"text":"-_8","alphabet":"url"},"expect":"fbff"}
+{"name":"all-63-url","args":{"text":"____","alphabet":"url"},"expect":"ffffff"}
+{"name":"zero-bytes","args":{"text":"AAAA","alphabet":"standard"},"expect":"000000"}
+{"name":"non-ascii-standard","args":{"text":"w6nigqzwn5mC","alphabet":"standard"},"expect":"c3a9e282acf09f9982","why":"the UTF-8 bytes of é€🙂"}
+{"name":"non-ascii-url","args":{"text":"w6nigqzwn5mC","alphabet":"url"},"expect":"c3a9e282acf09f9982"}

@@ -1,0 +1,22 @@
+{"name":"plus-in-url","args":{"text":"+/8","alphabet":"url"},"error":"invalid","why":"+ and / are not in the url alphabet"}
+{"name":"minus-in-standard","args":{"text":"-_8=","alphabet":"standard"},"error":"invalid","why":"- and _ are not in the standard alphabet"}
+{"name":"bang","args":{"text":"Zm9v!","alphabet":"standard"},"error":"invalid","why":"a character outside the alphabet"}
+{"name":"non-ascii-char","args":{"text":"Zm9vé===","alphabet":"standard"},"error":"invalid","why":"a character outside ASCII"}
+{"name":"space","args":{"text":"Zm9v YmFy","alphabet":"standard"},"error":"invalid","why":"white space is outside the alphabet"}
+{"name":"line-feed","args":{"text":"Zm9v\nYmFy","alphabet":"standard"},"error":"invalid","why":"a line break is outside the alphabet"}
+{"name":"trailing-crlf","args":{"text":"Zm9vYmFy\r\n","alphabet":"standard"},"error":"invalid","why":"a line break at the end"}
+{"name":"line-feed-url","args":{"text":"Zm9v\nYmFy","alphabet":"url"},"error":"invalid","why":"a line break is outside the alphabet"}
+{"name":"missing-padding","args":{"text":"Zm8","alphabet":"standard"},"error":"invalid","why":"the standard alphabet needs padding to a multiple of 4"}
+{"name":"missing-one-pad","args":{"text":"Zg=","alphabet":"standard"},"error":"invalid","why":"one = where two are needed"}
+{"name":"excess-padding","args":{"text":"Zm9v=","alphabet":"standard"},"error":"invalid","why":"padding after a full group"}
+{"name":"padding-in-middle","args":{"text":"Zm=9","alphabet":"standard"},"error":"invalid","why":"= before the last data character"}
+{"name":"three-pads","args":{"text":"Z===","alphabet":"standard"},"error":"invalid","why":"a group has at most two pad characters"}
+{"name":"only-padding","args":{"text":"====","alphabet":"standard"},"error":"invalid","why":"no data before the padding"}
+{"name":"padding-then-data","args":{"text":"Zg==Zm8=","alphabet":"standard"},"error":"invalid","why":"padding is allowed only at the end"}
+{"name":"padding-in-url","args":{"text":"Zm8=","alphabet":"url"},"error":"invalid","why":"the url alphabet has no padding"}
+{"name":"length-1-mod-4-standard","args":{"text":"Zm9vY","alphabet":"standard"},"error":"invalid","why":"one character holds only 6 bits"}
+{"name":"length-1-mod-4-url","args":{"text":"Zm9vY","alphabet":"url"},"error":"invalid","why":"one character holds only 6 bits"}
+{"name":"one-char-url","args":{"text":"Z","alphabet":"url"},"error":"invalid","why":"one character holds only 6 bits"}
+{"name":"pad-bits-one-byte","args":{"text":"QR==","alphabet":"standard"},"error":"invalid","why":"the low 4 bits of R are not zero"}
+{"name":"pad-bits-two-bytes","args":{"text":"Zm9=","alphabet":"standard"},"error":"invalid","why":"the low 2 bits of 9 are not zero"}
+{"name":"pad-bits-url","args":{"text":"Zm9","alphabet":"url"},"error":"invalid","why":"the low 2 bits of 9 are not zero"}

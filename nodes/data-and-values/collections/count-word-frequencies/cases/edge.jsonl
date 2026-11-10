@@ -1,0 +1,12 @@
+{"name":"empty","class":["empty"],"args":{"text":"","n":3},"expect":[]}
+{"name":"no-words","class":["no-words"],"args":{"text":" ... ,!? \n","n":3},"expect":[]}
+{"name":"case","class":["case"],"args":{"text":"Word word WORD wOrD","n":1},"expect":[["word",4]]}
+{"name":"ties","class":["ties"],"args":{"text":"pear fig apple fig pear apple","n":3},"expect":[["apple",2],["fig",2],["pear",2]]}
+{"name":"fold-before-sort","class":["fold-before-sort"],"args":{"text":"Zebra apple","n":2},"expect":[["apple",1],["zebra",1]]}
+{"name":"n-zero","class":["n-zero"],"args":{"text":"a b c","n":0},"expect":[]}
+{"name":"n-above-count","class":["n-above-count"],"args":{"text":"a b a","n":10},"expect":[["a",2],["b",1]]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"text":"café naïve café 日本語 naïve café","n":3},"expect":[["café",3],["naïve",2],["日本語",1]]}
+{"name":"code-point-order","class":["code-point-order","non-ascii"],"args":{"text":"f é e","n":3},"expect":[["e",1],["f",1],["é",1]]}
+{"name":"apostrophe","class":["apostrophe"],"args":{"text":"don't stop, don't","n":3},"expect":[["don",2],["t",2],["stop",1]]}
+{"name":"digits","class":["digits"],"args":{"text":"route 66 and route 66a 66","n":3},"expect":[["66",2],["route",2],["66a",1]]}
+{"name":"separators","class":["separators"],"args":{"text":"tab\there\r\nunder_score-dash","n":10},"expect":[["dash",1],["here",1],["score",1],["tab",1],["under",1]]}

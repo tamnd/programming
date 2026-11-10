@@ -1,0 +1,13 @@
+# The contract of the task "compute a SHA-256 hash" (spec 10.2). Each solution hashes the UTF-8 bytes of a string with SHA-256 as FIPS 180-4 defines it, and gives the digest as 64 lowercase hexadecimal digits.
+problem: compute-a-sha-256-hash
+entry: sha256_text
+params:
+  - name: text
+    type: string
+    pre: "any string with no unpaired surrogate"
+returns:
+  type: string
+  post: "the SHA-256 digest of the UTF-8 encoding of text, with no byte order mark and no normalization, as 64 lowercase hexadecimal digits"
+checker: exact
+edge_classes: [empty, padding-boundary, multi-block, non-ascii, normalization, newline]
+# Each solution also has a second function, sha256_file(path), that reads a file in chunks and returns the digest of its bytes in the same form. The toolchain has one entry per contract and loads only the basic, edge and regress case files. So cases/files.jsonl holds the cases of sha256_file, with the files in fixtures/, and cases/errors.jsonl holds the input on which sha256_file must report an error and return no hash: not-found when the file does not exist.
