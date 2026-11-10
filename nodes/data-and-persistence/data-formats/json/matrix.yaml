@@ -1,0 +1,27 @@
+c:
+  status: library
+  reason: ISO C has no JSON functions in its standard library.
+  alternative: a library such as cJSON, Jansson or json-c.
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no JSON; the official kotlinx.serialization library has a JSON format with Json.decodeFromString and Json.encodeToString.
+  alternative: kotlinx.serialization, or a Java library such as Gson or Jackson on the JVM.
+powershell:
+  status: stdlib
+  reason: the cmdlets ConvertFrom-Json and ConvertTo-Json ship with PowerShell; no example file because PowerShell is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: the SQL standard defines JSON functions such as JSON_VALUE, JSON_QUERY and JSON_TABLE, and SQLite has json, json_extract and the operators -> and ->>.
+bash:
+  status: library
+  reason: Bash has no JSON parser.
+  alternative: the command-line tool jq.
+regex:
+  status: n/a
+  reason: a regular expression cannot match the nested structure of JSON in general, and a pattern has no values to serialise.
+html:
+  status: n/a
+  reason: markup has no data values to serialise; a script element of type application/json can hold a JSON text.
+css:
+  status: n/a
+  reason: style sheets have no data values to serialise.
