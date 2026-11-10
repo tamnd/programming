@@ -1,0 +1,16 @@
+# The contract of the task "measure elapsed time" (spec 10.2). A real clock gives a new value on each run, so the cases test the arithmetic and the format on two fixed readings of a monotonic clock.
+problem: measure-elapsed-time
+entry: elapsed_ms
+params:
+  - name: start_ns
+    type: int
+    pre: "a reading of a monotonic clock in nanoseconds, from -2^63 to 2^63 - 1; the origin of the clock is arbitrary, so a reading can be negative"
+  - name: end_ns
+    type: int
+    pre: "a later reading of the same clock, from -2^63 to 2^63 - 1, with start_ns <= end_ns and end_ns - start_ns <= 2^63 - 1"
+returns:
+  type: string
+  post: "the duration end_ns - start_ns as M.UUU ms, where M is the whole milliseconds in decimal with no leading zeros (0 if none) and UUU is the whole microseconds of the rest, with three digits; the rest under one microsecond is dropped, not rounded; the result comes from integer arithmetic on all 64 bits"
+checker: exact
+edge_classes: [zero, truncation, leading-zeros, large, negative-readings, precision, int64-limit]
+# The toolchain has one entry for each contract. Each solution also has measure(work, clock), which reads the clock once, runs work once, reads the clock again and returns the difference. The test of each language calls measure with a fake clock that returns fixed readings and checks the order of the calls, and calls it once with the real monotonic clock and checks only that the result is not negative.

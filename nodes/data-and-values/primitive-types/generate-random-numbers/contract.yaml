@@ -1,0 +1,22 @@
+# The contract of the task "generate random numbers" (spec 10.2). A generator gives new numbers on each run, so the cases give a fixed list of 32-bit words in place of the generator, and test the exact numbers that the solution makes from them.
+problem: generate-random-numbers
+entry: ints_in_range
+params:
+  - name: words
+    type: "list<int>"
+    pre: "the output of a generator, in order: integers from 0 to 2^32 - 1, each with equal probability; the list has the words that the results need, and no more"
+  - name: lo
+    type: int
+    pre: "the least result, from -2^63 to 2^63 - 1"
+  - name: hi
+    type: int
+    pre: "the largest result, with lo <= hi <= 2^63 - 1 and hi - lo + 1 <= 2^32"
+  - name: count
+    type: int
+    pre: "the number of results, 0 or more"
+returns:
+  type: "list<int>"
+  post: "count integers from lo to hi, each with equal probability; with n = hi - lo + 1, each result takes the next word w until w >= 2^32 mod n, and is lo + (w mod n); a word below 2^32 mod n is rejected, so that no result is more probable than another; each result takes at least one word, also when n = 1; the arithmetic does not overflow at the ends of the signed 64-bit range"
+checker: exact
+edge_classes: [rejection, least-accepted, power-of-two, worst-case, full-32-bit, int64-limit, one-value]
+# The toolchain has one entry for each contract. cases/shuffle.jsonl tests shuffle(words, items): a Fisher-Yates shuffle that goes from the last index i down to 1, and swaps items i and j, where j is the result of ints_in_range on the next words with lo = 0 and hi = i. Each solution also has a seeded generator and a token function, which the test of each language checks by property: two generators with the same seed give the same words, and token_hex(n) gives 2n lowercase hexadecimal digits from the cryptographically secure generator of the platform, with a new value on each call.

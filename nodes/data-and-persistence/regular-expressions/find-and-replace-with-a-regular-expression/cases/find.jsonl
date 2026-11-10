@@ -1,0 +1,6 @@
+{"name":"two-dates","args":{"text":"From 2024-01-02 to 2024-12-31","sep":"-"},"expect":[["2024","01","02"],["2024","12","31"]]}
+{"name":"none","args":{"text":"no dates here","sep":"-"},"expect":[]}
+{"name":"empty","args":{"text":"","sep":"-"},"expect":[]}
+{"name":"date-after-rejected","args":{"text":"2024-01-0234-05-06","sep":"-"},"expect":[["0234","05","06"]]}
+{"name":"dot-separator","args":{"text":"2024x01x02 2024.01.02","sep":"."},"expect":[["2024","01","02"]]}
+{"name":"unicode-digits","args":{"text":"٢٠٢٤-٠١-٠٢ 2024-01-02","sep":"-"},"expect":[["2024","01","02"]]}

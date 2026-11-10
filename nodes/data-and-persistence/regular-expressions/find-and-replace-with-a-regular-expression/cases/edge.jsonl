@@ -1,0 +1,21 @@
+{"name":"empty-text","class":["empty"],"args":{"text":"","from_sep":"-","to_sep":"/"},"expect":""}
+{"name":"empty-to-sep","class":["empty"],"args":{"text":"2024-01-02","from_sep":"-","to_sep":""},"expect":"02012024"}
+{"name":"whole-text","class":["anchors"],"args":{"text":"2024-01-02","from_sep":"-","to_sep":"/"},"expect":"02/01/2024"}
+{"name":"adjacent","class":["adjacent"],"args":{"text":"2024-01-02,2024-01-03","from_sep":"-","to_sep":"/"},"expect":"02/01/2024,03/01/2024"}
+{"name":"digit-before","class":["digit-boundary"],"args":{"text":"12024-01-02","from_sep":"-","to_sep":"/"},"expect":"12024-01-02"}
+{"name":"digit-after","class":["digit-boundary"],"args":{"text":"2024-01-023","from_sep":"-","to_sep":"/"},"expect":"2024-01-023"}
+{"name":"date-after-rejected","class":["overlap"],"args":{"text":"2024-01-0234-05-06","from_sep":"-","to_sep":"/"},"expect":"2024-01-06/05/0234"}
+{"name":"chained","class":["overlap"],"args":{"text":"2024-01-02-03","from_sep":"-","to_sep":"/"},"expect":"02/01/2024-03"}
+{"name":"other-separator","class":["literal-separator"],"args":{"text":"2024/01/02","from_sep":"-","to_sep":"."},"expect":"2024/01/02"}
+{"name":"dot-separator","class":["metacharacter"],"args":{"text":"2024x01x02 2024.01.02","from_sep":".","to_sep":"-"},"expect":"2024x01x02 02-01-2024"}
+{"name":"backslash-separator","class":["metacharacter"],"args":{"text":"2024\\01\\02","from_sep":"\\","to_sep":"-"},"expect":"02-01-2024"}
+{"name":"plus-separator","class":["metacharacter"],"args":{"text":"2024+01+02 202401102","from_sep":"+","to_sep":"-"},"expect":"02-01-2024 202401102"}
+{"name":"dollar-in-replacement","class":["replacement-escape"],"args":{"text":"2024-01-02","from_sep":"-","to_sep":"$1"},"expect":"02$101$12024"}
+{"name":"backslash-in-replacement","class":["replacement-escape"],"args":{"text":"2024-01-02","from_sep":"-","to_sep":"\\1\\"},"expect":"02\\1\\01\\1\\2024"}
+{"name":"digit-in-replacement","class":["replacement-escape"],"args":{"text":"2024-01-02","from_sep":"-","to_sep":"0"},"expect":"0200102024"}
+{"name":"whole-match-in-replacement","class":["replacement-escape"],"args":{"text":"2024-01-02","from_sep":"-","to_sep":"$&"},"expect":"02$&01$&2024"}
+{"name":"unicode-digits","class":["unicode-digits"],"args":{"text":"٢٠٢٤-٠١-٠٢ and ２０２４-01-02 and 2024-01-02","from_sep":"-","to_sep":"/"},"expect":"٢٠٢٤-٠١-٠٢ and ２０２４-01-02 and 02/01/2024"}
+{"name":"non-ascii-text","class":["non-ascii"],"args":{"text":"Café ☕ 2024-01-02 🙂","from_sep":"-","to_sep":"/"},"expect":"Café ☕ 02/01/2024 🙂"}
+{"name":"non-ascii-separator","class":["non-ascii"],"args":{"text":"2024–01–02","from_sep":"–","to_sep":"·"},"expect":"02·01·2024"}
+{"name":"multiline","class":["multiline"],"args":{"text":"2024-01-02\n2024-01-03\n","from_sep":"-","to_sep":"/"},"expect":"02/01/2024\n03/01/2024\n"}
+{"name":"not-a-calendar-date","class":["not-validated"],"args":{"text":"2024-13-45","from_sep":"-","to_sep":"/"},"expect":"45/13/2024"}

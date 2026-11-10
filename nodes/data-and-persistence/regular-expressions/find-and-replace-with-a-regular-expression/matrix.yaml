@@ -1,0 +1,4 @@
+rust:
+  status: library
+  reason: the Rust standard library has no regular expressions.
+  alternative: the crate regex, which the page uses in a run block with deps=deps/rust/Cargo.lock.

@@ -1,0 +1,10 @@
+{"name":"one-value","class":["one-value"],"args":{"words":[0,99],"lo":5,"hi":5,"count":2},"expect":[5,5]}
+{"name":"reject-low-words","class":["rejection"],"args":{"words":[0,3,4],"lo":1,"hi":6,"count":1},"expect":[5]}
+{"name":"accept-least","class":["least-accepted"],"args":{"words":[3,4,9],"lo":0,"hi":5,"count":2},"expect":[4,3]}
+{"name":"power-of-two","class":["power-of-two"],"args":{"words":[0,4294967295],"lo":0,"hi":7,"count":2},"expect":[0,7]}
+{"name":"worst-case","class":["worst-case"],"args":{"words":[2147483646,2147483647],"lo":0,"hi":2147483648,"count":1},"expect":[2147483647]}
+{"name":"full-unsigned-32","class":["full-32-bit"],"args":{"words":[0,4294967295,123456789],"lo":0,"hi":4294967295,"count":3},"expect":[0,4294967295,123456789]}
+{"name":"full-signed-32","class":["full-32-bit"],"args":{"words":[0,2147483648,4294967295],"lo":-2147483648,"hi":2147483647,"count":3},"expect":[-2147483648,0,2147483647]}
+{"name":"near-int64-max","class":["int64-limit"],"args":{"words":[4294967295,6],"lo":9223372036854775798,"hi":9223372036854775807,"count":2},"expect":[9223372036854775803,9223372036854775804]}
+{"name":"near-int64-min","class":["int64-limit"],"args":{"words":[4294967295,9],"lo":-9223372036854775808,"hi":-9223372036854775799,"count":2},"expect":[-9223372036854775803,-9223372036854775799]}
+{"name":"wide-int64","class":["int64-limit"],"args":{"words":[4294967295,0],"lo":9223372032559808512,"hi":9223372036854775807,"count":2},"expect":[9223372036854775807,9223372032559808512]}

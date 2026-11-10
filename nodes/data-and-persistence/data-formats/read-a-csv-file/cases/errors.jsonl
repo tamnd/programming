@@ -1,0 +1,5 @@
+{"name":"too-few-fields","args":{"path":"fixtures/too-few-fields.csv"},"error":"field-count"}
+{"name":"too-many-fields","args":{"path":"fixtures/too-many-fields.csv"},"error":"field-count"}
+{"name":"unclosed-quote","args":{"path":"fixtures/unclosed-quote.csv"},"error":"bad-quote"}
+{"name":"text-after-quote","args":{"path":"fixtures/text-after-quote.csv"},"error":"bad-quote"}
+{"name":"missing","args":{"path":"fixtures/missing.csv"},"error":"not-found"}

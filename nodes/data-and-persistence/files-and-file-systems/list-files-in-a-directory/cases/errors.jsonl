@@ -1,0 +1,2 @@
+{"name":"missing","args":{"tree":[],"path":"missing"},"error":"not-found"}
+{"name":"a-file","args":{"tree":["notes.txt"],"path":"notes.txt"},"error":"not-a-directory"}

@@ -1,0 +1,20 @@
+# The contract of the task "find and replace with a regular expression" (spec 10.2). A date is found by its shape, not checked against the calendar.
+problem: find-and-replace-with-a-regular-expression
+entry: reformat_dates
+params:
+  - name: text
+    type: string
+    pre: "any string of Unicode text"
+  - name: from_sep
+    type: string
+    pre: "the separator of the dates in text: a literal string of one or more characters with no ASCII digit; a character in it that is special in a pattern, such as . + or \\, matches only itself"
+  - name: to_sep
+    type: string
+    pre: "the separator of the dates in the result: any literal string, also empty; $, \\ and digits in it are copied as they are"
+returns:
+  type: string
+  post: "text with each date YYYY<from_sep>MM<from_sep>DD changed to DD<to_sep>MM<to_sep>YYYY, where YYYY is four ASCII digits, MM and DD are two ASCII digits each, and the date has no ASCII digit just before it or just after it; the dates are found from left to right without overlap, and a position that fails the digit check does not hide a date that starts later inside it; the rest of text is unchanged"
+checker: exact
+edge_classes: [empty, anchors, adjacent, digit-boundary, overlap, literal-separator, metacharacter, replacement-escape, unicode-digits, non-ascii, multiline, not-validated]
+# The toolchain has one entry for each contract. A second entry is in cases/find.jsonl, and each solution tests it too:
+# find_dates(text, sep) -> list<list<string>>. The dates of text, found by the same rules as reformat_dates, in order. Each date is the list [year, month, day] of its three capture groups, as strings.

@@ -1,0 +1,4 @@
+bash:
+  status: library
+  reason: Bash has no CSV parser, and the word splitting of the shell cannot read a quoted field.
+  alternative: a CSV tool such as Miller, or a solution in another language.

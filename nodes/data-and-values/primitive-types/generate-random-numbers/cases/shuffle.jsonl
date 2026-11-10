@@ -1,0 +1,8 @@
+{"name":"empty","args":{"words":[],"items":[]},"expect":[]}
+{"name":"one-item","args":{"words":[],"items":["a"]},"expect":["a"]}
+{"name":"two-items-swap","args":{"words":[0],"items":["a","b"]},"expect":["b","a"]}
+{"name":"two-items-keep","args":{"words":[1],"items":["a","b"]},"expect":["a","b"]}
+{"name":"five-items","args":{"words":[7,3,4,1],"items":["a","b","c","d","e"]},"expect":["a","e","b","d","c"]}
+{"name":"reject-in-shuffle","args":{"words":[0,2,0],"items":["a","b","c"]},"expect":["b","a","c"]}
+{"name":"duplicates","args":{"words":[1,1],"items":["x","x","y"]},"expect":["x","y","x"]}
+{"name":"non-ascii","args":{"words":[4294967295,4294967294,0],"items":["é","日本","🙂","a"]},"expect":["日本","é","🙂","a"]}

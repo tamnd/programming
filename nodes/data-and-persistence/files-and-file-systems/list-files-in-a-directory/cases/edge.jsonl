@@ -1,0 +1,11 @@
+{"name":"empty","class":["empty"],"args":{"tree":[],"recursive":true},"expect":[]}
+{"name":"empty-subdir","class":["empty","nested"],"args":{"tree":["empty/"],"recursive":true},"expect":["empty/"]}
+{"name":"hidden","class":["hidden"],"args":{"tree":[".env",".git/",".git/config","main.go"],"recursive":true},"expect":[".env",".git/",".git/config","main.go"]}
+{"name":"case-order","class":["sort-order"],"args":{"tree":["a.txt","B.txt","c.txt"],"recursive":false},"expect":["B.txt","a.txt","c.txt"]}
+{"name":"dot-before-slash","class":["sort-order","nested"],"args":{"tree":["a/","a/x","a.txt","a-b"],"recursive":true},"expect":["a-b","a.txt","a/","a/x"]}
+{"name":"symlink-to-dir","class":["symlink"],"args":{"tree":["real/","real/f","link -> real"],"recursive":true},"expect":["link","real/","real/f"]}
+{"name":"symlink-to-file","class":["symlink"],"args":{"tree":["f","g -> f"],"recursive":true},"expect":["f","g"]}
+{"name":"broken-symlink","class":["symlink"],"args":{"tree":["dangling -> nowhere"],"recursive":true},"expect":["dangling"]}
+{"name":"symlink-loop","class":["symlink"],"args":{"tree":["d/","d/up -> .."],"recursive":true},"expect":["d/","d/up"]}
+{"name":"spaces","class":["special-chars"],"args":{"tree":["my file.txt","two  spaces/","two  spaces/x"],"recursive":true},"expect":["my file.txt","two  spaces/","two  spaces/x"]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"tree":["été.txt","zebra.txt","apple.txt"],"recursive":false},"expect":["apple.txt","zebra.txt","été.txt"]}

@@ -1,0 +1,2 @@
+{"name":"simple","args":{"path":"fixtures/simple.csv"},"expect":[{"name":"Ada","age":"36"},{"name":"Alan","age":"41"}]}
+{"name":"crlf","class":["crlf"],"args":{"path":"fixtures/crlf.csv"},"expect":[{"name":"Ada","age":"36"},{"name":"Alan","age":"41"}]}
