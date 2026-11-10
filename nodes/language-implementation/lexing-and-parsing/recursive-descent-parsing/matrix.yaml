@@ -1,0 +1,20 @@
+powershell:
+  status: idiom
+  reason: functions and a script-scope index into the token list give a recursive descent parser; no example file because PowerShell is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: shell functions can recurse over a global token array and a global index, but every value passes through strings and global variables, so the parser is slow and hard to read.
+  alternative: a parser written in a general language, called from the script.
+sql:
+  status: n/a
+  reason: a query language works on tables; it has no functions that recurse over a token list.
+regex:
+  status: absent
+  reason: a regular expression cannot match parentheses nested to any depth, so it cannot parse the expression grammar.
+  alternative: a recursive descent parser in a general language.
+html:
+  status: n/a
+  reason: markup has no functions.
+css:
+  status: n/a
+  reason: style rules have no functions that call each other.

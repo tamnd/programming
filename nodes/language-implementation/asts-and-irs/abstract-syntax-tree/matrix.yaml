@@ -1,0 +1,19 @@
+powershell:
+  status: stdlib
+  reason: a script block has an Ast property that holds the syntax tree of PowerShell code; no example file because PowerShell is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query language has no access to the syntax tree of a query or of a program.
+bash:
+  status: n/a
+  reason: the shell parses its scripts but exposes no syntax tree to them.
+regex:
+  status: n/a
+  reason: a pattern language matches text; it cannot build or hold a tree.
+  alternative: a parser written in a general language.
+html:
+  status: n/a
+  reason: markup describes a document; the DOM is a tree of the document, not of a program.
+css:
+  status: n/a
+  reason: style rules have no way to build or walk a syntax tree.

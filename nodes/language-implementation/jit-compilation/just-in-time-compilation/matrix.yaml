@@ -1,0 +1,19 @@
+powershell:
+  status: idiom
+  reason: a script can hold the tree in hashtables, interpret it, and build script blocks as compiled code once a function is hot; no example file because PowerShell is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: a script can generate the text of a function at run time and define it with eval, but every value is a string and the generated code runs in the same shell interpreter.
+  alternative: a JIT engine written in a general language, called from the script.
+sql:
+  status: n/a
+  reason: a query language has no way to compile its own code; whether queries are compiled at run time is a property of the database engine.
+regex:
+  status: n/a
+  reason: a pattern language has no user code to compile; a regex engine may compile patterns at run time, as Thompson did in 1968.
+html:
+  status: n/a
+  reason: markup is not executed as code.
+css:
+  status: n/a
+  reason: style rules are not executed as code.

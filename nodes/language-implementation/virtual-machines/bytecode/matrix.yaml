@@ -1,0 +1,19 @@
+powershell:
+  status: idiom
+  reason: an array of integers can hold the code and a switch inside a loop can run it; no example file because PowerShell is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: an indexed array can hold the code and a case statement inside a loop can run it, but every value is a string and each step is slow.
+  alternative: a virtual machine written in a general language, called from the script.
+sql:
+  status: n/a
+  reason: a query language is not a host for a virtual machine with a loop over instructions.
+regex:
+  status: n/a
+  reason: a pattern language has no arrays, loops or arithmetic to run instructions.
+html:
+  status: n/a
+  reason: markup does not execute instructions.
+css:
+  status: n/a
+  reason: style rules do not execute instructions.
