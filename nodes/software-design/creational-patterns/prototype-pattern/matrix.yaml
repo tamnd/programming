@@ -1,0 +1,26 @@
+c:
+  status: idiom
+  reason: a struct assignment or memcpy copies the fields, so a pointer member is shared; a prototype is a struct with a pointer to a table of functions that includes a clone function, which copies the pointed-to data by hand.
+kotlin:
+  status: idiom
+  reason: a data class has a generated copy function that takes the changed properties as named arguments, and the copy is shallow; an interface with a copy method gives the registry form; no example is executed here because the test image has no kotlinc.
+  alternative: a copy constructor or a copy method, as in the Java example.
+sql:
+  status: idiom
+  reason: INSERT INTO ... SELECT copies a row that serves as a template, with some columns changed in the select list; SQL rows have no behaviour to copy.
+bash:
+  status: n/a
+  reason: the shell has strings and arrays but no objects; a copy of an array with "${array[@]}" is a copy of values, and there is no behaviour to clone.
+powershell:
+  status: idiom
+  reason: PSObject.Copy and the Clone method of a hashtable make shallow copies, and a class can define its own copy method; no example is executed here because the test image has no pwsh.
+  alternative: a class with a copy constructor.
+regex:
+  status: n/a
+  reason: a pattern has no objects to copy.
+html:
+  status: n/a
+  reason: markup has no objects; the template element and cloneNode belong to the DOM API in JavaScript.
+css:
+  status: n/a
+  reason: style rules have no objects to copy.

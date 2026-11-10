@@ -1,0 +1,26 @@
+c:
+  status: idiom
+  reason: a table of shared structs and an array of indexes or pointers into it; a string table that keeps one copy of each string is the interning form.
+kotlin:
+  status: idiom
+  reason: a data class with val properties for the intrinsic state and a map with getOrPut for the factory; boxed integers share the JVM cache of Integer.valueOf; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, with a record and computeIfAbsent.
+sql:
+  status: idiom
+  reason: normalization is the same idea: a lookup table holds each distinct value once, and the rows refer to it by key.
+bash:
+  status: n/a
+  reason: the shell has strings but no objects to share; a value is copied on each assignment.
+powershell:
+  status: idiom
+  reason: a hashtable from the key to a shared object, and [string]::Intern from .NET; no example is executed here because the test image has no pwsh.
+  alternative: the C# example, with a Dictionary and a record.
+regex:
+  status: n/a
+  reason: a pattern has no objects to share.
+html:
+  status: n/a
+  reason: markup has no objects; the use element in SVG refers to one shared definition, but that is a feature of the format and not the pattern.
+css:
+  status: n/a
+  reason: style rules have no objects; a class selector shared by many elements is the nearest idea.

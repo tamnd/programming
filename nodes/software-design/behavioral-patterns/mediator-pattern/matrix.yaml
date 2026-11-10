@@ -1,0 +1,26 @@
+c:
+  status: idiom
+  reason: a mediator struct holds pointers to the colleague structs, and each colleague holds a pointer to the mediator and a function pointer to call on a change.
+kotlin:
+  status: idiom
+  reason: an interface for the mediator and classes that hold it, as in Java, or a lambda property for each change; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example, with a Mediator interface and widgets that hold it.
+sql:
+  status: n/a
+  reason: SQL has no objects that send messages; a trigger that changes one table when another changes is the nearest form.
+bash:
+  status: n/a
+  reason: the shell has no objects; a script that runs several programs and passes data between them is a coordinator but not the pattern.
+powershell:
+  status: idiom
+  reason: classes and .NET events can build the pattern as in C#; no example is executed here because the test image has no pwsh.
+  alternative: the C# example, with an interface and widgets that hold it.
+regex:
+  status: n/a
+  reason: a pattern has no objects that interact.
+html:
+  status: n/a
+  reason: markup has no code; radio buttons with the same name form a group that the browser mediates, but a page cannot define its own mediator in HTML.
+css:
+  status: n/a
+  reason: style rules have no objects that interact.
