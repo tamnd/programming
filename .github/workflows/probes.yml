@@ -1,0 +1,58 @@
+# SPDX-License-Identifier: CC0-1.0
+#
+# Runs the probes of the compat entries (spec 09.4) in the image of each release and uploads manifests/probes.jsonl. The job has no secrets and only reads the repository. To keep the results, download the artifact and commit the file.
+name: Probes
+
+on:
+  pull_request:
+    paths:
+      - "nodes/**/compat.yaml"
+      - "nodes/**/probes/**"
+      - "registers/implementations.yaml"
+      - ".github/workflows/probes.yml"
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Run the probes that are already verified again"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PROG_VERSION: v0.0.2
+  GO_VERSION: "1.27.x"
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: false
+      - name: Install prog
+        run: go install "github.com/tamnd/programming-agent/cmd/prog@${PROG_VERSION}"
+      - name: Run the probes
+        env:
+          ALL: ${{ inputs.all }}
+        run: |
+          if [ "$ALL" = true ]; then prog compat probe -all; else prog compat probe; fi
+      - name: Show the results
+        if: always()
+        run: if [ -f manifests/probes.jsonl ]; then cat manifests/probes.jsonl; fi
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: probes
+          path: manifests/probes.jsonl
+          if-no-files-found: ignore

@@ -1,0 +1,13 @@
+# The contract of the task "read a file line by line" (spec 10.2). Each solution reads the file once, as a stream, and keeps only the current line in memory.
+problem: read-a-file-line-by-line
+entry: line_stats
+params:
+  - name: path
+    type: string
+    pre: "the path of a file of UTF-8 text with no byte order mark, relative to the node directory; LF or CRLF ends a line, and no CR stands alone"
+returns:
+  type: "tuple<int, int>"
+  post: "(lines, longest): the number of lines, and the number of Unicode code points in the longest line without its line terminator; (0, 0) for an empty file"
+checker: exact
+edge_classes: [empty, empty-line, no-final-newline, crlf, whitespace, backslash, long-line, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and return no result: not-found when the file does not exist, invalid-utf8 when the bytes are not valid UTF-8.

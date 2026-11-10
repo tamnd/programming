@@ -1,0 +1,2 @@
+{"name":"lf","args":{"path":"fixtures/lf.txt"},"expect":[3,5]}
+{"name":"blank-lines","args":{"path":"fixtures/blank-lines.txt"},"expect":[4,9]}

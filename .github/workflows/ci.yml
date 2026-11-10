@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
-  PROG_VERSION: v0.0.1
+  PROG_VERSION: v0.0.2
   GO_VERSION: "1.27.x"
 
 jobs:
@@ -80,6 +80,11 @@ jobs:
           LANG_ID: ${{ matrix.lang }}
         # Each build and test runs in a container of the image that manifests/images.yaml pins, with no network (spec 07.6).
         run: prog test -sandbox docker -lang "$LANG_ID" -cache build/test-cache -out build/results
+      - name: Run the code blocks of the pages
+        env:
+          LANG_ID: ${{ matrix.lang }}
+        # Each block runs in the same image as the tests, and its output must match the output block of the page (spec 07.2).
+        run: prog run -sandbox docker -lang "$LANG_ID" -out "build/results/runs-$LANG_ID.json"
       - uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         if: github.event_name != 'pull_request'
         with:

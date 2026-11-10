@@ -1,0 +1,52 @@
+ownership:
+  description: "Ownership, moves, Copy, Clone and Drop"
+  spec: {url: "https://doc.rust-lang.org/1.99.1/reference/expressions.html#moved-and-copied-types"}
+  source: {release_notes: "https://blog.rust-lang.org/2015/05/15/Rust-1.0/"}
+  support:
+    rustc: {version_added: "1.0.0", edition: "2015+", probe: probes/move.rs}
+  status: {standard: true, experimental: false, deprecated: false}
+
+ownership.non-lexical-lifetimes:
+  description: "A borrow is live until the last use of the reference (non-lexical lifetimes)"
+  source: {proposal: rfc-2094}
+  support:
+    rustc:
+      - version_added: "1.31.0"
+        edition: "2018+"
+        probe: probes/nll_last_use.rs
+        source: "https://blog.rust-lang.org/2018/12/06/Rust-1.31-and-rust-2018/"
+      - version_added: "1.36.0"
+        edition: "2015"
+        probe: probes/nll_last_use.rs
+        note: "Migration mode: when the old borrow checker accepted code that the NLL checker rejects, rustc gives a warning, not an error. Rust 1.63.0 removed the old borrow checker and the migration mode."
+        source: "https://blog.rust-lang.org/2019/07/04/Rust-1.36.0/"
+  status: {standard: true, experimental: false, deprecated: false}
+
+ownership.two-phase-borrows:
+  description: "Two-phase borrows: an autoref &mut borrow is reserved first and activated at the call"
+  source: {proposal: rfc-2025}
+  support:
+    rustc:
+      - version_added: "1.31.0"
+        edition: "2018+"
+        probe: probes/two_phase.rs
+        note: "Enabled together with NLL."
+        source: "https://github.com/rust-lang/rust/pull/52975"
+      - version_added: "1.36.0"
+        edition: "2015"
+        probe: probes/two_phase.rs
+        note: "Enabled with NLL migration mode for edition 2015."
+        source: "https://github.com/rust-lang/rust/pull/59114"
+  status: {standard: true, experimental: false, deprecated: false}
+
+ownership.tail-expression-temporaries:
+  description: "Temporaries in the tail expression of a block are dropped before the local variables of the block"
+  source: {proposal: rfc-3606, release_notes: "https://blog.rust-lang.org/2025/02/20/Rust-1.85.0/"}
+  support:
+    rustc:
+      version_added: "1.85.0"
+      edition: "2024"
+      probe: probes/tail_temporary.rs
+      note: "Editions 2015 to 2021 keep the earlier rule: the temporaries live until the end of the enclosing statement, after the locals are dropped."
+      source: "https://doc.rust-lang.org/edition-guide/rust-2024/temporary-tail-expr-scope.html"
+  status: {standard: true, experimental: false, deprecated: false}

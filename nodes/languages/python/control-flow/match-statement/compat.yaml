@@ -1,0 +1,38 @@
+match-statement:
+  description: "The match statement"
+  spec: {url: "https://docs.python.org/3.15/reference/compound_stmts.html#the-match-statement"}
+  source: {proposal: pep-634, release_notes: "https://docs.python.org/3.10/whatsnew/3.10.html#pep-634-structural-pattern-matching"}
+  support:
+    cpython: {version_added: "3.10", probe: probes/match_basic.py}
+    pypy: {version_added: "7.3.12", note: "The first PyPy release with a Python 3.10 language level. The probe passed on PyPy 7.3.19 (3.10.16) and 8.0.0 (3.12.14).", probe: probes/match_basic.py, source: "https://doc.pypy.org/en/latest/index-of-release-notes.html"}
+    graalpy: {version_added: "24.0.2", note: "The oldest GraalPy release that we ran (Python 3.10.13). Older releases were not checked.", probe: probes/match_basic.py}
+    micropython: {version_added: false, note: "The probe is a SyntaxError on MicroPython 1.29.0, which implements the Python 3.4 syntax with some later features.", source: "https://github.com/micropython/micropython/blob/master/README.md"}
+  status: {standard: true, experimental: false, deprecated: false}
+
+match-statement.class-patterns:
+  description: "Class patterns with __match_args__"
+  spec: {url: "https://docs.python.org/3.15/reference/compound_stmts.html#class-patterns"}
+  support:
+    cpython: {version_added: "3.10", probe: probes/match_class.py}
+    pypy: {version_added: "7.3.12", probe: probes/match_class.py}
+    graalpy: {version_added: "24.0.2", note: "Older releases were not checked.", probe: probes/match_class.py}
+    micropython: {version_added: false}
+
+match-statement.soft-keyword:
+  description: "match and case are soft keywords; they stay valid as names"
+  spec: {url: "https://docs.python.org/3.15/reference/lexical_analysis.html#soft-keywords"}
+  support:
+    cpython: {version_added: "3.10", probe: probes/match_soft_keyword.py}
+    pypy: {version_added: "7.3.12", probe: probes/match_soft_keyword.py}
+    graalpy: {version_added: "24.0.2", note: "Older releases were not checked.", probe: probes/match_soft_keyword.py}
+    micropython: {version_added: false}
+
+match-statement.unary-plus-literal:
+  description: "A unary plus in a literal pattern, as in case +1"
+  spec: {url: "https://docs.python.org/3.15/reference/compound_stmts.html#literal-patterns"}
+  source: {release_notes: "https://docs.python.org/3.15/whatsnew/3.15.html#other-language-changes"}
+  support:
+    cpython: {version_added: "3.15", probe: probes/match_unary_plus.py}
+    pypy: {version_added: false, note: "The probe is a SyntaxError on PyPy 8.0.0 (3.12.14)."}
+    graalpy: {version_added: false, note: "The probe is a SyntaxError on GraalPy 25.4.4 (3.13.14)."}
+    micropython: {version_added: false}

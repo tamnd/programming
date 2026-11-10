@@ -1,0 +1,5 @@
+{"name":"missing","args":{"path":"fixtures/missing.txt"},"error":"not-found"}
+{"name":"invalid-byte","args":{"path":"fixtures/invalid-byte.txt"},"error":"invalid-utf8"}
+{"name":"truncated-at-end","args":{"path":"fixtures/truncated-at-end.txt"},"error":"invalid-utf8"}
+{"name":"encoded-surrogate","args":{"path":"fixtures/encoded-surrogate.txt"},"error":"invalid-utf8"}
+{"name":"overlong","args":{"path":"fixtures/overlong.txt"},"error":"invalid-utf8"}
