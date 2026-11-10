@@ -1,0 +1,16 @@
+bash:
+  status: absent
+  reason: Bash has no channel values. A pipeline connects the standard output of one process to the standard input of the next, so it carries bytes, not typed values.
+  alternative: a pipeline of processes, or a named pipe made by the POSIX mkfifo utility that unrelated processes open.
+sql:
+  status: n/a
+  reason: a query has no concurrent processes that exchange values.
+regex:
+  status: n/a
+  reason: a pattern has no processes.
+html:
+  status: n/a
+  reason: markup has no processes.
+css:
+  status: n/a
+  reason: style rules have no processes.

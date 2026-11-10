@@ -1,0 +1,17 @@
+bash:
+  status: absent
+  reason: the shell has no threads and no locks.
+  alternative: processes that wait for each other, through pipes, wait or lock files, can still deadlock; take lock files in one fixed order.
+sql:
+  status: native
+  reason: transactions that lock the same rows in opposite orders deadlock; PostgreSQL detects the cycle and aborts one transaction.
+  alternative: lock rows in a consistent order, and retry a transaction that the server aborted.
+regex:
+  status: n/a
+  reason: a pattern has no threads and no waits.
+html:
+  status: n/a
+  reason: markup has no threads and no waits.
+css:
+  status: n/a
+  reason: style rules have no threads and no waits.

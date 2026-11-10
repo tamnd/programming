@@ -1,0 +1,16 @@
+sql:
+  status: n/a
+  reason: a query does not touch memory shared between threads; the engine controls concurrent access to rows, and lost updates and write skew are anomalies of transaction isolation.
+bash:
+  status: n/a
+  reason: background jobs and subshells are separate processes that share no variables.
+  alternative: files, pipes and a lock file between processes.
+regex:
+  status: n/a
+  reason: a pattern has no threads and no shared memory.
+html:
+  status: n/a
+  reason: markup has no threads and no shared memory.
+css:
+  status: n/a
+  reason: style rules have no threads and no shared memory.
