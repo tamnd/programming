@@ -1,0 +1,6 @@
+{"name":"case-insensitive","args":{"users":[["Ada","ada@example.com"],["Bob","bob@example.com"],["Ada L.","ADA@Example.com"]]},"expect":[["Ada","ada@example.com"],["Bob","bob@example.com"]]}
+{"name":"empty","args":{"users":[]},"expect":[]}
+{"name":"same-name-other-email","args":{"users":[["Sam","sam@a.example"],["Sam","sam@b.example"]]},"expect":[["Sam","sam@a.example"],["Sam","sam@b.example"]]}
+{"name":"first-record-wins","args":{"users":[["Old","x@example.com"],["New","X@EXAMPLE.COM"]]},"expect":[["Old","x@example.com"]]}
+{"name":"dots-differ","args":{"users":[["Al","a.b@example.com"],["Bo","ab@example.com"]]},"expect":[["Al","a.b@example.com"],["Bo","ab@example.com"]]}
+{"name":"not-adjacent","args":{"users":[["A","a@example.com"],["B","b@example.com"],["C","A@example.com"],["D","B@EXAMPLE.com"]]},"expect":[["A","a@example.com"],["B","b@example.com"]]}

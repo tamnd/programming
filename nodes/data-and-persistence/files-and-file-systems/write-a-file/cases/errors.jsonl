@@ -1,0 +1,4 @@
+{"name":"missing-dir-truncate","args":{"path":"missing/out.txt","text":"x\n","mode":"truncate","file":null},"error":"not-found"}
+{"name":"missing-dir-append","args":{"path":"missing/out.txt","text":"x\n","mode":"append","file":null},"error":"not-found"}
+{"name":"missing-dir-atomic","args":{"path":"missing/out.txt","text":"x\n","mode":"atomic","file":null},"error":"not-found"}
+{"name":"atomic-onto-directory","args":{"path":"out.txt","text":"x\n","mode":"atomic","file":null},"error":"rename-failed","why":"the test makes out.txt as an empty directory first"}

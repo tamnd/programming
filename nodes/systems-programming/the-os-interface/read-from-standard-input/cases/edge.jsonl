@@ -1,0 +1,10 @@
+{"name":"empty","class":["empty"],"args":{"stdin":""},"expect":[]}
+{"name":"only-newline","class":["empty-line"],"args":{"stdin":"\n"},"expect":[""]}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"stdin":"one\ntwo\nthree"},"expect":["one","two","three"]}
+{"name":"crlf","class":["crlf"],"args":{"stdin":"one\r\ntwo\r\nthree\r\n"},"expect":["one","two","three"]}
+{"name":"crlf-no-final-newline","class":["crlf","no-final-newline"],"args":{"stdin":"one\r\ntwo\r\nthree"},"expect":["one","two","three"]}
+{"name":"mixed-endings","class":["crlf"],"args":{"stdin":"one\r\ntwo\nthree\r\n"},"expect":["one","two","three"]}
+{"name":"trailing-blank-line","class":["trailing-blank-line","empty-line"],"args":{"stdin":"last\n\n"},"expect":["last",""]}
+{"name":"whitespace","class":["whitespace"],"args":{"stdin":"  two spaces\ttab \n"},"expect":["  two spaces\ttab "]}
+{"name":"backslashes","class":["backslash"],"args":{"stdin":"C:\\temp\\new\n"},"expect":["C:\\temp\\new"]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"stdin":"naïve café\n日本語のテキスト\n🙂🙂🙂🙂🙂🙂\n"},"expect":["naïve café","日本語のテキスト","🙂🙂🙂🙂🙂🙂"]}

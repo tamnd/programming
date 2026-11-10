@@ -1,0 +1,13 @@
+{"name":"truncate-longer","class":["truncate"],"args":{"path":"out.txt","text":"short\n","mode":"truncate","file":"a much longer old line\n"},"expect":"short\n"}
+{"name":"empty-truncate","class":["empty","truncate"],"args":{"path":"out.txt","text":"","mode":"truncate","file":"old\n"},"expect":""}
+{"name":"empty-new","class":["empty","new-file"],"args":{"path":"out.txt","text":"","mode":"truncate","file":null},"expect":""}
+{"name":"append-missing","class":["append","new-file"],"args":{"path":"out.txt","text":"first\n","mode":"append","file":null},"expect":"first\n"}
+{"name":"append-no-newline","class":["append","no-final-newline"],"args":{"path":"out.txt","text":"two","mode":"append","file":"one"},"expect":"onetwo"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"out.txt","text":"naïve café\n日本語\n🙂\n","mode":"truncate","file":null},"expect":"naïve café\n日本語\n🙂\n"}
+{"name":"crlf","class":["line-ends"],"args":{"path":"out.txt","text":"one\r\ntwo\r\n","mode":"truncate","file":null},"expect":"one\r\ntwo\r\n"}
+{"name":"mixed-endings","class":["line-ends"],"args":{"path":"out.txt","text":"lf\ncrlf\r\ncr\rend","mode":"truncate","file":null},"expect":"lf\ncrlf\r\ncr\rend"}
+{"name":"backslashes","class":["backslash"],"args":{"path":"out.txt","text":"C:\\temp\\new\n","mode":"truncate","file":null},"expect":"C:\\temp\\new\n"}
+{"name":"format-chars","class":["format-chars"],"args":{"path":"out.txt","text":"-n 100% %s\n","mode":"truncate","file":null},"expect":"-n 100% %s\n"}
+{"name":"atomic-new","class":["new-file"],"args":{"path":"out.txt","text":"new\n","mode":"atomic","file":null},"expect":"new\n"}
+{"name":"atomic-empty","class":["empty"],"args":{"path":"out.txt","text":"","mode":"atomic","file":"old\n"},"expect":""}
+{"name":"atomic-non-ascii","class":["non-ascii"],"args":{"path":"out.txt","text":"naïve café\n日本語\n🙂\n","mode":"atomic","file":"old\n"},"expect":"naïve café\n日本語\n🙂\n"}

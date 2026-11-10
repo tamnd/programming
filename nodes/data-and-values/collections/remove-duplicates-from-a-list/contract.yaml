@@ -1,0 +1,13 @@
+# The contract of the task "remove duplicates from a list" (spec 10.2). The function keeps the first copy of each item and drops the later copies. The items that stay keep their input order.
+problem: remove-duplicates-from-a-list
+entry: unique
+params:
+  - name: items
+    type: "list<string>"
+    pre: "the items are Unicode text and an item can be empty; for the Bash solution, no item holds a newline"
+returns:
+  type: "list<string>"
+  post: "each distinct item once, at the position of its first copy; two items are equal only if they have the same code points, so there is no case folding, no Unicode normalization and no trimming"
+checker: exact
+edge_classes: [empty, single, all-same, no-duplicates, not-adjacent, adjacent, empty-string, case, normalization, whitespace, number-like, non-ascii]
+# The toolchain loads only basic, edge and regress cases. cases/by-key.jsonl holds the cases of a second function, unique_by_email(users: list<tuple<string, string>>) -> list<tuple<string, string>>. Each user is (name, email), and the emails are ASCII. The function keeps the first user for each email. It compares the emails with the ASCII letters changed to lower case. The native tests of each language run these cases.

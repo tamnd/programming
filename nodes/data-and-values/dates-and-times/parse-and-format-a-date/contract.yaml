@@ -1,0 +1,14 @@
+# The contract of the task "parse and format a date" (spec 10.2). Each solution parses an RFC 3339 date-time with a UTC offset and prints the same instant in UTC, in the form of JavaScript Date.prototype.toISOString.
+problem: parse-and-format-a-date
+entry: to_utc
+params:
+  - name: timestamp
+    type: string
+    pre: "the text to parse; when it is a valid date-time of RFC 3339 section 5.6, its fraction has at most 3 digits, its offset is from -14:00 to +14:00, and its year and the year of its UTC instant are from 0001 to 9999"
+returns:
+  type: string
+  post: "the same instant in UTC as YYYY-MM-DDTHH:MM:SS.sssZ, with exactly three fraction digits; T and Z can be lower case in the input (RFC 3339 section 5.6, note), and the output has them in upper case; -00:00 is the same instant as Z"
+checker: exact
+edge_classes: [day-change, year-end, leap-day, minute-offset, unknown-offset, fraction, before-epoch, offset-range, lower-case, year-range]
+# The toolchain loads only basic, edge and regress cases, and it has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and return no result: a date-time with no offset, a date only, a space in place of T, no seconds, an offset with no colon or with no minutes, a date that is not in the calendar, an hour, minute or second out of range (also the leap second 23:59:60), a comma before the fraction, and extra text.
+# The solutions do not use the time zone of the machine. The tests pass with any value of TZ.
