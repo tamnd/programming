@@ -1,0 +1,73 @@
+# The releases of Java (spec 09.1). Feature releases of the JDK with their JSR, first release (GA), newest update on 2026-11-10 and end of support. Statuses, eol and extended_support are Oracle's (dates for 27 and later are subject to change).
+# Sources: https://openjdk.org/projects/jdk/<N>/ and https://openjdk.org/projects/jdk8/ (GA dates, JSRs); https://www.oracle.com/java/technologies/java-se-support-roadmap.html (LTS, Premier and Extended Support); https://jdk.java.net/27/release-notes, https://www.oracle.com/java/technologies/javase/26all-relnotes.html and the JDK Updates pages of https://wiki.openjdk.org/ (updates); https://endoflife.date/api/v1/products/oracle-jdk/ (cross-check; the 24.0.2 and 23.0.2 dates). Checked 2026-11-10.
+- version: "28"
+  jsr: jsr-403
+  status: in-development
+  released: 2027-03-09
+  planned: true
+  eol: 2027-09
+- version: "27"
+  jsr: jsr-402
+  status: premier-support
+  released: 2026-09-15
+  latest: {v: 27.0.1.0.3, date: 2026-10-24}
+  eol: 2027-03
+- version: "26"
+  jsr: jsr-401
+  status: end-of-life
+  released: 2026-03-17
+  latest: {v: 26.0.2.1, date: 2026-08-18}
+  eol: 2026-09
+- version: "25"
+  jsr: jsr-400
+  lts: true
+  status: premier-support
+  released: 2025-09-16
+  latest: {v: 25.0.5.0.3, date: 2026-10-24}
+  eol: 2030-09
+  extended_support: 2033-09
+- version: "24"
+  jsr: jsr-399
+  status: end-of-life
+  released: 2025-03-18
+  latest: {v: 24.0.2, date: 2025-07-15}
+  eol: 2025-09
+- version: "23"
+  jsr: jsr-398
+  status: end-of-life
+  released: 2024-09-17
+  latest: {v: 23.0.2, date: 2025-01-21}
+  eol: 2025-03
+- version: "21"
+  jsr: jsr-396
+  lts: true
+  status: premier-support
+  released: 2023-09-19
+  latest: {v: 21.0.13.0.3, date: 2026-10-24}
+  eol: 2028-09
+  extended_support: 2031-09
+- version: "17"
+  jsr: jsr-390
+  lts: true
+  status: extended-support
+  released: 2021-09-14
+  latest: {v: 17.0.21.0.3, date: 2026-10-24}
+  eol: 2026-09
+  extended_support: 2029-09
+- version: "11"
+  jsr: jsr-384
+  lts: true
+  status: extended-support
+  released: 2018-09-25
+  latest: {v: 11.0.33, date: 2026-10-20}
+  eol: 2023-09
+  extended_support: 2032-01
+- version: "8"
+  jsr: jsr-337
+  lts: true
+  status: extended-support
+  released: 2014-03-18
+  # The 8u wiki page names 8u504 as the newest GA; the jdk8u repository has a jdk8u512-ga tag and Temurin shipped 8u512 on 2026-11-04.
+  latest: {v: 8u504, date: 2026-08-18}
+  eol: 2022-03
+  extended_support: 2030-12

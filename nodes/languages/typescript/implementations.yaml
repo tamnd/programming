@@ -1,0 +1,48 @@
+# The implementations of TypeScript (spec 04.4, 09.2). compat: true marks the columns of the compat tables. Checked 2026-11-10.
+# TypeScript has no standard (ECMA-262 defines the JavaScript part). The npm registry gives the tsc dates; the GitHub releases of microsoft/TypeScript give later dates for some versions.
+- id: tsc
+  name: tsc
+  compat: true
+  reference: true
+  typescript: "7.0"
+  note: From 7.0 a native port written in Go; the npm package typescript installs it. The staging repository microsoft/typescript-go is closed.
+  latest: {v: 7.0.2, date: 2026-07-08}
+  licence: Apache-2.0
+  source: https://registry.npmjs.org/typescript
+- id: tsc-6
+  name: tsc 6 (JavaScript codebase)
+  compat: false
+  variant_of: tsc
+  typescript: "6.0"
+  note: The last release on the JavaScript codebase, in maintenance mode. The package @typescript/typescript6 gives it as the command tsc6, beside TypeScript 7.
+  latest: {v: 6.0.3, date: 2026-04-16}
+  licence: Apache-2.0
+  source: https://registry.npmjs.org/typescript
+- id: nodejs
+  name: Node.js type stripping
+  compat: false
+  note: Strips types and does no type check. Erasable syntax only; enum, namespaces with runtime code and parameter properties need --experimental-transform-types. Ignores tsconfig.json. No .tsx.
+  latest: {v: 26.13.0, date: 2026-10-28}
+  licence: MIT
+  source: https://nodejs.org/en/blog/release/v26.13.0
+- id: deno
+  name: Deno
+  compat: false
+  note: deno run strips types; deno check runs the TypeScript type checker. The release notes give no TypeScript version.
+  latest: {v: 2.9.8, date: 2026-10-21}
+  licence: MIT
+  source: https://github.com/denoland/deno/releases/tag/v2.9.8
+- id: bun
+  name: Bun
+  compat: false
+  note: Strips types and does no type check. LICENSE.md says that Bun itself is MIT-licensed; it links JavaScriptCore, which is LGPL-2.
+  latest: {v: 1.4.4, date: 2026-10-22}
+  licence: MIT
+  source: https://github.com/oven-sh/bun/releases/tag/bun-v1.4.4
+- id: esbuild
+  name: esbuild
+  compat: false
+  note: A bundler. Strips types and does no type check.
+  latest: {v: 0.28.2, date: 2026-08-08}
+  licence: MIT
+  source: https://github.com/evanw/esbuild/releases/tag/v0.28.2

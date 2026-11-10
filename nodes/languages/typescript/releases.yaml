@@ -1,0 +1,35 @@
+# The releases of TypeScript (spec 09.1). Feature releases of tsc with their first stable release (X.Y.2 on npm by the wiki's release process), newest patch on 2026-11-10 and end of life.
+# Sources: https://registry.npmjs.org/typescript (dates), the GitHub releases and the devblogs announcements, https://github.com/microsoft/TypeScript/issues/63703 (7.1 plan); TypeScript publishes no end-of-life dates, and endoflife.date has no product (404). Checked 2026-11-10.
+- version: "7.1"
+  status: beta
+  released: null
+  latest: {v: 7.1.0-beta, date: 2026-10-20, prerelease: true}
+  eol: null
+  note: The iteration plan gave 2026-10-06 for the beta, 2026-11-10 for the release candidate and 2026-11-24 for the stable release. The beta came out on 2026-10-20, and no release candidate is on npm on 2026-11-10, so no date is given.
+- version: "7.0"
+  status: newest
+  released: 2026-07-08
+  latest: {v: 7.0.2, date: 2026-07-08}
+  eol: null
+  note: The native port. GitHub dates the release v7.0.2 of microsoft/TypeScript 2026-08-20; it first came out in microsoft/typescript-go on 2026-07-08.
+- version: "6.0"
+  status: superseded
+  released: 2026-03-23
+  latest: {v: 6.0.3, date: 2026-04-16}
+  eol: null
+  note: The last release on the JavaScript codebase, in maintenance mode.
+- version: "5.9"
+  status: superseded
+  released: 2025-07-31
+  latest: {v: 5.9.3, date: 2025-09-30}
+  eol: null
+- version: "5.8"
+  status: superseded
+  released: 2025-02-28
+  latest: {v: 5.8.3, date: 2025-04-05}
+  eol: null
+- version: "5.7"
+  status: superseded
+  released: 2024-11-22
+  latest: {v: 5.7.3, date: 2025-01-08}
+  eol: null

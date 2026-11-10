@@ -15,7 +15,7 @@ memory: garbage-collected
 execution: [interpreted-bytecode, jit]
 appeared: 1991
 designers: [guido-van-rossum]
-influenced_by: [abc-language, modula-3, c++, icon, haskell]
+influenced_by: [abc-language, modula-3, cpp, icon, haskell]
 standard: null
 reference: {url: "https://docs.python.org/3/reference/", licence: psf-2.0}
 licence_of_reference_impl: psf-2.0

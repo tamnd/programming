@@ -1,0 +1,37 @@
+# The releases of JavaScript (spec 09.1): the editions of ECMA-262 from ES2020 to ES2026, with the edition number and the month of approval. status current marks the newest edition; the guide marks each older edition superseded because the next edition replaces it.
+# Sources: https://ecma-international.org/publications-and-standards/standards/ecma-262/ (editions and months) and https://tc39.es/ecma262/2026/#sec-intro (edition numbers). Node.js release lines are in implementations.yaml. Checked 2026-11-10.
+- version: ES2026
+  edition: 17
+  status: current
+  released: 2026-06
+  url: https://tc39.es/ecma262/2026/
+- version: ES2025
+  edition: 16
+  status: superseded
+  released: 2025-06
+  url: https://tc39.es/ecma262/2025/
+- version: ES2024
+  edition: 15
+  status: superseded
+  released: 2024-06
+  url: https://tc39.es/ecma262/2024/
+- version: ES2023
+  edition: 14
+  status: superseded
+  released: 2023-06
+  url: https://tc39.es/ecma262/2023/
+- version: ES2022
+  edition: 13
+  status: superseded
+  released: 2022-06
+  url: https://tc39.es/ecma262/2022/
+- version: ES2021
+  edition: 12
+  status: superseded
+  released: 2021-06
+  url: https://tc39.es/ecma262/2021/
+- version: ES2020
+  edition: 11
+  status: superseded
+  released: 2020-06
+  url: https://tc39.es/ecma262/2020/
