@@ -1,0 +1,28 @@
+cpp:
+  status: library
+  reason: the C++ standard library has no CSV reader or writer.
+  alternative: a library such as fast-cpp-csv-parser or rapidcsv, or a parser by hand for RFC 4180.
+c:
+  status: library
+  reason: ISO C has no CSV functions in its standard library.
+  alternative: a library such as libcsv, or a parser by hand for RFC 4180.
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no CSV; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: a Java library such as Apache Commons CSV on the JVM.
+powershell:
+  status: stdlib
+  reason: the cmdlets Import-Csv, Export-Csv, ConvertFrom-Csv and ConvertTo-Csv ship with PowerShell; no example file because PowerShell is not installed on the machine that recorded the examples.
+bash:
+  status: library
+  reason: Bash has no CSV parser, and the field splitting of the shell cannot read quoted fields.
+  alternative: a command-line tool such as the SQLite shell with .import --csv, or a script in a language with a CSV library.
+regex:
+  status: n/a
+  reason: a regular expression can match one field, but it cannot turn a text into records with fields; a quoted field can also hold a line break.
+html:
+  status: n/a
+  reason: markup has no data values to serialise; a table element can show the rows of a CSV file.
+css:
+  status: n/a
+  reason: style sheets have no data values to serialise.

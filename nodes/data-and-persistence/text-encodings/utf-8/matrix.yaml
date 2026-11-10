@@ -1,0 +1,15 @@
+kotlin:
+  status: stdlib
+  reason: the Kotlin standard library has ByteArray.decodeToString, with the parameter throwOnInvalidSequence for a strict decode, and String.encodeToByteArray; on the JVM the Java classes also work. No example file, because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: stdlib
+  reason: the Encoding parameter of the file cmdlets takes utf8, utf8BOM and utf8NoBOM, and the .NET class System.Text.Encoding is available. No example file, because PowerShell is not installed on the machine that recorded the examples.
+regex:
+  status: idiom
+  reason: the well-formed sequences of Table 3-7 form a regular language. The node shows a byte pattern in Python that validates UTF-8. Whether . matches a byte, a code unit or a code point depends on the engine and its flags.
+html:
+  status: native
+  reason: the HTML standard requires that a document is encoded in UTF-8, and a declaration such as <meta charset="utf-8"> names it.
+css:
+  status: native
+  reason: CSS Syntax decodes a style sheet with the BOM, the HTTP charset, an @charset declaration at the start or the encoding of the referring document, and falls back to UTF-8.
