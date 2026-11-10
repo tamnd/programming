@@ -1,0 +1,32 @@
+c:
+  status: stdlib
+  reason: getenv in the C standard library reads the environment at run time; a password in a string literal goes into the binary.
+  alternative: getenv, or read a secret file that the platform mounts, at start-up.
+cpp:
+  status: stdlib
+  reason: std::getenv reads the environment at run time; a password in a string literal or a constexpr value goes into the binary.
+  alternative: std::getenv, or read a secret file that the platform mounts, at start-up.
+kotlin:
+  status: stdlib
+  reason: on the JVM, System.getenv reads the environment as in the Java example; the generated toString of a data class prints every property.
+  alternative: System.getenv at start-up, and a toString override that hides the secret.
+typescript:
+  status: stdlib
+  reason: on Node.js, process.env reads the environment as in the JavaScript example; a key in code that goes to the browser reaches every user.
+  alternative: process.env on the server, checked at start-up.
+powershell:
+  status: stdlib
+  reason: $env:NAME reads the environment; a password in a script file is readable by every user who can read the file.
+  alternative: read $env:NAME at start-up and refuse to continue when it is empty.
+sql:
+  status: n/a
+  reason: the weakness is in the code that connects to the database; a password in a connection string in that code has the weakness.
+regex:
+  status: n/a
+  reason: a pattern holds no credentials; secret scanners use patterns to find credentials in code.
+html:
+  status: n/a
+  reason: markup goes to the browser and cannot keep a secret; a key in a page is public.
+css:
+  status: n/a
+  reason: style sheets hold no credentials.

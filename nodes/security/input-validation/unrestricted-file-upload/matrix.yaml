@@ -1,0 +1,39 @@
+c:
+  status: n/a
+  reason: C has no web server or upload parser in its standard library; the checks belong in the server or framework that the program uses.
+  alternative: check the extension, the first bytes and the size, and write the file with open and O_CREAT | O_EXCL under a generated name.
+cpp:
+  status: n/a
+  reason: C++ has no web server or upload parser in its standard library; the checks belong in the server or framework.
+  alternative: the same checks as in the C entry, with std::filesystem for the paths.
+rust:
+  status: library
+  reason: the Rust standard library has no HTTP server; web frameworks and multipart crates parse uploads.
+  alternative: the same checks as in the Python example, with std::fs::OpenOptions::create_new for a generated name.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses the same file and hash classes as the Java example.
+  alternative: the Java example, with the framework's multipart support.
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses the same Buffer, crypto and fs functions as the JavaScript example.
+  alternative: the JavaScript example, with a typed result for the check.
+bash:
+  status: n/a
+  reason: shell scripts do not receive uploads; a script that processes files from users must still not trust the name or the extension.
+powershell:
+  status: n/a
+  reason: PowerShell does not receive web uploads; a script that processes files from users must still check the content.
+sql:
+  status: n/a
+  reason: SQL does not receive uploads; a table can hold the original file name as text next to the generated storage name.
+regex:
+  status: idiom
+  reason: a pattern can check that a stored name has the form that the server makes, as the Python example does.
+  alternative: anchor the pattern and match the whole name, as with re.fullmatch.
+html:
+  status: n/a
+  reason: the accept attribute of an input element only filters the file picker; the server must check every file.
+css:
+  status: n/a
+  reason: style sheets do not receive or serve uploads.

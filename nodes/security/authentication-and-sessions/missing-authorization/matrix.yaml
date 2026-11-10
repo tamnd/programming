@@ -1,0 +1,39 @@
+c:
+  status: idiom
+  reason: C has no web server in its standard library; a C service writes the check by hand before each action.
+  alternative: one function that every request handler calls first, with a table of permissions that denies anything not listed.
+cpp:
+  status: idiom
+  reason: C++ has no web server in its standard library; the check belongs in the request layer of the server or framework.
+  alternative: one dispatcher that checks a permission for each route before the handler runs.
+rust:
+  status: idiom
+  reason: the Rust standard library has no web server; web frameworks give middleware and extractors for the check.
+  alternative: a middleware or extractor that every route uses, and queries that take the owner as a parameter.
+kotlin:
+  status: idiom
+  reason: on the JVM, Kotlin services use the same pattern as the Java example, or the authorization features of the framework.
+  alternative: a route type that requires a permission, and repository methods that take the owner.
+typescript:
+  status: idiom
+  reason: TypeScript on Node.js uses the same dispatcher or middleware as the JavaScript example; types can make the permission a required property.
+  alternative: a route type with a required permission field, and a check in one middleware.
+bash:
+  status: n/a
+  reason: shell scripts run with the rights of the user who starts them; the operating system and sudo decide what that user may do.
+powershell:
+  status: n/a
+  reason: scripts run with the rights of the user who starts them; JEA endpoints and file system ACLs decide what that user may do.
+sql:
+  status: idiom
+  reason: GRANT controls access to tables for database users; an application often uses one database user for every person, so the query must carry the owner.
+  alternative: add the owner or tenant to the WHERE clause, as in WHERE id = ? AND owner = ?, or use row-level security where the database has it.
+regex:
+  status: n/a
+  reason: a pattern makes no access decisions.
+html:
+  status: n/a
+  reason: hiding a link or a button in a page is not a check; the server must check every request.
+css:
+  status: n/a
+  reason: hiding an element with CSS is not a check; the server must check every request.
