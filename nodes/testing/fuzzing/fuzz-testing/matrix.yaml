@@ -1,0 +1,24 @@
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no fuzzer.
+  alternative: Jazzer, a coverage-guided fuzzer for the JVM, runs Kotlin code as it runs Java code.
+powershell:
+  status: idiom
+  reason: PowerShell has no fuzzer in the language or its core modules.
+  alternative: a loop that generates input with Get-Random -SetSeed and passes it to the command under test.
+bash:
+  status: idiom
+  reason: Bash has no fuzzer.
+  alternative: a pipeline from a generator of random input to the program under test, as in Miller's study.
+sql:
+  status: n/a
+  reason: a query is fuzzed through the database engine that runs it.
+regex:
+  status: n/a
+  reason: a pattern is fuzzed through the engine that runs it.
+html:
+  status: n/a
+  reason: markup is fuzzed through the browser that renders it.
+css:
+  status: n/a
+  reason: style rules are fuzzed through the browser that renders them.

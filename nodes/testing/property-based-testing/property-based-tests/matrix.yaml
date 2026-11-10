@@ -1,0 +1,24 @@
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no property checker.
+  alternative: jqwik, which runs property-based tests on the JVM with a focus on Java and Kotlin.
+powershell:
+  status: idiom
+  reason: PowerShell has no property checker in the language or its core modules.
+  alternative: a loop over Get-Random with -SetSeed, which gives the same numbers for the same seed.
+bash:
+  status: idiom
+  reason: Bash has no property checker.
+  alternative: a loop over $RANDOM, seeded by an assignment to RANDOM.
+sql:
+  status: n/a
+  reason: a query has no test runner.
+regex:
+  status: n/a
+  reason: a pattern is tested through the language that uses it.
+html:
+  status: n/a
+  reason: markup has no functions to test.
+css:
+  status: n/a
+  reason: style rules have no functions to test.
