@@ -1,0 +1,41 @@
+c:
+  status: n/a
+  reason: the C standard library has no object serialization; a parser of a binary format in C fails with memory weaknesses such as out-of-bounds reads and writes instead.
+  alternative: parse each field with explicit length checks.
+cpp:
+  status: n/a
+  reason: the C++ standard library has no object serialization; the risk depends on the library that the program uses.
+  alternative: parse a pure data format into plain structs and validate each field.
+rust:
+  status: n/a
+  reason: the Rust standard library has no serialization format; the risk depends on the crate that the program uses.
+  alternative: deserialize into declared types with only the needed fields, and validate the values.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin programs can use java.io serialization, which can create any serializable class on the class path, as in the Java example.
+  alternative: use a pure data format, or set an ObjectInputFilter with an allowlist that ends in !*.
+typescript:
+  status: native
+  reason: TypeScript has the JSON.parse of JavaScript; a type annotation on the result is not checked at run time, and a deep merge of parsed data can pollute Object.prototype, as in the JavaScript example.
+  alternative: validate the parsed value field by field before the code treats it as the declared type.
+powershell:
+  status: idiom
+  reason: Import-Clixml deserializes CLI XML files back into objects that hold properties but no methods; a script that reads a file that someone else can write trusts that file.
+  alternative: read only CLI XML files that the same user or process wrote, and use ConvertFrom-Json with explicit checks for data from outside.
+bash:
+  status: n/a
+  reason: Bash has no object serialization; the related risk is to source or eval a file of saved variables, which runs it as code.
+  alternative: read saved values as data, line by line, and validate each value.
+sql:
+  status: n/a
+  reason: SQL has no object deserialization; the weakness is in the application that reads serialized blobs from a column.
+  alternative: store data in typed columns or JSON, not native object blobs.
+regex:
+  status: n/a
+  reason: a pattern does not rebuild objects.
+html:
+  status: n/a
+  reason: markup does not rebuild objects.
+css:
+  status: n/a
+  reason: a style sheet does not rebuild objects.

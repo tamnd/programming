@@ -1,0 +1,27 @@
+kotlin:
+  status: native
+  reason: on the JVM, every array access is checked, as in the Java example; copyOf and copyOfRange behave as in Java.
+  alternative: compare a length from input with size before a copy, and use getOrNull for single elements.
+typescript:
+  status: native
+  reason: TypeScript runs on a JavaScript engine, which keeps each read inside its array or ArrayBuffer; subarray clamps a range that is too long.
+  alternative: check a claimed length against length before you take a subarray, as in the JavaScript example.
+powershell:
+  status: native
+  reason: PowerShell arrays are .NET arrays, and the runtime checks each access, as in the C# example.
+  alternative: compare a length from input with the Length property.
+bash:
+  status: n/a
+  reason: Bash has no pointers or fixed buffers that a script can read past.
+sql:
+  status: n/a
+  reason: SQL has no buffers; out-of-bounds reads happen inside database engines, which are written in C and C++.
+html:
+  status: n/a
+  reason: markup has no memory operations.
+css:
+  status: n/a
+  reason: style sheets have no memory operations.
+regex:
+  status: n/a
+  reason: a pattern has no memory operations.
