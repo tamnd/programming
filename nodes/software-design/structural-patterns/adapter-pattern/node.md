@@ -21,7 +21,7 @@ see_also: [decorator-pattern, strategy-pattern, factory-method-pattern, closures
 sources:
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 4, Adapter, page 139 (Intent, Also Known As, Motivation, Structure, Consequences, Implementation, Related Patterns)
+    locator: Chapter 4, Adapter (Intent, Also Known As, Motivation, Structure, Consequences, Implementation, Related Patterns)
   - book: isbn:9780321213358
     title: Joshua Kerievsky, Refactoring to Patterns, Addison-Wesley, 2004
     locator: Chapter 8, Generalization, Unify Interfaces with Adapter and Extract Adapter (problem and solution)
@@ -63,10 +63,10 @@ sources:
     locator: Adapters
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 4, Bridge, page 151 (Intent, Related Patterns)
+    locator: Chapter 4, Bridge (Intent, Related Patterns)
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 4, Facade, page 185 (Intent)
+    locator: Chapter 4, Facade (Intent)
   - url: https://github.com/golang/go/blob/go1.27.3/src/net/http/server.go#L2350-L2359
     title: Go go1.27.3 source, src/net/http/server.go
     locator: type HandlerFunc and its ServeHTTP method, lines 2350 to 2359

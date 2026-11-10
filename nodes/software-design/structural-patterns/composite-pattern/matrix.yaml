@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: a sealed interface with data classes for the leaf and the composite, and a when expression that must cover every subclass, gives the sum type form; open classes give the classic form; no example is executed here because the test image has no kotlinc.
+  alternative: an abstract class with an abstract method for each operation.
+c:
+  status: idiom
+  reason: C has no classes, but a struct with a tag and a union, or a struct with an array of pointers to children, holds a tree, and a recursive function switches on the tag.
+  alternative: a struct of function pointers in each node, so that each kind of node gives its own operations.
+bash:
+  status: n/a
+  reason: Bash has no objects and no data structures that nest; a directory tree on disk can be walked with find, but the script holds no tree of its own.
+powershell:
+  status: idiom
+  reason: PowerShell classes support inheritance, so a base class with a leaf and a composite subclass works; no example is executed here because the test image has no pwsh.
+  alternative: nested hashtables, walked by a recursive function.
+regex:
+  status: n/a
+  reason: a pattern has no objects; regular expressions also cannot match nested structure of any depth.
+html:
+  status: n/a
+  reason: an HTML document is itself a tree of elements, but markup defines no operations on it; the DOM gives the operations in JavaScript.
+css:
+  status: n/a
+  reason: style rules define no objects; selectors such as descendant combinators only match nodes of the document tree.

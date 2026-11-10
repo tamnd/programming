@@ -21,10 +21,10 @@ see_also: [closures, observer-pattern, factory-method-pattern, decorator-pattern
 sources:
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 5, Strategy, page 315 (Intent, Also Known As, Motivation, Participants, Consequences, Implementation, Related Patterns)
+    locator: Chapter 5, Strategy (Intent, Also Known As, Motivation, Participants, Consequences, Implementation, Related Patterns)
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 5, Template Method, page 325 (Related Patterns)
+    locator: Chapter 5, Template Method (Related Patterns)
   - url: https://norvig.com/design-patterns/design-patterns.pdf
     title: Peter Norvig, Design Patterns in Dynamic Programming, Object World, May 1996
     locator: slide 9 and slide 10 (16 of 23 patterns simpler; first-class functions make Command, Strategy, Template-Method and Visitor simpler), slide 16 (Dynamic Pattern, Strategy)
@@ -78,10 +78,10 @@ sources:
     locator: SortFunc, lines 30 to 33
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 4, Decorator, page 175 (Implementation, changing the skin of an object versus changing its guts)
+    locator: Chapter 4, Decorator (Implementation, changing the skin of an object versus changing its guts)
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 5, State, page 305 (Implementation, who defines the state transitions)
+    locator: Chapter 5, State (Implementation, who defines the state transitions)
   - url: https://tc39.es/ecma262/#sec-createperiterationenvironment
     title: ECMAScript Language Specification (draft)
     locator: 14.7.4.4 CreatePerIterationEnvironment

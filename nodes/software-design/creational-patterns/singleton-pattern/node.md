@@ -21,7 +21,7 @@ see_also: [factory-method-pattern, strategy-pattern, unit-testing, closures]
 sources:
   - book: isbn:9780201633610
     title: Gamma, Helm, Johnson and Vlissides, Design Patterns, Elements of Reusable Object-Oriented Software, Addison-Wesley, 1994
-    locator: Chapter 3, Singleton, page 127 (Intent, Motivation, Consequences, Implementation, Known Uses, Related Patterns)
+    locator: Chapter 3, Singleton (Intent, Motivation, Consequences, Implementation, Known Uses, Related Patterns)
   - url: https://www.informit.com/articles/article.aspx?p=1404056
     title: Larry O'Brien, Design Patterns 15 Years Later, An Interview with Erich Gamma, Richard Helm, and Ralph Johnson, InformIT, October 22, 2009
     locator: Gamma's answer on the patterns to drop from a revised catalog (Singleton)
