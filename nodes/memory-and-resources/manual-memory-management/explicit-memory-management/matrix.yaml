@@ -1,0 +1,35 @@
+python:
+  status: absent
+  reason: the Python memory manager owns the private heap of all objects, and a program has no operation that frees an object.
+  alternative: a C extension allocates and frees raw memory with PyMem_Malloc and PyMem_Free.
+javascript:
+  status: absent
+  reason: the language has no operation that frees an object; the engine collects objects that the program can no longer reach.
+typescript:
+  status: absent
+  reason: the same as JavaScript; the type system adds no free operation.
+go:
+  status: absent
+  reason: the garbage collector frees all memory, and the language has no free operation.
+  alternative: cgo can call C.malloc and C.free, outside the rules of standard Go.
+kotlin:
+  status: stdlib
+  reason: Kotlin/Native allocates with nativeHeap.alloc and frees with nativeHeap.free in kotlinx.cinterop, and Kotlin/JVM can use the Java Arena; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: stdlib
+  reason: a script can call the .NET methods Marshal.AllocHGlobal and Marshal.FreeHGlobal, as the C# example does; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: the shell manages its own strings and arrays, and a script has no access to raw memory.
+sql:
+  status: n/a
+  reason: the database engine manages storage, and a query has no access to raw memory.
+regex:
+  status: n/a
+  reason: a pattern has no memory to manage.
+html:
+  status: n/a
+  reason: markup has no memory to manage; the DOM belongs to the JavaScript engine.
+css:
+  status: n/a
+  reason: style rules have no memory to manage.

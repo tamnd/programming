@@ -1,0 +1,20 @@
+kotlin:
+  status: stdlib
+  reason: the use extension function runs a block on a Closeable and closes it whether or not the block throws; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: try and finally that call close().
+powershell:
+  status: idiom
+  reason: a try statement whose finally block calls Dispose(), and the clean block of an advanced function, which runs like a finally over begin, process and end; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: the database engine releases locks and cursors at the end of a statement or transaction; the statement itself holds no resource of the program.
+  alternative: a transaction that ends with COMMIT or ROLLBACK.
+regex:
+  status: n/a
+  reason: a pattern holds no resources.
+html:
+  status: n/a
+  reason: markup holds no resources.
+css:
+  status: n/a
+  reason: style rules hold no resources.

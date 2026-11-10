@@ -1,0 +1,21 @@
+kotlin:
+  status: native
+  reason: Kotlin/JVM uses the frames and the heap of the JVM, as in the Java example, and deep recursion throws StackOverflowError; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: native
+  reason: PowerShell runs on .NET, so its values are .NET value types or objects on the managed heap, as in the C# example; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has a stack of function calls with local variables, but every value is a string that the shell stores, and a script has no say in where.
+sql:
+  status: n/a
+  reason: a query has no frames or heap objects of its own; the database engine manages its memory.
+regex:
+  status: n/a
+  reason: a pattern has no storage.
+html:
+  status: n/a
+  reason: markup has no storage.
+css:
+  status: n/a
+  reason: style rules have no storage.

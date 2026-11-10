@@ -1,0 +1,24 @@
+kotlin:
+  status: native
+  reason: on the JVM the collector frees objects that no live thread can reach, but a companion object map or a listener that is never removed still keeps its objects; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: a bounded LinkedHashMap, a WeakHashMap, or a coroutine scope that cancels its child coroutines.
+powershell:
+  status: native
+  reason: the .NET collector frees unreachable objects, but a script-scope collection or an event subscription from Register-ObjectEvent keeps its objects; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: remove the subscription with Unregister-Event and clear long-lived collections at a known point.
+bash:
+  status: n/a
+  reason: the shell manages its own strings and arrays, and a script has no heap objects or pointers.
+  alternative: in a long-running loop, unset arrays that only grow.
+sql:
+  status: n/a
+  reason: the database engine manages its memory, and a query has no pointers or object references.
+regex:
+  status: n/a
+  reason: a pattern has no memory that the program allocates.
+html:
+  status: n/a
+  reason: markup has no memory that the program allocates; DOM leaks belong to the JavaScript engine.
+css:
+  status: n/a
+  reason: style rules have no memory that the program allocates.
