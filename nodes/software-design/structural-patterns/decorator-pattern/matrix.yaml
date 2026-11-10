@@ -1,0 +1,19 @@
+sql:
+  status: idiom
+  reason: a view over a table or another view has the same columns and adds a filter or a computed column, and views can stack.
+  alternative: a trigger that runs before or after a statement on the table.
+bash:
+  status: idiom
+  reason: a function with the name of a command can do its work and then call the original with the command builtin, and a pipeline wraps one program in another that reads and writes the same text stream.
+powershell:
+  status: idiom
+  reason: a class that implements the same interface and holds the inner object works as in C#; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no objects or calls to wrap.
+html:
+  status: n/a
+  reason: markup has no behaviour to wrap; an element that contains another element only nests it.
+css:
+  status: n/a
+  reason: style rules have no objects or calls to wrap.

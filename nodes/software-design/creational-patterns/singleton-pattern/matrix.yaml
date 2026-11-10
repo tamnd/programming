@@ -1,0 +1,23 @@
+c:
+  status: idiom
+  reason: C has no classes or private constructors, but a static variable at file scope with one access function gives one instance; call_once in threads.h makes lazy creation safe.
+  alternative: a static object in one source file and a function that returns its address; no example is executed here because the C library of the test host has no threads.h.
+sql:
+  status: n/a
+  reason: a database has tables and rows, not objects with constructors; a table with one row and a check constraint is the nearest form.
+bash:
+  status: n/a
+  reason: Bash has no objects; a global variable of the script is already the only copy.
+powershell:
+  status: idiom
+  reason: a class with a static property that holds the one instance works as in C#; no example is executed here because the test image has no pwsh.
+  alternative: a variable in the script scope of a module, which PowerShell loads once per session.
+regex:
+  status: n/a
+  reason: a pattern has no objects.
+html:
+  status: n/a
+  reason: markup has no objects to create.
+css:
+  status: n/a
+  reason: style rules have no objects to create.

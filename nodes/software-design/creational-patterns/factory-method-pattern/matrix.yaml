@@ -1,0 +1,23 @@
+c:
+  status: idiom
+  reason: C has no classes, but a struct of function pointers can hold a create function, and shared code can call it through the struct.
+  alternative: a function pointer that returns a pointer to a product struct with its own table of functions.
+sql:
+  status: n/a
+  reason: a query creates rows, not objects, and has no subclasses to choose a class.
+bash:
+  status: n/a
+  reason: Bash has no objects and no classes to create.
+powershell:
+  status: idiom
+  reason: PowerShell classes support inheritance and method overrides, so the classic form works; no example is executed here because the test image has no pwsh.
+  alternative: a script block that returns the product, passed to the code that needs it.
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: n/a
+  reason: markup creates no objects.
+css:
+  status: n/a
+  reason: style rules create no objects.

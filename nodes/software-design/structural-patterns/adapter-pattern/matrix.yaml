@@ -1,0 +1,22 @@
+c:
+  status: idiom
+  reason: a struct of function pointers is the target interface, and an adapter is a function with the target signature that takes a pointer to the adaptee as its context and calls the adaptee's functions.
+  alternative: no example is executed here because the form is the C example of the decorator-pattern node with a different conversion.
+sql:
+  status: idiom
+  reason: a view that renames and converts the columns of a table gives a client the columns it expects, without a change to the table.
+bash:
+  status: idiom
+  reason: a function or a small script can take the arguments that a caller expects, call another program with the arguments it needs, and convert its output with tools such as sed or awk.
+powershell:
+  status: idiom
+  reason: a class that implements the interface of the client and holds the other object works as in C#; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no interfaces to convert.
+html:
+  status: n/a
+  reason: markup has no interfaces to convert.
+css:
+  status: n/a
+  reason: style rules have no interfaces to convert.
