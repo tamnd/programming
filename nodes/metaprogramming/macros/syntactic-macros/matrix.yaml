@@ -1,0 +1,44 @@
+java:
+  status: absent
+  reason: the language has no preprocessor and no macros.
+  alternative: an annotation processor that generates source files during compilation.
+csharp:
+  status: absent
+  reason: the preprocessor directives only control conditional compilation; they cannot create macros.
+  alternative: source generators, which add source files during compilation.
+go:
+  status: absent
+  reason: the language has no macros.
+  alternative: go generate runs commands, written in special comments, that write Go source before the build.
+javascript:
+  status: absent
+  reason: the language has no macros.
+  alternative: a build tool that transforms the source before it runs.
+typescript:
+  status: absent
+  reason: the language has no macros.
+  alternative: a build tool that transforms the source before it runs.
+kotlin:
+  status: absent
+  reason: the language has no macros; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: a compiler plugin or a symbol processor that generates code.
+powershell:
+  status: absent
+  reason: the language has no macros; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: absent
+  reason: the shell has no macros.
+  alternative: a shell function.
+sql:
+  status: absent
+  reason: standard SQL has no macros.
+  alternative: a view or a stored routine.
+regex:
+  status: n/a
+  reason: a pattern has no definitions that expand.
+html:
+  status: n/a
+  reason: markup has no macros.
+css:
+  status: n/a
+  reason: style rules have no macros.

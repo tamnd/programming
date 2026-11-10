@@ -1,0 +1,29 @@
+javascript:
+  status: absent
+  reason: decorators are a TC39 proposal at stage 2.7, not part of ECMAScript; Node.js rejects the syntax.
+  alternative: call a function on the class or the method after its definition, or use a build tool that transforms decorators.
+typescript:
+  status: native
+  reason: TypeScript 5.0 implements the ECMAScript decorators proposal and type-checks it; no example file because Node.js type stripping does not transform decorators.
+  alternative: experimental decorators with the compiler flag --experimentalDecorators.
+kotlin:
+  status: native
+  reason: annotation classes with @Target and @Retention, readable through reflection or by KSP processors at compile time; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: native
+  reason: advanced functions use attributes such as [CmdletBinding()] and [Parameter()] on functions and parameters; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: absent
+  reason: a shell function has no metadata other than its name and body.
+sql:
+  status: n/a
+  reason: SQL has no user-defined annotations on statements or tables.
+regex:
+  status: n/a
+  reason: a pattern has no declarations to annotate.
+html:
+  status: n/a
+  reason: HTML attributes are part of the markup itself, not metadata about program code.
+css:
+  status: n/a
+  reason: style rules have no declarations of program code to annotate.
