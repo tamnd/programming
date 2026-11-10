@@ -1,0 +1,28 @@
+cpp:
+  status: idiom
+  reason: the C++ standard has only std::system, which runs a shell; programs on POSIX systems use posix_spawn or the exec functions as in the C example.
+  alternative: posix_spawnp with an argument array, or a process library that takes the arguments as a list.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses ProcessBuilder from Java SE, which takes the program and the arguments apart as in the Java example.
+  alternative: ProcessBuilder with a list; a string template inside a sh -c command has the same weakness as concatenation.
+typescript:
+  status: stdlib
+  reason: TypeScript runs on Node.js and uses node:child_process as in the JavaScript example; the type system does not tell a command from data.
+  alternative: execFile or spawn with an array of arguments and no shell option.
+powershell:
+  status: native
+  reason: Invoke-Expression evaluates or runs a string as a command, and its documentation says to verify that a command that the user enters is safe before it runs.
+  alternative: call the command with the variables as arguments, and choose a command from a fixed set in the script; never pass input to Invoke-Expression.
+sql:
+  status: n/a
+  reason: standard SQL has no way to run an operating system command; where a database adds one as an extension, dynamic SQL that reaches it has both weaknesses.
+html:
+  status: n/a
+  reason: markup does not run operating system commands.
+css:
+  status: n/a
+  reason: style sheets do not run operating system commands.
+regex:
+  status: n/a
+  reason: a pattern does not run commands; an allow-list pattern such as ^[a-z0-9]{3,10}$ is the second layer of input validation that the OWASP cheat sheet describes.

@@ -1,0 +1,36 @@
+c:
+  status: idiom
+  reason: ISO C has no path API; on POSIX systems a program calls realpath, which CWE-22 names, and compares the result with the resolved root followed by a slash.
+  alternative: realpath on the joined path, then strncmp against the root with a trailing separator.
+cpp:
+  status: stdlib
+  reason: std::filesystem has weakly_canonical, lexically_normal and lexically_relative, so a program can resolve the joined path and check that the relative path from the root does not start with "..".
+  alternative: std::filesystem::weakly_canonical on root / name, then a component-wise comparison with the canonical root; never compare the strings.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses java.nio.file from Java SE; resolve, normalize, toRealPath and startsWith work as in the Java example.
+  alternative: root.resolve(name).normalize() followed by startsWith(root), and toRealPath where links can exist.
+typescript:
+  status: stdlib
+  reason: TypeScript runs on Node.js and uses node:path and node:fs as in the JavaScript example; the type system does not tell a file name from a path.
+  alternative: path.resolve and fs.realpathSync, then a check that path.relative from the root does not start with "..".
+powershell:
+  status: stdlib
+  reason: a script can call the .NET Path class, and [System.IO.Path]::GetFullPath with a prefix check works as in the C# example.
+  alternative: GetFullPath on the joined path, then StartsWith against the root with a trailing separator.
+bash:
+  status: idiom
+  reason: Bash has no path API; a script resolves the path with the realpath command of the system and compares it with the root followed by a slash in a case pattern.
+  alternative: realpath, then case "$path" in "$root"/*) with the variables in double quotes.
+sql:
+  status: n/a
+  reason: standard SQL has no file API; where a database adds file functions as an extension, a file name from input reaches them as in any other language.
+html:
+  status: n/a
+  reason: markup names URLs, and the server decides how a URL maps to a file.
+css:
+  status: n/a
+  reason: style sheets do not open files on the server.
+regex:
+  status: n/a
+  reason: a pattern does not open files; CWE-22 warns that a filter which removes "../" can leave a new "../" in the result, and an allow-list pattern for one file name, such as ^[a-z0-9_-]+\.txt$, is a valid second layer.

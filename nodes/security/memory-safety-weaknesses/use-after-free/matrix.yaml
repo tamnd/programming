@@ -1,0 +1,31 @@
+javascript:
+  status: native
+  reason: the engine collects garbage, so script cannot reach an object after it is freed; OWASP lists JavaScript among the memory-safe languages.
+  alternative: for resources such as streams and sockets, check the state before use and handle the error after a close.
+kotlin:
+  status: native
+  reason: on the JVM, the garbage collector keeps each object alive while a reference exists, as in the Java example; use after close of a resource throws an exception.
+  alternative: use, the Kotlin function that closes a resource at the end of a block.
+typescript:
+  status: native
+  reason: TypeScript runs on a JavaScript engine with garbage collection; the type system does not track whether a resource is closed.
+  alternative: a try and finally block, and a check of the state of a resource before each use.
+powershell:
+  status: native
+  reason: PowerShell objects are .NET objects under the garbage collector, as in the C# example; a disposed object throws ObjectDisposedException.
+  alternative: call Dispose in a finally block and do not use the variable after it.
+bash:
+  status: n/a
+  reason: Bash has no pointers and does not free memory by hand; a closed file descriptor gives an error on use.
+sql:
+  status: n/a
+  reason: SQL has no pointers; use after free happens inside database engines, which are written in C and C++.
+html:
+  status: n/a
+  reason: markup has no memory operations; browser engines, which parse it, are where CVE-2014-1776 and similar bugs happened.
+css:
+  status: n/a
+  reason: style sheets have no memory operations.
+regex:
+  status: n/a
+  reason: a pattern has no memory operations.
