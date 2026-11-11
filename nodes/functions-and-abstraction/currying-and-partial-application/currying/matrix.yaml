@@ -1,0 +1,19 @@
+kotlin:
+  status: idiom
+  reason: a lambda can return a lambda, and function types such as (Int) -> (Int) -> Int describe curried functions; no example file because kotlinc is not installed on the machine that recorded the examples.
+sql:
+  status: absent
+  reason: functions in SQL are not values, so a query cannot fix some arguments of a function and pass the result on.
+  alternative: a view or a SQL function that calls another function with fixed arguments.
+powershell:
+  status: idiom
+  reason: a script block can call a function with fixed arguments, and GetNewClosure() captures the variables; no example file because pwsh is not installed on the machine that recorded the examples.
+regex:
+  status: n/a
+  reason: a regular expression has no functions.
+html:
+  status: n/a
+  reason: HTML has no functions.
+css:
+  status: n/a
+  reason: CSS has no functions that are values.
