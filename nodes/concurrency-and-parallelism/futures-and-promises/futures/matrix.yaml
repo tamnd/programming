@@ -1,0 +1,19 @@
+kotlin:
+  status: library
+  reason: the async builder of kotlinx.coroutines returns a Deferred, a future that a coroutine reads with await(); no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: java.util.concurrent.CompletableFuture on the JVM.
+powershell:
+  status: native
+  reason: Start-Job and Start-ThreadJob return a job object, and Receive-Job and Wait-Job wait for its output; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a statement runs to completion in its session, and asynchronous execution belongs to the client library.
+regex:
+  status: n/a
+  reason: a regular expression has no concurrency.
+html:
+  status: n/a
+  reason: HTML has no concurrency.
+css:
+  status: n/a
+  reason: CSS has no concurrency.
