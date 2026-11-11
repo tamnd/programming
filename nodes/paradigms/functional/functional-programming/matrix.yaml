@@ -1,0 +1,21 @@
+typescript:
+  status: native
+  reason: as JavaScript, with readonly arrays and properties, function types and discriminated unions checked at compile time.
+kotlin:
+  status: native
+  reason: lambdas, higher-order functions on collections, read-only collection interfaces, data classes with copy, and sealed classes with when; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: idiom
+  reason: script blocks are values, and the pipeline with ForEach-Object and Where-Object maps and filters objects; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: SQL is declarative, and a query describes a result without side effects, but SQL has no functions as values.
+regex:
+  status: n/a
+  reason: a regular expression describes text and has no functions.
+html:
+  status: n/a
+  reason: HTML has no functions.
+css:
+  status: n/a
+  reason: CSS has no user-defined functions as values.
