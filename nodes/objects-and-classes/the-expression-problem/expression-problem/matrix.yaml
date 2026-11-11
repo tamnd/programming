@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: a discriminated union with a switch and a never check gives exhaustive operations, and declaration merging can add methods to existing classes.
+kotlin:
+  status: idiom
+  reason: sealed classes with an exhaustive when keep cases closed, and extension functions add operations to existing types with static dispatch; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has no user-defined data types to extend.
+powershell:
+  status: idiom
+  reason: Update-TypeData adds script methods and properties to existing .NET types at run time; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: tables and functions extend independently, but the language has no user-defined sum types or dispatch over cases.
+regex:
+  status: n/a
+  reason: a pattern has no data types or operations to extend.
+html:
+  status: n/a
+  reason: HTML has no data types or operations to extend.
+css:
+  status: n/a
+  reason: CSS has no data types or operations to extend.
