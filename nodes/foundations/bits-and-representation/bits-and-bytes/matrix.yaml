@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript; the operators work on 32-bit integers, and bigint has the same operators with no fixed width.
+kotlin:
+  status: native
+  reason: the infix functions and, or, xor, shl, shr and ushr and the function inv work on Int and Long; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: native
+  reason: arithmetic expansion has the C operators on 64-bit signed integers, as in $(( flags & 4 )).
+powershell:
+  status: native
+  reason: the operators -band, -bor, -bxor, -bnot, -shl and -shr work on .NET integers and flags enums; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: most dialects have bitwise operators on integers and bit string types, though the SQL standard does not define the operators.
+regex:
+  status: n/a
+  reason: patterns match characters, not bits.
+html:
+  status: n/a
+  reason: markup has no values to operate on.
+css:
+  status: n/a
+  reason: style sheets have no bit operations.
