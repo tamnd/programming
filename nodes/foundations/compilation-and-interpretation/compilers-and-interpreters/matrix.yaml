@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: the TypeScript compiler checks types and emits JavaScript, which an engine then compiles and runs.
+kotlin:
+  status: native
+  reason: compiles to JVM bytecode, to JavaScript, or to native code through LLVM; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: native
+  reason: an interpreter that reads and runs each command line; eval runs a string as commands.
+powershell:
+  status: native
+  reason: compiles script blocks to .NET expression trees and interprets them, compiling hot blocks; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: the database compiles each query into a plan, often caches the plan, and runs it with an interpreter or generated code.
+regex:
+  status: native
+  reason: engines compile a pattern into an automaton or a bytecode program before matching; several compile to machine code.
+html:
+  status: n/a
+  reason: a browser parses markup into a tree; there is no program to compile.
+css:
+  status: n/a
+  reason: a browser parses style sheets into rules; there is no program to compile.
