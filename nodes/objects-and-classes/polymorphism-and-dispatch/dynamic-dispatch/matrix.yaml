@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript; methods dispatch through the prototype chain, and the override keyword makes the compiler check that a method overrides a method of the base class.
+kotlin:
+  status: native
+  reason: classes and methods are final unless declared open, an override must say override, and interface methods dispatch on the receiver; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: a script can build the name of a function from a string, such as the type of a value, and call it, which is dispatch by name with no checks.
+powershell:
+  status: native
+  reason: classes with methods run on .NET, and a derived class can override a method of its base class; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: queries call functions by name and have no objects with methods in common engines.
+regex:
+  status: n/a
+  reason: a pattern has no methods or types to dispatch on.
+html:
+  status: n/a
+  reason: HTML is markup with no methods.
+css:
+  status: n/a
+  reason: CSS selects rules for elements and has no methods to call.
