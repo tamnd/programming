@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: as JavaScript; worker threads in Node.js and web workers in browsers are actors that communicate by copied messages.
+kotlin:
+  status: library
+  reason: kotlinx.coroutines has channels and an actor builder, and Akka and Pekko run on the JVM; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: a background process that reads commands from a named pipe and keeps its own variables acts as an actor.
+powershell:
+  status: absent
+  reason: jobs and runspaces run script blocks in parallel, but have no mailboxes; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: SQL has transactions and locks for concurrency, not actors.
+regex:
+  status: n/a
+  reason: regular expressions have no concurrency.
+html:
+  status: n/a
+  reason: HTML has no concurrency; scripts in the page use web workers.
+css:
+  status: n/a
+  reason: CSS has no concurrency.
