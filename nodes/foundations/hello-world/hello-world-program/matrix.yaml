@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript; console.log("Hello, world!") is a complete program after compilation to JavaScript.
+kotlin:
+  status: native
+  reason: a top-level fun main() that calls println("Hello, world!") is a complete program; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: native
+  reason: a script with the line echo "Hello, world!" writes the text, and exit sets the status.
+powershell:
+  status: native
+  reason: a string on its own line goes to the output stream, and Write-Output does the same explicitly; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: the query SELECT 'Hello, world!' returns a result set with one row and one column.
+regex:
+  status: n/a
+  reason: a pattern matches text and does not produce output.
+html:
+  status: native
+  reason: a document whose body holds the text Hello, world! shows it in the browser.
+css:
+  status: idiom
+  reason: a content property on a ::before pseudo-element can insert the text, though text belongs in the document.
