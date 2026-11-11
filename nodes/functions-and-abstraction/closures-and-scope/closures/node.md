@@ -308,7 +308,7 @@ The run stops with `UnboundLocalError: cannot access local variable 'count' wher
 
 In C++, a capture by reference does not extend the life of the variable. When the closure runs after the variable has gone, the behaviour is undefined.[^13] Here the lambda captures the local `count` by reference, and the function returns the lambda.
 
-```cpp fails expect=sanitizer:address flags="-fsanitize-address-use-after-return=always" id=dangling
+```cpp fails expect=sanitizer:address id=dangling
 #include <functional>
 #include <print>
 

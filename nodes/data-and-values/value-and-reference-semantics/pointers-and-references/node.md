@@ -343,7 +343,7 @@ The variables `first` and `second` still refer to the same objects. A method can
 
 A local variable of a C function lives until the function returns. A pointer to it is then dangling, and a read through it is undefined.[^9]
 
-```c fails expect=sanitizer:address flags="-fsanitize-address-use-after-return=always" id=dangling
+```c fails expect=sanitizer:address id=dangling
 #include <stdio.h>
 
 int *make_value(void) {

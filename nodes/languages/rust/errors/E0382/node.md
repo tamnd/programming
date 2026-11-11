@@ -437,7 +437,7 @@ error[E0382]: borrow of moved value: `lines`
   |                          ^^^^^ value borrowed here after move
   |
 note: `into_iter` takes ownership of the receiver `self`, which moves `lines`
- --> /rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/traits/collect.rs:312:17
+ --> /rustc/$RUSTC/library/core/src/iter/traits/collect.rs:312:17
 help: consider iterating over a slice of the `Vec<String>`'s content to avoid moving into the `for` loop
   |
 3 |     for line in &lines {

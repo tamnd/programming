@@ -45,6 +45,7 @@ int main(void) {
 `strlen` reads until it finds a zero byte. The array holds five letters and no `'\0'`, so the read goes past the end of the array on the stack. AddressSanitizer reports a `stack-buffer-overflow`.
 
 ```c run flags="-fsanitize=address,undefined" id=bounded
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <string.h>
 
