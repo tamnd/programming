@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript, with parameter properties that declare and set a field from a constructor parameter, and private constructors checked by the compiler.
+kotlin:
+  status: native
+  reason: a primary constructor in the class header, init blocks and secondary constructors that delegate to it; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has no objects to construct.
+powershell:
+  status: native
+  reason: a class can define constructors, overload them and call a base constructor with base(); no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: DEFAULT values, NOT NULL and CHECK constraints decide the initial state of a new row and reject a row that breaks the rules.
+regex:
+  status: n/a
+  reason: a pattern has no objects.
+html:
+  status: idiom
+  reason: the constructor of a custom element runs when the element is created, and attributes give its initial state.
+css:
+  status: n/a
+  reason: CSS has no objects; initial values of properties are a different idea.
