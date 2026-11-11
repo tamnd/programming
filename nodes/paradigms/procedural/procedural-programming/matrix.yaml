@@ -1,0 +1,21 @@
+typescript:
+  status: native
+  reason: as JavaScript, with typed function signatures and modules.
+kotlin:
+  status: native
+  reason: top-level functions in files and packages need no class; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: native
+  reason: functions with param blocks, script files and modules; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: stored procedures in procedural extensions such as PL/pgSQL and T-SQL group statements under a name; standard queries have no procedures.
+regex:
+  status: n/a
+  reason: a regular expression has no procedures.
+html:
+  status: n/a
+  reason: HTML has no procedures.
+css:
+  status: n/a
+  reason: CSS has no procedures.
