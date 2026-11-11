@@ -1,0 +1,16 @@
+kotlin:
+  status: native
+  reason: blocks and functions nest, and a local function reads the local variables of the functions around it; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: absent
+  reason: variables have dynamic scope, because each script or function call makes a child scope of the caller, so a function sees the variables of its caller; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: the $script and $global scope modifiers, and private variables.
+regex:
+  status: n/a
+  reason: a regular expression has no declarations.
+html:
+  status: n/a
+  reason: HTML has no variables.
+css:
+  status: n/a
+  reason: a custom property inherits through the document tree, not through the text of the style sheet.
