@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript, with Object.create and the prototype chain; the type checker models classes and object types, not changes to a prototype at run time.
+kotlin:
+  status: absent
+  reason: classes fix the members of objects, and class delegation with by forwards an interface to another object at compile time; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has no objects.
+powershell:
+  status: idiom
+  reason: Add-Member and PSCustomObject add properties and script methods to a single object at run time, without a parent link; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: rows have no methods and no delegation to other rows.
+regex:
+  status: n/a
+  reason: a pattern has no objects.
+html:
+  status: n/a
+  reason: HTML has no objects; the DOM that scripts see is built on JavaScript prototypes.
+css:
+  status: n/a
+  reason: CSS has no objects; inherited properties are a different idea.
