@@ -1,0 +1,25 @@
+kotlin:
+  status: idiom
+  reason: Kotlin on the JVM uses the exceptions of Java, with the same split between Error and Exception; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: catch Exception at a boundary and let an Error end the program, as in the Java example.
+powershell:
+  status: idiom
+  reason: a script stops with the keyword exit or with a terminating error; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: try and catch at the boundary of each unit of work.
+bash:
+  status: idiom
+  reason: the builtin exit ends the shell with a status, and set -e stops the script at the first command that fails.
+  alternative: a trap on EXIT for cleanup.
+sql:
+  status: absent
+  reason: a statement fails and the engine reports the failure to the host program; it does not stop the host program.
+  alternative: the error handling of the host language.
+regex:
+  status: n/a
+  reason: a pattern has no notion of a bug.
+html:
+  status: n/a
+  reason: markup does not run code.
+css:
+  status: n/a
+  reason: style rules do not run code.
