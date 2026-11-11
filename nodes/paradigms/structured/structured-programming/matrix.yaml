@@ -1,0 +1,21 @@
+typescript:
+  status: native
+  reason: as JavaScript, with labeled break and continue and no goto.
+kotlin:
+  status: native
+  reason: Kotlin has no goto, and labels such as break@outer leave enclosing loops; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: native
+  reason: a label such as :outer before a loop lets break outer and continue outer leave enclosing loops; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query has no control flow; procedural extensions such as PL/pgSQL and T-SQL add loops and blocks.
+regex:
+  status: n/a
+  reason: a regular expression has no statements.
+html:
+  status: n/a
+  reason: HTML has no statements.
+css:
+  status: n/a
+  reason: CSS has no statements.
