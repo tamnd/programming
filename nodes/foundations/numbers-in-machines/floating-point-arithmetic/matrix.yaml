@@ -1,0 +1,21 @@
+kotlin:
+  status: native
+  reason: Double and Float are the binary64 and binary32 types of the JVM, with the same rules as Java; no example file in this version.
+  alternative: java.math.BigDecimal for exact decimal values, as in the Java example.
+powershell:
+  status: native
+  reason: "[double] and [decimal] are the .NET types; no example file because pwsh is not installed on the machine that recorded the examples."
+  alternative: "[decimal] for money, as in the C# example."
+sql:
+  status: native
+  reason: REAL and DOUBLE PRECISION are binary floating-point types; NUMERIC and DECIMAL hold exact decimal values.
+  alternative: NUMERIC with a fixed scale for money.
+regex:
+  status: n/a
+  reason: a pattern matches text, not numbers.
+html:
+  status: n/a
+  reason: markup does not do arithmetic.
+css:
+  status: n/a
+  reason: CSS has numbers, but a page does not do arithmetic on them in the sense of this page.
