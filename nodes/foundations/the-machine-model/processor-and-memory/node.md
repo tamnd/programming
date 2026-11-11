@@ -1,5 +1,5 @@
 ---
-tag: NEW-processor-and-memory
+tag: EY9XHF
 kind: concept
 slug: processor-and-memory
 name: The machine model, processor and memory
