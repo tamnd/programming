@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript, with access modifiers, abstract classes and types for fields checked by the compiler.
+kotlin:
+  status: native
+  reason: classes with primary constructors and properties, data classes and companion objects in place of static members; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has no classes; associative arrays hold data but not methods.
+powershell:
+  status: native
+  reason: a class keyword defines .NET classes with properties, methods, static members and constructors; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: a table definition describes the fields of its rows, and some databases add user-defined types with methods.
+regex:
+  status: n/a
+  reason: a pattern has no types; a character class is a different idea.
+html:
+  status: idiom
+  reason: a custom element is defined by a JavaScript class, and the class attribute names CSS classes, which is a different idea.
+css:
+  status: n/a
+  reason: a CSS class is a label for selectors, not a type.
