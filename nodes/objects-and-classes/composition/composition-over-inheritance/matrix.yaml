@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: as JavaScript, with interfaces that let a class accept any part with the right shape.
+kotlin:
+  status: native
+  reason: class delegation with the by keyword forwards all the members of an interface to a part; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has no objects; pipelines compose programs, which is a different idea.
+powershell:
+  status: idiom
+  reason: a class can hold other objects in properties and forward to them; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: SQL has no classes; foreign keys relate rows, which is a different idea.
+regex:
+  status: n/a
+  reason: a pattern has no objects.
+html:
+  status: idiom
+  reason: custom elements are built by putting other elements inside them, and slots let a caller supply the parts.
+css:
+  status: n/a
+  reason: CSS has no objects; cascade layers and custom properties are a different idea.
