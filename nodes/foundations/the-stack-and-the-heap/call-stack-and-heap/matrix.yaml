@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript; the engine manages the stack and the heap.
+kotlin:
+  status: native
+  reason: on the JVM, as Java, with a stack for each thread and a shared heap; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: native
+  reason: each function call gets a scope for local variables, and FUNCNAME lists the active calls; the shell manages all memory.
+powershell:
+  status: native
+  reason: on .NET, as C#, with a call stack that Get-PSCallStack shows; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query does not expose frames or heap memory; stored procedures have their own call stack inside the database.
+regex:
+  status: n/a
+  reason: a pattern has no calls; backtracking engines use a stack inside the engine.
+html:
+  status: n/a
+  reason: markup has no calls and no memory to manage.
+css:
+  status: n/a
+  reason: style rules have no calls and no memory to manage.
