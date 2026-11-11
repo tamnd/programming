@@ -1,5 +1,5 @@
 ---
-tag: NEW-hello-world-program
+tag: CR89SM
 kind: concept
 slug: hello-world-program
 name: Hello, world
