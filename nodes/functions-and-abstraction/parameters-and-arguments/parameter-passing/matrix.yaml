@@ -1,0 +1,19 @@
+kotlin:
+  status: native
+  reason: arguments are passed by value as on the JVM, with default values, named arguments and vararg parameters; no example file because kotlinc is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: SQL routines have IN, OUT and INOUT parameters, and PostgreSQL calls a function with positional, named or mixed notation; no example file because the examples run on SQLite, which has no functions written in SQL.
+powershell:
+  status: native
+  reason: functions and scripts have named parameters with types, default values, switches and validation in a param block; no example file because pwsh is not installed on the machine that recorded the examples.
+regex:
+  status: n/a
+  reason: a regular expression has no functions.
+html:
+  status: n/a
+  reason: HTML has no functions.
+css:
+  status: absent
+  reason: the @function rule for custom functions with parameters is a draft and is not in all browsers.
+  alternative: custom properties with var() and a fallback value.
