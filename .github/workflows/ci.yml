@@ -84,7 +84,7 @@ jobs:
         env:
           LANG_ID: ${{ matrix.lang }}
         # Each block runs in the same image as the tests, and its output must match the output block of the page (spec 07.2).
-        run: prog run -sandbox docker -lang "$LANG_ID" -out "build/results/runs-$LANG_ID.json"
+        run: prog run -sandbox docker -lang "$LANG_ID" -out "build/results/runs/runs-$LANG_ID.json"
       - uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         if: github.event_name != 'pull_request'
         with:
