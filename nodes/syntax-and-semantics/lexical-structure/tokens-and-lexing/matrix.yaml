@@ -1,0 +1,24 @@
+typescript:
+  status: library
+  reason: the TypeScript compiler package exposes a scanner for TypeScript and JavaScript source.
+kotlin:
+  status: library
+  reason: the Kotlin compiler and tools such as ktlint have lexers, but the standard library has none; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: the shell splits words and expands them at run time, and gives scripts no tokenizer for shell source.
+powershell:
+  status: stdlib
+  reason: the Parser class of System.Management.Automation.Language returns the tokens of a script; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: each database has its own lexer for SQL text, with no portable interface for programs.
+regex:
+  status: n/a
+  reason: a pattern has metacharacters and escapes but no interface to its own tokens.
+html:
+  status: n/a
+  reason: the HTML standard defines a tokenizer, but markup cannot call it.
+css:
+  status: n/a
+  reason: the CSS Syntax specification defines a tokenizer, but style sheets cannot call it.
