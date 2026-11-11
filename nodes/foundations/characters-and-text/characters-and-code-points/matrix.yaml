@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript; strings are sequences of UTF-16 code units.
+kotlin:
+  status: native
+  reason: on the JVM, a String holds UTF-16 code units, as in Java; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: the length of a variable counts characters in the current locale, and tools such as iconv convert encodings.
+powershell:
+  status: native
+  reason: strings are .NET strings of UTF-16 code units, with the same Rune and StringInfo types as C#; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: a column has a character set and a collation, and LENGTH counts characters while OCTET_LENGTH counts bytes.
+regex:
+  status: native
+  reason: engines match code points or code units, and many support \X for one grapheme cluster and \p{...} for Unicode properties.
+html:
+  status: native
+  reason: the charset declaration tells the browser the encoding, and character references such as &#x1F44D; name code points.
+css:
+  status: native
+  reason: the @charset rule and escapes such as \1F44D name code points in style sheets.
