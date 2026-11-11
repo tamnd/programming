@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript; the DOM and Node.js type definitions give a type to each event and to the argument of its listener.
+kotlin:
+  status: stdlib
+  reason: Java listener interfaces and the Swing event thread; coroutines with Flow for streams of events; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: trap runs a handler when the shell receives a signal, and a read loop over a pipe or a FIFO handles lines as they arrive.
+powershell:
+  status: native
+  reason: Register-ObjectEvent and Register-EngineEvent subscribe a script block to .NET and engine events; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: a trigger runs statements when an INSERT, UPDATE or DELETE changes a table.
+regex:
+  status: n/a
+  reason: a regular expression matches text and has no events or handlers.
+html:
+  status: native
+  reason: elements fire events such as click and input, and attributes such as onclick or script listeners handle them; the browser runs the event loop.
+css:
+  status: n/a
+  reason: pseudo-classes such as :hover and :focus change styles when the state changes, but CSS has no handlers.
