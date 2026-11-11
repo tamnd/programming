@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript, with object types and interfaces that the compiler checks.
+kotlin:
+  status: native
+  reason: every value is an object in the language, object declarations create singletons and object expressions create anonymous objects; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash values are strings and arrays of strings, with no methods.
+powershell:
+  status: native
+  reason: every value in the pipeline is a .NET object with properties and methods; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: rows hold state and have keys for identity, and some databases add object types with methods.
+regex:
+  status: n/a
+  reason: a pattern holds no objects.
+html:
+  status: idiom
+  reason: the browser represents each element as a DOM object with properties and methods.
+css:
+  status: n/a
+  reason: rules hold no objects.
