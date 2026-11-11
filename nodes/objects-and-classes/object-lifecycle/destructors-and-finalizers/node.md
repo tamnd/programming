@@ -1,5 +1,5 @@
 ---
-tag: NEW-destructors-and-finalizers
+tag: D6D0AW
 kind: concept
 slug: destructors-and-finalizers
 name: Destructors and finalizers
