@@ -1,0 +1,21 @@
+typescript:
+  status: native
+  reason: as JavaScript; type declarations are also declarative, and they state the shape of values without code.
+kotlin:
+  status: idiom
+  reason: collection functions, regular expressions and type-safe builders for declarative DSLs such as Jetpack Compose; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: idiom
+  reason: Where-Object, Sort-Object and Group-Object describe the result of a pipeline, and Desired State Configuration declares the state of a machine; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: a query states the result, and the query planner chooses the algorithm; the Python example runs a query in SQLite.
+regex:
+  status: native
+  reason: a regular expression describes a set of strings, and the engine decides how to search; the Python, JavaScript, Java, Go, C and C++ examples use one.
+html:
+  status: native
+  reason: HTML declares the structure of a document, and the browser decides how to lay it out and draw it.
+css:
+  status: native
+  reason: CSS declares styles for the elements that match each selector, and the browser applies the cascade to decide which rule wins.
