@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript, with the same statements and expressions and type annotations on top.
+kotlin:
+  status: native
+  reason: if, when and try are expressions with values, while assignment is a statement and loops are statements; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: native
+  reason: commands are statements, and arithmetic expansion and the test command give expressions; every command has an exit status that if and while test.
+powershell:
+  status: native
+  reason: statements such as if and switch can produce output that an assignment captures, so they work as expressions; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: statements such as SELECT and UPDATE contain expressions, and CASE is the conditional expression.
+regex:
+  status: n/a
+  reason: a pattern has no statements or values.
+html:
+  status: n/a
+  reason: markup has no statements or values.
+css:
+  status: n/a
+  reason: declarations hold values, and calc() is an expression, but there are no statements to run.
