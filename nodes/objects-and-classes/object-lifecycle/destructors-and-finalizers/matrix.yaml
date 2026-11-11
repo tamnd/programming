@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: as JavaScript, FinalizationRegistry for a safety net and using declarations for cleanup at the end of a block.
+kotlin:
+  status: stdlib
+  reason: on the JVM, java.lang.ref.Cleaner and the use function for Closeable; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: a trap on EXIT runs cleanup commands when the script ends; there are no objects.
+powershell:
+  status: idiom
+  reason: .NET finalizers and Dispose, with try and finally in scripts; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: rows are deleted, not destroyed; ON DELETE actions and triggers are a different idea.
+regex:
+  status: n/a
+  reason: a pattern has no objects.
+html:
+  status: idiom
+  reason: the disconnectedCallback of a custom element runs when the element leaves the document.
+css:
+  status: n/a
+  reason: CSS has no objects.
