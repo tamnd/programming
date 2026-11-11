@@ -1,0 +1,19 @@
+kotlin:
+  status: stdlib
+  reason: the lazy delegate computes a property on first access, and Sequence runs its intermediate operations lazily; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: idiom
+  reason: the pipeline passes objects one at a time, and Select-Object -First stops the earlier commands when it has enough objects; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query states the result, and the optimizer decides when and if each part is evaluated.
+regex:
+  status: n/a
+  reason: a regular expression has no evaluation of expressions; lazy quantifiers such as *? control the length of a match.
+html:
+  status: n/a
+  reason: HTML has no evaluation of expressions.
+  alternative: the loading="lazy" attribute delays the fetch of an image or an iframe until it is near the viewport.
+css:
+  status: n/a
+  reason: CSS has no evaluation of expressions.
