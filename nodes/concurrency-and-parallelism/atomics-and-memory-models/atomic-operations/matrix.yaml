@@ -1,0 +1,25 @@
+typescript:
+  status: native
+  reason: as JavaScript, with Atomics on typed arrays over a SharedArrayBuffer.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses the classes of java.util.concurrent.atomic, such as AtomicInteger and AtomicReference; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash processes do not share memory with each other.
+  alternative: flock serializes access to a shared file, and mkdir is an atomic test-and-create for a lock directory.
+powershell:
+  status: stdlib
+  reason: scripts can call the .NET class System.Threading.Interlocked on a variable that runspaces share; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: the database engine makes each statement atomic, and transactions and isolation levels control what concurrent sessions see.
+regex:
+  status: n/a
+  reason: a regular expression has no shared memory.
+html:
+  status: n/a
+  reason: HTML has no shared memory.
+css:
+  status: n/a
+  reason: CSS has no shared memory.
