@@ -1,0 +1,25 @@
+kotlin:
+  status: stdlib
+  reason: the class Result<T> holds a value or a Throwable; Kotlin reports errors with the exceptions of the JVM; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: a sealed interface with two data classes, as in the Java example.
+powershell:
+  status: idiom
+  reason: $? holds the status of the last command and $Error holds the error records; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: try and catch for terminating errors.
+bash:
+  status: idiom
+  reason: each command returns an exit status, and 0 means success; $? holds the status of the last command.
+  alternative: test the status with if or ||, and set -e to stop at the first failure.
+sql:
+  status: absent
+  reason: a query does not return an error as a value; the engine reports a failure to the host program as a status.
+  alternative: the error handling of the host language, or the handlers of a procedural extension such as PL/pgSQL.
+regex:
+  status: n/a
+  reason: a pattern does not return errors.
+html:
+  status: n/a
+  reason: markup does not return errors.
+css:
+  status: n/a
+  reason: style rules do not return errors.

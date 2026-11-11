@@ -1,0 +1,25 @@
+kotlin:
+  status: stdlib
+  reason: the standard functions require and check throw IllegalArgumentException and IllegalStateException when a condition is false; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: require for a precondition on an argument, check for the state of an object.
+powershell:
+  status: absent
+  reason: the language has no assertion statement; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: an if statement that throws when the condition is false.
+bash:
+  status: absent
+  reason: the shell has no assertion command.
+  alternative: a test such as [[ expression ]] followed by || exit with a status.
+sql:
+  status: idiom
+  reason: a CHECK constraint states a Boolean condition that each row must satisfy, and the database raises an error for a row that violates it.
+  alternative: UNIQUE, EXCLUDE or FOREIGN KEY constraints for conditions across rows or tables.
+regex:
+  status: n/a
+  reason: a pattern states no conditions on a program; a lookahead assertion is a different idea.
+html:
+  status: n/a
+  reason: markup does not run code.
+css:
+  status: n/a
+  reason: style rules do not run code.

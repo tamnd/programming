@@ -1,0 +1,23 @@
+kotlin:
+  status: native
+  reason: Kotlin has try and finally, and the function use closes an AutoCloseable resource when its block completes; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: native
+  reason: a finally block runs after try and catch and can free resources; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: the shell has no finally block; trap with the signal EXIT runs a command on exit from the shell.
+  alternative: trap 'cleanup' EXIT near the start of the script.
+sql:
+  status: absent
+  reason: a statement has no clause that runs code when it ends.
+  alternative: the host program releases connections and ends transactions in its own cleanup code.
+regex:
+  status: n/a
+  reason: a pattern holds no resources.
+html:
+  status: n/a
+  reason: markup holds no resources.
+css:
+  status: n/a
+  reason: style rules hold no resources.
