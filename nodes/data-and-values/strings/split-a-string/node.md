@@ -1,5 +1,5 @@
 ---
-tag: NEW-split-a-string
+tag: W33A9B
 kind: task
 slug: split-a-string
 name: Split a string

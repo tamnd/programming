@@ -1,5 +1,5 @@
 ---
-tag: NEW-typescript
+tag: JEJJ8S
 kind: language
 slug: typescript
 name: TypeScript

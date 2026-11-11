@@ -1,5 +1,5 @@
 ---
-tag: NEW-improper-input-validation
+tag: PAFC4G
 kind: weakness
 slug: improper-input-validation
 name: Improper input validation

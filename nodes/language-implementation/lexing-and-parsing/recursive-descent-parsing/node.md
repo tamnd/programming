@@ -1,5 +1,5 @@
 ---
-tag: NEW-recursive-descent-parsing
+tag: PQR252
 kind: concept
 slug: recursive-descent-parsing
 name: Recursive descent parsing

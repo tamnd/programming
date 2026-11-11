@@ -1,5 +1,5 @@
 ---
-tag: NEW-threads
+tag: GTTVPE
 kind: concept
 slug: threads
 name: Thread

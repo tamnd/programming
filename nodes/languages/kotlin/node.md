@@ -1,5 +1,5 @@
 ---
-tag: NEW-kotlin
+tag: B1HRTN
 kind: language
 slug: kotlin
 name: Kotlin

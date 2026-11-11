@@ -1,5 +1,5 @@
 ---
-tag: NEW-null-pointer-dereference
+tag: 59SZGS
 kind: weakness
 slug: null-pointer-dereference
 name: NULL pointer dereference

@@ -1,5 +1,5 @@
 ---
-tag: NEW-missing-authentication
+tag: YF3BF4
 kind: weakness
 slug: missing-authentication
 name: Missing authentication for a critical function

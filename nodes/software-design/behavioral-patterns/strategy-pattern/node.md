@@ -1,5 +1,5 @@
 ---
-tag: NEW-strategy-pattern
+tag: 4ZB5QG
 kind: pattern
 slug: strategy-pattern
 name: Strategy pattern

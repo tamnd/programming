@@ -1,5 +1,5 @@
 ---
-tag: NEW-hard-coded-credentials
+tag: TX2C28
 kind: weakness
 slug: hard-coded-credentials
 name: Hard-coded credentials

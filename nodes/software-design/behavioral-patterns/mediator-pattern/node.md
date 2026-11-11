@@ -1,5 +1,5 @@
 ---
-tag: NEW-mediator-pattern
+tag: DPXJHB
 kind: pattern
 slug: mediator-pattern
 name: Mediator pattern

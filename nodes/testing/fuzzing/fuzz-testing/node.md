@@ -1,5 +1,5 @@
 ---
-tag: NEW-fuzz-testing
+tag: WENMVH
 kind: concept
 slug: fuzz-testing
 name: Fuzz testing

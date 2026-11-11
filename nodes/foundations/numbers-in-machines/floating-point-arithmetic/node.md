@@ -1,5 +1,5 @@
 ---
-tag: NEW-floating-point-arithmetic
+tag: A2519N
 kind: concept
 slug: floating-point-arithmetic
 name: Floating-point arithmetic

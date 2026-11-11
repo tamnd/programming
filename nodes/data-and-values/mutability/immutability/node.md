@@ -1,5 +1,5 @@
 ---
-tag: NEW-immutability
+tag: T6YGYP
 kind: concept
 slug: immutability
 name: Immutability

@@ -1,5 +1,5 @@
 ---
-tag: NEW-address-sanitizer
+tag: 41NX54
 kind: concept
 slug: address-sanitizer
 name: AddressSanitizer

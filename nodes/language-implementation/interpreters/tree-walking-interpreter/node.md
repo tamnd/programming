@@ -1,5 +1,5 @@
 ---
-tag: NEW-tree-walking-interpreter
+tag: X3BBA0
 kind: concept
 slug: tree-walking-interpreter
 name: Tree-walking interpreter

@@ -1,5 +1,5 @@
 ---
-tag: NEW-sensitive-information-exposure
+tag: FXQ4B4
 kind: weakness
 slug: sensitive-information-exposure
 name: Exposure of sensitive information

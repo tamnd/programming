@@ -1,5 +1,5 @@
 ---
-tag: NEW-code-injection
+tag: MSMSQV
 kind: weakness
 slug: code-injection
 name: Code injection

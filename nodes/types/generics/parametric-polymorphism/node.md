@@ -1,5 +1,5 @@
 ---
-tag: NEW-generics
+tag: DVZXWK
 kind: concept
 slug: parametric-polymorphism
 name: Generics

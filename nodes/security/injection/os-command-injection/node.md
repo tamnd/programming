@@ -1,5 +1,5 @@
 ---
-tag: NEW-os-command-injection
+tag: BVNBXN
 kind: weakness
 slug: os-command-injection
 name: OS command injection

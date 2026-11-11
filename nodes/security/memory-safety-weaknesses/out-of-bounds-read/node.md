@@ -1,5 +1,5 @@
 ---
-tag: NEW-out-of-bounds-read
+tag: 4SWV9E
 kind: weakness
 slug: out-of-bounds-read
 name: Out-of-bounds read

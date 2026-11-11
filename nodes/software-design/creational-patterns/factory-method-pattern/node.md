@@ -1,5 +1,5 @@
 ---
-tag: NEW-factory-method-pattern
+tag: 0PK16R
 kind: pattern
 slug: factory-method-pattern
 name: Factory Method pattern

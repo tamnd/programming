@@ -1,5 +1,5 @@
 ---
-tag: NEW-measure-elapsed-time
+tag: G63EVZ
 kind: task
 slug: measure-elapsed-time
 name: Measure elapsed time

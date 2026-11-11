@@ -1,5 +1,5 @@
 ---
-tag: NEW-uncontrolled-resource-consumption
+tag: VE8WQW
 kind: weakness
 slug: uncontrolled-resource-consumption
 name: Uncontrolled resource consumption

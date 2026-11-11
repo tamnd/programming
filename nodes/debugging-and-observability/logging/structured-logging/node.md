@@ -1,5 +1,5 @@
 ---
-tag: NEW-structured-logging
+tag: 7J7FQX
 kind: concept
 slug: structured-logging
 name: Structured logging

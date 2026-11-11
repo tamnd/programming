@@ -1,5 +1,5 @@
 ---
-tag: NEW-prototype-pattern
+tag: KQHJFJ
 kind: pattern
 slug: prototype-pattern
 name: Prototype pattern

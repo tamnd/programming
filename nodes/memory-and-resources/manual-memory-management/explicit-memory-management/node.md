@@ -1,5 +1,5 @@
 ---
-tag: NEW-explicit-memory-management
+tag: 1T4M29
 kind: concept
 slug: explicit-memory-management
 name: Manual memory management

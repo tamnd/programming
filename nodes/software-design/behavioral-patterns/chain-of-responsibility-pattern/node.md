@@ -1,5 +1,5 @@
 ---
-tag: NEW-chain-of-responsibility-pattern
+tag: B7VZ5Z
 kind: pattern
 slug: chain-of-responsibility-pattern
 name: Chain of Responsibility pattern

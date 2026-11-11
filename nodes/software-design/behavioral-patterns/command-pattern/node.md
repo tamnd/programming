@@ -1,5 +1,5 @@
 ---
-tag: NEW-command-pattern
+tag: 46Z0G2
 kind: pattern
 slug: command-pattern
 name: Command pattern

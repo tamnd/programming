@@ -1,5 +1,5 @@
 ---
-tag: NEW-closures
+tag: GSWN5W
 kind: concept
 slug: closures
 name: Closure

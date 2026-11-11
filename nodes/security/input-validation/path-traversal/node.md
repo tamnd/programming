@@ -1,5 +1,5 @@
 ---
-tag: NEW-path-traversal
+tag: HZ0NPM
 kind: weakness
 slug: path-traversal
 name: Path traversal

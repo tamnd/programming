@@ -1,5 +1,5 @@
 ---
-tag: NEW-csv
+tag: WEWPMR
 kind: format
 slug: csv
 name: CSV

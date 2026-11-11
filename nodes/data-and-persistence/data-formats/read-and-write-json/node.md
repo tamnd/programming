@@ -1,5 +1,5 @@
 ---
-tag: NEW-read-and-write-json
+tag: 2GFS05
 kind: task
 slug: read-and-write-json
 name: Read and write JSON

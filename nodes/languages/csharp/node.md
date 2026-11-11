@@ -1,5 +1,5 @@
 ---
-tag: NEW-csharp
+tag: KZTF4Y
 kind: language
 slug: csharp
 name: "C#"

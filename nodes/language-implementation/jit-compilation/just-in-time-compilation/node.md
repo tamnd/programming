@@ -1,5 +1,5 @@
 ---
-tag: NEW-just-in-time-compilation
+tag: S005MC
 kind: concept
 slug: just-in-time-compilation
 name: Just-in-time compilation

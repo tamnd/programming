@@ -1,5 +1,5 @@
 ---
-tag: NEW-assertions
+tag: 2AHPC8
 kind: concept
 slug: assertions
 name: Assertion

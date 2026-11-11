@@ -1,5 +1,5 @@
 ---
-tag: NEW-builder-pattern
+tag: 885AA4
 kind: pattern
 slug: builder-pattern
 name: Builder pattern

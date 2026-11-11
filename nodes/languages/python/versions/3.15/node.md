@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-3-15
+tag: CTSV9K
 kind: release
 owner: python
 version: "3.15"

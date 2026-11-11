@@ -1,5 +1,5 @@
 ---
-tag: NEW-compute-a-sha-256-hash
+tag: 9MC19V
 kind: task
 slug: compute-a-sha-256-hash
 name: Compute a SHA-256 hash

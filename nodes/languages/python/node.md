@@ -1,5 +1,5 @@
 ---
-tag: NEW-python
+tag: KCBSEY
 kind: language
 slug: python
 name: Python

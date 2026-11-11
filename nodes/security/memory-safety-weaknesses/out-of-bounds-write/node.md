@@ -1,5 +1,5 @@
 ---
-tag: NEW-out-of-bounds-write
+tag: P5VTR9
 kind: weakness
 slug: out-of-bounds-write
 name: Out-of-bounds write

@@ -1,5 +1,5 @@
 ---
-tag: NEW-bridge-pattern
+tag: GA90WF
 kind: pattern
 slug: bridge-pattern
 name: Bridge pattern

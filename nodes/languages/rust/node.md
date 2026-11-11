@@ -1,5 +1,5 @@
 ---
-tag: NEW-rust
+tag: CX4NX1
 kind: language
 slug: rust
 name: Rust

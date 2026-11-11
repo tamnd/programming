@@ -1,5 +1,5 @@
 ---
-tag: NEW-dependency-injection
+tag: DQ8MTH
 kind: pattern
 slug: dependency-injection
 name: Dependency injection

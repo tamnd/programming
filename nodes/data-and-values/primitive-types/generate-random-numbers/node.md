@@ -1,5 +1,5 @@
 ---
-tag: NEW-generate-random-numbers
+tag: N64C61
 kind: task
 slug: generate-random-numbers
 name: Generate random numbers

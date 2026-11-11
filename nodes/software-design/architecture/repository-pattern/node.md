@@ -1,5 +1,5 @@
 ---
-tag: NEW-repository-pattern
+tag: QP7VME
 kind: pattern
 slug: repository-pattern
 name: Repository pattern

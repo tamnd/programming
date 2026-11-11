@@ -1,5 +1,5 @@
 ---
-tag: NEW-integer-overflow
+tag: PQW5JT
 kind: weakness
 slug: integer-overflow
 name: Integer overflow or wraparound

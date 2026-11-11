@@ -1,5 +1,5 @@
 ---
-tag: NEW-static-and-dynamic-typing
+tag: 0R5JMW
 kind: concept
 slug: static-and-dynamic-typing
 name: Static and dynamic typing

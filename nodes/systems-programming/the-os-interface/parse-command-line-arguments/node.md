@@ -1,5 +1,5 @@
 ---
-tag: NEW-parse-command-line-arguments
+tag: 5V6AQQ
 kind: task
 slug: parse-command-line-arguments
 name: Parse command-line arguments

@@ -1,5 +1,5 @@
 ---
-tag: NEW-state-pattern
+tag: M5W08S
 kind: pattern
 slug: state-pattern
 name: State pattern

@@ -1,5 +1,5 @@
 ---
-tag: NEW-git-rebase
+tag: F3SR5C
 kind: feature
 owner: git
 slug: rebase

@@ -1,5 +1,5 @@
 ---
-tag: NEW-read-a-csv-file
+tag: PY75PY
 kind: task
 slug: read-a-csv-file
 name: Read a CSV file

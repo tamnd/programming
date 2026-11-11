@@ -1,5 +1,5 @@
 ---
-tag: NEW-cross-site-request-forgery
+tag: SFBRKW
 kind: weakness
 slug: cross-site-request-forgery
 name: Cross-site request forgery

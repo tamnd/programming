@@ -1,5 +1,5 @@
 ---
-tag: NEW-model-view-controller
+tag: 8SSG44
 kind: pattern
 slug: model-view-controller
 name: Model-view-controller

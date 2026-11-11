@@ -1,5 +1,5 @@
 ---
-tag: NEW-missing-authorization
+tag: 3A0889
 kind: weakness
 slug: missing-authorization
 name: Missing authorization

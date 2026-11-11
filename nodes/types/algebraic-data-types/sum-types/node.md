@@ -1,5 +1,5 @@
 ---
-tag: NEW-sum-types
+tag: P8S1JD
 kind: concept
 slug: sum-types
 name: Sum types

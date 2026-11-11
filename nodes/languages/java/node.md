@@ -1,5 +1,5 @@
 ---
-tag: NEW-java
+tag: 58GTKW
 kind: language
 slug: java
 name: Java

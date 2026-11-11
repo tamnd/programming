@@ -1,5 +1,5 @@
 ---
-tag: NEW-flyweight-pattern
+tag: 6KZR0J
 kind: pattern
 slug: flyweight-pattern
 name: Flyweight pattern

@@ -1,5 +1,5 @@
 ---
-tag: NEW-rust-errors-e0382
+tag: GPC59W
 kind: diagnostic
 owner: rust
 slug: E0382

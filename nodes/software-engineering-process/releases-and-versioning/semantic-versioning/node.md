@@ -1,5 +1,5 @@
 ---
-tag: NEW-semantic-versioning
+tag: NY2T0V
 kind: standard
 slug: semantic-versioning
 name: Semantic Versioning

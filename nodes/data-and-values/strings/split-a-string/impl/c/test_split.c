@@ -24,25 +24,29 @@ static void check(const char *name, struct field *got, size_t count, const char 
     free(got);
 }
 
+// Each macro calls the split function before check, because C does not fix the order in which the arguments of a call are evaluated, and check reads n.
 #define WANT(...) ((const char *const[]){__VA_ARGS__, NULL})
 #define NONE ((const char *const[]){NULL})
 
-#define SPLIT(name, s, sep, limit, want)                \
-    do {                                                \
-        size_t n = 0;                                   \
-        check(name, split(s, sep, limit, &n), n, want); \
+#define SPLIT(name, s, sep, limit, want)              \
+    do {                                              \
+        size_t n = 0;                                 \
+        struct field *got = split(s, sep, limit, &n); \
+        check(name, got, n, want);                    \
     } while (0)
 
-#define SPLIT_WS(name, s, want)                     \
-    do {                                            \
-        size_t n = 0;                               \
-        check(name, split_whitespace(s, &n), n, want); \
+#define SPLIT_WS(name, s, want)                      \
+    do {                                             \
+        size_t n = 0;                                \
+        struct field *got = split_whitespace(s, &n); \
+        check(name, got, n, want);                   \
     } while (0)
 
 #define SPLIT_RE(name, s, pattern, want)                 \
     do {                                                 \
         size_t n = 0;                                    \
-        check(name, split_regex(s, pattern, &n), n, want); \
+        struct field *got = split_regex(s, pattern, &n); \
+        check(name, got, n, want);                       \
     } while (0)
 
 int main(void) {

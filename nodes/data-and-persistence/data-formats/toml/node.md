@@ -1,5 +1,5 @@
 ---
-tag: NEW-toml
+tag: RR1JRW
 kind: format
 slug: toml
 name: TOML
