@@ -42,7 +42,7 @@ int main(void) {
 42949673 items: 0
 ```
 
-```c fails expect=sanitizer:undefined flags="-fsanitize=unsigned-integer-overflow -fno-sanitize-recover=all" timeout=30 id=unsigned-wrap
+```c wrong id=unsigned-wrap
 #include <stdio.h>
 
 int main(void) {
@@ -53,7 +53,11 @@ int main(void) {
 }
 ```
 
-Unsigned arithmetic wraps by definition, so the default set of UndefinedBehaviorSanitizer checks does not report it. The check `-fsanitize=unsigned-integer-overflow` does. This is an underflow, CWE-191: 2 − 3 is not −1 but 4,294,967,295.
+```output
+left: 4294967295
+```
+
+Unsigned arithmetic wraps by definition, so the program has no undefined behavior, and the default set of UndefinedBehaviorSanitizer checks does not report it. Clang has the extra check `-fsanitize=unsigned-integer-overflow` for it. GCC has no such check. This is an underflow, CWE-191: 2 − 3 is not −1 but 4,294,967,295.
 
 - Verdict: absent. C has no overflow check in its arithmetic. Signed overflow is undefined behavior, and unsigned arithmetic wraps modulo 2ⁿ.
 - `ckd_add`, `ckd_sub` and `ckd_mul` in `<stdckdint.h>` compute the result as if the type had infinite range and return `true` when the stored value is not the true result.

@@ -68,7 +68,7 @@ mentions main.main: true
 
 `runtime.CallersFrames` turns program counters into frames. It also gives a frame for each call that the compiler inlined. `runtime.FuncForPC` looks at one program counter and cannot do this.
 
-```go wrong id=funcforpc
+```go norun reason=platform id=funcforpc
 package main
 
 import (
@@ -101,11 +101,7 @@ func main() {
 }
 ```
 
-```output for=funcforpc
-main.main <- main.checkout <- main.main
-```
-
-The compiler inlined `lookup` into `checkout`. `FuncForPC` gave the name of an outer function for that program counter, so `main.lookup` is missing from the chain. The fix is `runtime.CallersFrames`, as in the first example.
+The compiler inlines `lookup` and `checkout` into `main`. For the program counter of an inlined call, the name that `FuncForPC` gives depends on the compiler and on the architecture. With one Go release, this program can print the right chain on one machine and a chain with a missing or repeated function on another. So the output is not shown here. The fix is `runtime.CallersFrames`, as in the first example.
 
 - Verdict: library. Delve (`dlv`) is the debugger for Go, and it is not part of the Go distribution. The Go documentation says that GDB does not understand Go programs well.
 - `runtime.Breakpoint()` executes a breakpoint trap. Under a debugger, the program stops there.

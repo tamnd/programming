@@ -42,7 +42,8 @@ int main(void) {
     unsigned rng = 1;
     puts("busy");
     calls = 0, now_ms = 0;
-    printf("  result %d after %d calls\n", with_retry(2, EAGAIN, &rng), calls);
+    int ok = with_retry(2, EAGAIN, &rng);
+    printf("  result %d after %d calls\n", ok, calls);
     puts("bad argument");
     calls = 0, now_ms = 0;
     int rc = with_retry(1, EINVAL, &rng);

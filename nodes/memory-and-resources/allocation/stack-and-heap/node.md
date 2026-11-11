@@ -243,7 +243,7 @@ Every example file shows the two places. It shows a value whose lifetime is one 
 
 A C function that keeps the address of a local after it returns leaves a dangling pointer. The C standard makes any use of it undefined behaviour.[^3] Clang warns about a plain `return &total;` by default.[^7] It does not warn when the address goes through a global variable, as here. AddressSanitizer finds the read as a `stack-use-after-return`. The check is on by default on Linux, and the flag `-fsanitize-address-use-after-return=always` turns it on everywhere.[^6]
 
-```c fails expect=sanitizer:address flags="-fsanitize-address-use-after-return=always" timeout=30 id=keep-local
+```c fails expect=sanitizer:address timeout=30 id=keep-local
 #include <stdio.h>
 
 static int *last;

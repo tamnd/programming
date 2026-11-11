@@ -4,7 +4,8 @@
 
 // An optimizer may fold this to "return true".
 bool can_increment(int x) {
-    return x + 1 > x;
+    int next = x + 1;
+    return next > x;
 }
 
 int main() {
@@ -13,7 +14,7 @@ int main() {
 }
 ```
 
-The test `x + 1 > x` looks like an overflow check, but it is not one. For every `x` where the addition is defined, the result is true. The compiler may assume that the addition is defined, so it may replace the whole function with `true`. UndefinedBehaviorSanitizer reports the overflow at the second call.
+The test `next > x`, where `next` is `x + 1`, looks like an overflow check, but it is not one. For every `x` where the addition is defined, the result is true. The compiler may assume that the addition is defined, so it may replace the whole function with `true`. UndefinedBehaviorSanitizer reports the overflow at the second call.
 
 ```cpp fails expect=compile id=constexpr-overflow
 #include <climits>

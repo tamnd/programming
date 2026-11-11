@@ -22,7 +22,7 @@ int main() {
 
 `size()` returns an unsigned type. 3 − 5 does not give −2. It wraps to a value near 2⁶⁴, and a loop that uses it as a count runs far past the end of the vector. The behavior is defined, so no sanitizer in the default set reports it.
 
-```cpp fails expect=compile id=narrowing
+```cpp fails expect=compile flags="-Werror=narrowing" id=narrowing
 #include <cstdint>
 #include <iostream>
 
@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-Brace initialization does not allow a narrowing conversion, so the compiler rejects the conversion of a 64-bit value to a 32-bit one. An initialization with `=` compiles and truncates the value.
+Brace initialization does not allow a narrowing conversion. Clang rejects the conversion of a 64-bit value to a 32-bit one. GCC rejects a narrowing conversion of a constant, but gives only a warning when the value is not a constant, so this build adds `-Werror=narrowing`. An initialization with `=` compiles and truncates the value.
 
 ```cpp run flags="-fsanitize=address,undefined" id=check
 #include <cstddef>
