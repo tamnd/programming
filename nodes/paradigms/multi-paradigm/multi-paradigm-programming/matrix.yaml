@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript, with structural types, interfaces, union types and generics that support object-oriented and functional code alike.
+kotlin:
+  status: native
+  reason: classes, interfaces, data classes, sealed classes, lambdas, extension functions and coroutines mix object-oriented, functional and concurrent styles; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: Bash is imperative, and its pipelines add a dataflow style; functions take text and return a status, so other styles are hard to express.
+powershell:
+  status: native
+  reason: scripts are imperative, the pipeline passes .NET objects between commands, classes and script blocks give object-oriented and functional code; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: queries are declarative, and the procedural extensions of the standard and of each engine add variables, loops and stored procedures.
+regex:
+  status: n/a
+  reason: a regular expression is a pattern in one declarative notation.
+html:
+  status: n/a
+  reason: HTML is a markup language with one declarative style.
+css:
+  status: n/a
+  reason: CSS is a declarative language of rules with one style.
