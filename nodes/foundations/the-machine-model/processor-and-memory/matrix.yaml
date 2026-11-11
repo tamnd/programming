@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: as JavaScript; ArrayBuffer and typed arrays give raw bytes, but no addresses.
+kotlin:
+  status: stdlib
+  reason: on the JVM, as Java, with fixed-width types and the memory API of the JDK, while Kotlin/Native has pointers of its own; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: the shell runs commands and holds strings, with no view of memory.
+powershell:
+  status: idiom
+  reason: PowerShell runs on the .NET runtime and can call its types for sizes and byte order, but has no pointers of its own; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query states a result, and the database chooses how the machine computes it.
+regex:
+  status: n/a
+  reason: a pattern describes text, not a computation on a machine.
+html:
+  status: n/a
+  reason: markup has no model of execution.
+css:
+  status: n/a
+  reason: style rules have no model of execution.
