@@ -1,0 +1,24 @@
+typescript:
+  status: absent
+  reason: as JavaScript; a type for a word can state the stack that it takes and the stack that it leaves as tuple types.
+kotlin:
+  status: absent
+  reason: Kotlin applies functions to arguments; the JVM that runs it is a stack machine; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: a pipeline joins programs by writing them one after another, and the POSIX calculator dc is a stack language, so echo '2 3 + p' | dc prints 5.
+powershell:
+  status: idiom
+  reason: the pipeline joins commands left to right, and each command takes the objects of the one before it; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: SQL queries are expressions over tables, with no stack and no sequence of words.
+regex:
+  status: n/a
+  reason: a regular expression is a pattern, not a program of words; concatenating two patterns does give a pattern for the concatenated languages.
+html:
+  status: n/a
+  reason: HTML has no programs to compose.
+css:
+  status: n/a
+  reason: CSS has no programs to compose.
