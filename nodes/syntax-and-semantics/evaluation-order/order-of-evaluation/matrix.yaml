@@ -1,0 +1,15 @@
+kotlin:
+  status: native
+  reason: operands and arguments are evaluated from left to right, as on the JVM; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: native
+  reason: operands and pipeline stages are evaluated from left to right; no example file because pwsh is not installed on the machine that recorded the examples.
+regex:
+  status: n/a
+  reason: a regular expression has no side effects, so the order of evaluation cannot be seen.
+html:
+  status: n/a
+  reason: HTML has no expressions.
+css:
+  status: n/a
+  reason: CSS functions such as calc() have no side effects, so the order of evaluation cannot be seen.
