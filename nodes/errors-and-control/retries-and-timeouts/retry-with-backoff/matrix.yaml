@@ -1,0 +1,21 @@
+kotlin:
+  status: idiom
+  reason: Kotlin on the JVM uses the same loop as Java, or the delay function in a coroutine; no example file in this version.
+  alternative: a loop with Thread.sleep and java.util.Random, as in the Java example.
+powershell:
+  status: native
+  reason: Invoke-RestMethod has the parameters MaximumRetryCount and RetryIntervalSec; the interval is fixed, and it retries every status from 400 to 599; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: a loop with try and catch and Start-Sleep for a backoff with jitter.
+sql:
+  status: absent
+  reason: a statement does not retry itself; the client retries a transaction that fails with a serialization failure, SQLSTATE 40001.
+  alternative: the retry loop of the host language around the whole transaction.
+regex:
+  status: n/a
+  reason: a pattern does not call anything that can fail.
+html:
+  status: n/a
+  reason: markup does not call anything that can fail.
+css:
+  status: n/a
+  reason: style rules do not call anything that can fail.
