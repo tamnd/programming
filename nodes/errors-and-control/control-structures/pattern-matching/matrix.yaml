@@ -1,0 +1,21 @@
+kotlin:
+  status: idiom
+  reason: a when expression with a subject tests types with is and smart-casts the subject, a guard condition after if adds a test, and a when expression must cover all cases; when cannot take a value apart into nested parts; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: when with is checks and guard conditions, and a destructuring declaration such as val (x, y) = point for a data class.
+powershell:
+  status: absent
+  reason: PowerShell has no patterns that take a value apart; switch converts each value to a string and runs the action of every condition that matches; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: switch with -Wildcard or -Regex on strings, with break in each action to stop after the first match, or scriptblock conditions such as { $_.X -eq 0 }.
+sql:
+  status: absent
+  reason: SQL has no patterns that take a row or a value apart.
+  alternative: a CASE expression whose WHEN conditions are tested in order, and LIKE for string patterns.
+regex:
+  status: n/a
+  reason: a regular expression matches strings; it does not take apart structured values.
+html:
+  status: n/a
+  reason: markup has no values to take apart.
+css:
+  status: n/a
+  reason: style rules have no values to take apart.
