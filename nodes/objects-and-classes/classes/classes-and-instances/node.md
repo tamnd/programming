@@ -1,5 +1,5 @@
 ---
-tag: NEW-classes-and-instances
+tag: BNR9SD
 kind: concept
 slug: classes-and-instances
 name: Classes and instances
