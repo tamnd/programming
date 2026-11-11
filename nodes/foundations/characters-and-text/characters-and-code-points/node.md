@@ -1,5 +1,5 @@
 ---
-tag: NEW-characters-and-code-points
+tag: V5YGS3
 kind: concept
 slug: characters-and-code-points
 name: Characters, code points and graphemes
