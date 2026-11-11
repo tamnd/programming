@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: as JavaScript; RxJS and signal libraries have full type definitions.
+kotlin:
+  status: library
+  reason: Flow and StateFlow in kotlinx.coroutines give reactive streams, and Compose recomposes the user interface when state changes; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: a pipeline such as tail -f, grep and awk is a dataflow graph in which each process reacts to lines as they arrive.
+powershell:
+  status: idiom
+  reason: the pipeline streams objects through cmdlets one at a time; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: a view is a query over tables that is computed again when read; some engines keep materialized views up to date as the tables change.
+regex:
+  status: n/a
+  reason: regular expressions have no values that change over time.
+html:
+  status: n/a
+  reason: HTML has no derived values; scripts and frameworks bind data to elements.
+css:
+  status: idiom
+  reason: custom properties, calc() and media queries are relations that the browser computes again when their inputs change.
