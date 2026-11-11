@@ -1,0 +1,17 @@
+kotlin:
+  status: native
+  reason: == calls equals and handles null, === compares references, and a data class gets equals and hashCode from its properties; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: data class for value equality, and === for identity.
+powershell:
+  status: native
+  reason: -eq compares values, and string comparisons are case-insensitive unless the script uses -ceq; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: -ceq for a case-sensitive comparison, and [object]::ReferenceEquals for identity.
+regex:
+  status: n/a
+  reason: a regular expression matches text; it has no values to compare for equality.
+html:
+  status: n/a
+  reason: markup has no values to compare.
+css:
+  status: n/a
+  reason: style rules have no values to compare.
