@@ -1,5 +1,5 @@
 ---
-tag: NEW-utf-8
+tag: 3W23QF
 kind: format
 slug: utf-8
 name: UTF-8

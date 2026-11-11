@@ -1,5 +1,5 @@
 ---
-tag: NEW-resource-acquisition-is-initialization
+tag: 9AX66E
 kind: concept
 slug: resource-acquisition-is-initialization
 name: Resource acquisition is initialization

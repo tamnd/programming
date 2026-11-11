@@ -1,5 +1,5 @@
 ---
-tag: NEW-iterator-pattern
+tag: SG4FMR
 kind: pattern
 slug: iterator-pattern
 name: Iterator pattern

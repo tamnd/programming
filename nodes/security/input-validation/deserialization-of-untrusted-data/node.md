@@ -1,5 +1,5 @@
 ---
-tag: NEW-deserialization-of-untrusted-data
+tag: YVTK68
 kind: weakness
 slug: deserialization-of-untrusted-data
 name: Deserialization of untrusted data

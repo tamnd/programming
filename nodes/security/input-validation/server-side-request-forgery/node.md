@@ -1,5 +1,5 @@
 ---
-tag: NEW-server-side-request-forgery
+tag: 71XE9R
 kind: weakness
 slug: server-side-request-forgery
 name: Server-side request forgery

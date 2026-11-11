@@ -1,5 +1,5 @@
 ---
-tag: NEW-find-and-replace-with-a-regular-expression
+tag: AKFJ8P
 kind: task
 slug: find-and-replace-with-a-regular-expression
 name: Find and replace with a regular expression

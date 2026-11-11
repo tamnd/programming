@@ -1,5 +1,5 @@
 ---
-tag: NEW-interpreter-pattern
+tag: R6M6FX
 kind: pattern
 slug: interpreter-pattern
 name: Interpreter pattern

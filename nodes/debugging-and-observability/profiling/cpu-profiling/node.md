@@ -1,5 +1,5 @@
 ---
-tag: NEW-cpu-profiling
+tag: YNFMX3
 kind: concept
 slug: cpu-profiling
 name: CPU profiling

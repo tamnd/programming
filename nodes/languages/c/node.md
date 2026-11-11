@@ -1,5 +1,5 @@
 ---
-tag: NEW-c
+tag: S9QT2P
 kind: language
 slug: c
 name: C

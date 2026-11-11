@@ -1,5 +1,5 @@
 ---
-tag: NEW-type-erasure
+tag: TRTN8M
 kind: concept
 slug: type-erasure
 name: Type erasure

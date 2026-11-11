@@ -1,5 +1,5 @@
 ---
-tag: NEW-javascript
+tag: NEHCF2
 kind: language
 slug: javascript
 name: JavaScript

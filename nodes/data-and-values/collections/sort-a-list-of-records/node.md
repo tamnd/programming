@@ -1,5 +1,5 @@
 ---
-tag: NEW-sort-a-list-of-records
+tag: WCQ6N9
 kind: task
 slug: sort-a-list-of-records
 name: Sort a list of records

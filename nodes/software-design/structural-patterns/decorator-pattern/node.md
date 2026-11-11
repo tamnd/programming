@@ -1,5 +1,5 @@
 ---
-tag: NEW-decorator-pattern
+tag: E4GM49
 kind: pattern
 slug: decorator-pattern
 name: Decorator pattern

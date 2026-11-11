@@ -1,5 +1,5 @@
 ---
-tag: NEW-sql-injection
+tag: J1SS61
 kind: weakness
 slug: sql-injection
 name: SQL injection

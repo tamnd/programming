@@ -1,5 +1,5 @@
 ---
-tag: NEW-errors-as-values
+tag: X3P25M
 kind: concept
 slug: errors-as-values
 name: Error value

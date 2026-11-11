@@ -1,5 +1,5 @@
 ---
-tag: NEW-extract-function
+tag: EKDK97
 kind: technique
 slug: extract-function
 name: Extract function

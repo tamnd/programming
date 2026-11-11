@@ -1,5 +1,5 @@
 ---
-tag: NEW-memento-pattern
+tag: MFKQP4
 kind: pattern
 slug: memento-pattern
 name: Memento pattern

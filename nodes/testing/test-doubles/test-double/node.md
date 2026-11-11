@@ -1,5 +1,5 @@
 ---
-tag: NEW-test-double
+tag: BWXSXK
 kind: concept
 slug: test-double
 name: Test double

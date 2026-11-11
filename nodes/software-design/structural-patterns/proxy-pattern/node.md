@@ -1,5 +1,5 @@
 ---
-tag: NEW-proxy-pattern
+tag: HYDT82
 kind: pattern
 slug: proxy-pattern
 name: Proxy pattern

@@ -1,5 +1,5 @@
 ---
-tag: NEW-git
+tag: WDE7KC
 kind: tool
 slug: git
 name: Git

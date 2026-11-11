@@ -1,5 +1,5 @@
 ---
-tag: NEW-unrestricted-file-upload
+tag: 9BDMC4
 kind: weakness
 slug: unrestricted-file-upload
 name: Unrestricted file upload

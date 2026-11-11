@@ -1,5 +1,5 @@
 ---
-tag: NEW-template-method-pattern
+tag: RVYZ8D
 kind: pattern
 slug: template-method-pattern
 name: Template Method pattern

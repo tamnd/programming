@@ -1,5 +1,5 @@
 ---
-tag: NEW-cross-site-scripting
+tag: BZDEXT
 kind: weakness
 slug: cross-site-scripting
 name: Cross-site scripting

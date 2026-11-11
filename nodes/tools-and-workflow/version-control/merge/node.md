@@ -1,5 +1,5 @@
 ---
-tag: NEW-git-merge
+tag: VAEX3E
 kind: feature
 owner: git
 slug: merge

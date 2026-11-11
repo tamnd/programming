@@ -1,5 +1,5 @@
 ---
-tag: NEW-reverse-a-string
+tag: PMSCAQ
 kind: task
 slug: reverse-a-string
 name: Reverse a string

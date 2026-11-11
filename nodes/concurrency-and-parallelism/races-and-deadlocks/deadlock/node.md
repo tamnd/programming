@@ -1,5 +1,5 @@
 ---
-tag: NEW-deadlock
+tag: YJ5FP2
 kind: concept
 slug: deadlock
 name: Deadlock

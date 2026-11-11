@@ -1,5 +1,5 @@
 ---
-tag: NEW-facade-pattern
+tag: YG43AR
 kind: pattern
 slug: facade-pattern
 name: Facade pattern

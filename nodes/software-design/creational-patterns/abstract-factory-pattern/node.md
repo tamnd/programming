@@ -1,5 +1,5 @@
 ---
-tag: NEW-abstract-factory-pattern
+tag: EYCWG5
 kind: pattern
 slug: abstract-factory-pattern
 name: Abstract Factory pattern

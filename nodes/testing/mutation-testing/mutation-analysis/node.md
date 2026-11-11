@@ -1,5 +1,5 @@
 ---
-tag: NEW-mutation-analysis
+tag: KWRP2X
 kind: concept
 slug: mutation-analysis
 name: Mutation analysis

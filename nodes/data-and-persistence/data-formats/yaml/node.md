@@ -1,5 +1,5 @@
 ---
-tag: NEW-yaml
+tag: X93KWZ
 kind: format
 slug: yaml
 name: YAML

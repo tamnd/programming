@@ -1,5 +1,5 @@
 ---
-tag: NEW-observer-pattern
+tag: 4ACQHF
 kind: pattern
 slug: observer-pattern
 name: Observer pattern

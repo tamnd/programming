@@ -1,5 +1,5 @@
 ---
-tag: NEW-incorrect-authorization
+tag: GZ31FD
 kind: weakness
 slug: incorrect-authorization
 name: Incorrect authorization

@@ -1,5 +1,5 @@
 ---
-tag: NEW-visitor-pattern
+tag: JQCQK2
 kind: pattern
 slug: visitor-pattern
 name: Visitor pattern

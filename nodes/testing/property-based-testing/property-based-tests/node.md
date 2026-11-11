@@ -1,5 +1,5 @@
 ---
-tag: NEW-property-based-tests
+tag: STCBBZ
 kind: concept
 slug: property-based-tests
 name: Property-based testing

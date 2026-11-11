@@ -1,5 +1,5 @@
 ---
-tag: NEW-data-races
+tag: TQ2SVE
 kind: concept
 slug: data-races
 name: Data race

@@ -1,5 +1,5 @@
 ---
-tag: NEW-higher-order-functions
+tag: DB0ZNH
 kind: concept
 slug: higher-order-functions
 name: Higher-order function

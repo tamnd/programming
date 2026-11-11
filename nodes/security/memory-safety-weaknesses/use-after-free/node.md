@@ -1,5 +1,5 @@
 ---
-tag: NEW-use-after-free
+tag: 0HDQ4M
 kind: weakness
 slug: use-after-free
 name: Use after free

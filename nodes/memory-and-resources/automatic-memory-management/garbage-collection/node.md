@@ -1,5 +1,5 @@
 ---
-tag: NEW-garbage-collection
+tag: TMWNW7
 kind: concept
 slug: garbage-collection
 name: Garbage collection

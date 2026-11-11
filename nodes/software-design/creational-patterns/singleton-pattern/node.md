@@ -1,5 +1,5 @@
 ---
-tag: NEW-singleton-pattern
+tag: NB3KXE
 kind: pattern
 slug: singleton-pattern
 name: Singleton pattern

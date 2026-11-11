@@ -1,5 +1,5 @@
 ---
-tag: NEW-subtyping
+tag: MRV58N
 kind: concept
 slug: subtyping
 name: Subtyping

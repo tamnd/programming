@@ -1,5 +1,5 @@
 ---
-tag: NEW-read-from-standard-input
+tag: YW44TZ
 kind: task
 slug: read-from-standard-input
 name: Read from standard input

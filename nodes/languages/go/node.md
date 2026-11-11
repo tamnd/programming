@@ -1,5 +1,5 @@
 ---
-tag: NEW-go
+tag: 7D4GF5
 kind: language
 slug: go
 name: Go

@@ -1,5 +1,5 @@
 ---
-tag: NEW-composite-pattern
+tag: HE663P
 kind: pattern
 slug: composite-pattern
 name: Composite pattern

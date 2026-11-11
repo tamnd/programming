@@ -1,5 +1,5 @@
 ---
-tag: NEW-panics
+tag: W6XZEH
 kind: concept
 slug: panics
 name: Panic

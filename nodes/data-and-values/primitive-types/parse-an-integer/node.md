@@ -1,5 +1,5 @@
 ---
-tag: NEW-parse-an-integer
+tag: T4EAFK
 kind: task
 slug: parse-an-integer
 name: Parse an integer

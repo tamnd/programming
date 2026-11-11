@@ -1,5 +1,5 @@
 ---
-tag: NEW-read-a-file-line-by-line
+tag: 6TRE22
 kind: task
 slug: read-a-file-line-by-line
 name: Read a file line by line

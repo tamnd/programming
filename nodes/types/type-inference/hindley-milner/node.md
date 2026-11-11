@@ -1,5 +1,5 @@
 ---
-tag: NEW-hindley-milner
+tag: EAVZR1
 kind: concept
 slug: hindley-milner
 name: Type inference

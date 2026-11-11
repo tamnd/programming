@@ -1,5 +1,5 @@
 ---
-tag: NEW-adapter-pattern
+tag: TF9KQ1
 kind: pattern
 slug: adapter-pattern
 name: Adapter pattern

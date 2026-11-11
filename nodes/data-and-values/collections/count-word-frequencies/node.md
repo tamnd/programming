@@ -1,5 +1,5 @@
 ---
-tag: NEW-count-word-frequencies
+tag: 71X4H9
 kind: task
 slug: count-word-frequencies
 name: Count word frequencies
