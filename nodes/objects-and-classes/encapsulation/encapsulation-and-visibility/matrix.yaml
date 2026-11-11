@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: private, protected and public are checked by the compiler only and vanish from the output, while the #private fields of JavaScript are enforced when the program runs.
+kotlin:
+  status: native
+  reason: private, protected, internal and public, with public as the default and internal for one module; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: local makes a variable visible only in a function and the functions it calls, and readonly stops later assignment, but there are no objects.
+powershell:
+  status: idiom
+  reason: class members can be hidden, which removes them from default output and completion but not from access; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: native
+  reason: GRANT and REVOKE control which roles may read or change a table, and views and stored procedures can expose a part of the data.
+regex:
+  status: n/a
+  reason: a pattern has no state to hide.
+html:
+  status: idiom
+  reason: a closed shadow root hides the inner elements of a custom element from the scripts of the page.
+css:
+  status: idiom
+  reason: styles inside a shadow root do not apply outside it, and the styles of the page do not reach into it.
