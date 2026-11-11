@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: as JavaScript; typed arrays and the map, filter and reduce methods have full type definitions.
+kotlin:
+  status: idiom
+  reason: arrays and lists have map, zip, filter, fold and scan, and operator overloading lets a library define + on vectors; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: absent
+  reason: Bash arrays hold strings and have no element-wise arithmetic; a loop or an awk program does the work.
+powershell:
+  status: idiom
+  reason: comparison operators filter arrays, so @(3,1,4,1,5) -gt 2 gives 3, 4 and 5, and ForEach-Object applies a script block to each element; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: a query applies its expressions to every row of a table at once, and aggregate functions such as SUM are reductions; array columns exist in some engines.
+regex:
+  status: n/a
+  reason: regular expressions match text and have no arrays of values.
+html:
+  status: n/a
+  reason: HTML has no values to compute with.
+css:
+  status: n/a
+  reason: CSS has no arrays of values to compute with.
