@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: a union of string literal types names the states, and the compiler checks that a switch covers each one.
+kotlin:
+  status: idiom
+  reason: an enum class or a sealed class names the states, and a when expression must cover every case; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: a variable holds the state and a case statement in a loop gives the transitions.
+powershell:
+  status: idiom
+  reason: an enum names the states and a switch statement gives the transitions; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: a table of transitions and a recursive query, or MATCH_RECOGNIZE in some databases, run a machine over rows.
+regex:
+  status: native
+  reason: every regular expression describes a regular language, and engines compile it to a finite automaton or match it by backtracking.
+html:
+  status: n/a
+  reason: markup has no states or transitions.
+css:
+  status: n/a
+  reason: style rules have no machine of their own, although selectors such as :hover react to the state of an element.
