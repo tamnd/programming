@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript; the compiler checks the types and emits a JavaScript program that the engine runs.
+kotlin:
+  status: native
+  reason: a Kotlin program starts at a top-level main function, which the compiler places in a class for the JVM; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: native
+  reason: a script is a program that the shell runs line by line, and exit sets the exit status.
+powershell:
+  status: native
+  reason: a script file is a program that runs from top to bottom, and exit sets the exit status; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: a script of statements and stored procedures are programs, but a single query states a result and not the steps to compute it.
+regex:
+  status: n/a
+  reason: a pattern runs inside another program and is not a program by itself.
+html:
+  status: n/a
+  reason: markup describes a document, not a computation.
+css:
+  status: n/a
+  reason: style rules describe presentation, not a computation.
