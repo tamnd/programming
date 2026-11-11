@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: as JavaScript, with class extends, abstract classes and members, protected members, and the override keyword checked by the compiler.
+kotlin:
+  status: native
+  reason: classes are final by default and a class must be declared open to be extended; a class extends one class and any number of interfaces; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has no classes or objects to inherit from.
+powershell:
+  status: native
+  reason: a class can derive from one class, including .NET classes, and call the base constructor with base(); no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: the standard has structured types with subtypes, but common engines do not implement them, and PostgreSQL table inheritance shares columns, not behavior.
+regex:
+  status: n/a
+  reason: a pattern has no types to derive from.
+html:
+  status: n/a
+  reason: HTML elements inherit some CSS properties from their parents, but the language has no classes.
+css:
+  status: n/a
+  reason: inherited properties pass values from a parent element to its children, which is a different idea with the same name.
