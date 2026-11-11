@@ -1,0 +1,24 @@
+typescript:
+  status: absent
+  reason: as JavaScript; the type checker solves constraints on types, but programs have no logic engine.
+kotlin:
+  status: absent
+  reason: no logic engine in the language or the standard library; JVM libraries provide rule engines and Prolog systems; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: absent
+  reason: the shell has no relations, unification or search; join and awk can compute a join of two files, but not a recursive rule.
+powershell:
+  status: absent
+  reason: no logic engine; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: a recursive common table expression computes the least fixpoint of a rule, as Datalog does, and the Python example runs one in SQLite.
+regex:
+  status: n/a
+  reason: a regex engine backtracks over a pattern, but a regular expression has no relations or rules.
+html:
+  status: n/a
+  reason: HTML has no relations or rules.
+css:
+  status: n/a
+  reason: CSS has selectors that match elements, but no relations or rules that derive new facts.
