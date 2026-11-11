@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: as JavaScript; a continuation has a function type that states its parameters, such as an error or null and a value, and the compiler checks the arguments of each call.
+kotlin:
+  status: idiom
+  reason: lambdas and function types make continuations easy to pass, and the compiler turns every suspend function into CPS with an extra Continuation parameter; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: a function can take the name of another function as an argument and call it with the result, but the result must be text.
+powershell:
+  status: idiom
+  reason: a script block is a value, so a function can take one as its continuation and call it with & or Invoke; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query has no functions as values to pass as continuations.
+regex:
+  status: n/a
+  reason: a pattern has no functions or control flow to pass.
+html:
+  status: n/a
+  reason: HTML is markup with no functions.
+css:
+  status: n/a
+  reason: CSS is a language of rules with no functions as values.
