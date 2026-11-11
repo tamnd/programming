@@ -1,5 +1,5 @@
 ---
-tag: NEW-finite-state-machines
+tag: ZN6BE8
 kind: concept
 slug: finite-state-machines
 name: Finite-state machines
