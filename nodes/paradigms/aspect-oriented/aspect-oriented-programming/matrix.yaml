@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: decorators on classes, methods and fields wrap or replace them; Proxy as in JavaScript.
+kotlin:
+  status: library
+  reason: AspectJ and Spring AOP work on Kotlin classes on the JVM; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: trap with DEBUG runs a command before each simple command, and trap with RETURN runs one when a function returns.
+powershell:
+  status: idiom
+  reason: a proxy function with the same name as a cmdlet wraps it with extra steps; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: BEFORE and AFTER triggers add behavior to every change of a table, such as audit rows, without a change to the statements that make the changes.
+regex:
+  status: n/a
+  reason: regular expressions have no functions to advise.
+html:
+  status: n/a
+  reason: HTML has no functions to advise.
+css:
+  status: n/a
+  reason: CSS has no functions to advise; a rule that applies to many selectors is a form of cross-cutting style, not of advice.
