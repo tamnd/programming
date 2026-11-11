@@ -1,5 +1,5 @@
 ---
-tag: NEW-composition-over-inheritance
+tag: MP278C
 kind: concept
 slug: composition-over-inheritance
 name: Composition over inheritance
