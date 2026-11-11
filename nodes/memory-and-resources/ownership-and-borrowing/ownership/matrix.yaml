@@ -1,0 +1,27 @@
+typescript:
+  status: absent
+  reason: as JavaScript; readonly types block writes through one reference, but they do not track an owner.
+  alternative: transferable objects such as ArrayBuffer, as in JavaScript.
+kotlin:
+  status: absent
+  reason: the garbage collector frees objects, and references do not own them; no example file because kotlinc is not installed on the machine that recorded the examples.
+  alternative: the use function closes a Closeable at the end of a block.
+bash:
+  status: n/a
+  reason: Bash variables hold strings and arrays by value, and a script has no references to memory.
+powershell:
+  status: absent
+  reason: .NET objects are shared through references and freed by the garbage collector; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: call Dispose in a finally block for objects that hold resources.
+sql:
+  status: n/a
+  reason: a query works on rows in tables, and the database engine owns all storage.
+regex:
+  status: n/a
+  reason: a regular expression has no memory or references.
+html:
+  status: n/a
+  reason: HTML has no memory or references.
+css:
+  status: n/a
+  reason: CSS has no memory or references.
