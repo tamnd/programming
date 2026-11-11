@@ -1,5 +1,5 @@
 ---
-tag: NEW-computer-program
+tag: RKMS64
 kind: concept
 slug: computer-program
 name: What a program is
