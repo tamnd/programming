@@ -367,7 +367,7 @@ items:
     group: "types"
     name: "Boolean type"
     target: "boolean-type"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Types (\"Primitive types (e.g., numbers, Booleans) (See also: ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Boolean operations\"); Go spec (\"Boolean types\"); Rust Reference (\"Boolean type\"); and 4 more. It is in the canon books: HtDP contents (\"The Arithmetic of Booleans\")."
   - part: concepts
     group: "types"

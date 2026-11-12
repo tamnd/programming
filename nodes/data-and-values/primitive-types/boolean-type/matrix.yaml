@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the type boolean and the literal types true and false, and the compiler accepts a value of any type in a condition, as JavaScript does. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has the type Boolean, and an if or a while needs a Boolean, so a number does not work as a condition. Boolean? holds null as well. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash has no Boolean values. A condition is the exit status of a command, where 0 means success, and true and false are commands that return 0 and 1. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell has the .NET type bool with the variables $true and $false, and it converts other values in a condition, so 0, an empty string and $null are false. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: Standard SQL has the type BOOLEAN with TRUE, FALSE and UNKNOWN, and a comparison with NULL gives UNKNOWN, so WHERE uses three-valued logic. Some databases do not have the type. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text or does not match it, but the pattern language has no Boolean values.
+html:
+  status: idiom
+  reason: A Boolean attribute such as disabled, checked or required is true when it is present and false when it is absent, whatever its value is.
+css:
+  status: n/a
+  reason: CSS has no Boolean values. Media queries, container queries and @supports test conditions that are true or false.
