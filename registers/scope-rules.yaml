@@ -52,3 +52,12 @@
 - id: people-description
   scope: people
   rule: "A person or an organization that Wikidata links to programming only through an occupation or through a piece of software gets a card only when its Wikidata description names a field of computing, such as software, computers, programming, engineering, science or mathematics. A person who designed a programming language, wrote software or received an award of programming always gets a card. Many of the other items are designers and writers of video games, musicians or politicians who also had work as programmers."
+- id: libraries-packagist
+  scope: libraries
+  rule: "A package of Packagist gets a card when at least 50 other packages in Packagist depend on it, the rule of spec 18.5. Each other package of Packagist is out of scope."
+- id: libraries-go
+  scope: libraries
+  rule: "A package of the Go module proxy gets a card when at least 50 other packages in the Go module proxy depend on it, the rule of spec 18.5. Each other package of the Go module proxy is out of scope."
+- id: libraries-elm
+  scope: libraries
+  rule: "A package of the Elm package registry gets a card when at least 50 other packages in the Elm package registry depend on it, the rule of spec 18.5. Each other package of the Elm package registry is out of scope."
