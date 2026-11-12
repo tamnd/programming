@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
-  PROG_VERSION: v0.0.16
+  PROG_VERSION: v0.0.17
   GO_VERSION: "1.27.x"
 
 jobs:
@@ -48,6 +48,8 @@ jobs:
       - name: Audit all nodes
         if: github.event_name != 'pull_request'
         run: prog check -checkers -main
+      - name: Count the universe items of each scope
+        run: prog universe
       - name: Check the scenes
         run: prog viz check
 
