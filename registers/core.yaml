@@ -121,7 +121,7 @@ items:
     group: "foundations"
     name: "State"
     target: "program-state"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 SDF-Fundamentals (\"How imperative programs work: state and state transitions ...\"). It is in the canon books: SICP index (\"local state\")."
   - part: concepts
     group: "foundations"
