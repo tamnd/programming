@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the postMessage API of workers and MessageChannel ports, as JavaScript does, and can give the message data a type. The message is a structured clone. No example file exists.
+kotlin:
+  status: library
+  reason: The kotlinx.coroutines library has Channel, with send and receive functions that suspend the coroutine, and close to end the stream. It is not part of the Kotlin standard library. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: A pipeline sends the output of one process to the input of the next, and a named pipe made with mkfifo connects processes that do not start together. The messages are bytes. No example file exists.
+powershell:
+  status: idiom
+  reason: The PowerShell pipeline passes objects from one command to the next, and background jobs send their output back to the caller. There are no channels between threads in the language. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query has no concurrent parts that send messages. Some databases add queues or notifications, such as LISTEN and NOTIFY in PostgreSQL, but standard SQL does not have them. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no concurrent parts and no messages.
+html:
+  status: n/a
+  reason: HTML is markup and does not run code. Messages between windows and workers use the postMessage API of JavaScript.
+css:
+  status: n/a
+  reason: CSS has no concurrent parts and no messages.
