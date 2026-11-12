@@ -853,7 +853,7 @@ items:
     group: "errors-and-control"
     name: "Control flow"
     target: "control-flow"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-OOP (\"Predict and validate control flow in a program using ...\"). It is in the canon books: Crafting Interpreters contents (\"Control Flow\"); The Rust Programming Language contents (\"Control Flow\")."
   - part: concepts
     group: "errors-and-control"
