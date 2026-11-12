@@ -859,7 +859,7 @@ items:
     group: "errors-and-control"
     name: "Conditional"
     target: "conditional"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Translation (\"Parse tree using a simple sentence such as arithmetic ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Conditional expressions\"); Go spec (\"If statements\"); Rust Reference (\"Conditional compilation\"); and 4 more. It is in the canon books: SICP index (\"alternative of if\"); HtDP contents (\"Programming with Conditionals\")."
   - part: concepts
     group: "errors-and-control"
