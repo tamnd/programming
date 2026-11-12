@@ -1,0 +1,24 @@
+typescript:
+  status: absent
+  reason: TypeScript has no specification of its own today; its type system is defined by the compiler, and its run-time meaning is that of JavaScript.
+kotlin:
+  status: absent
+  reason: the Kotlin specification is written in English; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: absent
+  reason: POSIX defines the shell language in English, and research such as Smoosh gives it an executable formal semantics.
+powershell:
+  status: absent
+  reason: the PowerShell language specification is written in English, and the implementation defines the details.
+sql:
+  status: absent
+  reason: the SQL standard is written in English; research has given formal semantics to its core, including the treatment of NULL.
+regex:
+  status: absent
+  reason: regular expressions in theory have an exact meaning as sets of strings, but each engine defines its own extensions in English.
+html:
+  status: n/a
+  reason: the HTML standard defines parsing with precise algorithms in English, but markup has no execution to give a meaning to.
+css:
+  status: n/a
+  reason: the CSS specifications define the cascade and layout in English and pseudo-code.
