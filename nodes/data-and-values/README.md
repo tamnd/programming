@@ -2,17 +2,26 @@ This area is about the values that a program works on and the containers that ho
 
 ## What it holds
 
-- Primitive types: booleans, integers, floats and characters as each language provides them.
-- Strings and string handling: string types, string operations and the cost of each.
-- Collections: arrays, lists, maps, sets, tuples and records as language and library features.
-- Value and reference semantics: whether assignment copies a value or shares a reference.
-- Mutability and immutability: mutable and immutable values, and the language features that control change.
-- Equality and identity: value equality, reference identity and the contracts of equals and hash.
-- Hashing in practice: hash functions for keys of maps and sets, and how to write a correct one.
-- Serialization: turning values into bytes or text and back.
-- Copying: shallow copies and deep copies, and the bugs that come from the wrong one.
-- Dates and times: instants, calendars, time zones and durations in code.
-- Money and decimals: exact decimal values for money, and the rounding rules.
+- **Variables and assignment.** How a program names values and changes what the names hold. CS2023 SDF-Fundamentals starts here, and five core concepts of the group need a home.
+- **Primitive types.** The built-in scalar types of languages, and the daily tasks to parse and convert them.
+- **Strings.** What a string is in each language, how it is stored, and the daily string tasks.
+- **Classic string exercises.** The small text puzzles that the task lists hold and that teach string handling: palindromes, anagrams, letter and word counts, edit distance and simple ciphers.
+- **String formatting.** How programs build text from values: interpolation, format strings, padding, number formats and templates.
+- **Math in daily code.** The small number tasks that programs need and that task lists hold: divisors, primes, factorials, means, roman numerals, complex numbers and matrices.
+- **Random numbers.** How programs make random values, and the traps of seeds, ranges and bias. The node generate-random-numbers moves here from primitive-types.
+- **Money and decimals.** How to compute with money and other decimal quantities without binary floating-point errors. Small by nature.
+- **Collections.** The idea of a collection and of a data structure, the abstract data type, and how to choose a collection.
+- **Arrays, lists and sequences.** Ordered collections indexed by position: arrays, dynamic arrays, linked lists, slices and ranges.
+- **Maps and sets.** Collections looked up by key: maps, dictionaries, hash tables and sets.
+- **Stacks, queues, trees and graphs.** The other standard collections, as programmers use them from libraries: stacks, queues, deques, priority queues, ring buffers, trees and graphs.
+- **Collection operations.** The daily operations over collections: sort, search, filter, map, reduce, group, zip, flatten and the combinatorial tasks.
+- **Value and reference semantics.** What a value is, and whether a variable holds a value or a reference to it.
+- **Mutability and immutability.** Values that can change in place, values that cannot, and the tools that languages give for each.
+- **Equality, identity and comparison.** When two values are the same, when they are the same object, and how values are ordered.
+- **Hashing in practice.** Hash codes and non-cryptographic hashes as programmers use them for maps, sets and checksums.
+- **Copying.** How to copy values, and the difference between a shallow and a deep copy. Small by nature.
+- **Serialization.** Turning in-memory values into bytes or text and back. The data formats are in data-and-persistence. Small by nature.
+- **Dates and times.** How programs represent, compute with and format dates, times, durations and time zones.
 
 ## What it does not hold
 

@@ -2,16 +2,20 @@ A program must get memory and other resources, such as files and sockets, and gi
 
 ## What it holds
 
-- Allocation: how a program asks for memory, and the cost of each kind of allocation.
-- Manual memory management: malloc and free, new and delete, and the rules that the programmer must follow.
-- Garbage collection: garbage collection and reference counting from the view of the program that uses them.
-- Ownership and borrowing: ownership rules that the compiler checks, as in Rust.
-- RAII and deterministic destruction: tying a resource to the lifetime of an object.
-- Smart pointers: pointer types that manage the lifetime of their target.
-- Memory safety: what memory safety means, and which languages give it.
-- Leaks: memory and resource leaks, and how to find them.
-- Arenas and pools: allocating many objects together and freeing them together.
-- Resource handles: files, sockets, locks and other handles that a program must close.
+- **Storage and lifetime.** The kinds of storage a program has and how long each object lives in it. These words come before allocation, ownership and safety.
+- **Allocation.** How a program asks for memory, the cost of each kind of allocation, and what happens when there is no memory.
+- **Pointers and addresses.** Pointers from the view of memory: addresses, arithmetic, aliasing and the rules that compilers rely on.
+- **Memory layout.** How values are laid out in memory: size, alignment, padding and the order of fields.
+- **Manual memory management.** Asking for memory and giving it back by hand, and the rules the programmer must keep.
+- **Garbage collection.** Garbage collection and reference counting from the view of the program that uses them. The inside of collectors is in language-implementation.
+- **Ownership and borrowing.** Ownership rules that the compiler checks, as in Rust, and the ideas behind them.
+- **Move and copy semantics.** What happens to a value when it is assigned or passed: a copy, a move or a shared reference.
+- **RAII and deterministic destruction.** Tying a resource to the lifetime of an object so that the release happens on every path.
+- **Smart pointers.** Pointer types that manage the lifetime of their target.
+- **Memory safety.** What memory safety means, how languages give it, and the escape hatches.
+- **Leaks.** Memory and resource leaks, in manual and in managed languages, and how to find them.
+- **Arenas and pools.** Allocating many objects together and freeing them together, and reusing objects instead of allocating them.
+- **Resource handles.** Files, sockets, locks and other handles that a program must close, and the rules for them.
 
 ## What it does not hold
 

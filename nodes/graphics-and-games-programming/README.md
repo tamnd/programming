@@ -2,11 +2,17 @@ This area covers programs that draw images and play sound, and the structure of 
 
 ## What it holds
 
-- Graphics APIs: OpenGL, Vulkan, Metal, Direct3D and WebGPU.
-- Shaders and shading languages: programs that run on the GPU for each vertex or pixel, and the languages for them.
-- Game loops: the game loop and fixed and variable time steps.
-- Game engines: game engines as programming environments.
-- Audio programming: programs that make and process sound.
+- **Graphics basics.** The ideas under every graphics program: pixels, color, the framebuffer and the frame.
+- **2D graphics libraries.** Libraries and frameworks that draw 2D graphics and run simple games.
+- **Graphics APIs.** The GPU graphics APIs as programming interfaces.
+- **GPU pipeline concepts.** The objects and stages that all modern GPU APIs share.
+- **Shaders and shading languages.** Programs that run on the GPU, and the languages and tools for them.
+- **Graphics formats.** File formats for images, textures, models and scenes.
+- **Game loops.** The frame loop of a game and the patterns of game code.
+- **Multiplayer game networking.** Code that keeps game state in step across a network.
+- **Game engines.** Game engines as programming environments.
+- **Audio programming.** Programs that make, play and process sound.
+- **XR programming.** Programs for virtual and augmented reality headsets and devices.
 
 ## What it does not hold
 

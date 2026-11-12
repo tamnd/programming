@@ -2,18 +2,26 @@ This area explains how languages are built and run. It covers each part of a com
 
 ## What it holds
 
-- Lexing and parsing: turning text into tokens and tokens into a tree, as done in real compilers.
-- ASTs and IRs: abstract syntax trees and the intermediate representations of compilers.
-- Interpreters: tree-walking and bytecode interpreters.
-- Compilers: the front end, the middle end and the back end of a compiler.
-- JIT compilation: compiling code while the program runs.
-- Virtual machines: bytecode virtual machines, such as the JVM and the CPython VM.
-- Runtime systems: the support code that runs with a program, such as schedulers and type information.
-- Linking and loading: how object files become a program and how the program gets into memory.
-- ABIs and calling conventions: the binary rules for calls, data layout and symbol names.
-- Garbage collector implementation: how tracing and reference counting collectors work inside.
-- WebAssembly as a target: compiling a language to WebAssembly, and the limits of the format.
-- Language servers: the Language Server Protocol and the tools built on it.
+- **Implementation strategies.** The ways to run a language: interpret it, compile it ahead of time, compile it to another language, or mix the methods. The pages give the words that the other sub-areas use.
+- **Lexing and parsing.** How real compilers turn text into tokens and tokens into trees. The theory of grammars is in syntax-and-semantics, and the analysis of parsing algorithms is on algorithm.tamnd.com.
+- **Semantic analysis.** The passes between the parser and the IR: names, types, desugaring and diagnostics.
+- **ASTs and IRs.** The trees and the intermediate forms that a compiler builds and changes.
+- **Interpreters.** Programs that run other programs directly: tree-walking and bytecode interpreters, and the ideas behind them.
+- **Virtual machines.** Language virtual machines: their instruction sets, their verification and loading, and the main machines in use.
+- **Compilers.** The structure of a compiler as a program: its phases, its driver, and how it compiles programs of many files.
+- **Optimization passes.** How each optimizing transformation works inside the compiler. The view of the programmer is in performance (compiler-optimizations).
+- **Native code generation.** The back end: from a low-level IR to machine code for a real processor.
+- **Compiling language features.** How compilers implement closures, generics, objects, pattern matching, exceptions, coroutines and laziness.
+- **JIT compilation.** Compiling code while the program runs, with feedback from the running program.
+- **Runtime systems.** The support code that runs with every program: startup, object layout, type information, stacks and schedulers.
+- **Garbage collector implementation.** How collectors and allocators work inside. The use of GC from a program is in memory-and-resources.
+- **Linking and loading.** How object files become a program, and how the program and its libraries get into memory. The systems view is in systems-programming.
+- **ABIs and calling conventions.** The binary rules that let separately compiled code work together: calls, data layout, symbol names and foreign calls.
+- **WebAssembly as a target.** WebAssembly as a compilation target: its module format, its memory model, and the ways languages compile to it. Wasm in the browser is in web-development.
+- **Language servers.** Tools that understand code for editors: the Language Server Protocol, the servers, and the parsing and analysis that they need.
+- **Compiler infrastructure.** Frameworks and generators that people use to build compilers and interpreters.
+- **Language implementations.** The main compilers, interpreters and runtimes of the tier 1 languages, as tool pages. Each page covers the architecture of the implementation, not only its command line.
+- **Compiler correctness.** How compilers are tested and verified, and what happens when they are wrong.
 
 ## What it does not hold
 

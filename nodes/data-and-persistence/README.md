@@ -2,16 +2,21 @@ This area covers how programs store and exchange data. It holds databases and SQ
 
 ## What it holds
 
-- SQL: SQL as programmers write it, and the differences between databases.
-- Relational modelling: tables, keys, normal forms and schema design.
-- Transactions and isolation: transactions, isolation levels and the anomalies of each.
-- ORMs: object-relational mappers and their trade-offs.
-- NoSQL models: document, key-value, column and graph databases.
-- Data formats: JSON, YAML, TOML, XML, CSV, Protocol Buffers and other formats.
-- Regular expressions: regular expressions, their flavours and their pitfalls.
-- Text encodings and Unicode: Unicode, UTF-8, UTF-16 and the other encodings.
-- Files and file systems: reading and writing files, paths and directories from a program.
-- Caching: caches in front of data, and when to invalidate them.
+- **Files.** How a program reads, writes and manages files. The file system as the program sees it, not as the kernel builds it.
+- **Paths and directories.** Paths as values and directories as trees.
+- **Text encodings.** How text becomes bytes and bytes become text, and the binary-to-text encodings.
+- **Text processing.** Line-oriented work on text files: count, sort, filter, compare and rewrite. The other 5 (tokenize, parse an expression, postfix, balanced brackets, recursive descent) are in language-implementation and syntax-and-semantics.
+- **Regular expressions in programs.** The cross-language regex tasks and the regex format page. The pattern language is in the regex tree.
+- **Data formats.** The text formats that programs use to exchange data: JSON, XML, CSV and Markdown, with their schemas and query languages.
+- **Configuration formats.** The formats of configuration files and how to read them.
+- **Binary data formats.** Compact binary encodings, schema-based serialization and the reading of binary file formats.
+- **Archives and compression.** Compressed streams and archive files from a program. The compression algorithms are on algorithm.tamnd.com.
+- **Relational modelling.** How to model data as relations and design a schema. The SQL to create it is in the SQL tree.
+- **SQL from programs.** How a program talks to a SQL database: drivers, connections, parameters, migrations and tests. The SQL language itself is in the SQL tree.
+- **Transactions in applications.** How application code uses transactions and handles concurrent writers. The SQL statements and isolation levels are in the SQL tree.
+- **ORMs.** Object-relational mappers as libraries and the problems of their use. The mapping patterns are in software-design.
+- **NoSQL stores.** The data models of non-relational stores and how programs use them. Distribution and replication are in distributed-and-cloud.
+- **Caching.** Caches in application code and shared caches between processes. HTTP caching is in web-development.
 
 ## What it does not hold
 

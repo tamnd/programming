@@ -2,14 +2,17 @@ This area covers how a program decides what to do next, and what it does when so
 
 ## What it holds
 
-- Control structures: conditionals, loops, switch and match, and jumps.
-- Exceptions: throwing and catching exceptions, and checked and unchecked exceptions.
-- Error values and result types: errors as return values, result types and error codes.
-- Panics and aborts: errors that stop the program or the thread, and when to use them.
-- Assertions and contracts: assertions, preconditions and postconditions in code.
-- Non-local exits: leaving several levels of a call or a loop at once.
-- Cleanup: finally, defer, using, with and other ways to release a resource on every path.
-- Retries and timeouts: trying an operation again, backoff and limits on time.
+- **Control structures.** Conditionals, multiway branches and pattern matching: the ways a program chooses between paths.
+- **Loops.** Iteration with counted loops, condition loops and loops over collections. The iterator protocols are in functions-and-abstraction.
+- **Jumps and labels.** Statements that leave the normal order inside one function: break, continue, labels, goto and early returns.
+- **Error concepts.** What an error is, the strategies to report it, and the practices that decide where errors go.
+- **Exceptions.** Throwing and catching exceptions, exception types, checked exceptions and exception safety.
+- **Error values and result types.** Errors as return values: result types, multiple return values and the operators that propagate them.
+- **Panics and aborts.** Errors that stop the program or the thread, ways to exit with a status, and the information left behind.
+- **Assertions and contracts.** Assertions, invariants, preconditions and postconditions in code. Contracts as a verification method are in program-analysis-and-verification.
+- **Non-local exits.** Leaving several levels of a call or a loop at once, and the condition systems that go beyond exceptions.
+- **Cleanup.** Releasing a resource on every path out of a block: finally, defer, using, with and their peers.
+- **Retries and timeouts.** Trying an operation again, waiting between tries, and limits on time inside one program. Retries between services are in distributed-and-cloud.
 
 ## What it does not hold
 

@@ -2,11 +2,15 @@ This area covers how people learn to program. It holds the research on learning,
 
 ## What it holds
 
-- How people learn to program: what research says about how people learn to program.
-- Curricula: CS2023, the K-12 frameworks and other curricula.
-- Common misconceptions: the common mistaken models of learners, each linked to its concept.
-- Exercises and practice sites: exercise and practice sites.
-- Notional machines: simple models of the machine for teaching.
+- **How people learn to program.** What research says about how people learn to program.
+- **Notional machines.** Simple models of the machine for teaching: what a program does when it runs, at the level a learner needs.
+- **Common misconceptions.** The common mistaken models of learners. Each page states the misconception, shows code that reveals it, gives the evidence and links to the concept.
+- **Curricula.** The curricula and course designs for programming, from school to university and beyond.
+- **Teaching methods.** Methods for teaching programming that have evidence behind them.
+- **Assessment and feedback.** How learners' programs and understanding are checked, and how feedback reaches them.
+- **Exercises and practice sites.** Exercise and practice sites, online judges and programming contests.
+- **Self-directed learning.** Advice for people who learn programming on their own, outside a course.
+- **Computing education research.** The research field that studies learning and teaching programming, its venues, its landmark studies and its people.
 
 ## What it does not hold
 
