@@ -1,0 +1,442 @@
+{"id":"V1","name":"Encoding and Sanitization","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V1.1","name":"Encoding and Sanitization Architecture","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V1.1.1","name":"Encoding and Sanitization Architecture","scope":"weaknesses","outcome":"card","target":"asvs-v1.1.1"}
+{"id":"V1.1.2","name":"Encoding and Sanitization Architecture","scope":"weaknesses","outcome":"card","target":"asvs-v1.1.2"}
+{"id":"V1.2","name":"Injection Prevention","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V1.2.1","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.1"}
+{"id":"V1.2.10","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.10"}
+{"id":"V1.2.2","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.2"}
+{"id":"V1.2.3","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.3"}
+{"id":"V1.2.4","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.4"}
+{"id":"V1.2.5","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.5"}
+{"id":"V1.2.6","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.6"}
+{"id":"V1.2.7","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.7"}
+{"id":"V1.2.8","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.8"}
+{"id":"V1.2.9","name":"Injection Prevention","scope":"weaknesses","outcome":"card","target":"asvs-v1.2.9"}
+{"id":"V1.3","name":"Sanitization","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V1.3.1","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.1"}
+{"id":"V1.3.10","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.10"}
+{"id":"V1.3.11","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.11"}
+{"id":"V1.3.12","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.12"}
+{"id":"V1.3.2","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.2"}
+{"id":"V1.3.3","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.3"}
+{"id":"V1.3.4","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.4"}
+{"id":"V1.3.5","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.5"}
+{"id":"V1.3.6","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.6"}
+{"id":"V1.3.7","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.7"}
+{"id":"V1.3.8","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.8"}
+{"id":"V1.3.9","name":"Sanitization","scope":"weaknesses","outcome":"card","target":"asvs-v1.3.9"}
+{"id":"V1.4","name":"Memory, String, and Unmanaged Code","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V1.4.1","name":"Memory, String, and Unmanaged Code","scope":"weaknesses","outcome":"card","target":"asvs-v1.4.1"}
+{"id":"V1.4.2","name":"Memory, String, and Unmanaged Code","scope":"weaknesses","outcome":"card","target":"asvs-v1.4.2"}
+{"id":"V1.4.3","name":"Memory, String, and Unmanaged Code","scope":"weaknesses","outcome":"card","target":"asvs-v1.4.3"}
+{"id":"V1.5","name":"Safe Deserialization","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V1.5.1","name":"Safe Deserialization","scope":"weaknesses","outcome":"card","target":"asvs-v1.5.1"}
+{"id":"V1.5.2","name":"Safe Deserialization","scope":"weaknesses","outcome":"card","target":"asvs-v1.5.2"}
+{"id":"V1.5.3","name":"Safe Deserialization","scope":"weaknesses","outcome":"card","target":"asvs-v1.5.3"}
+{"id":"V10","name":"OAuth and OIDC","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V10.1","name":"Generic OAuth and OIDC Security","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V10.1.1","name":"Generic OAuth and OIDC Security","scope":"weaknesses","outcome":"card","target":"asvs-v10.1.1"}
+{"id":"V10.1.2","name":"Generic OAuth and OIDC Security","scope":"weaknesses","outcome":"card","target":"asvs-v10.1.2"}
+{"id":"V10.2","name":"OAuth Client","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V10.2.1","name":"OAuth Client","scope":"weaknesses","outcome":"card","target":"asvs-v10.2.1"}
+{"id":"V10.2.2","name":"OAuth Client","scope":"weaknesses","outcome":"card","target":"asvs-v10.2.2"}
+{"id":"V10.2.3","name":"OAuth Client","scope":"weaknesses","outcome":"card","target":"asvs-v10.2.3"}
+{"id":"V10.3","name":"OAuth Resource Server","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V10.3.1","name":"OAuth Resource Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.3.1"}
+{"id":"V10.3.2","name":"OAuth Resource Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.3.2"}
+{"id":"V10.3.3","name":"OAuth Resource Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.3.3"}
+{"id":"V10.3.4","name":"OAuth Resource Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.3.4"}
+{"id":"V10.3.5","name":"OAuth Resource Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.3.5"}
+{"id":"V10.4","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V10.4.1","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.1"}
+{"id":"V10.4.10","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.10"}
+{"id":"V10.4.11","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.11"}
+{"id":"V10.4.12","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.12"}
+{"id":"V10.4.13","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.13"}
+{"id":"V10.4.14","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.14"}
+{"id":"V10.4.15","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.15"}
+{"id":"V10.4.16","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.16"}
+{"id":"V10.4.2","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.2"}
+{"id":"V10.4.3","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.3"}
+{"id":"V10.4.4","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.4"}
+{"id":"V10.4.5","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.5"}
+{"id":"V10.4.6","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.6"}
+{"id":"V10.4.7","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.7"}
+{"id":"V10.4.8","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.8"}
+{"id":"V10.4.9","name":"OAuth Authorization Server","scope":"weaknesses","outcome":"card","target":"asvs-v10.4.9"}
+{"id":"V10.5","name":"OIDC Client","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V10.5.1","name":"OIDC Client","scope":"weaknesses","outcome":"card","target":"asvs-v10.5.1"}
+{"id":"V10.5.2","name":"OIDC Client","scope":"weaknesses","outcome":"card","target":"asvs-v10.5.2"}
+{"id":"V10.5.3","name":"OIDC Client","scope":"weaknesses","outcome":"card","target":"asvs-v10.5.3"}
+{"id":"V10.5.4","name":"OIDC Client","scope":"weaknesses","outcome":"card","target":"asvs-v10.5.4"}
+{"id":"V10.5.5","name":"OIDC Client","scope":"weaknesses","outcome":"card","target":"asvs-v10.5.5"}
+{"id":"V10.6","name":"OpenID Provider","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V10.6.1","name":"OpenID Provider","scope":"weaknesses","outcome":"card","target":"asvs-v10.6.1"}
+{"id":"V10.6.2","name":"OpenID Provider","scope":"weaknesses","outcome":"card","target":"asvs-v10.6.2"}
+{"id":"V10.7","name":"Consent Management","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V10.7.1","name":"Consent Management","scope":"weaknesses","outcome":"card","target":"asvs-v10.7.1"}
+{"id":"V10.7.2","name":"Consent Management","scope":"weaknesses","outcome":"card","target":"asvs-v10.7.2"}
+{"id":"V10.7.3","name":"Consent Management","scope":"weaknesses","outcome":"card","target":"asvs-v10.7.3"}
+{"id":"V11","name":"Cryptography","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V11.1","name":"Cryptographic Inventory and Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V11.1.1","name":"Cryptographic Inventory and Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v11.1.1"}
+{"id":"V11.1.2","name":"Cryptographic Inventory and Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v11.1.2"}
+{"id":"V11.1.3","name":"Cryptographic Inventory and Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v11.1.3"}
+{"id":"V11.1.4","name":"Cryptographic Inventory and Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v11.1.4"}
+{"id":"V11.2","name":"Secure Cryptography Implementation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V11.2.1","name":"Secure Cryptography Implementation","scope":"weaknesses","outcome":"card","target":"asvs-v11.2.1"}
+{"id":"V11.2.2","name":"Secure Cryptography Implementation","scope":"weaknesses","outcome":"card","target":"asvs-v11.2.2"}
+{"id":"V11.2.3","name":"Secure Cryptography Implementation","scope":"weaknesses","outcome":"card","target":"asvs-v11.2.3"}
+{"id":"V11.2.4","name":"Secure Cryptography Implementation","scope":"weaknesses","outcome":"card","target":"asvs-v11.2.4"}
+{"id":"V11.2.5","name":"Secure Cryptography Implementation","scope":"weaknesses","outcome":"card","target":"asvs-v11.2.5"}
+{"id":"V11.3","name":"Encryption Algorithms","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V11.3.1","name":"Encryption Algorithms","scope":"weaknesses","outcome":"card","target":"asvs-v11.3.1"}
+{"id":"V11.3.2","name":"Encryption Algorithms","scope":"weaknesses","outcome":"card","target":"asvs-v11.3.2"}
+{"id":"V11.3.3","name":"Encryption Algorithms","scope":"weaknesses","outcome":"card","target":"asvs-v11.3.3"}
+{"id":"V11.3.4","name":"Encryption Algorithms","scope":"weaknesses","outcome":"card","target":"asvs-v11.3.4"}
+{"id":"V11.3.5","name":"Encryption Algorithms","scope":"weaknesses","outcome":"card","target":"asvs-v11.3.5"}
+{"id":"V11.4","name":"Hashing and Hash-based Functions","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V11.4.1","name":"Hashing and Hash-based Functions","scope":"weaknesses","outcome":"card","target":"asvs-v11.4.1"}
+{"id":"V11.4.2","name":"Hashing and Hash-based Functions","scope":"weaknesses","outcome":"card","target":"asvs-v11.4.2"}
+{"id":"V11.4.3","name":"Hashing and Hash-based Functions","scope":"weaknesses","outcome":"card","target":"asvs-v11.4.3"}
+{"id":"V11.4.4","name":"Hashing and Hash-based Functions","scope":"weaknesses","outcome":"card","target":"asvs-v11.4.4"}
+{"id":"V11.5","name":"Random Values","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V11.5.1","name":"Random Values","scope":"weaknesses","outcome":"card","target":"asvs-v11.5.1"}
+{"id":"V11.5.2","name":"Random Values","scope":"weaknesses","outcome":"card","target":"asvs-v11.5.2"}
+{"id":"V11.6","name":"Public Key Cryptography","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V11.6.1","name":"Public Key Cryptography","scope":"weaknesses","outcome":"card","target":"asvs-v11.6.1"}
+{"id":"V11.6.2","name":"Public Key Cryptography","scope":"weaknesses","outcome":"card","target":"asvs-v11.6.2"}
+{"id":"V11.7","name":"In-Use Data Cryptography","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V11.7.1","name":"In-Use Data Cryptography","scope":"weaknesses","outcome":"card","target":"asvs-v11.7.1"}
+{"id":"V11.7.2","name":"In-Use Data Cryptography","scope":"weaknesses","outcome":"card","target":"asvs-v11.7.2"}
+{"id":"V12","name":"Secure Communication","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V12.1","name":"General TLS Security Guidance","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V12.1.1","name":"General TLS Security Guidance","scope":"weaknesses","outcome":"card","target":"asvs-v12.1.1"}
+{"id":"V12.1.2","name":"General TLS Security Guidance","scope":"weaknesses","outcome":"card","target":"asvs-v12.1.2"}
+{"id":"V12.1.3","name":"General TLS Security Guidance","scope":"weaknesses","outcome":"card","target":"asvs-v12.1.3"}
+{"id":"V12.1.4","name":"General TLS Security Guidance","scope":"weaknesses","outcome":"card","target":"asvs-v12.1.4"}
+{"id":"V12.1.5","name":"General TLS Security Guidance","scope":"weaknesses","outcome":"card","target":"asvs-v12.1.5"}
+{"id":"V12.2","name":"HTTPS Communication with External Facing Services","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V12.2.1","name":"HTTPS Communication with External Facing Services","scope":"weaknesses","outcome":"card","target":"asvs-v12.2.1"}
+{"id":"V12.2.2","name":"HTTPS Communication with External Facing Services","scope":"weaknesses","outcome":"card","target":"asvs-v12.2.2"}
+{"id":"V12.3","name":"General Service to Service Communication Security","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V12.3.1","name":"General Service to Service Communication Security","scope":"weaknesses","outcome":"card","target":"asvs-v12.3.1"}
+{"id":"V12.3.2","name":"General Service to Service Communication Security","scope":"weaknesses","outcome":"card","target":"asvs-v12.3.2"}
+{"id":"V12.3.3","name":"General Service to Service Communication Security","scope":"weaknesses","outcome":"card","target":"asvs-v12.3.3"}
+{"id":"V12.3.4","name":"General Service to Service Communication Security","scope":"weaknesses","outcome":"card","target":"asvs-v12.3.4"}
+{"id":"V12.3.5","name":"General Service to Service Communication Security","scope":"weaknesses","outcome":"card","target":"asvs-v12.3.5"}
+{"id":"V13","name":"Configuration","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V13.1","name":"Configuration Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V13.1.1","name":"Configuration Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v13.1.1"}
+{"id":"V13.1.2","name":"Configuration Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v13.1.2"}
+{"id":"V13.1.3","name":"Configuration Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v13.1.3"}
+{"id":"V13.1.4","name":"Configuration Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v13.1.4"}
+{"id":"V13.2","name":"Backend Communication Configuration","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V13.2.1","name":"Backend Communication Configuration","scope":"weaknesses","outcome":"card","target":"asvs-v13.2.1"}
+{"id":"V13.2.2","name":"Backend Communication Configuration","scope":"weaknesses","outcome":"card","target":"asvs-v13.2.2"}
+{"id":"V13.2.3","name":"Backend Communication Configuration","scope":"weaknesses","outcome":"card","target":"asvs-v13.2.3"}
+{"id":"V13.2.4","name":"Backend Communication Configuration","scope":"weaknesses","outcome":"card","target":"asvs-v13.2.4"}
+{"id":"V13.2.5","name":"Backend Communication Configuration","scope":"weaknesses","outcome":"card","target":"asvs-v13.2.5"}
+{"id":"V13.2.6","name":"Backend Communication Configuration","scope":"weaknesses","outcome":"card","target":"asvs-v13.2.6"}
+{"id":"V13.3","name":"Secret Management","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V13.3.1","name":"Secret Management","scope":"weaknesses","outcome":"card","target":"asvs-v13.3.1"}
+{"id":"V13.3.2","name":"Secret Management","scope":"weaknesses","outcome":"card","target":"asvs-v13.3.2"}
+{"id":"V13.3.3","name":"Secret Management","scope":"weaknesses","outcome":"card","target":"asvs-v13.3.3"}
+{"id":"V13.3.4","name":"Secret Management","scope":"weaknesses","outcome":"card","target":"asvs-v13.3.4"}
+{"id":"V13.4","name":"Unintended Information Leakage","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V13.4.1","name":"Unintended Information Leakage","scope":"weaknesses","outcome":"card","target":"asvs-v13.4.1"}
+{"id":"V13.4.2","name":"Unintended Information Leakage","scope":"weaknesses","outcome":"card","target":"asvs-v13.4.2"}
+{"id":"V13.4.3","name":"Unintended Information Leakage","scope":"weaknesses","outcome":"card","target":"asvs-v13.4.3"}
+{"id":"V13.4.4","name":"Unintended Information Leakage","scope":"weaknesses","outcome":"card","target":"asvs-v13.4.4"}
+{"id":"V13.4.5","name":"Unintended Information Leakage","scope":"weaknesses","outcome":"card","target":"asvs-v13.4.5"}
+{"id":"V13.4.6","name":"Unintended Information Leakage","scope":"weaknesses","outcome":"card","target":"asvs-v13.4.6"}
+{"id":"V13.4.7","name":"Unintended Information Leakage","scope":"weaknesses","outcome":"card","target":"asvs-v13.4.7"}
+{"id":"V14","name":"Data Protection","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V14.1","name":"Data Protection Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V14.1.1","name":"Data Protection Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v14.1.1"}
+{"id":"V14.1.2","name":"Data Protection Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v14.1.2"}
+{"id":"V14.2","name":"General Data Protection","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V14.2.1","name":"General Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.2.1"}
+{"id":"V14.2.2","name":"General Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.2.2"}
+{"id":"V14.2.3","name":"General Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.2.3"}
+{"id":"V14.2.4","name":"General Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.2.4"}
+{"id":"V14.2.5","name":"General Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.2.5"}
+{"id":"V14.2.6","name":"General Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.2.6"}
+{"id":"V14.2.7","name":"General Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.2.7"}
+{"id":"V14.2.8","name":"General Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.2.8"}
+{"id":"V14.3","name":"Client-side Data Protection","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V14.3.1","name":"Client-side Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.3.1"}
+{"id":"V14.3.2","name":"Client-side Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.3.2"}
+{"id":"V14.3.3","name":"Client-side Data Protection","scope":"weaknesses","outcome":"card","target":"asvs-v14.3.3"}
+{"id":"V15","name":"Secure Coding and Architecture","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V15.1","name":"Secure Coding and Architecture Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V15.1.1","name":"Secure Coding and Architecture Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v15.1.1"}
+{"id":"V15.1.2","name":"Secure Coding and Architecture Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v15.1.2"}
+{"id":"V15.1.3","name":"Secure Coding and Architecture Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v15.1.3"}
+{"id":"V15.1.4","name":"Secure Coding and Architecture Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v15.1.4"}
+{"id":"V15.1.5","name":"Secure Coding and Architecture Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v15.1.5"}
+{"id":"V15.2","name":"Security Architecture and Dependencies","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V15.2.1","name":"Security Architecture and Dependencies","scope":"weaknesses","outcome":"card","target":"asvs-v15.2.1"}
+{"id":"V15.2.2","name":"Security Architecture and Dependencies","scope":"weaknesses","outcome":"card","target":"asvs-v15.2.2"}
+{"id":"V15.2.3","name":"Security Architecture and Dependencies","scope":"weaknesses","outcome":"card","target":"asvs-v15.2.3"}
+{"id":"V15.2.4","name":"Security Architecture and Dependencies","scope":"weaknesses","outcome":"card","target":"asvs-v15.2.4"}
+{"id":"V15.2.5","name":"Security Architecture and Dependencies","scope":"weaknesses","outcome":"card","target":"asvs-v15.2.5"}
+{"id":"V15.3","name":"Defensive Coding","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V15.3.1","name":"Defensive Coding","scope":"weaknesses","outcome":"card","target":"asvs-v15.3.1"}
+{"id":"V15.3.2","name":"Defensive Coding","scope":"weaknesses","outcome":"card","target":"asvs-v15.3.2"}
+{"id":"V15.3.3","name":"Defensive Coding","scope":"weaknesses","outcome":"card","target":"asvs-v15.3.3"}
+{"id":"V15.3.4","name":"Defensive Coding","scope":"weaknesses","outcome":"card","target":"asvs-v15.3.4"}
+{"id":"V15.3.5","name":"Defensive Coding","scope":"weaknesses","outcome":"card","target":"asvs-v15.3.5"}
+{"id":"V15.3.6","name":"Defensive Coding","scope":"weaknesses","outcome":"card","target":"asvs-v15.3.6"}
+{"id":"V15.3.7","name":"Defensive Coding","scope":"weaknesses","outcome":"card","target":"asvs-v15.3.7"}
+{"id":"V15.4","name":"Safe Concurrency","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V15.4.1","name":"Safe Concurrency","scope":"weaknesses","outcome":"card","target":"asvs-v15.4.1"}
+{"id":"V15.4.2","name":"Safe Concurrency","scope":"weaknesses","outcome":"card","target":"asvs-v15.4.2"}
+{"id":"V15.4.3","name":"Safe Concurrency","scope":"weaknesses","outcome":"card","target":"asvs-v15.4.3"}
+{"id":"V15.4.4","name":"Safe Concurrency","scope":"weaknesses","outcome":"card","target":"asvs-v15.4.4"}
+{"id":"V16","name":"Security Logging and Error Handling","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V16.1","name":"Security Logging Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V16.1.1","name":"Security Logging Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v16.1.1"}
+{"id":"V16.2","name":"General Logging","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V16.2.1","name":"General Logging","scope":"weaknesses","outcome":"card","target":"asvs-v16.2.1"}
+{"id":"V16.2.2","name":"General Logging","scope":"weaknesses","outcome":"card","target":"asvs-v16.2.2"}
+{"id":"V16.2.3","name":"General Logging","scope":"weaknesses","outcome":"card","target":"asvs-v16.2.3"}
+{"id":"V16.2.4","name":"General Logging","scope":"weaknesses","outcome":"card","target":"asvs-v16.2.4"}
+{"id":"V16.2.5","name":"General Logging","scope":"weaknesses","outcome":"card","target":"asvs-v16.2.5"}
+{"id":"V16.3","name":"Security Events","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V16.3.1","name":"Security Events","scope":"weaknesses","outcome":"card","target":"asvs-v16.3.1"}
+{"id":"V16.3.2","name":"Security Events","scope":"weaknesses","outcome":"card","target":"asvs-v16.3.2"}
+{"id":"V16.3.3","name":"Security Events","scope":"weaknesses","outcome":"card","target":"asvs-v16.3.3"}
+{"id":"V16.3.4","name":"Security Events","scope":"weaknesses","outcome":"card","target":"asvs-v16.3.4"}
+{"id":"V16.4","name":"Log Protection","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V16.4.1","name":"Log Protection","scope":"weaknesses","outcome":"card","target":"asvs-v16.4.1"}
+{"id":"V16.4.2","name":"Log Protection","scope":"weaknesses","outcome":"card","target":"asvs-v16.4.2"}
+{"id":"V16.4.3","name":"Log Protection","scope":"weaknesses","outcome":"card","target":"asvs-v16.4.3"}
+{"id":"V16.5","name":"Error Handling","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V16.5.1","name":"Error Handling","scope":"weaknesses","outcome":"card","target":"asvs-v16.5.1"}
+{"id":"V16.5.2","name":"Error Handling","scope":"weaknesses","outcome":"card","target":"asvs-v16.5.2"}
+{"id":"V16.5.3","name":"Error Handling","scope":"weaknesses","outcome":"card","target":"asvs-v16.5.3"}
+{"id":"V16.5.4","name":"Error Handling","scope":"weaknesses","outcome":"card","target":"asvs-v16.5.4"}
+{"id":"V17","name":"WebRTC","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V17.1","name":"TURN Server","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V17.1.1","name":"TURN Server","scope":"weaknesses","outcome":"card","target":"asvs-v17.1.1"}
+{"id":"V17.1.2","name":"TURN Server","scope":"weaknesses","outcome":"card","target":"asvs-v17.1.2"}
+{"id":"V17.2","name":"Media","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V17.2.1","name":"Media","scope":"weaknesses","outcome":"card","target":"asvs-v17.2.1"}
+{"id":"V17.2.2","name":"Media","scope":"weaknesses","outcome":"card","target":"asvs-v17.2.2"}
+{"id":"V17.2.3","name":"Media","scope":"weaknesses","outcome":"card","target":"asvs-v17.2.3"}
+{"id":"V17.2.4","name":"Media","scope":"weaknesses","outcome":"card","target":"asvs-v17.2.4"}
+{"id":"V17.2.5","name":"Media","scope":"weaknesses","outcome":"card","target":"asvs-v17.2.5"}
+{"id":"V17.2.6","name":"Media","scope":"weaknesses","outcome":"card","target":"asvs-v17.2.6"}
+{"id":"V17.2.7","name":"Media","scope":"weaknesses","outcome":"card","target":"asvs-v17.2.7"}
+{"id":"V17.2.8","name":"Media","scope":"weaknesses","outcome":"card","target":"asvs-v17.2.8"}
+{"id":"V17.3","name":"Signaling","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V17.3.1","name":"Signaling","scope":"weaknesses","outcome":"card","target":"asvs-v17.3.1"}
+{"id":"V17.3.2","name":"Signaling","scope":"weaknesses","outcome":"card","target":"asvs-v17.3.2"}
+{"id":"V2","name":"Validation and Business Logic","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V2.1","name":"Validation and Business Logic Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V2.1.1","name":"Validation and Business Logic Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v2.1.1"}
+{"id":"V2.1.2","name":"Validation and Business Logic Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v2.1.2"}
+{"id":"V2.1.3","name":"Validation and Business Logic Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v2.1.3"}
+{"id":"V2.2","name":"Input Validation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V2.2.1","name":"Input Validation","scope":"weaknesses","outcome":"card","target":"asvs-v2.2.1"}
+{"id":"V2.2.2","name":"Input Validation","scope":"weaknesses","outcome":"card","target":"asvs-v2.2.2"}
+{"id":"V2.2.3","name":"Input Validation","scope":"weaknesses","outcome":"card","target":"asvs-v2.2.3"}
+{"id":"V2.3","name":"Business Logic Security","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V2.3.1","name":"Business Logic Security","scope":"weaknesses","outcome":"card","target":"asvs-v2.3.1"}
+{"id":"V2.3.2","name":"Business Logic Security","scope":"weaknesses","outcome":"card","target":"asvs-v2.3.2"}
+{"id":"V2.3.3","name":"Business Logic Security","scope":"weaknesses","outcome":"card","target":"asvs-v2.3.3"}
+{"id":"V2.3.4","name":"Business Logic Security","scope":"weaknesses","outcome":"card","target":"asvs-v2.3.4"}
+{"id":"V2.3.5","name":"Business Logic Security","scope":"weaknesses","outcome":"card","target":"asvs-v2.3.5"}
+{"id":"V2.4","name":"Anti-automation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V2.4.1","name":"Anti-automation","scope":"weaknesses","outcome":"card","target":"asvs-v2.4.1"}
+{"id":"V2.4.2","name":"Anti-automation","scope":"weaknesses","outcome":"card","target":"asvs-v2.4.2"}
+{"id":"V3","name":"Web Frontend Security","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V3.1","name":"Web Frontend Security Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V3.1.1","name":"Web Frontend Security Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v3.1.1"}
+{"id":"V3.2","name":"Unintended Content Interpretation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V3.2.1","name":"Unintended Content Interpretation","scope":"weaknesses","outcome":"card","target":"asvs-v3.2.1"}
+{"id":"V3.2.2","name":"Unintended Content Interpretation","scope":"weaknesses","outcome":"card","target":"asvs-v3.2.2"}
+{"id":"V3.2.3","name":"Unintended Content Interpretation","scope":"weaknesses","outcome":"card","target":"asvs-v3.2.3"}
+{"id":"V3.3","name":"Cookie Setup","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V3.3.1","name":"Cookie Setup","scope":"weaknesses","outcome":"card","target":"asvs-v3.3.1"}
+{"id":"V3.3.2","name":"Cookie Setup","scope":"weaknesses","outcome":"card","target":"asvs-v3.3.2"}
+{"id":"V3.3.3","name":"Cookie Setup","scope":"weaknesses","outcome":"card","target":"asvs-v3.3.3"}
+{"id":"V3.3.4","name":"Cookie Setup","scope":"weaknesses","outcome":"card","target":"asvs-v3.3.4"}
+{"id":"V3.3.5","name":"Cookie Setup","scope":"weaknesses","outcome":"card","target":"asvs-v3.3.5"}
+{"id":"V3.4","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V3.4.1","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"card","target":"asvs-v3.4.1"}
+{"id":"V3.4.2","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"card","target":"asvs-v3.4.2"}
+{"id":"V3.4.3","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"card","target":"asvs-v3.4.3"}
+{"id":"V3.4.4","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"card","target":"asvs-v3.4.4"}
+{"id":"V3.4.5","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"card","target":"asvs-v3.4.5"}
+{"id":"V3.4.6","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"card","target":"asvs-v3.4.6"}
+{"id":"V3.4.7","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"card","target":"asvs-v3.4.7"}
+{"id":"V3.4.8","name":"Browser Security Mechanism Headers","scope":"weaknesses","outcome":"card","target":"asvs-v3.4.8"}
+{"id":"V3.5","name":"Browser Origin Separation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V3.5.1","name":"Browser Origin Separation","scope":"weaknesses","outcome":"card","target":"asvs-v3.5.1"}
+{"id":"V3.5.2","name":"Browser Origin Separation","scope":"weaknesses","outcome":"card","target":"asvs-v3.5.2"}
+{"id":"V3.5.3","name":"Browser Origin Separation","scope":"weaknesses","outcome":"card","target":"asvs-v3.5.3"}
+{"id":"V3.5.4","name":"Browser Origin Separation","scope":"weaknesses","outcome":"card","target":"asvs-v3.5.4"}
+{"id":"V3.5.5","name":"Browser Origin Separation","scope":"weaknesses","outcome":"card","target":"asvs-v3.5.5"}
+{"id":"V3.5.6","name":"Browser Origin Separation","scope":"weaknesses","outcome":"card","target":"asvs-v3.5.6"}
+{"id":"V3.5.7","name":"Browser Origin Separation","scope":"weaknesses","outcome":"card","target":"asvs-v3.5.7"}
+{"id":"V3.5.8","name":"Browser Origin Separation","scope":"weaknesses","outcome":"card","target":"asvs-v3.5.8"}
+{"id":"V3.6","name":"External Resource Integrity","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V3.6.1","name":"External Resource Integrity","scope":"weaknesses","outcome":"card","target":"asvs-v3.6.1"}
+{"id":"V3.7","name":"Other Browser Security Considerations","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V3.7.1","name":"Other Browser Security Considerations","scope":"weaknesses","outcome":"card","target":"asvs-v3.7.1"}
+{"id":"V3.7.2","name":"Other Browser Security Considerations","scope":"weaknesses","outcome":"card","target":"asvs-v3.7.2"}
+{"id":"V3.7.3","name":"Other Browser Security Considerations","scope":"weaknesses","outcome":"card","target":"asvs-v3.7.3"}
+{"id":"V3.7.4","name":"Other Browser Security Considerations","scope":"weaknesses","outcome":"card","target":"asvs-v3.7.4"}
+{"id":"V3.7.5","name":"Other Browser Security Considerations","scope":"weaknesses","outcome":"card","target":"asvs-v3.7.5"}
+{"id":"V4","name":"API and Web Service","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V4.1","name":"Generic Web Service Security","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V4.1.1","name":"Generic Web Service Security","scope":"weaknesses","outcome":"card","target":"asvs-v4.1.1"}
+{"id":"V4.1.2","name":"Generic Web Service Security","scope":"weaknesses","outcome":"card","target":"asvs-v4.1.2"}
+{"id":"V4.1.3","name":"Generic Web Service Security","scope":"weaknesses","outcome":"card","target":"asvs-v4.1.3"}
+{"id":"V4.1.4","name":"Generic Web Service Security","scope":"weaknesses","outcome":"card","target":"asvs-v4.1.4"}
+{"id":"V4.1.5","name":"Generic Web Service Security","scope":"weaknesses","outcome":"card","target":"asvs-v4.1.5"}
+{"id":"V4.2","name":"HTTP Message Structure Validation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V4.2.1","name":"HTTP Message Structure Validation","scope":"weaknesses","outcome":"card","target":"asvs-v4.2.1"}
+{"id":"V4.2.2","name":"HTTP Message Structure Validation","scope":"weaknesses","outcome":"card","target":"asvs-v4.2.2"}
+{"id":"V4.2.3","name":"HTTP Message Structure Validation","scope":"weaknesses","outcome":"card","target":"asvs-v4.2.3"}
+{"id":"V4.2.4","name":"HTTP Message Structure Validation","scope":"weaknesses","outcome":"card","target":"asvs-v4.2.4"}
+{"id":"V4.2.5","name":"HTTP Message Structure Validation","scope":"weaknesses","outcome":"card","target":"asvs-v4.2.5"}
+{"id":"V4.3","name":"GraphQL","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V4.3.1","name":"GraphQL","scope":"weaknesses","outcome":"card","target":"asvs-v4.3.1"}
+{"id":"V4.3.2","name":"GraphQL","scope":"weaknesses","outcome":"card","target":"asvs-v4.3.2"}
+{"id":"V4.4","name":"WebSocket","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V4.4.1","name":"WebSocket","scope":"weaknesses","outcome":"card","target":"asvs-v4.4.1"}
+{"id":"V4.4.2","name":"WebSocket","scope":"weaknesses","outcome":"card","target":"asvs-v4.4.2"}
+{"id":"V4.4.3","name":"WebSocket","scope":"weaknesses","outcome":"card","target":"asvs-v4.4.3"}
+{"id":"V4.4.4","name":"WebSocket","scope":"weaknesses","outcome":"card","target":"asvs-v4.4.4"}
+{"id":"V5","name":"File Handling","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V5.1","name":"File Handling Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V5.1.1","name":"File Handling Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v5.1.1"}
+{"id":"V5.2","name":"File Upload and Content","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V5.2.1","name":"File Upload and Content","scope":"weaknesses","outcome":"card","target":"asvs-v5.2.1"}
+{"id":"V5.2.2","name":"File Upload and Content","scope":"weaknesses","outcome":"card","target":"asvs-v5.2.2"}
+{"id":"V5.2.3","name":"File Upload and Content","scope":"weaknesses","outcome":"card","target":"asvs-v5.2.3"}
+{"id":"V5.2.4","name":"File Upload and Content","scope":"weaknesses","outcome":"card","target":"asvs-v5.2.4"}
+{"id":"V5.2.5","name":"File Upload and Content","scope":"weaknesses","outcome":"card","target":"asvs-v5.2.5"}
+{"id":"V5.2.6","name":"File Upload and Content","scope":"weaknesses","outcome":"card","target":"asvs-v5.2.6"}
+{"id":"V5.3","name":"File Storage","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V5.3.1","name":"File Storage","scope":"weaknesses","outcome":"card","target":"asvs-v5.3.1"}
+{"id":"V5.3.2","name":"File Storage","scope":"weaknesses","outcome":"card","target":"asvs-v5.3.2"}
+{"id":"V5.3.3","name":"File Storage","scope":"weaknesses","outcome":"card","target":"asvs-v5.3.3"}
+{"id":"V5.4","name":"File Download","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V5.4.1","name":"File Download","scope":"weaknesses","outcome":"card","target":"asvs-v5.4.1"}
+{"id":"V5.4.2","name":"File Download","scope":"weaknesses","outcome":"card","target":"asvs-v5.4.2"}
+{"id":"V5.4.3","name":"File Download","scope":"weaknesses","outcome":"card","target":"asvs-v5.4.3"}
+{"id":"V6","name":"Authentication","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V6.1","name":"Authentication Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V6.1.1","name":"Authentication Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v6.1.1"}
+{"id":"V6.1.2","name":"Authentication Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v6.1.2"}
+{"id":"V6.1.3","name":"Authentication Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v6.1.3"}
+{"id":"V6.2","name":"Password Security","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V6.2.1","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.1"}
+{"id":"V6.2.10","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.10"}
+{"id":"V6.2.11","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.11"}
+{"id":"V6.2.12","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.12"}
+{"id":"V6.2.2","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.2"}
+{"id":"V6.2.3","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.3"}
+{"id":"V6.2.4","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.4"}
+{"id":"V6.2.5","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.5"}
+{"id":"V6.2.6","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.6"}
+{"id":"V6.2.7","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.7"}
+{"id":"V6.2.8","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.8"}
+{"id":"V6.2.9","name":"Password Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.2.9"}
+{"id":"V6.3","name":"General Authentication Security","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V6.3.1","name":"General Authentication Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.3.1"}
+{"id":"V6.3.2","name":"General Authentication Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.3.2"}
+{"id":"V6.3.3","name":"General Authentication Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.3.3"}
+{"id":"V6.3.4","name":"General Authentication Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.3.4"}
+{"id":"V6.3.5","name":"General Authentication Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.3.5"}
+{"id":"V6.3.6","name":"General Authentication Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.3.6"}
+{"id":"V6.3.7","name":"General Authentication Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.3.7"}
+{"id":"V6.3.8","name":"General Authentication Security","scope":"weaknesses","outcome":"card","target":"asvs-v6.3.8"}
+{"id":"V6.4","name":"Authentication Factor Lifecycle and Recovery","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V6.4.1","name":"Authentication Factor Lifecycle and Recovery","scope":"weaknesses","outcome":"card","target":"asvs-v6.4.1"}
+{"id":"V6.4.2","name":"Authentication Factor Lifecycle and Recovery","scope":"weaknesses","outcome":"card","target":"asvs-v6.4.2"}
+{"id":"V6.4.3","name":"Authentication Factor Lifecycle and Recovery","scope":"weaknesses","outcome":"card","target":"asvs-v6.4.3"}
+{"id":"V6.4.4","name":"Authentication Factor Lifecycle and Recovery","scope":"weaknesses","outcome":"card","target":"asvs-v6.4.4"}
+{"id":"V6.4.5","name":"Authentication Factor Lifecycle and Recovery","scope":"weaknesses","outcome":"card","target":"asvs-v6.4.5"}
+{"id":"V6.4.6","name":"Authentication Factor Lifecycle and Recovery","scope":"weaknesses","outcome":"card","target":"asvs-v6.4.6"}
+{"id":"V6.5","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V6.5.1","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"card","target":"asvs-v6.5.1"}
+{"id":"V6.5.2","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"card","target":"asvs-v6.5.2"}
+{"id":"V6.5.3","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"card","target":"asvs-v6.5.3"}
+{"id":"V6.5.4","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"card","target":"asvs-v6.5.4"}
+{"id":"V6.5.5","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"card","target":"asvs-v6.5.5"}
+{"id":"V6.5.6","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"card","target":"asvs-v6.5.6"}
+{"id":"V6.5.7","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"card","target":"asvs-v6.5.7"}
+{"id":"V6.5.8","name":"General Multi-factor authentication requirements","scope":"weaknesses","outcome":"card","target":"asvs-v6.5.8"}
+{"id":"V6.6","name":"Out-of-Band authentication mechanisms","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V6.6.1","name":"Out-of-Band authentication mechanisms","scope":"weaknesses","outcome":"card","target":"asvs-v6.6.1"}
+{"id":"V6.6.2","name":"Out-of-Band authentication mechanisms","scope":"weaknesses","outcome":"card","target":"asvs-v6.6.2"}
+{"id":"V6.6.3","name":"Out-of-Band authentication mechanisms","scope":"weaknesses","outcome":"card","target":"asvs-v6.6.3"}
+{"id":"V6.6.4","name":"Out-of-Band authentication mechanisms","scope":"weaknesses","outcome":"card","target":"asvs-v6.6.4"}
+{"id":"V6.7","name":"Cryptographic authentication mechanism","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V6.7.1","name":"Cryptographic authentication mechanism","scope":"weaknesses","outcome":"card","target":"asvs-v6.7.1"}
+{"id":"V6.7.2","name":"Cryptographic authentication mechanism","scope":"weaknesses","outcome":"card","target":"asvs-v6.7.2"}
+{"id":"V6.8","name":"Authentication with an Identity Provider","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V6.8.1","name":"Authentication with an Identity Provider","scope":"weaknesses","outcome":"card","target":"asvs-v6.8.1"}
+{"id":"V6.8.2","name":"Authentication with an Identity Provider","scope":"weaknesses","outcome":"card","target":"asvs-v6.8.2"}
+{"id":"V6.8.3","name":"Authentication with an Identity Provider","scope":"weaknesses","outcome":"card","target":"asvs-v6.8.3"}
+{"id":"V6.8.4","name":"Authentication with an Identity Provider","scope":"weaknesses","outcome":"card","target":"asvs-v6.8.4"}
+{"id":"V7","name":"Session Management","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V7.1","name":"Session Management Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V7.1.1","name":"Session Management Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v7.1.1"}
+{"id":"V7.1.2","name":"Session Management Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v7.1.2"}
+{"id":"V7.1.3","name":"Session Management Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v7.1.3"}
+{"id":"V7.2","name":"Fundamental Session Management Security","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V7.2.1","name":"Fundamental Session Management Security","scope":"weaknesses","outcome":"card","target":"asvs-v7.2.1"}
+{"id":"V7.2.2","name":"Fundamental Session Management Security","scope":"weaknesses","outcome":"card","target":"asvs-v7.2.2"}
+{"id":"V7.2.3","name":"Fundamental Session Management Security","scope":"weaknesses","outcome":"card","target":"asvs-v7.2.3"}
+{"id":"V7.2.4","name":"Fundamental Session Management Security","scope":"weaknesses","outcome":"card","target":"asvs-v7.2.4"}
+{"id":"V7.3","name":"Session Timeout","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V7.3.1","name":"Session Timeout","scope":"weaknesses","outcome":"card","target":"asvs-v7.3.1"}
+{"id":"V7.3.2","name":"Session Timeout","scope":"weaknesses","outcome":"card","target":"asvs-v7.3.2"}
+{"id":"V7.4","name":"Session Termination","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V7.4.1","name":"Session Termination","scope":"weaknesses","outcome":"card","target":"asvs-v7.4.1"}
+{"id":"V7.4.2","name":"Session Termination","scope":"weaknesses","outcome":"card","target":"asvs-v7.4.2"}
+{"id":"V7.4.3","name":"Session Termination","scope":"weaknesses","outcome":"card","target":"asvs-v7.4.3"}
+{"id":"V7.4.4","name":"Session Termination","scope":"weaknesses","outcome":"card","target":"asvs-v7.4.4"}
+{"id":"V7.4.5","name":"Session Termination","scope":"weaknesses","outcome":"card","target":"asvs-v7.4.5"}
+{"id":"V7.5","name":"Defenses Against Session Abuse","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V7.5.1","name":"Defenses Against Session Abuse","scope":"weaknesses","outcome":"card","target":"asvs-v7.5.1"}
+{"id":"V7.5.2","name":"Defenses Against Session Abuse","scope":"weaknesses","outcome":"card","target":"asvs-v7.5.2"}
+{"id":"V7.5.3","name":"Defenses Against Session Abuse","scope":"weaknesses","outcome":"card","target":"asvs-v7.5.3"}
+{"id":"V7.6","name":"Federated Re-authentication","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V7.6.1","name":"Federated Re-authentication","scope":"weaknesses","outcome":"card","target":"asvs-v7.6.1"}
+{"id":"V7.6.2","name":"Federated Re-authentication","scope":"weaknesses","outcome":"card","target":"asvs-v7.6.2"}
+{"id":"V8","name":"Authorization","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V8.1","name":"Authorization Documentation","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V8.1.1","name":"Authorization Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v8.1.1"}
+{"id":"V8.1.2","name":"Authorization Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v8.1.2"}
+{"id":"V8.1.3","name":"Authorization Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v8.1.3"}
+{"id":"V8.1.4","name":"Authorization Documentation","scope":"weaknesses","outcome":"card","target":"asvs-v8.1.4"}
+{"id":"V8.2","name":"General Authorization Design","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V8.2.1","name":"General Authorization Design","scope":"weaknesses","outcome":"card","target":"asvs-v8.2.1"}
+{"id":"V8.2.2","name":"General Authorization Design","scope":"weaknesses","outcome":"card","target":"asvs-v8.2.2"}
+{"id":"V8.2.3","name":"General Authorization Design","scope":"weaknesses","outcome":"card","target":"asvs-v8.2.3"}
+{"id":"V8.2.4","name":"General Authorization Design","scope":"weaknesses","outcome":"card","target":"asvs-v8.2.4"}
+{"id":"V8.3","name":"Operation Level Authorization","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V8.3.1","name":"Operation Level Authorization","scope":"weaknesses","outcome":"card","target":"asvs-v8.3.1"}
+{"id":"V8.3.2","name":"Operation Level Authorization","scope":"weaknesses","outcome":"card","target":"asvs-v8.3.2"}
+{"id":"V8.3.3","name":"Operation Level Authorization","scope":"weaknesses","outcome":"card","target":"asvs-v8.3.3"}
+{"id":"V8.4","name":"Other Authorization Considerations","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V8.4.1","name":"Other Authorization Considerations","scope":"weaknesses","outcome":"card","target":"asvs-v8.4.1"}
+{"id":"V8.4.2","name":"Other Authorization Considerations","scope":"weaknesses","outcome":"card","target":"asvs-v8.4.2"}
+{"id":"V9","name":"Self-contained Tokens","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS chapter groups sections of requirements; its requirements are the items"}
+{"id":"V9.1","name":"Token source and integrity","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V9.1.1","name":"Token source and integrity","scope":"weaknesses","outcome":"card","target":"asvs-v9.1.1"}
+{"id":"V9.1.2","name":"Token source and integrity","scope":"weaknesses","outcome":"card","target":"asvs-v9.1.2"}
+{"id":"V9.1.3","name":"Token source and integrity","scope":"weaknesses","outcome":"card","target":"asvs-v9.1.3"}
+{"id":"V9.2","name":"Token content","scope":"weaknesses","outcome":"not-an-item","reason":"an ASVS section groups requirements; its requirements are the items"}
+{"id":"V9.2.1","name":"Token content","scope":"weaknesses","outcome":"card","target":"asvs-v9.2.1"}
+{"id":"V9.2.2","name":"Token content","scope":"weaknesses","outcome":"card","target":"asvs-v9.2.2"}
+{"id":"V9.2.3","name":"Token content","scope":"weaknesses","outcome":"card","target":"asvs-v9.2.3"}
+{"id":"V9.2.4","name":"Token content","scope":"weaknesses","outcome":"card","target":"asvs-v9.2.4"}
