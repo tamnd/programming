@@ -187,7 +187,7 @@ items:
     group: "syntax-and-semantics"
     name: "Syntax"
     target: "syntax"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL (\"Syntax Analysis\"). It is in 5 of the 7 language references: Rust Reference (\"Syntax index\"); Java Language Specification (\"The Syntactic Grammar\"); C++ working draft (\"Syntax notation\"); and 2 more. It is in the canon books: SICP index (\"abstract syntax\"); Crafting Interpreters contents (\"Design Note: Spoonfuls of Syntactic ...\")."
   - part: concepts
     group: "syntax-and-semantics"
