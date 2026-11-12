@@ -1,0 +1,28 @@
+kotlin:
+  status: idiom
+  reason: a top-level function with a when expression returns the interface type; with a sealed interface or an enum for the parameter, the compiler checks that every case is handled; no example is executed here because the test image has no kotlinc.
+  alternative: a companion object function on the interface.
+c:
+  status: idiom
+  reason: a function returns a pointer to a struct that holds function pointers, the C form of an interface, and picks the functions from a parameter with a switch.
+  alternative: a table of constructor functions indexed by an enum.
+sql:
+  status: n/a
+  reason: a query does not create objects of a chosen class; a CASE expression picks a value, not a type.
+bash:
+  status: idiom
+  reason: a case statement picks a function or a command by name, and the caller runs the result.
+  alternative: an associative array from the name to a function name.
+powershell:
+  status: idiom
+  reason: a function with a switch statement returns an object of one of several classes; no example is executed here because the test image has no pwsh.
+  alternative: a hashtable from the name to a script block that creates the object.
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: n/a
+  reason: markup names each element directly; the type attribute of input picks a control, but the author writes the choice.
+css:
+  status: n/a
+  reason: style rules create no objects.
