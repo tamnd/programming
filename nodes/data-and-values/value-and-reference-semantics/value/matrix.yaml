@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript works with the values of JavaScript, and a literal type such as "on" or 42 describes exactly one value. The compiler erases the types, so the values at run time are JavaScript values. No example file exists.
+kotlin:
+  status: native
+  reason: In Kotlin every value is an object in the language, and the compiler stores values of types such as Int and Boolean as JVM primitives where it can. A nullable type such as Int? also holds null. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Each Bash variable holds a string, and an indexed or associative array holds strings. Arithmetic expansion reads strings as integers. No example file exists.
+powershell:
+  status: native
+  reason: Each PowerShell value is a .NET object, and the pipeline passes objects from one command to the next. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: Each column of a row holds a value of the column type, and NULL marks a missing value. An expression in a query computes a value for each row. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text. The pattern language has no values of its own, although a match gives strings to the host language.
+html:
+  status: idiom
+  reason: HTML attribute values and text content are strings. Some attributes, such as the value attribute of an input element, hold the value of a form field.
+css:
+  status: idiom
+  reason: Each CSS property takes values of given types, such as lengths, percentages and colors, and the browser computes a value of each property for each element.
