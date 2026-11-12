@@ -259,7 +259,7 @@ items:
     group: "syntax-and-semantics"
     name: "Operator precedence"
     target: "operator-precedence"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Translation (\"using precedence order\"). It is in 4 of the 7 language references: Python Language Reference (\"Operator precedence\"); Go spec (\"Operator precedence\"); Java Language Specification (\"Evaluation Respects Parentheses and ...\"); and 1 more."
   - part: concepts
     group: "syntax-and-semantics"

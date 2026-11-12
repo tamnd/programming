@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the precedence table of JavaScript, including the syntax errors for -2 ** 2 and for ?? next to || without parentheses, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has a precedence table in its grammar, and all named infix functions share one level above the comparison operators, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash arithmetic in $(( )) uses the precedence of C, and between commands && and || have the same level and group to the left, but no example file exists.
+powershell:
+  status: native
+  reason: PowerShell documents a precedence table in about_Operator_Precedence, with comparison operators such as -eq below arithmetic, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL evaluates NOT before AND and AND before OR, and arithmetic before comparison, so a mix of AND and OR without parentheses can select rows that the author did not intend.
+regex:
+  status: native
+  reason: In a regular expression, repetition binds more tightly than concatenation, and concatenation binds more tightly than alternation, so ab|cd is (ab)|(cd).
+html:
+  status: n/a
+  reason: HTML has no operators.
+css:
+  status: native
+  reason: In calc(), multiplication and division bind more tightly than addition and subtraction, and parentheses group terms.
