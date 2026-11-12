@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript adds a static, structural and gradual type system to JavaScript. any turns the checks off and unknown forces a check, and the compiler erases all types before the program runs. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has a static and nominal type system with nullable types, smart casts after a type check and the safe cast as?. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: All Bash values are strings, and Bash has no type checks. declare -i and declare -a only change how a variable is used.
+powershell:
+  status: native
+  reason: PowerShell checks types at run time and converts values with .NET rules, and a type constraint such as [int]$x makes each assignment convert to that type or fail. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL gives each column and expression a type and checks it when the statement is prepared or run. The rules for implicit conversions differ between databases. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no types.
+html:
+  status: n/a
+  reason: HTML has no types. A validator checks a document against the content model of each element, which is a different kind of check.
+css:
+  status: idiom
+  reason: Each CSS property has a grammar of valid values, and the browser ignores a declaration whose value does not fit, which acts as a type check.

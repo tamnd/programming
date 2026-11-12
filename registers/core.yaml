@@ -337,7 +337,7 @@ items:
     group: "types"
     name: "Type system"
     target: "type-system"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL (\"Type Systems\"). It is in the canon books: SICP index (\"internal type system\")."
   - part: concepts
     group: "types"
