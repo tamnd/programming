@@ -67,7 +67,7 @@ items:
     group: "foundations"
     name: "Algorithm"
     target: "algorithm"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL (\"formulate algorithms, and reason about solutions. Over the ...\"). It is in the canon books: SICP index (\"Donald E. Knuth, Fundamental Algorithms ...\"); HtDP contents (\"Designing Algorithms\")."
   - part: concepts
     group: "foundations"
