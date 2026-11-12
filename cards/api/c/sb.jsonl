@@ -1,0 +1,1 @@
+{"tag":"NEW-sbrk","kind":"api","owner":"c","path":"sbrk","entity":"system call","module":"Linux system calls","doc":{"url":"https://man7.org/linux/man-pages/man2/sbrk.2.html"},"source":{"url":"https://man7.org/linux/man-pages/dir_section_2.html","licence":"LicenseRef-names-only"}}
