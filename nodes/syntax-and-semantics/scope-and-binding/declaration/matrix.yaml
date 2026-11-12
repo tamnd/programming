@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the declarations of JavaScript and adds type annotations, and declare and .d.ts files give declarations without a definition for code that is written in JavaScript. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin declares names with val, var and fun, lateinit declares a property that gets its value later, and expect and actual split a declaration from its definition in multiplatform code. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash declares variables with declare, local and readonly, and a function definition makes a function. A variable needs no declaration. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell declares functions with function and parameters with param, and a cast such as [int]$n declares a typed variable. A variable needs no declaration. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: CREATE TABLE, CREATE VIEW and the other CREATE statements declare schema objects, and procedural SQL such as PL/pgSQL has a DECLARE section for variables. No example file exists.
+regex:
+  status: idiom
+  reason: A named group such as (?<year>...) declares a name for a group, and a backreference or the program uses the name later.
+html:
+  status: idiom
+  reason: An id attribute declares a name for an element, and links, label elements and scripts refer to the element by that name.
+css:
+  status: native
+  reason: "The @property rule declares a custom property with a syntax, an initial value and inherits: true or false. In CSS, the word declaration also means a pair of a property and a value."

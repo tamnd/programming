@@ -295,13 +295,13 @@ items:
     group: "syntax-and-semantics"
     name: "Declaration"
     target: "declaration"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Translation (\"declaration and iterative constructs for known languages ...\"). It is in 6 of the 7 language references: Go spec (\"Declarations and scope\"); Rust Reference (\"Use declarations\"); Java Language Specification (\"Declarations\"); and 3 more. It is in the canon books: Crafting Interpreters contents (\"Design Note: Implicit Variable ...\")."
   - part: concepts
     group: "syntax-and-semantics"
     name: "Definition"
-    target: "definition-concept"
-    status: "planned"
+    target: "declaration"
+    status: "node"
     reason: "It is in CS2023 FPL-OOP (\"Definition of classes: fields, methods, and constructors. ...\"). It is in 5 of the 7 language references: Python Language Reference (\"Function definitions\"); Go spec (\"Type definitions\"); C++ working draft (\"Terms and definitions\"); and 2 more. It is in the canon books: SICP index (\"definitions\"); HtDP contents (\"One Program, Many Definitions\")."
   - part: concepts
     group: "syntax-and-semantics"
