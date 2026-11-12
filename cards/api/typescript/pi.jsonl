@@ -1,0 +1,1 @@
+{"tag":"NEW-ts-Pick","kind":"api","owner":"typescript","path":"Pick","entity":"type alias","signature":"type Pick<T, K extends keyof T>","module":"utility types","doc":{"url":"https://www.typescriptlang.org/docs/handbook/utility-types.html"},"source":{"url":"https://github.com/microsoft/TypeScript/blob/main/tsc/internal/bundled/libs/lib.es5.d.ts","file":"lib.es5.d.ts"}}
