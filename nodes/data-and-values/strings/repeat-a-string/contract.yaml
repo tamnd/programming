@@ -1,0 +1,16 @@
+# The contract of the task "repeat a string" (spec 10.2).
+problem: repeat-a-string
+entry: repeat
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+  - name: n
+    type: int
+    pre: "0 <= n <= 1000"
+returns:
+  type: string
+  post: "the concatenation of n copies of s; the empty string if n is 0 or s is empty"
+checker: exact
+edge_classes: [zero, empty, many, astral, combining]
+# A negative n is not in the contract. The languages do not agree on it: Python gives the empty string, and JavaScript, Java, Go and Rust raise an error or panic.

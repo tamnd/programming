@@ -1,0 +1,7 @@
+{"name":"lower-word","args":{"s":"HELLO"},"expect":"hello"}
+{"name":"lower-mixed","args":{"s":"Hello, World!"},"expect":"hello, world!"}
+{"name":"lower-empty","args":{"s":""},"expect":""}
+{"name":"lower-dotted-i","args":{"s":"\u0130"},"expect":"\u0130"}
+{"name":"lower-sigma","args":{"s":"\u03a3\u0391\u03a3"},"expect":"\u03a3\u0391\u03a3"}
+{"name":"lower-kelvin","args":{"s":"\u212a"},"expect":"\u212a"}
+{"name":"lower-astral","args":{"s":"A\ud83d\ude42B"},"expect":"a\ud83d\ude42b"}

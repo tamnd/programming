@@ -1,0 +1,3 @@
+{"name":"both-ends","args":{"s":"  hello  "},"expect":"hello"}
+{"name":"tab-newline","args":{"s":"\thello world\n"},"expect":"hello world"}
+{"name":"none","args":{"s":"hello"},"expect":"hello"}

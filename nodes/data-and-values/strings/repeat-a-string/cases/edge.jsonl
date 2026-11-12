@@ -1,0 +1,6 @@
+{"name":"zero","class":["zero"],"args":{"s":"abc","n":0},"expect":""}
+{"name":"empty","class":["empty"],"args":{"s":"","n":5},"expect":""}
+{"name":"empty-zero","class":["empty"],"args":{"s":"","n":0},"expect":""}
+{"name":"many","class":["many"],"args":{"s":"ab","n":100},"expect":"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab"}
+{"name":"astral","class":["astral"],"args":{"s":"\ud83d\ude42","n":3},"expect":"\ud83d\ude42\ud83d\ude42\ud83d\ude42"}
+{"name":"combining","class":["combining"],"args":{"s":"e\u0301","n":2},"expect":"e\u0301e\u0301"}

@@ -1,0 +1,3 @@
+{"name":"word","args":{"s":"hello"},"expect":"HELLO"}
+{"name":"mixed","args":{"s":"Hello, World!"},"expect":"HELLO, WORLD!"}
+{"name":"already","args":{"s":"ABC"},"expect":"ABC"}

@@ -1,0 +1,9 @@
+{"name":"empty","class":["empty"],"args":{"s":""},"expect":""}
+{"name":"digits-punct","class":["non-letter"],"args":{"s":"a1-b2_c3"},"expect":"A1-B2_C3"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"s":"caf\u00e9"},"expect":"CAF\u00e9"}
+{"name":"sharp-s","class":["non-ascii"],"args":{"s":"stra\u00dfe"},"expect":"STRA\u00dfE"}
+{"name":"dotless-i","class":["non-ascii"],"args":{"s":"\u0131 i"},"expect":"\u0131 I"}
+{"name":"greek","class":["non-ascii"],"args":{"s":"\u03c3"},"expect":"\u03c3"}
+{"name":"fullwidth","class":["non-ascii"],"args":{"s":"\uff41"},"expect":"\uff41"}
+{"name":"astral","class":["astral"],"args":{"s":"a\ud83d\ude42b"},"expect":"A\ud83d\ude42B"}
+{"name":"combining","class":["combining"],"args":{"s":"cafe\u0301"},"expect":"CAFE\u0301"}
