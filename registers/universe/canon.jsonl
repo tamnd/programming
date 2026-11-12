@@ -1,0 +1,111 @@
+{"id":"doi:10.1145/1238844.1238845","name":"AppleScript","scope":"people","outcome":"card","target":"hopl-applescript"}
+{"id":"doi:10.1145/1238844.1238846","name":"The evolution of Lua","scope":"people","outcome":"card","target":"hopl-the-evolution-of-lua"}
+{"id":"doi:10.1145/1238844.1238847","name":"Modula-2 and Oberon","scope":"people","outcome":"card","target":"hopl-modula-2-and-oberon"}
+{"id":"doi:10.1145/1238844.1238848","name":"Evolving a language in and for the real world: C++ 1991-2006","scope":"people","outcome":"card","target":"hopl-evolving-a-language-in-and-for-the-real-world"}
+{"id":"doi:10.1145/1238844.1238849","name":"Statecharts in the making: a personal account","scope":"people","outcome":"card","target":"hopl-statecharts-in-the-making"}
+{"id":"doi:10.1145/1238844.1238850","name":"A history of Erlang","scope":"people","outcome":"card","target":"hopl-a-history-of-erlang"}
+{"id":"doi:10.1145/1238844.1238851","name":"The rise and fall of High Performance Fortran: an historical object lesson","scope":"people","outcome":"card","target":"hopl-the-rise-and-fall-of-high-performance-fortran"}
+{"id":"doi:10.1145/1238844.1238852","name":"The design and development of ZPL","scope":"people","outcome":"card","target":"hopl-the-design-and-development-of-zpl"}
+{"id":"doi:10.1145/1238844.1238853","name":"Self","scope":"people","outcome":"card","target":"hopl-self"}
+{"id":"doi:10.1145/1238844.1238854","name":"The when, why and why not of the BETA programming language","scope":"people","outcome":"card","target":"hopl-the-when-why-and-why-not-of-the-beta-programming-language"}
+{"id":"doi:10.1145/1238844.1238855","name":"The development of the Emerald programming language","scope":"people","outcome":"card","target":"hopl-the-development-of-the-emerald-programming-language"}
+{"id":"doi:10.1145/1238844.1238856","name":"A history of Haskell: being lazy with class","scope":"people","outcome":"card","target":"hopl-a-history-of-haskell"}
+{"id":"doi:10.1145/154766.155361","name":"Monitors and concurrent Pascal: a personal history","scope":"people","outcome":"card","target":"hopl-monitors-and-concurrent-pascal"}
+{"id":"doi:10.1145/154766.155362","name":"The birth of Prolog","scope":"people","outcome":"card","target":"hopl-the-birth-of-prolog"}
+{"id":"doi:10.1145/154766.155363","name":"History of the Icon programming language","scope":"people","outcome":"card","target":"hopl-history-of-the-icon-programming-language"}
+{"id":"doi:10.1145/154766.155364","name":"The early history of Smalltalk","scope":"people","outcome":"card","target":"hopl-the-early-history-of-smalltalk"}
+{"id":"doi:10.1145/154766.155365","name":"A history of ALGOL 68","scope":"people","outcome":"card","target":"hopl-a-history-of-algol-68"}
+{"id":"doi:10.1145/154766.155367","name":"A history of CLU","scope":"people","outcome":"card","target":"hopl-a-history-of-clu"}
+{"id":"doi:10.1145/154766.155368","name":"A history of discrete event simulation programming languages","scope":"people","outcome":"card","target":"hopl-a-history-of-discrete-event-simulation-programming-languages"}
+{"id":"doi:10.1145/154766.155369","name":"The evolution of Forth","scope":"people","outcome":"card","target":"hopl-the-evolution-of-forth"}
+{"id":"doi:10.1145/154766.155372","name":"The beginning and development of FORMAC (FORmula MAnipulation Compiler)","scope":"people","outcome":"card","target":"hopl-the-beginning-and-development-of-formac-formula-manipulation-compiler"}
+{"id":"doi:10.1145/154766.155373","name":"The evolution of Lisp","scope":"people","outcome":"card","target":"hopl-the-evolution-of-lisp"}
+{"id":"doi:10.1145/154766.155375","name":"A history of C++: 1979–1991","scope":"people","outcome":"card","target":"hopl-a-history-of-cpp"}
+{"id":"doi:10.1145/154766.155376","name":"Ada—the project: the DoD high order language working group","scope":"people","outcome":"card","target":"hopl-ada-the-project"}
+{"id":"doi:10.1145/154766.155378","name":"Recollections about the development of Pascal","scope":"people","outcome":"card","target":"hopl-recollections-about-the-development-of-pascal"}
+{"id":"doi:10.1145/154766.155580","name":"The development of the C language","scope":"people","outcome":"card","target":"hopl-the-development-of-the-c-language"}
+{"id":"doi:10.1145/3386319","name":"APL since 1978","scope":"people","outcome":"card","target":"hopl-apl-since-1978"}
+{"id":"doi:10.1145/3386320","name":"Thriving in a crowded and changing world: C++ 2006–2020","scope":"people","outcome":"card","target":"hopl-thriving-in-a-crowded-and-changing-world-cpp-2006-2020"}
+{"id":"doi:10.1145/3386321","name":"A history of Clojure","scope":"people","outcome":"card","target":"hopl-a-history-of-clojure"}
+{"id":"doi:10.1145/3386322","name":"History of coarrays and SPMD parallelism in Fortran","scope":"people","outcome":"card","target":"hopl-history-of-coarrays-and-spmd-parallelism-in-fortran"}
+{"id":"doi:10.1145/3386323","name":"Origins of the D programming language","scope":"people","outcome":"card","target":"hopl-origins-of-the-d-programming-language"}
+{"id":"doi:10.1145/3386324","name":"Evolution of Emacs Lisp","scope":"people","outcome":"card","target":"hopl-evolution-of-emacs-lisp"}
+{"id":"doi:10.1145/3386325","name":"The early history of F#","scope":"people","outcome":"card","target":"hopl-the-early-history-of-fsharp"}
+{"id":"doi:10.1145/3386326","name":"A history of the Groovy programming language","scope":"people","outcome":"card","target":"hopl-a-history-of-the-groovy-programming-language"}
+{"id":"doi:10.1145/3386327","name":"JavaScript: the first 20 years","scope":"people","outcome":"card","target":"hopl-javascript-the-first-20-years"}
+{"id":"doi:10.1145/3386328","name":"LabVIEW","scope":"people","outcome":"card","target":"hopl-labview"}
+{"id":"doi:10.1145/3386329","name":"History of Logo","scope":"people","outcome":"card","target":"hopl-history-of-logo"}
+{"id":"doi:10.1145/3386330","name":"Hygienic macro technology","scope":"people","outcome":"card","target":"hopl-hygienic-macro-technology"}
+{"id":"doi:10.1145/3386331","name":"A history of MATLAB","scope":"people","outcome":"card","target":"hopl-a-history-of-matlab"}
+{"id":"doi:10.1145/3386332","name":"The origins of Objective-C at PPI/Stepstone and its evolution at NeXT","scope":"people","outcome":"card","target":"hopl-the-origins-of-objective-c-at-ppi-stepstone-and-its-evolution-at-next"}
+{"id":"doi:10.1145/3386333","name":"A history of the Oz multiparadigm language","scope":"people","outcome":"card","target":"hopl-a-history-of-the-oz-multiparadigm-language"}
+{"id":"doi:10.1145/3386334","name":"S, R, and data science","scope":"people","outcome":"card","target":"hopl-s-r-and-data-science"}
+{"id":"doi:10.1145/3386335","name":"The evolution of Smalltalk: from Smalltalk-72 through Squeak","scope":"people","outcome":"card","target":"hopl-the-evolution-of-smalltalk-from-smalltalk-72-through-squeak"}
+{"id":"doi:10.1145/3386336","name":"The history of Standard ML","scope":"people","outcome":"card","target":"hopl-the-history-of-standard-ml"}
+{"id":"doi:10.1145/3386337","name":"Verilog HDL and its ancestors and descendants","scope":"people","outcome":"card","target":"hopl-verilog-hdl-and-its-ancestors-and-descendants"}
+{"id":"doi:10.1145/800025.1198345","name":"The history of Fortran I, II, and III","scope":"people","outcome":"card","target":"hopl-the-history-of-fortran-i-ii-and-iii"}
+{"id":"doi:10.1145/800025.1198352","name":"The American side of the development of ALGOL","scope":"people","outcome":"card","target":"hopl-the-american-side-of-the-development-of-algol"}
+{"id":"doi:10.1145/800025.1198353","name":"The European side of the last phase of the development of ALGOL 60","scope":"people","outcome":"card","target":"hopl-the-european-side-of-the-last-phase-of-the-development-of-algol-60"}
+{"id":"doi:10.1145/800025.1198360","name":"History of LISP","scope":"people","outcome":"card","target":"hopl-history-of-lisp"}
+{"id":"doi:10.1145/800025.1198367","name":"The early history of COBOL","scope":"people","outcome":"card","target":"hopl-the-early-history-of-cobol"}
+{"id":"doi:10.1145/800025.1198374","name":"Origins of the APT language for automatically programmed tools","scope":"people","outcome":"card","target":"hopl-origins-of-the-apt-language-for-automatically-programmed-tools"}
+{"id":"doi:10.1145/800025.1198380","name":"The development of JOVIAL","scope":"people","outcome":"card","target":"hopl-the-development-of-jovial"}
+{"id":"doi:10.1145/800025.1198386","name":"The development of the General Purpose Simulation System (GPSS)","scope":"people","outcome":"card","target":"hopl-the-development-of-the-general-purpose-simulation-system-gpss"}
+{"id":"doi:10.1145/800025.1198392","name":"The development of the SIMULA languages","scope":"people","outcome":"card","target":"hopl-the-development-of-the-simula-languages"}
+{"id":"doi:10.1145/800025.1198400","name":"JOSS: JOHNNIAC open-shop system","scope":"people","outcome":"card","target":"hopl-joss"}
+{"id":"doi:10.1145/800025.1198404","name":"BASIC","scope":"people","outcome":"card","target":"hopl-basic"}
+{"id":"doi:10.1145/800025.1198410","name":"The early history and characteristics of PL/I","scope":"people","outcome":"card","target":"hopl-the-early-history-and-characteristics-of-pl-i"}
+{"id":"doi:10.1145/800025.1198417","name":"A history of the SNOBOL programming languages","scope":"people","outcome":"card","target":"hopl-a-history-of-the-snobol-programming-languages"}
+{"id":"doi:10.1145/800025.1198423","name":"The evolution of APL","scope":"people","outcome":"card","target":"hopl-the-evolution-of-apl"}
+{"id":"isbn:9780123745156","name":"Why Programs Fail: A Guide to Systematic Debugging","scope":"people","outcome":"card","target":"why-programs-fail"}
+{"id":"isbn:9780124104099","name":"Programming Language Pragmatics","scope":"people","outcome":"card","target":"programming-language-pragmatics"}
+{"id":"isbn:9780124159501","name":"The Art of Multiprocessor Programming","scope":"people","outcome":"card","target":"art-of-multiprocessor-programming"}
+{"id":"isbn:9780128154120","name":"Engineering a Compiler","scope":"people","outcome":"card","target":"engineering-a-compiler"}
+{"id":"isbn:9780131103627","name":"The C Programming Language","scope":"people","outcome":"card","target":"k-and-r"}
+{"id":"isbn:9780131177055","name":"Working Effectively with Legacy Code","scope":"people","outcome":"card","target":"legacy-code"}
+{"id":"isbn:9780131495050","name":"xUnit Test Patterns: Refactoring Test Code","scope":"people","outcome":"card","target":"xunit-test-patterns"}
+{"id":"isbn:9780134092669","name":"Computer Systems: A Programmer's Perspective","scope":"people","outcome":"card","target":"csapp"}
+{"id":"isbn:9780134190440","name":"The Go Programming Language","scope":"people","outcome":"card","target":"gopl"}
+{"id":"isbn:9780134685991","name":"Effective Java","scope":"people","outcome":"card","target":"effective-java"}
+{"id":"isbn:9780134757599","name":"Refactoring: Improving the Design of Existing Code","scope":"people","outcome":"card","target":"refactoring"}
+{"id":"isbn:9780135957059","name":"The Pragmatic Programmer","scope":"people","outcome":"card","target":"pragmatic-programmer"}
+{"id":"isbn:9780136820154","name":"Systems Performance","scope":"people","outcome":"card","target":"systems-performance"}
+{"id":"isbn:9780201633610","name":"Design Patterns: Elements of Reusable Object-Oriented Software","scope":"people","outcome":"card","target":"design-patterns"}
+{"id":"isbn:9780201835953","name":"The Mythical Man-Month","scope":"people","outcome":"card","target":"mythical-man-month"}
+{"id":"isbn:9780262062794","name":"Essentials of Programming Languages","scope":"people","outcome":"card","target":"eopl"}
+{"id":"isbn:9780262162098","name":"Types and Programming Languages","scope":"people","outcome":"card","target":"tapl"}
+{"id":"isbn:9780262220699","name":"Concepts, Techniques, and Models of Computer Programming","scope":"people","outcome":"card","target":"ctm"}
+{"id":"isbn:9780262510875","name":"Structure and Interpretation of Computer Programs","scope":"people","outcome":"card","target":"sicp"}
+{"id":"isbn:9780262534802","name":"How to Design Programs","scope":"people","outcome":"card","target":"htdp"}
+{"id":"isbn:9780321125217","name":"Domain-Driven Design: Tackling Complexity in the Heart of Software","scope":"people","outcome":"card","target":"ddd"}
+{"id":"isbn:9780321127426","name":"Patterns of Enterprise Application Architecture","scope":"people","outcome":"card","target":"poeaa"}
+{"id":"isbn:9780321146533","name":"Test-Driven Development: By Example","scope":"people","outcome":"card","target":"tdd-by-example"}
+{"id":"isbn:9780321200686","name":"Enterprise Integration Patterns","scope":"people","outcome":"card","target":"eip"}
+{"id":"isbn:9780321278654","name":"Extreme Programming Explained","scope":"people","outcome":"card","target":"xp-explained"}
+{"id":"isbn:9780321334879","name":"Effective C++","scope":"people","outcome":"card","target":"effective-cpp"}
+{"id":"isbn:9780321349606","name":"Java Concurrency in Practice","scope":"people","outcome":"card","target":"java-concurrency-in-practice"}
+{"id":"isbn:9780321444424","name":"The Art of Software Security Assessment","scope":"people","outcome":"card","target":"taossa"}
+{"id":"isbn:9780321486813","name":"Compilers: Principles, Techniques, and Tools","scope":"people","outcome":"card","target":"dragon-book"}
+{"id":"isbn:9780321563842","name":"The C++ Programming Language","scope":"people","outcome":"card","target":"tcpppl"}
+{"id":"isbn:9780321637734","name":"Advanced Programming in the UNIX Environment","scope":"people","outcome":"card","target":"apue"}
+{"id":"isbn:9780321934116","name":"Peopleware: Productive Projects and Teams","scope":"people","outcome":"card","target":"peopleware"}
+{"id":"isbn:9780471606956","name":"Pattern-Oriented Software Architecture, Volume 2: Patterns for Concurrent and Networked Objects","scope":"people","outcome":"card","target":"posa-2"}
+{"id":"isbn:9780471958697","name":"Pattern-Oriented Software Architecture, Volume 1: A System of Patterns","scope":"people","outcome":"card","target":"posa-1"}
+{"id":"isbn:9780521582742","name":"Modern Compiler Implementation in ML","scope":"people","outcome":"card","target":"modern-compiler-implementation"}
+{"id":"isbn:9780521780988","name":"Concepts in Programming Languages","scope":"people","outcome":"card","target":"concepts-in-programming-languages"}
+{"id":"isbn:9780596003944","name":"Secure Programming Cookbook for C and C++","scope":"people","outcome":"card","target":"secure-programming-cookbook"}
+{"id":"isbn:9780735619678","name":"Code Complete","scope":"people","outcome":"card","target":"code-complete"}
+{"id":"isbn:9780990582939","name":"Crafting Interpreters","scope":"people","outcome":"card","target":"crafting-interpreters"}
+{"id":"isbn:9781009125802","name":"Real World OCaml","scope":"people","outcome":"card","target":"real-world-ocaml"}
+{"id":"isbn:9781107150300","name":"Practical Foundations for Programming Languages","scope":"people","outcome":"card","target":"pfpl"}
+{"id":"isbn:9781316626221","name":"Programming in Haskell","scope":"people","outcome":"card","target":"programming-in-haskell"}
+{"id":"isbn:9781491903995","name":"Effective Modern C++","scope":"people","outcome":"card","target":"effective-modern-cpp"}
+{"id":"isbn:9781491952023","name":"JavaScript: The Definitive Guide","scope":"people","outcome":"card","target":"js-definitive-guide"}
+{"id":"isbn:9781492056355","name":"Fluent Python","scope":"people","outcome":"card","target":"fluent-python"}
+{"id":"isbn:9781492082798","name":"Software Engineering at Google","scope":"people","outcome":"card","target":"swe-at-google"}
+{"id":"isbn:9781593272203","name":"The Linux Programming Interface","scope":"people","outcome":"card","target":"tlpi"}
+{"id":"isbn:9781718503106","name":"The Rust Programming Language","scope":"people","outcome":"card","target":"trpl"}
+{"id":"isbn:9781732102217","name":"A Philosophy of Software Design","scope":"people","outcome":"card","target":"philosophy-of-software-design"}
+{"id":"isbn:9781937785536","name":"Programming Erlang","scope":"people","outcome":"card","target":"programming-erlang"}
+{"id":"isbn:9781942788331","name":"Accelerate: The Science of Lean Software and DevOps","scope":"people","outcome":"card","target":"accelerate"}
+{"id":"isbn:9781985086593","name":"Operating Systems: Three Easy Pieces","scope":"people","outcome":"card","target":"ostep"}

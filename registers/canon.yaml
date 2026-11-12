@@ -1,0 +1,1111 @@
+# The canon (spec 13.3): the works whose tables of contents and indexes are the checklist of the field. The canon is not a ranking. It is never copied. Each entry has the reason of the editor.
+- id: sicp
+  area: "languages"
+  kind: "book"
+  title: "Structure and Interpretation of Computer Programs"
+  authors: ["Harold Abelson", "Gerald Jay Sussman", "Julie Sussman"]
+  edition: "2nd"
+  year: 1996
+  isbn: "9780262510875"
+  parts: "contents and index"
+  reason: "It teaches abstraction, recursion, higher-order procedures, state and interpreters from first principles."
+- id: htdp
+  area: "languages"
+  kind: "book"
+  title: "How to Design Programs"
+  authors: ["Matthias Felleisen", "Robert Bruce Findler", "Matthew Flatt", "Shriram Krishnamurthi"]
+  edition: "2nd"
+  year: 2018
+  isbn: "9780262534802"
+  parts: "contents and index"
+  reason: "It gives a systematic design recipe for programs, from data definitions to functions."
+- id: ctm
+  area: "languages"
+  kind: "book"
+  title: "Concepts, Techniques, and Models of Computer Programming"
+  authors: ["Peter Van Roy", "Seif Haridi"]
+  edition: "1st"
+  year: 2004
+  isbn: "9780262220699"
+  parts: "contents and index"
+  reason: "It organizes the programming paradigms by the concepts that each one adds to a kernel language."
+- id: tapl
+  area: "languages"
+  kind: "book"
+  title: "Types and Programming Languages"
+  authors: ["Benjamin C. Pierce"]
+  edition: "1st"
+  year: 2002
+  isbn: "9780262162098"
+  parts: "contents and index"
+  reason: "It is the standard text on type systems and their soundness."
+- id: pfpl
+  area: "languages"
+  kind: "book"
+  title: "Practical Foundations for Programming Languages"
+  authors: ["Robert Harper"]
+  edition: "2nd"
+  year: 2016
+  isbn: "9781107150300"
+  parts: "contents and index"
+  reason: "It defines the features of programming languages with the methods of type theory."
+- id: concepts-in-programming-languages
+  area: "languages"
+  kind: "book"
+  title: "Concepts in Programming Languages"
+  authors: ["John C. Mitchell"]
+  edition: "1st"
+  year: 2002
+  isbn: "9780521780988"
+  parts: "contents and index"
+  reason: "It compares the main language families by their concepts."
+- id: programming-language-pragmatics
+  area: "languages"
+  kind: "book"
+  title: "Programming Language Pragmatics"
+  authors: ["Michael L. Scott"]
+  edition: "4th"
+  year: 2015
+  isbn: "9780124104099"
+  parts: "contents and index"
+  reason: "It covers the design and the implementation of programming languages together."
+- id: eopl
+  area: "languages"
+  kind: "book"
+  title: "Essentials of Programming Languages"
+  authors: ["Daniel P. Friedman", "Mitchell Wand"]
+  edition: "3rd"
+  year: 2008
+  isbn: "9780262062794"
+  parts: "contents and index"
+  reason: "It explains the features of languages with interpreters."
+- id: crafting-interpreters
+  area: "languages"
+  kind: "book"
+  title: "Crafting Interpreters"
+  authors: ["Robert Nystrom"]
+  edition: "1st"
+  year: 2021
+  isbn: "9780990582939"
+  parts: "contents and index"
+  reason: "It builds a tree-walking interpreter and a bytecode virtual machine for one language."
+- id: k-and-r
+  area: "language books"
+  kind: "book"
+  title: "The C Programming Language"
+  authors: ["Brian W. Kernighan", "Dennis M. Ritchie"]
+  edition: "2nd"
+  year: 1988
+  isbn: "9780131103627"
+  parts: "contents and index"
+  reason: "It is the reference book of C by its designers."
+- id: tcpppl
+  area: "language books"
+  kind: "book"
+  title: "The C++ Programming Language"
+  authors: ["Bjarne Stroustrup"]
+  edition: "4th"
+  year: 2013
+  isbn: "9780321563842"
+  parts: "contents and index"
+  reason: "It is the reference book of C++ by its designer."
+- id: effective-cpp
+  area: "language books"
+  kind: "book"
+  title: "Effective C++"
+  authors: ["Scott Meyers"]
+  edition: "3rd"
+  year: 2005
+  isbn: "9780321334879"
+  parts: "contents and index"
+  reason: "It gives the main rules for the correct use of C++."
+- id: effective-modern-cpp
+  area: "language books"
+  kind: "book"
+  title: "Effective Modern C++"
+  authors: ["Scott Meyers"]
+  edition: "1st"
+  year: 2014
+  isbn: "9781491903995"
+  parts: "contents and index"
+  reason: "It gives the rules for the features of C++11 and C++14."
+- id: effective-java
+  area: "language books"
+  kind: "book"
+  title: "Effective Java"
+  authors: ["Joshua Bloch"]
+  edition: "3rd"
+  year: 2018
+  isbn: "9780134685991"
+  parts: "contents and index"
+  reason: "It gives the main rules for the correct use of Java."
+- id: trpl
+  area: "language books"
+  kind: "book"
+  title: "The Rust Programming Language"
+  authors: ["Steve Klabnik", "Carol Nichols"]
+  edition: "2nd"
+  year: 2023
+  isbn: "9781718503106"
+  parts: "contents and index"
+  reason: "It is the official book of Rust."
+- id: gopl
+  area: "language books"
+  kind: "book"
+  title: "The Go Programming Language"
+  authors: ["Alan A. A. Donovan", "Brian W. Kernighan"]
+  edition: "1st"
+  year: 2015
+  isbn: "9780134190440"
+  parts: "contents and index"
+  reason: "It is the reference book of Go."
+- id: fluent-python
+  area: "language books"
+  kind: "book"
+  title: "Fluent Python"
+  authors: ["Luciano Ramalho"]
+  edition: "2nd"
+  year: 2022
+  isbn: "9781492056355"
+  parts: "contents and index"
+  reason: "It explains the data model and the idioms of Python."
+- id: js-definitive-guide
+  area: "language books"
+  kind: "book"
+  title: "JavaScript: The Definitive Guide"
+  authors: ["David Flanagan"]
+  edition: "7th"
+  year: 2020
+  isbn: "9781491952023"
+  parts: "contents and index"
+  reason: "It is a complete reference of JavaScript."
+- id: programming-in-haskell
+  area: "language books"
+  kind: "book"
+  title: "Programming in Haskell"
+  authors: ["Graham Hutton"]
+  edition: "2nd"
+  year: 2016
+  isbn: "9781316626221"
+  parts: "contents and index"
+  reason: "It teaches Haskell and functional programming."
+- id: real-world-ocaml
+  area: "language books"
+  kind: "book"
+  title: "Real World OCaml"
+  authors: ["Anil Madhavapeddy", "Yaron Minsky"]
+  edition: "2nd"
+  year: 2022
+  isbn: "9781009125802"
+  parts: "contents and index"
+  reason: "It teaches OCaml for production use."
+- id: programming-erlang
+  area: "language books"
+  kind: "book"
+  title: "Programming Erlang"
+  authors: ["Joe Armstrong"]
+  edition: "2nd"
+  year: 2013
+  isbn: "9781937785536"
+  parts: "contents and index"
+  reason: "It is the book of Erlang by its designer."
+- id: design-patterns
+  area: "design and construction"
+  kind: "book"
+  title: "Design Patterns: Elements of Reusable Object-Oriented Software"
+  authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
+  edition: "1st"
+  year: 1994
+  isbn: "9780201633610"
+  parts: "contents and index"
+  reason: "It names the 23 object-oriented design patterns of the Gang of Four."
+- id: posa-1
+  area: "design and construction"
+  kind: "book"
+  title: "Pattern-Oriented Software Architecture, Volume 1: A System of Patterns"
+  authors: ["Frank Buschmann", "Regine Meunier", "Hans Rohnert", "Peter Sommerlad", "Michael Stal"]
+  edition: "1st"
+  year: 1996
+  isbn: "9780471958697"
+  parts: "contents and index"
+  reason: "It names the architectural patterns, such as layers, pipes and filters, and broker."
+- id: posa-2
+  area: "design and construction"
+  kind: "book"
+  title: "Pattern-Oriented Software Architecture, Volume 2: Patterns for Concurrent and Networked Objects"
+  authors: ["Douglas C. Schmidt", "Michael Stal", "Hans Rohnert", "Frank Buschmann"]
+  edition: "1st"
+  year: 2000
+  isbn: "9780471606956"
+  parts: "contents and index"
+  reason: "It names the patterns of concurrent and networked software, such as reactor and active object."
+- id: poeaa
+  area: "design and construction"
+  kind: "book"
+  title: "Patterns of Enterprise Application Architecture"
+  authors: ["Martin Fowler"]
+  edition: "1st"
+  year: 2002
+  isbn: "9780321127426"
+  parts: "contents and index"
+  reason: "It names the patterns of business applications, such as repository and unit of work."
+- id: eip
+  area: "design and construction"
+  kind: "book"
+  title: "Enterprise Integration Patterns"
+  authors: ["Gregor Hohpe", "Bobby Woolf"]
+  edition: "1st"
+  year: 2003
+  isbn: "9780321200686"
+  parts: "contents and index"
+  reason: "It names the patterns of messaging between applications."
+- id: refactoring
+  area: "design and construction"
+  kind: "book"
+  title: "Refactoring: Improving the Design of Existing Code"
+  authors: ["Martin Fowler"]
+  edition: "2nd"
+  year: 2018
+  isbn: "9780134757599"
+  parts: "contents and index"
+  reason: "It is the catalog of refactorings and code smells."
+- id: code-complete
+  area: "design and construction"
+  kind: "book"
+  title: "Code Complete"
+  authors: ["Steve McConnell"]
+  edition: "2nd"
+  year: 2004
+  isbn: "9780735619678"
+  parts: "contents and index"
+  reason: "It covers the practice of software construction."
+- id: pragmatic-programmer
+  area: "design and construction"
+  kind: "book"
+  title: "The Pragmatic Programmer"
+  authors: ["David Thomas", "Andrew Hunt"]
+  edition: "20th anniversary"
+  year: 2019
+  isbn: "9780135957059"
+  parts: "contents and index"
+  reason: "It gives the main practices of a professional programmer."
+- id: philosophy-of-software-design
+  area: "design and construction"
+  kind: "book"
+  title: "A Philosophy of Software Design"
+  authors: ["John Ousterhout"]
+  edition: "2nd"
+  year: 2021
+  isbn: "9781732102217"
+  parts: "contents and index"
+  reason: "It explains complexity and deep modules."
+- id: legacy-code
+  area: "design and construction"
+  kind: "book"
+  title: "Working Effectively with Legacy Code"
+  authors: ["Michael C. Feathers"]
+  edition: "1st"
+  year: 2004
+  isbn: "9780131177055"
+  parts: "contents and index"
+  reason: "It gives the techniques to put old code under test and change it safely."
+- id: ddd
+  area: "design and construction"
+  kind: "book"
+  title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+  authors: ["Eric Evans"]
+  edition: "1st"
+  year: 2003
+  isbn: "9780321125217"
+  parts: "contents and index"
+  reason: "It names the patterns of domain models, such as aggregate and bounded context."
+- id: mythical-man-month
+  area: "process and practice"
+  kind: "book"
+  title: "The Mythical Man-Month"
+  authors: ["Frederick P. Brooks Jr."]
+  edition: "anniversary"
+  year: 1995
+  isbn: "9780201835953"
+  parts: "contents and index"
+  reason: "It is the classic text on the management of software projects."
+- id: peopleware
+  area: "process and practice"
+  kind: "book"
+  title: "Peopleware: Productive Projects and Teams"
+  authors: ["Tom DeMarco", "Timothy Lister"]
+  edition: "3rd"
+  year: 2013
+  isbn: "9780321934116"
+  parts: "contents and index"
+  reason: "It is about the human side of software teams."
+- id: accelerate
+  area: "process and practice"
+  kind: "book"
+  title: "Accelerate: The Science of Lean Software and DevOps"
+  authors: ["Nicole Forsgren", "Jez Humble", "Gene Kim"]
+  edition: "1st"
+  year: 2018
+  isbn: "9781942788331"
+  parts: "contents and index"
+  reason: "It measures the practices of software delivery with survey research."
+- id: swe-at-google
+  area: "process and practice"
+  kind: "book"
+  title: "Software Engineering at Google"
+  authors: ["Titus Winters", "Tom Manshreck", "Hyrum Wright"]
+  edition: "1st"
+  year: 2020
+  isbn: "9781492082798"
+  parts: "contents and index"
+  reason: "It describes the practices of software engineering at a large scale."
+- id: xp-explained
+  area: "process and practice"
+  kind: "book"
+  title: "Extreme Programming Explained"
+  authors: ["Kent Beck", "Cynthia Andres"]
+  edition: "2nd"
+  year: 2004
+  isbn: "9780321278654"
+  parts: "contents and index"
+  reason: "It defines the values and the practices of Extreme Programming."
+- id: tdd-by-example
+  area: "testing and debugging"
+  kind: "book"
+  title: "Test-Driven Development: By Example"
+  authors: ["Kent Beck"]
+  edition: "1st"
+  year: 2002
+  isbn: "9780321146533"
+  parts: "contents and index"
+  reason: "It defines test-driven development."
+- id: xunit-test-patterns
+  area: "testing and debugging"
+  kind: "book"
+  title: "xUnit Test Patterns: Refactoring Test Code"
+  authors: ["Gerard Meszaros"]
+  edition: "1st"
+  year: 2007
+  isbn: "9780131495050"
+  parts: "contents and index"
+  reason: "It names the patterns and the smells of automated tests."
+- id: why-programs-fail
+  area: "testing and debugging"
+  kind: "book"
+  title: "Why Programs Fail: A Guide to Systematic Debugging"
+  authors: ["Andreas Zeller"]
+  edition: "2nd"
+  year: 2009
+  isbn: "9780123745156"
+  parts: "contents and index"
+  reason: "It makes debugging a systematic method."
+- id: csapp
+  area: "systems"
+  kind: "book"
+  title: "Computer Systems: A Programmer's Perspective"
+  authors: ["Randal E. Bryant", "David R. O'Hallaron"]
+  edition: "3rd"
+  year: 2015
+  isbn: "9780134092669"
+  parts: "contents and index"
+  reason: "It explains the machine level of programs for programmers."
+- id: ostep
+  area: "systems"
+  kind: "book"
+  title: "Operating Systems: Three Easy Pieces"
+  authors: ["Remzi H. Arpaci-Dusseau", "Andrea C. Arpaci-Dusseau"]
+  edition: "1st"
+  year: 2018
+  isbn: "9781985086593"
+  parts: "contents and index"
+  reason: "It explains virtualization, concurrency and persistence in operating systems."
+- id: tlpi
+  area: "systems"
+  kind: "book"
+  title: "The Linux Programming Interface"
+  authors: ["Michael Kerrisk"]
+  edition: "1st"
+  year: 2010
+  isbn: "9781593272203"
+  parts: "contents and index"
+  reason: "It is the reference of the Linux and UNIX system programming interface."
+- id: apue
+  area: "systems"
+  kind: "book"
+  title: "Advanced Programming in the UNIX Environment"
+  authors: ["W. Richard Stevens", "Stephen A. Rago"]
+  edition: "3rd"
+  year: 2013
+  isbn: "9780321637734"
+  parts: "contents and index"
+  reason: "It is the classic reference of UNIX system programming."
+- id: art-of-multiprocessor-programming
+  area: "concurrency and performance"
+  kind: "book"
+  title: "The Art of Multiprocessor Programming"
+  authors: ["Maurice Herlihy", "Nir Shavit", "Victor Luchangco", "Michael Spear"]
+  edition: "2nd"
+  year: 2020
+  isbn: "9780124159501"
+  parts: "contents and index"
+  reason: "It covers the theory and the practice of concurrent data structures."
+- id: java-concurrency-in-practice
+  area: "concurrency and performance"
+  kind: "book"
+  title: "Java Concurrency in Practice"
+  authors: ["Brian Goetz", "Tim Peierls", "Joshua Bloch", "Joseph Bowbeer", "David Holmes", "Doug Lea"]
+  edition: "1st"
+  year: 2006
+  isbn: "9780321349606"
+  parts: "contents and index"
+  reason: "It is the reference of concurrent programming in Java."
+- id: systems-performance
+  area: "concurrency and performance"
+  kind: "book"
+  title: "Systems Performance"
+  authors: ["Brendan Gregg"]
+  edition: "2nd"
+  year: 2020
+  isbn: "9780136820154"
+  parts: "contents and index"
+  reason: "It gives the methods of performance analysis of systems."
+- id: taossa
+  area: "security"
+  kind: "book"
+  title: "The Art of Software Security Assessment"
+  authors: ["Mark Dowd", "John McDonald", "Justin Schuh"]
+  edition: "1st"
+  year: 2006
+  isbn: "9780321444424"
+  parts: "contents and index"
+  reason: "It explains how to find vulnerabilities in code."
+- id: secure-programming-cookbook
+  area: "security"
+  kind: "book"
+  title: "Secure Programming Cookbook for C and C++"
+  authors: ["John Viega", "Matt Messier"]
+  edition: "1st"
+  year: 2003
+  isbn: "9780596003944"
+  parts: "contents and index"
+  reason: "It gives recipes for secure code in C and C++."
+- id: dragon-book
+  area: "compilers"
+  kind: "book"
+  title: "Compilers: Principles, Techniques, and Tools"
+  authors: ["Alfred V. Aho", "Monica S. Lam", "Ravi Sethi", "Jeffrey D. Ullman"]
+  edition: "2nd"
+  year: 2006
+  isbn: "9780321486813"
+  parts: "contents and index"
+  reason: "It is the classic text on compilers."
+- id: engineering-a-compiler
+  area: "compilers"
+  kind: "book"
+  title: "Engineering a Compiler"
+  authors: ["Keith D. Cooper", "Linda Torczon"]
+  edition: "3rd"
+  year: 2022
+  isbn: "9780128154120"
+  parts: "contents and index"
+  reason: "It covers the optimization and the code generation of modern compilers."
+- id: modern-compiler-implementation
+  area: "compilers"
+  kind: "book"
+  title: "Modern Compiler Implementation in ML"
+  authors: ["Andrew W. Appel"]
+  edition: "1st"
+  year: 1998
+  isbn: "9780521582742"
+  parts: "contents and index"
+  reason: "It builds a complete compiler for a small language."
+- id: hopl-the-history-of-fortran-i-ii-and-iii
+  area: "history"
+  kind: "paper"
+  title: "The history of Fortran I, II, and III"
+  authors: ["John Backus"]
+  year: 1978
+  doi: "10.1145/800025.1198345"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-the-american-side-of-the-development-of-algol
+  area: "history"
+  kind: "paper"
+  title: "The American side of the development of ALGOL"
+  authors: ["Alan J. Perlis"]
+  year: 1978
+  doi: "10.1145/800025.1198352"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-the-european-side-of-the-last-phase-of-the-development-of-algol-60
+  area: "history"
+  kind: "paper"
+  title: "The European side of the last phase of the development of ALGOL 60"
+  authors: ["Peter Naur"]
+  year: 1978
+  doi: "10.1145/800025.1198353"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-history-of-lisp
+  area: "history"
+  kind: "paper"
+  title: "History of LISP"
+  authors: ["John McCarthy"]
+  year: 1978
+  doi: "10.1145/800025.1198360"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-the-early-history-of-cobol
+  area: "history"
+  kind: "paper"
+  title: "The early history of COBOL"
+  authors: ["Jean E. Sammet"]
+  year: 1978
+  doi: "10.1145/800025.1198367"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-origins-of-the-apt-language-for-automatically-programmed-tools
+  area: "history"
+  kind: "paper"
+  title: "Origins of the APT language for automatically programmed tools"
+  authors: ["Douglas T. Ross"]
+  year: 1978
+  doi: "10.1145/800025.1198374"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-the-development-of-jovial
+  area: "history"
+  kind: "paper"
+  title: "The development of JOVIAL"
+  authors: ["Jules I. Schwartz"]
+  year: 1978
+  doi: "10.1145/800025.1198380"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-the-development-of-the-general-purpose-simulation-system-gpss
+  area: "history"
+  kind: "paper"
+  title: "The development of the General Purpose Simulation System (GPSS)"
+  authors: ["Geoffrey Gordon"]
+  year: 1978
+  doi: "10.1145/800025.1198386"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-the-development-of-the-simula-languages
+  area: "history"
+  kind: "paper"
+  title: "The development of the SIMULA languages"
+  authors: ["Kristen Nygaard", "Ole-Johan Dahl"]
+  year: 1978
+  doi: "10.1145/800025.1198392"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-joss
+  area: "history"
+  kind: "paper"
+  title: "JOSS: JOHNNIAC open-shop system"
+  authors: ["Charles L. Baker"]
+  year: 1978
+  doi: "10.1145/800025.1198400"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-basic
+  area: "history"
+  kind: "paper"
+  title: "BASIC"
+  authors: ["Thomas E. Kurtz"]
+  year: 1978
+  doi: "10.1145/800025.1198404"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-the-early-history-and-characteristics-of-pl-i
+  area: "history"
+  kind: "paper"
+  title: "The early history and characteristics of PL/I"
+  authors: ["George Radin"]
+  year: 1978
+  doi: "10.1145/800025.1198410"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-a-history-of-the-snobol-programming-languages
+  area: "history"
+  kind: "paper"
+  title: "A history of the SNOBOL programming languages"
+  authors: ["Ralph E. Griswold"]
+  year: 1978
+  doi: "10.1145/800025.1198417"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-the-evolution-of-apl
+  area: "history"
+  kind: "paper"
+  title: "The evolution of APL"
+  authors: ["Adin D. Falkoff", "Kenneth E. Iverson"]
+  year: 1978
+  doi: "10.1145/800025.1198423"
+  venue: "HOPL I"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL I."
+- id: hopl-monitors-and-concurrent-pascal
+  area: "history"
+  kind: "paper"
+  title: "Monitors and concurrent Pascal: a personal history"
+  authors: ["Per Brinch Hansen"]
+  year: 1993
+  doi: "10.1145/154766.155361"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-the-birth-of-prolog
+  area: "history"
+  kind: "paper"
+  title: "The birth of Prolog"
+  authors: ["Alain Colmerauer", "Philippe Roussel"]
+  year: 1993
+  doi: "10.1145/154766.155362"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-history-of-the-icon-programming-language
+  area: "history"
+  kind: "paper"
+  title: "History of the Icon programming language"
+  authors: ["Ralph E. Griswold", "Madge T. Griswold"]
+  year: 1993
+  doi: "10.1145/154766.155363"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-the-early-history-of-smalltalk
+  area: "history"
+  kind: "paper"
+  title: "The early history of Smalltalk"
+  authors: ["Alan C. Kay"]
+  year: 1993
+  doi: "10.1145/154766.155364"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-a-history-of-algol-68
+  area: "history"
+  kind: "paper"
+  title: "A history of ALGOL 68"
+  authors: ["C. H. Lindsey"]
+  year: 1993
+  doi: "10.1145/154766.155365"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-a-history-of-clu
+  area: "history"
+  kind: "paper"
+  title: "A history of CLU"
+  authors: ["Barbara Liskov"]
+  year: 1993
+  doi: "10.1145/154766.155367"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-a-history-of-discrete-event-simulation-programming-languages
+  area: "history"
+  kind: "paper"
+  title: "A history of discrete event simulation programming languages"
+  authors: ["Richard E. Nance"]
+  year: 1993
+  doi: "10.1145/154766.155368"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-the-evolution-of-forth
+  area: "history"
+  kind: "paper"
+  title: "The evolution of Forth"
+  authors: ["Elizabeth D. Rather", "Donald R. Colburn", "Charles H. Moore"]
+  year: 1993
+  doi: "10.1145/154766.155369"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-the-beginning-and-development-of-formac-formula-manipulation-compiler
+  area: "history"
+  kind: "paper"
+  title: "The beginning and development of FORMAC (FORmula MAnipulation Compiler)"
+  authors: ["Jean E. Sammet"]
+  year: 1993
+  doi: "10.1145/154766.155372"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-the-evolution-of-lisp
+  area: "history"
+  kind: "paper"
+  title: "The evolution of Lisp"
+  authors: ["Guy L. Steele", "Richard P. Gabriel"]
+  year: 1993
+  doi: "10.1145/154766.155373"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-a-history-of-cpp
+  area: "history"
+  kind: "paper"
+  title: "A history of C++: 1979–1991"
+  authors: ["Bjarne Stroustrup"]
+  year: 1993
+  doi: "10.1145/154766.155375"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-ada-the-project
+  area: "history"
+  kind: "paper"
+  title: "Ada—the project: the DoD high order language working group"
+  authors: ["William A. Whitaker"]
+  year: 1993
+  doi: "10.1145/154766.155376"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-recollections-about-the-development-of-pascal
+  area: "history"
+  kind: "paper"
+  title: "Recollections about the development of Pascal"
+  authors: ["N. Wirth"]
+  year: 1993
+  doi: "10.1145/154766.155378"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-the-development-of-the-c-language
+  area: "history"
+  kind: "paper"
+  title: "The development of the C language"
+  authors: ["Dennis M. Ritchie"]
+  year: 1993
+  doi: "10.1145/154766.155580"
+  venue: "HOPL II"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL II."
+- id: hopl-applescript
+  area: "history"
+  kind: "paper"
+  title: "AppleScript"
+  authors: ["William R. Cook"]
+  year: 2007
+  doi: "10.1145/1238844.1238845"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-the-evolution-of-lua
+  area: "history"
+  kind: "paper"
+  title: "The evolution of Lua"
+  authors: ["Roberto Ierusalimschy", "Luiz Henrique de Figueiredo", "Waldemar Celes"]
+  year: 2007
+  doi: "10.1145/1238844.1238846"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-modula-2-and-oberon
+  area: "history"
+  kind: "paper"
+  title: "Modula-2 and Oberon"
+  authors: ["Niklaus Wirth"]
+  year: 2007
+  doi: "10.1145/1238844.1238847"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-evolving-a-language-in-and-for-the-real-world
+  area: "history"
+  kind: "paper"
+  title: "Evolving a language in and for the real world: C++ 1991-2006"
+  authors: ["Bjarne Stroustrup"]
+  year: 2007
+  doi: "10.1145/1238844.1238848"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-statecharts-in-the-making
+  area: "history"
+  kind: "paper"
+  title: "Statecharts in the making: a personal account"
+  authors: ["David Harel"]
+  year: 2007
+  doi: "10.1145/1238844.1238849"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-a-history-of-erlang
+  area: "history"
+  kind: "paper"
+  title: "A history of Erlang"
+  authors: ["Joe Armstrong"]
+  year: 2007
+  doi: "10.1145/1238844.1238850"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-the-rise-and-fall-of-high-performance-fortran
+  area: "history"
+  kind: "paper"
+  title: "The rise and fall of High Performance Fortran: an historical object lesson"
+  authors: ["Ken Kennedy", "Charles Koelbel", "Hans Zima"]
+  year: 2007
+  doi: "10.1145/1238844.1238851"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-the-design-and-development-of-zpl
+  area: "history"
+  kind: "paper"
+  title: "The design and development of ZPL"
+  authors: ["Lawrence Snyder"]
+  year: 2007
+  doi: "10.1145/1238844.1238852"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-self
+  area: "history"
+  kind: "paper"
+  title: "Self"
+  authors: ["David Ungar", "Randall B. Smith"]
+  year: 2007
+  doi: "10.1145/1238844.1238853"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-the-when-why-and-why-not-of-the-beta-programming-language
+  area: "history"
+  kind: "paper"
+  title: "The when, why and why not of the BETA programming language"
+  authors: ["Bent Bruun Kristensen", "Ole Lehrmann Madsen", "Birger Møller-Pedersen"]
+  year: 2007
+  doi: "10.1145/1238844.1238854"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-the-development-of-the-emerald-programming-language
+  area: "history"
+  kind: "paper"
+  title: "The development of the Emerald programming language"
+  authors: ["Andrew P. Black", "Norman C. Hutchinson", "Eric Jul", "Henry M. Levy"]
+  year: 2007
+  doi: "10.1145/1238844.1238855"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-a-history-of-haskell
+  area: "history"
+  kind: "paper"
+  title: "A history of Haskell: being lazy with class"
+  authors: ["Paul Hudak", "John Hughes", "Simon Peyton Jones", "Philip Wadler"]
+  year: 2007
+  doi: "10.1145/1238844.1238856"
+  venue: "HOPL III"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL III."
+- id: hopl-apl-since-1978
+  area: "history"
+  kind: "paper"
+  title: "APL since 1978"
+  authors: ["Roger K. W. Hui", "Morten J. Kromberg"]
+  year: 2020
+  doi: "10.1145/3386319"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-thriving-in-a-crowded-and-changing-world-cpp-2006-2020
+  area: "history"
+  kind: "paper"
+  title: "Thriving in a crowded and changing world: C++ 2006–2020"
+  authors: ["Bjarne Stroustrup"]
+  year: 2020
+  doi: "10.1145/3386320"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-a-history-of-clojure
+  area: "history"
+  kind: "paper"
+  title: "A history of Clojure"
+  authors: ["Rich Hickey"]
+  year: 2020
+  doi: "10.1145/3386321"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-history-of-coarrays-and-spmd-parallelism-in-fortran
+  area: "history"
+  kind: "paper"
+  title: "History of coarrays and SPMD parallelism in Fortran"
+  authors: ["John Reid", "Bill Long", "Jon Steidel"]
+  year: 2020
+  doi: "10.1145/3386322"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-origins-of-the-d-programming-language
+  area: "history"
+  kind: "paper"
+  title: "Origins of the D programming language"
+  authors: ["Walter Bright", "Andrei Alexandrescu", "Michael Parker"]
+  year: 2020
+  doi: "10.1145/3386323"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-evolution-of-emacs-lisp
+  area: "history"
+  kind: "paper"
+  title: "Evolution of Emacs Lisp"
+  authors: ["Stefan Monnier", "Michael Sperber"]
+  year: 2020
+  doi: "10.1145/3386324"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-the-early-history-of-fsharp
+  area: "history"
+  kind: "paper"
+  title: "The early history of F#"
+  authors: ["Don Syme"]
+  year: 2020
+  doi: "10.1145/3386325"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-a-history-of-the-groovy-programming-language
+  area: "history"
+  kind: "paper"
+  title: "A history of the Groovy programming language"
+  authors: ["Paul King"]
+  year: 2020
+  doi: "10.1145/3386326"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-javascript-the-first-20-years
+  area: "history"
+  kind: "paper"
+  title: "JavaScript: the first 20 years"
+  authors: ["Allen Wirfs-Brock", "Brendan Eich"]
+  year: 2020
+  doi: "10.1145/3386327"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-labview
+  area: "history"
+  kind: "paper"
+  title: "LabVIEW"
+  authors: ["Jeffrey Kodosky"]
+  year: 2020
+  doi: "10.1145/3386328"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-history-of-logo
+  area: "history"
+  kind: "paper"
+  title: "History of Logo"
+  authors: ["Cynthia Solomon", "Brian Harvey", "Ken Kahn", "Henry Lieberman", "Mark L. Miller", "Margaret Minsky", "Artemis Papert", "Brian Silverman"]
+  year: 2020
+  doi: "10.1145/3386329"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-hygienic-macro-technology
+  area: "history"
+  kind: "paper"
+  title: "Hygienic macro technology"
+  authors: ["William D. Clinger", "Mitchell Wand"]
+  year: 2020
+  doi: "10.1145/3386330"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-a-history-of-matlab
+  area: "history"
+  kind: "paper"
+  title: "A history of MATLAB"
+  authors: ["Cleve Moler", "Jack Little"]
+  year: 2020
+  doi: "10.1145/3386331"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-the-origins-of-objective-c-at-ppi-stepstone-and-its-evolution-at-next
+  area: "history"
+  kind: "paper"
+  title: "The origins of Objective-C at PPI/Stepstone and its evolution at NeXT"
+  authors: ["Brad J. Cox", "Steve Naroff", "Hansen Hsu"]
+  year: 2020
+  doi: "10.1145/3386332"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-a-history-of-the-oz-multiparadigm-language
+  area: "history"
+  kind: "paper"
+  title: "A history of the Oz multiparadigm language"
+  authors: ["Peter Van Roy", "Seif Haridi", "Christian Schulte", "Gert Smolka"]
+  year: 2020
+  doi: "10.1145/3386333"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-s-r-and-data-science
+  area: "history"
+  kind: "paper"
+  title: "S, R, and data science"
+  authors: ["John M. Chambers"]
+  year: 2020
+  doi: "10.1145/3386334"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-the-evolution-of-smalltalk-from-smalltalk-72-through-squeak
+  area: "history"
+  kind: "paper"
+  title: "The evolution of Smalltalk: from Smalltalk-72 through Squeak"
+  authors: ["Daniel Ingalls"]
+  year: 2020
+  doi: "10.1145/3386335"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-the-history-of-standard-ml
+  area: "history"
+  kind: "paper"
+  title: "The history of Standard ML"
+  authors: ["David MacQueen", "Robert Harper", "John Reppy"]
+  year: 2020
+  doi: "10.1145/3386336"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
+- id: hopl-verilog-hdl-and-its-ancestors-and-descendants
+  area: "history"
+  kind: "paper"
+  title: "Verilog HDL and its ancestors and descendants"
+  authors: ["Peter Flake", "Phil Moorby", "Steve Golson", "Arturo Salz", "Simon Davidmann"]
+  year: 2020
+  doi: "10.1145/3386337"
+  venue: "HOPL IV"
+  parts: "the full paper"
+  reason: "It is a first-hand history of a programming language, written for HOPL IV."
