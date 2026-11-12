@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: Branded types, literal types and template literal types refine a type at compile time, but no example file exists.
+kotlin:
+  status: idiom
+  reason: Value classes with an init block check a predicate when the value is made, but no example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash values are strings with no types to refine.
+powershell:
+  status: native
+  reason: Validation attributes such as ValidateRange constrain a variable and are checked at each assignment, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: CREATE DOMAIN defines a type with CHECK constraints, and CHECK constraints refine columns, but no example file exists.
+regex:
+  status: n/a
+  reason: Regular expressions have no types.
+html:
+  status: n/a
+  reason: HTML has no types; form attributes such as min, max and pattern are checked by the browser.
+css:
+  status: n/a
+  reason: CSS has no user-defined types.
