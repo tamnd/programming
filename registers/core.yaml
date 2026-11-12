@@ -14798,13 +14798,13 @@ items:
     group: "fowler-catalog"
     name: "Change Reference to Value"
     target: "change-reference-to-value"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Change Value to Reference"
     target: "change-value-to-reference"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14918,7 +14918,7 @@ items:
     group: "fowler-catalog"
     name: "Introduce Special Case"
     target: "introduce-special-case"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15038,7 +15038,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Conditional with Polymorphism"
     target: "replace-conditional-with-polymorphism"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15050,7 +15050,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Control Flag with Break"
     target: "replace-control-flag-with-break"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"

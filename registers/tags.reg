@@ -345,3 +345,8 @@ AZD81Y check-whether-a-string-starts-with-a-prefix
 51ENB7 compare-strings
 5S107Z replace-a-substring
 APAQPG search-for-a-substring
+PJWFP1 change-reference-to-value
+R1CFJN change-value-to-reference
+YSP8Q9 introduce-special-case
+WPBMPA replace-conditional-with-polymorphism
+AA2DYV replace-control-flag-with-break
