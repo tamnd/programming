@@ -15008,7 +15008,7 @@ items:
     group: "fowler-catalog"
     name: "Remove Setting Method"
     target: "remove-setting-method"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15032,7 +15032,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Command with Function"
     target: "replace-command-with-function"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15044,7 +15044,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Constructor with Factory Function"
     target: "replace-constructor-with-factory-function"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15062,19 +15062,19 @@ items:
     group: "fowler-catalog"
     name: "Replace Error Code with Exception"
     target: "replace-error-code-with-exception"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Replace Exception with Precheck"
     target: "replace-exception-with-precheck"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Replace Function with Command"
     target: "replace-function-with-command"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
