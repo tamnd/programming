@@ -1,0 +1,3 @@
+{"tag":"NEW-Atom","kind":"api","owner":"elixir","path":"Atom","entity":"module","module":"Atom","doc":{"url":"https://hexdocs.pm/elixir/Atom.html"},"source":{"url":"https://hexdocs.pm/elixir/","licence":"Apache-2.0"}}
+{"tag":"NEW-Atom.to_charlist/1","kind":"api","owner":"elixir","path":"Atom.to_charlist/1","entity":"function","module":"Atom","doc":{"url":"https://hexdocs.pm/elixir/Atom.html#to_charlist/1"},"source":{"url":"https://hexdocs.pm/elixir/","licence":"Apache-2.0"}}
+{"tag":"NEW-Atom.to_string/1","kind":"api","owner":"elixir","path":"Atom.to_string/1","entity":"function","module":"Atom","doc":{"url":"https://hexdocs.pm/elixir/Atom.html#to_string/1"},"source":{"url":"https://hexdocs.pm/elixir/","licence":"Apache-2.0"}}
