@@ -14948,13 +14948,13 @@ items:
     group: "fowler-catalog"
     name: "Parameterize Function"
     target: "parameterize-function"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Preserve Whole Object"
     target: "preserve-whole-object"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14996,7 +14996,7 @@ items:
     group: "fowler-catalog"
     name: "Remove Flag Argument"
     target: "remove-flag-argument"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15104,7 +15104,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Parameter with Query"
     target: "replace-parameter-with-query"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15116,7 +15116,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Query with Parameter"
     target: "replace-query-with-parameter"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15146,13 +15146,13 @@ items:
     group: "fowler-catalog"
     name: "Return Modified Value"
     target: "return-modified-value"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Separate Query from Modifier"
     target: "separate-query-from-modifier"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
