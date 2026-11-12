@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript adds static types to JavaScript values, with primitive types, object types, unions and generics. Types are structural, and the compiler erases them, so they do not exist when the program runs. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has classes, data classes, enum classes and value classes, and each type is either nullable, such as String?, or not. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Every Bash value is a string. declare -i makes assignments to a variable use arithmetic, and declare -a and declare -A make indexed and associative arrays. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell values are .NET objects with .NET types, GetType() returns the type, and a type literal such as [int] casts a value or constrains a variable. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: Each column of a table has a type, such as INTEGER, VARCHAR(n), DECIMAL(p, s) or DATE, and CAST converts a value to another type. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text, and its patterns have no types of values.
+html:
+  status: idiom
+  reason: HTML has no types of values, but the type attribute of an input element, such as number, date or email, selects the kind of data that a form field accepts.
+css:
+  status: idiom
+  reason: Each CSS property accepts values of given types, such as length, percentage and color, and the specification names these types.
