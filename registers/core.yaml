@@ -91,7 +91,7 @@ items:
     group: "foundations"
     name: "Integer representation"
     target: "integer-representation"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 SE-Construction (\"Rewrite a simple program to remove common vulnerabilities, ...\"). It is in 4 of the 7 language references: Go spec (\"Integer literals\"); Java Language Specification (\"Integer Literals\"); C++ working draft (\"Integer literals\"); and 1 more. It is in the canon books: SICP index (\"division of integers\")."
   - part: concepts
     group: "foundations"
