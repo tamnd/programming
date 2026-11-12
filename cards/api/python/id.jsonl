@@ -1,0 +1,2 @@
+{"tag":"NEW-id","kind":"api","owner":"python","path":"id","entity":"function","module":"builtins","doc":{"url":"https://docs.python.org/3/builtins/functions.html#id"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
+{"tag":"NEW-idlelib","kind":"api","owner":"python","path":"idlelib","entity":"module","module":"idlelib","doc":{"url":"https://docs.python.org/3/library/idle.html#module-idlelib"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
