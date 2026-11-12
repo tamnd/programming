@@ -1,0 +1,1001 @@
+{"id":".QL","name":".QL","scope":"languages","outcome":"card","target":"dot-ql"}
+{"id":"0815","name":"0815","scope":"languages","outcome":"card","target":"0815"}
+{"id":"11l","name":"11l","scope":"languages","outcome":"card","target":"11l"}
+{"id":"1C","name":"1C","scope":"languages","outcome":"card","target":"1c"}
+{"id":"360-Assembly","name":"360 Assembly","scope":"languages","outcome":"card","target":"360-assembly"}
+{"id":"4D","name":"4D","scope":"languages","outcome":"card","target":"4th-dimension"}
+{"id":"4DOS-Batch","name":"4DOS Batch","scope":"languages","outcome":"card","target":"4dos-batch"}
+{"id":"4ME","name":"4ME","scope":"languages","outcome":"card","target":"4me"}
+{"id":"6502-Assembly","name":"6502 Assembly","scope":"languages","outcome":"card","target":"6502-assembly"}
+{"id":"6800-Assembly","name":"6800 Assembly","scope":"languages","outcome":"card","target":"6800-assembly"}
+{"id":"68000-Assembly","name":"68000 Assembly","scope":"languages","outcome":"card","target":"68000-assembly"}
+{"id":"8-1-2","name":"8 1/2","scope":"languages","outcome":"card","target":"8-1-2"}
+{"id":"80386-Assembly","name":"80386 Assembly","scope":"languages","outcome":"card","target":"80386-assembly"}
+{"id":"8051-Assembly","name":"8051 Assembly","scope":"languages","outcome":"card","target":"8051-assembly"}
+{"id":"8080-Assembly","name":"8080 Assembly","scope":"languages","outcome":"card","target":"8080-assembly"}
+{"id":"8086-Assembly","name":"8086 Assembly","scope":"languages","outcome":"card","target":"8086-assembly"}
+{"id":"8th","name":"8th","scope":"languages","outcome":"card","target":"8th"}
+{"id":"A+","name":"A+","scope":"languages","outcome":"card","target":"aplus"}
+{"id":"AArch64-Assembly","name":"AArch64 Assembly","scope":"languages","outcome":"card","target":"aarch64-assembly"}
+{"id":"ABAP","name":"ABAP","scope":"languages","outcome":"card","target":"abap"}
+{"id":"ABC","name":"ABC","scope":"languages","outcome":"card","target":"abc"}
+{"id":"ACL2","name":"ACL2","scope":"languages","outcome":"card","target":"acl2"}
+{"id":"AHDL","name":"AHDL","scope":"languages","outcome":"card","target":"ahdl"}
+{"id":"AIDED-NATURAL-LANGUAGE","name":"AIDED NATURAL LANGUAGE","scope":"languages","outcome":"card","target":"aided-natural-language"}
+{"id":"ALGOL","name":"ALGOL","scope":"languages","outcome":"card","target":"algol"}
+{"id":"ALGOL-60","name":"ALGOL 60","scope":"languages","outcome":"card","target":"algol-60"}
+{"id":"ALGOL-68","name":"ALGOL 68","scope":"languages","outcome":"card","target":"algol-68"}
+{"id":"ALGOL-M","name":"ALGOL-M","scope":"languages","outcome":"card","target":"algol-m"}
+{"id":"ALGOL-W","name":"ALGOL W","scope":"languages","outcome":"card","target":"algol-w"}
+{"id":"AMPL","name":"AMPL","scope":"languages","outcome":"card","target":"ampl"}
+{"id":"ANSI-BASIC","name":"ANSI BASIC","scope":"languages","outcome":"card","target":"ansi-basic"}
+{"id":"ANT","name":"ANT","scope":"languages","outcome":"card","target":"ant"}
+{"id":"ANTLR","name":"ANTLR","scope":"languages","outcome":"card","target":"antlr"}
+{"id":"APL","name":"APL","scope":"languages","outcome":"card","target":"apl"}
+{"id":"ARM-Assembly","name":"ARM Assembly","scope":"languages","outcome":"card","target":"arm-assembly"}
+{"id":"ASIC","name":"ASIC","scope":"languages","outcome":"card","target":"asic"}
+{"id":"ASP","name":"ASP","scope":"languages","outcome":"card","target":"asp"}
+{"id":"ASP.Net","name":"ASP.Net","scope":"languages","outcome":"card","target":"asp.net"}
+{"id":"ATS","name":"ATS","scope":"languages","outcome":"card","target":"ats"}
+{"id":"AWK","name":"AWK","scope":"languages","outcome":"card","target":"awk"}
+{"id":"Acornsoft-Lisp","name":"Acornsoft Lisp","scope":"languages","outcome":"card","target":"acornsoft-lisp"}
+{"id":"Action-","name":"Action!","scope":"languages","outcome":"card","target":"action"}
+{"id":"ActionScript","name":"ActionScript","scope":"languages","outcome":"card","target":"actionscript"}
+{"id":"Acurity-Architect","name":"Acurity Architect","scope":"languages","outcome":"card","target":"acurity-architect"}
+{"id":"Ada","name":"Ada","scope":"languages","outcome":"card","target":"ada"}
+{"id":"Adina","name":"Adina","scope":"languages","outcome":"card","target":"adina"}
+{"id":"Agda","name":"Agda","scope":"languages","outcome":"card","target":"agda"}
+{"id":"Agda2","name":"Agda2","scope":"languages","outcome":"card","target":"agda"}
+{"id":"Agena","name":"Agena","scope":"languages","outcome":"card","target":"agena"}
+{"id":"Aikido","name":"Aikido","scope":"languages","outcome":"card","target":"aikido"}
+{"id":"Aime","name":"Aime","scope":"languages","outcome":"card","target":"aime"}
+{"id":"Algae","name":"Algae","scope":"languages","outcome":"card","target":"algae"}
+{"id":"Alice-ML","name":"Alice ML","scope":"languages","outcome":"card","target":"alice-ml"}
+{"id":"Alore","name":"Alore","scope":"languages","outcome":"card","target":"alore"}
+{"id":"AlphaStack","name":"AlphaStack","scope":"languages","outcome":"card","target":"alphastack"}
+{"id":"Amazing-Hopper","name":"Amazing Hopper","scope":"languages","outcome":"card","target":"amazing-hopper"}
+{"id":"AmbientTalk","name":"AmbientTalk","scope":"languages","outcome":"card","target":"ambienttalk"}
+{"id":"AmigaBASIC","name":"AmigaBASIC","scope":"languages","outcome":"card","target":"amigabasic"}
+{"id":"AmigaE","name":"AmigaE","scope":"languages","outcome":"card","target":"amiga-e"}
+{"id":"AngelScript","name":"AngelScript","scope":"languages","outcome":"card","target":"angelscript"}
+{"id":"Anyways","name":"Anyways","scope":"languages","outcome":"card","target":"anyways"}
+{"id":"Apache-Ant","name":"Apache Ant","scope":"languages","outcome":"card","target":"apache-ant"}
+{"id":"Apex","name":"Apex","scope":"languages","outcome":"card","target":"apex"}
+{"id":"App-Inventor","name":"App Inventor","scope":"languages","outcome":"card","target":"app-inventor"}
+{"id":"Apple","name":"Apple","scope":"languages","outcome":"card","target":"apple"}
+{"id":"AppleScript","name":"AppleScript","scope":"languages","outcome":"card","target":"applescript"}
+{"id":"Applesoft-BASIC","name":"Applesoft BASIC","scope":"languages","outcome":"card","target":"applesoft-basic"}
+{"id":"Application-Master","name":"Application Master","scope":"languages","outcome":"card","target":"application-master"}
+{"id":"Apricot","name":"Apricot","scope":"languages","outcome":"card","target":"apricot"}
+{"id":"Aquarius-BASIC","name":"Aquarius BASIC","scope":"languages","outcome":"card","target":"aquarius-basic"}
+{"id":"Arbre","name":"Arbre","scope":"languages","outcome":"card","target":"arbre"}
+{"id":"Arc","name":"Arc","scope":"languages","outcome":"card","target":"arc"}
+{"id":"Arendelle","name":"Arendelle","scope":"languages","outcome":"card","target":"arendelle"}
+{"id":"Argile","name":"Argile","scope":"languages","outcome":"card","target":"argile"}
+{"id":"Aria","name":"Aria","scope":"languages","outcome":"card","target":"aria"}
+{"id":"ArkScript","name":"ArkScript","scope":"languages","outcome":"card","target":"arkscript"}
+{"id":"ArnoldC","name":"ArnoldC","scope":"languages","outcome":"card","target":"arnoldc"}
+{"id":"Arturo","name":"Arturo","scope":"languages","outcome":"card","target":"arturo"}
+{"id":"AsciiDots","name":"AsciiDots","scope":"languages","outcome":"card","target":"asciidots"}
+{"id":"AspectC++","name":"AspectC++","scope":"languages","outcome":"card","target":"aspectcpp"}
+{"id":"AspectJ","name":"AspectJ","scope":"languages","outcome":"card","target":"aspectj"}
+{"id":"Assembly","name":"Assembly","scope":"languages","outcome":"card","target":"assembly"}
+{"id":"AssemblyScript","name":"AssemblyScript","scope":"languages","outcome":"card","target":"assemblyscript"}
+{"id":"Astro","name":"Astro","scope":"languages","outcome":"card","target":"astro"}
+{"id":"Asymptote","name":"Asymptote","scope":"languages","outcome":"card","target":"asymptote"}
+{"id":"Atari-BASIC","name":"Atari BASIC","scope":"languages","outcome":"card","target":"atari-basic"}
+{"id":"AutoHotKey-V2","name":"AutoHotKey V2","scope":"languages","outcome":"card","target":"autohotkey"}
+{"id":"AutoHotkey","name":"AutoHotkey","scope":"languages","outcome":"card","target":"autohotkey"}
+{"id":"AutoIt","name":"AutoIt","scope":"languages","outcome":"card","target":"autoit"}
+{"id":"AutoLISP","name":"AutoLISP","scope":"languages","outcome":"card","target":"autolisp"}
+{"id":"Avail","name":"Avail","scope":"languages","outcome":"card","target":"avail"}
+{"id":"Axe","name":"Axe","scope":"languages","outcome":"card","target":"axe"}
+{"id":"Axiom","name":"Axiom","scope":"languages","outcome":"card","target":"axiom"}
+{"id":"Axum","name":"Axum","scope":"languages","outcome":"card","target":"axum"}
+{"id":"Ayrch","name":"Ayrch","scope":"languages","outcome":"card","target":"ayrch"}
+{"id":"B","name":"B","scope":"languages","outcome":"card","target":"b"}
+{"id":"B4J","name":"B4J","scope":"languages","outcome":"card","target":"b4j"}
+{"id":"B4X","name":"B4X","scope":"languages","outcome":"card","target":"b4x"}
+{"id":"BASIC","name":"BASIC","scope":"languages","outcome":"card","target":"basic"}
+{"id":"BASIC256","name":"BASIC256","scope":"languages","outcome":"card","target":"basic-256"}
+{"id":"BBC-BASIC","name":"BBC BASIC","scope":"languages","outcome":"card","target":"bbc-basic"}
+{"id":"BCPL","name":"BCPL","scope":"languages","outcome":"card","target":"bcpl"}
+{"id":"BLISS","name":"BLISS","scope":"languages","outcome":"card","target":"bliss"}
+{"id":"BML","name":"BML","scope":"languages","outcome":"card","target":"bml"}
+{"id":"BQN","name":"BQN","scope":"languages","outcome":"card","target":"bqn"}
+{"id":"BaCon","name":"BaCon","scope":"languages","outcome":"card","target":"bacon"}
+{"id":"Babel","name":"Babel","scope":"languages","outcome":"card","target":"babel"}
+{"id":"BabyCobol","name":"BabyCobol","scope":"languages","outcome":"card","target":"babycobol"}
+{"id":"Bait","name":"Bait","scope":"languages","outcome":"card","target":"bait"}
+{"id":"Ballerina","name":"Ballerina","scope":"languages","outcome":"card","target":"ballerina"}
+{"id":"Bas","name":"Bas","scope":"languages","outcome":"card","target":"bas"}
+{"id":"Basic09","name":"Basic09","scope":"languages","outcome":"card","target":"basic09"}
+{"id":"Batari-Basic","name":"Batari Basic","scope":"languages","outcome":"card","target":"batari-basic"}
+{"id":"Batch-File","name":"Batch File","scope":"languages","outcome":"card","target":"batch"}
+{"id":"Battlestar","name":"Battlestar","scope":"languages","outcome":"card","target":"battlestar"}
+{"id":"BazzBasic","name":"BazzBasic","scope":"languages","outcome":"card","target":"bazzbasic"}
+{"id":"Bc","name":"Bc","scope":"languages","outcome":"card","target":"bc"}
+{"id":"Beads","name":"Beads","scope":"languages","outcome":"card","target":"beads"}
+{"id":"Beef","name":"Beef","scope":"languages","outcome":"card","target":"beef"}
+{"id":"Beeswax","name":"Beeswax","scope":"languages","outcome":"card","target":"beeswax"}
+{"id":"Befunge","name":"Befunge","scope":"languages","outcome":"card","target":"befunge"}
+{"id":"Berkeley-Logo","name":"Berkeley Logo","scope":"languages","outcome":"card","target":"berkeley-logo"}
+{"id":"Beta","name":"Beta","scope":"languages","outcome":"card","target":"beta"}
+{"id":"Biferno","name":"Biferno","scope":"languages","outcome":"card","target":"biferno"}
+{"id":"Binary-Lambda-Calculus","name":"Binary Lambda Calculus","scope":"languages","outcome":"card","target":"blc"}
+{"id":"Bird","name":"Bird","scope":"languages","outcome":"card","target":"bird"}
+{"id":"Blade","name":"Blade","scope":"languages","outcome":"card","target":"blade"}
+{"id":"Blast","name":"Blast","scope":"languages","outcome":"card","target":"blast"}
+{"id":"BlitzMax","name":"BlitzMax","scope":"languages","outcome":"card","target":"blitzmax"}
+{"id":"BlooP","name":"BlooP","scope":"languages","outcome":"card","target":"bloop"}
+{"id":"Blue","name":"Blue","scope":"languages","outcome":"card","target":"blue"}
+{"id":"Blz","name":"Blz","scope":"languages","outcome":"card","target":"blz"}
+{"id":"Boo","name":"Boo","scope":"languages","outcome":"card","target":"boo"}
+{"id":"BootBASIC","name":"BootBASIC","scope":"languages","outcome":"card","target":"bootbasic"}
+{"id":"Bori","name":"Bori","scope":"languages","outcome":"card","target":"bori"}
+{"id":"Brace","name":"Brace","scope":"languages","outcome":"card","target":"brace"}
+{"id":"Bracmat","name":"Bracmat","scope":"languages","outcome":"card","target":"bracmat"}
+{"id":"Brainf---","name":"Brainf***","scope":"languages","outcome":"card","target":"brainfuck"}
+{"id":"Brat","name":"Brat","scope":"languages","outcome":"card","target":"brat"}
+{"id":"Brlcad","name":"Brlcad","scope":"languages","outcome":"card","target":"brlcad"}
+{"id":"Bruijn","name":"Bruijn","scope":"languages","outcome":"card","target":"bruijn"}
+{"id":"Burlesque","name":"Burlesque","scope":"languages","outcome":"card","target":"burlesque"}
+{"id":"C","name":"C","scope":"languages","outcome":"node","target":"c"}
+{"id":"C++","name":"C++","scope":"languages","outcome":"node","target":"cpp"}
+{"id":"C++-CLI","name":"C++/CLI","scope":"languages","outcome":"card","target":"cpp-cli"}
+{"id":"C-Shell","name":"C Shell","scope":"languages","outcome":"card","target":"c-shell"}
+{"id":"C-sharp","name":"C sharp","scope":"languages","outcome":"node","target":"csharp"}
+{"id":"C-vFP16","name":"C/vFP16","scope":"languages","outcome":"card","target":"c-vfp16"}
+{"id":"C0H","name":"C0H","scope":"languages","outcome":"card","target":"c0h"}
+{"id":"C1R","name":"C1R","scope":"languages","outcome":"card","target":"c1r"}
+{"id":"C2","name":"C2","scope":"languages","outcome":"card","target":"c2"}
+{"id":"C3","name":"C3","scope":"languages","outcome":"card","target":"c3"}
+{"id":"CB80","name":"CB80","scope":"languages","outcome":"card","target":"cb80"}
+{"id":"CBASIC","name":"CBASIC","scope":"languages","outcome":"card","target":"cbasic"}
+{"id":"CFEngine","name":"CFEngine","scope":"languages","outcome":"card","target":"cfengine"}
+{"id":"CHR","name":"CHR","scope":"languages","outcome":"card","target":"chr"}
+{"id":"CJam","name":"CJam","scope":"languages","outcome":"card","target":"cjam"}
+{"id":"CLIPS","name":"CLIPS","scope":"languages","outcome":"card","target":"clips"}
+{"id":"CLU","name":"CLU","scope":"languages","outcome":"card","target":"clu"}
+{"id":"CMake","name":"CMake","scope":"languages","outcome":"card","target":"cmake"}
+{"id":"COBOL","name":"COBOL","scope":"languages","outcome":"card","target":"cobol"}
+{"id":"CafeOBJ","name":"CafeOBJ","scope":"languages","outcome":"card","target":"cafeobj"}
+{"id":"Calc","name":"Calc","scope":"languages","outcome":"card","target":"calc"}
+{"id":"Calcscript","name":"Calcscript","scope":"languages","outcome":"card","target":"calcscript"}
+{"id":"Caml","name":"Caml","scope":"languages","outcome":"card","target":"caml"}
+{"id":"Casio-BASIC","name":"Casio BASIC","scope":"languages","outcome":"card","target":"casio-basic"}
+{"id":"Cat","name":"Cat","scope":"languages","outcome":"card","target":"cat"}
+{"id":"Cduce","name":"Cduce","scope":"languages","outcome":"card","target":"cduce"}
+{"id":"Cecil","name":"Cecil","scope":"languages","outcome":"card","target":"cecil"}
+{"id":"Ceylon","name":"Ceylon","scope":"languages","outcome":"card","target":"ceylon"}
+{"id":"Chapel","name":"Chapel","scope":"languages","outcome":"card","target":"chapel"}
+{"id":"Chef","name":"Chef","scope":"languages","outcome":"card","target":"chef"}
+{"id":"Cherrycake","name":"Cherrycake","scope":"languages","outcome":"card","target":"cherrycake"}
+{"id":"Chipmunk-Basic","name":"Chipmunk Basic","scope":"languages","outcome":"card","target":"chipmunk-basic"}
+{"id":"ChucK","name":"ChucK","scope":"languages","outcome":"card","target":"chuck"}
+{"id":"Cilk","name":"Cilk","scope":"languages","outcome":"card","target":"cilk"}
+{"id":"Cilk++","name":"Cilk++","scope":"languages","outcome":"card","target":"cilkpp"}
+{"id":"Cind","name":"Cind","scope":"languages","outcome":"card","target":"cind"}
+{"id":"Clarion","name":"Clarion","scope":"languages","outcome":"card","target":"clarion"}
+{"id":"Clay","name":"Clay","scope":"languages","outcome":"card","target":"clay"}
+{"id":"Clean","name":"Clean","scope":"languages","outcome":"card","target":"clean"}
+{"id":"Clio","name":"Clio","scope":"languages","outcome":"card","target":"clio"}
+{"id":"Clipper","name":"Clipper","scope":"languages","outcome":"card","target":"clipper"}
+{"id":"Clipper-XBase++","name":"Clipper/XBase++","scope":"languages","outcome":"card","target":"clipper-xbasepp"}
+{"id":"Clojure","name":"Clojure","scope":"languages","outcome":"card","target":"clojure"}
+{"id":"Cobra","name":"Cobra","scope":"languages","outcome":"card","target":"cobra"}
+{"id":"Coco","name":"Coco","scope":"languages","outcome":"card","target":"coco"}
+{"id":"Coconut","name":"Coconut","scope":"languages","outcome":"card","target":"coconut"}
+{"id":"CoffeeScript","name":"CoffeeScript","scope":"languages","outcome":"card","target":"coffeescript"}
+{"id":"Cognate","name":"Cognate","scope":"languages","outcome":"card","target":"cognate"}
+{"id":"ColdFusion","name":"ColdFusion","scope":"languages","outcome":"card","target":"coldfusion"}
+{"id":"Colun","name":"Colun","scope":"languages","outcome":"card","target":"colun"}
+{"id":"Comal","name":"Comal","scope":"languages","outcome":"card","target":"comal"}
+{"id":"Comefrom0x10","name":"Comefrom0x10","scope":"languages","outcome":"card","target":"comefrom0x10"}
+{"id":"Commodore-BASIC","name":"Commodore BASIC","scope":"languages","outcome":"card","target":"commodore-basic"}
+{"id":"Common-Lisp","name":"Common Lisp","scope":"languages","outcome":"card","target":"common-lisp"}
+{"id":"Component-Pascal","name":"Component Pascal","scope":"languages","outcome":"card","target":"component-pascal"}
+{"id":"Computer-zero-Assembly","name":"Computer/zero Assembly","scope":"languages","outcome":"card","target":"computer-zero-assembly"}
+{"id":"ContextFree","name":"ContextFree","scope":"languages","outcome":"card","target":"contextfree"}
+{"id":"Convex","name":"Convex","scope":"languages","outcome":"card","target":"convex"}
+{"id":"Coq","name":"Coq","scope":"languages","outcome":"card","target":"coq"}
+{"id":"Corescript","name":"Corescript","scope":"languages","outcome":"card","target":"corescript"}
+{"id":"Cowgol","name":"Cowgol","scope":"languages","outcome":"card","target":"cowgol"}
+{"id":"Crack","name":"Crack","scope":"languages","outcome":"card","target":"crack"}
+{"id":"Craft-Basic","name":"Craft Basic","scope":"languages","outcome":"card","target":"craft-basic"}
+{"id":"Creative-Basic","name":"Creative Basic","scope":"languages","outcome":"card","target":"creative-basic"}
+{"id":"Crystal","name":"Crystal","scope":"languages","outcome":"card","target":"crystal"}
+{"id":"Cubescript","name":"Cubescript","scope":"languages","outcome":"card","target":"cubescript"}
+{"id":"Curry","name":"Curry","scope":"languages","outcome":"card","target":"curry"}
+{"id":"Curto","name":"Curto","scope":"languages","outcome":"card","target":"curto"}
+{"id":"D","name":"D","scope":"languages","outcome":"card","target":"d"}
+{"id":"DBL","name":"DBL","scope":"languages","outcome":"card","target":"dbl"}
+{"id":"DCL","name":"DCL","scope":"languages","outcome":"card","target":"dcl"}
+{"id":"DDNC","name":"DDNC","scope":"languages","outcome":"card","target":"ddnc"}
+{"id":"DIBOL-11","name":"DIBOL-11","scope":"languages","outcome":"card","target":"dibol-11"}
+{"id":"DIV-Games-Studio","name":"DIV Games Studio","scope":"languages","outcome":"card","target":"div-games-studio"}
+{"id":"DM","name":"DM","scope":"languages","outcome":"card","target":"dm"}
+{"id":"DMS","name":"DMS","scope":"languages","outcome":"card","target":"dms"}
+{"id":"DUP","name":"DUP","scope":"languages","outcome":"card","target":"dup"}
+{"id":"DWScript","name":"DWScript","scope":"languages","outcome":"card","target":"dwscript"}
+{"id":"Dafny","name":"Dafny","scope":"languages","outcome":"card","target":"dafny"}
+{"id":"Dao","name":"Dao","scope":"languages","outcome":"card","target":"dao"}
+{"id":"Dart","name":"Dart","scope":"languages","outcome":"card","target":"dart"}
+{"id":"DataWeave","name":"DataWeave","scope":"languages","outcome":"card","target":"dataweave"}
+{"id":"Datalog","name":"Datalog","scope":"languages","outcome":"card","target":"datalog"}
+{"id":"Dc","name":"Dc","scope":"languages","outcome":"card","target":"dc"}
+{"id":"Delphi","name":"Delphi","scope":"languages","outcome":"card","target":"delphi"}
+{"id":"Deluge","name":"Deluge","scope":"languages","outcome":"card","target":"deluge"}
+{"id":"DeviousYarn","name":"DeviousYarn","scope":"languages","outcome":"card","target":"deviousyarn"}
+{"id":"Diego","name":"Diego","scope":"languages","outcome":"card","target":"diego"}
+{"id":"Diesel","name":"Diesel","scope":"languages","outcome":"card","target":"diesel"}
+{"id":"Dodo0","name":"Dodo0","scope":"languages","outcome":"card","target":"dodo0"}
+{"id":"Draco","name":"Draco","scope":"languages","outcome":"card","target":"draco-programming-language"}
+{"id":"Dragon","name":"Dragon","scope":"languages","outcome":"card","target":"dragon"}
+{"id":"Dragonstone","name":"Dragonstone","scope":"languages","outcome":"card","target":"dragonstone"}
+{"id":"DreamBerd","name":"DreamBerd","scope":"languages","outcome":"card","target":"dreamberd"}
+{"id":"Dt","name":"Dt","scope":"languages","outcome":"card","target":"dt"}
+{"id":"DuckDB","name":"DuckDB","scope":"languages","outcome":"card","target":"duckdb"}
+{"id":"Dyalect","name":"Dyalect","scope":"languages","outcome":"card","target":"dyalect"}
+{"id":"Dylan","name":"Dylan","scope":"languages","outcome":"card","target":"dylan"}
+{"id":"Dylan.NET","name":"Dylan.NET","scope":"languages","outcome":"card","target":"dylan-net"}
+{"id":"E","name":"E","scope":"languages","outcome":"card","target":"e"}
+{"id":"EC","name":"EC","scope":"languages","outcome":"card","target":"ec"}
+{"id":"ECL","name":"ECL","scope":"languages","outcome":"card","target":"ecl"}
+{"id":"EDSAC-order-code","name":"EDSAC order code","scope":"languages","outcome":"card","target":"edsac-order-code"}
+{"id":"EGL","name":"EGL","scope":"languages","outcome":"card","target":"egl"}
+{"id":"ELLA","name":"ELLA","scope":"languages","outcome":"card","target":"ella-programming-language"}
+{"id":"EMal","name":"EMal","scope":"languages","outcome":"card","target":"emal"}
+{"id":"ERRE","name":"ERRE","scope":"languages","outcome":"card","target":"erre"}
+{"id":"ESQL","name":"ESQL","scope":"languages","outcome":"card","target":"esql"}
+{"id":"EasyLang","name":"EasyLang","scope":"languages","outcome":"card","target":"easylang"}
+{"id":"EchoLisp","name":"EchoLisp","scope":"languages","outcome":"card","target":"echolisp"}
+{"id":"Ecstasy","name":"Ecstasy","scope":"languages","outcome":"card","target":"xtclang"}
+{"id":"Ed","name":"Ed","scope":"languages","outcome":"card","target":"ed-editor"}
+{"id":"Eero","name":"Eero","scope":"languages","outcome":"card","target":"eero"}
+{"id":"Efene","name":"Efene","scope":"languages","outcome":"card","target":"efene"}
+{"id":"Egel","name":"Egel","scope":"languages","outcome":"card","target":"egel"}
+{"id":"Egison","name":"Egison","scope":"languages","outcome":"card","target":"egison"}
+{"id":"EhBASIC","name":"EhBASIC","scope":"languages","outcome":"card","target":"ehbasic"}
+{"id":"Eiffel","name":"Eiffel","scope":"languages","outcome":"card","target":"eiffel"}
+{"id":"Ela","name":"Ela","scope":"languages","outcome":"card","target":"ela"}
+{"id":"Elan","name":"Elan","scope":"languages","outcome":"card","target":"elan"}
+{"id":"ElastiC","name":"ElastiC","scope":"languages","outcome":"card","target":"elastic"}
+{"id":"Elena","name":"Elena","scope":"languages","outcome":"card","target":"elena"}
+{"id":"Elisa","name":"Elisa","scope":"languages","outcome":"card","target":"elisa"}
+{"id":"Elixir","name":"Elixir","scope":"languages","outcome":"card","target":"elixir"}
+{"id":"Elm","name":"Elm","scope":"languages","outcome":"card","target":"elm"}
+{"id":"Emacs-Lisp","name":"Emacs Lisp","scope":"languages","outcome":"card","target":"emacs-lisp"}
+{"id":"Emojicode","name":"Emojicode","scope":"languages","outcome":"card","target":"emojicode"}
+{"id":"Enguage","name":"Enguage","scope":"languages","outcome":"card","target":"enguage"}
+{"id":"Epigram","name":"Epigram","scope":"languages","outcome":"card","target":"epigram"}
+{"id":"Epoxy","name":"Epoxy","scope":"languages","outcome":"card","target":"epoxy"}
+{"id":"Erlang","name":"Erlang","scope":"languages","outcome":"card","target":"erlang"}
+{"id":"Es","name":"Es","scope":"languages","outcome":"card","target":"es"}
+{"id":"Euler","name":"Euler","scope":"languages","outcome":"card","target":"euler"}
+{"id":"Euphoria","name":"Euphoria","scope":"languages","outcome":"card","target":"euphoria"}
+{"id":"Evaldraw","name":"Evaldraw","scope":"languages","outcome":"card","target":"evaldraw"}
+{"id":"Excel","name":"Excel","scope":"languages","outcome":"card","target":"excel"}
+{"id":"Explore","name":"Explore","scope":"languages","outcome":"card","target":"explore"}
+{"id":"Extended-BrainF---","name":"Extended BrainF***","scope":"languages","outcome":"card","target":"extended-brainf"}
+{"id":"Extended-Color-BASIC","name":"Extended Color BASIC","scope":"languages","outcome":"card","target":"extended-color-basic"}
+{"id":"Ezhil","name":"Ezhil","scope":"languages","outcome":"card","target":"ezhil"}
+{"id":"F","name":"F","scope":"languages","outcome":"card","target":"f"}
+{"id":"F-Sharp","name":"F Sharp","scope":"languages","outcome":"card","target":"f-sharp"}
+{"id":"FALSE","name":"FALSE","scope":"languages","outcome":"card","target":"false"}
+{"id":"FAUST","name":"FAUST","scope":"languages","outcome":"card","target":"faust"}
+{"id":"FBSL","name":"FBSL","scope":"languages","outcome":"card","target":"fbsl"}
+{"id":"FLORA-2","name":"FLORA-2","scope":"languages","outcome":"card","target":"flora-2"}
+{"id":"FOCAL","name":"FOCAL","scope":"languages","outcome":"card","target":"focal"}
+{"id":"FP","name":"FP","scope":"languages","outcome":"card","target":"fp"}
+{"id":"FPI","name":"FPI","scope":"languages","outcome":"card","target":"fpi"}
+{"id":"FRISC-Assembly","name":"FRISC Assembly","scope":"languages","outcome":"card","target":"frisc-assembly"}
+{"id":"FTCBASIC","name":"FTCBASIC","scope":"languages","outcome":"card","target":"ftcbasic"}
+{"id":"FUZE-BASIC","name":"FUZE BASIC","scope":"languages","outcome":"card","target":"fuze-basic"}
+{"id":"Factor","name":"Factor","scope":"languages","outcome":"card","target":"factor"}
+{"id":"Falcon","name":"Falcon","scope":"languages","outcome":"card","target":"falcon"}
+{"id":"Fan","name":"Fan","scope":"languages","outcome":"card","target":"fan"}
+{"id":"Fancy","name":"Fancy","scope":"languages","outcome":"card","target":"fancy"}
+{"id":"Fantom","name":"Fantom","scope":"languages","outcome":"card","target":"fantom"}
+{"id":"Fe","name":"Fe","scope":"languages","outcome":"card","target":"fe"}
+{"id":"FeatureC++","name":"FeatureC++","scope":"languages","outcome":"card","target":"featurecpp"}
+{"id":"Felix","name":"Felix","scope":"languages","outcome":"card","target":"felix"}
+{"id":"Fennel","name":"Fennel","scope":"languages","outcome":"card","target":"fennel"}
+{"id":"Ferite","name":"Ferite","scope":"languages","outcome":"card","target":"ferite"}
+{"id":"Fermat","name":"Fermat","scope":"languages","outcome":"card","target":"fermat"}
+{"id":"Fexl","name":"Fexl","scope":"languages","outcome":"card","target":"fexl"}
+{"id":"Fhidwfe","name":"Fhidwfe","scope":"languages","outcome":"card","target":"fhidwfe"}
+{"id":"Fish","name":"Fish","scope":"languages","outcome":"card","target":"fish"}
+{"id":"Florid","name":"Florid","scope":"languages","outcome":"card","target":"florid"}
+{"id":"FormulaOne","name":"FormulaOne","scope":"languages","outcome":"card","target":"formulaone"}
+{"id":"Forth","name":"Forth","scope":"languages","outcome":"card","target":"forth"}
+{"id":"Fortran","name":"Fortran","scope":"languages","outcome":"card","target":"fortran"}
+{"id":"Fortress","name":"Fortress","scope":"languages","outcome":"card","target":"fortress"}
+{"id":"Free-Pascal-Lazarus","name":"Free Pascal/Lazarus","scope":"languages","outcome":"card","target":"free-pascal"}
+{"id":"FreeBASIC","name":"FreeBASIC","scope":"languages","outcome":"card","target":"freebasic"}
+{"id":"FreeMat","name":"FreeMat","scope":"languages","outcome":"card","target":"freemat"}
+{"id":"Frege","name":"Frege","scope":"languages","outcome":"card","target":"frege"}
+{"id":"Friendly-interactive-shell","name":"Friendly interactive shell","scope":"languages","outcome":"card","target":"fish"}
+{"id":"Frink","name":"Frink","scope":"languages","outcome":"card","target":"frink"}
+{"id":"FunL","name":"FunL","scope":"languages","outcome":"card","target":"funl"}
+{"id":"FuncSug","name":"FuncSug","scope":"languages","outcome":"card","target":"funcsug"}
+{"id":"Furor","name":"Furor","scope":"languages","outcome":"card","target":"furor"}
+{"id":"FurryScript","name":"FurryScript","scope":"languages","outcome":"card","target":"furryscript"}
+{"id":"Futhark","name":"Futhark","scope":"languages","outcome":"card","target":"futhark"}
+{"id":"FutureBasic","name":"FutureBasic","scope":"languages","outcome":"card","target":"futurebasic"}
+{"id":"G-fu","name":"G-fu","scope":"languages","outcome":"card","target":"g-fu"}
+{"id":"GAP","name":"GAP","scope":"languages","outcome":"card","target":"gap"}
+{"id":"GB-BASIC","name":"GB BASIC","scope":"languages","outcome":"card","target":"gb-basic"}
+{"id":"GDScript","name":"GDScript","scope":"languages","outcome":"card","target":"gdscript"}
+{"id":"GEORGE","name":"GEORGE","scope":"languages","outcome":"card","target":"george"}
+{"id":"GFA-Basic","name":"GFA Basic","scope":"languages","outcome":"card","target":"gfa-basic"}
+{"id":"GLBasic","name":"GLBasic","scope":"languages","outcome":"card","target":"glbasic"}
+{"id":"GLSL","name":"GLSL","scope":"languages","outcome":"card","target":"glsl"}
+{"id":"GML","name":"GML","scope":"languages","outcome":"card","target":"ibm-gml"}
+{"id":"GUISS","name":"GUISS","scope":"languages","outcome":"card","target":"guiss"}
+{"id":"GW-BASIC","name":"GW-BASIC","scope":"languages","outcome":"card","target":"gw-basic"}
+{"id":"Gambas","name":"Gambas","scope":"languages","outcome":"card","target":"gambas"}
+{"id":"Gastona","name":"Gastona","scope":"languages","outcome":"card","target":"gastona"}
+{"id":"Gecho","name":"Gecho","scope":"languages","outcome":"card","target":"gecho"}
+{"id":"Gema","name":"Gema","scope":"languages","outcome":"card","target":"gema"}
+{"id":"Genie","name":"Genie","scope":"languages","outcome":"card","target":"genie"}
+{"id":"Gentee","name":"Gentee","scope":"languages","outcome":"card","target":"gentee"}
+{"id":"Genyris","name":"Genyris","scope":"languages","outcome":"card","target":"genyris"}
+{"id":"Gerbil","name":"Gerbil","scope":"languages","outcome":"card","target":"gerbil"}
+{"id":"Glagol","name":"Glagol","scope":"languages","outcome":"card","target":"glagol"}
+{"id":"Gleam","name":"Gleam","scope":"languages","outcome":"card","target":"gleam"}
+{"id":"Glee","name":"Glee","scope":"languages","outcome":"card","target":"glee"}
+{"id":"Global-Script","name":"Global Script","scope":"languages","outcome":"card","target":"global-script"}
+{"id":"GlovePIE","name":"GlovePIE","scope":"languages","outcome":"card","target":"glovepie"}
+{"id":"Gnuplot","name":"Gnuplot","scope":"languages","outcome":"card","target":"gnuplot"}
+{"id":"Go","name":"Go","scope":"languages","outcome":"node","target":"go"}
+{"id":"Go-","name":"Go!","scope":"languages","outcome":"card","target":"go-bang"}
+{"id":"Goaldi","name":"Goaldi","scope":"languages","outcome":"card","target":"goaldi"}
+{"id":"Goboscript","name":"Goboscript","scope":"languages","outcome":"card","target":"goboscript"}
+{"id":"Golfscript","name":"Golfscript","scope":"languages","outcome":"card","target":"golfscript"}
+{"id":"Golo","name":"Golo","scope":"languages","outcome":"card","target":"golo"}
+{"id":"Goo","name":"Goo","scope":"languages","outcome":"card","target":"goo"}
+{"id":"Gosu","name":"Gosu","scope":"languages","outcome":"card","target":"gosu"}
+{"id":"Grain","name":"Grain","scope":"languages","outcome":"card","target":"grain"}
+{"id":"Gri","name":"Gri","scope":"languages","outcome":"card","target":"gri"}
+{"id":"Groovy","name":"Groovy","scope":"languages","outcome":"card","target":"groovy"}
+{"id":"Guile","name":"Guile","scope":"languages","outcome":"card","target":"guile"}
+{"id":"Guish","name":"Guish","scope":"languages","outcome":"card","target":"guish"}
+{"id":"HLA","name":"HLA","scope":"languages","outcome":"card","target":"hla"}
+{"id":"HPPPL","name":"HPPPL","scope":"languages","outcome":"card","target":"hpppl"}
+{"id":"HQ9+","name":"HQ9+","scope":"languages","outcome":"card","target":"hq9plus"}
+{"id":"Hack","name":"Hack","scope":"languages","outcome":"card","target":"hack"}
+{"id":"Halon","name":"Halon","scope":"languages","outcome":"card","target":"halon"}
+{"id":"Harbour","name":"Harbour","scope":"languages","outcome":"card","target":"harbour"}
+{"id":"Hare","name":"Hare","scope":"languages","outcome":"card","target":"hare"}
+{"id":"Haskell","name":"Haskell","scope":"languages","outcome":"card","target":"haskell"}
+{"id":"Haxe","name":"Haxe","scope":"languages","outcome":"card","target":"haxe"}
+{"id":"Heron","name":"Heron","scope":"languages","outcome":"card","target":"heron"}
+{"id":"Hexiscript","name":"Hexiscript","scope":"languages","outcome":"card","target":"hexiscript"}
+{"id":"HicEst","name":"HicEst","scope":"languages","outcome":"card","target":"hicest"}
+{"id":"Hobbes","name":"Hobbes","scope":"languages","outcome":"card","target":"hobbes"}
+{"id":"HolyC","name":"HolyC","scope":"languages","outcome":"card","target":"holyc"}
+{"id":"Hoon","name":"Hoon","scope":"languages","outcome":"card","target":"hoon"}
+{"id":"Hope","name":"Hope","scope":"languages","outcome":"card","target":"hope"}
+{"id":"Hopper","name":"Hopper","scope":"languages","outcome":"card","target":"hopper"}
+{"id":"Huginn","name":"Huginn","scope":"languages","outcome":"card","target":"huginn"}
+{"id":"Hy","name":"Hy","scope":"languages","outcome":"card","target":"hy"}
+{"id":"HyperTalk","name":"HyperTalk","scope":"languages","outcome":"card","target":"hypertalk"}
+{"id":"I","name":"I","scope":"languages","outcome":"card","target":"i"}
+{"id":"IDL","name":"IDL","scope":"languages","outcome":"card","target":"idl"}
+{"id":"IPL-Loader-Config","name":"IPL Loader Config","scope":"languages","outcome":"card","target":"ipl-loader-config"}
+{"id":"IS-BASIC","name":"IS-BASIC","scope":"languages","outcome":"card","target":"is-basic"}
+{"id":"IWBASIC","name":"IWBASIC","scope":"languages","outcome":"card","target":"iwbasic"}
+{"id":"Icon","name":"Icon","scope":"languages","outcome":"card","target":"icon"}
+{"id":"Idris","name":"Idris","scope":"languages","outcome":"card","target":"idris"}
+{"id":"Imp77","name":"Imp77","scope":"languages","outcome":"card","target":"imp77"}
+{"id":"Inform-6","name":"Inform 6","scope":"languages","outcome":"card","target":"inform"}
+{"id":"Inform-7","name":"Inform 7","scope":"languages","outcome":"card","target":"inform-7"}
+{"id":"Informix-4GL","name":"Informix 4GL","scope":"languages","outcome":"card","target":"informix-4gl"}
+{"id":"Inko","name":"Inko","scope":"languages","outcome":"card","target":"inko"}
+{"id":"Insitux","name":"Insitux","scope":"languages","outcome":"card","target":"insitux"}
+{"id":"Integer-BASIC","name":"Integer BASIC","scope":"languages","outcome":"card","target":"integer-basic"}
+{"id":"Intercal","name":"Intercal","scope":"languages","outcome":"card","target":"intercal"}
+{"id":"Io","name":"Io","scope":"languages","outcome":"card","target":"io"}
+{"id":"Ioke","name":"Ioke","scope":"languages","outcome":"card","target":"ioke"}
+{"id":"Iptscrae","name":"Iptscrae","scope":"languages","outcome":"card","target":"iptscrae"}
+{"id":"Isabelle","name":"Isabelle","scope":"languages","outcome":"card","target":"isabelle"}
+{"id":"J","name":"J","scope":"languages","outcome":"card","target":"j"}
+{"id":"JAMES-II-Rule-based-Cellular-Automata","name":"JAMES II/Rule-based Cellular Automata","scope":"languages","outcome":"card","target":"james-ii-rule-based-cellular-automata"}
+{"id":"JCL","name":"JCL","scope":"languages","outcome":"card","target":"jcl"}
+{"id":"JOVIAL","name":"JOVIAL","scope":"languages","outcome":"card","target":"jovial"}
+{"id":"JSE","name":"JSE","scope":"languages","outcome":"card","target":"jse"}
+{"id":"JScript.NET","name":"JScript.NET","scope":"languages","outcome":"card","target":"jscript-net"}
+{"id":"Jabaco","name":"Jabaco","scope":"languages","outcome":"card","target":"jabaco"}
+{"id":"Jack","name":"Jack","scope":"languages","outcome":"card","target":"jack"}
+{"id":"Jacquard-Loom","name":"Jacquard Loom","scope":"languages","outcome":"card","target":"jacquard-loom"}
+{"id":"Jactl","name":"Jactl","scope":"languages","outcome":"card","target":"jactl"}
+{"id":"Jakt","name":"Jakt","scope":"languages","outcome":"card","target":"jakt"}
+{"id":"Janet","name":"Janet","scope":"languages","outcome":"card","target":"janet"}
+{"id":"Java","name":"Java","scope":"languages","outcome":"node","target":"java"}
+{"id":"JavaFX-Script","name":"JavaFX Script","scope":"languages","outcome":"card","target":"javafx-script"}
+{"id":"JavaScript","name":"JavaScript","scope":"languages","outcome":"node","target":"javascript"}
+{"id":"Jinja","name":"Jinja","scope":"languages","outcome":"card","target":"jinja"}
+{"id":"JoCaml","name":"JoCaml","scope":"languages","outcome":"card","target":"jocaml"}
+{"id":"Joy","name":"Joy","scope":"languages","outcome":"card","target":"joy"}
+{"id":"Jq","name":"Jq","scope":"languages","outcome":"card","target":"jq"}
+{"id":"Jsish","name":"Jsish","scope":"languages","outcome":"card","target":"jsish"}
+{"id":"JudoScript","name":"JudoScript","scope":"languages","outcome":"card","target":"judoscript"}
+{"id":"Julia","name":"Julia","scope":"languages","outcome":"card","target":"julia"}
+{"id":"K","name":"K","scope":"languages","outcome":"card","target":"k"}
+{"id":"KAP","name":"KAP","scope":"languages","outcome":"card","target":"kap"}
+{"id":"KL1","name":"KL1","scope":"languages","outcome":"card","target":"kl1"}
+{"id":"KQL","name":"KQL","scope":"languages","outcome":"card","target":"kql"}
+{"id":"Kabap","name":"Kabap","scope":"languages","outcome":"card","target":"kabap"}
+{"id":"Kamailio-Script","name":"Kamailio Script","scope":"languages","outcome":"card","target":"kamailio-script"}
+{"id":"Kantalo","name":"Kantalo","scope":"languages","outcome":"card","target":"kantalo"}
+{"id":"KatLang","name":"KatLang","scope":"languages","outcome":"card","target":"katlang"}
+{"id":"Kaya","name":"Kaya","scope":"languages","outcome":"card","target":"kaya"}
+{"id":"Keg","name":"Keg","scope":"languages","outcome":"card","target":"keg"}
+{"id":"KeyList-Databasing","name":"KeyList Databasing","scope":"languages","outcome":"card","target":"keylist-databasing"}
+{"id":"Kite","name":"Kite","scope":"languages","outcome":"card","target":"kite"}
+{"id":"Kitten","name":"Kitten","scope":"languages","outcome":"card","target":"kitten"}
+{"id":"Klingphix","name":"Klingphix","scope":"languages","outcome":"card","target":"klingphix"}
+{"id":"Klong","name":"Klong","scope":"languages","outcome":"card","target":"klong"}
+{"id":"Koka","name":"Koka","scope":"languages","outcome":"card","target":"koka"}
+{"id":"Komodo","name":"Komodo","scope":"languages","outcome":"card","target":"komodo"}
+{"id":"KonsolScript","name":"KonsolScript","scope":"languages","outcome":"card","target":"konsolscript"}
+{"id":"Kotlin","name":"Kotlin","scope":"languages","outcome":"node","target":"kotlin"}
+{"id":"Ksh","name":"Ksh","scope":"languages","outcome":"card","target":"korn-shell"}
+{"id":"L++","name":"L++","scope":"languages","outcome":"card","target":"lpp"}
+{"id":"L.in.oleum","name":"L.in.oleum","scope":"languages","outcome":"card","target":"linoleum"}
+{"id":"LAST","name":"LAST","scope":"languages","outcome":"card","target":"last"}
+{"id":"LC2200-Assembly","name":"LC2200 Assembly","scope":"languages","outcome":"card","target":"lc2200-assembly"}
+{"id":"LC3-Assembly","name":"LC3 Assembly","scope":"languages","outcome":"card","target":"lc3-assembly"}
+{"id":"LDPL","name":"LDPL","scope":"languages","outcome":"card","target":"ldpl"}
+{"id":"LFE","name":"LFE","scope":"languages","outcome":"card","target":"lfe"}
+{"id":"LIL","name":"LIL","scope":"languages","outcome":"card","target":"lil"}
+{"id":"LLP","name":"LLP","scope":"languages","outcome":"card","target":"llp"}
+{"id":"LLVM","name":"LLVM","scope":"languages","outcome":"card","target":"llvmir"}
+{"id":"LOLCODE","name":"LOLCODE","scope":"languages","outcome":"card","target":"lolcode"}
+{"id":"LSE","name":"LSE","scope":"languages","outcome":"card","target":"lse"}
+{"id":"LSE64","name":"LSE64","scope":"languages","outcome":"card","target":"lse64"}
+{"id":"LSL","name":"LSL","scope":"languages","outcome":"card","target":"lsl"}
+{"id":"LSTS","name":"LSTS","scope":"languages","outcome":"card","target":"lsts"}
+{"id":"LaTeX","name":"LaTeX","scope":"languages","outcome":"card","target":"latex"}
+{"id":"LabVIEW","name":"LabVIEW","scope":"languages","outcome":"card","target":"labview"}
+{"id":"Labyrinth","name":"Labyrinth","scope":"languages","outcome":"card","target":"labyrinth"}
+{"id":"Lambda-Prolog","name":"Lambda Prolog","scope":"languages","outcome":"card","target":"lambda-prolog"}
+{"id":"Lambdatalk","name":"Lambdatalk","scope":"languages","outcome":"card","target":"lambdatalk"}
+{"id":"Lang","name":"Lang","scope":"languages","outcome":"card","target":"lang"}
+{"id":"Lang5","name":"Lang5","scope":"languages","outcome":"card","target":"lang5"}
+{"id":"Langur","name":"Langur","scope":"languages","outcome":"card","target":"langur"}
+{"id":"Lapyst","name":"Lapyst","scope":"languages","outcome":"card","target":"lapyst"}
+{"id":"Lasso","name":"Lasso","scope":"languages","outcome":"card","target":"lasso"}
+{"id":"Latitude","name":"Latitude","scope":"languages","outcome":"card","target":"latitude"}
+{"id":"Lean","name":"Lean","scope":"languages","outcome":"card","target":"lean"}
+{"id":"Leon","name":"Leon","scope":"languages","outcome":"card","target":"leon"}
+{"id":"Lhogho","name":"Lhogho","scope":"languages","outcome":"card","target":"lhogho"}
+{"id":"Liberty-BASIC","name":"Liberty BASIC","scope":"languages","outcome":"card","target":"liberty-basic"}
+{"id":"LibreOffice-Basic","name":"LibreOffice Basic","scope":"languages","outcome":"card","target":"libreoffice-basic"}
+{"id":"Lily","name":"Lily","scope":"languages","outcome":"card","target":"lily"}
+{"id":"Lilypond","name":"Lilypond","scope":"languages","outcome":"card","target":"lilypond"}
+{"id":"Limbo","name":"Limbo","scope":"languages","outcome":"card","target":"limbo"}
+{"id":"Lingo","name":"Lingo","scope":"languages","outcome":"card","target":"lingo"}
+{"id":"Lisaac","name":"Lisaac","scope":"languages","outcome":"card","target":"lisaac"}
+{"id":"Lisp","name":"Lisp","scope":"languages","outcome":"card","target":"lisp"}
+{"id":"Little","name":"Little","scope":"languages","outcome":"card","target":"little"}
+{"id":"Little-Man-Computer","name":"Little Man Computer","scope":"languages","outcome":"card","target":"little-man-computer"}
+{"id":"LiveCode","name":"LiveCode","scope":"languages","outcome":"card","target":"livecode"}
+{"id":"LiveScript","name":"LiveScript","scope":"languages","outcome":"card","target":"livescript"}
+{"id":"Lobster","name":"Lobster","scope":"languages","outcome":"card","target":"lobster"}
+{"id":"Locomotive-Basic","name":"Locomotive Basic","scope":"languages","outcome":"card","target":"locomotive-basic"}
+{"id":"Loglan82","name":"Loglan82","scope":"languages","outcome":"card","target":"loglan82"}
+{"id":"Logo","name":"Logo","scope":"languages","outcome":"card","target":"logo"}
+{"id":"Logtalk","name":"Logtalk","scope":"languages","outcome":"card","target":"logtalk"}
+{"id":"Lolli","name":"Lolli","scope":"languages","outcome":"card","target":"lolli"}
+{"id":"Lotus-123-Macro-Scripting","name":"Lotus 123 Macro Scripting","scope":"languages","outcome":"card","target":"lotus-123-macro-scripting"}
+{"id":"LotusScript","name":"LotusScript","scope":"languages","outcome":"card","target":"lotusscript"}
+{"id":"Lout","name":"Lout","scope":"languages","outcome":"card","target":"lout"}
+{"id":"Lua","name":"Lua","scope":"languages","outcome":"card","target":"lua"}
+{"id":"Lucid","name":"Lucid","scope":"languages","outcome":"card","target":"lucid"}
+{"id":"Luck","name":"Luck","scope":"languages","outcome":"card","target":"luck"}
+{"id":"Luna","name":"Luna","scope":"languages","outcome":"card","target":"luna"}
+{"id":"Lush","name":"Lush","scope":"languages","outcome":"card","target":"lush"}
+{"id":"Lychen","name":"Lychen","scope":"languages","outcome":"card","target":"lychen"}
+{"id":"Lygon","name":"Lygon","scope":"languages","outcome":"card","target":"lygon"}
+{"id":"M2000-Interpreter","name":"M2000 Interpreter","scope":"languages","outcome":"card","target":"m2000-interpreter"}
+{"id":"M4","name":"M4","scope":"languages","outcome":"card","target":"m4"}
+{"id":"M680x0","name":"M680x0","scope":"languages","outcome":"card","target":"m680x0"}
+{"id":"MACRO-11","name":"MACRO-11","scope":"languages","outcome":"card","target":"macro-11"}
+{"id":"MAD","name":"MAD","scope":"languages","outcome":"card","target":"mad"}
+{"id":"MANOOL","name":"MANOOL","scope":"languages","outcome":"card","target":"manool"}
+{"id":"MAPPER","name":"MAPPER","scope":"languages","outcome":"card","target":"mapper"}
+{"id":"MATLAB","name":"MATLAB","scope":"languages","outcome":"card","target":"matlab"}
+{"id":"MAXScript","name":"MAXScript","scope":"languages","outcome":"card","target":"maxscript"}
+{"id":"MBS","name":"MBS","scope":"languages","outcome":"card","target":"mbs"}
+{"id":"MDL","name":"MDL","scope":"languages","outcome":"card","target":"mdl"}
+{"id":"ME10-macro","name":"ME10 macro","scope":"languages","outcome":"card","target":"me10-macro"}
+{"id":"MEL","name":"MEL","scope":"languages","outcome":"card","target":"mel"}
+{"id":"MGS","name":"MGS","scope":"languages","outcome":"card","target":"mgs"}
+{"id":"MINIL","name":"MINIL","scope":"languages","outcome":"card","target":"minil"}
+{"id":"MIPS-Assembly","name":"MIPS Assembly","scope":"languages","outcome":"card","target":"mips-assembly"}
+{"id":"MIRC-Scripting-Language","name":"MIRC Scripting Language","scope":"languages","outcome":"card","target":"mirc"}
+{"id":"MK-61-52","name":"MK-61/52","scope":"languages","outcome":"card","target":"mk-61-52"}
+{"id":"ML","name":"ML","scope":"languages","outcome":"card","target":"ml"}
+{"id":"ML-I","name":"ML/I","scope":"languages","outcome":"card","target":"ml-i"}
+{"id":"MLite","name":"MLite","scope":"languages","outcome":"card","target":"mlite"}
+{"id":"MMIX","name":"MMIX","scope":"languages","outcome":"card","target":"mmix"}
+{"id":"MOO","name":"MOO","scope":"languages","outcome":"card","target":"moo"}
+{"id":"MPIF90","name":"MPIF90","scope":"languages","outcome":"card","target":"mpif90"}
+{"id":"MS-SQL","name":"MS SQL","scope":"languages","outcome":"card","target":"transact-sql"}
+{"id":"MSSQL","name":"MSSQL","scope":"languages","outcome":"card","target":"transact-sql"}
+{"id":"MSX-Basic","name":"MSX Basic","scope":"languages","outcome":"card","target":"msx-basic"}
+{"id":"MUF","name":"MUF","scope":"languages","outcome":"card","target":"muf"}
+{"id":"MUMPS","name":"MUMPS","scope":"languages","outcome":"card","target":"mumps"}
+{"id":"Macsyma","name":"Macsyma","scope":"languages","outcome":"card","target":"macsyma"}
+{"id":"Make","name":"Make","scope":"languages","outcome":"card","target":"make"}
+{"id":"MakrellPy","name":"MakrellPy","scope":"languages","outcome":"card","target":"makrellpy"}
+{"id":"Malbolge","name":"Malbolge","scope":"languages","outcome":"card","target":"malbolge"}
+{"id":"Maple","name":"Maple","scope":"languages","outcome":"card","target":"maple"}
+{"id":"MariaDB","name":"MariaDB","scope":"languages","outcome":"card","target":"mariadb"}
+{"id":"Mastermind","name":"Mastermind","scope":"languages","outcome":"card","target":"mastermind"}
+{"id":"MathCortex","name":"MathCortex","scope":"languages","outcome":"card","target":"mathcortex"}
+{"id":"Mathcad","name":"Mathcad","scope":"languages","outcome":"card","target":"mathcad"}
+{"id":"Mathematica","name":"Mathematica","scope":"languages","outcome":"card","target":"mathematica"}
+{"id":"Mathprog","name":"Mathprog","scope":"languages","outcome":"card","target":"mathprog"}
+{"id":"Maude","name":"Maude","scope":"languages","outcome":"card","target":"maude"}
+{"id":"Maxima","name":"Maxima","scope":"languages","outcome":"card","target":"maxima"}
+{"id":"MelonBasic","name":"MelonBasic","scope":"languages","outcome":"card","target":"melonbasic"}
+{"id":"Mercury","name":"Mercury","scope":"languages","outcome":"card","target":"mercury"}
+{"id":"Metafont","name":"Metafont","scope":"languages","outcome":"card","target":"metafont"}
+{"id":"Metapost","name":"Metapost","scope":"languages","outcome":"card","target":"metapost"}
+{"id":"Mia","name":"Mia","scope":"languages","outcome":"card","target":"mia"}
+{"id":"Microsoft-Small-Basic","name":"Microsoft Small Basic","scope":"languages","outcome":"card","target":"microsoft-small-basic"}
+{"id":"Min","name":"Min","scope":"languages","outcome":"card","target":"min"}
+{"id":"MiniScript","name":"MiniScript","scope":"languages","outcome":"card","target":"miniscript"}
+{"id":"MiniZinc","name":"MiniZinc","scope":"languages","outcome":"card","target":"minizinc"}
+{"id":"Minimal-BASIC","name":"Minimal BASIC","scope":"languages","outcome":"card","target":"minimal-basic"}
+{"id":"Mirah","name":"Mirah","scope":"languages","outcome":"card","target":"mirah"}
+{"id":"Miranda","name":"Miranda","scope":"languages","outcome":"card","target":"miranda"}
+{"id":"Mirelle","name":"Mirelle","scope":"languages","outcome":"card","target":"mirelle"}
+{"id":"Mn","name":"Mn","scope":"languages","outcome":"card","target":"mn"}
+{"id":"Modula-2","name":"Modula-2","scope":"languages","outcome":"card","target":"modula-2"}
+{"id":"Modula-3","name":"Modula-3","scope":"languages","outcome":"card","target":"modula-3"}
+{"id":"Mojo","name":"Mojo","scope":"languages","outcome":"card","target":"mojo"}
+{"id":"Mond","name":"Mond","scope":"languages","outcome":"card","target":"mond"}
+{"id":"Monicelli","name":"Monicelli","scope":"languages","outcome":"card","target":"monicelli"}
+{"id":"Monkey","name":"Monkey","scope":"languages","outcome":"card","target":"monkey"}
+{"id":"Monte","name":"Monte","scope":"languages","outcome":"card","target":"monte"}
+{"id":"MontiLang","name":"MontiLang","scope":"languages","outcome":"card","target":"montilang"}
+{"id":"MoonBit","name":"MoonBit","scope":"languages","outcome":"card","target":"moonbit"}
+{"id":"MoonRock","name":"MoonRock","scope":"languages","outcome":"card","target":"moonrock"}
+{"id":"MoonScript","name":"MoonScript","scope":"languages","outcome":"card","target":"moonscript"}
+{"id":"Moonli","name":"Moonli","scope":"languages","outcome":"card","target":"moonli"}
+{"id":"Morfa","name":"Morfa","scope":"languages","outcome":"card","target":"morfa"}
+{"id":"Mosaic","name":"Mosaic","scope":"languages","outcome":"card","target":"mosaic"}
+{"id":"Motoko","name":"Motoko","scope":"languages","outcome":"card","target":"motoko"}
+{"id":"MyDef","name":"MyDef","scope":"languages","outcome":"card","target":"mydef"}
+{"id":"MySQL","name":"MySQL","scope":"languages","outcome":"card","target":"mysql"}
+{"id":"Myrddin","name":"Myrddin","scope":"languages","outcome":"card","target":"myrddin"}
+{"id":"MyrtleScript","name":"MyrtleScript","scope":"languages","outcome":"card","target":"myrtlescript"}
+{"id":"Mython","name":"Mython","scope":"languages","outcome":"card","target":"mython"}
+{"id":"Mythryl","name":"Mythryl","scope":"languages","outcome":"card","target":"mythryl"}
+{"id":"N-t-roff","name":"N/t/roff","scope":"languages","outcome":"card","target":"n-t-roff"}
+{"id":"NASL","name":"NASL","scope":"languages","outcome":"card","target":"nasl"}
+{"id":"NATURAL","name":"NATURAL","scope":"languages","outcome":"card","target":"natural"}
+{"id":"NESL","name":"NESL","scope":"languages","outcome":"card","target":"nesl"}
+{"id":"NGS","name":"NGS","scope":"languages","outcome":"card","target":"ngs"}
+{"id":"NLP++","name":"NLP++","scope":"languages","outcome":"card","target":"nlp-plus-plus"}
+{"id":"NOWUT","name":"NOWUT","scope":"languages","outcome":"card","target":"nowut"}
+{"id":"NQP","name":"NQP","scope":"languages","outcome":"card","target":"nqp"}
+{"id":"NS-HUBASIC","name":"NS-HUBASIC","scope":"languages","outcome":"card","target":"ns-hubasic"}
+{"id":"NSIS","name":"NSIS","scope":"languages","outcome":"card","target":"nsis"}
+{"id":"Nanoquery","name":"Nanoquery","scope":"languages","outcome":"card","target":"nanoquery"}
+{"id":"Nascom-BASIC","name":"Nascom BASIC","scope":"languages","outcome":"card","target":"nascom-basic"}
+{"id":"Neat","name":"Neat","scope":"languages","outcome":"card","target":"neat"}
+{"id":"Neko","name":"Neko","scope":"languages","outcome":"card","target":"neko"}
+{"id":"Nemerle","name":"Nemerle","scope":"languages","outcome":"card","target":"nemerle"}
+{"id":"NetLogo","name":"NetLogo","scope":"languages","outcome":"card","target":"netlogo"}
+{"id":"NetRexx","name":"NetRexx","scope":"languages","outcome":"card","target":"netrexx"}
+{"id":"Never","name":"Never","scope":"languages","outcome":"card","target":"never"}
+{"id":"NewLISP","name":"NewLISP","scope":"languages","outcome":"card","target":"newlisp"}
+{"id":"NewtonScript","name":"NewtonScript","scope":"languages","outcome":"card","target":"newtonscript"}
+{"id":"Nial","name":"Nial","scope":"languages","outcome":"card","target":"nial"}
+{"id":"Nice","name":"Nice","scope":"languages","outcome":"card","target":"nice"}
+{"id":"Nickle","name":"Nickle","scope":"languages","outcome":"card","target":"nickle"}
+{"id":"Night","name":"Night","scope":"languages","outcome":"card","target":"night"}
+{"id":"Nim","name":"Nim","scope":"languages","outcome":"card","target":"nim"}
+{"id":"Nit","name":"Nit","scope":"languages","outcome":"card","target":"nit"}
+{"id":"Niue","name":"Niue","scope":"languages","outcome":"card","target":"niue"}
+{"id":"Nix","name":"Nix","scope":"languages","outcome":"card","target":"nix"}
+{"id":"Nom","name":"Nom","scope":"languages","outcome":"card","target":"nom"}
+{"id":"Nu","name":"Nu","scope":"languages","outcome":"card","target":"nu"}
+{"id":"Nutt","name":"Nutt","scope":"languages","outcome":"card","target":"nutt"}
+{"id":"Nyquist","name":"Nyquist","scope":"languages","outcome":"card","target":"nyquist"}
+{"id":"OASYS","name":"OASYS","scope":"languages","outcome":"card","target":"oasys"}
+{"id":"OASYS-Assembler","name":"OASYS Assembler","scope":"languages","outcome":"card","target":"oasys-assembler"}
+{"id":"OCaml","name":"OCaml","scope":"languages","outcome":"card","target":"ocaml"}
+{"id":"OOC","name":"OOC","scope":"languages","outcome":"card","target":"ooc"}
+{"id":"OOCalc","name":"OOCalc","scope":"languages","outcome":"card","target":"oocalc"}
+{"id":"OPL","name":"OPL","scope":"languages","outcome":"card","target":"opl"}
+{"id":"Oberon","name":"Oberon","scope":"languages","outcome":"card","target":"oberon"}
+{"id":"Oberon-07","name":"Oberon-07","scope":"languages","outcome":"card","target":"oberon-07"}
+{"id":"Objeck","name":"Objeck","scope":"languages","outcome":"card","target":"objeck"}
+{"id":"Object-Pascal","name":"Object Pascal","scope":"languages","outcome":"card","target":"object-pascal"}
+{"id":"Object-Pascal-Implementations","name":"Object Pascal Implementations","scope":"languages","outcome":"not-an-item","reason":"a Rosetta Code category that groups the implementations of Object Pascal"}
+{"id":"ObjectIcon","name":"ObjectIcon","scope":"languages","outcome":"card","target":"objecticon"}
+{"id":"Objective-C","name":"Objective-C","scope":"languages","outcome":"card","target":"objective-c"}
+{"id":"Occam","name":"Occam","scope":"languages","outcome":"card","target":"occam"}
+{"id":"Octave","name":"Octave","scope":"languages","outcome":"card","target":"octave"}
+{"id":"Odin","name":"Odin","scope":"languages","outcome":"card","target":"odin"}
+{"id":"Oforth","name":"Oforth","scope":"languages","outcome":"card","target":"oforth"}
+{"id":"Ol","name":"Ol","scope":"languages","outcome":"card","target":"ol"}
+{"id":"Omega","name":"Omega","scope":"languages","outcome":"card","target":"pbt-omega"}
+{"id":"OmniMark","name":"OmniMark","scope":"languages","outcome":"card","target":"omnimark"}
+{"id":"Onyx","name":"Onyx","scope":"languages","outcome":"card","target":"onyx"}
+{"id":"Onyx-(wasm)","name":"Onyx (wasm)","scope":"languages","outcome":"card","target":"onyx-wasm"}
+{"id":"OoRexx","name":"OoRexx","scope":"languages","outcome":"card","target":"object-rexx"}
+{"id":"Opa","name":"Opa","scope":"languages","outcome":"card","target":"opa"}
+{"id":"OpenC++","name":"OpenC++","scope":"languages","outcome":"card","target":"opencpp"}
+{"id":"OpenEdge-Progress","name":"OpenEdge/Progress","scope":"languages","outcome":"card","target":"openedge-progress"}
+{"id":"OpenLisp","name":"OpenLisp","scope":"languages","outcome":"card","target":"openlisp"}
+{"id":"Openscad","name":"Openscad","scope":"languages","outcome":"card","target":"openscad"}
+{"id":"Order","name":"Order","scope":"languages","outcome":"card","target":"order"}
+{"id":"Owl-Lisp","name":"Owl Lisp","scope":"languages","outcome":"card","target":"owl-lisp"}
+{"id":"OxygenBasic","name":"OxygenBasic","scope":"languages","outcome":"card","target":"oxygenbasic"}
+{"id":"Oxygene","name":"Oxygene","scope":"languages","outcome":"card","target":"oxygene"}
+{"id":"Oz","name":"Oz","scope":"languages","outcome":"card","target":"oz"}
+{"id":"PARI-GP","name":"PARI/GP","scope":"languages","outcome":"card","target":"pari-gp"}
+{"id":"PASM","name":"PASM","scope":"languages","outcome":"card","target":"pasm"}
+{"id":"PDP-11-Assembly","name":"PDP-11 Assembly","scope":"languages","outcome":"card","target":"pdp-11-assembly"}
+{"id":"PHL","name":"PHL","scope":"languages","outcome":"card","target":"phl"}
+{"id":"PHP","name":"PHP","scope":"languages","outcome":"card","target":"php"}
+{"id":"PILOT","name":"PILOT","scope":"languages","outcome":"card","target":"pilot"}
+{"id":"PIR","name":"PIR","scope":"languages","outcome":"card","target":"parrot-internal-representation"}
+{"id":"PL-0","name":"PL/0","scope":"languages","outcome":"card","target":"pl-0"}
+{"id":"PL-B","name":"PL/B","scope":"languages","outcome":"card","target":"plb"}
+{"id":"PL-I","name":"PL/I","scope":"languages","outcome":"card","target":"pl-i"}
+{"id":"PL-I-80","name":"PL/I-80","scope":"languages","outcome":"card","target":"pl-i-80"}
+{"id":"PL-M","name":"PL/M","scope":"languages","outcome":"card","target":"pl-m"}
+{"id":"PL-SQL","name":"PL/SQL","scope":"languages","outcome":"card","target":"pl-sql"}
+{"id":"PL-pgSQL","name":"PL/pgSQL","scope":"languages","outcome":"card","target":"plpgsql"}
+{"id":"PLUS","name":"PLUS","scope":"languages","outcome":"card","target":"plus"}
+{"id":"PLZ-SYS","name":"PLZ/SYS","scope":"languages","outcome":"card","target":"plz-sys"}
+{"id":"POV-Ray","name":"POV-Ray","scope":"languages","outcome":"card","target":"pov-ray-sdl"}
+{"id":"PPL","name":"PPL","scope":"languages","outcome":"card","target":"ppl-language"}
+{"id":"PROMAL","name":"PROMAL","scope":"languages","outcome":"card","target":"promal"}
+{"id":"PSQL","name":"PSQL","scope":"languages","outcome":"card","target":"psql"}
+{"id":"Palo-Alto-Tiny-BASIC","name":"Palo Alto Tiny BASIC","scope":"languages","outcome":"card","target":"palo-alto-tiny-basic"}
+{"id":"Panda","name":"Panda","scope":"languages","outcome":"card","target":"panda"}
+{"id":"Panoramic","name":"Panoramic","scope":"languages","outcome":"card","target":"panoramic"}
+{"id":"ParaCL","name":"ParaCL","scope":"languages","outcome":"card","target":"paracl"}
+{"id":"Pare","name":"Pare","scope":"languages","outcome":"card","target":"pare"}
+{"id":"Pascal","name":"Pascal","scope":"languages","outcome":"card","target":"pascal"}
+{"id":"Pascal-P","name":"Pascal-P","scope":"languages","outcome":"card","target":"pascal-p"}
+{"id":"PascalABC.NET","name":"PascalABC.NET","scope":"languages","outcome":"card","target":"pascal-abc.net"}
+{"id":"Pebble","name":"Pebble","scope":"languages","outcome":"card","target":"pebble"}
+{"id":"Peloton","name":"Peloton","scope":"languages","outcome":"card","target":"peloton"}
+{"id":"Pentium-Assembly","name":"Pentium Assembly","scope":"languages","outcome":"card","target":"pentium-assembly"}
+{"id":"PeopleCode","name":"PeopleCode","scope":"languages","outcome":"card","target":"peoplecode"}
+{"id":"PepsiScript","name":"PepsiScript","scope":"languages","outcome":"card","target":"pepsiscript"}
+{"id":"Peri","name":"Peri","scope":"languages","outcome":"card","target":"peri"}
+{"id":"Perl","name":"Perl","scope":"languages","outcome":"card","target":"perl"}
+{"id":"Perl-6","name":"Perl 6","scope":"languages","outcome":"card","target":"raku"}
+{"id":"Perl5i","name":"Perl5i","scope":"languages","outcome":"card","target":"perl5i"}
+{"id":"Peylang","name":"Peylang","scope":"languages","outcome":"card","target":"peylang"}
+{"id":"Phix","name":"Phix","scope":"languages","outcome":"card","target":"phix"}
+{"id":"Phixmonti","name":"Phixmonti","scope":"languages","outcome":"card","target":"phixmonti"}
+{"id":"Picat","name":"Picat","scope":"languages","outcome":"card","target":"picat"}
+{"id":"Pico-8","name":"Pico-8","scope":"languages","outcome":"card","target":"pico-8"}
+{"id":"PicoLisp","name":"PicoLisp","scope":"languages","outcome":"card","target":"picolisp"}
+{"id":"Pict","name":"Pict","scope":"languages","outcome":"card","target":"pict"}
+{"id":"Piet","name":"Piet","scope":"languages","outcome":"card","target":"piet-programming-language"}
+{"id":"Pike","name":"Pike","scope":"languages","outcome":"card","target":"pike"}
+{"id":"Pixilang","name":"Pixilang","scope":"languages","outcome":"card","target":"pixilang"}
+{"id":"Plain-English","name":"Plain English","scope":"languages","outcome":"card","target":"plain-english"}
+{"id":"PlainTeX","name":"PlainTeX","scope":"languages","outcome":"card","target":"plaintex"}
+{"id":"Plan","name":"Plan","scope":"languages","outcome":"card","target":"plan"}
+{"id":"Pluto","name":"Pluto","scope":"languages","outcome":"card","target":"pluto"}
+{"id":"Pointless","name":"Pointless","scope":"languages","outcome":"card","target":"pointless"}
+{"id":"Polyglot","name":"Polyglot","scope":"languages","outcome":"not-an-item","reason":"a Rosetta Code category for programs that are valid in more than one language"}
+{"id":"Polyglot:PL-I","name":"Polyglot:PL/I","scope":"languages","outcome":"not-an-item","reason":"a Rosetta Code category for programs that are valid in PL/I and another language"}
+{"id":"Pony","name":"Pony","scope":"languages","outcome":"card","target":"pony"}
+{"id":"Pop11","name":"Pop11","scope":"languages","outcome":"card","target":"pop-11"}
+{"id":"Portugol","name":"Portugol","scope":"languages","outcome":"card","target":"portugol"}
+{"id":"PostScript","name":"PostScript","scope":"languages","outcome":"card","target":"postscript"}
+{"id":"Potion","name":"Potion","scope":"languages","outcome":"card","target":"potion"}
+{"id":"PowerBASIC","name":"PowerBASIC","scope":"languages","outcome":"card","target":"powerbasic"}
+{"id":"PowerPC-Assembly","name":"PowerPC Assembly","scope":"languages","outcome":"card","target":"powerpc-assembly"}
+{"id":"PowerShell","name":"PowerShell","scope":"languages","outcome":"card","target":"powershell"}
+{"id":"Powerbuilder","name":"Powerbuilder","scope":"languages","outcome":"card","target":"powerbuilder"}
+{"id":"ProDOS","name":"ProDOS","scope":"languages","outcome":"card","target":"prodos"}
+{"id":"Processing","name":"Processing","scope":"languages","outcome":"card","target":"processing"}
+{"id":"Processing-Python-mode","name":"Processing Python mode","scope":"languages","outcome":"card","target":"processing-python-mode"}
+{"id":"Processing.R","name":"Processing.R","scope":"languages","outcome":"card","target":"processing-r"}
+{"id":"Prog8","name":"Prog8","scope":"languages","outcome":"card","target":"prog8"}
+{"id":"ProgressBASIC","name":"ProgressBASIC","scope":"languages","outcome":"card","target":"progressbasic"}
+{"id":"Prolog","name":"Prolog","scope":"languages","outcome":"card","target":"prolog"}
+{"id":"Pure","name":"Pure","scope":"languages","outcome":"card","target":"pure"}
+{"id":"Pure-Data","name":"Pure Data","scope":"languages","outcome":"card","target":"puredata"}
+{"id":"PureBasic","name":"PureBasic","scope":"languages","outcome":"card","target":"purebasic"}
+{"id":"Purity","name":"Purity","scope":"languages","outcome":"card","target":"purity"}
+{"id":"Pyret","name":"Pyret","scope":"languages","outcome":"card","target":"pyret"}
+{"id":"Python","name":"Python","scope":"languages","outcome":"node","target":"python"}
+{"id":"Q","name":"Q","scope":"languages","outcome":"card","target":"q"}
+{"id":"Q-Sharp","name":"Q Sharp","scope":"languages","outcome":"card","target":"q-sharp"}
+{"id":"QB64","name":"QB64","scope":"languages","outcome":"card","target":"qb64"}
+{"id":"QBasic","name":"QBasic","scope":"languages","outcome":"card","target":"qbasic"}
+{"id":"QL-SuperBASIC","name":"QL SuperBASIC","scope":"languages","outcome":"card","target":"ql-superbasic"}
+{"id":"Qi","name":"Qi","scope":"languages","outcome":"card","target":"qi"}
+{"id":"Qore","name":"Qore","scope":"languages","outcome":"card","target":"qore"}
+{"id":"Quackery","name":"Quackery","scope":"languages","outcome":"card","target":"quackery"}
+{"id":"QuakeC","name":"QuakeC","scope":"languages","outcome":"card","target":"quakec"}
+{"id":"QuickBASIC","name":"QuickBASIC","scope":"languages","outcome":"card","target":"quickbasic"}
+{"id":"Quill","name":"Quill","scope":"languages","outcome":"card","target":"quill"}
+{"id":"Quirl","name":"Quirl","scope":"languages","outcome":"card","target":"quirl"}
+{"id":"Quite-BASIC","name":"Quite BASIC","scope":"languages","outcome":"card","target":"quite-basic"}
+{"id":"Quorum","name":"Quorum","scope":"languages","outcome":"card","target":"quorum"}
+{"id":"R","name":"R","scope":"languages","outcome":"card","target":"r"}
+{"id":"RASEL","name":"RASEL","scope":"languages","outcome":"card","target":"rasel"}
+{"id":"RATFOR","name":"RATFOR","scope":"languages","outcome":"card","target":"ratfor"}
+{"id":"REALbasic","name":"REALbasic","scope":"languages","outcome":"card","target":"realbasic"}
+{"id":"REBOL","name":"REBOL","scope":"languages","outcome":"card","target":"rebol"}
+{"id":"REXX","name":"REXX","scope":"languages","outcome":"card","target":"rexx"}
+{"id":"RISC-V-Assembly","name":"RISC-V Assembly","scope":"languages","outcome":"card","target":"risc-v-assembly"}
+{"id":"RLSL","name":"RLSL","scope":"languages","outcome":"card","target":"rlsl"}
+{"id":"RLaB","name":"RLaB","scope":"languages","outcome":"card","target":"rlab"}
+{"id":"RPG","name":"RPG","scope":"languages","outcome":"card","target":"rpg"}
+{"id":"RPGIV","name":"RPGIV","scope":"languages","outcome":"card","target":"rpgiv"}
+{"id":"RPL","name":"RPL","scope":"languages","outcome":"card","target":"rpl"}
+{"id":"RPL-2","name":"RPL/2","scope":"languages","outcome":"card","target":"rpl-2"}
+{"id":"RTL-2","name":"RTL/2","scope":"languages","outcome":"card","target":"rtl-2"}
+{"id":"RTSL","name":"RTSL","scope":"languages","outcome":"card","target":"rtsl"}
+{"id":"Ra","name":"Ra","scope":"languages","outcome":"card","target":"ra"}
+{"id":"Racket","name":"Racket","scope":"languages","outcome":"card","target":"racket"}
+{"id":"Raku","name":"Raku","scope":"languages","outcome":"card","target":"raku"}
+{"id":"RapidQ","name":"RapidQ","scope":"languages","outcome":"card","target":"rapidq"}
+{"id":"Rapira","name":"Rapira","scope":"languages","outcome":"card","target":"rapira"}
+{"id":"Rascal","name":"Rascal","scope":"languages","outcome":"card","target":"rascal"}
+{"id":"Raven","name":"Raven","scope":"languages","outcome":"card","target":"raven"}
+{"id":"ReScript","name":"ReScript","scope":"languages","outcome":"card","target":"rescript"}
+{"id":"Reason","name":"Reason","scope":"languages","outcome":"card","target":"reason"}
+{"id":"Red","name":"Red","scope":"languages","outcome":"card","target":"red"}
+{"id":"Reduce","name":"Reduce","scope":"languages","outcome":"card","target":"reduce"}
+{"id":"Refal","name":"Refal","scope":"languages","outcome":"card","target":"refal"}
+{"id":"Relation","name":"Relation","scope":"languages","outcome":"card","target":"relation"}
+{"id":"Retro","name":"Retro","scope":"languages","outcome":"card","target":"retro"}
+{"id":"Revolution","name":"Revolution","scope":"languages","outcome":"card","target":"revolution-programming-language"}
+{"id":"Rhombus","name":"Rhombus","scope":"languages","outcome":"card","target":"rhombus"}
+{"id":"Rhope","name":"Rhope","scope":"languages","outcome":"card","target":"rhope"}
+{"id":"Rhovas","name":"Rhovas","scope":"languages","outcome":"card","target":"rhovas"}
+{"id":"Ring","name":"Ring","scope":"languages","outcome":"card","target":"ring"}
+{"id":"Robotic","name":"Robotic","scope":"languages","outcome":"card","target":"robotic"}
+{"id":"Roc","name":"Roc","scope":"languages","outcome":"card","target":"roc"}
+{"id":"Rockstar","name":"Rockstar","scope":"languages","outcome":"card","target":"rockstar"}
+{"id":"Rocq","name":"Rocq","scope":"languages","outcome":"card","target":"coq"}
+{"id":"Ruby","name":"Ruby","scope":"languages","outcome":"card","target":"ruby"}
+{"id":"Rubylog","name":"Rubylog","scope":"languages","outcome":"card","target":"rubylog"}
+{"id":"Run-BASIC","name":"Run BASIC","scope":"languages","outcome":"card","target":"run-basic"}
+{"id":"Rust","name":"Rust","scope":"languages","outcome":"node","target":"rust"}
+{"id":"Rye","name":"Rye","scope":"languages","outcome":"card","target":"rye"}
+{"id":"S++","name":"S++","scope":"languages","outcome":"card","target":"spp"}
+{"id":"S-BASIC","name":"S-BASIC","scope":"languages","outcome":"card","target":"sbasic"}
+{"id":"S-lang","name":"S-lang","scope":"languages","outcome":"card","target":"s-lang"}
+{"id":"SAS","name":"SAS","scope":"languages","outcome":"card","target":"sas"}
+{"id":"SASL","name":"SASL","scope":"languages","outcome":"card","target":"sasl"}
+{"id":"SETL","name":"SETL","scope":"languages","outcome":"card","target":"setl"}
+{"id":"SIL","name":"SIL","scope":"languages","outcome":"card","target":"sil"}
+{"id":"SIMPOL","name":"SIMPOL","scope":"languages","outcome":"card","target":"simpol"}
+{"id":"SMEQL","name":"SMEQL","scope":"languages","outcome":"card","target":"smeql"}
+{"id":"SNOBOL4","name":"SNOBOL4","scope":"languages","outcome":"card","target":"snobol4"}
+{"id":"SNUSP","name":"SNUSP","scope":"languages","outcome":"card","target":"snusp"}
+{"id":"SPAD","name":"SPAD","scope":"languages","outcome":"card","target":"spad"}
+{"id":"SPARC-Assembly","name":"SPARC Assembly","scope":"languages","outcome":"card","target":"sparc-assembly"}
+{"id":"SPARK","name":"SPARK","scope":"languages","outcome":"card","target":"spark-pl"}
+{"id":"SPL","name":"SPL","scope":"languages","outcome":"card","target":"spl"}
+{"id":"SPSS","name":"SPSS","scope":"languages","outcome":"card","target":"spss"}
+{"id":"SQL","name":"SQL","scope":"languages","outcome":"card","target":"sql"}
+{"id":"SQL-PL","name":"SQL PL","scope":"languages","outcome":"card","target":"sqlpl"}
+{"id":"SSEM","name":"SSEM","scope":"languages","outcome":"card","target":"ssem"}
+{"id":"SWI-Prolog","name":"SWI-Prolog","scope":"languages","outcome":"card","target":"swi-prolog"}
+{"id":"Sage","name":"Sage","scope":"languages","outcome":"card","target":"sage"}
+{"id":"Salmon","name":"Salmon","scope":"languages","outcome":"card","target":"salmon"}
+{"id":"SapbotVM","name":"SapbotVM","scope":"languages","outcome":"card","target":"sapbotvm"}
+{"id":"Sass-SCSS","name":"Sass/SCSS","scope":"languages","outcome":"card","target":"sass"}
+{"id":"Sather","name":"Sather","scope":"languages","outcome":"card","target":"sather"}
+{"id":"Scala","name":"Scala","scope":"languages","outcome":"card","target":"scala"}
+{"id":"Scheme","name":"Scheme","scope":"languages","outcome":"card","target":"scheme"}
+{"id":"Scilab","name":"Scilab","scope":"languages","outcome":"card","target":"scilab"}
+{"id":"Scratch","name":"Scratch","scope":"languages","outcome":"card","target":"scratch"}
+{"id":"ScratchScript","name":"ScratchScript","scope":"languages","outcome":"card","target":"scratchscript"}
+{"id":"Script-Basic","name":"Script Basic","scope":"languages","outcome":"card","target":"scriptbasic"}
+{"id":"Script3D","name":"Script3D","scope":"languages","outcome":"card","target":"script3d"}
+{"id":"ScriptBasic","name":"ScriptBasic","scope":"languages","outcome":"card","target":"scriptbasic"}
+{"id":"Sed","name":"Sed","scope":"languages","outcome":"card","target":"sed"}
+{"id":"Seed7","name":"Seed7","scope":"languages","outcome":"card","target":"seed7"}
+{"id":"Self","name":"Self","scope":"languages","outcome":"card","target":"self"}
+{"id":"SenseTalk","name":"SenseTalk","scope":"languages","outcome":"card","target":"sensetalk"}
+{"id":"SequenceL","name":"SequenceL","scope":"languages","outcome":"card","target":"sequencel"}
+{"id":"Set-lang","name":"Set lang","scope":"languages","outcome":"card","target":"setlang"}
+{"id":"Setl4","name":"Setl4","scope":"languages","outcome":"card","target":"setl4"}
+{"id":"Shale","name":"Shale","scope":"languages","outcome":"card","target":"shale"}
+{"id":"SheerPower-4GL","name":"SheerPower 4GL","scope":"languages","outcome":"card","target":"sheerpower4gl"}
+{"id":"Shen","name":"Shen","scope":"languages","outcome":"card","target":"shen"}
+{"id":"Shiny","name":"Shiny","scope":"languages","outcome":"card","target":"shiny"}
+{"id":"Sidef","name":"Sidef","scope":"languages","outcome":"card","target":"sidef"}
+{"id":"SimpleCode","name":"SimpleCode","scope":"languages","outcome":"card","target":"simplecode"}
+{"id":"SimpleLang","name":"SimpleLang","scope":"languages","outcome":"card","target":"simplelang"}
+{"id":"Simula","name":"Simula","scope":"languages","outcome":"card","target":"simula"}
+{"id":"Sinclair-ZX81-BASIC","name":"Sinclair ZX81 BASIC","scope":"languages","outcome":"card","target":"sinclair-zx81-basic"}
+{"id":"Sing","name":"Sing","scope":"languages","outcome":"card","target":"sing"}
+{"id":"Sisal","name":"Sisal","scope":"languages","outcome":"card","target":"sisal"}
+{"id":"Skew","name":"Skew","scope":"languages","outcome":"card","target":"skew"}
+{"id":"SkookumScript","name":"SkookumScript","scope":"languages","outcome":"card","target":"skookumscript"}
+{"id":"Slate","name":"Slate","scope":"languages","outcome":"card","target":"slate"}
+{"id":"Slope","name":"Slope","scope":"languages","outcome":"card","target":"slope"}
+{"id":"SmallBasic","name":"SmallBasic","scope":"languages","outcome":"card","target":"smallbasic"}
+{"id":"Smalltalk","name":"Smalltalk","scope":"languages","outcome":"card","target":"smalltalk"}
+{"id":"Smart-BASIC","name":"Smart BASIC","scope":"languages","outcome":"card","target":"smart-basic"}
+{"id":"SmileBASIC","name":"SmileBASIC","scope":"languages","outcome":"card","target":"smilebasic"}
+{"id":"Snobol","name":"Snobol","scope":"languages","outcome":"card","target":"snobol"}
+{"id":"Soar","name":"Soar","scope":"languages","outcome":"card","target":"soar"}
+{"id":"Soda","name":"Soda","scope":"languages","outcome":"card","target":"soda"}
+{"id":"SoneKing-Assembly","name":"SoneKing Assembly","scope":"languages","outcome":"card","target":"soneking-assembly"}
+{"id":"SparForte","name":"SparForte","scope":"languages","outcome":"card","target":"sparforte"}
+{"id":"Sparkling","name":"Sparkling","scope":"languages","outcome":"card","target":"sparkling"}
+{"id":"Spin","name":"Spin","scope":"languages","outcome":"card","target":"spin"}
+{"id":"Squirrel","name":"Squirrel","scope":"languages","outcome":"card","target":"squirrel"}
+{"id":"Standard-ML","name":"Standard ML","scope":"languages","outcome":"card","target":"standard-ml"}
+{"id":"Star","name":"Star","scope":"languages","outcome":"card","target":"star"}
+{"id":"Stata","name":"Stata","scope":"languages","outcome":"card","target":"stata"}
+{"id":"Stax","name":"Stax","scope":"languages","outcome":"card","target":"stax"}
+{"id":"StreamIt","name":"StreamIt","scope":"languages","outcome":"card","target":"streamit"}
+{"id":"Stringle","name":"Stringle","scope":"languages","outcome":"card","target":"stringle"}
+{"id":"Suneido","name":"Suneido","scope":"languages","outcome":"card","target":"suneido"}
+{"id":"SuperCollider","name":"SuperCollider","scope":"languages","outcome":"card","target":"supercollider"}
+{"id":"SuperTalk","name":"SuperTalk","scope":"languages","outcome":"card","target":"supertalk"}
+{"id":"Superbase-BASIC","name":"Superbase BASIC","scope":"languages","outcome":"card","target":"superbase-basic"}
+{"id":"Supernova","name":"Supernova","scope":"languages","outcome":"card","target":"supernova"}
+{"id":"Swahili","name":"Swahili","scope":"languages","outcome":"card","target":"swahili"}
+{"id":"Swift","name":"Swift","scope":"languages","outcome":"card","target":"swift"}
+{"id":"Symsyn","name":"Symsyn","scope":"languages","outcome":"card","target":"symsyn"}
+{"id":"SystemVerilog","name":"SystemVerilog","scope":"languages","outcome":"card","target":"systemverilog"}
+{"id":"TAL","name":"TAL","scope":"languages","outcome":"card","target":"tal"}
+{"id":"TAV","name":"TAV","scope":"languages","outcome":"card","target":"tav"}
+{"id":"TI-57","name":"TI-57","scope":"languages","outcome":"card","target":"ti-57"}
+{"id":"TI-58-59","name":"TI-58/59","scope":"languages","outcome":"card","target":"ti-58-59"}
+{"id":"TI-83-BASIC","name":"TI-83 BASIC","scope":"languages","outcome":"card","target":"ti-83-basic"}
+{"id":"TI-83-Hex-Assembly","name":"TI-83 Hex Assembly","scope":"languages","outcome":"card","target":"ti-83-hex-assembly"}
+{"id":"TI-89-BASIC","name":"TI-89 BASIC","scope":"languages","outcome":"card","target":"ti-89-basic"}
+{"id":"TI-BASIC","name":"TI BASIC","scope":"languages","outcome":"card","target":"ti-basic"}
+{"id":"TI-SR-56","name":"TI SR-56","scope":"languages","outcome":"card","target":"ti-sr-56"}
+{"id":"TIS-100","name":"TIS-100","scope":"languages","outcome":"card","target":"tis-100"}
+{"id":"TIScript","name":"TIScript","scope":"languages","outcome":"card","target":"tiscript"}
+{"id":"TMG","name":"TMG","scope":"languages","outcome":"card","target":"tmg"}
+{"id":"TPP","name":"TPP","scope":"languages","outcome":"card","target":"tpp"}
+{"id":"TRS-80-BASIC","name":"TRS-80 BASIC","scope":"languages","outcome":"card","target":"trs-80-basic"}
+{"id":"TSE-SAL","name":"TSE SAL","scope":"languages","outcome":"card","target":"tse-sal"}
+{"id":"TUSCRIPT","name":"TUSCRIPT","scope":"languages","outcome":"card","target":"tuscript"}
+{"id":"TXR","name":"TXR","scope":"languages","outcome":"card","target":"txr"}
+{"id":"TailDot","name":"TailDot","scope":"languages","outcome":"card","target":"taildot"}
+{"id":"Tailspin","name":"Tailspin","scope":"languages","outcome":"card","target":"tailspin"}
+{"id":"Tbas","name":"Tbas","scope":"languages","outcome":"card","target":"tbas"}
+{"id":"Tcl","name":"Tcl","scope":"languages","outcome":"card","target":"tcl"}
+{"id":"TeLa","name":"TeLa","scope":"languages","outcome":"card","target":"tela"}
+{"id":"TechBASIC","name":"TechBASIC","scope":"languages","outcome":"card","target":"techbasic"}
+{"id":"Teco","name":"Teco","scope":"languages","outcome":"card","target":"teco"}
+{"id":"Tern","name":"Tern","scope":"languages","outcome":"card","target":"tern"}
+{"id":"Terra","name":"Terra","scope":"languages","outcome":"card","target":"terra"}
+{"id":"Terraform","name":"Terraform","scope":"languages","outcome":"card","target":"hcl"}
+{"id":"TestML","name":"TestML","scope":"languages","outcome":"card","target":"testml"}
+{"id":"Thistle","name":"Thistle","scope":"languages","outcome":"card","target":"thistle"}
+{"id":"Thyrd","name":"Thyrd","scope":"languages","outcome":"card","target":"thyrd"}
+{"id":"Tiny-BASIC","name":"Tiny BASIC","scope":"languages","outcome":"card","target":"tiny-basic"}
+{"id":"Tiny-Craft-Basic","name":"Tiny Craft Basic","scope":"languages","outcome":"card","target":"tiny-craft-basic"}
+{"id":"Tobbisk","name":"Tobbisk","scope":"languages","outcome":"card","target":"tobbisk"}
+{"id":"ToffeeScript","name":"ToffeeScript","scope":"languages","outcome":"card","target":"toffeescript"}
+{"id":"Toka","name":"Toka","scope":"languages","outcome":"card","target":"toka"}
+{"id":"TorqueScript","name":"TorqueScript","scope":"languages","outcome":"card","target":"torquescript"}
+{"id":"Tosh","name":"Tosh","scope":"languages","outcome":"card","target":"tosh"}
+{"id":"TransFORTH","name":"TransFORTH","scope":"languages","outcome":"card","target":"transforth"}
+{"id":"Transact-SQL","name":"Transact-SQL","scope":"languages","outcome":"card","target":"transact-sql"}
+{"id":"Transd","name":"Transd","scope":"languages","outcome":"card","target":"transd"}
+{"id":"Trith","name":"Trith","scope":"languages","outcome":"card","target":"trith"}
+{"id":"True-BASIC","name":"True BASIC","scope":"languages","outcome":"card","target":"true-basic"}
+{"id":"Tungsten","name":"Tungsten","scope":"languages","outcome":"card","target":"tungsten"}
+{"id":"Turbo-Basic-XL","name":"Turbo-Basic XL","scope":"languages","outcome":"card","target":"turbo-basic-xl"}
+{"id":"Turing","name":"Turing","scope":"languages","outcome":"card","target":"turing"}
+{"id":"TutorialD","name":"TutorialD","scope":"languages","outcome":"card","target":"tutorial-d"}
+{"id":"Twelf","name":"Twelf","scope":"languages","outcome":"card","target":"twelf"}
+{"id":"TypeScript","name":"TypeScript","scope":"languages","outcome":"node","target":"typescript"}
+{"id":"Typed-Racket","name":"Typed Racket","scope":"languages","outcome":"card","target":"typed-racket"}
+{"id":"UC++","name":"UC++","scope":"languages","outcome":"card","target":"ucpp"}
+{"id":"UNIX-Shell","name":"UNIX Shell","scope":"languages","outcome":"card","target":"sh"}
+{"id":"UScript","name":"UScript","scope":"languages","outcome":"card","target":"uscript"}
+{"id":"UTFool","name":"UTFool","scope":"languages","outcome":"card","target":"utfool"}
+{"id":"Uiua","name":"Uiua","scope":"languages","outcome":"card","target":"uiua"}
+{"id":"Ultimate++","name":"Ultimate++","scope":"languages","outcome":"card","target":"ultimatepp"}
+{"id":"Unicon","name":"Unicon","scope":"languages","outcome":"card","target":"unicon"}
+{"id":"Uniface","name":"Uniface","scope":"languages","outcome":"card","target":"uniface"}
+{"id":"Unison","name":"Unison","scope":"languages","outcome":"card","target":"unison"}
+{"id":"UnixPipes","name":"UnixPipes","scope":"languages","outcome":"card","target":"unixpipes"}
+{"id":"Unlambda","name":"Unlambda","scope":"languages","outcome":"card","target":"unlambda"}
+{"id":"Ursa","name":"Ursa","scope":"languages","outcome":"card","target":"ursa"}
+{"id":"Ursala","name":"Ursala","scope":"languages","outcome":"card","target":"ursala"}
+{"id":"Ursalang","name":"Ursalang","scope":"languages","outcome":"card","target":"ursalang"}
+{"id":"UserRPL","name":"UserRPL","scope":"languages","outcome":"card","target":"userrpl"}
+{"id":"Uxntal","name":"Uxntal","scope":"languages","outcome":"card","target":"uxntal"}
+{"id":"V","name":"V","scope":"languages","outcome":"card","target":"v"}
+{"id":"V-(Vlang)","name":"V (Vlang)","scope":"languages","outcome":"card","target":"v"}
+{"id":"VAX-Assembly","name":"VAX Assembly","scope":"languages","outcome":"card","target":"vax-assembly"}
+{"id":"VB6","name":"VB6","scope":"languages","outcome":"card","target":"visual-basic-6-0"}
+{"id":"VBA","name":"VBA","scope":"languages","outcome":"card","target":"vba"}
+{"id":"VBScript","name":"VBScript","scope":"languages","outcome":"card","target":"vbscript"}
+{"id":"VHDL","name":"VHDL","scope":"languages","outcome":"card","target":"vhdl"}
+{"id":"VRML","name":"VRML","scope":"languages","outcome":"card","target":"vrml"}
+{"id":"VTL-2","name":"VTL-2","scope":"languages","outcome":"card","target":"vtl"}
+{"id":"Vala","name":"Vala","scope":"languages","outcome":"card","target":"vala"}
+{"id":"Vale","name":"Vale","scope":"languages","outcome":"card","target":"vale"}
+{"id":"Vedit-macro-language","name":"Vedit macro language","scope":"languages","outcome":"card","target":"vedit-macro-language"}
+{"id":"Verbexx","name":"Verbexx","scope":"languages","outcome":"card","target":"verbexx"}
+{"id":"Verilog","name":"Verilog","scope":"languages","outcome":"card","target":"verilog"}
+{"id":"Vim-Script","name":"Vim Script","scope":"languages","outcome":"card","target":"vim-script"}
+{"id":"Visual-Basic","name":"Visual Basic","scope":"languages","outcome":"card","target":"visual-basic"}
+{"id":"Visual-Basic-.NET","name":"Visual Basic .NET","scope":"languages","outcome":"card","target":"visual-basic.net"}
+{"id":"Visual-FoxPro","name":"Visual FoxPro","scope":"languages","outcome":"card","target":"visual-foxpro"}
+{"id":"Visual-Objects","name":"Visual Objects","scope":"languages","outcome":"card","target":"visual-objects"}
+{"id":"Visual-Prolog","name":"Visual Prolog","scope":"languages","outcome":"card","target":"visual-prolog"}
+{"id":"Viua-VM-assembly","name":"Viua VM assembly","scope":"languages","outcome":"card","target":"viua-vm-assembly"}
+{"id":"Vorpal","name":"Vorpal","scope":"languages","outcome":"card","target":"vorpal"}
+{"id":"Vox","name":"Vox","scope":"languages","outcome":"card","target":"vox"}
+{"id":"Vyxal","name":"Vyxal","scope":"languages","outcome":"card","target":"vyxal"}
+{"id":"WDTE","name":"WDTE","scope":"languages","outcome":"card","target":"wdte"}
+{"id":"WML","name":"WML","scope":"languages","outcome":"card","target":"wml"}
+{"id":"Waduzitdo","name":"Waduzitdo","scope":"languages","outcome":"card","target":"waduzitdo"}
+{"id":"Wart","name":"Wart","scope":"languages","outcome":"card","target":"wart"}
+{"id":"WebAssembly","name":"WebAssembly","scope":"languages","outcome":"card","target":"wasm"}
+{"id":"Wee-Basic","name":"Wee Basic","scope":"languages","outcome":"card","target":"weebasic"}
+{"id":"Whenever","name":"Whenever","scope":"languages","outcome":"card","target":"whenever"}
+{"id":"Whitespace","name":"Whitespace","scope":"languages","outcome":"card","target":"whitespace"}
+{"id":"Wisp","name":"Wisp","scope":"languages","outcome":"card","target":"wisp"}
+{"id":"Wollok","name":"Wollok","scope":"languages","outcome":"card","target":"wollok"}
+{"id":"Woma","name":"Woma","scope":"languages","outcome":"card","target":"woma"}
+{"id":"Wortel","name":"Wortel","scope":"languages","outcome":"card","target":"wortel"}
+{"id":"Wrapl","name":"Wrapl","scope":"languages","outcome":"card","target":"wrapl"}
+{"id":"Wren","name":"Wren","scope":"languages","outcome":"card","target":"wren"}
+{"id":"X-script","name":"X-script","scope":"languages","outcome":"card","target":"x-script"}
+{"id":"X10","name":"X10","scope":"languages","outcome":"card","target":"x10"}
+{"id":"X86-64-Assembly","name":"X86-64 Assembly","scope":"languages","outcome":"card","target":"x86-64-assembly"}
+{"id":"X86-Assembly","name":"X86 Assembly","scope":"languages","outcome":"card","target":"x86-assembly"}
+{"id":"XBS","name":"XBS","scope":"languages","outcome":"card","target":"xbs"}
+{"id":"XBase","name":"XBase","scope":"languages","outcome":"card","target":"xbase"}
+{"id":"XBasic","name":"XBasic","scope":"languages","outcome":"card","target":"xbasic"}
+{"id":"XEec","name":"XEec","scope":"languages","outcome":"card","target":"xeec"}
+{"id":"XL","name":"XL","scope":"languages","outcome":"card","target":"xl"}
+{"id":"XLISP","name":"XLISP","scope":"languages","outcome":"card","target":"xlisp"}
+{"id":"XPL0","name":"XPL0","scope":"languages","outcome":"card","target":"xpl0"}
+{"id":"XPath","name":"XPath","scope":"languages","outcome":"card","target":"xpath"}
+{"id":"XPath-2.0","name":"XPath 2.0","scope":"languages","outcome":"card","target":"xpath"}
+{"id":"XProc","name":"XProc","scope":"languages","outcome":"card","target":"xproc"}
+{"id":"XProfan","name":"XProfan","scope":"languages","outcome":"card","target":"xprofan"}
+{"id":"XQuery","name":"XQuery","scope":"languages","outcome":"card","target":"xquery"}
+{"id":"XS","name":"XS","scope":"languages","outcome":"card","target":"xs"}
+{"id":"XSLT","name":"XSLT","scope":"languages","outcome":"card","target":"xslt"}
+{"id":"XSLT-1.0","name":"XSLT 1.0","scope":"languages","outcome":"card","target":"xslt"}
+{"id":"XSLT-2.0","name":"XSLT 2.0","scope":"languages","outcome":"card","target":"xslt"}
+{"id":"XTalk","name":"XTalk","scope":"languages","outcome":"card","target":"xtalk"}
+{"id":"XUL","name":"XUL","scope":"languages","outcome":"card","target":"xul"}
+{"id":"Xanadu","name":"Xanadu","scope":"languages","outcome":"card","target":"xanadu"}
+{"id":"Xojo","name":"Xojo","scope":"languages","outcome":"card","target":"xojo"}
+{"id":"YAMLScript","name":"YAMLScript","scope":"languages","outcome":"card","target":"yamlscript"}
+{"id":"Ya","name":"Ya","scope":"languages","outcome":"card","target":"ya"}
+{"id":"Yabasic","name":"Yabasic","scope":"languages","outcome":"card","target":"yabasic"}
+{"id":"Yacas","name":"Yacas","scope":"languages","outcome":"card","target":"yacas"}
+{"id":"Yorick","name":"Yorick","scope":"languages","outcome":"card","target":"yorick"}
+{"id":"Z80-Assembly","name":"Z80 Assembly","scope":"languages","outcome":"card","target":"z80-assembly"}
+{"id":"ZED","name":"ZED","scope":"languages","outcome":"card","target":"zed"}
+{"id":"ZPL","name":"ZPL","scope":"languages","outcome":"card","target":"zpl"}
+{"id":"ZX-Spectrum-Basic","name":"ZX Spectrum Basic","scope":"languages","outcome":"card","target":"zx-spectrum-basic"}
+{"id":"Zen-C","name":"Zen C","scope":"languages","outcome":"card","target":"zen-c"}
+{"id":"Zig","name":"Zig","scope":"languages","outcome":"card","target":"zig"}
+{"id":"Zkl","name":"Zkl","scope":"languages","outcome":"card","target":"zkl"}
+{"id":"Zoea","name":"Zoea","scope":"languages","outcome":"card","target":"zoea"}
+{"id":"Zoea-Visual","name":"Zoea Visual","scope":"languages","outcome":"card","target":"zoea-visual"}
+{"id":"Zonnon","name":"Zonnon","scope":"languages","outcome":"card","target":"zonnon"}
+{"id":"Zoomscript","name":"Zoomscript","scope":"languages","outcome":"card","target":"zoomscript"}
