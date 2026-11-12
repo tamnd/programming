@@ -1,0 +1,2 @@
+{"tag":"NEW-credits","kind":"api","owner":"python","path":"credits","entity":"data","module":"builtins","doc":{"url":"https://docs.python.org/3/builtins/constants.html#credits"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
+{"tag":"NEW-crypt","kind":"api","owner":"python","path":"crypt","entity":"module","module":"crypt","doc":{"url":"https://docs.python.org/3/library/crypt.html#module-crypt"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}

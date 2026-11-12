@@ -1,0 +1,2 @@
+{"tag":"NEW-ValueError","kind":"api","owner":"python","path":"ValueError","entity":"exception","module":"builtins","doc":{"url":"https://docs.python.org/3/builtins/exceptions.html#ValueError"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
+{"tag":"NEW-vars","kind":"api","owner":"python","path":"vars","entity":"function","module":"builtins","doc":{"url":"https://docs.python.org/3/builtins/functions.html#vars"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}

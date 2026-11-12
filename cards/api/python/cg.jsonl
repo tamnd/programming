@@ -1,0 +1,2 @@
+{"tag":"NEW-cgi","kind":"api","owner":"python","path":"cgi","entity":"module","module":"cgi","doc":{"url":"https://docs.python.org/3/library/cgi.html#module-cgi"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
+{"tag":"NEW-cgitb","kind":"api","owner":"python","path":"cgitb","entity":"module","module":"cgitb","doc":{"url":"https://docs.python.org/3/library/cgitb.html#module-cgitb"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
