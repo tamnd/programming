@@ -21,7 +21,8 @@ int main(void) {
     printf("%d\n", s[3]);
     free(s); /* the program, not the language, ends the lifetime */
 
-    printf("%ld %d\n", depth(1000), calls);
+    long d = depth(1000); /* call first: C does not fix the order of arguments */
+    printf("%ld %d\n", d, calls);
 
     int a[256]; /* 1 KiB in the frame of main */
     printf("%zu %zu\n", sizeof a, sizeof s);
