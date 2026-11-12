@@ -1,0 +1,25 @@
+kotlin:
+  status: idiom
+  reason: an interface with no members marks a class, and the is operator tests it, as in Java; an annotation class is the alternative; no example is executed here because the test image has no kotlinc.
+  alternative: an annotation class read with reflection.
+c:
+  status: n/a
+  reason: C has no interfaces and no type information at run time; a struct can only carry a flag field or a type tag.
+sql:
+  status: n/a
+  reason: a table has no interfaces; a column or a separate table records the property of each row.
+bash:
+  status: n/a
+  reason: the shell has no types; a variable or a file name convention can carry a flag, but there is no interface to implement.
+powershell:
+  status: idiom
+  reason: a class can implement an interface with no members, and the -is operator tests it; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no types to mark.
+html:
+  status: n/a
+  reason: markup has no interfaces; a class or a data attribute on an element marks it for scripts and style rules.
+css:
+  status: n/a
+  reason: style rules have no types; a selector matches elements that carry a class or an attribute.
