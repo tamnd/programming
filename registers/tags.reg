@@ -273,3 +273,9 @@ EZ8M6H refused-bequest
 4NCWB4 structural-pattern
 T8KY09 twin-pattern
 TFBD5H whole-part
+7T14G6 boolean-parameter-smell
+YR8CYJ dead-code-smell
+AVWV70 design-smell
+Z3B3PQ downcasting-smell
+SFDWDC incomplete-library-class
+BGXM53 smell-detection-tools
