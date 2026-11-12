@@ -73,7 +73,7 @@ items:
     group: "foundations"
     name: "Source code"
     target: "source-code"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Abstraction (\"Describe the benefits of having program representations ...\"). It is in 4 of the 7 language references: Go spec (\"Source code representation\"); C++ working draft (\"Source file inclusion\"); C# standard (\"C# source code\"); and 1 more."
   - part: concepts
     group: "foundations"

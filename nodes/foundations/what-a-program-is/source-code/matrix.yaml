@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript source is text in .ts files, which the compiler checks and turns into JavaScript, with source maps that point back to the TypeScript lines, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin source is text in .kt files, which the compiler turns into JVM class files with line number tables, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: A Bash script is source text that the shell reads and runs one command at a time, and LINENO and BASH_SOURCE give the position, but no example file exists.
+powershell:
+  status: native
+  reason: A PowerShell script is source text, and the parser API in System.Management.Automation.Language gives its tokens and syntax tree, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: An SQL statement is source text that the database parses, checks and turns into a query plan.
+regex:
+  status: native
+  reason: A pattern is source text in a small language that the engine compiles into a matcher.
+html:
+  status: native
+  reason: An HTML document is source text that the browser parses into a tree of elements.
+css:
+  status: native
+  reason: A style sheet is source text that the browser parses into rules and declarations.
