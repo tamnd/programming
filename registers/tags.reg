@@ -332,3 +332,11 @@ QGN129 proactor
 VRY55J reactor
 H8PMMW remove-dead-code
 T51PXF replace-inline-code-with-function-call
+BZ9C79 consolidate-conditional-expression
+XXKNP7 decompose-conditional
+A6QN08 introduce-assertion
+9PRVAX rename-field
+BKXVH8 replace-derived-variable-with-query
+24HZJQ replace-magic-literal
+GD13VY replace-nested-conditional-with-guard-clauses
+9G8Q6V split-variable
