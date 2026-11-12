@@ -14840,13 +14840,13 @@ items:
     group: "fowler-catalog"
     name: "Encapsulate Collection"
     target: "encapsulate-collection"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Encapsulate Record"
     target: "encapsulate-record"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14858,7 +14858,7 @@ items:
     group: "fowler-catalog"
     name: "Extract Class"
     target: "extract-class"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14888,7 +14888,7 @@ items:
     group: "fowler-catalog"
     name: "Inline Class"
     target: "inline-class"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15110,7 +15110,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Primitive with Object"
     target: "replace-primitive-with-object"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15134,7 +15134,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Temp with Query"
     target: "replace-temp-with-query"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
