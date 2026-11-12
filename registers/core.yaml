@@ -103,7 +103,7 @@ items:
     group: "foundations"
     name: "Memory address"
     target: "memory-address"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Code (\"recovering environments using frame pointers and return ...\"). It is in the canon books: SICP index (\"address\")."
   - part: concepts
     group: "foundations"
