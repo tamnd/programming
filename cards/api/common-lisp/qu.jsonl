@@ -1,0 +1,1 @@
+{"tag":"NEW-common-lisp-quote","kind":"api","owner":"common-lisp","path":"quote","entity":"special operator","module":"Evaluation and Compilation","doc":{"url":"https://www.lispworks.com/documentation/HyperSpec/Body/s_quote.htm"},"source":{"url":"https://www.lispworks.com/documentation/HyperSpec/Body/c_evalua.htm","licence":"LicenseRef-names-only"}}
