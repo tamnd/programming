@@ -1,0 +1,2 @@
+{"name":"text","args":{"src":"fixtures/text.txt","dst":"out.bin","size":4096},"expect":17}
+{"name":"several-buffers","args":{"src":"fixtures/text.txt","dst":"out.bin","size":4},"expect":17}
