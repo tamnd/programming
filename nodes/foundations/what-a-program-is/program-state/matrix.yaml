@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the state of JavaScript, and readonly properties and discriminated unions describe valid states when the program compiles, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has var for state that changes and val for state that does not, and sealed classes model the modes of an object, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The state of a script is its shell variables, the environment, the working directory and files, and a subshell gets a copy that its changes do not leave, but no example file exists.
+powershell:
+  status: native
+  reason: The state of a script is its variables in their scopes, the environment and the current location, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The tables of a database are its state, and a transaction moves the database from one valid state to the next.
+regex:
+  status: n/a
+  reason: A pattern has no state; the matching engine keeps its own state while it runs.
+html:
+  status: idiom
+  reason: The DOM and form controls hold the state of a page, such as the text of an input and the checked state of a box.
+css:
+  status: idiom
+  reason: Pseudo-classes such as :hover, :focus and :checked select elements by their state, but CSS does not change state.

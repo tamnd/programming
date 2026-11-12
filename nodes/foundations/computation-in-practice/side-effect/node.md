@@ -15,7 +15,7 @@ history:
   year: 1958
   people: [John McCarthy, Christopher Strachey, Peter Landin, John Hughes, Philip Wadler, Simon Peyton Jones]
   note: Lisp, from 1958, mixed pure functions with assignment. Christopher Strachey described referential transparency in 1967, and Haskell made effects part of the type of a function with monadic I/O in Haskell 1.3, in 1996.
-see_also: [immutability, functional-programming, imperative-programming, order-of-evaluation, parameter-passing, laziness, pointers-and-references]
+see_also: [program-state, immutability, functional-programming, imperative-programming, order-of-evaluation, parameter-passing, laziness, pointers-and-references]
 same_as:
   wikidata: Q1144241
   wikipedia: Side_effect_(computer_science)
@@ -159,7 +159,7 @@ The example files show these points. Python shows `list.sort` against `sorted` a
 - **Command-query separation.** Bertrand Meyer's rule says that a method should either return a value or change state, not both.
 - **Effect systems.** Languages such as Koka track the effects of each function in its type, and Haskell tracks them through monads such as `IO` and `State`.
 - **Immutability.** [Immutable](/immutability/) values cannot change, so code that shares them has fewer effects to track.
-- **State.** Side effects are the way a program changes its state: the values of its variables, objects and files at a point in the run.
+- **State.** Side effects are the way a program changes its [state](/program-state/): the values of its variables, objects and files at a point in the run.
 
 ## Pitfalls
 
