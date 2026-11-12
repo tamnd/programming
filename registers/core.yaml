@@ -16400,13 +16400,13 @@ items:
     group: "canon"
     name: "Don't repeat yourself"
     target: "dont-repeat-yourself"
-    status: "planned"
+    status: "node"
     reason: "A practice that The Pragmatic Programmer, a canon book of spec 13.3, names."
   - part: practices
     group: "canon"
     name: "Orthogonality"
     target: "orthogonality"
-    status: "planned"
+    status: "node"
     reason: "A practice that The Pragmatic Programmer, a canon book of spec 13.3, names."
   - part: practices
     group: "canon"
@@ -16586,13 +16586,13 @@ items:
     group: "canon"
     name: "You aren't gonna need it"
     target: "you-arent-gonna-need-it"
-    status: "planned"
+    status: "node"
     reason: "A practice that Extreme Programming Explained, a canon book of spec 13.3, names."
   - part: practices
     group: "canon"
     name: "Simple design"
     target: "simple-design"
-    status: "planned"
+    status: "node"
     reason: "A practice that Extreme Programming Explained, a canon book of spec 13.3, names."
   - part: practices
     group: "canon"
@@ -16808,7 +16808,7 @@ items:
     group: "other"
     name: "Separation of concerns"
     target: "separation-of-concerns"
-    status: "planned"
+    status: "node"
     reason: "A practice that Dijkstra, On the role of scientific thought (EWD 447, 1974) names."
   - part: practices
     group: "other"
@@ -16856,7 +16856,7 @@ items:
     group: "other"
     name: "Keep it simple"
     target: "keep-it-simple"
-    status: "planned"
+    status: "node"
     reason: "A practice that a common rule of design that many books of the canon state names."
   - part: practices
     group: "other"
