@@ -1,0 +1,2 @@
+{"tag":"NEW-c-FOPEN_MAX","kind":"api","owner":"c","path":"FOPEN_MAX","entity":"constant","module":"language","doc":{"url":"https://en.cppreference.com/w/c/io"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}
+{"tag":"NEW-c-fopen","kind":"api","owner":"c","path":"fopen","entity":"function","module":"io","doc":{"url":"https://en.cppreference.com/w/c/io/fopen"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}

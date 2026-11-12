@@ -1,0 +1,1 @@
+{"tag":"NEW-c-jmp_buf","kind":"api","owner":"c","path":"jmp_buf","entity":"type alias","module":"program","doc":{"url":"https://en.cppreference.com/w/c/program/jmp_buf"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}

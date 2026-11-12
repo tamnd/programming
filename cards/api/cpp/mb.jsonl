@@ -1,0 +1,2 @@
+{"tag":"NEW-cpp-MB_CUR_MAX","kind":"api","owner":"cpp","path":"MB_CUR_MAX","entity":"macro","module":"string","doc":{"url":"https://en.cppreference.com/w/cpp/string/multibyte"},"source":{"url":"https://en.cppreference.com/w/cpp/symbol_index/macro","licence":"CC-BY-SA-3.0"}}
+{"tag":"NEW-cpp-MB_LEN_MAX","kind":"api","owner":"cpp","path":"MB_LEN_MAX","entity":"constant","module":"types","doc":{"url":"https://en.cppreference.com/w/cpp/types/climits"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-cpp.xml","licence":"CC-BY-SA-3.0"}}

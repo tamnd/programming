@@ -1,0 +1,1 @@
+{"tag":"NEW-c-mktime","kind":"api","owner":"c","path":"mktime","entity":"function","module":"chrono","doc":{"url":"https://en.cppreference.com/w/c/chrono/mktime"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}

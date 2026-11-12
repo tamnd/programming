@@ -1,0 +1,2 @@
+{"tag":"NEW-c-abort","kind":"api","owner":"c","path":"abort","entity":"function","module":"program","doc":{"url":"https://en.cppreference.com/w/c/program/abort"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}
+{"tag":"NEW-c-abs","kind":"api","owner":"c","path":"abs","entity":"function","module":"numeric","doc":{"url":"https://en.cppreference.com/w/c/numeric/math/abs"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}

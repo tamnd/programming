@@ -1,0 +1,1 @@
+{"tag":"NEW-cpp-E2BIG","kind":"api","owner":"cpp","path":"E2BIG","entity":"constant","module":"error","doc":{"url":"https://en.cppreference.com/w/cpp/error/errno_macros"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-cpp.xml","licence":"CC-BY-SA-3.0"},"since":"C++11"}

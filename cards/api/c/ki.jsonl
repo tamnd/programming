@@ -1,0 +1,1 @@
+{"tag":"NEW-c-kill_dependency","kind":"api","owner":"c","path":"kill_dependency","entity":"function","module":"atomic","doc":{"url":"https://en.cppreference.com/w/c/atomic/kill_dependency"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}

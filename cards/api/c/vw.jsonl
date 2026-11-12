@@ -1,0 +1,2 @@
+{"tag":"NEW-c-vwprintf","kind":"api","owner":"c","path":"vwprintf","entity":"function","module":"io","doc":{"url":"https://en.cppreference.com/w/c/io/vfwprintf"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}
+{"tag":"NEW-c-vwscanf","kind":"api","owner":"c","path":"vwscanf","entity":"function","module":"io","doc":{"url":"https://en.cppreference.com/w/c/io/vfwscanf"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}

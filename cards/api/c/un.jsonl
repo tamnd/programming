@@ -1,0 +1,2 @@
+{"tag":"NEW-c-ungetc","kind":"api","owner":"c","path":"ungetc","entity":"function","module":"io","doc":{"url":"https://en.cppreference.com/w/c/io/ungetc"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}
+{"tag":"NEW-c-ungetwc","kind":"api","owner":"c","path":"ungetwc","entity":"function","module":"io","doc":{"url":"https://en.cppreference.com/w/c/io/ungetwc"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}
