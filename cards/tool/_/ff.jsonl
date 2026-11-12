@@ -1,0 +1,1 @@
+{"tag":"NEW-ffmpeg","kind":"tool","owner":"","id":"ffmpeg","name":"FFmpeg","class":"application","appeared":2000,"creators":["Fabrice Bellard","Bobby Bingham"],"version":"v0.6.1","website":"https://ffmpeg.org/","wikipedia":"https://en.wikipedia.org/wiki/FFmpeg","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ffmpeg.html","licence":"public-domain"}}

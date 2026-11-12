@@ -1,0 +1,2 @@
+{"tag":"NEW-owl","kind":"format","owner":"","id":"owl","name":"OWL","class":"xml format","appeared":2004,"extensions":["owl"],"wikipedia":"https://en.wikipedia.org/wiki/Web_Ontology_Language","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/owl.html","licence":"public-domain"}}
+{"tag":"NEW-owl-dl","kind":"format","owner":"","id":"owl-dl","name":"OWL DL","class":"xml format","appeared":2007,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/owl-dl.html","licence":"public-domain"}}

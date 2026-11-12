@@ -1,0 +1,2 @@
+{"tag":"NEW-ed-editor","kind":"tool","owner":"","id":"ed-editor","name":"ed","class":"editor","appeared":1973,"creators":["Ken Thompson"],"wikipedia":"https://en.wikipedia.org/wiki/Ed_(text_editor)","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ed-editor.html","licence":"public-domain"}}
+{"tag":"NEW-edgedb","kind":"tool","owner":"","id":"edgedb","name":"edgedb","class":"database","appeared":2017,"website":"https://edgedb.com","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/edgedb.html","licence":"public-domain"}}

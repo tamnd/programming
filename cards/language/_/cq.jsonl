@@ -1,0 +1,3 @@
+{"tag":"NEW-cql","kind":"language","owner":"","id":"cql","name":"cql","class":"programming language","appeared":1998,"wikipedia":"https://en.wikipedia.org/wiki/CQL","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/cql.html","licence":"public-domain"}}
+{"tag":"NEW-cqlf","kind":"language","owner":"","id":"cqlf","name":"CQLF","class":"programming language","appeared":1982,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/cqlf.html","licence":"public-domain"}}
+{"tag":"NEW-cqlpp","kind":"language","owner":"","id":"cqlpp","name":"CQL++","class":"programming language","appeared":1992,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/cqlpp.html","licence":"public-domain"}}

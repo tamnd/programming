@@ -1,0 +1,2 @@
+{"tag":"NEW-cran-pm","kind":"tool","owner":"","id":"cran-pm","name":"cran-pm","class":"package manager","appeared":1993,"website":"https://cran.r-project.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/cran-pm.html","licence":"public-domain"}}
+{"tag":"NEW-crates-pm","kind":"tool","owner":"","id":"crates-pm","name":"crates-pm","class":"package manager","appeared":2014,"website":"https://crates.io/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/crates-pm.html","licence":"public-domain"}}

@@ -1,0 +1,2 @@
+{"tag":"NEW-jq","kind":"language","owner":"","id":"jq","name":"jq","class":"query language","appeared":2012,"creators":["Stephen Dolan"],"extensions":["jq"],"website":"https://stedolan.github.io/jq/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jq.html","licence":"public-domain"}}
+{"tag":"NEW-jql","kind":"language","owner":"","id":"jql","name":"JSON Query Language","class":"query language","appeared":2019,"creators":["Jakub Martin"],"version":"v0.2.0","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jql.html","licence":"public-domain"}}

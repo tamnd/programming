@@ -1,0 +1,2 @@
+{"tag":"NEW-jpeg","kind":"format","owner":"","id":"jpeg","name":"JPEG","class":"binary data format","appeared":1992,"wikipedia":"https://en.wikipedia.org/wiki/JPEG","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jpeg.html","licence":"public-domain"}}
+{"tag":"NEW-jplace","kind":"format","owner":"","id":"jplace","name":"jplace","class":"json format","appeared":2012,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jplace.html","licence":"public-domain"}}

@@ -1,0 +1,2 @@
+{"tag":"NEW-yang","kind":"tool","owner":"","id":"yang","name":"YANG","class":"application","appeared":2014,"creators":["Tom Nadeau"],"extensions":["yang"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/yang.html","licence":"public-domain"}}
+{"tag":"NEW-yarv","kind":"tool","owner":"","id":"yarv","name":"YARV","class":"virtual machine","appeared":2007,"wikipedia":"https://en.wikipedia.org/wiki/YARV","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/yarv.html","licence":"public-domain"}}

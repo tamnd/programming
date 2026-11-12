@@ -1,0 +1,2 @@
+{"tag":"NEW-hfs","kind":"tool","owner":"","id":"hfs","name":"Hierarchical File System","class":"filesystem","appeared":1985,"wikipedia":"https://en.wikipedia.org/wiki/Hierarchical_File_System","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hfs.html","licence":"public-domain"}}
+{"tag":"NEW-hfs-plus","kind":"tool","owner":"","id":"hfs-plus","name":"HFS Plus","class":"filesystem","appeared":1998,"wikipedia":"https://en.wikipedia.org/wiki/HFS_Plus","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hfs-plus.html","licence":"public-domain"}}

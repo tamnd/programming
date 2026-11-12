@@ -1,0 +1,1 @@
+{"tag":"NEW-lsif-format","kind":"format","owner":"","id":"lsif-format","name":"Language Server Index Format","class":"json format","appeared":2019,"creators":["Dan Adler"],"website":"https://lsif.dev/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/lsif-format.html","licence":"public-domain"}}

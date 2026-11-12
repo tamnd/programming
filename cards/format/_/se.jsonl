@@ -1,0 +1,1 @@
+{"tag":"NEW-semver","kind":"format","owner":"","id":"semver","name":"Semantic Versioning","class":"schema","appeared":2011,"creators":["Tom Preston-Werner"],"aka":["SemVer semver"],"version":"2.0.0","website":"https://semver.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/semver.html","licence":"public-domain"}}

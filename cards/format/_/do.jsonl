@@ -1,0 +1,2 @@
+{"tag":"NEW-doi","kind":"format","owner":"","id":"doi","name":"DOI","class":"schema","appeared":2000,"website":"https://www.doi.org/","wikipedia":"https://en.wikipedia.org/wiki/Digital_object_identifier","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/doi.html","licence":"public-domain"}}
+{"tag":"NEW-doml","kind":"format","owner":"","id":"doml","name":"DOML","class":"data notation","appeared":2017,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/doml.html","licence":"public-domain"}}

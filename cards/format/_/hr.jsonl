@@ -1,0 +1,2 @@
+{"tag":"NEW-hr-code","kind":"format","owner":"","id":"hr-code","name":"hr-code","class":"bar code format","appeared":2019,"creators":["Han Tuzun"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hr-code.html","licence":"public-domain"}}
+{"tag":"NEW-hrqr","kind":"format","owner":"","id":"hrqr","name":"hrqr","class":"bar code format","appeared":2015,"creators":["Valentin Heun"],"website":"http://hrqr.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hrqr.html","licence":"public-domain"}}

@@ -1,0 +1,3 @@
+{"tag":"NEW-aqasm","kind":"language","owner":"","id":"aqasm","name":"aQasm","class":"assembly language","appeared":2017,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/aqasm.html","licence":"public-domain"}}
+{"tag":"NEW-aql","kind":"language","owner":"","id":"aql","name":"AQL","class":"programming language","appeared":1977,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/aql.html","licence":"public-domain"}}
+{"tag":"NEW-aquarius-prolog","kind":"language","owner":"","id":"aquarius-prolog","name":"Aquarius Prolog","class":"programming language","appeared":1989,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/aquarius-prolog.html","licence":"public-domain"}}

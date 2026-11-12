@@ -1,0 +1,2 @@
+{"tag":"NEW-sif","kind":"format","owner":"","id":"sif","name":"SIF","class":"text data format","appeared":1997,"creators":["Carlo H. Séquin"],"website":"https://people.eecs.berkeley.edu/~sequin/SIF/sif.html","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/sif.html","licence":"public-domain"}}
+{"tag":"NEW-sitemap","kind":"format","owner":"","id":"sitemap","name":"Sitemap","class":"xml format","appeared":2001,"website":"https://sitemaps.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/sitemap.html","licence":"public-domain"}}

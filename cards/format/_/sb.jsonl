@@ -1,0 +1,2 @@
+{"tag":"NEW-sbml","kind":"format","owner":"","id":"sbml","name":"Systems Biology Markup Language","class":"xml format","appeared":2006,"wikipedia":"https://en.wikipedia.org/wiki/SBML","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/sbml.html","licence":"public-domain"}}
+{"tag":"NEW-sbol","kind":"format","owner":"","id":"sbol","name":"The Synthetic Biology Open Language","class":"xml format","appeared":2010,"website":"https://sbolstandard.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/sbol.html","licence":"public-domain"}}

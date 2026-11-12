@@ -1,0 +1,1 @@
+{"tag":"NEW-xgboost","kind":"library","owner":"","id":"xgboost","name":"XGBoost","class":"library","appeared":2014,"creators":["Tianqi Chen"],"version":"v2.0.3","website":"https://xgboost.readthedocs.io/en/stable/","wikipedia":"https://en.wikipedia.org/wiki/XGBoost","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/xgboost.html","licence":"public-domain"}}

@@ -1,0 +1,2 @@
+{"tag":"NEW-vcard","kind":"format","owner":"","id":"vcard","name":"vCard","class":"text data format","appeared":1998,"wikipedia":"https://en.wikipedia.org/wiki/vCard","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/vcard.html","licence":"public-domain"}}
+{"tag":"NEW-vcf-format","kind":"format","owner":"","id":"vcf-format","name":"VCF","class":"text data format","appeared":2011,"wikipedia":"https://en.wikipedia.org/wiki/Variant_Call_Format","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/vcf-format.html","licence":"public-domain"}}

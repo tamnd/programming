@@ -1,0 +1,2 @@
+{"tag":"NEW-messagepack","kind":"format","owner":"","id":"messagepack","name":"MessagePack","class":"binary data format","appeared":2009,"website":"https://msgpack.org/","wikipedia":"https://en.wikipedia.org/wiki/MessagePack","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/messagepack.html","licence":"public-domain"}}
+{"tag":"NEW-metalex","kind":"format","owner":"","id":"metalex","name":"metalex","class":"xml format","appeared":2002,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/metalex.html","licence":"public-domain"}}

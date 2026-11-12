@@ -1,0 +1,3 @@
+{"tag":"NEW-mmix","kind":"language","owner":"","id":"mmix","name":"mmix","class":"assembly language","appeared":1999,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/mmix.html","licence":"public-domain"}}
+{"tag":"NEW-mmsearch","kind":"language","owner":"","id":"mmsearch","name":"mmsearch","class":"programming language","appeared":2001,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/mmsearch.html","licence":"public-domain"}}
+{"tag":"NEW-mmx","kind":"language","owner":"","id":"mmx","name":"MMX instruction set","class":"instruction set","appeared":1997,"wikipedia":"https://en.wikipedia.org/wiki/MMX_(instruction_set)","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/mmx.html","licence":"public-domain"}}

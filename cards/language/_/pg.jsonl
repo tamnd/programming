@@ -1,0 +1,3 @@
+{"tag":"NEW-pgen","kind":"language","owner":"","id":"pgen","name":"PGen","class":"grammar language","appeared":2015,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pgen.html","licence":"public-domain"}}
+{"tag":"NEW-pgolog","kind":"language","owner":"","id":"pgolog","name":"pGOLOG","class":"programming language","appeared":2000,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pgolog.html","licence":"public-domain"}}
+{"tag":"NEW-pgql","kind":"language","owner":"","id":"pgql","name":"pgql","class":"programming language","appeared":2016,"website":"http://pgql-lang.org","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pgql.html","licence":"public-domain"}}

@@ -1,0 +1,2 @@
+{"tag":"NEW-amazon-dynamodb","kind":"tool","owner":"","id":"amazon-dynamodb","name":"Amazon DynamoDB","class":"database","appeared":2012,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/amazon-dynamodb.html","licence":"public-domain"}}
+{"tag":"NEW-amazon-rds","kind":"tool","owner":"","id":"amazon-rds","name":"Amazon RDS","class":"database","appeared":2009,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/amazon-rds.html","licence":"public-domain"}}

@@ -1,0 +1,2 @@
+{"tag":"NEW-ddfcsv","kind":"format","owner":"","id":"ddfcsv","name":"DDF","class":"data notation","appeared":2016,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ddfcsv.html","licence":"public-domain"}}
+{"tag":"NEW-ddml","kind":"format","owner":"","id":"ddml","name":"DDML","class":"xml format","appeared":1999,"wikipedia":"https://en.wikipedia.org/wiki/Document_Definition_Markup_Language","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ddml.html","licence":"public-domain"}}

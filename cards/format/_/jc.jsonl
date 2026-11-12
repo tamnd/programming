@@ -1,0 +1,2 @@
+{"tag":"NEW-jcard","kind":"format","owner":"","id":"jcard","name":"jcard","class":"json format","appeared":2014,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jcard.html","licence":"public-domain"}}
+{"tag":"NEW-jcof","kind":"format","owner":"","id":"jcof","name":"JCOF","class":"data notation","appeared":2022,"creators":["Martin Dørum"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jcof.html","licence":"public-domain"}}

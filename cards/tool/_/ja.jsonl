@@ -1,0 +1,3 @@
+{"tag":"NEW-jal-compiler","kind":"tool","owner":"","id":"jal-compiler","name":"JAL compiler","class":"compiler","appeared":2000,"wikipedia":"https://en.wikipedia.org/wiki/JAL_(compiler)","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jal-compiler.html","licence":"public-domain"}}
+{"tag":"NEW-javascriptcore","kind":"tool","owner":"","id":"javascriptcore","name":"JavaScriptCore","class":"virtual machine","appeared":2002,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/javascriptcore.html","licence":"public-domain"}}
+{"tag":"NEW-javelin","kind":"tool","owner":"","id":"javelin","name":"Javelin","class":"application","appeared":1984,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/javelin.html","licence":"public-domain"}}

@@ -1,0 +1,3 @@
+{"tag":"NEW-edje-data-collection","kind":"format","owner":"","id":"edje-data-collection","name":"Edje Data Collection","class":"json format","appeared":2010,"extensions":["edc"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/edje-data-collection.html","licence":"public-domain"}}
+{"tag":"NEW-edn","kind":"format","owner":"","id":"edn","name":"EDN","class":"data notation","appeared":2012,"aka":["edn"],"extensions":["edn"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/edn.html","licence":"public-domain"}}
+{"tag":"NEW-edscript","kind":"format","owner":"","id":"edscript","name":"ed script","class":"diff format","appeared":1973,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/edscript.html","licence":"public-domain"}}

@@ -1,0 +1,1 @@
+{"tag":"NEW-pickle-format","kind":"format","owner":"","id":"pickle-format","name":"Pickle","class":"binary data format","appeared":1995,"extensions":["pkl"],"website":"https://docs.python.org/3/library/pickle.html","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pickle-format.html","licence":"public-domain"}}

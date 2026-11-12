@@ -1,0 +1,1 @@
+{"tag":"NEW-ld-json","kind":"format","owner":"","id":"ld-json","name":"JSON Lines","class":"data notation","appeared":2013,"creators":["Ian Ward"],"aka":["newline-delimited JSON"],"extensions":["ldj","jsonl"],"website":"http://jsonlines.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ld-json.html","licence":"public-domain"}}

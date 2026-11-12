@@ -1,0 +1,3 @@
+{"tag":"NEW-pdel","kind":"language","owner":"","id":"pdel","name":"Partial Differential Equation Language","class":"programming language","appeared":1968,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pdel.html","licence":"public-domain"}}
+{"tag":"NEW-pdl","kind":"language","owner":"","id":"pdl","name":"PDL","class":"programming language","appeared":1973,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pdl.html","licence":"public-domain"}}
+{"tag":"NEW-pdl-ada","kind":"language","owner":"","id":"pdl-ada","name":"PDL/Ada","class":"programming language","appeared":1981,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pdl-ada.html","licence":"public-domain"}}

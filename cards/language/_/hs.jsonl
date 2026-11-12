@@ -1,0 +1,4 @@
+{"tag":"NEW-hscript","kind":"language","owner":"","id":"hscript","name":"HScript","class":"programming language","appeared":1996,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hscript.html","licence":"public-domain"}}
+{"tag":"NEW-hsl","kind":"language","owner":"","id":"hsl","name":"HSL","class":"programming language","appeared":1991,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hsl.html","licence":"public-domain"}}
+{"tag":"NEW-hsml","kind":"language","owner":"","id":"hsml","name":"HSML","class":"programming language","appeared":1998,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hsml.html","licence":"public-domain"}}
+{"tag":"NEW-hspec","kind":"language","owner":"","id":"hspec","name":"Hspec","class":"programming language","appeared":1990,"website":"https://hspec.github.io/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hspec.html","licence":"public-domain"}}

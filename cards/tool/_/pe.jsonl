@@ -1,0 +1,2 @@
+{"tag":"NEW-pear-pm","kind":"tool","owner":"","id":"pear-pm","name":"PEAR","class":"package manager","appeared":1999,"website":"http://pear.php.net/","wikipedia":"https://en.wikipedia.org/wiki/PEAR","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pear-pm.html","licence":"public-domain"}}
+{"tag":"NEW-peng","kind":"tool","owner":"","id":"peng","name":"PENG","class":"knowledge base","appeared":2002,"creators":["Rolf Schwitter","Marc Tilbrook"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/peng.html","licence":"public-domain"}}
