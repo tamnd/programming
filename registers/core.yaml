@@ -7,9 +7,9 @@ parts:
   - id: concepts
     name: "Core concepts"
     estimate: 400
-    items: 0
-    source: "the canon match step (spec 14.5)"
-    note: "not in this proposal yet"
+    items: 186
+    source: "a hand list of candidates, checked against CS2023 (the SDF and FPL knowledge areas and SE-Construction), 7 language references (the Python Language Reference, the Go spec, the Rust Reference, the JLS, the C++ working draft, the C# standard and ECMAScript 2027) and 4 canon books (the SICP index and the contents of HtDP, Crafting Interpreters and The Rust Programming Language)"
+    note: "A candidate is core when 2 of the 3 sources hold it: CS2023, at least 3 of the 7 references, or at least 1 of the 4 books. SWEBOK v4 is not checked yet, because its PDF needs an IEEE account. The candidates that have one source or none are in the candidates list at the end of this file, for the review."
   - id: features
     name: "Core features"
     estimate: 1800
@@ -57,6 +57,1122 @@ parts:
     items: 82
     source: "the canon (spec 13.3)"
 items:
+  - part: concepts
+    group: "foundations"
+    name: "Computer program"
+    target: "computer-program"
+    status: "node"
+    reason: "It is in CS2023 FPL (\"underlying abstract model of computation and program ...\"). It is in 5 of the 7 language references: Python Language Reference (\"Structure of a program\"); Go spec (\"Program initialization and execution\"); Java Language Specification (\"Example Programs\"); and 2 more. It is in the canon books: SICP index (\"comments in programs\"); HtDP contents (\"How to Design Programs, Second Edition\")."
+  - part: concepts
+    group: "foundations"
+    name: "Algorithm"
+    target: "algorithm"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"formulate algorithms, and reason about solutions. Over the ...\"). It is in the canon books: SICP index (\"Donald E. Knuth, Fundamental Algorithms ...\"); HtDP contents (\"Designing Algorithms\")."
+  - part: concepts
+    group: "foundations"
+    name: "Source code"
+    target: "source-code"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"Describe the benefits of having program representations ...\"). It is in 4 of the 7 language references: Go spec (\"Source code representation\"); C++ working draft (\"Source file inclusion\"); C# standard (\"C# source code\"); and 1 more."
+  - part: concepts
+    group: "foundations"
+    name: "Machine code"
+    target: "machine-code"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"Low level instruction representation such as virtual ...\"). It is in the canon books: SICP index (\"high-level language, machine language vs\")."
+  - part: concepts
+    group: "foundations"
+    name: "Binary number"
+    target: "binary-number"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"binary representation (See also: AR-Representation, ...\"). It is in the canon books: SICP index (\"binary numbers, addition of, see adder\")."
+  - part: concepts
+    group: "foundations"
+    name: "Integer representation"
+    target: "integer-representation"
+    status: "planned"
+    reason: "It is in CS2023 SE-Construction (\"Rewrite a simple program to remove common vulnerabilities, ...\"). It is in 4 of the 7 language references: Go spec (\"Integer literals\"); Java Language Specification (\"Integer Literals\"); C++ working draft (\"Integer literals\"); and 1 more. It is in the canon books: SICP index (\"division of integers\")."
+  - part: concepts
+    group: "foundations"
+    name: "Character and code point"
+    target: "characters-and-code-points"
+    status: "node"
+    reason: "It is in 6 of the 7 language references: Go spec (\"Characters\"); Rust Reference (\"Character type\"); Java Language Specification (\"Character Literals\"); and 3 more. It is in the canon books: SICP index (\"character strings\")."
+  - part: concepts
+    group: "foundations"
+    name: "Memory address"
+    target: "memory-address"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Code (\"recovering environments using frame pointers and return ...\"). It is in the canon books: SICP index (\"address\")."
+  - part: concepts
+    group: "foundations"
+    name: "Stack and heap"
+    target: "stack-and-heap"
+    status: "node"
+    reason: "It is in CS2023 FPL-Systems (\"Data structures for translation, execution, translation, ...\"). It is in the canon books: SICP index (\"tail recursion, stack allocation, and ...\"); The Rust Programming Language contents (\"Using `Box<T>` to Point to Data on the ...\")."
+  - part: concepts
+    group: "foundations"
+    name: "Compiler and interpreter"
+    target: "compilers-and-interpreters"
+    status: "node"
+    reason: "It is in CS2023 FPL (\"Compiler Semantic Analysis\"). It is in the canon books: SICP index (\"in query interpreter\"); HtDP contents (\"Refining Interpreters\")."
+  - part: concepts
+    group: "foundations"
+    name: "State"
+    target: "program-state"
+    status: "planned"
+    reason: "It is in CS2023 SDF-Fundamentals (\"How imperative programs work: state and state transitions ...\"). It is in the canon books: SICP index (\"local state\")."
+  - part: concepts
+    group: "foundations"
+    name: "Side effect"
+    target: "side-effect"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Function calls have no side effects, facilitating ...\"). It is in the canon books: SICP index (\"side effect with aliasing\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Imperative programming"
+    target: "imperative-programming"
+    status: "node"
+    reason: "It is in CS2023 FPL (\"have evolved to integrate more than one programming ...\"). It is in the canon books: SICP index (\"declarative vs. imperative knowledge , ...\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Object-oriented programming"
+    target: "object-oriented-programming"
+    status: "node"
+    reason: "It is in CS2023 FPL (\"Object-Oriented Programming\"). It is in the canon books: SICP index (\"object-oriented programming languages\"); The Rust Programming Language contents (\"Object Oriented Programming Features\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Functional programming"
+    target: "functional-programming"
+    status: "node"
+    reason: "It is in CS2023 FPL (\"Functional Programming\"). It is in the canon books: SICP index (\"functional programming and\"); The Rust Programming Language contents (\"Functional Language Features: Iterators ...\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Logic programming"
+    target: "logic-programming"
+    status: "node"
+    reason: "It is in CS2023 FPL (\"oriented, functional programming with object-oriented, ...\"). It is in the canon books: SICP index (\"logic programming and\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Declarative programming"
+    target: "declarative-programming"
+    status: "node"
+    reason: "It is in CS2023 FPL-Syntax (\"Generating scanners and parsers from declarative ...\"). It is in the canon books: SICP index (\"declarative vs. imperative knowledge , ...\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Event-driven programming"
+    target: "event-driven-programming"
+    status: "node"
+    reason: "It is in CS2023 FPL (\"Event-Driven and Reactive Programming\"). It is in the canon books: SICP index (\"event-driven simulation\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Message passing"
+    target: "message-passing"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Parallel (\"Message-passing\"). It is in the canon books: SICP index (\"with message passing\"); The Rust Programming Language contents (\"Transfer Data Between Threads with ...\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Unification"
+    target: "unification"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"residuation and semantic unification. (See also: FPL-Logic)\"). It is in the canon books: SICP index (\"unification and\")."
+  - part: concepts
+    group: "paradigms"
+    name: "Backtracking"
+    target: "backtracking"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Logic (\"Cuts, backtracking, and non-determinism\"). It is in the canon books: SICP index (\"backtracking , see also ...\"); HtDP contents (\"Project: Backtracking\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Syntax"
+    target: "syntax"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"Syntax Analysis\"). It is in 5 of the 7 language references: Rust Reference (\"Syntax index\"); Java Language Specification (\"The Syntactic Grammar\"); C++ working draft (\"Syntax notation\"); and 2 more. It is in the canon books: SICP index (\"abstract syntax\"); Crafting Interpreters contents (\"Design Note: Spoonfuls of Syntactic ...\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Semantics"
+    target: "program-semantics"
+    status: "node"
+    reason: "It is in CS2023 FPL (\"Formal Semantics\"). It is in 4 of the 7 language references: Java Language Specification (\"final Field Semantics\"); C++ working draft (\"Attribute syntax and semantics\"); C# standard (\"Value semantics\"); and 1 more."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Lexical structure"
+    target: "lexical-structure"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Syntax (\"Lexical analysis using regular expressions\"). It is in 6 of the 7 language references: Python Language Reference (\"Lexical analysis\"); Go spec (\"Lexical elements\"); Rust Reference (\"Lexical structure\"); and 3 more."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Token"
+    target: "tokens-and-lexing"
+    status: "node"
+    reason: "It is in CS2023 FPL-Syntax (\"Scanning and parsing based on language specifications\"). It is in 7 of the 7 language references: Python Language Reference (\"Other tokens\"); Go spec (\"Tokens\"); Rust Reference (\"Tokens\"); and 4 more. It is in the canon books: SICP index (\"scanning out internal definitions , [2]\"); Crafting Interpreters contents (\"Scanning\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Identifier"
+    target: "identifier"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"names to R-values\"). It is in 7 of the 7 language references: Python Language Reference (\"Names (identifiers and keywords)\"); Go spec (\"Identifiers\"); Rust Reference (\"Identifiers\"); and 4 more. It is in the canon books: SICP index (\"! in names\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Keyword"
+    target: "keyword-concept"
+    status: "planned"
+    reason: "It is in 7 of the 7 language references: Python Language Reference (\"Names (identifiers and keywords)\"); Go spec (\"Keywords\"); Rust Reference (\"Keywords\"); and 4 more. It is in the canon books: SICP index (\"reserved words , [2]\"); The Rust Programming Language contents (\"Bringing Paths Into Scope with the ...\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Comment"
+    target: "comment"
+    status: "planned"
+    reason: "It is in CS2023 SDF-Fundamentals (\"Write comments for a program or a module specifying what it ...\"). It is in 6 of the 7 language references: Go spec (\"Comments\"); Rust Reference (\"Comments\"); Java Language Specification (\"Comments\"); and 3 more. It is in the canon books: SICP index (\"comments in programs\"); The Rust Programming Language contents (\"Comments\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Grammar"
+    target: "grammar-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"BNF and extended BNF representation of context-free grammar\"). It is in 6 of the 7 language references: Python Language Reference (\"Full Grammar specification\"); Rust Reference (\"Grammar summary\"); Java Language Specification (\"Grammars\"); and 3 more. It is in the canon books: SICP index (\"grammar\"); HtDP contents (\"BSL Grammar\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "BNF and EBNF"
+    target: "bnf-and-ebnf"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"BNF and extended BNF representation of context-free grammar\"). It is in the canon books: SICP index (\"Backus, John\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Expression"
+    target: "expression-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Lambda expressions and evaluation: (See also: AL-Models, ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Expressions\"); Go spec (\"Expressions\"); Rust Reference (\"Statements and expressions\"); and 4 more. It is in the canon books: SICP index (\"algebraic expression\"); HtDP contents (\"Boolean Expressions\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Statement"
+    target: "statement"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"Parse tree using a simple sentence such as arithmetic ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Simple statements\"); Go spec (\"Statements\"); Rust Reference (\"Statements and expressions\"); and 4 more. It is in the canon books: SICP index (\"statements, see instruction sequence\"); Crafting Interpreters contents (\"Design Note: Expressions and Statements\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Operator"
+    target: "operator"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Scripting (\"File abstraction and operators (See also: SDF-Fundamentals, ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Operators and delimiters\"); Go spec (\"Operators and punctuation\"); Rust Reference (\"Operator expressions\"); and 4 more. It is in the canon books: SICP index (\"assignment operator , see also set!\"); The Rust Programming Language contents (\"B - Operators and Symbols\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Operator precedence"
+    target: "operator-precedence"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"using precedence order\"). It is in 4 of the 7 language references: Python Language Reference (\"Operator precedence\"); Go spec (\"Operator precedence\"); Java Language Specification (\"Evaluation Respects Parentheses and ...\"); and 1 more."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Order of evaluation"
+    target: "order-of-evaluation"
+    status: "node"
+    reason: "It is in CS2023 FPL-Pragmatics (\"Evaluation order, precedence, and associativity\"). It is in 4 of the 7 language references: Python Language Reference (\"Evaluation order\"); Go spec (\"Order of evaluation\"); Java Language Specification (\"Evaluation Order\"); and 1 more. It is in the canon books: SICP index (\"order of subexpression evaluation, see ...\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Short-circuit evaluation"
+    target: "short-circuit-evaluation"
+    status: "planned"
+    reason: "It is in CS2023 SDF-Fundamentals (\"Basic constructs such as assignment statements, conditional ...\"). It is in the canon books: SICP index (\"logical and\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Binding"
+    target: "binding"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Variable binding and scope rules. (See also: ...\"). It is in 5 of the 7 language references: Python Language Reference (\"Naming and binding\"); Java Language Specification (\"Static Binding for Field Access\"); C++ working draft (\"Structured binding declarations\"); and 2 more. It is in the canon books: SICP index (\"binding\"); Crafting Interpreters contents (\"Resolving and Binding\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Scope"
+    target: "scope"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Variable binding and scope rules. (See also: ...\"). It is in 6 of the 7 language references: Go spec (\"Declarations and scope\"); Rust Reference (\"Scopes\"); Java Language Specification (\"Scope of a Declaration\"); and 3 more. It is in the canon books: SICP index (\"lexical scoping and\"); HtDP contents (\"Intermezzo 3: Scope and Abstraction\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Lexical scope"
+    target: "lexical-scope"
+    status: "node"
+    reason: "It is in CS2023 FPL-Functional (\"Correctly interpret variables and lexical scope in a ...\"). It is in the canon books: SICP index (\"lexical scoping and\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Declaration"
+    target: "declaration"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"declaration and iterative constructs for known languages ...\"). It is in 6 of the 7 language references: Go spec (\"Declarations and scope\"); Rust Reference (\"Use declarations\"); Java Language Specification (\"Declarations\"); and 3 more. It is in the canon books: Crafting Interpreters contents (\"Design Note: Implicit Variable ...\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Definition"
+    target: "definition-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Definition of classes: fields, methods, and constructors. ...\"). It is in 5 of the 7 language references: Python Language Reference (\"Function definitions\"); Go spec (\"Type definitions\"); C++ working draft (\"Terms and definitions\"); and 2 more. It is in the canon books: SICP index (\"definitions\"); HtDP contents (\"One Program, Many Definitions\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Block"
+    target: "block"
+    status: "planned"
+    reason: "It is in 5 of the 7 language references: Go spec (\"Blocks\"); Java Language Specification (\"Blocks\"); C++ working draft (\"Block scope\"); and 2 more. It is in the canon books: SICP index (\"block structure\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Abstract syntax tree"
+    target: "abstract-syntax-tree"
+    status: "node"
+    reason: "It is in CS2023 FPL-Abstraction (\"syntax trees; contrast with concrete syntax\"). It is in the canon books: SICP index (\"abstract syntax\"); Crafting Interpreters contents (\"Appendix II: Generated Syntax Tree ...\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Axiomatic semantics"
+    target: "axiomatic-semantics"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"Types of semantics: operational, axiomatic, denotational, ...\"). It is in the canon books: SICP index (\"axiomatic definition of\")."
+  - part: concepts
+    group: "syntax-and-semantics"
+    name: "Attribute and annotation"
+    target: "annotations"
+    status: "node"
+    reason: "It is in CS2023 FPL-Aspect (\"Alternatives including annotations and IDEs\"). It is in 6 of the 7 language references: Python Language Reference (\"Annotations\"); Rust Reference (\"Attributes\"); Java Language Specification (\"Annotation Interfaces\"); and 3 more."
+  - part: concepts
+    group: "types"
+    name: "Type"
+    target: "type"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"Type Systems\"). It is in 7 of the 7 language references: Python Language Reference (\"Objects, values and types\"); Go spec (\"Types\"); Rust Reference (\"Type aliases\"); and 4 more. It is in the canon books: SICP index (\"with tower of types\"); HtDP contents (\"Defining Structure Types\")."
+  - part: concepts
+    group: "types"
+    name: "Type system"
+    target: "type-system"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"Type Systems\"). It is in the canon books: SICP index (\"internal type system\")."
+  - part: concepts
+    group: "types"
+    name: "Static and dynamic typing"
+    target: "static-and-dynamic-typing"
+    status: "node"
+    reason: "It is in CS2023 FPL-Types (\"Goals and limitations of static and dynamic typing: ...\"). It is in the canon books: Crafting Interpreters contents (\"Design Note: Static and Dynamic Typing\")."
+  - part: concepts
+    group: "types"
+    name: "Type inference"
+    target: "hindley-milner"
+    status: "node"
+    reason: "It is in CS2023 FPL-Types (\"Type inference\"). It is in 5 of the 7 language references: Go spec (\"Type inference\"); Rust Reference (\"Inferred type\"); Java Language Specification (\"Type Inference\"); and 2 more."
+  - part: concepts
+    group: "types"
+    name: "Type conversion"
+    target: "type-conversion"
+    status: "node"
+    reason: "It is in CS2023 FPL-Types (\"Definition and advantages of polymorphism: parametric, ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Arithmetic conversions\"); Go spec (\"Conversions\"); Rust Reference (\"Type coercions\"); and 4 more. It is in the canon books: SICP index (\"with coercion , [2]\")."
+  - part: concepts
+    group: "types"
+    name: "Implicit conversion"
+    target: "implicit-conversion"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Definition and advantages of polymorphism: parametric, ...\"). It is in 4 of the 7 language references: Rust Reference (\"Type coercions\"); Java Language Specification (\"Unary Numeric Promotion\"); C++ working draft (\"Integral promotions\"); and 1 more. It is in the canon books: SICP index (\"with coercion , [2]\")."
+  - part: concepts
+    group: "types"
+    name: "Boolean type"
+    target: "boolean-type"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Primitive types (e.g., numbers, Booleans) (See also: ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Boolean operations\"); Go spec (\"Boolean types\"); Rust Reference (\"Boolean type\"); and 4 more. It is in the canon books: HtDP contents (\"The Arithmetic of Booleans\")."
+  - part: concepts
+    group: "types"
+    name: "Numeric type"
+    target: "numeric-type"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Primitive types (e.g., numbers, Booleans) (See also: ...\"). It is in 5 of the 7 language references: Go spec (\"Numeric types\"); Rust Reference (\"Numeric types\"); Java Language Specification (\"Additive Operators ( + and - ) for ...\"); and 2 more. It is in the canon books: SICP index (\"on complex numbers\"); HtDP contents (\"Intermezzo 4: The Nature of Numbers\")."
+  - part: concepts
+    group: "types"
+    name: "Composite type"
+    target: "composite-type"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Functions defined over compound data in terms of functions ...\"). It is in the canon books: SICP index (\"restrictions on compound data\")."
+  - part: concepts
+    group: "types"
+    name: "Product type"
+    target: "product-type"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Compound types built from other types (e.g., ...\"). It is in 6 of the 7 language references: Go spec (\"Struct types\"); Rust Reference (\"Structs\"); Java Language Specification (\"Record Classes\"); and 3 more. It is in the canon books: SICP index (\"as set of records\"); The Rust Programming Language contents (\"Using Structs to Structure Related Data\")."
+  - part: concepts
+    group: "types"
+    name: "Sum type"
+    target: "sum-types"
+    status: "node"
+    reason: "It is in CS2023 FPL-Functional (\"Processing structured data (e.g., trees) via functions with ...\"). It is in 5 of the 7 language references: Rust Reference (\"Enumerations\"); Java Language Specification (\"Enum Classes\"); C++ working draft (\"Enumeration scope\"); and 2 more. It is in the canon books: SICP index (\"variant of\"); HtDP contents (\"Intervals, Enumerations, and ...\")."
+  - part: concepts
+    group: "types"
+    name: "Enumeration"
+    target: "enumeration"
+    status: "planned"
+    reason: "It is in 5 of the 7 language references: Rust Reference (\"Enumerations\"); Java Language Specification (\"Enum Classes\"); C++ working draft (\"Enumeration scope\"); and 2 more. It is in the canon books: SICP index (\"as a tree enumeration\"); HtDP contents (\"Intervals, Enumerations, and ...\")."
+  - part: concepts
+    group: "types"
+    name: "Record type"
+    target: "record-type"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Compound types built from other types (e.g., ...\"). It is in the canon books: SICP index (\"as set of records\")."
+  - part: concepts
+    group: "types"
+    name: "Tuple"
+    target: "tuple"
+    status: "planned"
+    reason: "It is in CS2023 SDF-Fundamentals (\"lists), associative containers (e.g., dictionaries, maps), ...\"). It is in 3 of the 7 language references: Rust Reference (\"Tuple and index expressions\"); C++ working draft (\"Tuple interface\"); C# standard (\"Tuple types\")."
+  - part: concepts
+    group: "types"
+    name: "Pointer type"
+    target: "pointer-type"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Systems (\"aliasing (sharing using pointers), indexed sequence and ...\"). It is in 4 of the 7 language references: Go spec (\"Pointer types\"); Rust Reference (\"Pointer types\"); C++ working draft (\"Pointer literals\"); and 1 more. It is in the canon books: SICP index (\"as equality of pointers , [2]\"); The Rust Programming Language contents (\"Smart Pointers\")."
+  - part: concepts
+    group: "types"
+    name: "Null reference"
+    target: "null-references"
+    status: "node"
+    reason: "It is in 4 of the 7 language references: Java Language Specification (\"The Null Literal\"); C++ working draft (\"Null directive\"); C# standard (\"The null literal\"); and 1 more. It is in the canon books: SICP index (\"treatment of nil\")."
+  - part: concepts
+    group: "types"
+    name: "Subtyping"
+    target: "subtyping"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"Subtyping:\"). It is in the canon books: SICP index (\"subtype\")."
+  - part: concepts
+    group: "types"
+    name: "Parametric polymorphism"
+    target: "parametric-polymorphism"
+    status: "node"
+    reason: "It is in CS2023 FPL-Types (\"Generic types (parametric polymorphism)\"). It is in 7 of the 7 language references: Python Language Reference (\"Type parameter lists\"); Go spec (\"Type parameter declarations\"); Rust Reference (\"Generic parameters\"); and 4 more. It is in the canon books: SICP index (\"=zero? (generic)\"); HtDP contents (\"Abstractions from Templates\")."
+  - part: concepts
+    group: "types"
+    name: "Ad hoc polymorphism"
+    target: "ad-hoc-polymorphism"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Definition and advantages of polymorphism: parametric, ...\"). It is in 3 of the 7 language references: Java Language Specification (\"Overloading\"); C++ working draft (\"Overloading\"); C# standard (\"Signatures and overloading\")."
+  - part: concepts
+    group: "types"
+    name: "Type class and trait"
+    target: "type-class-and-trait"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Abstract base classes, traits and mixins\"). It is in the canon books: The Rust Programming Language contents (\"Generic Types, Traits, and Lifetimes\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Value"
+    target: "value"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"A type as a set of values together with a set of operations\"). It is in 6 of the 7 language references: Python Language Reference (\"Objects, values and types\"); Go spec (\"Properties of types and values\"); Java Language Specification (\"Types, Values, and Variables\"); and 3 more. It is in the canon books: SICP index (\"value of\"); HtDP contents (\"Functions Are Values\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Variable"
+    target: "variable-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Variable binding and scope rules. (See also: ...\"). It is in 6 of the 7 language references: Go spec (\"Variables\"); Rust Reference (\"Variables\"); Java Language Specification (\"Types, Values, and Variables\"); and 3 more. It is in the canon books: SICP index (\"bound variable\"); HtDP contents (\"Interpreting Variables\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Constant"
+    target: "constant"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"Basic programming abstractions: constants, variables, ...\"). It is in 6 of the 7 language references: Go spec (\"Constants\"); Rust Reference (\"Constant items\"); Java Language Specification (\"Enum Constants\"); and 3 more. It is in the canon books: SICP index (\"constant (primitive constraint)\"); HtDP contents (\"Global Constants\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Assignment"
+    target: "assignment"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"command, expression, assignment, selection, definite and ...\"). It is in 6 of the 7 language references: Python Language Reference (\"Assignment expressions\"); Go spec (\"Assignment statements\"); Java Language Specification (\"Assignment Contexts\"); and 3 more. It is in the canon books: SICP index (\"assignment , see also set!\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Initialization"
+    target: "initialization-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Code (\"Interface to operating system (e.g., for program ...\"). It is in 5 of the 7 language references: Go spec (\"Program initialization and execution\"); Java Language Specification (\"Field Initialization\"); C++ working draft (\"Static initialization\"); and 2 more. It is in the canon books: Crafting Interpreters contents (\"Methods and Initializers\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Mutability"
+    target: "mutability"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Develop basic algorithms that avoid assigning to mutable ...\"). It is in the canon books: SICP index (\"mutable, see mutable data objects\"); The Rust Programming Language contents (\"Variables and Mutability\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Immutability"
+    target: "immutability"
+    status: "node"
+    reason: "It is in CS2023 FPL-Functional (\"Immutable variables and data copying vs reduction\"). It is in 4 of the 7 language references: Java Language Specification (\"final Variables\"); C++ working draft (\"Const cast\"); C# standard (\"Readonly fields\"); and 1 more. It is in the canon books: SICP index (\"const (in register machine)\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Equality and identity"
+    target: "value-equality-and-identity"
+    status: "node"
+    reason: "It is in CS2023 FPL-Functional (\"Develop basic algorithms that avoid assigning to mutable ...\"). It is in 4 of the 7 language references: Java Language Specification (\"Equality Operators\"); C++ working draft (\"Equality operators\"); C# standard (\"Boolean equality operators\"); and 1 more. It is in the canon books: SICP index (\"= (primitive numeric equality predicate)\"); HtDP contents (\"Equality Predicates\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Comparison"
+    target: "comparison"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Compare and contrast how computational solutions to a ...\"). It is in 6 of the 7 language references: Python Language Reference (\"Comparisons\"); Go spec (\"Comparison operators\"); Java Language Specification (\"Numerical Comparison Operators < , <= , ...\"); and 3 more. It is in the canon books: SICP index (\"< (primitive numeric comparison ...\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Aliasing"
+    target: "aliasing"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Systems (\"aliasing (sharing using pointers), indexed sequence and ...\"). It is in the canon books: SICP index (\"aliasing\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "String"
+    target: "string-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Systems (\"aliasing (sharing using pointers), indexed sequence and ...\"). It is in 7 of the 7 language references: Python Language Reference (\"String and Bytes literals\"); Go spec (\"String literals\"); Rust Reference (\"String slice type\"); and 4 more. It is in the canon books: SICP index (\"character strings\"); HtDP contents (\"The Arithmetic of Strings\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Array"
+    target: "array"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Scripting (\"Data structures, such as arrays and lists. (See also: ...\"). It is in 6 of the 7 language references: Go spec (\"Array types\"); Rust Reference (\"Array and index expressions\"); Java Language Specification (\"Subtyping among Array Types\"); and 3 more."
+  - part: concepts
+    group: "data-and-values"
+    name: "Dynamic array"
+    target: "dynamic-array"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Systems (\"Run-time representation of data abstractions such as ...\"). It is in the canon books: SICP index (\"implemented with vectors\"); The Rust Programming Language contents (\"Storing Lists of Values with Vectors\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "List"
+    target: "list"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Scripting (\"Data structures, such as arrays and lists. (See also: ...\"). It is in the canon books: SICP index (\"converting a list to a\"); HtDP contents (\"Lists\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Stack"
+    target: "stack-data-structure"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Systems (\"Data structures for translation, execution, translation, ...\"). It is in the canon books: SICP index (\"monitoring performance (stack use) of ...\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Queue"
+    target: "queue-concept"
+    status: "planned"
+    reason: "It is in CS2023 SDF-Fundamentals (\"Standard abstract data types such as lists, stacks, queues, ...\"). It is in the canon books: SICP index (\"for queue\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Set"
+    target: "set-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Logic (\"Advance programming constructs such as difference-lists, ...\"). It is in the canon books: HtDP contents (\"A Note on Lists and Sets\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Map and dictionary"
+    target: "map-and-dictionary"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Code (\"Schematics of code lookup using hash tables for methods in ...\"). It is in the canon books: HtDP contents (\"Real-World Data: Dictionaries\"); Crafting Interpreters contents (\"Hash Tables\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Hash table"
+    target: "hash-table"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Code (\"Schematics of code lookup using hash tables for methods in ...\"). It is in the canon books: Crafting Interpreters contents (\"Hash Tables\"); The Rust Programming Language contents (\"Storing Keys with Associated Values in ...\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Tree"
+    target: "tree-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Processing structured data (e.g., trees) via functions with ...\"). It is in the canon books: SICP index (\"balanced binary tree , see also binary ...\"); HtDP contents (\"Trees\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Graph"
+    target: "graph"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Analysis (\"Relevant program representations, such as basic blocks, ...\"). It is in the canon books: HtDP contents (\"Traversing Graphs\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Slice"
+    target: "slice-concept"
+    status: "planned"
+    reason: "It is in 3 of the 7 language references: Go spec (\"Slice types\"); Rust Reference (\"String slice type\"); C++ working draft (\"Range slices\"). It is in the canon books: The Rust Programming Language contents (\"The Slice Type\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Collection"
+    target: "collection"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Collection classes, iterators, and other common library ...\"). It is in 3 of the 7 language references: C++ working draft (\"Containers library\"); C# standard (\"Collection initializers\"); ECMAScript 2027 (\"Indexed Collections\"). It is in the canon books: The Rust Programming Language contents (\"Common Collections\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Abstract data type"
+    target: "abstract-data-type"
+    status: "planned"
+    reason: "It is in CS2023 SDF-Fundamentals (\"Standard abstract data types such as lists, stacks, queues, ...\"). It is in the canon books: SICP index (\"abstract data , see also data ...\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Data structure"
+    target: "data-structure"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Persistent data structures\"). It is in the canon books: SICP index (\"hierarchical data structures , [2]\")."
+  - part: concepts
+    group: "data-and-values"
+    name: "Lazy sequence and stream"
+    target: "lazy-sequence"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Constructs (\"Lazy evaluation and infinite streams\"). It is in the canon books: SICP index (\"joint, modeled with streams\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Function"
+    target: "function"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"composition (specifically, how to base composition on ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Function definitions\"); Go spec (\"Function types\"); Rust Reference (\"Functions\"); and 4 more. It is in the canon books: SICP index (\"notation for mathematical function\"); HtDP contents (\"Functions and Programs\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Procedure and subroutine"
+    target: "procedure-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Systems (\"Translating function/procedure calls and return from calls, ...\"). It is in the canon books: SICP index (\"(primitive multiplication procedure)\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Abstraction"
+    target: "abstraction-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"progressively more complex. An understanding of the common ...\"). It is in the canon books: SICP index (\"abstract data , see also data ...\"); HtDP contents (\"Abstraction\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Parameter and argument"
+    target: "parameter-and-argument"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"functions as arguments, in multiple programming languages, ...\"). It is in 6 of the 7 language references: Go spec (\"Passing arguments to ... parameters\"); Rust Reference (\"Type parameters\"); Java Language Specification (\"Type Arguments of Parameterized Types\"); and 3 more. It is in the canon books: SICP index (\"call-by-name argument passing , [2]\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Parameter passing"
+    target: "parameter-passing"
+    status: "node"
+    reason: "It is in CS2023 FPL-Semantics (\"Types of parameter-passing with simple illustrations and ...\"). It is in the canon books: SICP index (\"call-by-name argument passing , [2]\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Call by name and call by need"
+    target: "call-by-name"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Graph reduction machine and call-by-need\"). It is in the canon books: SICP index (\"call-by-name argument passing , [2]\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Return value"
+    target: "return-value"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Develop useful functions that take and return other ...\"). It is in 7 of the 7 language references: Python Language Reference (\"The return statement\"); Go spec (\"Return statements\"); Rust Reference (\"Return expressions\"); and 4 more. It is in the canon books: SICP index (\"return (linkage descriptor)\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Function call"
+    target: "function-call"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Function calls have no side effects, facilitating ...\"). It is in 6 of the 7 language references: Go spec (\"Calls\"); Rust Reference (\"Call expressions\"); Java Language Specification (\"Invocation Contexts\"); and 3 more. It is in the canon books: SICP index (\"application?\"); Crafting Interpreters contents (\"Calls and Functions\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Recursion"
+    target: "recursion"
+    status: "node"
+    reason: "It is in CS2023 FPL-Functional (\"Use of recursion vs loops vs pipelining (map/reduce)\"). It is in the canon books: SICP index (\"recursive procedures\"); HtDP contents (\"Generative Recursion\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Tail call"
+    target: "tail-call"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Systems (\"Implementing loops, recursion, and tail calls\"). It is in the canon books: SICP index (\"tail recursion, stack allocation, and ...\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Higher-order function"
+    target: "higher-order-functions"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"composition (specifically, how to base composition on ...\"). It is in the canon books: SICP index (\"abstraction, see also means of ...\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Anonymous function"
+    target: "anonymous-function"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Lambda expressions and evaluation: (See also: AL-Models, ...\"). It is in 6 of the 7 language references: Python Language Reference (\"Lambdas\"); Rust Reference (\"Closure expressions\"); Java Language Specification (\"Lambda Expressions\"); and 3 more. It is in the canon books: SICP index (\"calculus, see lambda calculus\"); HtDP contents (\"Functions from lambda\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Closure"
+    target: "closures"
+    status: "node"
+    reason: "It is in CS2023 FPL-Functional (\"Function closures (functions using variables in the ...\"). It is in 3 of the 7 language references: Rust Reference (\"Closure expressions\"); C++ working draft (\"Closure types\"); ECMAScript 2027 (\"The Abstract Closure Specification Type\"). It is in the canon books: SICP index (\"closure\"); Crafting Interpreters contents (\"Closures\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Function composition"
+    target: "function-composition"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Composition vs inheritance\"). It is in the canon books: SICP index (\"composition of functions\"); HtDP contents (\"Design by Composition\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Map, filter and reduce"
+    target: "map-filter-reduce"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Use of recursion vs loops vs pipelining (map/reduce)\"). It is in the canon books: SICP index (\"filter , [2]\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Overloading"
+    target: "overloading"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Definition and advantages of polymorphism: parametric, ...\"). It is in 3 of the 7 language references: Java Language Specification (\"Overloading\"); C++ working draft (\"Overloading\"); C# standard (\"Signatures and overloading\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Continuation"
+    target: "continuation"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Constructs (\"Control abstractions: exception handling, continuations, ...\"). It is in the canon books: SICP index (\"continuation\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Laziness"
+    target: "laziness"
+    status: "node"
+    reason: "It is in CS2023 FPL-Functional (\"Lazy versus eager evaluation\"). It is in the canon books: SICP index (\"apply (lazy)\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Strict evaluation"
+    target: "strict-evaluation"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Lazy versus eager evaluation\"). It is in the canon books: SICP index (\"applicative order vs. , [2] , [3]\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Method"
+    target: "method"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Definition of classes: fields, methods, and constructors. ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Special method names\"); Go spec (\"Method declarations\"); Rust Reference (\"Method call expressions\"); and 4 more. It is in the canon books: Crafting Interpreters contents (\"Methods and Initializers\"); The Rust Programming Language contents (\"Methods\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Lambda calculus"
+    target: "lambda-calculus-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"Lambda calculus, variable binding, and variable renaming. ...\"). It is in the canon books: SICP index (\"calculus, see lambda calculus\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Module"
+    target: "module"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Use functional encapsulation mechanisms such as closures ...\"). It is in 4 of the 7 language references: Rust Reference (\"Modules\"); Java Language Specification (\"Meaning of Module Names and Package ...\"); C++ working draft (\"Modules\"); and 1 more. It is in the canon books: SICP index (\"modularity , [2]\"); The Rust Programming Language contents (\"Packages, Crates, and Modules\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Package"
+    target: "package"
+    status: "planned"
+    reason: "It is in 3 of the 7 language references: Python Language Reference (\"Packages\"); Go spec (\"Packages\"); Java Language Specification (\"Simple Package Names\"). It is in the canon books: The Rust Programming Language contents (\"Packages, Crates, and Modules\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Information hiding"
+    target: "information-hiding-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Privacy, data hiding, and visibility of class members\"). It is in the canon books: SICP index (\"hiding principle\")."
+  - part: concepts
+    group: "functions-and-abstraction"
+    name: "Separate compilation"
+    target: "separate-compilation"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Code (\"Separate compilation; linking\"). It is in 3 of the 7 language references: Java Language Specification (\"Compilation Units\"); C++ working draft (\"Separate translation\"); C# standard (\"Compilation units\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Object"
+    target: "object"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Decomposition into objects carrying state and having ...\"). It is in 6 of the 7 language references: Python Language Reference (\"Objects, values and types\"); Rust Reference (\"Trait object types\"); Java Language Specification (\"Objects\"); and 3 more. It is in the canon books: SICP index (\"weakness in handling compound objects\"); The Rust Programming Language contents (\"Object Oriented Programming Features\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Class"
+    target: "class-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Definition of classes: fields, methods, and constructors. ...\"). It is in 5 of the 7 language references: Python Language Reference (\"Class definitions\"); Java Language Specification (\"Relationship to Predefined Classes and ...\"); C++ working draft (\"Class scope\"); and 2 more. It is in the canon books: Crafting Interpreters contents (\"Classes\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Class and instance"
+    target: "classes-and-instances"
+    status: "node"
+    reason: "It is in 3 of the 7 language references: Java Language Specification (\"Inner Classes and Enclosing Instances\"); C# standard (\"Instance variables\"); ECMAScript 2027 (\"Properties of For-In Iterator Instances\"). It is in the canon books: Crafting Interpreters contents (\"Classes and Instances\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Field and property"
+    target: "field-and-property"
+    status: "planned"
+    reason: "It is in 4 of the 7 language references: Rust Reference (\"Field access expressions\"); Java Language Specification (\"Field Declarations\"); C# standard (\"Field ref safe context\"); and 1 more. It is in the canon books: SICP index (\"type field\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Constructor"
+    target: "constructors"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"Definition of classes: fields, methods, and constructors. ...\"). It is in 4 of the 7 language references: Java Language Specification (\"Members and Constructors of ...\"); C++ working draft (\"Constructors\"); C# standard (\"Default constructors\"); and 1 more. It is in the canon books: SICP index (\"constructor\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Encapsulation and visibility"
+    target: "encapsulation-and-visibility"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"Object-oriented idioms for encapsulation:\"). It is in 5 of the 7 language references: Rust Reference (\"Visibility and privacy\"); Java Language Specification (\"Access Control\"); C++ working draft (\"Private module fragment\"); and 2 more."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Inheritance"
+    target: "class-inheritance"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"Subclasses, inheritance (including multiple inheritance), ...\"). It is in 3 of the 7 language references: Java Language Specification (\"Superclasses and Subclasses\"); C++ working draft (\"Derived classes\"); C# standard (\"Hiding through inheritance\"). It is in the canon books: Crafting Interpreters contents (\"Inheritance\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Interface"
+    target: "interfaces"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"Interfaces revealing only method signatures\"). It is in 5 of the 7 language references: Go spec (\"Interface types\"); Java Language Specification (\"Relationship to Predefined Classes and ...\"); C++ working draft (\"View interface\"); and 2 more. It is in the canon books: SICP index (\"conventional interface\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Dynamic dispatch"
+    target: "dynamic-dispatch"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"Dynamic dispatch: definition of method-call\"). It is in 3 of the 7 language references: Java Language Specification (\"Dynamic Dispatch During Instance ...\"); C++ working draft (\"Virtual functions\"); C# standard (\"Virtual methods\")."
+  - part: concepts
+    group: "objects-and-classes"
+    name: "Method overriding"
+    target: "method-overriding"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Subclasses, inheritance (including multiple inheritance), ...\"). It is in 3 of the 7 language references: Java Language Specification (\"Inheritance, Overriding, and Hiding\"); C++ working draft (\"Overridden virtual functions\"); C# standard (\"Overriding a “maybe null” determination\")."
+  - part: concepts
+    group: "memory-and-resources"
+    name: "Explicit memory management"
+    target: "explicit-memory-management"
+    status: "node"
+    reason: "It is in CS2023 FPL-Systems (\"Return from procedure as automatic deallocation mechanism ...\"). It is in 3 of the 7 language references: C++ working draft (\"Deallocation functions\"); C# standard (\"The new operator\"); ECMAScript 2027 (\"The new Operator\")."
+  - part: concepts
+    group: "memory-and-resources"
+    name: "Pointer and reference"
+    target: "pointers-and-references"
+    status: "node"
+    reason: "It is in CS2023 FPL-Types (\"references using set operations) (See also: ...\"). It is in 7 of the 7 language references: Python Language Reference (\"References\"); Go spec (\"Pointer types\"); Rust Reference (\"Pointer types\"); and 4 more. It is in the canon books: SICP index (\"as equality of pointers , [2]\"); The Rust Programming Language contents (\"References and Borrowing\")."
+  - part: concepts
+    group: "memory-and-resources"
+    name: "Memory leak"
+    target: "memory-leaks"
+    status: "node"
+    reason: "It is in CS2023 FPL-Systems (\"Explain why memory leaks and dangling pointer problems ...\"). It is in the canon books: The Rust Programming Language contents (\"Reference Cycles Can Leak Memory\")."
+  - part: concepts
+    group: "memory-and-resources"
+    name: "Garbage collection"
+    target: "garbage-collection"
+    status: "node"
+    reason: "It is in CS2023 FPL-Systems (\"Automated memory management: garbage collection as an ...\"). It is in the canon books: SICP index (\"compacting garbage collector\"); Crafting Interpreters contents (\"Garbage Collection\")."
+  - part: concepts
+    group: "memory-and-resources"
+    name: "Static storage"
+    target: "static-storage"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Abstraction (\"Side-effects induced by nonlocal variables, global ...\"). It is in the canon books: Crafting Interpreters contents (\"Global Variables\")."
+  - part: concepts
+    group: "memory-and-resources"
+    name: "Memory model"
+    target: "memory-model"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"Systems Execution and Memory Model\"). It is in 4 of the 7 language references: Rust Reference (\"Memory model\"); Java Language Specification (\"Interaction with the Memory Model\"); C++ working draft (\"Memory model\"); and 1 more."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Control flow"
+    target: "control-flow"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Predict and validate control flow in a program using ...\"). It is in the canon books: Crafting Interpreters contents (\"Control Flow\"); The Rust Programming Language contents (\"Control Flow\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Conditional"
+    target: "conditional"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"Parse tree using a simple sentence such as arithmetic ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Conditional expressions\"); Go spec (\"If statements\"); Rust Reference (\"Conditional compilation\"); and 4 more. It is in the canon books: SICP index (\"alternative of if\"); HtDP contents (\"Programming with Conditionals\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Loop"
+    target: "loop"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Use of recursion vs loops vs pipelining (map/reduce)\"). It is in 5 of the 7 language references: Rust Reference (\"Loop expressions\"); Java Language Specification (\"Iteration of for Statement\"); C++ working draft (\"Iteration statements\"); and 2 more. It is in the canon books: SICP index (\"driver loop\"); HtDP contents (\"ISL for Loops\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "For loop"
+    target: "for-loop"
+    status: "planned"
+    reason: "It is in 5 of the 7 language references: Python Language Reference (\"The for statement\"); Go spec (\"For statements\"); Java Language Specification (\"for Statements\"); and 2 more. It is in the canon books: HtDP contents (\"ISL for Loops\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "For-each loop"
+    target: "for-each-loop"
+    status: "planned"
+    reason: "It is in 3 of the 7 language references: Go spec (\"For statements with range clause\"); Java Language Specification (\"The enhanced for statement\"); ECMAScript 2027 (\"For-In Iterator Objects\"). It is in the canon books: SICP index (\"for-each , [2]\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Labeled statement"
+    target: "labeled-statement"
+    status: "planned"
+    reason: "It is in 5 of the 7 language references: Go spec (\"Label scopes\"); Java Language Specification (\"Labeled Statements\"); C++ working draft (\"Label\"); and 2 more. It is in the canon books: SICP index (\"label generation\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Iterator"
+    target: "iterators"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"Collection classes, iterators, and other common library ...\"). It is in 3 of the 7 language references: C++ working draft (\"Iterator support\"); C# standard (\"Synchronous and asynchronous iterators\"); ECMAScript 2027 (\"Operations on Iterator Objects\"). It is in the canon books: The Rust Programming Language contents (\"Functional Language Features: Iterators ...\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Pattern matching"
+    target: "pattern-matching"
+    status: "node"
+    reason: "It is in 5 of the 7 language references: Python Language Reference (\"The match statement\"); Rust Reference (\"Match expressions\"); Java Language Specification (\"Scope for Pattern Variables in ...\"); and 2 more. It is in the canon books: SICP index (\"frame (query interpreter) , see also ...\"); HtDP contents (\"Pattern Matching\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Exception handling"
+    target: "exception-handling"
+    status: "node"
+    reason: "It is in CS2023 FPL-OOP (\"Exception handling. (See also: SDF-Fundamentals, ...\"). It is in 5 of the 7 language references: Python Language Reference (\"The raise statement\"); Java Language Specification (\"The throw Statement\"); C++ working draft (\"Exception handling\"); and 2 more."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Assertion"
+    target: "assertions"
+    status: "node"
+    reason: "It is in CS2023 FPL-Logic (\"Unification and unification algorithm; unification vs ...\"). It is in 3 of the 7 language references: Python Language Reference (\"The assert statement\"); Java Language Specification (\"The assert Statement\"); C++ working draft (\"Contract assertions\"). It is in the canon books: SICP index (\"assert! (query interpreter)\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Error"
+    target: "error-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Scripting (\"Error/exception handling\"). It is in 3 of the 7 language references: Go spec (\"Errors\"); C++ working draft (\"Value of error codes\"); ECMAScript 2027 (\"SS: Early Errors\"). It is in the canon books: SICP index (\"error handling , [2]\"); HtDP contents (\"Input Errors\")."
+  - part: concepts
+    group: "errors-and-control"
+    name: "Invariant"
+    target: "invariant"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Enforce invariants during code development and code ...\"). It is in the canon books: SICP index (\"invariant quantity of an iterative ...\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Concurrency"
+    target: "concurrency"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"management and interplay of concurrent processes ...\"). It is in the canon books: SICP index (\"joint, with concurrent access\"); The Rust Programming Language contents (\"Fearless Concurrency\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Parallelism"
+    target: "parallelism"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"Parallel and Distributed Computing\"). It is in the canon books: SICP index (\"parallelism, see concurrency\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Process"
+    target: "process"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"management and interplay of concurrent processes ...\"). It is in the canon books: SICP index (\"blocked process\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Thread"
+    target: "threads"
+    status: "node"
+    reason: "It is in CS2023 FPL-Parallel (\"Threads\"). It is in the canon books: The Rust Programming Language contents (\"Using Threads to Run Code Simultaneously\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Mutual exclusion"
+    target: "mutual-exclusion"
+    status: "node"
+    reason: "It is in CS2023 FPL-Parallel (\"Mutexes\"). It is in 3 of the 7 language references: Java Language Specification (\"Threads and Locks\"); C++ working draft (\"Formatter locking\"); C# standard (\"Lock statements\"). It is in the canon books: SICP index (\"acquire a mutex\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Synchronization"
+    target: "synchronization"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"passing, shared memory, and synchronization. Finally, some ...\"). It is in the canon books: SICP index (\"barrier synchronization\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Atomic operation"
+    target: "atomic-operations"
+    status: "node"
+    reason: "It is in CS2023 FPL-Parallel (\"Atomicity\"). It is in 3 of the 7 language references: C++ working draft (\"Atomic constraints\"); C# standard (\"Atomicity of variable references\"); ECMAScript 2027 (\"Atomics\"). It is in the canon books: SICP index (\"atomic operations supported in hardware\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Future and promise"
+    target: "futures"
+    status: "node"
+    reason: "It is in CS2023 FPL-Parallel (\"Promises\"). It is in the canon books: The Rust Programming Language contents (\"Fundamentals of Asynchronous ...\")."
+  - part: concepts
+    group: "concurrency-and-parallelism"
+    name: "Async and await"
+    target: "async-await"
+    status: "node"
+    reason: "It is in CS2023 FPL-Parallel (\"Synchronous/asynchronous programming models\"). It is in 6 of the 7 language references: Python Language Reference (\"Await expression\"); Rust Reference (\"Await expressions\"); Java Language Specification (\"Asynchronous Exceptions\"); and 3 more. It is in the canon books: The Rust Programming Language contents (\"Fundamentals of Asynchronous ...\")."
+  - part: concepts
+    group: "metaprogramming"
+    name: "Macro"
+    target: "macro-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Constructs (\"Metaprogramming: macros, generative programming, ...\"). It is in the canon books: SICP index (\"macro , see also reader macro character\"); The Rust Programming Language contents (\"Macros\")."
+  - part: concepts
+    group: "metaprogramming"
+    name: "Eval"
+    target: "eval-concept"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Constructs (\"Dynamic code evaluation (\"eval\")\"). It is in the canon books: SICP index (\"eval (lazy)\")."
+  - part: concepts
+    group: "metaprogramming"
+    name: "Domain-specific language"
+    target: "domain-specific-language"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Constructs (\"Domain specific languages, such as database languages, data ...\"). It is in the canon books: SICP index (\"embedded language, language design using\"); HtDP contents (\"Domain-Specific Languages\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Compilation"
+    target: "compilation"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Code (\"Separate compilation; linking\"). It is in 3 of the 7 language references: Rust Reference (\"Conditional compilation\"); Java Language Specification (\"Compilation Units\"); C# standard (\"Conditional compilation symbols\"). It is in the canon books: SICP index (\"compiling Scheme into\"); Crafting Interpreters contents (\"Compiling Expressions\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Interpretation"
+    target: "interpretation"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"Execution models for JIT (Just-In-Time), compiler, ...\"). It is in the canon books: SICP index (\"in query interpreter\"); HtDP contents (\"interpretation\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Lexical analysis"
+    target: "lexical-analysis"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Syntax (\"Scanning and parsing based on language specifications\"). It is in the canon books: Crafting Interpreters contents (\"Scanning\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Parsing"
+    target: "parsing"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"Parse tree using a simple sentence such as arithmetic ...\"). It is in the canon books: SICP index (\"parsing, see parsing natural language\"); HtDP contents (\"A Glimpse at Parsing\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Bytecode"
+    target: "bytecode"
+    status: "node"
+    reason: "It is in CS2023 FPL-Translation (\"Use of intermediate code, e.g., bytecode\"). It is in the canon books: Crafting Interpreters contents (\"III A Bytecode Virtual Machine\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Virtual machine"
+    target: "virtual-machine"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Explain a simple example of lambda expression being ...\"). It is in the canon books: Crafting Interpreters contents (\"III A Bytecode Virtual Machine\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Code optimization"
+    target: "code-optimization"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"generation and optimization, linking, loading, execution\"). It is in the canon books: SICP index (\"optimizations (additional)\"); Crafting Interpreters contents (\"Optimization\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Linking"
+    target: "linking"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Translation (\"generation and optimization, linking, loading, execution\"). It is in 3 of the 7 language references: Rust Reference (\"Linkage\"); Java Language Specification (\"Linking of Classes and Interfaces\"); C++ working draft (\"Program and linkage\"). It is in the canon books: SICP index (\"compiler for Scheme , see also code ...\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Runtime system"
+    target: "runtime-system"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"Runtime Systems was renamed Runtime Behavior and Systems\"). It is in 5 of the 7 language references: Python Language Reference (\"Runtime Components\"); Rust Reference (\"The Rust runtime\"); C++ working draft (\"Other runtime support\"); and 2 more. It is in the canon books: SICP index (\"runtime ( ns )\")."
+  - part: concepts
+    group: "language-implementation"
+    name: "Environment model"
+    target: "environment-model"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Function closures (functions using variables in the ...\"). It is in the canon books: SICP index (\"in environment model\")."
+  - part: concepts
+    group: "software-design"
+    name: "Software design"
+    target: "software-design"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"design new languages, an exercise which requires greater ...\"). It is in the canon books: HtDP contents (\"How to Design Programs, Second Edition\"); Crafting Interpreters contents (\"Design Note: What’s in a Name?\")."
+  - part: concepts
+    group: "software-design"
+    name: "Modularity"
+    target: "modularity"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Use functional encapsulation mechanisms such as closures ...\"). It is in the canon books: SICP index (\"modularity , [2]\"); The Rust Programming Language contents (\"Refactoring to Improve Modularity and ...\")."
+  - part: concepts
+    group: "software-design"
+    name: "Pipeline"
+    target: "pipeline"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Functional (\"Use of recursion vs loops vs pipelining (map/reduce)\"). It is in the canon books: SICP index (\"pipelining\")."
+  - part: concepts
+    group: "construction-practice"
+    name: "Naming"
+    target: "naming-concept"
+    status: "planned"
+    reason: "It is in CS2023 SDF-Practices (\"indentation, proper naming of variables, etc\"). It is in the canon books: SICP index (\"naming\")."
+  - part: concepts
+    group: "construction-practice"
+    name: "Refactoring"
+    target: "refactoring"
+    status: "planned"
+    reason: "It is in CS2023 SE-Construction (\"Identify subtle/tricky pieces of code and refactor to be ...\"). It is in the canon books: The Rust Programming Language contents (\"Refactoring to Improve Modularity and ...\")."
+  - part: concepts
+    group: "construction-practice"
+    name: "Library and framework"
+    target: "library-and-framework"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Collection classes, iterators, and other common library ...\"). It is in 3 of the 7 language references: Python Language Reference (\"The Python standard library\"); C++ working draft (\"Library introduction\"); C# standard (\"Standard library\")."
+  - part: concepts
+    group: "testing"
+    name: "Software testing"
+    target: "software-testing"
+    status: "planned"
+    reason: "It is in CS2023 FPL-OOP (\"Compose a class through design, implementation, and testing ...\"). It is in the canon books: HtDP contents (\"On Testing\")."
+  - part: concepts
+    group: "testing"
+    name: "Test-driven development"
+    target: "test-driven-development"
+    status: "node"
+    reason: "It is in CS2023 SE-Construction (\"Test-driven development , This is particularly valuable for ...\"). It is in the canon books: The Rust Programming Language contents (\"Adding Functionality with Test Driven ...\")."
+  - part: concepts
+    group: "debugging-and-observability"
+    name: "Debugging"
+    target: "debugging"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Types (\"Use types and type-error messages to write and debug ...\"). It is in 3 of the 7 language references: Rust Reference (\"Debugger\"); C++ working draft (\"Debugging\"); ECMAScript 2027 (\"The debugger Statement\"). It is in the canon books: SICP index (\"debug\")."
+  - part: concepts
+    group: "debugging-and-observability"
+    name: "Interactive debugging"
+    target: "interactive-debugging"
+    status: "node"
+    reason: "It is in CS2023 SDF-Practices (\"Use of a general-purpose IDE, including its debugger\"). It is in the canon books: SICP index (\"breakpoint\")."
+  - part: concepts
+    group: "debugging-and-observability"
+    name: "Tracing"
+    target: "tracing"
+    status: "planned"
+    reason: "It is in CS2023 SDF-Fundamentals (\"Trace the flow of control during the execution of a program\"). It is in the canon books: SICP index (\"instruction tracing\")."
+  - part: concepts
+    group: "debugging-and-observability"
+    name: "Bug"
+    target: "bug"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Parallel (\"Fault models (See also: OS-Faults)\"). It is in the canon books: SICP index (\"bugs associated with , [2]\")."
+  - part: concepts
+    group: "program-analysis-and-verification"
+    name: "Formal verification"
+    target: "formal-verification"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"There is an increasing interest in formal methods to prove ...\"). It is in the canon books: SICP index (\"proving programs correct\")."
+  - part: concepts
+    group: "program-analysis-and-verification"
+    name: "Program correctness"
+    target: "program-correctness"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"There is an increasing interest in formal methods to prove ...\"). It is in the canon books: SICP index (\"correctness of concurrent programs\")."
+  - part: concepts
+    group: "program-analysis-and-verification"
+    name: "Termination"
+    target: "termination"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Parallel (\"Termination (See also: PDC-Coordination)\"). It is in 3 of the 7 language references: Go spec (\"Terminating statements\"); C++ working draft (\"Start and termination\"); C# standard (\"Application termination\"). It is in the canon books: HtDP contents (\"Termination\")."
+  - part: concepts
+    group: "program-analysis-and-verification"
+    name: "Reachability"
+    target: "reachability"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Systems (\"notion of reachability\"). It is in 3 of the 7 language references: Java Language Specification (\"Unreachable Statements\"); C++ working draft (\"Reachability\"); C# standard (\"End points and reachability\")."
+  - part: concepts
+    group: "performance"
+    name: "Time and space efficiency"
+    target: "time-and-space-efficiency"
+    status: "planned"
+    reason: "It is in CS2023 FPL (\"and implemented to improve execution efficiency and ...\"). It is in the canon books: SICP index (\"efficiency\")."
+  - part: concepts
+    group: "security"
+    name: "Unsafe code"
+    target: "unsafe-code"
+    status: "planned"
+    reason: "It is in 3 of the 7 language references: Go spec (\"Package unsafe\"); Rust Reference (\"The `unsafe` keyword\"); C# standard (\"Unsafe code\"). It is in the canon books: The Rust Programming Language contents (\"Unsafe Rust\")."
+  - part: concepts
+    group: "tools-and-workflow"
+    name: "File input and output"
+    target: "file-input-and-output"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Scripting (\"File abstraction and operators (See also: SDF-Fundamentals, ...\"). It is in the canon books: HtDP contents (\"Lists in Lists, Files\")."
+  - part: concepts
+    group: "tools-and-workflow"
+    name: "Environment variable"
+    target: "environment-variable"
+    status: "planned"
+    reason: "It is in CS2023 FPL-Scripting (\"Environment variables (See also: SF-Overview)\"). It is in the canon books: The Rust Programming Language contents (\"Working with Environment Variables\")."
   - part: tasks
     group: "basics"
     name: "Hello world program"
@@ -5440,3 +6556,364 @@ items:
     target: "defence-in-depth"
     status: "planned"
     reason: "A practice that a common rule of secure design that The Art of Software Security Assessment describes names."
+# The concept candidates that only one source holds, or none. They are not in the core. They need a second source, for example SWEBOK v4, before they can go in.
+candidates:
+  - {part: concepts, group: foundations, name: "Bit and byte", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: foundations, name: "Hexadecimal notation", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: foundations, name: "Two's complement", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: foundations, name: "Integer overflow", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: foundations, name: "Floating-point arithmetic", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: foundations, name: "Rounding error", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: foundations, name: "Decimal arithmetic", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: foundations, name: "Character encoding", cs2023: false, references: 1, books: 2}
+  - {part: concepts, group: foundations, name: "Unicode", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: foundations, name: "UTF-8", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: foundations, name: "Endianness", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: foundations, name: "Processor and memory", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: foundations, name: "Instruction", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: foundations, name: "Register", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: foundations, name: "Memory hierarchy", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: foundations, name: "Call stack", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: foundations, name: "Hello world program", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: foundations, name: "Notional machine", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Programming paradigm", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Procedural programming", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Structured programming", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Reactive programming", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Dataflow programming", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Array programming", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Concatenative programming", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Aspect-oriented programming", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Actor model", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Multi-paradigm programming", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Prototype-based programming", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: paradigms, name: "Generic programming", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: paradigms, name: "Constraint programming", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: paradigms, name: "Scripting language", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Literal", cs2023: false, references: 7, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Whitespace", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Context-free grammar", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Parsing expression grammar", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Statement and expression", cs2023: false, references: 6, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Dynamic scope", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Namespace", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Name resolution", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Shadowing", cs2023: false, references: 2, books: 1}
+  - {part: concepts, group: syntax-and-semantics, name: "Parse tree", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Regular expression", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Operational semantics", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Denotational semantics", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Undefined behavior", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Implementation-defined behavior", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Unspecified behavior", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: syntax-and-semantics, name: "Sequence point", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Program entry point", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Preprocessor", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: syntax-and-semantics, name: "Special form", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: syntax-and-semantics, name: "Homoiconicity", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Type checking", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Strong and weak typing", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: types, name: "Type safety", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Hindley-Milner type inference", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: types, name: "Type annotation", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Primitive type", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Character type", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: types, name: "Unit type", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: types, name: "Bottom type", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Top type", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: types, name: "Algebraic data type", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Union type", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Function type", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Reference type", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Value type", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Nullable type", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Type alias", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: types, name: "Nominal and structural typing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Duck typing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Variance", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: types, name: "Polymorphism", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: types, name: "Bounded quantification", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Higher-kinded type", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Type erasure", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Reified type", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Gradual typing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Dependent type", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: types, name: "Refinement type", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Linear and affine type", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Existential type", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Phantom type", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Type-level computation", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Units of measure", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: types, name: "Type compatibility", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Type equivalence", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: types, name: "Type constructor", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: data-and-values, name: "Default value", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: data-and-values, name: "Value semantics and reference semantics", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: data-and-values, name: "Hash code", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: data-and-values, name: "Copying", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: data-and-values, name: "String interpolation", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: data-and-values, name: "Character escape", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: data-and-values, name: "Linked list", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: data-and-values, name: "Range", cs2023: false, references: 5, books: 0}
+  - {part: concepts, group: data-and-values, name: "Sequence", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: data-and-values, name: "Persistent data structure", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: data-and-values, name: "Serialization", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: data-and-values, name: "Date and time", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: data-and-values, name: "Boxing and unboxing", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: data-and-values, name: "Symbol", cs2023: false, references: 2, books: 2}
+  - {part: concepts, group: data-and-values, name: "Bit field", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: data-and-values, name: "Bitwise operation", cs2023: false, references: 5, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Procedural abstraction", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: functions-and-abstraction, name: "Mutual recursion", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "First-class function", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: functions-and-abstraction, name: "Currying", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Partial application", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Pure function", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: functions-and-abstraction, name: "Variadic function", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Default argument", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Named argument", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Operator overloading", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Generator", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Coroutine", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Continuation-passing style", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Memoization", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: functions-and-abstraction, name: "Local function", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: functions-and-abstraction, name: "Extension method", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Function pointer and delegate", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Callback", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Combinator", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Point-free style", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Fixed point", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: functions-and-abstraction, name: "Monad", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Referential transparency", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: functions-and-abstraction, name: "Inline function", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Interface and implementation", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: functions-and-abstraction, name: "Import and export", cs2023: false, references: 6, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Instance method", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Static member", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Destructor and finalizer", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Multiple inheritance", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Mixin", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Abstract class", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Multiple dispatch", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Self and this", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Super call", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Objects and messages", cs2023: false, references: 0, books: 2}
+  - {part: concepts, group: objects-and-classes, name: "Composition over inheritance", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Delegation", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Liskov substitution principle", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: objects-and-classes, name: "Nested and inner class", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Sealed class", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Object identity", cs2023: false, references: 2, books: 1}
+  - {part: concepts, group: objects-and-classes, name: "Metaclass", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Class hierarchy", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Object lifecycle", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: objects-and-classes, name: "Getter and setter", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Memory management", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Pointer arithmetic", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Dangling pointer", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Reference counting", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Ownership", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: memory-and-resources, name: "Borrowing", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: memory-and-resources, name: "Lifetime", cs2023: false, references: 2, books: 1}
+  - {part: concepts, group: memory-and-resources, name: "Stack allocation", cs2023: false, references: 2, books: 1}
+  - {part: concepts, group: memory-and-resources, name: "Heap allocation", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Resource acquisition is initialization", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Defer and finally", cs2023: false, references: 5, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Weak reference", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Smart pointer", cs2023: false, references: 1, books: 2}
+  - {part: concepts, group: memory-and-resources, name: "Memory safety", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Buffer overflow", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Alignment", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Object layout", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Resource management", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Move semantics", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: memory-and-resources, name: "Copy semantics", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Switch statement", cs2023: false, references: 5, books: 0}
+  - {part: concepts, group: errors-and-control, name: "While loop", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Break and continue", cs2023: false, references: 5, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Goto", cs2023: false, references: 2, books: 2}
+  - {part: concepts, group: errors-and-control, name: "Destructuring", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Guard clause", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Exception safety", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Checked exception", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Errors as values", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Panic", cs2023: false, references: 2, books: 1}
+  - {part: concepts, group: errors-and-control, name: "Runtime error", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Compile-time error", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Precondition and postcondition", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Design by contract", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Nonlocal exit", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Condition system", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Error propagation", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: errors-and-control, name: "Stack trace", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: errors-and-control, name: "Sentinel value", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Lock", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Semaphore", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Monitor and condition variable", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Race condition", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Data race", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Deadlock", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Livelock and starvation", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Memory ordering", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Volatile", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Thread safety", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Thread-local storage", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Channel", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Message-passing concurrency", cs2023: false, references: 0, books: 2}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Event loop", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Thread pool", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Green thread", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Structured concurrency", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Cancellation", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Lock-free programming", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Software transactional memory", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Data parallelism", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Task parallelism", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Shared memory", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Critical section", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Producer and consumer", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Blocking and non-blocking", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: concurrency-and-parallelism, name: "Interrupt and signal", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Metaprogramming", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Reflection", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Syntactic macro", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Code generation", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Template metaprogramming", cs2023: false, references: 2, books: 1}
+  - {part: concepts, group: metaprogramming, name: "Compile-time evaluation", cs2023: false, references: 4, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Quotation", cs2023: false, references: 0, books: 2}
+  - {part: concepts, group: metaprogramming, name: "Decorator", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Annotation processing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Dynamic code loading", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: metaprogramming, name: "Metaobject protocol", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Recursive descent parsing", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Operator-precedence parsing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "LR parsing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Semantic analysis", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: language-implementation, name: "Symbol table", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Intermediate representation", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Stack machine", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Register allocation", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Constant folding", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Dead code elimination", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Just-in-time compilation", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Ahead-of-time compilation", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Tree-walking interpreter", cs2023: false, references: 0, books: 2}
+  - {part: concepts, group: language-implementation, name: "Read-eval-print loop", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: language-implementation, name: "Loading", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: language-implementation, name: "Calling convention", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Application binary interface", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: language-implementation, name: "Foreign function interface", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: language-implementation, name: "Bootstrapping", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: language-implementation, name: "Transpiler", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Closure conversion", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Name mangling", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Error recovery", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Desugaring", cs2023: false, references: 0, books: 2}
+  - {part: concepts, group: language-implementation, name: "Static single assignment", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: language-implementation, name: "Garbage collector implementation", cs2023: false, references: 0, books: 2}
+  - {part: concepts, group: software-design, name: "Coupling", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Cohesion", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Separation of concerns", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Abstraction barrier", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: software-design, name: "Design pattern", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: software-design, name: "Software architecture", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Layered architecture", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "API design", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: software-design, name: "Dependency injection", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Dependency inversion", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "SOLID principles", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Single responsibility principle", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Open-closed principle", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Don't repeat yourself", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Domain model", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Expression problem", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Design by interface", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Generic design", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Invariant-preserving design", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: software-design, name: "Finite-state machine", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: software-design, name: "Data-driven design", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Software construction", cs2023: true, references: 2, books: 0}
+  - {part: concepts, group: construction-practice, name: "Coding style", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Readability", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: construction-practice, name: "Code documentation", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: construction-practice, name: "Code review", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Code smell", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Technical debt", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Defensive programming", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Secure coding", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: construction-practice, name: "Input validation", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Version control", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Build system", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: construction-practice, name: "Dependency management", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Integrated development environment", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Reuse", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Standard library", cs2023: false, references: 3, books: 0}
+  - {part: concepts, group: construction-practice, name: "Software configuration", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Literate programming", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Pair programming", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Continuous integration", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: construction-practice, name: "Program design recipe", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: construction-practice, name: "Stepwise refinement", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: construction-practice, name: "Programming by contract", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: testing, name: "Unit testing", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Integration testing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "System testing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Regression testing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Test case design", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Test double", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Test coverage", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Property-based testing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Fuzz testing", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Mutation testing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Black-box and white-box testing", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: testing, name: "Boundary value analysis", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Equivalence partitioning", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Test fixture", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Test oracle", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Acceptance testing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Snapshot testing", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Benchmark", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Doctest", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Flaky test", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: testing, name: "Testability", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: testing, name: "Verification and validation", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Breakpoint", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: debugging-and-observability, name: "Logging", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Structured logging", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Print debugging", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Delta debugging", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Root cause analysis", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Core dump", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Failure and fault", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Reproducible bug", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: debugging-and-observability, name: "Scientific debugging", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: program-analysis-and-verification, name: "Static analysis", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Dynamic analysis", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Linter", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Data-flow analysis", cs2023: false, references: 2, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Control-flow graph", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Abstract interpretation", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Model checking", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Loop invariant", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Symbolic execution", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Sanitizer", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: program-analysis-and-verification, name: "Type soundness", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: performance, name: "Algorithmic complexity", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: performance, name: "Profiling", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: performance, name: "CPU profiling", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: performance, name: "Caching", cs2023: false, references: 1, books: 0}
+  - {part: concepts, group: performance, name: "Locality of reference", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: performance, name: "Premature optimization", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: performance, name: "Zero-cost abstraction", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: security, name: "Security mindset", cs2023: true, references: 1, books: 0}
+  - {part: concepts, group: security, name: "Injection", cs2023: true, references: 0, books: 0}
+  - {part: concepts, group: security, name: "Least privilege", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: security, name: "Input sanitization", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: security, name: "Secure defaults", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: tools-and-workflow, name: "Compiler toolchain", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: tools-and-workflow, name: "Command-line interface", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: tools-and-workflow, name: "Standard streams", cs2023: false, references: 0, books: 1}
+  - {part: concepts, group: tools-and-workflow, name: "Exit status", cs2023: false, references: 0, books: 0}
+  - {part: concepts, group: tools-and-workflow, name: "Formatter", cs2023: false, references: 1, books: 1}
+  - {part: concepts, group: tools-and-workflow, name: "Package manager", cs2023: false, references: 0, books: 0}
