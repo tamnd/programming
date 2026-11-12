@@ -1,1 +1,2 @@
 {"tag":"NEW-nml","kind":"language","owner":"","id":"nml","name":"nML","class":"programming language","appeared":1991,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/nml.html","licence":"public-domain"}}
+{"tag":"NEW-nmodl","kind":"language","owner":"","id":"nmodl","name":"NMODL","class":"programming language","extensions":["mod"],"licence":"MIT","source":{"url":"https://github.com/github-linguist/linguist/blob/v9.7.0/lib/linguist/languages.yml","title":"Linguist v9.7.0, languages.yml, the entry NMODL","licence":"MIT"}}

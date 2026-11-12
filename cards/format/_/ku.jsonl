@@ -1,0 +1,1 @@
+{"tag":"NEW-kusto","kind":"format","owner":"","id":"kusto","name":"Kusto","class":"data format","extensions":["csl","kql"],"licence":"MIT","source":{"url":"https://github.com/github-linguist/linguist/blob/v9.7.0/lib/linguist/languages.yml","title":"Linguist v9.7.0, languages.yml, the entry Kusto","licence":"MIT"}}
