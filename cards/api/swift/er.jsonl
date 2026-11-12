@@ -1,0 +1,1 @@
+{"tag":"NEW-swift-Error","kind":"api","owner":"swift","path":"Error","entity":"protocol","module":"Error","doc":{"url":"https://developer.apple.com/documentation/swift/error"},"source":{"url":"https://github.com/swiftlang/swift/blob/4f010677715a8396aac64d0742be7c15a8d4ed8a/stdlib/public/core/ErrorType.swift#L113","licence":"Apache-2.0 WITH Swift-exception"}}
