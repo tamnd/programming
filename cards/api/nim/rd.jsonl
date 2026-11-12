@@ -1,0 +1,1 @@
+{"tag":"NEW-rdstdin.readLineFromStdin","kind":"api","owner":"nim","path":"rdstdin.readLineFromStdin","entity":"proc","module":"rdstdin","signature":"proc readLineFromStdin(prompt: string): string","doc":{"url":"https://nim-lang.org/docs/rdstdin.html#readLineFromStdin%2Cstring"},"source":{"url":"https://nim-lang.org/docs/theindex.html","licence":"MIT"}}

@@ -1,0 +1,1 @@
+{"tag":"NEW-globs.nativeToUnixPath","kind":"api","owner":"nim","path":"globs.nativeToUnixPath","entity":"proc","module":"globs","signature":"proc nativeToUnixPath(path: string): string","doc":{"url":"https://nim-lang.org/docs/globs.html#nativeToUnixPath%2Cstring"},"source":{"url":"https://nim-lang.org/docs/theindex.html","licence":"MIT"}}

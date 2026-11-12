@@ -1,0 +1,1 @@
+{"tag":"NEW-util.formatStr","kind":"api","owner":"nim","path":"util.formatStr","entity":"template","module":"util","signature":"template formatStr(howExpr, namegetter, idgetter): untyped","doc":{"url":"https://nim-lang.org/docs/util.html#formatStr.t%2C%2C%2C"},"source":{"url":"https://nim-lang.org/docs/theindex.html","licence":"MIT"}}

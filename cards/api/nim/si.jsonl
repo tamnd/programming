@@ -1,0 +1,1 @@
+{"tag":"NEW-since.since","kind":"api","owner":"nim","path":"since.since","entity":"template","module":"since","signature":"template since(version: (int, int); body: untyped)","doc":{"url":"https://nim-lang.org/docs/since.html#since.t%2C%2Cuntyped"},"source":{"url":"https://nim-lang.org/docs/theindex.html","licence":"MIT"}}
