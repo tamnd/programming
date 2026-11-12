@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the comments of JavaScript, and a triple-slash directive such as /// <reference path="..." /> is a comment that the compiler reads, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has // and /* */ comments, its block comments nest, and KDoc reads /** */ comments, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: A word that starts with # starts a comment that ends at the end of the line, so echo a#b prints a#b. Bash has no block comment. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell has # line comments and <# #> block comments, and Get-Help reads comment-based help, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: Standard SQL has -- line comments, and most databases also accept /* */ block comments. No example file exists.
+regex:
+  status: native
+  reason: "Python, PCRE and Perl accept the comment group (?#...) and a verbose mode in which # starts a comment, but JavaScript has neither."
+html:
+  status: native
+  reason: An HTML comment starts with <!-- and ends with -->, and the browser keeps it in the DOM as a comment node.
+css:
+  status: native
+  reason: CSS has only /* */ block comments, and they do not nest; // is not a comment in CSS.

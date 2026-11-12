@@ -223,7 +223,7 @@ items:
     group: "syntax-and-semantics"
     name: "Comment"
     target: "comment"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 SDF-Fundamentals (\"Write comments for a program or a module specifying what it ...\"). It is in 6 of the 7 language references: Go spec (\"Comments\"); Rust Reference (\"Comments\"); Java Language Specification (\"Comments\"); and 3 more. It is in the canon books: SICP index (\"comments in programs\"); The Rust Programming Language contents (\"Comments\")."
   - part: concepts
     group: "syntax-and-semantics"
