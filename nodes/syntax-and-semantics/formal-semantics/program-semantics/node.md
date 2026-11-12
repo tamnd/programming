@@ -1,5 +1,5 @@
 ---
-tag: NEW-program-semantics
+tag: S5085W
 kind: concept
 slug: program-semantics
 name: Formal semantics
