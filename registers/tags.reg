@@ -382,3 +382,8 @@ G0M5JN change-the-case-of-a-string
 TVV18V remove-characters-from-a-string
 HJPBMY repeat-a-string
 HYHEK1 trim-whitespace
+0VSVGF collapse-hierarchy
+30JVFJ extract-superclass
+EGT4G4 remove-subclass
+YJR11W replace-subclass-with-delegate
+XAQPR8 replace-superclass-with-delegate
