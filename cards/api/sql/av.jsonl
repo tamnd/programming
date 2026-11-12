@@ -1,0 +1,1 @@
+{"tag":"NEW-sql-AVG","kind":"api","owner":"sql","path":"AVG","entity":"keyword","module":"reserved words","sql2023":"reserved","sql2016":"reserved","sql92":"reserved","part":"Foundation","doc":{"url":"https://www.postgresql.org/docs/current/sql-keywords-appendix.html"},"source":{"url":"https://github.com/postgres/postgres/tree/master/doc/src/sgml/keywords"}}

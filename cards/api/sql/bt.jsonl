@@ -1,0 +1,1 @@
+{"tag":"NEW-sql-BTRIM","kind":"api","owner":"sql","path":"BTRIM","entity":"keyword","module":"reserved words","sql2023":"reserved","part":"Foundation","doc":{"url":"https://www.postgresql.org/docs/current/sql-keywords-appendix.html"},"source":{"url":"https://github.com/postgres/postgres/tree/master/doc/src/sgml/keywords"}}

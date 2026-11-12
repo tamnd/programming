@@ -1,0 +1,1 @@
+{"tag":"NEW-sql-HIERARCHY","kind":"api","owner":"sql","path":"HIERARCHY","entity":"keyword","module":"non-reserved words","sql2023":"non-reserved","sql2016":"non-reserved","part":"Foundation","doc":{"url":"https://www.postgresql.org/docs/current/sql-keywords-appendix.html"},"source":{"url":"https://github.com/postgres/postgres/tree/master/doc/src/sgml/keywords"}}

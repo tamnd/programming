@@ -1,0 +1,1 @@
+{"tag":"NEW-sql-BASE64","kind":"api","owner":"sql","path":"BASE64","entity":"keyword","module":"non-reserved words","sql2023":"non-reserved","sql2016":"non-reserved","part":"XML","doc":{"url":"https://www.postgresql.org/docs/current/sql-keywords-appendix.html"},"source":{"url":"https://github.com/postgres/postgres/tree/master/doc/src/sgml/keywords"}}
