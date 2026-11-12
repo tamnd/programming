@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: a map keyed by KClass holds the extensions, and a reified generic function can look one up by its type and cast it; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a struct can hold a table of extension pointers keyed by an identifier, as COM does with QueryInterface and interface identifiers.
+sql:
+  status: idiom
+  reason: an extension table that shares the primary key of the main table adds columns without a change to the main table, and a left join gives null when a row has no extension.
+bash:
+  status: n/a
+  reason: shell scripts have no objects or interfaces.
+powershell:
+  status: idiom
+  reason: a hashtable keyed by type can hold the extensions of an object, and a lookup returns null for a missing one; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no objects or interfaces.
+html:
+  status: n/a
+  reason: markup has no interfaces; data attributes add data to an element, not behaviour.
+css:
+  status: n/a
+  reason: style rules have no objects or interfaces.

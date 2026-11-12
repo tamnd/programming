@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: a class extends one class, so a second parent needs a twin, or class delegation with by when the second parent is an interface; no example is executed here because the test image has no kotlinc.
+c:
+  status: absent
+  reason: C has no classes or inheritance; two structs can point to each other, but there is no inherited code to model.
+sql:
+  status: n/a
+  reason: tables have no inheritance of code.
+bash:
+  status: n/a
+  reason: shell scripts have no classes.
+powershell:
+  status: idiom
+  reason: a PowerShell class has one base class and can implement interfaces, so a second parent needs a twin; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no classes.
+html:
+  status: n/a
+  reason: markup has no classes or inheritance of code.
+css:
+  status: n/a
+  reason: style rules have no classes or inheritance of code.
