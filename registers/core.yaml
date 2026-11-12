@@ -14810,7 +14810,7 @@ items:
     group: "fowler-catalog"
     name: "Collapse Hierarchy"
     target: "collapse-hierarchy"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14870,7 +14870,7 @@ items:
     group: "fowler-catalog"
     name: "Extract Superclass"
     target: "extract-superclass"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15014,7 +15014,7 @@ items:
     group: "fowler-catalog"
     name: "Remove Subclass"
     target: "remove-subclass"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15122,13 +15122,13 @@ items:
     group: "fowler-catalog"
     name: "Replace Subclass with Delegate"
     target: "replace-subclass-with-delegate"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Replace Superclass with Delegate"
     target: "replace-superclass-with-delegate"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
