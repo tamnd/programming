@@ -1,0 +1,2 @@
+{"tag":"NEW-__autoload","kind":"api","owner":"php","path":"__autoload","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.autoload.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-__halt_compiler","kind":"api","owner":"php","path":"__halt_compiler","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.halt-compiler.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

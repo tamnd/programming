@@ -1,0 +1,1 @@
+{"tag":"NEW-CRC32c.crc32c","kind":"api","owner":"julia","path":"CRC32c.crc32c","entity":"function","module":"CRC32c","signature":"crc32c(data, crc::UInt32=0x00000000)","doc":{"url":"https://docs.julialang.org/en/v1/stdlib/CRC32c/#CRC32c.crc32c"},"source":{"url":"https://docs.julialang.org/en/v1/","licence":"MIT"}}

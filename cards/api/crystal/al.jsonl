@@ -1,0 +1,1 @@
+{"tag":"NEW-alignof","kind":"api","owner":"crystal","path":"alignof","entity":"function","module":"Top Level Namespace","signature":"alignof(type : Class) : Int32","doc":{"url":"https://crystal-lang.org/api/latest/toplevel.html#alignof(type:Class):Int32-class-method"},"source":{"url":"https://crystal-lang.org/api/latest/","licence":"Apache-2.0"}}

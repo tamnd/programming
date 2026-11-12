@@ -1,0 +1,2 @@
+{"tag":"NEW-key","kind":"api","owner":"php","path":"key","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.key.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-key_exists","kind":"api","owner":"php","path":"key_exists","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.key-exists.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

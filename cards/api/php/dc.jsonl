@@ -1,0 +1,2 @@
+{"tag":"NEW-dcgettext","kind":"api","owner":"php","path":"dcgettext","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.dcgettext.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-dcngettext","kind":"api","owner":"php","path":"dcngettext","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.dcngettext.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

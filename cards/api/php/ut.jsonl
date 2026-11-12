@@ -1,0 +1,2 @@
+{"tag":"NEW-utf8_decode","kind":"api","owner":"php","path":"utf8_decode","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.utf8-decode.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-utf8_encode","kind":"api","owner":"php","path":"utf8_encode","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.utf8-encode.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

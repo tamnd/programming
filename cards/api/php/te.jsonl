@@ -1,0 +1,2 @@
+{"tag":"NEW-tempnam","kind":"api","owner":"php","path":"tempnam","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.tempnam.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-textdomain","kind":"api","owner":"php","path":"textdomain","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.textdomain.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

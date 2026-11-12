@@ -1,0 +1,2 @@
+{"tag":"NEW-net_get_interfaces","kind":"api","owner":"php","path":"net_get_interfaces","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.net-get-interfaces.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-next","kind":"api","owner":"php","path":"next","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.next.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

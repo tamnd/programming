@@ -1,0 +1,1 @@
+{"tag":"NEW-eval","kind":"api","owner":"julia","path":"eval","entity":"function","module":"Base","signature":"eval(expr)","doc":{"url":"https://docs.julialang.org/en/v1/base/base/#eval"},"source":{"url":"https://docs.julialang.org/en/v1/","licence":"MIT"}}
