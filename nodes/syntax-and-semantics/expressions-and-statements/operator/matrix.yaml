@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the operators of JavaScript and adds type operators such as keyof, typeof and indexed access in types, but no operator overloading. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin maps each operator to a function by convention, so a class that declares operator fun plus supports a + b, and a in b calls contains. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash has C-like arithmetic operators inside $(( )), and test and [[ ]] have operators such as -eq, -lt, -f and =~. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell has named comparison operators such as -eq, -lt, -like and -match, and + joins strings and arrays. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has arithmetic and comparison operators, || for string concatenation, and word operators such as LIKE, IN, BETWEEN and IS NULL, which follow the rules for NULL. No example file exists.
+regex:
+  status: idiom
+  reason: The quantifiers *, + and ? and the alternation | act as operators on parts of a pattern, with their own precedence.
+html:
+  status: n/a
+  reason: HTML has no expressions, so it has no operators.
+css:
+  status: idiom
+  reason: calc() and the other math functions use the operators +, -, * and /, and selectors use combinators such as >, + and ~.
