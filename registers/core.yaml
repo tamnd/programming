@@ -277,7 +277,7 @@ items:
     group: "syntax-and-semantics"
     name: "Binding"
     target: "binding"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Functional (\"Variable binding and scope rules. (See also: ...\"). It is in 5 of the 7 language references: Python Language Reference (\"Naming and binding\"); Java Language Specification (\"Static Binding for Field Access\"); C++ working draft (\"Structured binding declarations\"); and 2 more. It is in the canon books: SICP index (\"binding\"); Crafting Interpreters contents (\"Resolving and Binding\")."
   - part: concepts
     group: "syntax-and-semantics"
