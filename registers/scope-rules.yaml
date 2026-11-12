@@ -57,7 +57,7 @@
   rule: "A package of Packagist gets a card when at least 50 other packages in Packagist depend on it, the rule of spec 18.5. Each other package of Packagist is out of scope."
 - id: libraries-go
   scope: libraries
-  rule: "A package of the Go module proxy gets a card when at least 50 other packages in the Go module proxy depend on it, the rule of spec 18.5. Each other package of the Go module proxy is out of scope."
+  rule: "A package of the Go module proxy gets a card when at least 98 other packages in the Go module proxy depend on it. The base rule of spec 18.5 is 50, and the bar is higher so that the registry gives at most 5,000 cards. Each other package of the Go module proxy is out of scope."
 - id: libraries-elm
   scope: libraries
   rule: "A package of the Elm package registry gets a card when at least 50 other packages in the Elm package registry depend on it, the rule of spec 18.5. Each other package of the Elm package registry is out of scope."
