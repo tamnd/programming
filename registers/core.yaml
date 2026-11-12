@@ -14792,7 +14792,7 @@ items:
     group: "fowler-catalog"
     name: "Change Function Declaration"
     target: "change-function-declaration"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14816,7 +14816,7 @@ items:
     group: "fowler-catalog"
     name: "Combine Functions into Class"
     target: "combine-functions-into-class"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14852,7 +14852,7 @@ items:
     group: "fowler-catalog"
     name: "Encapsulate Variable"
     target: "encapsulate-variable"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14876,7 +14876,7 @@ items:
     group: "fowler-catalog"
     name: "Extract Variable"
     target: "extract-variable"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14894,13 +14894,13 @@ items:
     group: "fowler-catalog"
     name: "Inline Function"
     target: "inline-function"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Inline Variable"
     target: "inline-variable"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14912,7 +14912,7 @@ items:
     group: "fowler-catalog"
     name: "Introduce Parameter Object"
     target: "introduce-parameter-object"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15026,7 +15026,7 @@ items:
     group: "fowler-catalog"
     name: "Rename Variable"
     target: "rename-variable"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
