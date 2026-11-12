@@ -1,0 +1,296 @@
+# SPDX-License-Identifier: CC0-1.0
+# The domain templates of spec 05.3 and 08.6. The tree of each language in langs gets these sub-areas in place of the language template in topics/languages.yaml. Each template starts with overview and getting-started and ends with pitfalls and versions, as the language template does.
+- id: sql
+  name: SQL
+  langs: [sql]
+  areas:
+    - id: overview
+      name: Overview and history
+      summary: The language node, the SQL standard and its parts, the history of the standard and of the main engines, the engines as implementations.
+    - id: getting-started
+      name: Getting started
+      summary: Install an engine or use SQLite, connect with a client, create a table, insert rows and run a first query.
+    - id: queries
+      name: Queries
+      summary: SELECT, FROM, WHERE, ORDER BY, LIMIT and OFFSET, DISTINCT, expressions, CASE and the order in which a query is evaluated.
+    - id: joins
+      name: Joins
+      summary: Inner joins, outer joins, cross joins, self joins, natural joins and USING, lateral joins, semi joins and anti joins.
+    - id: subqueries-and-ctes
+      name: Subqueries and common table expressions
+      summary: Scalar subqueries, IN and EXISTS, correlated subqueries, WITH, recursive WITH and the queries that walk trees and graphs.
+    - id: aggregation
+      name: Aggregation
+      summary: GROUP BY, HAVING, the aggregate functions, FILTER, GROUPING SETS, ROLLUP and CUBE.
+    - id: window-functions
+      name: Window functions
+      summary: OVER, PARTITION BY, frames, ranking functions, running totals, LAG and LEAD.
+    - id: set-operations
+      name: Set operations
+      summary: UNION, INTERSECT and EXCEPT, with and without ALL, and their rules for columns and order.
+    - id: null-semantics
+      name: NULL and three-valued logic
+      summary: What NULL means, UNKNOWN in conditions, NULL in joins, aggregates, sorting and constraints, and IS DISTINCT FROM.
+    - id: data-types
+      name: Data types
+      summary: Numbers, text, dates and times, intervals, booleans, binary data, arrays, user-defined types and the casts between types.
+    - id: ddl
+      name: Data definition
+      summary: CREATE, ALTER and DROP for tables, views, schemas and sequences, generated columns, and schema changes on live data.
+    - id: constraints
+      name: Constraints
+      summary: Primary keys, foreign keys, unique, check and not null constraints, and when the engine checks them.
+    - id: indexes
+      name: Indexes
+      summary: B-tree and other index types, composite and partial indexes, covering indexes, and how an index serves a query.
+    - id: transactions
+      name: Transactions and isolation
+      summary: BEGIN, COMMIT and ROLLBACK, savepoints, the isolation levels, the anomalies that each level permits, and locks.
+    - id: procedural-extensions
+      name: Procedural extensions
+      summary: Stored procedures, functions and triggers, SQL/PSM, PL/pgSQL, T-SQL and PL/SQL.
+    - id: json-in-sql
+      name: JSON in SQL
+      summary: The JSON type, the SQL/JSON functions, JSON path, and the JSON features of each engine.
+    - id: query-planning
+      name: Query planning
+      summary: The planner, EXPLAIN, statistics, join algorithms, and how to read and improve a plan.
+    - id: dialects
+      name: Dialects
+      summary: The differences between the standard and PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, DuckDB, BigQuery and Snowflake.
+    - id: pitfalls
+      name: Pitfalls
+      summary: The known traps, each as a feature or a short node, linked to diagnostics and weaknesses such as SQL injection.
+    - id: versions
+      name: Versions and migration
+      summary: The editions of the standard, the release nodes of the main engines, and the migration from one engine or version to another.
+- id: shell
+  name: Bash and the POSIX shell
+  langs: [bash]
+  areas:
+    - id: overview
+      name: Overview and history
+      summary: The language node, the Bourne shell and its successors, POSIX sh, Bash, dash, zsh, ksh93 and BusyBox ash as implementations.
+    - id: getting-started
+      name: Getting started
+      summary: The terminal, the prompt, the first commands, a first script, the shebang line and the execute permission.
+    - id: commands-and-pipelines
+      name: Commands and pipelines
+      summary: Simple commands, pipelines, lists, the exit status, AND and OR lists, and the search for a command.
+    - id: quoting-and-expansion
+      name: Quoting and expansion
+      summary: Single and double quotes, escapes, brace, tilde, parameter, command and arithmetic expansion, word splitting and globbing.
+    - id: parameters-and-variables
+      name: Parameters and variables
+      summary: Shell variables, environment variables, positional and special parameters, arrays and the variables that the shell sets.
+    - id: control-flow
+      name: Control flow
+      summary: if, case, for, while and until, select, test and the conditional expressions, break and continue.
+    - id: functions
+      name: Functions
+      summary: Function definitions, arguments, return values, local variables and the scope of variables.
+    - id: redirection
+      name: Redirection and file descriptors
+      summary: Input and output redirection, duplication of file descriptors, here-documents, here-strings and process substitution.
+    - id: job-control
+      name: Job control
+      summary: Background jobs, fg and bg, wait, the process group, and the job control of interactive shells.
+    - id: traps-and-signals
+      name: Traps and signals
+      summary: Signals, trap, the EXIT and ERR traps, and cleanup when a script ends.
+    - id: the-core-utilities
+      name: The core utilities
+      summary: One feature for each utility that scripts use, such as grep, sed, awk, find, xargs, sort, cut and tr.
+    - id: interactive-use
+      name: Interactive use
+      summary: The prompt, history, line editing, completion, aliases and the startup files.
+    - id: portability
+      name: Portability
+      summary: The differences between POSIX sh, Bash, dash, zsh, ksh93 and BusyBox ash, and how to write a portable script.
+    - id: pitfalls
+      name: Pitfalls
+      summary: The known traps, each as a feature or a short node, linked to diagnostics and weaknesses such as command injection.
+    - id: versions
+      name: Versions and migration
+      summary: The editions of POSIX and the release nodes of Bash, with the changes between major versions.
+- id: regex
+  name: Regular expressions
+  langs: [regex]
+  areas:
+    - id: overview
+      name: Overview and history
+      summary: The language node, regular languages and automata, and the engines as implementations.
+    - id: getting-started
+      name: Getting started
+      summary: A first pattern, literal characters, a match and a search, and where programs use regular expressions.
+    - id: syntax
+      name: Syntax
+      summary: Literals, metacharacters, escapes, alternation, and the syntax of each flavour.
+    - id: character-classes
+      name: Character classes
+      summary: Bracket expressions, ranges, negated classes, shorthand classes and POSIX classes.
+    - id: unicode
+      name: Unicode
+      summary: Code points, Unicode properties, scripts, case folding, grapheme clusters and the levels of Unicode TS 18.
+    - id: quantifiers
+      name: Quantifiers
+      summary: Greedy, lazy and possessive quantifiers, bounded repetition and atomic groups.
+    - id: groups-and-backreferences
+      name: Groups and backreferences
+      summary: Capturing, non-capturing and named groups, backreferences, and the numbering of groups.
+    - id: lookaround
+      name: Lookaround
+      summary: Lookahead and lookbehind, positive and negative, and the limits of each flavour.
+    - id: anchors-and-boundaries
+      name: Anchors and boundaries
+      summary: Start and end anchors, word boundaries, multiline mode and the end of the input.
+    - id: flags
+      name: Flags
+      summary: Case-insensitive, multiline, dot-all, extended, Unicode and sticky modes, and inline flags.
+    - id: substitution
+      name: Substitution
+      summary: Replacement strings, references to groups in a replacement, and replacement with a function.
+    - id: flavours
+      name: Flavours
+      summary: PCRE2, ECMAScript, Python re, Java, .NET, RE2, Rust regex, POSIX BRE and ERE, Oniguruma and ICU, and their differences.
+    - id: performance-and-redos
+      name: Performance and ReDoS
+      summary: Backtracking and automata engines, catastrophic backtracking, ReDoS and the patterns that cause it.
+    - id: pitfalls
+      name: Pitfalls
+      summary: The known traps, each as a feature or a short node, linked to weaknesses such as ReDoS.
+    - id: versions
+      name: Versions and migration
+      summary: The changes to each flavour, such as the v flag of ECMAScript and the releases of PCRE2.
+- id: html
+  name: HTML
+  langs: [html]
+  areas:
+    - id: overview
+      name: Overview and history
+      summary: The language node, the WHATWG HTML standard, its history, and the browsers as implementations.
+    - id: getting-started
+      name: Getting started
+      summary: A first document, the doctype, the head and the body, and how to open a file in a browser.
+    - id: elements-and-attributes
+      name: Elements and attributes
+      summary: The elements of HTML and their attributes, content models and global attributes. The api cards hang here.
+    - id: document-structure
+      name: Document structure
+      summary: Sections, headings, landmarks, metadata and the outline of a document.
+    - id: text-and-links
+      name: Text and links
+      summary: Paragraphs, lists, inline text, links, URLs and character references.
+    - id: media-and-embedding
+      name: Media and embedding
+      summary: Images, responsive images, audio, video, iframes, canvas and SVG in HTML.
+    - id: tables
+      name: Tables
+      summary: Table elements, headers, captions and the accessible structure of a table.
+    - id: forms
+      name: Forms
+      summary: Form elements, input types, validation, submission and the constraint validation API.
+    - id: the-dom
+      name: The DOM
+      summary: The document object model, the tree, nodes, events and the parsing of HTML into the DOM.
+    - id: accessibility
+      name: Accessibility
+      summary: Semantic elements, ARIA roles and attributes, keyboard access and the WCAG rules that apply to HTML.
+    - id: web-components
+      name: Web components
+      summary: Custom elements, the shadow DOM, templates and slots.
+    - id: pitfalls
+      name: Pitfalls
+      summary: The known traps, each as a feature or a short node, linked to weaknesses such as cross-site scripting.
+    - id: versions
+      name: Versions and migration
+      summary: The living standard, the older versions of HTML, and the browser support of each feature from MDN BCD and Baseline.
+- id: css
+  name: CSS
+  langs: [css]
+  areas:
+    - id: overview
+      name: Overview and history
+      summary: The language node, the CSS specifications and their modules, the history of CSS, and the browsers as implementations.
+    - id: getting-started
+      name: Getting started
+      summary: A first style sheet, the link and style elements, rules, selectors and declarations.
+    - id: selectors
+      name: Selectors
+      summary: Type, class, ID and attribute selectors, combinators, pseudo-classes and pseudo-elements.
+    - id: the-cascade
+      name: The cascade
+      summary: Origins, cascade layers, specificity, the order of rules, inheritance and the initial values.
+    - id: values-and-units
+      name: Values and units
+      summary: Lengths, percentages, colors, functions such as calc, and the units of CSS.
+    - id: box-model
+      name: The box model
+      summary: Content, padding, border and margin, box-sizing, margin collapse and overflow.
+    - id: layout
+      name: Layout
+      summary: Normal flow, positioning, floats, flexbox, grid, multi-column layout and the formatting contexts.
+    - id: typography
+      name: Typography
+      summary: Fonts, web fonts, text properties, writing modes and the layout of text.
+    - id: animations
+      name: Animations and transitions
+      summary: Transitions, keyframe animations, transforms and the motion preferences of the user.
+    - id: responsive-design
+      name: Responsive design
+      summary: Media queries, container queries, fluid layouts and the viewport.
+    - id: custom-properties
+      name: Custom properties
+      summary: Custom properties, var, the property at-rule and their inheritance.
+    - id: at-rules
+      name: At-rules
+      summary: The at-rules of CSS, such as media, supports, import, layer, font-face and keyframes.
+    - id: properties
+      name: Properties
+      summary: The properties of CSS. The api cards hang here.
+    - id: pitfalls
+      name: Pitfalls
+      summary: The known traps, each as a feature or a short node.
+    - id: versions
+      name: Versions and migration
+      summary: The levels and snapshots of the CSS modules, and the browser support of each feature from MDN BCD and Baseline.
+- id: powershell
+  name: PowerShell
+  langs: [powershell]
+  areas:
+    - id: overview
+      name: Overview and history
+      summary: The language node, Windows PowerShell and PowerShell 7, their history, and the hosts as implementations.
+    - id: getting-started
+      name: Getting started
+      summary: Install PowerShell, the console, the first commands, Get-Help and Get-Command, and a first script.
+    - id: the-pipeline
+      name: The pipeline of objects
+      summary: Objects in the pipeline, parameter binding from the pipeline, filtering, sorting and formatting.
+    - id: cmdlets
+      name: Cmdlets
+      summary: The verb-noun names, parameters, common parameters, aliases and the cmdlet reference. The api cards hang here.
+    - id: providers
+      name: Providers and drives
+      summary: The file system, registry, certificate, environment and other providers, and the drives that they expose.
+    - id: scripting
+      name: Scripting
+      summary: Variables, types, operators, control flow, functions, script blocks and scopes.
+    - id: modules
+      name: Modules
+      summary: Script and binary modules, the module manifest, auto-loading, PSResourceGet and the PowerShell Gallery.
+    - id: remoting
+      name: Remoting
+      summary: PowerShell remoting over WinRM and SSH, sessions, Invoke-Command and jobs.
+    - id: error-handling
+      name: Error handling
+      summary: Terminating and non-terminating errors, try, catch and finally, trap, ErrorAction and the error stream.
+    - id: dotnet-interop
+      name: .NET interop
+      summary: .NET types, static members, Add-Type, and the use of .NET classes from scripts.
+    - id: pitfalls
+      name: Pitfalls
+      summary: The known traps, each as a feature or a short node, linked to diagnostics and weaknesses.
+    - id: versions
+      name: Versions and migration
+      summary: The release nodes of Windows PowerShell 5.1 and PowerShell 7, and the migration from 5.1 to 7.

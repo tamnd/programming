@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC0-1.0
-# The language template of spec 05.3. Each language of the register gets these sub-areas under /<lang>/. A language may add sub-areas in nodes/languages/<lang>/areas.yaml, with a reason.
+# The language template of spec 05.3. Each language of the register gets these sub-areas under /<lang>/. A language may add sub-areas in nodes/languages/<lang>/areas.yaml, with a reason. The domain languages use the domain templates in topics/domains.yaml in place of this template.
 - id: overview
   name: Overview and history
   summary: The language node, its design goals, history, editions and releases, implementations.
