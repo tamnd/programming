@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the operators &&, ||, ??, ?. and the logical assignment operators of JavaScript, with the same short-circuit rules, but no example file exists.
+kotlin:
+  status: native
+  reason: "Kotlin's && and || evaluate the right operand only when needed, and the safe call ?. and the Elvis operator ?: stop at null, but no example file exists because kotlinc is not installed."
+bash:
+  status: native
+  reason: In a list such as cmd1 && cmd2, Bash runs cmd2 only if cmd1 succeeds, and || runs it only if cmd1 fails; && and || inside [[ ]] also short-circuit. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell's -and and -or evaluate only the operands that they need, and && and || chain pipelines on success and failure, but no example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: SQL does not fix the order in which AND and OR evaluate their operands, so a guard in a WHERE clause may not protect the next test. A CASE expression gives a fixed order in most databases.
+regex:
+  status: n/a
+  reason: A regular expression has no Boolean operators on values.
+html:
+  status: n/a
+  reason: HTML has no expressions.
+css:
+  status: n/a
+  reason: CSS conditions such as @supports and @media combine tests with and and or, but the tests have no side effects, so the order of evaluation does not matter.

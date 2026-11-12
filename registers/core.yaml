@@ -271,7 +271,7 @@ items:
     group: "syntax-and-semantics"
     name: "Short-circuit evaluation"
     target: "short-circuit-evaluation"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 SDF-Fundamentals (\"Basic constructs such as assignment statements, conditional ...\"). It is in the canon books: SICP index (\"logical and\")."
   - part: concepts
     group: "syntax-and-semantics"
