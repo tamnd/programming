@@ -2,13 +2,18 @@ This area covers the history of programming, the people and organizations who ma
 
 ## What it holds
 
-- History by period: the history of programming, period by period.
-- Landmark works: the landmark papers and books of the field.
-- People: the people who shaped programming.
-- Organizations: the companies, labs and bodies that shaped programming.
-- Events: conferences, incidents and other events.
-- Folklore and jargon: the folklore and the jargon of programmers.
-- Programming culture and communities: user groups, forums, mailing lists and other places where programmers meet.
+- **History by period.** The history of programming as a whole, period by period. The six ages follow CS2023 SEP-History.
+- **Landmark works.** The canon books on programming languages and compilers: the editions, the contents, why each book matters and what is out of date.
+- **Engineering books.** Landmark works, part 2: the canon books on design and construction, process, testing, systems, concurrency and security, and a few classics outside the register.
+- **Landmark papers.** Landmark works, part 3: the papers and short texts that changed programming, and the HOPL papers as a body of sources.
+- **People.** The people who shaped programming, other than language designers.
+- **Language designers.** The designers of influential languages and their work.
+- **Organizations.** The companies, labs and bodies that shaped programming.
+- **Events.** Conferences, meetings, awards and turning points.
+- **Software failures.** Famous failures caused by software, with what went wrong in the code and what the field learned.
+- **Folklore and jargon.** The stories, texts, humour and words of programmers.
+- **Programming culture and communities.** Where and how programmers meet, share and work together.
+- **Software preservation.** Keeping old software and its source readable and runnable, and the archives that do it.
 
 ## What it does not hold
 

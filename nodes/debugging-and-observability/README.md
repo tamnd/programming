@@ -2,16 +2,21 @@ This area covers how to find the cause of a defect and how to see what a running
 
 ## What it holds
 
-- Debugging methods: systematic ways to find a bug, such as bisection and the scientific method.
-- Debuggers: debuggers, breakpoints and watchpoints.
-- Core dumps: saving the state of a crashed process and reading it later.
-- Logging: log messages, levels and structured logs.
-- Tracing: following a request through a program and between services.
-- Runtime metrics: counters, gauges and histograms from a running program.
-- Profiling as diagnosis: profiling to find the cause of a problem, such as a slow path or a leak.
-- Sanitizers: tools that add checks to a build, such as AddressSanitizer.
-- Reproducible bug reports: how to write a bug report that another person can reproduce.
-- Post-mortems: reviews after an incident, without blame.
+- **Debugging fundamentals.** What a bug is, the chain from defect to failure, and the general process of debugging.
+- **Debugging methods.** Systematic ways to find the cause of a bug, from explaining the code aloud to automatic isolation of failure causes.
+- **Debuggers.** Interactive debuggers, what they can do, how they work, and the debugger of each main platform.
+- **Core dumps and crash analysis.** Saving the state of a crashed process and reading it later, and collecting crashes from the field.
+- **Logging.** Log messages from programs: what to log, levels, formats, structured logs, libraries and the handling of logs.
+- **Tracing.** Following a request through a program and between services with traces and spans. The sub-area id changes so that the core slug tracing can be the concept page.
+- **Observability fundamentals.** The ideas that join logs, metrics, traces and profiles into a way to ask questions about a running system.
+- **Runtime metrics.** Numbers that a running program exposes: counters, gauges and histograms, how to collect them and which ones to watch.
+- **Profiling for diagnosis.** Profiling to find the cause of a problem: a slow path, a leak, lock contention or high memory use. Optimization is in performance.
+- **Sanitizers and dynamic checkers.** Tools that add checks to a build or a run to catch memory errors, data races and undefined behaviour when they happen.
+- **System and network debugging.** Watching what a process asks of the operating system and the network: system call tracers, dynamic tracing, packet capture and process inspection.
+- **Kinds of bugs.** Named kinds of bugs by how they behave and how hard they are to find, with the debugging approach for each.
+- **Bug reports and tracking.** How to write a bug report that another person can reproduce, and how bugs move through tracking and triage.
+- **Post-mortems.** Reviews after a failure or incident that find causes and lessons without blame.
+- **Debugging in specific settings.** How debugging changes in production, in distributed systems, in front ends, on mobile and embedded targets, and for concurrent code.
 
 ## What it does not hold
 

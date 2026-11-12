@@ -2,14 +2,18 @@ This area covers programs for small devices and languages that describe hardware
 
 ## What it holds
 
-- Microcontrollers: programming microcontrollers.
-- Real-time programming: deadlines, scheduling and worst-case execution time.
-- Interrupts: interrupt handlers and their rules.
-- Bare-metal C and Rust: c and Rust with no operating system.
-- Hardware description languages: Verilog, VHDL, Chisel and other hardware description languages.
-- FPGA programming: programming FPGAs.
-- PLC languages: the PLC languages of IEC 61131-3.
-- Safety-critical coding standards: MISRA C, AUTOSAR C++14, JSF and other safety coding standards.
+- **Embedded basics.** What embedded software is, the tools that build it and the ways to test it.
+- **Microcontrollers.** Microcontroller families and the peripherals that firmware drives.
+- **Bare-metal C and Rust.** Code that runs on the hardware with no operating system: start-up, memory layout, hardware access and updates.
+- **Interrupts.** Interrupts and the rules for code that handles them.
+- **Real-time programming.** Real-time programs, their scheduling and the RTOSes that run them.
+- **Embedded software design.** The structure of firmware and the code that reads sensors and drives actuators.
+- **Embedded Linux.** Linux on devices: build systems, boot and hardware access from user space.
+- **IoT and connectivity.** Connected devices: their protocols, platforms and security.
+- **Safety-critical coding standards.** Safety standards and the coding rules for software whose failure can hurt people.
+- **Hardware description languages.** Writing hardware in hardware description languages: RTL design, simulation, verification and synthesis.
+- **FPGA programming.** Programming field-programmable gate arrays: devices, tool flows and use as accelerators.
+- **PLC languages.** Programmable logic controllers and the IEC 61131-3 languages.
 
 ## What it does not hold
 

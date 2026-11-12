@@ -2,13 +2,14 @@ This area is about how a language turns text into a program and what the program
 
 ## What it holds
 
-- Lexical structure: tokens, identifiers, literals, comments and whitespace rules.
-- Grammars and notation: BNF, EBNF, PEG and the other notations that define the syntax of a language.
-- Expressions and statements: the difference between an expression and a statement, operators, precedence and associativity.
-- Evaluation order: the order in which a language evaluates operands and arguments, short-circuit operators and sequence points.
-- Scope and binding: lexical and dynamic scope, name resolution, shadowing and the lifetime of a binding.
-- Formal semantics for programmers: operational, denotational and axiomatic semantics at the level of a working programmer.
-- Undefined and implementation-defined behaviour: undefined, unspecified and implementation-defined behaviour, and what a compiler may do with each.
+- **Lexical structure.** The smallest parts of source text: characters become tokens, and tokens are keywords, identifiers, literals, operators and comments.
+- **Grammars and notation.** How the rules of syntax are written: grammars, BNF and its relatives, the Chomsky hierarchy, parse trees and the notation of operators.
+- **Expressions and statements.** The parts of a program that compute values and the parts that do actions, the operators that join values, and the blocks that group statements.
+- **Evaluation order.** When and in what order the parts of an expression are evaluated, and what the strategies of evaluation are.
+- **Scope and binding.** How names are declared, bound to things and found again, and where a name is visible.
+- **Formal semantics.** The exact ways to state what a program means, and the reasoning that they allow.
+- **Language design.** The criteria that language designers use, the main syntax choices, and how languages change over time. CS2023 FPL-Pragmatics and FPL-Design cover these topics, and no other area holds them.
+- **Undefined behaviour.** The behaviour that a language standard does not define, and how it differs from unspecified and implementation-defined behaviour.
 
 ## What it does not hold
 

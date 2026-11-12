@@ -2,12 +2,19 @@ This area covers numerical programs and programs that run on large machines. It 
 
 ## What it holds
 
-- Numerical languages: Fortran, Julia and other numerical languages.
-- MPI: the Message Passing Interface.
-- OpenMP: directives that split loops between threads on one machine.
-- CUDA and other accelerators: CUDA, HIP and SYCL, and how to move work to an accelerator.
-- Numerical pitfalls: rounding, cancellation and other numerical errors in code.
-- Reproducible scientific software: scientific software that gives the same result again.
+- **Numerical languages.** The languages and environments that scientists use for numerical work, and the bridges between them.
+- **Numerical libraries.** The libraries that numerical programs call for linear algebra, transforms and solvers.
+- **Numerical pitfalls.** The errors that floating-point numbers cause in real numerical code, and the techniques that control them.
+- **Scientific data formats.** The file formats and libraries for large, typed, self-describing scientific data.
+- **HPC systems.** The machines, schedulers and software environments where HPC programs run.
+- **OpenMP.** Shared-memory parallel programming with OpenMP directives.
+- **MPI.** Distributed-memory parallel programming with the Message Passing Interface.
+- **CUDA and other accelerators.** Programming GPUs and other accelerators in depth: CUDA, HIP, SYCL, OpenACC and portability layers.
+- **Parallel programming models.** HPC programming models beyond MPI and OpenMP.
+- **HPC performance.** How to measure and improve the speed of parallel programs on many nodes.
+- **Reproducible scientific software.** Scientific software that gives the same result again, and the practice of research software.
+- **Simulation software.** Programs that simulate systems, and the frameworks scientists use to build them.
+- **Quantum programming.** Writing programs for quantum computers and simulators.
 
 ## What it does not hold
 

@@ -2,12 +2,14 @@ This area holds the catalogue of programming languages. Each language of the reg
 
 ## What it holds
 
-- The page of each language: its paradigms, its type system, its memory model, its execution model, its designers and its lineage.
-- The guide of each language of tiers 1 to 3, with the sub-areas of the language template in topics/languages.yaml: overview, getting started, syntax, values and types, variables and scope, control flow, functions, collections, strings and text, user types, errors, memory, modules and packages, concurrency, metaprogramming, the standard library, I/O and the OS, testing, tooling, the ecosystem, performance, interop, idioms and style, pitfalls, and versions. The domain languages SQL, Bash, regular expressions, HTML, CSS and PowerShell use a domain template in topics/domains.yaml in place of the language template, with sub-areas such as joins for SQL and quantifiers for regular expressions.
-- The sub-areas that a language adds to its template, in nodes/languages/<lang>/areas.yaml, each with a reason.
-- The release cards, proposal cards and diagnostic cards of each language.
-- Language families and lineage, such as the Algol family, the C family, Lisps and MLs.
-- Language design principles.
+- **Language catalogue.** What a language is, how the site classes languages, and how the catalogue of all languages works.
+- **Language families.** The families of languages. Each page explains what the members of a family share.
+- **Lineage and influence.** How languages descend from and influence each other, and how they change over time.
+- **Language design.** The principles and trade-offs of language design, from the CS2023 unit FPL-Design and the canon.
+- **History of languages.** The history of the languages as designs, by period. The history of programming as a whole is in history-and-culture.
+- **Comparing languages.** How to compare languages, and how to learn and choose one.
+- **Tier 2 languages.** The language pages of the second group of languages, such as Swift, Ruby, Haskell and Fortran.
+- **Tier 3 languages.** Short profiles of other notable languages: the language, hello world and its main features.
 
 ## What it does not hold
 

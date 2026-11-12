@@ -2,14 +2,17 @@ This area covers programs that run on many computers and on cloud platforms. It 
 
 ## What it holds
 
-- Distributed systems for programmers: RPC, consensus as used, idempotency and retries between services.
-- Microservices: systems built from small services, and their costs.
-- Message queues and streams: brokers, delivery guarantees, ordering and consumer groups.
-- Cloud platforms: cloud services as programming targets.
-- Infrastructure as code: defining infrastructure in code.
-- Serverless: functions that run on demand on a platform.
-- Kubernetes for developers: pods, deployments and services as a developer uses them.
-- Site reliability engineering: service level objectives, error budgets, on-call and incident response.
+- **Distributed systems for programmers.** The concepts that every program on more than one machine must handle: partial failure, time, consistency and agreement.
+- **Distributed data.** How data is copied and split over many machines, and how programs keep it correct.
+- **Microservices in practice.** How to build, connect and run services that are deployed on their own. The comparison of architecture styles is in software-design.
+- **Messaging patterns.** The Enterprise Integration Patterns and the Azure messaging patterns: channels, message kinds, routing, transformation and endpoints.
+- **Message brokers and streams.** The brokers, protocols and stream tools that carry messages, and how programs use them.
+- **Cloud design patterns.** The Azure cloud design patterns that are not in software-design, messaging-patterns, microservices or data-and-persistence.
+- **Cloud platforms.** The services of public clouds that programmers call from code, and how to use them from programs.
+- **Infrastructure as code.** Tools and practices that describe servers, networks and cloud resources in files under version control.
+- **Serverless computing.** Functions and services that run on demand with no servers for the programmer to manage.
+- **Kubernetes for developers.** Kubernetes from the view of a programmer who deploys and debugs applications on it.
+- **Site reliability.** How teams keep services available and fast, and the code that supports this. Process topics such as on-call rotas and runbooks are in software-engineering-process.
 
 ## What it does not hold
 

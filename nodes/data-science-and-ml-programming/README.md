@@ -2,13 +2,17 @@ This area covers the tools that data scientists and ML engineers program with. I
 
 ## What it holds
 
-- Notebooks: notebooks, such as Jupyter, and their pitfalls.
-- Dataframes: dataframe libraries, such as pandas and Polars.
-- Array programming libraries: NumPy and other array libraries.
-- Plotting libraries: libraries that draw charts from data, such as Matplotlib.
-- ML frameworks: PyTorch, JAX, TensorFlow and other frameworks as programming tools.
-- Data pipelines: pipelines that move and transform data.
-- Reproducibility: making a data analysis give the same result again.
+- **Data work basics.** The ideas that every data program uses, before a reader picks a tool: the shape of data, the steps of an analysis and the common data problems.
+- **Notebooks.** Notebook environments: how they run code, how they store it and how they break.
+- **Statistical computing.** The environments and packages of statistics as a programming practice. The statistics itself links out.
+- **Dataframes.** Dataframe libraries: the data model, the operations and the cost.
+- **Array programming libraries.** Numerical array libraries as a programming tool. The paradigm is in paradigms.
+- **Plotting libraries.** Libraries that draw charts from data, and the model behind them.
+- **ML libraries.** Libraries for classical machine learning, natural language and vision, and the code practices of model work.
+- **ML frameworks.** Deep learning frameworks as programming tools: tensors, autodiff, training code and compilation.
+- **Model deployment.** How a trained model leaves the notebook: formats, serving, tracking and local inference.
+- **Data pipelines.** Code that moves and transforms data on a schedule or a stream, and the tools that run it.
+- **Reproducibility.** How to make a data analysis or a model give the same result again. Research software practice is in scientific-and-hpc (reproducible-science).
 
 ## What it does not hold
 

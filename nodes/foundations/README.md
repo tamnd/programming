@@ -2,15 +2,15 @@ This area answers the first questions about a program: what it is, how a machine
 
 ## What it holds
 
-- What a program is: programs, source code, instructions and the idea of a stored program.
-- Computation in practice: what a computer can compute, as a working programmer meets it: state machines, the halting problem as a limit on tools, and the cost of a step.
-- Bits and representation: bits, bytes, words, endianness, bitwise operators and how data is laid out in memory.
-- Numbers in machines: fixed-width integers, overflow, two's complement, floating point, decimal types and the errors of each.
-- Characters and text: character sets, code points and how a program stores text at the level of bytes.
-- The machine model: the CPU, registers, the memory hierarchy and instructions, at the depth that a programmer needs to reason about cost.
-- The stack and the heap: the call stack, stack frames, the heap and the lifetime of each kind of storage.
-- Compilation and interpretation: an overview of the ways to run source code: compilers, interpreters, bytecode and JIT compilers.
-- Hello world: the smallest complete program in each language, and what each part of it does.
+- **What a program is.** What a program is, how source code becomes a running program, and what the first program of a language looks like.
+- **Computation in practice.** What computation is, seen from a working program: algorithms, state machines, side effects, the limits of what programs can decide, and why some programs never stop.
+- **Bits and representation.** How values become bits: bits, bytes and words, number bases, byte order, and the bitwise operators that read and change single bits.
+- **Numbers in machines.** How machines store integers and real numbers, the limits of each form, and the jobs that every program does with numbers.
+- **Characters and text.** How a machine stores a character as a number, and why text and bytes are different things. Unicode in depth and the encodings go to data-and-persistence/text-encodings. The string type goes to data-and-values/strings.
+- **The machine model.** The simple model of a computer that a programmer needs: a processor that runs instructions, registers, and memory with addresses.
+- **The stack and the heap.** Where a running program keeps its data: the call stack with its frames, the heap, and the static area. Allocation methods and lifetimes go to memory-and-resources.
+- **Compilation and interpretation.** How source code becomes something that runs, as the user of a language sees it. How to build a compiler or an interpreter goes to language-implementation.
+- **Logic for programs.** The logic that conditions use: truth values, truth tables, the laws that simplify conditions, and the rules that languages use to turn values into true or false. Boolean algebra as mathematics links to math2.
 
 ## What it does not hold
 
