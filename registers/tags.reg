@@ -398,3 +398,9 @@ M2VK0J orthogonality
 HM95SQ separation-of-concerns
 Z1545A simple-design
 44T824 you-arent-gonna-need-it
+7XKYEB balking-pattern
+GQZT4H copy-on-write
+V37PWB fork-join
+2GNXEZ future-pattern
+GA9K7G guarded-suspension
+9D9V70 read-write-lock

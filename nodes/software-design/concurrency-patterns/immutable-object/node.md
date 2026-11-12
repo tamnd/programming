@@ -153,7 +153,7 @@ old: 8000 port 8000
 new: 9000 port 9000
 ```
 
-- **Copy-on-write.** The system shares one object until a user modifies it, and then makes a real copy for that user.[^1]
+- **Copy-on-write.** The system shares one object until a user modifies it, and then makes a real copy for that user.[^1] The [copy-on-write](copy-on-write) page describes this pattern for threads.
 
 [Thread confinement](thread-confinement) is the other way to avoid a lock: it does not share the mutable state at all.[^2]
 
