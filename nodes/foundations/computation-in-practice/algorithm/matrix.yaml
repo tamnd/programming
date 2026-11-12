@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: TypeScript uses the sort of JavaScript, with the same string order by default, but no example file exists.
+kotlin:
+  status: stdlib
+  reason: The Kotlin standard library has sorted, sortedBy, sortWith and binarySearch on lists, but no example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: The sort command sorts lines, with -n for numbers, and other algorithms are loops over arrays, but no example file exists.
+powershell:
+  status: stdlib
+  reason: Sort-Object sorts objects by properties, and the .NET methods such as Array.BinarySearch are available, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: ORDER BY states the order of the result, and the query planner chooses the sort, the join and the index, so the program states the problem and not the algorithm.
+regex:
+  status: n/a
+  reason: A pattern describes text to match, and the engine runs the matching algorithm.
+html:
+  status: n/a
+  reason: HTML is markup and describes no computation.
+css:
+  status: n/a
+  reason: CSS states rules, and the browser runs the layout algorithm.
