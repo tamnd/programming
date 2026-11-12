@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: Branded number types, a number type joined with a unique marker type, keep units apart at compile time, but no example file exists.
+kotlin:
+  status: idiom
+  reason: kotlin.time.Duration is the unit type for time, and value classes keep other units apart with no run-time cost, but no example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash values are strings, and units appear only in names and in the options of commands such as sleep.
+powershell:
+  status: idiom
+  reason: The numeric suffixes KB, MB, GB, TB and PB multiply a number into bytes, and TimeSpan holds durations, but no example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: INTERVAL types hold durations, and the difference of two timestamps is an interval; other units are stored as plain numbers, but no example file exists.
+regex:
+  status: n/a
+  reason: Regular expressions have no values with units.
+html:
+  status: n/a
+  reason: HTML attributes such as width take numbers whose unit the specification fixes.
+css:
+  status: native
+  reason: Lengths, times, angles and resolutions are dimensions with units, and calc() checks the types of its arguments, but no example file exists.
