@@ -1,0 +1,2 @@
+{"name":"lf","args":{"path":"fixtures/lf.txt"},"expect":"alpha\nbeta\n"}
+{"name":"paragraphs","args":{"path":"fixtures/paragraphs.txt"},"expect":"first line\n\nsecond paragraph\n"}

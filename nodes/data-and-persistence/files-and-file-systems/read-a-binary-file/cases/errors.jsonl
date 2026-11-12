@@ -1,0 +1,6 @@
+{"name":"missing","args":{"path":"fixtures/missing.bin"},"error":"not-found","why":"the file does not exist"}
+{"name":"directory","args":{"path":"fixtures"},"error":"not-a-file","why":"the path names a directory"}
+{"name":"exact-missing","args":{"path":"fixtures/missing.bin","n":1},"error":"not-found","why":"read_exact: the file does not exist"}
+{"name":"exact-directory","args":{"path":"fixtures","n":1},"error":"not-a-file","why":"read_exact: the path names a directory"}
+{"name":"one-past-end","args":{"path":"fixtures/signature.bin","n":17},"error":"unexpected-eof","why":"read_exact: the file has 16 bytes, so the end comes before byte 17"}
+{"name":"empty-file","args":{"path":"fixtures/empty.bin","n":1},"error":"unexpected-eof","why":"read_exact: the file has no bytes"}

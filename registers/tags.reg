@@ -279,3 +279,7 @@ AVWV70 design-smell
 Z3B3PQ downcasting-smell
 SFDWDC incomplete-library-class
 BGXM53 smell-detection-tools
+WZE7MN append-to-a-file
+N9ZE82 file-system-concept
+7S862T read-a-binary-file
+GBTP51 read-a-whole-file

@@ -1,0 +1,2 @@
+{"name":"new-file","class":["new-file"],"args":{"path":"log.txt","line":"first","file":null},"expect":"first\n"}
+{"name":"append-existing","args":{"path":"log.txt","line":"two","file":"one\n"},"expect":"one\ntwo\n"}

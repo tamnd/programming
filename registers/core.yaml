@@ -12386,7 +12386,7 @@ items:
     group: "files"
     name: "Read a whole file"
     target: "read-a-whole-file"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. Related titles, found by keyword: Rosetta Code (Read entire file); Go by Example (Reading Files)."
   - part: tasks
     group: "files"
@@ -12404,7 +12404,7 @@ items:
     group: "files"
     name: "Append to a file"
     target: "append-to-a-file"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. Related titles, found by keyword: Rosetta Code (Append a record to the end of a text file)."
   - part: tasks
     group: "files"
@@ -12482,7 +12482,7 @@ items:
     group: "files"
     name: "Read a binary file"
     target: "read-a-binary-file"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. Related titles, found by keyword: Rosetta Code (Read entire file, File input output)."
   - part: tasks
     group: "files"

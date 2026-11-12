@@ -1,0 +1,7 @@
+{"name":"new-file-empty-line","class":["new-file","empty"],"args":{"path":"log.txt","line":"","file":null},"expect":"\n"}
+{"name":"empty-line","class":["empty"],"args":{"path":"log.txt","line":"","file":"a\n"},"expect":"a\n\n"}
+{"name":"empty-file","class":["empty"],"args":{"path":"log.txt","line":"x","file":""},"expect":"x\n"}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"log.txt","line":"two","file":"one"},"expect":"onetwo\n"}
+{"name":"crlf-file","class":["line-ends"],"args":{"path":"log.txt","line":"two","file":"one\r\n"},"expect":"one\r\ntwo\n"}
+{"name":"whitespace","class":["whitespace"],"args":{"path":"log.txt","line":"  two spaces\ttab ","file":""},"expect":"  two spaces\ttab \n"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"log.txt","line":"café 日本語 🙂","file":"naïve\n"},"expect":"naïve\ncafé 日本語 🙂\n"}

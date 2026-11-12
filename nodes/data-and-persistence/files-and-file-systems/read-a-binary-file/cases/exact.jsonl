@@ -1,0 +1,5 @@
+{"name":"signature-only","args":{"path":"fixtures/signature.bin","n":8},"expect":"89504e470d0a1a0a"}
+{"name":"first-four","args":{"path":"fixtures/all-bytes.bin","n":4},"expect":"00010203"}
+{"name":"whole-file","args":{"path":"fixtures/zeros.bin","n":8},"expect":"0000000000000000"}
+{"name":"zero-count","args":{"path":"fixtures/empty.bin","n":0},"expect":""}
+{"name":"across-ctrl-z","args":{"path":"fixtures/ctrl-z.bin","n":3},"expect":"611a62"}
