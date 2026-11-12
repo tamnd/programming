@@ -1,0 +1,937 @@
+{"id":"!!!Batch","name":"!!!Batch","scope":"languages","outcome":"card","target":"batch-esolang"}
+{"id":"$tonePits","name":"$tonePits","scope":"languages","outcome":"card","target":"tonepits"}
+{"id":"*LISP","name":"*LISP","scope":"languages","outcome":"card","target":"lisp-language"}
+{"id":"*MOD","name":"*MOD","scope":"languages","outcome":"card","target":"mod"}
+{"id":"*w","name":"*w","scope":"languages","outcome":"card","target":"w-esolang"}
+{"id":".Gertrude","name":".Gertrude","scope":"languages","outcome":"card","target":"gertrude"}
+{"id":".NET framework","name":".NET framework","scope":"languages","outcome":"card","target":"net-framework"}
+{"id":".box","name":".box","scope":"languages","outcome":"card","target":"box"}
+{"id":".mOdMoDwOrM","name":".mOdMoDwOrM","scope":"languages","outcome":"card","target":"modmodworm"}
+{"id":".yacuabll","name":".yacuabll","scope":"languages","outcome":"card","target":"yacuabll"}
+{"id":"2.PAK","name":"2.PAK","scope":"languages","outcome":"card","target":"2-pak"}
+{"id":"20-GATE","name":"20-GATE","scope":"languages","outcome":"card","target":"20-gate"}
+{"id":"473L Query","name":"473L Query","scope":"languages","outcome":"card","target":"473l-query"}
+{"id":"51forth","name":"51forth","scope":"languages","outcome":"card","target":"51forth"}
+{"id":"A Coroutine Language","name":"A Coroutine Language","scope":"languages","outcome":"card","target":"a-coroutine-language"}
+{"id":"A Hardware Programming Language","name":"A Hardware Programming Language","scope":"languages","outcome":"card","target":"a-hardware-programming-language"}
+{"id":"A Language Encouraging Program Hierarchy","name":"A Language Encouraging Program Hierarchy","scope":"languages","outcome":"card","target":"a-language-encouraging-program-hierarchy"}
+{"id":"A Language for Attributed Definitions","name":"A Language for Attributed Definitions","scope":"languages","outcome":"card","target":"a-language-for-attributed-definitions"}
+{"id":"A Language with an Extensible Compiler","name":"A Language with an Extensible Compiler","scope":"languages","outcome":"card","target":"alec"}
+{"id":"A Manufacturing Language","name":"A Manufacturing Language","scope":"languages","outcome":"card","target":"a-manufacturing-language"}
+{"id":"A PArse REquest Language","name":"A PArse REquest Language","scope":"languages","outcome":"card","target":"aparel"}
+{"id":"A Programming Language","name":"A Programming Language","scope":"languages","outcome":"card","target":"apl"}
+{"id":"A Simulation Process-Oriented Language","name":"A Simulation Process-Oriented Language","scope":"languages","outcome":"card","target":"aspol"}
+{"id":"A#","name":"A#","scope":"languages","outcome":"card","target":"a-sharp"}
+{"id":"A'UM","name":"A'UM","scope":"languages","outcome":"card","target":"a-um"}
+{"id":"A-0","name":"A-0","scope":"languages","outcome":"card","target":"a-0"}
+{"id":"A-language","name":"A-language","scope":"languages","outcome":"card","target":"a-language"}
+{"id":"ABC ALGOL","name":"ABC ALGOL","scope":"languages","outcome":"card","target":"abc-algol"}
+{"id":"ABCL/1","name":"ABCL/1","scope":"languages","outcome":"card","target":"abcl-1"}
+{"id":"ABCL/R","name":"ABCL/R","scope":"languages","outcome":"card","target":"abcl-r"}
+{"id":"ABCL/R2","name":"ABCL/R2","scope":"languages","outcome":"card","target":"abcl-r2"}
+{"id":"ABCL/c+","name":"ABCL/c+","scope":"languages","outcome":"card","target":"abcl-cp"}
+{"id":"ABLE","name":"ABLE","scope":"languages","outcome":"card","target":"able"}
+{"id":"ABSET","name":"ABSET","scope":"languages","outcome":"card","target":"abset"}
+{"id":"ABSYS","name":"ABSYS","scope":"languages","outcome":"card","target":"absys"}
+{"id":"ACOM","name":"ACOM","scope":"languages","outcome":"card","target":"acom"}
+{"id":"ACOS","name":"ACOS","scope":"languages","outcome":"card","target":"acos"}
+{"id":"ACT ONE","name":"ACT ONE","scope":"languages","outcome":"card","target":"act-one"}
+{"id":"ACT++","name":"ACT++","scope":"languages","outcome":"card","target":"actpp"}
+{"id":"ADAPT","name":"ADAPT","scope":"languages","outcome":"card","target":"adapt"}
+{"id":"ADELE","name":"ADELE","scope":"languages","outcome":"card","target":"adele"}
+{"id":"ADES","name":"ADES","scope":"languages","outcome":"card","target":"ades"}
+{"id":"ADM","name":"ADM","scope":"languages","outcome":"card","target":"adm"}
+{"id":"ADVSYS","name":"ADVSYS","scope":"languages","outcome":"card","target":"advsys"}
+{"id":"AFAC","name":"AFAC","scope":"languages","outcome":"card","target":"afac"}
+{"id":"AGORA","name":"AGORA","scope":"languages","outcome":"card","target":"agora"}
+{"id":"AIr MAterial COmmand compiler","name":"AIr MAterial COmmand compiler","scope":"languages","outcome":"card","target":"aimaco"}
+{"id":"ALAM","name":"ALAM","scope":"languages","outcome":"card","target":"alam"}
+{"id":"ALCOR","name":"ALCOR","scope":"languages","outcome":"card","target":"alcor"}
+{"id":"ALEF","name":"ALEF","scope":"languages","outcome":"card","target":"alef"}
+{"id":"ALGEBRAIC","name":"ALGEBRAIC","scope":"languages","outcome":"card","target":"algebraic"}
+{"id":"ALGOL 58","name":"ALGOL 58","scope":"languages","outcome":"card","target":"algol-58"}
+{"id":"ALGOL 60","name":"ALGOL 60","scope":"languages","outcome":"card","target":"algol-60"}
+{"id":"ALGOL 60 Modified","name":"ALGOL 60 Modified","scope":"languages","outcome":"card","target":"algol-60-modified"}
+{"id":"ALGOL 60 Revised","name":"ALGOL 60 Revised","scope":"languages","outcome":"card","target":"algol-60-revised"}
+{"id":"ALGOL 68","name":"ALGOL 68","scope":"languages","outcome":"card","target":"algol-68"}
+{"id":"ALGOL 68 Revised","name":"ALGOL 68 Revised","scope":"languages","outcome":"card","target":"algol-68-revised"}
+{"id":"ALGOL 68-R","name":"ALGOL 68-R","scope":"languages","outcome":"card","target":"algol-68-r"}
+{"id":"ALGOL 68C","name":"ALGOL 68C","scope":"languages","outcome":"card","target":"algol-68c"}
+{"id":"ALGOL 68RS","name":"ALGOL 68RS","scope":"languages","outcome":"card","target":"algol-68rs"}
+{"id":"ALGOL 68S","name":"ALGOL 68S","scope":"languages","outcome":"card","target":"algol-68s"}
+{"id":"ALGOL C","name":"ALGOL C","scope":"languages","outcome":"card","target":"algol-c"}
+{"id":"ALGOL D","name":"ALGOL D","scope":"languages","outcome":"card","target":"algol-d"}
+{"id":"ALGOL N","name":"ALGOL N","scope":"languages","outcome":"card","target":"algol-n"}
+{"id":"ALGOL W","name":"ALGOL W","scope":"languages","outcome":"card","target":"algol-w"}
+{"id":"ALGOL X","name":"ALGOL X","scope":"languages","outcome":"card","target":"algol-x"}
+{"id":"ALGOL Y","name":"ALGOL Y","scope":"languages","outcome":"card","target":"algol-y"}
+{"id":"ALGY","name":"ALGY","scope":"languages","outcome":"card","target":"algy"}
+{"id":"ALLOY","name":"ALLOY","scope":"languages","outcome":"card","target":"alloy"}
+{"id":"ALP","name":"ALP","scope":"languages","outcome":"card","target":"alp"}
+{"id":"ALPHA","name":"ALPHA","scope":"languages","outcome":"card","target":"alpha"}
+{"id":"ALTAC","name":"ALTAC","scope":"languages","outcome":"card","target":"altac"}
+{"id":"ALTRAN","name":"ALTRAN","scope":"languages","outcome":"card","target":"altran"}
+{"id":"ALgorIthmic ASsembly language","name":"ALgorIthmic ASsembly language","scope":"languages","outcome":"card","target":"algorithmic-assembly-language"}
+{"id":"ALgorithm DEScription","name":"ALgorithm DEScription","scope":"languages","outcome":"card","target":"aldes"}
+{"id":"AMBIT","name":"AMBIT","scope":"languages","outcome":"card","target":"ambit"}
+{"id":"AMBIT/G","name":"AMBIT/G","scope":"languages","outcome":"card","target":"ambit-g"}
+{"id":"AMBIT/L","name":"AMBIT/L","scope":"languages","outcome":"card","target":"ambit-l"}
+{"id":"AMBIT/S","name":"AMBIT/S","scope":"languages","outcome":"card","target":"ambit-s"}
+{"id":"AMBUSH","name":"AMBUSH","scope":"languages","outcome":"card","target":"ambush"}
+{"id":"AML/E","name":"AML/E","scope":"languages","outcome":"card","target":"aml-e"}
+{"id":"AMPL","name":"AMPL","scope":"languages","outcome":"card","target":"ampl"}
+{"id":"AMPLE","name":"AMPLE","scope":"languages","outcome":"card","target":"ample"}
+{"id":"ANCP","name":"ANCP","scope":"languages","outcome":"card","target":"ancp"}
+{"id":"ANNotated Ada","name":"ANNotated Ada","scope":"languages","outcome":"card","target":"anna"}
+{"id":"ANSI C","name":"ANSI C","scope":"languages","outcome":"card","target":"ansi-c"}
+{"id":"ANSI Minimal BASIC","name":"ANSI Minimal BASIC","scope":"languages","outcome":"card","target":"ansi-minimal-basic"}
+{"id":"ANU ML","name":"ANU ML","scope":"languages","outcome":"card","target":"anu-ml"}
+{"id":"APL2","name":"APL2","scope":"languages","outcome":"card","target":"apl2"}
+{"id":"APLGOL","name":"APLGOL","scope":"languages","outcome":"card","target":"aplgol"}
+{"id":"APPLE","name":"APPLE","scope":"languages","outcome":"card","target":"apple"}
+{"id":"APPLOG","name":"APPLOG","scope":"languages","outcome":"card","target":"applog"}
+{"id":"APX III","name":"APX III","scope":"languages","outcome":"card","target":"apx-iii"}
+{"id":"AQL","name":"AQL","scope":"languages","outcome":"card","target":"aql"}
+{"id":"ARES","name":"ARES","scope":"languages","outcome":"card","target":"ares"}
+{"id":"AREXX","name":"AREXX","scope":"languages","outcome":"card","target":"arexx"}
+{"id":"ARITH-MATIC","name":"ARITH-MATIC","scope":"languages","outcome":"card","target":"arith-matic"}
+{"id":"ART","name":"ART","scope":"languages","outcome":"card","target":"art"}
+{"id":"ARTSPEAK","name":"ARTSPEAK","scope":"languages","outcome":"card","target":"artspeak"}
+{"id":"ASDO IMPlementation Language","name":"ASDO IMPlementation Language","scope":"languages","outcome":"card","target":"asdo-implementation-language"}
+{"id":"ASL+","name":"ASL+","scope":"languages","outcome":"card","target":"aslplus"}
+{"id":"ASPEN","name":"ASPEN","scope":"languages","outcome":"card","target":"aspen"}
+{"id":"ASPIK","name":"ASPIK","scope":"languages","outcome":"card","target":"aspik"}
+{"id":"ASPLE","name":"ASPLE","scope":"languages","outcome":"card","target":"asple"}
+{"id":"ASSEMBLY","name":"ASSEMBLY","scope":"languages","outcome":"card","target":"assembly"}
+{"id":"ASpecT","name":"ASpecT","scope":"languages","outcome":"card","target":"aspect"}
+{"id":"AT-3","name":"AT-3","scope":"languages","outcome":"card","target":"at-3"}
+{"id":"AUTO-PROMPT","name":"AUTO-PROMPT","scope":"languages","outcome":"card","target":"auto-prompt"}
+{"id":"AUTOCODER","name":"AUTOCODER","scope":"languages","outcome":"card","target":"autocoder"}
+{"id":"AUTOMATH","name":"AUTOMATH","scope":"languages","outcome":"card","target":"automath"}
+{"id":"AXIOM","name":"AXIOM","scope":"languages","outcome":"card","target":"axiom"}
+{"id":"AXLE","name":"AXLE","scope":"languages","outcome":"card","target":"axle"}
+{"id":"Abbreviated Test Language for Avionics Systems","name":"Abbreviated Test Language for Avionics Systems","scope":"languages","outcome":"card","target":"atlas"}
+{"id":"Abstract Machine Notation","name":"Abstract Machine Notation","scope":"languages","outcome":"card","target":"abstract-machine-notation"}
+{"id":"Abstract Syntax Notation 1","name":"Abstract Syntax Notation 1","scope":"languages","outcome":"card","target":"asn-1"}
+{"id":"Abstract-Type and Scheme-Definition Language","name":"Abstract-Type and Scheme-Definition Language","scope":"languages","outcome":"card","target":"abstract-type-and-scheme-definition-language"}
+{"id":"Accent","name":"Accent","scope":"languages","outcome":"card","target":"accent"}
+{"id":"Acceptance, Test Or Launch Language","name":"Acceptance, Test Or Launch Language","scope":"languages","outcome":"card","target":"atoll"}
+{"id":"Act1","name":"Act1","scope":"languages","outcome":"card","target":"act1"}
+{"id":"Act2","name":"Act2","scope":"languages","outcome":"card","target":"act2"}
+{"id":"Act3","name":"Act3","scope":"languages","outcome":"card","target":"act3"}
+{"id":"Actalk","name":"Actalk","scope":"languages","outcome":"card","target":"actalk"}
+{"id":"Actor","name":"Actor","scope":"languages","outcome":"card","target":"actor"}
+{"id":"Actra","name":"Actra","scope":"languages","outcome":"card","target":"actra"}
+{"id":"Actus","name":"Actus","scope":"languages","outcome":"card","target":"actus"}
+{"id":"AdLog","name":"AdLog","scope":"languages","outcome":"card","target":"adlog"}
+{"id":"Ada","name":"Ada","scope":"languages","outcome":"card","target":"ada"}
+{"id":"Ada 83","name":"Ada 83","scope":"languages","outcome":"card","target":"ada-83"}
+{"id":"Ada 95","name":"Ada 95","scope":"languages","outcome":"card","target":"ada-95"}
+{"id":"Ada 9X","name":"Ada 9X","scope":"languages","outcome":"card","target":"ada-9x"}
+{"id":"Ada Semantic Interface Specification","name":"Ada Semantic Interface Specification","scope":"languages","outcome":"card","target":"ada-semantic-interface-specification"}
+{"id":"Ada Software Repository","name":"Ada Software Repository","scope":"languages","outcome":"card","target":"ada-software-repository"}
+{"id":"Ada++","name":"Ada++","scope":"languages","outcome":"card","target":"adapp"}
+{"id":"Ada-O","name":"Ada-O","scope":"languages","outcome":"card","target":"ada-o"}
+{"id":"Adaplan","name":"Adaplan","scope":"languages","outcome":"card","target":"adaplan"}
+{"id":"Adaplex","name":"Adaplex","scope":"languages","outcome":"card","target":"adaplex"}
+{"id":"Adaptive Simulated Annealing","name":"Adaptive Simulated Annealing","scope":"languages","outcome":"card","target":"adaptive-simulated-annealing"}
+{"id":"Advanced Function Presentation","name":"Advanced Function Presentation","scope":"languages","outcome":"card","target":"advanced-function-presentation"}
+{"id":"Advantage Gen","name":"Advantage Gen","scope":"languages","outcome":"card","target":"advantage-gen"}
+{"id":"Adventure Definition Language","name":"Adventure Definition Language","scope":"languages","outcome":"card","target":"adventure-definition-language"}
+{"id":"Aeolus","name":"Aeolus","scope":"languages","outcome":"card","target":"aeolus"}
+{"id":"Alcool-90","name":"Alcool-90","scope":"languages","outcome":"card","target":"alcool-90"}
+{"id":"Aldat","name":"Aldat","scope":"languages","outcome":"card","target":"aldat"}
+{"id":"Aleph","name":"Aleph","scope":"languages","outcome":"card","target":"aleph"}
+{"id":"Alexis","name":"Alexis","scope":"languages","outcome":"card","target":"alexis"}
+{"id":"Alfl","name":"Alfl","scope":"languages","outcome":"card","target":"alfl"}
+{"id":"Algebraic Interpretive Dialogue","name":"Algebraic Interpretive Dialogue","scope":"languages","outcome":"card","target":"algebraic-interpretive-dialogue"}
+{"id":"Algebraic Logic Functional language","name":"Algebraic Logic Functional language","scope":"languages","outcome":"card","target":"alf"}
+{"id":"Algorithmic Processor Description Language","name":"Algorithmic Processor Description Language","scope":"languages","outcome":"card","target":"algorithmic-processor-description-language"}
+{"id":"Alphard","name":"Alphard","scope":"languages","outcome":"card","target":"alphard"}
+{"id":"Amanda","name":"Amanda","scope":"languages","outcome":"card","target":"amanda"}
+{"id":"Analog Hardware Design Language","name":"Analog Hardware Design Language","scope":"languages","outcome":"card","target":"ahdl"}
+{"id":"Andorra Kernel Language","name":"Andorra Kernel Language","scope":"languages","outcome":"card","target":"akl"}
+{"id":"Andorra-I","name":"Andorra-I","scope":"languages","outcome":"card","target":"andorra-i"}
+{"id":"Andorra-Prolog","name":"Andorra-Prolog","scope":"languages","outcome":"card","target":"andorra-prolog"}
+{"id":"AppleScript","name":"AppleScript","scope":"languages","outcome":"card","target":"applescript"}
+{"id":"Applesoft BASIC","name":"Applesoft BASIC","scope":"languages","outcome":"card","target":"applesoft-basic"}
+{"id":"Applicative Language for Digital Signal Processing","name":"Applicative Language for Digital Signal Processing","scope":"languages","outcome":"card","target":"applicative-language-for-digital-signal-processing"}
+{"id":"Arctic","name":"Arctic","scope":"languages","outcome":"card","target":"arctic"}
+{"id":"Argus","name":"Argus","scope":"languages","outcome":"card","target":"argus"}
+{"id":"Ariel","name":"Ariel","scope":"languages","outcome":"card","target":"ariel"}
+{"id":"Arjuna","name":"Arjuna","scope":"languages","outcome":"card","target":"arjuna"}
+{"id":"Array Processor Assembly Language","name":"Array Processor Assembly Language","scope":"languages","outcome":"card","target":"array-processor-assembly-language"}
+{"id":"Aspirin","name":"Aspirin","scope":"languages","outcome":"card","target":"aspirin"}
+{"id":"Assembly Language","name":"Assembly Language","scope":"languages","outcome":"card","target":"assembly-language"}
+{"id":"Assembly Language Compiler","name":"Assembly Language Compiler","scope":"languages","outcome":"card","target":"assembly-language-compiler"}
+{"id":"Assembly Language for Multics","name":"Assembly Language for Multics","scope":"languages","outcome":"card","target":"assembly-language-for-multics"}
+{"id":"Associative Memory Parallel Processing Language","name":"Associative Memory Parallel Processing Language","scope":"languages","outcome":"card","target":"amppl-ii"}
+{"id":"Astral","name":"Astral","scope":"languages","outcome":"card","target":"astral"}
+{"id":"Atlas Autocode","name":"Atlas Autocode","scope":"languages","outcome":"card","target":"atlas-autocode"}
+{"id":"Augmented Backus-Naur Form","name":"Augmented Backus-Naur Form","scope":"languages","outcome":"card","target":"abnf"}
+{"id":"Aurora","name":"Aurora","scope":"languages","outcome":"card","target":"aurora"}
+{"id":"Austin Kyoto Common Lisp","name":"Austin Kyoto Common Lisp","scope":"languages","outcome":"card","target":"austin-kyoto-common-lisp"}
+{"id":"Autolisp","name":"Autolisp","scope":"languages","outcome":"card","target":"autolisp"}
+{"id":"Automated Engineering Design","name":"Automated Engineering Design","scope":"languages","outcome":"card","target":"aed"}
+{"id":"Automatically Programmed Tools","name":"Automatically Programmed Tools","scope":"languages","outcome":"card","target":"automatically-programmed-tools"}
+{"id":"Automatische Rechenplanfertigung","name":"Automatische Rechenplanfertigung","scope":"languages","outcome":"card","target":"automatische-rechenplanfertigung"}
+{"id":"Autostat","name":"Autostat","scope":"languages","outcome":"card","target":"autostat"}
+{"id":"Avalon/C++","name":"Avalon/C++","scope":"languages","outcome":"card","target":"avalon-cpp"}
+{"id":"Avalon/Common LISP","name":"Avalon/Common LISP","scope":"languages","outcome":"card","target":"avalon-common-lisp"}
+{"id":"Avon","name":"Avon","scope":"languages","outcome":"card","target":"avon"}
+{"id":"Axiomatic Architecture Description Language","name":"Axiomatic Architecture Description Language","scope":"languages","outcome":"card","target":"aadl"}
+{"id":"B-0","name":"B-0","scope":"languages","outcome":"card","target":"b-0"}
+{"id":"BALGOL","name":"BALGOL","scope":"languages","outcome":"card","target":"balgol"}
+{"id":"BALM","name":"BALM","scope":"languages","outcome":"card","target":"balm"}
+{"id":"BASIC","name":"BASIC","scope":"languages","outcome":"card","target":"basic"}
+{"id":"BASIC AUTOCODER","name":"BASIC AUTOCODER","scope":"languages","outcome":"card","target":"basic-autocoder"}
+{"id":"BASIC V","name":"BASIC V","scope":"languages","outcome":"card","target":"basic-v"}
+{"id":"BC NELIAC","name":"BC NELIAC","scope":"languages","outcome":"card","target":"bc-neliac"}
+{"id":"BCL","name":"BCL","scope":"languages","outcome":"card","target":"bcl"}
+{"id":"BCPL","name":"BCPL","scope":"languages","outcome":"card","target":"bcpl"}
+{"id":"BLISS-10","name":"BLISS-10","scope":"languages","outcome":"card","target":"bliss-10"}
+{"id":"BLISS-32","name":"BLISS-32","scope":"languages","outcome":"card","target":"bliss-32"}
+{"id":"BLISS-36","name":"BLISS-36","scope":"languages","outcome":"card","target":"bliss-36"}
+{"id":"BOEING","name":"BOEING","scope":"languages","outcome":"card","target":"boeing"}
+{"id":"BSL","name":"BSL","scope":"languages","outcome":"card","target":"bsl"}
+{"id":"Babbage","name":"Babbage","scope":"languages","outcome":"card","target":"babbage"}
+{"id":"Backus-Naur Form","name":"Backus-Naur Form","scope":"languages","outcome":"node","target":"context-free-grammars"}
+{"id":"Baroque","name":"Baroque","scope":"languages","outcome":"card","target":"baroque"}
+{"id":"Basic Assembly Language","name":"Basic Assembly Language","scope":"languages","outcome":"card","target":"bal"}
+{"id":"Basic COBOL","name":"Basic COBOL","scope":"languages","outcome":"card","target":"basic-cobol"}
+{"id":"Basic Fortran","name":"Basic Fortran","scope":"languages","outcome":"card","target":"basic-fortran"}
+{"id":"Basic JOVIAL","name":"Basic JOVIAL","scope":"languages","outcome":"card","target":"basic-jovial"}
+{"id":"Basic Language for Implementation of System Software","name":"Basic Language for Implementation of System Software","scope":"languages","outcome":"card","target":"bliss"}
+{"id":"BeBOP","name":"BeBOP","scope":"languages","outcome":"card","target":"bebop"}
+{"id":"Berkeley FP","name":"Berkeley FP","scope":"languages","outcome":"card","target":"berkeley-fp"}
+{"id":"Berkeley Logo","name":"Berkeley Logo","scope":"languages","outcome":"card","target":"berkeley-logo"}
+{"id":"Bigloo","name":"Bigloo","scope":"languages","outcome":"card","target":"bigloo"}
+{"id":"BinProlog","name":"BinProlog","scope":"languages","outcome":"card","target":"binprolog"}
+{"id":"BioMeDical Package","name":"BioMeDical Package","scope":"languages","outcome":"card","target":"biomedical-package"}
+{"id":"Block Diagram Compiler","name":"Block Diagram Compiler","scope":"languages","outcome":"card","target":"bdl"}
+{"id":"Boeing Airplane Company Algebraic Interpreter Coding","name":"Boeing Airplane Company Algebraic Interpreter Coding","scope":"languages","outcome":"card","target":"bacaic"}
+{"id":"Brain Aid Prolog","name":"Brain Aid Prolog","scope":"languages","outcome":"card","target":"brain-aid-prolog"}
+{"id":"Brainfuck","name":"Brainfuck","scope":"languages","outcome":"card","target":"brainf-u-c-k"}
+{"id":"Bridgetalk","name":"Bridgetalk","scope":"languages","outcome":"card","target":"bridgetalk"}
+{"id":"C","name":"C","scope":"languages","outcome":"node","target":"c"}
+{"id":"C Language Integrated Production System","name":"C Language Integrated Production System","scope":"languages","outcome":"card","target":"clips-language"}
+{"id":"C#","name":"C#","scope":"languages","outcome":"node","target":"csharp"}
+{"id":"C*","name":"C*","scope":"languages","outcome":"card","target":"c-language-2"}
+{"id":"C++","name":"C++","scope":"languages","outcome":"node","target":"cpp"}
+{"id":"C++Linda","name":"C++Linda","scope":"languages","outcome":"card","target":"cpplinda"}
+{"id":"C+-","name":"C+-","scope":"languages","outcome":"card","target":"cplus"}
+{"id":"C+@","name":"C+@","scope":"languages","outcome":"card","target":"cplus-language"}
+{"id":"C-10","name":"C-10","scope":"languages","outcome":"card","target":"c-10"}
+{"id":"C-BC","name":"C-BC","scope":"languages","outcome":"card","target":"c-bc"}
+{"id":"C-Linda","name":"C-Linda","scope":"languages","outcome":"card","target":"c-linda"}
+{"id":"C/ATLAS","name":"C/ATLAS","scope":"languages","outcome":"card","target":"c-atlas"}
+{"id":"C5","name":"C5","scope":"languages","outcome":"card","target":"c5"}
+{"id":"CAJOLE","name":"CAJOLE","scope":"languages","outcome":"card","target":"cajole"}
+{"id":"CCITT HIgh-Level Language","name":"CCITT HIgh-Level Language","scope":"languages","outcome":"card","target":"chill"}
+{"id":"CELIP","name":"CELIP","scope":"languages","outcome":"card","target":"celip"}
+{"id":"CELLAS","name":"CELLAS","scope":"languages","outcome":"card","target":"cellas"}
+{"id":"CELP","name":"CELP","scope":"languages","outcome":"card","target":"celp"}
+{"id":"CEll Space Simulation Language","name":"CEll Space Simulation Language","scope":"languages","outcome":"card","target":"cell-space-simulation-language"}
+{"id":"CGOL","name":"CGOL","scope":"languages","outcome":"card","target":"cgol"}
+{"id":"CHARITY","name":"CHARITY","scope":"languages","outcome":"card","target":"charity"}
+{"id":"CHARM","name":"CHARM","scope":"languages","outcome":"card","target":"charm"}
+{"id":"CHARM++","name":"CHARM++","scope":"languages","outcome":"card","target":"charmpp"}
+{"id":"CHI","name":"CHI","scope":"languages","outcome":"card","target":"chi"}
+{"id":"CHILI","name":"CHILI","scope":"languages","outcome":"card","target":"chili"}
+{"id":"CHIP-8","name":"CHIP-8","scope":"languages","outcome":"card","target":"chip-8"}
+{"id":"CHISEL","name":"CHISEL","scope":"languages","outcome":"card","target":"chisel"}
+{"id":"CHOCS","name":"CHOCS","scope":"languages","outcome":"card","target":"chocs"}
+{"id":"CIEL","name":"CIEL","scope":"languages","outcome":"card","target":"ciel"}
+{"id":"CIMS PL/I","name":"CIMS PL/I","scope":"languages","outcome":"card","target":"cims-pl-i"}
+{"id":"CITRAN","name":"CITRAN","scope":"languages","outcome":"card","target":"citran"}
+{"id":"CLEAR","name":"CLEAR","scope":"languages","outcome":"card","target":"clear"}
+{"id":"CLIX","name":"CLIX","scope":"languages","outcome":"card","target":"clix-language"}
+{"id":"CLP(R)","name":"CLP(R)","scope":"languages","outcome":"card","target":"clpr"}
+{"id":"CLP(sigma*)","name":"CLP(sigma*)","scope":"languages","outcome":"card","target":"clp-sigma"}
+{"id":"CLP*","name":"CLP*","scope":"languages","outcome":"card","target":"clp-star"}
+{"id":"CLU","name":"CLU","scope":"languages","outcome":"card","target":"clu"}
+{"id":"CMS-2","name":"CMS-2","scope":"languages","outcome":"card","target":"cms-2"}
+{"id":"CMU Common Lisp","name":"CMU Common Lisp","scope":"languages","outcome":"card","target":"cmu-common-lisp"}
+{"id":"CO2","name":"CO2","scope":"languages","outcome":"card","target":"co2"}
+{"id":"COBOL-1961 Extended","name":"COBOL-1961 Extended","scope":"languages","outcome":"card","target":"cobol-1961-extended"}
+{"id":"COIF","name":"COIF","scope":"languages","outcome":"card","target":"coif"}
+{"id":"COLD-K","name":"COLD-K","scope":"languages","outcome":"card","target":"cold-k"}
+{"id":"COLINGO","name":"COLINGO","scope":"languages","outcome":"card","target":"colingo"}
+{"id":"COMIT","name":"COMIT","scope":"languages","outcome":"card","target":"comit"}
+{"id":"COMIT II","name":"COMIT II","scope":"languages","outcome":"card","target":"comit-ii"}
+{"id":"COMPL","name":"COMPL","scope":"languages","outcome":"card","target":"compl"}
+{"id":"COMSL","name":"COMSL","scope":"languages","outcome":"card","target":"comsl"}
+{"id":"COMmon Algorithmic Language","name":"COMmon Algorithmic Language","scope":"languages","outcome":"card","target":"comal"}
+{"id":"COMpute ParallEL","name":"COMpute ParallEL","scope":"languages","outcome":"card","target":"compute-parallel"}
+{"id":"CONCUR","name":"CONCUR","scope":"languages","outcome":"card","target":"concur"}
+{"id":"CONNIVER","name":"CONNIVER","scope":"languages","outcome":"card","target":"conniver"}
+{"id":"CORAL 66","name":"CORAL 66","scope":"languages","outcome":"card","target":"coral-66"}
+{"id":"CORBIE","name":"CORBIE","scope":"languages","outcome":"card","target":"corbie"}
+{"id":"CORTL","name":"CORTL","scope":"languages","outcome":"card","target":"cortl"}
+{"id":"CORnell Compiler","name":"CORnell Compiler","scope":"languages","outcome":"card","target":"corc"}
+{"id":"COmmon Business Oriented Language","name":"COmmon Business Oriented Language","scope":"languages","outcome":"card","target":"cobol"}
+{"id":"COntext Dependent Information Language","name":"COntext Dependent Information Language","scope":"languages","outcome":"card","target":"codil"}
+{"id":"COntrolled Working SpacE Language","name":"COntrolled Working SpacE Language","scope":"languages","outcome":"card","target":"cowsel"}
+{"id":"CP","name":"CP","scope":"languages","outcome":"card","target":"cp"}
+{"id":"CParaOps5","name":"CParaOps5","scope":"languages","outcome":"card","target":"cparaops5"}
+{"id":"CWeb","name":"CWeb","scope":"languages","outcome":"card","target":"cweb"}
+{"id":"Caltech Intermediate Form","name":"Caltech Intermediate Form","scope":"languages","outcome":"card","target":"caltech-intermediate-form"}
+{"id":"Categorical Abstract Machine Language","name":"Categorical Abstract Machine Language","scope":"languages","outcome":"card","target":"categorical-abstract-machine-language"}
+{"id":"Cellular","name":"Cellular","scope":"languages","outcome":"card","target":"cellular"}
+{"id":"Ch","name":"Ch","scope":"languages","outcome":"card","target":"ch"}
+{"id":"Charme","name":"Charme","scope":"languages","outcome":"card","target":"charme"}
+{"id":"Checkout Test language","name":"Checkout Test language","scope":"languages","outcome":"card","target":"checkout-test-language"}
+{"id":"Cigale","name":"Cigale","scope":"languages","outcome":"card","target":"cigale"}
+{"id":"Clarion","name":"Clarion","scope":"languages","outcome":"card","target":"clarion"}
+{"id":"Class Oriented Ring Associated Language","name":"Class Oriented Ring Associated Language","scope":"languages","outcome":"card","target":"class-oriented-ring-associated-language"}
+{"id":"Classic-Ada","name":"Classic-Ada","scope":"languages","outcome":"card","target":"classic-ada"}
+{"id":"Clausal Language","name":"Clausal Language","scope":"languages","outcome":"card","target":"clausal-lang"}
+{"id":"Clean","name":"Clean","scope":"languages","outcome":"card","target":"clean"}
+{"id":"Clear Language for Expressing Orders","name":"Clear Language for Expressing Orders","scope":"languages","outcome":"card","target":"cleo"}
+{"id":"Cluster 86","name":"Cluster 86","scope":"languages","outcome":"card","target":"cluster-86"}
+{"id":"Coco Language","name":"Coco Language","scope":"languages","outcome":"card","target":"coco-language"}
+{"id":"Cocol/R","name":"Cocol/R","scope":"languages","outcome":"card","target":"cocol-r"}
+{"id":"Code 2.0","name":"Code 2.0","scope":"languages","outcome":"card","target":"code-2-0"}
+{"id":"Code-Generator Generator Language","name":"Code-Generator Generator Language","scope":"languages","outcome":"card","target":"code-generator-generator-language"}
+{"id":"Cogent Prolog","name":"Cogent Prolog","scope":"languages","outcome":"card","target":"cogent-prolog"}
+{"id":"Coherent Parallel C","name":"Coherent Parallel C","scope":"languages","outcome":"card","target":"coherent-parallel-c"}
+{"id":"ColdFusion Markup Language","name":"ColdFusion Markup Language","scope":"languages","outcome":"card","target":"cfml"}
+{"id":"Combined Programming Language","name":"Combined Programming Language","scope":"languages","outcome":"card","target":"cpl"}
+{"id":"Combined object-oriented Language","name":"Combined object-oriented Language","scope":"languages","outcome":"card","target":"cool"}
+{"id":"Commercial Translator","name":"Commercial Translator","scope":"languages","outcome":"card","target":"commercial-translator"}
+{"id":"Common ESP","name":"Common ESP","scope":"languages","outcome":"card","target":"common-esp"}
+{"id":"Common Intermediate Language","name":"Common Intermediate Language","scope":"languages","outcome":"card","target":"common-intermediate-language"}
+{"id":"Common LISP Object System","name":"Common LISP Object System","scope":"languages","outcome":"card","target":"clos"}
+{"id":"Common LISP in Parallel","name":"Common LISP in Parallel","scope":"languages","outcome":"card","target":"common-lisp-in-parallel"}
+{"id":"Common Lisp","name":"Common Lisp","scope":"languages","outcome":"card","target":"common-lisp"}
+{"id":"Common Objects","name":"Common Objects","scope":"languages","outcome":"card","target":"common-objects"}
+{"id":"CommonLoops","name":"CommonLoops","scope":"languages","outcome":"card","target":"commonloops"}
+{"id":"Communicating Functional Processes","name":"Communicating Functional Processes","scope":"languages","outcome":"card","target":"communicating-functional-processes"}
+{"id":"Communicating Sequential Processes","name":"Communicating Sequential Processes","scope":"languages","outcome":"card","target":"communicating-sequential-processes"}
+{"id":"Compact COBOL","name":"Compact COBOL","scope":"languages","outcome":"card","target":"compact-cobol"}
+{"id":"Compositional C++","name":"Compositional C++","scope":"languages","outcome":"card","target":"compositional-cpp"}
+{"id":"Computational Fluid Dynamics","name":"Computational Fluid Dynamics","scope":"languages","outcome":"card","target":"computational-fluid-dynamics"}
+{"id":"Computer Animation Movie Language","name":"Computer Animation Movie Language","scope":"languages","outcome":"card","target":"computer-animation-movie-language"}
+{"id":"Computer Design Language","name":"Computer Design Language","scope":"languages","outcome":"card","target":"computer-design-language"}
+{"id":"Computer Language for AeronauticS and Programming","name":"Computer Language for AeronauticS and Programming","scope":"languages","outcome":"card","target":"computer-language-for-aeronautics-and-programming"}
+{"id":"ConC","name":"ConC","scope":"languages","outcome":"card","target":"conc"}
+{"id":"Concert/C","name":"Concert/C","scope":"languages","outcome":"card","target":"concert-c"}
+{"id":"Concurrent C++","name":"Concurrent C++","scope":"languages","outcome":"card","target":"concurrent-cpp"}
+{"id":"Concurrent CLU","name":"Concurrent CLU","scope":"languages","outcome":"card","target":"concurrent-clu"}
+{"id":"Concurrent Clean","name":"Concurrent Clean","scope":"languages","outcome":"card","target":"concurrent-clean"}
+{"id":"Concurrent Constraint Programming","name":"Concurrent Constraint Programming","scope":"languages","outcome":"card","target":"concurrent-constraint-programming"}
+{"id":"Concurrent Euclid","name":"Concurrent Euclid","scope":"languages","outcome":"card","target":"concurrent-euclid"}
+{"id":"Concurrent LISP","name":"Concurrent LISP","scope":"languages","outcome":"card","target":"concurrent-lisp"}
+{"id":"Concurrent ML","name":"Concurrent ML","scope":"languages","outcome":"card","target":"concurrent-ml"}
+{"id":"Concurrent Massey Hope","name":"Concurrent Massey Hope","scope":"languages","outcome":"card","target":"concurrent-massey-hope"}
+{"id":"Concurrent Oberon","name":"Concurrent Oberon","scope":"languages","outcome":"card","target":"concurrent-oberon"}
+{"id":"Concurrent Object-Oriented C","name":"Concurrent Object-Oriented C","scope":"languages","outcome":"card","target":"cooc"}
+{"id":"Concurrent Object-Oriented Language","name":"Concurrent Object-Oriented Language","scope":"languages","outcome":"card","target":"concurrent-object-oriented-language"}
+{"id":"Concurrent Pascal","name":"Concurrent Pascal","scope":"languages","outcome":"card","target":"concurrent-pascal"}
+{"id":"Concurrent Prolog","name":"Concurrent Prolog","scope":"languages","outcome":"card","target":"concurrent-prolog"}
+{"id":"Concurrent SP/k","name":"Concurrent SP/k","scope":"languages","outcome":"card","target":"concurrent-sp-k"}
+{"id":"Concurrent Scheme","name":"Concurrent Scheme","scope":"languages","outcome":"card","target":"concurrent-scheme"}
+{"id":"ConcurrentSmalltalk","name":"ConcurrentSmalltalk","scope":"languages","outcome":"card","target":"concurrentsmalltalk"}
+{"id":"Connection Definition Language","name":"Connection Definition Language","scope":"languages","outcome":"card","target":"connection-definition-language"}
+{"id":"Connection Machine LISP","name":"Connection Machine LISP","scope":"languages","outcome":"card","target":"connection-machine-lisp"}
+{"id":"Constraint Handling In Prolog","name":"Constraint Handling In Prolog","scope":"languages","outcome":"card","target":"constraint-handling-in-prolog"}
+{"id":"ConstraintLisp","name":"ConstraintLisp","scope":"languages","outcome":"card","target":"constraintlisp"}
+{"id":"Consul","name":"Consul","scope":"languages","outcome":"card","target":"consul"}
+{"id":"Content Data Model","name":"Content Data Model","scope":"languages","outcome":"card","target":"content-data-model"}
+{"id":"Contextually Communicating Sequential Processes","name":"Contextually Communicating Sequential Processes","scope":"languages","outcome":"card","target":"contextually-communicating-sequential-processes"}
+{"id":"Continuation Passing Style","name":"Continuation Passing Style","scope":"languages","outcome":"node","target":"continuation-passing-style"}
+{"id":"Control Language","name":"Control Language","scope":"languages","outcome":"card","target":"control-language"}
+{"id":"Conversational LISP","name":"Conversational LISP","scope":"languages","outcome":"card","target":"conversational-lisp"}
+{"id":"Cornell List Processor","name":"Cornell List Processor","scope":"languages","outcome":"card","target":"cornell-list-processor"}
+{"id":"Coroutine Pascal","name":"Coroutine Pascal","scope":"languages","outcome":"card","target":"coroutine-pascal"}
+{"id":"Correlatives and Conversions","name":"Correlatives and Conversions","scope":"languages","outcome":"card","target":"correlatives-and-conversions"}
+{"id":"Course Author Language","name":"Course Author Language","scope":"languages","outcome":"card","target":"course-author-language"}
+{"id":"Coursewriter III","name":"Coursewriter III","scope":"languages","outcome":"card","target":"coursewriter-iii"}
+{"id":"CypherText","name":"CypherText","scope":"languages","outcome":"card","target":"cyphertext"}
+{"id":"DATACODE I","name":"DATACODE I","scope":"languages","outcome":"card","target":"datacode-i"}
+{"id":"DATATRIEVE","name":"DATATRIEVE","scope":"languages","outcome":"card","target":"datatrieve"}
+{"id":"DBC","name":"DBC","scope":"languages","outcome":"card","target":"dbc"}
+{"id":"DBPL","name":"DBPL","scope":"languages","outcome":"card","target":"dbpl"}
+{"id":"DC","name":"DC","scope":"languages","outcome":"card","target":"dc"}
+{"id":"DETOL","name":"DETOL","scope":"languages","outcome":"card","target":"detol"}
+{"id":"DIMATE","name":"DIMATE","scope":"languages","outcome":"card","target":"dimate"}
+{"id":"DLP","name":"DLP","scope":"languages","outcome":"card","target":"dlp"}
+{"id":"DOUGLAS","name":"DOUGLAS","scope":"languages","outcome":"card","target":"douglas"}
+{"id":"DRAGOON","name":"DRAGOON","scope":"languages","outcome":"card","target":"dragoon"}
+{"id":"DUAL-607","name":"DUAL-607","scope":"languages","outcome":"card","target":"dual-607"}
+{"id":"DYnamic LANguage","name":"DYnamic LANguage","scope":"languages","outcome":"card","target":"dylan"}
+{"id":"DYnamics ANAlyzer","name":"DYnamics ANAlyzer","scope":"languages","outcome":"card","target":"dynamics-analyzer"}
+{"id":"Darms","name":"Darms","scope":"languages","outcome":"card","target":"darms"}
+{"id":"Dartmouth BASIC","name":"Dartmouth BASIC","scope":"languages","outcome":"card","target":"dartmouth-basic"}
+{"id":"Data Driven Machine","name":"Data Driven Machine","scope":"languages","outcome":"card","target":"data-driven-machine"}
+{"id":"Data Management Language","name":"Data Management Language","scope":"languages","outcome":"card","target":"data-management-language"}
+{"id":"Data Manipulation Language","name":"Data Manipulation Language","scope":"languages","outcome":"card","target":"data-manipulation-language"}
+{"id":"Data Parallel Haskell","name":"Data Parallel Haskell","scope":"languages","outcome":"card","target":"data-parallel-haskell"}
+{"id":"Data Structures Language","name":"Data Structures Language","scope":"languages","outcome":"card","target":"data-structures-language"}
+{"id":"Data definition language","name":"Data definition language","scope":"languages","outcome":"card","target":"data-definition-language"}
+{"id":"Data/BASIC","name":"Data/BASIC","scope":"languages","outcome":"card","target":"data-basic"}
+{"id":"Dataparallel-C","name":"Dataparallel-C","scope":"languages","outcome":"card","target":"dataparallel-c"}
+{"id":"De Bruijn notation","name":"De Bruijn notation","scope":"languages","outcome":"card","target":"de-bruijn-notation"}
+{"id":"Descriptive Intermediate Attributed Notation for Ada","name":"Descriptive Intermediate Attributed Notation for Ada","scope":"languages","outcome":"card","target":"diana"}
+{"id":"Digital Signal Processing Language","name":"Digital Signal Processing Language","scope":"languages","outcome":"card","target":"digital-signal-processing-language"}
+{"id":"Digital Simulation Language","name":"Digital Simulation Language","scope":"languages","outcome":"card","target":"digital-simulation-language"}
+{"id":"Directed Oc","name":"Directed Oc","scope":"languages","outcome":"card","target":"directed-oc"}
+{"id":"Directly Executable Test Oriented Language","name":"Directly Executable Test Oriented Language","scope":"languages","outcome":"card","target":"directly-executable-test-oriented-language"}
+{"id":"Dislang","name":"Dislang","scope":"languages","outcome":"card","target":"dislang"}
+{"id":"Distributed Logic Programming","name":"Distributed Logic Programming","scope":"languages","outcome":"card","target":"distributed-logic-programming"}
+{"id":"Document Object Model","name":"Document Object Model","scope":"languages","outcome":"card","target":"document-object-model"}
+{"id":"Dyalog APL","name":"Dyalog APL","scope":"languages","outcome":"card","target":"dyalog-apl"}
+{"id":"Dynamic Data Exchange","name":"Dynamic Data Exchange","scope":"languages","outcome":"card","target":"dynamic-data-exchange"}
+{"id":"Dynamic HTML","name":"Dynamic HTML","scope":"languages","outcome":"card","target":"dynamic-html"}
+{"id":"EBASIC","name":"EBASIC","scope":"languages","outcome":"card","target":"ebasic"}
+{"id":"EBNF","name":"EBNF","scope":"languages","outcome":"card","target":"ebnf"}
+{"id":"ECMAScript","name":"ECMAScript","scope":"languages","outcome":"card","target":"ecmascript"}
+{"id":"ELMAGUIDE","name":"ELMAGUIDE","scope":"languages","outcome":"card","target":"elmaguide"}
+{"id":"ELSIE","name":"ELSIE","scope":"languages","outcome":"card","target":"elsie"}
+{"id":"EM-1","name":"EM-1","scope":"languages","outcome":"card","target":"em-1"}
+{"id":"EPSILON","name":"EPSILON","scope":"languages","outcome":"card","target":"epsilon"}
+{"id":"ESCAPE","name":"ESCAPE","scope":"languages","outcome":"card","target":"escape"}
+{"id":"ETHER","name":"ETHER","scope":"languages","outcome":"card","target":"ether"}
+{"id":"EXEC","name":"EXEC","scope":"languages","outcome":"card","target":"exec"}
+{"id":"Early PL/I","name":"Early PL/I","scope":"languages","outcome":"card","target":"early-pl-i"}
+{"id":"Eden","name":"Eden","scope":"languages","outcome":"card","target":"eden"}
+{"id":"Eden Programming Language","name":"Eden Programming Language","scope":"languages","outcome":"card","target":"eden-programming-language"}
+{"id":"Eforth","name":"Eforth","scope":"languages","outcome":"card","target":"eforth"}
+{"id":"Eiffel","name":"Eiffel","scope":"languages","outcome":"card","target":"eiffel"}
+{"id":"Ellie","name":"Ellie","scope":"languages","outcome":"card","target":"ellie"}
+{"id":"Emacs Lisp","name":"Emacs Lisp","scope":"languages","outcome":"card","target":"emacs-lisp"}
+{"id":"Equational Programming Language","name":"Equational Programming Language","scope":"languages","outcome":"card","target":"equational-programming-language"}
+{"id":"Euclid","name":"Euclid","scope":"languages","outcome":"card","target":"euclid"}
+{"id":"Event Description Language","name":"Event Description Language","scope":"languages","outcome":"card","target":"event-description-language"}
+{"id":"ExTendible Compiler","name":"ExTendible Compiler","scope":"languages","outcome":"card","target":"etc"}
+{"id":"Executive Systems Programming Oriented Language","name":"Executive Systems Programming Oriented Language","scope":"languages","outcome":"card","target":"espol"}
+{"id":"Experiment Description Language","name":"Experiment Description Language","scope":"languages","outcome":"card","target":"experiment-description-language"}
+{"id":"Experimental Programming Language","name":"Experimental Programming Language","scope":"languages","outcome":"card","target":"experimental-programming-language"}
+{"id":"Extended Affix Grammar","name":"Extended Affix Grammar","scope":"languages","outcome":"card","target":"extended-affix-grammar"}
+{"id":"Extended Backus-Naur Form","name":"Extended Backus-Naur Form","scope":"languages","outcome":"card","target":"extended-backus-naur-form"}
+{"id":"Extended C++","name":"Extended C++","scope":"languages","outcome":"card","target":"extended-cpp"}
+{"id":"Extended Concurrent Prolog","name":"Extended Concurrent Prolog","scope":"languages","outcome":"card","target":"extended-concurrent-prolog"}
+{"id":"Extended Self-containing Prolog","name":"Extended Self-containing Prolog","scope":"languages","outcome":"card","target":"extended-self-containing-prolog"}
+{"id":"Extended Systems Modelling Language","name":"Extended Systems Modelling Language","scope":"languages","outcome":"card","target":"extended-systems-modelling-language"}
+{"id":"Extended Tcl","name":"Extended Tcl","scope":"languages","outcome":"card","target":"tclx"}
+{"id":"Extensible Markup Language","name":"Extensible Markup Language","scope":"languages","outcome":"card","target":"xml"}
+{"id":"Extension Language Kit","name":"Extension Language Kit","scope":"languages","outcome":"card","target":"extension-language-kit"}
+{"id":"F+L","name":"F+L","scope":"languages","outcome":"card","target":"fplusl"}
+{"id":"FAIR","name":"FAIR","scope":"languages","outcome":"card","target":"fair-language"}
+{"id":"FAP","name":"FAP","scope":"languages","outcome":"card","target":"fap"}
+{"id":"FC","name":"FC","scope":"languages","outcome":"card","target":"fc"}
+{"id":"FIDO","name":"FIDO","scope":"languages","outcome":"card","target":"fido"}
+{"id":"FL","name":"FL","scope":"languages","outcome":"card","target":"fl"}
+{"id":"FLAIR","name":"FLAIR","scope":"languages","outcome":"card","target":"flair"}
+{"id":"FLIP-SPUR","name":"FLIP-SPUR","scope":"languages","outcome":"card","target":"flip-spur"}
+{"id":"FLUB","name":"FLUB","scope":"languages","outcome":"card","target":"flub"}
+{"id":"FOCUS","name":"FOCUS","scope":"languages","outcome":"card","target":"focus"}
+{"id":"FORTRANSIT","name":"FORTRANSIT","scope":"languages","outcome":"card","target":"fortransit"}
+{"id":"FQL","name":"FQL","scope":"languages","outcome":"card","target":"fql"}
+{"id":"FX-90","name":"FX-90","scope":"languages","outcome":"card","target":"fx-90"}
+{"id":"Facile","name":"Facile","scope":"languages","outcome":"card","target":"facile"}
+{"id":"Faster LEX","name":"Faster LEX","scope":"languages","outcome":"card","target":"faster-lex"}
+{"id":"Fjolnir","name":"Fjolnir","scope":"languages","outcome":"card","target":"fjolnir"}
+{"id":"Flavors","name":"Flavors","scope":"languages","outcome":"card","target":"flavors"}
+{"id":"Flex 2","name":"Flex 2","scope":"languages","outcome":"card","target":"flex-2"}
+{"id":"Formal Object Role Modeling Language","name":"Formal Object Role Modeling Language","scope":"languages","outcome":"card","target":"formal-object-role-modeling-language"}
+{"id":"Formes","name":"Formes","scope":"languages","outcome":"card","target":"formes"}
+{"id":"Fortran","name":"Fortran","scope":"languages","outcome":"card","target":"for-t-r-a-n"}
+{"id":"Fortran Automatic Symbol Translator","name":"Fortran Automatic Symbol Translator","scope":"languages","outcome":"card","target":"fortran-automatic-symbol-translator"}
+{"id":"Fortran Matrix Abstraction Technique Fortran","name":"Fortran Matrix Abstraction Technique Fortran","scope":"languages","outcome":"card","target":"fortran-matrix-abstraction-technique-fortran"}
+{"id":"Fortrash","name":"Fortrash","scope":"languages","outcome":"card","target":"fortrash"}
+{"id":"FrameKit","name":"FrameKit","scope":"languages","outcome":"card","target":"framekit"}
+{"id":"Franz Lisp","name":"Franz Lisp","scope":"languages","outcome":"card","target":"franz-lisp"}
+{"id":"Fresh","name":"Fresh","scope":"languages","outcome":"card","target":"fresh"}
+{"id":"Frobozz Magic Programming Language","name":"Frobozz Magic Programming Language","scope":"languages","outcome":"card","target":"frobozz-magic-programming-language"}
+{"id":"Fugue","name":"Fugue","scope":"languages","outcome":"card","target":"fugue"}
+{"id":"Fully Automated Compiling Technique","name":"Fully Automated Compiling Technique","scope":"languages","outcome":"card","target":"fact"}
+{"id":"Function Graph Language","name":"Function Graph Language","scope":"languages","outcome":"card","target":"function-graph-language"}
+{"id":"FutureBasic","name":"FutureBasic","scope":"languages","outcome":"card","target":"futurebasic"}
+{"id":"GECOM","name":"GECOM","scope":"languages","outcome":"card","target":"gecom"}
+{"id":"GEORGE","name":"GEORGE","scope":"languages","outcome":"card","target":"george"}
+{"id":"GLOW","name":"GLOW","scope":"languages","outcome":"card","target":"glow"}
+{"id":"GLU","name":"GLU","scope":"languages","outcome":"card","target":"glu"}
+{"id":"GNU C","name":"GNU C","scope":"languages","outcome":"card","target":"gnu-c"}
+{"id":"GNU Smalltalk","name":"GNU Smalltalk","scope":"languages","outcome":"card","target":"gnu-smalltalk"}
+{"id":"GSBL","name":"GSBL","scope":"languages","outcome":"card","target":"gsbl"}
+{"id":"GSPL","name":"GSPL","scope":"languages","outcome":"card","target":"gspl"}
+{"id":"GW-BASIC","name":"GW-BASIC","scope":"languages","outcome":"card","target":"gw-basic"}
+{"id":"Gabriel","name":"Gabriel","scope":"languages","outcome":"card","target":"gabriel"}
+{"id":"Galaxy","name":"Galaxy","scope":"languages","outcome":"card","target":"galaxy"}
+{"id":"Gambit","name":"Gambit","scope":"languages","outcome":"card","target":"gambit"}
+{"id":"General Purpose Macro-generator","name":"General Purpose Macro-generator","scope":"languages","outcome":"card","target":"gpm"}
+{"id":"Genken Programming Language","name":"Genken Programming Language","scope":"languages","outcome":"card","target":"genken-programming-language"}
+{"id":"Goedel","name":"Goedel","scope":"languages","outcome":"card","target":"godel"}
+{"id":"Gofer","name":"Gofer","scope":"languages","outcome":"card","target":"gofer"}
+{"id":"Goffin","name":"Goffin","scope":"languages","outcome":"card","target":"goffin"}
+{"id":"Graph-Oriented Object Database","name":"Graph-Oriented Object Database","scope":"languages","outcome":"card","target":"graph-oriented-object-database"}
+{"id":"Graphic ALGOL","name":"Graphic ALGOL","scope":"languages","outcome":"card","target":"graphic-algol"}
+{"id":"Graphics Language Object System","name":"Graphics Language Object System","scope":"languages","outcome":"card","target":"graphics-language-object-system"}
+{"id":"Green","name":"Green","scope":"languages","outcome":"card","target":"green"}
+{"id":"Guarded Horn Clauses","name":"Guarded Horn Clauses","scope":"languages","outcome":"card","target":"guarded-horn-clauses"}
+{"id":"HALGOL","name":"HALGOL","scope":"languages","outcome":"card","target":"halgol"}
+{"id":"HASL","name":"HASL","scope":"languages","outcome":"card","target":"hasl"}
+{"id":"HERAKLIT","name":"HERAKLIT","scope":"languages","outcome":"card","target":"heraklit"}
+{"id":"HIBOL","name":"HIBOL","scope":"languages","outcome":"card","target":"hibol"}
+{"id":"Hal/S","name":"Hal/S","scope":"languages","outcome":"card","target":"hal-s"}
+{"id":"Handel","name":"Handel","scope":"languages","outcome":"card","target":"handel"}
+{"id":"Hardware Description Language","name":"Hardware Description Language","scope":"languages","outcome":"card","target":"hardware-description-language"}
+{"id":"Haskell","name":"Haskell","scope":"languages","outcome":"card","target":"haskell"}
+{"id":"Haskell B","name":"Haskell B","scope":"languages","outcome":"card","target":"haskell-b"}
+{"id":"Hermes","name":"Hermes","scope":"languages","outcome":"card","target":"hermes"}
+{"id":"Hewlett-Packard Graphics Language","name":"Hewlett-Packard Graphics Language","scope":"languages","outcome":"card","target":"hp-gl"}
+{"id":"Hierarchical Music Specification Language","name":"Hierarchical Music Specification Language","scope":"languages","outcome":"card","target":"hierarchical-music-specification-language"}
+{"id":"High Performance Fortran","name":"High Performance Fortran","scope":"languages","outcome":"card","target":"high-performance-fortran"}
+{"id":"Hope","name":"Hope","scope":"languages","outcome":"card","target":"hope"}
+{"id":"Hope+","name":"Hope+","scope":"languages","outcome":"card","target":"hopeplus"}
+{"id":"Hope+C","name":"Hope+C","scope":"languages","outcome":"card","target":"hopeplusc"}
+{"id":"Hungarian Notation","name":"Hungarian Notation","scope":"languages","outcome":"card","target":"hungarian-notation"}
+{"id":"ICI","name":"ICI","scope":"languages","outcome":"card","target":"ici"}
+{"id":"IF1","name":"IF1","scope":"languages","outcome":"card","target":"if1"}
+{"id":"IFDL","name":"IFDL","scope":"languages","outcome":"card","target":"ifdl"}
+{"id":"ILIAD","name":"ILIAD","scope":"languages","outcome":"card","target":"iliad"}
+{"id":"IMPlementation language","name":"IMPlementation language","scope":"languages","outcome":"card","target":"implementation-language"}
+{"id":"IMProved Mercury autocode","name":"IMProved Mercury autocode","scope":"languages","outcome":"card","target":"improved-mercury-autocode"}
+{"id":"INTCODE","name":"INTCODE","scope":"languages","outcome":"card","target":"intcode"}
+{"id":"INTELLECT","name":"INTELLECT","scope":"languages","outcome":"card","target":"intellect"}
+{"id":"INTERCAL","name":"INTERCAL","scope":"languages","outcome":"card","target":"intercal"}
+{"id":"INTERCOM","name":"INTERCOM","scope":"languages","outcome":"card","target":"intercom"}
+{"id":"ISBL","name":"ISBL","scope":"languages","outcome":"card","target":"isbl"}
+{"id":"ISETL","name":"ISETL","scope":"languages","outcome":"card","target":"isetl"}
+{"id":"ISWIM","name":"ISWIM","scope":"languages","outcome":"card","target":"iswim"}
+{"id":"Icon","name":"Icon","scope":"languages","outcome":"card","target":"icon"}
+{"id":"Icon-Based Parser Generation System 2","name":"Icon-Based Parser Generation System 2","scope":"languages","outcome":"card","target":"icon-based-parser-generation-system-2"}
+{"id":"Idealized CSP","name":"Idealized CSP","scope":"languages","outcome":"card","target":"idealized-csp"}
+{"id":"Idealized Instruction Set","name":"Idealized Instruction Set","scope":"languages","outcome":"card","target":"idealized-instruction-set"}
+{"id":"Ina Jo","name":"Ina Jo","scope":"languages","outcome":"card","target":"ina-jo"}
+{"id":"Industrial Robot Language","name":"Industrial Robot Language","scope":"languages","outcome":"card","target":"industrial-robot-language"}
+{"id":"Interactive Data Entry/Access","name":"Interactive Data Entry/Access","scope":"languages","outcome":"card","target":"interactive-data-entry-access"}
+{"id":"Interactive Data analysis Language","name":"Interactive Data analysis Language","scope":"languages","outcome":"card","target":"interactive-data-analysis-language"}
+{"id":"Interactive and Batch EXecutive","name":"Interactive and Batch EXecutive","scope":"languages","outcome":"card","target":"ibex"}
+{"id":"Interlisp","name":"Interlisp","scope":"languages","outcome":"card","target":"interlisp"}
+{"id":"Intermediate Programming Language","name":"Intermediate Programming Language","scope":"languages","outcome":"card","target":"intermediate-programming-language"}
+{"id":"Internal Translator","name":"Internal Translator","scope":"languages","outcome":"card","target":"internal-translator"}
+{"id":"Internet Foundation Classes","name":"Internet Foundation Classes","scope":"languages","outcome":"card","target":"internet-foundation-classes"}
+{"id":"Interpretive Menu Processor","name":"Interpretive Menu Processor","scope":"languages","outcome":"card","target":"interpretive-menu-processor"}
+{"id":"Iota","name":"Iota","scope":"languages","outcome":"card","target":"iota"}
+{"id":"Irvine Dataflow","name":"Irvine Dataflow","scope":"languages","outcome":"card","target":"id"}
+{"id":"JAM Programming Language","name":"JAM Programming Language","scope":"languages","outcome":"card","target":"jam-programming-language"}
+{"id":"JAZ","name":"JAZ","scope":"languages","outcome":"card","target":"jaz"}
+{"id":"JCOOL","name":"JCOOL","scope":"languages","outcome":"card","target":"jcool"}
+{"id":"JCS-13","name":"JCS-13","scope":"languages","outcome":"card","target":"jcs-13"}
+{"id":"JEAN","name":"JEAN","scope":"languages","outcome":"card","target":"jean"}
+{"id":"JOHNNIAC Open Shop System","name":"JOHNNIAC Open Shop System","scope":"languages","outcome":"card","target":"joss"}
+{"id":"JOVIAL","name":"JOVIAL","scope":"languages","outcome":"card","target":"jovial"}
+{"id":"JPL","name":"JPL","scope":"languages","outcome":"card","target":"jpl"}
+{"id":"Java","name":"Java","scope":"languages","outcome":"node","target":"java"}
+{"id":"Java 2 Platform, Enterprise Edition","name":"Java 2 Platform, Enterprise Edition","scope":"languages","outcome":"card","target":"java-2-platform-enterprise-edition"}
+{"id":"Java 2 Platform, Micro Edition","name":"Java 2 Platform, Micro Edition","scope":"languages","outcome":"card","target":"java-2-platform-micro-edition"}
+{"id":"Java 2 Platform, Standard Edition","name":"Java 2 Platform, Standard Edition","scope":"languages","outcome":"card","target":"java-2-platform-standard-edition"}
+{"id":"Java 2 Software Development Kit","name":"Java 2 Software Development Kit","scope":"languages","outcome":"card","target":"java-2-software-development-kit"}
+{"id":"Java Development Kit","name":"Java Development Kit","scope":"languages","outcome":"card","target":"java-development-kit"}
+{"id":"Java Run-Time Environment","name":"Java Run-Time Environment","scope":"languages","outcome":"card","target":"java-run-time-environment"}
+{"id":"Java Virtual Machine","name":"Java Virtual Machine","scope":"languages","outcome":"card","target":"java-virtual-machine"}
+{"id":"JavaScript","name":"JavaScript","scope":"languages","outcome":"node","target":"javascript"}
+{"id":"Job Control Language","name":"Job Control Language","scope":"languages","outcome":"card","target":"jcl"}
+{"id":"Jossle","name":"Jossle","scope":"languages","outcome":"card","target":"jossle"}
+{"id":"Joy","name":"Joy","scope":"languages","outcome":"card","target":"joy"}
+{"id":"K&R C","name":"K&R C","scope":"languages","outcome":"card","target":"k-r-c"}
+{"id":"KFX","name":"KFX","scope":"languages","outcome":"card","target":"kfx"}
+{"id":"KOMPILER","name":"KOMPILER","scope":"languages","outcome":"card","target":"kompiler"}
+{"id":"KRS","name":"KRS","scope":"languages","outcome":"card","target":"krs"}
+{"id":"KRYPTON","name":"KRYPTON","scope":"languages","outcome":"card","target":"krypton"}
+{"id":"Kaleidoscope","name":"Kaleidoscope","scope":"languages","outcome":"card","target":"kaleidoscope"}
+{"id":"Kent Recursive Calculator","name":"Kent Recursive Calculator","scope":"languages","outcome":"card","target":"krc"}
+{"id":"Kernel Parlog","name":"Kernel Parlog","scope":"languages","outcome":"card","target":"kernel-parlog"}
+{"id":"Kevo","name":"Kevo","scope":"languages","outcome":"card","target":"kevo"}
+{"id":"Knowledge Query and Manipulation Language","name":"Knowledge Query and Manipulation Language","scope":"languages","outcome":"card","target":"kqml"}
+{"id":"Kvikkalkul","name":"Kvikkalkul","scope":"languages","outcome":"card","target":"kvikkalkul"}
+{"id":"Kyoto Common Lisp","name":"Kyoto Common Lisp","scope":"languages","outcome":"card","target":"kyoto-common-lisp"}
+{"id":"L0","name":"L0","scope":"languages","outcome":"card","target":"l0"}
+{"id":"LADY","name":"LADY","scope":"languages","outcome":"card","target":"lady"}
+{"id":"LAPSE","name":"LAPSE","scope":"languages","outcome":"card","target":"lapse"}
+{"id":"LARCH/CLU","name":"LARCH/CLU","scope":"languages","outcome":"card","target":"larch-clu"}
+{"id":"LAURE","name":"LAURE","scope":"languages","outcome":"card","target":"laure"}
+{"id":"LISP Extended Algebraic Facility","name":"LISP Extended Algebraic Facility","scope":"languages","outcome":"card","target":"lisp-extended-algebraic-facility"}
+{"id":"LISP Machine LISP","name":"LISP Machine LISP","scope":"languages","outcome":"card","target":"lisp-machine-lisp"}
+{"id":"LOGO","name":"LOGO","scope":"languages","outcome":"card","target":"logo"}
+{"id":"LOM","name":"LOM","scope":"languages","outcome":"card","target":"lom"}
+{"id":"LOWL","name":"LOWL","scope":"languages","outcome":"card","target":"lowl"}
+{"id":"LPC","name":"LPC","scope":"languages","outcome":"card","target":"lpc"}
+{"id":"LaTeX","name":"LaTeX","scope":"languages","outcome":"card","target":"latex"}
+{"id":"Lambda Prolog","name":"Lambda Prolog","scope":"languages","outcome":"card","target":"lambda-prolog"}
+{"id":"Language Of Temporal Ordering Specification","name":"Language Of Temporal Ordering Specification","scope":"languages","outcome":"card","target":"lotos"}
+{"id":"Language for Communicating Systems","name":"Language for Communicating Systems","scope":"languages","outcome":"card","target":"language-for-communicating-systems"}
+{"id":"Language for the On-Line Investigation and Transformation of Abstractions","name":"Language for the On-Line Investigation and Transformation of Abstractions","scope":"languages","outcome":"card","target":"language-for-the-on-line-investigation-and-transformation-of-abstractions"}
+{"id":"Lazy Standard ML","name":"Lazy Standard ML","scope":"languages","outcome":"card","target":"lazy-standard-ml"}
+{"id":"Leda","name":"Leda","scope":"languages","outcome":"card","target":"leda"}
+{"id":"Liana","name":"Liana","scope":"languages","outcome":"card","target":"liana"}
+{"id":"Linda","name":"Linda","scope":"languages","outcome":"card","target":"linda"}
+{"id":"Lisp","name":"Lisp","scope":"languages","outcome":"card","target":"lisp"}
+{"id":"Lispkit","name":"Lispkit","scope":"languages","outcome":"card","target":"lispkit"}
+{"id":"Logic Design Language","name":"Logic Design Language","scope":"languages","outcome":"card","target":"logic-design-language"}
+{"id":"Logic for Computable Functions","name":"Logic for Computable Functions","scope":"languages","outcome":"card","target":"lcf"}
+{"id":"Loglan'82","name":"Loglan'82","scope":"languages","outcome":"card","target":"loglan82"}
+{"id":"Loglan-88","name":"Loglan-88","scope":"languages","outcome":"card","target":"loglan-88"}
+{"id":"Lolli","name":"Lolli","scope":"languages","outcome":"card","target":"lolli"}
+{"id":"Lotus Notes Formula Language","name":"Lotus Notes Formula Language","scope":"languages","outcome":"card","target":"lotus-notes-formula-language"}
+{"id":"LotusScript","name":"LotusScript","scope":"languages","outcome":"card","target":"lotusscript"}
+{"id":"Lucinda","name":"Lucinda","scope":"languages","outcome":"card","target":"lucinda"}
+{"id":"Lucy","name":"Lucy","scope":"languages","outcome":"card","target":"lucy"}
+{"id":"Lund Simula","name":"Lund Simula","scope":"languages","outcome":"card","target":"lund-simula"}
+{"id":"MAINBOL","name":"MAINBOL","scope":"languages","outcome":"card","target":"mainbol"}
+{"id":"MANTIS","name":"MANTIS","scope":"languages","outcome":"card","target":"mantis"}
+{"id":"MATLAB","name":"MATLAB","scope":"languages","outcome":"card","target":"matlab"}
+{"id":"MATRIX MATH","name":"MATRIX MATH","scope":"languages","outcome":"card","target":"matrix-math"}
+{"id":"MC","name":"MC","scope":"languages","outcome":"card","target":"mc"}
+{"id":"MEROON","name":"MEROON","scope":"languages","outcome":"card","target":"meroon"}
+{"id":"META","name":"META","scope":"languages","outcome":"card","target":"meta"}
+{"id":"MIIS","name":"MIIS","scope":"languages","outcome":"card","target":"miis"}
+{"id":"MIMIC","name":"MIMIC","scope":"languages","outcome":"card","target":"mimic"}
+{"id":"MISHAP","name":"MISHAP","scope":"languages","outcome":"card","target":"mishap"}
+{"id":"MIT Scheme","name":"MIT Scheme","scope":"languages","outcome":"card","target":"mit-scheme"}
+{"id":"MITILAC","name":"MITILAC","scope":"languages","outcome":"card","target":"mitilac"}
+{"id":"MJS","name":"MJS","scope":"languages","outcome":"card","target":"mjs"}
+{"id":"ML/I","name":"ML/I","scope":"languages","outcome":"card","target":"ml-i"}
+{"id":"MODEL","name":"MODEL","scope":"languages","outcome":"card","target":"model"}
+{"id":"MODSIM","name":"MODSIM","scope":"languages","outcome":"card","target":"modsim"}
+{"id":"MODUlar LAnguage","name":"MODUlar LAnguage","scope":"languages","outcome":"card","target":"modula"}
+{"id":"MONSTR","name":"MONSTR","scope":"languages","outcome":"card","target":"monstr"}
+{"id":"MPPL","name":"MPPL","scope":"languages","outcome":"card","target":"mppl"}
+{"id":"MSG.84","name":"MSG.84","scope":"languages","outcome":"card","target":"msg-84"}
+{"id":"MU-Prolog","name":"MU-Prolog","scope":"languages","outcome":"card","target":"mu-prolog"}
+{"id":"MUCAL","name":"MUCAL","scope":"languages","outcome":"card","target":"mucal"}
+{"id":"MUMPS","name":"MUMPS","scope":"languages","outcome":"card","target":"mumps"}
+{"id":"MYSTIC","name":"MYSTIC","scope":"languages","outcome":"card","target":"mystic"}
+{"id":"Mac-1","name":"Mac-1","scope":"languages","outcome":"card","target":"mac-1"}
+{"id":"MacLisp","name":"MacLisp","scope":"languages","outcome":"card","target":"maclisp"}
+{"id":"Macintosh Common Lisp","name":"Macintosh Common Lisp","scope":"languages","outcome":"card","target":"macintosh-common-lisp"}
+{"id":"Mad/1","name":"Mad/1","scope":"languages","outcome":"card","target":"mad-1"}
+{"id":"Magma2","name":"Magma2","scope":"languages","outcome":"card","target":"magma2"}
+{"id":"MagmaLISP","name":"MagmaLISP","scope":"languages","outcome":"card","target":"magma-lisp"}
+{"id":"Manchester Autocode","name":"Manchester Autocode","scope":"languages","outcome":"card","target":"manchester-autocode"}
+{"id":"Mandala","name":"Mandala","scope":"languages","outcome":"card","target":"mandala"}
+{"id":"Marlais","name":"Marlais","scope":"languages","outcome":"card","target":"marlais"}
+{"id":"Marseille Prolog","name":"Marseille Prolog","scope":"languages","outcome":"card","target":"marseille-prolog"}
+{"id":"Mary","name":"Mary","scope":"languages","outcome":"card","target":"mary"}
+{"id":"Massey Hope","name":"Massey Hope","scope":"languages","outcome":"card","target":"massey-hope"}
+{"id":"Mathematics in Recognizable Form Automatically Compiled","name":"Mathematics in Recognizable Form Automatically Compiled","scope":"languages","outcome":"card","target":"mirfac"}
+{"id":"Mentat","name":"Mentat","scope":"languages","outcome":"card","target":"mentat"}
+{"id":"Meta Class System","name":"Meta Class System","scope":"languages","outcome":"card","target":"meta-class-system"}
+{"id":"Meta-Crystal","name":"Meta-Crystal","scope":"languages","outcome":"card","target":"meta-crystal"}
+{"id":"Meta-Vlisp","name":"Meta-Vlisp","scope":"languages","outcome":"card","target":"meta-vlisp"}
+{"id":"Methods","name":"Methods","scope":"languages","outcome":"card","target":"methods"}
+{"id":"Michigan Algorithm Decoder","name":"Michigan Algorithm Decoder","scope":"languages","outcome":"card","target":"mad"}
+{"id":"Micro Assembly Language","name":"Micro Assembly Language","scope":"languages","outcome":"card","target":"micro-assembly-language"}
+{"id":"Microsoft Basic","name":"Microsoft Basic","scope":"languages","outcome":"card","target":"microsoft-basic"}
+{"id":"Microwave Hardware Description Language","name":"Microwave Hardware Description Language","scope":"languages","outcome":"card","target":"microwave-hardware-description-language"}
+{"id":"Miranda","name":"Miranda","scope":"languages","outcome":"card","target":"miranda"}
+{"id":"Mode","name":"Mode","scope":"languages","outcome":"card","target":"mode"}
+{"id":"Modula-2","name":"Modula-2","scope":"languages","outcome":"card","target":"modula-2"}
+{"id":"MooZ","name":"MooZ","scope":"languages","outcome":"card","target":"mooz"}
+{"id":"Moxie","name":"Moxie","scope":"languages","outcome":"card","target":"moxie"}
+{"id":"MswLogo","name":"MswLogo","scope":"languages","outcome":"card","target":"mswlogo"}
+{"id":"MuSimp","name":"MuSimp","scope":"languages","outcome":"card","target":"musimp"}
+{"id":"Multi-BinProlog","name":"Multi-BinProlog","scope":"languages","outcome":"card","target":"multi-binprolog"}
+{"id":"MultiLisp","name":"MultiLisp","scope":"languages","outcome":"card","target":"multilisp"}
+{"id":"Muse","name":"Muse","scope":"languages","outcome":"card","target":"muse"}
+{"id":"Music","name":"Music","scope":"languages","outcome":"card","target":"music"}
+{"id":"My Favourite Toy Language","name":"My Favourite Toy Language","scope":"languages","outcome":"card","target":"my-favourite-toy-language"}
+{"id":"NESL","name":"NESL","scope":"languages","outcome":"card","target":"nesl"}
+{"id":"NEW Programming language","name":"NEW Programming language","scope":"languages","outcome":"card","target":"newp"}
+{"id":"NOMAD","name":"NOMAD","scope":"languages","outcome":"card","target":"nomad"}
+{"id":"NYAP","name":"NYAP","scope":"languages","outcome":"card","target":"nyap"}
+{"id":"Nebula","name":"Nebula","scope":"languages","outcome":"card","target":"nebula"}
+{"id":"Node.js","name":"Node.js","scope":"languages","outcome":"card","target":"nodejs"}
+{"id":"O'small","name":"O'small","scope":"languages","outcome":"card","target":"o-small"}
+{"id":"OBJ3","name":"OBJ3","scope":"languages","outcome":"card","target":"obj3"}
+{"id":"OPS5","name":"OPS5","scope":"languages","outcome":"card","target":"ops5"}
+{"id":"OWHY","name":"OWHY","scope":"languages","outcome":"card","target":"owhy"}
+{"id":"Oaklisp","name":"Oaklisp","scope":"languages","outcome":"card","target":"oaklisp"}
+{"id":"Oberon","name":"Oberon","scope":"languages","outcome":"card","target":"oberon"}
+{"id":"Oberon-2","name":"Oberon-2","scope":"languages","outcome":"card","target":"oberon-2"}
+{"id":"Object Constraint Language","name":"Object Constraint Language","scope":"languages","outcome":"card","target":"object-constraint-language"}
+{"id":"Object Lisp","name":"Object Lisp","scope":"languages","outcome":"card","target":"object-lisp"}
+{"id":"Object Pascal","name":"Object Pascal","scope":"languages","outcome":"card","target":"object-pascal"}
+{"id":"Object-Oriented Fortran","name":"Object-Oriented Fortran","scope":"languages","outcome":"card","target":"oof"}
+{"id":"Object-Oriented Turing","name":"Object-Oriented Turing","scope":"languages","outcome":"card","target":"object-oriented-turing"}
+{"id":"Object-oriented SQL","name":"Object-oriented SQL","scope":"languages","outcome":"card","target":"osql"}
+{"id":"Objectionable-C","name":"Objectionable-C","scope":"languages","outcome":"card","target":"objectionable-c"}
+{"id":"Objective C","name":"Objective C","scope":"languages","outcome":"card","target":"objective-c"}
+{"id":"Objective CAML","name":"Objective CAML","scope":"languages","outcome":"card","target":"objective-caml"}
+{"id":"Objective Modula-2","name":"Objective Modula-2","scope":"languages","outcome":"card","target":"objective-modula-2"}
+{"id":"Oblog","name":"Oblog","scope":"languages","outcome":"card","target":"oblog"}
+{"id":"Oc","name":"Oc","scope":"languages","outcome":"card","target":"oc"}
+{"id":"Octave","name":"Octave","scope":"languages","outcome":"card","target":"octave"}
+{"id":"Office By Example","name":"Office By Example","scope":"languages","outcome":"card","target":"office-by-example"}
+{"id":"Official Production System","name":"Official Production System","scope":"languages","outcome":"card","target":"official-production-system"}
+{"id":"Ontic","name":"Ontic","scope":"languages","outcome":"card","target":"ontic"}
+{"id":"Operator Control Language","name":"Operator Control Language","scope":"languages","outcome":"card","target":"operator-control-language"}
+{"id":"Orient84/K","name":"Orient84/K","scope":"languages","outcome":"card","target":"orient84-k"}
+{"id":"Ox","name":"Ox","scope":"languages","outcome":"card","target":"ox"}
+{"id":"P-Prolog","name":"P-Prolog","scope":"languages","outcome":"card","target":"p-prolog"}
+{"id":"PARSEC","name":"PARSEC","scope":"languages","outcome":"card","target":"parsec"}
+{"id":"PC-TILES","name":"PC-TILES","scope":"languages","outcome":"card","target":"pc-tiles"}
+{"id":"PDIL","name":"PDIL","scope":"languages","outcome":"card","target":"pdil"}
+{"id":"PDL2","name":"PDL2","scope":"languages","outcome":"card","target":"pdl2"}
+{"id":"PDP Assembly Language","name":"PDP Assembly Language","scope":"languages","outcome":"card","target":"pdp-assembly-language"}
+{"id":"PINBOL","name":"PINBOL","scope":"languages","outcome":"card","target":"pinbol"}
+{"id":"PL-11","name":"PL-11","scope":"languages","outcome":"card","target":"pl-11"}
+{"id":"PL-6","name":"PL-6","scope":"languages","outcome":"card","target":"pl-6"}
+{"id":"PL/I","name":"PL/I","scope":"languages","outcome":"card","target":"pl-i"}
+{"id":"PL/I-FORMAC","name":"PL/I-FORMAC","scope":"languages","outcome":"card","target":"pl-i-formac"}
+{"id":"PLAN","name":"PLAN","scope":"languages","outcome":"card","target":"plan"}
+{"id":"PLAY","name":"PLAY","scope":"languages","outcome":"card","target":"play"}
+{"id":"POLYGOTH","name":"POLYGOTH","scope":"languages","outcome":"card","target":"polygoth"}
+{"id":"PP96","name":"PP96","scope":"languages","outcome":"card","target":"pp96"}
+{"id":"PPLambda","name":"PPLambda","scope":"languages","outcome":"card","target":"pplambda"}
+{"id":"PRINT","name":"PRINT","scope":"languages","outcome":"card","target":"print"}
+{"id":"PROC","name":"PROC","scope":"languages","outcome":"card","target":"proc"}
+{"id":"PROCOL","name":"PROCOL","scope":"languages","outcome":"card","target":"procol"}
+{"id":"PROGRES","name":"PROGRES","scope":"languages","outcome":"card","target":"progres"}
+{"id":"PROgrammed Graph REwriting Systems","name":"PROgrammed Graph REwriting Systems","scope":"languages","outcome":"card","target":"programmed-graph-rewriting-systems"}
+{"id":"PROgrammer's Microapplication Language","name":"PROgrammer's Microapplication Language","scope":"languages","outcome":"card","target":"promal"}
+{"id":"PS 440","name":"PS 440","scope":"languages","outcome":"card","target":"ps-440"}
+{"id":"PUBlishing","name":"PUBlishing","scope":"languages","outcome":"card","target":"publishing"}
+{"id":"PaiLisp","name":"PaiLisp","scope":"languages","outcome":"card","target":"pailisp"}
+{"id":"Pam","name":"Pam","scope":"languages","outcome":"card","target":"pam"}
+{"id":"Pandora","name":"Pandora","scope":"languages","outcome":"card","target":"pandora"}
+{"id":"Parallaxis","name":"Parallaxis","scope":"languages","outcome":"card","target":"parallaxis"}
+{"id":"Parallel Fortran","name":"Parallel Fortran","scope":"languages","outcome":"card","target":"pfortran"}
+{"id":"Parallel Haskell","name":"Parallel Haskell","scope":"languages","outcome":"card","target":"ph"}
+{"id":"Parallel Pascal","name":"Parallel Pascal","scope":"languages","outcome":"card","target":"parallel-pascal"}
+{"id":"Pascal","name":"Pascal","scope":"languages","outcome":"card","target":"pascal"}
+{"id":"Pascal Plus","name":"Pascal Plus","scope":"languages","outcome":"card","target":"pascal-plus"}
+{"id":"Pascal-P","name":"Pascal-P","scope":"languages","outcome":"card","target":"pascal-p"}
+{"id":"Pepper","name":"Pepper","scope":"languages","outcome":"card","target":"pepper"}
+{"id":"Perl","name":"Perl","scope":"languages","outcome":"card","target":"perl"}
+{"id":"Perl5","name":"Perl5","scope":"languages","outcome":"card","target":"perl5"}
+{"id":"Persistent Functional Language","name":"Persistent Functional Language","scope":"languages","outcome":"card","target":"persistent-functional-language"}
+{"id":"Personalized Array Translator","name":"Personalized Array Translator","scope":"languages","outcome":"card","target":"personalized-array-translator"}
+{"id":"Pla","name":"Pla","scope":"languages","outcome":"card","target":"pla"}
+{"id":"Plankalkül","name":"Plankalkül","scope":"languages","outcome":"card","target":"plankalk-l"}
+{"id":"Polka","name":"Polka","scope":"languages","outcome":"card","target":"polka"}
+{"id":"Poly/ML","name":"Poly/ML","scope":"languages","outcome":"card","target":"poly-ml"}
+{"id":"Pop-11","name":"Pop-11","scope":"languages","outcome":"card","target":"pop-11"}
+{"id":"PopTalk","name":"PopTalk","scope":"languages","outcome":"card","target":"poptalk"}
+{"id":"Portable Forth Environment","name":"Portable Forth Environment","scope":"languages","outcome":"card","target":"portable-forth-environment"}
+{"id":"Portable Standard Lisp","name":"Portable Standard Lisp","scope":"languages","outcome":"card","target":"portable-standard-lisp"}
+{"id":"PostScript","name":"PostScript","scope":"languages","outcome":"card","target":"postscript"}
+{"id":"PowerFuL","name":"PowerFuL","scope":"languages","outcome":"card","target":"powerful"}
+{"id":"Problem Statement Language/Problem Statement Analyser","name":"Problem Statement Language/Problem Statement Analyser","scope":"languages","outcome":"card","target":"problem-statement-language-problem-statement-analyser"}
+{"id":"Procedural Language/SQL","name":"Procedural Language/SQL","scope":"languages","outcome":"card","target":"pl-sql"}
+{"id":"Process Design Language 2","name":"Process Design Language 2","scope":"languages","outcome":"card","target":"process-design-language-2"}
+{"id":"Process and Experiment Automation Real-Time Language","name":"Process and Experiment Automation Real-Time Language","scope":"languages","outcome":"card","target":"process-and-experiment-automation-real-time-language"}
+{"id":"Processor System Modeling Language","name":"Processor System Modeling Language","scope":"languages","outcome":"card","target":"processor-system-modeling-language"}
+{"id":"Programming Language/Cornell","name":"Programming Language/Cornell","scope":"languages","outcome":"card","target":"pl-c"}
+{"id":"Programming Language/Systems","name":"Programming Language/Systems","scope":"languages","outcome":"card","target":"pl-s"}
+{"id":"Prograph","name":"Prograph","scope":"languages","outcome":"card","target":"prograph"}
+{"id":"Prolog/Mali","name":"Prolog/Mali","scope":"languages","outcome":"card","target":"prolog-mali"}
+{"id":"Prometheus","name":"Prometheus","scope":"languages","outcome":"card","target":"prometheus"}
+{"id":"Pronet","name":"Pronet","scope":"languages","outcome":"card","target":"pronet"}
+{"id":"Proposition of a Language Useable for Structured Specifications","name":"Proposition of a Language Useable for Structured Specifications","scope":"languages","outcome":"card","target":"proposition-of-a-language-useable-for-structured-specifications"}
+{"id":"Q","name":"Q","scope":"languages","outcome":"card","target":"q-equational-programming-language"}
+{"id":"QUICK","name":"QUICK","scope":"languages","outcome":"card","target":"quick"}
+{"id":"Qbasic","name":"Qbasic","scope":"languages","outcome":"card","target":"qbasic"}
+{"id":"Qlambda","name":"Qlambda","scope":"languages","outcome":"card","target":"qlambda"}
+{"id":"Query By Example","name":"Query By Example","scope":"languages","outcome":"card","target":"query-by-example"}
+{"id":"Quintus Prolog","name":"Quintus Prolog","scope":"languages","outcome":"card","target":"quintus-prolog"}
+{"id":"RAISE Specification Language","name":"RAISE Specification Language","scope":"languages","outcome":"card","target":"rsl"}
+{"id":"RASP","name":"RASP","scope":"languages","outcome":"card","target":"rasp"}
+{"id":"RATFIV","name":"RATFIV","scope":"languages","outcome":"card","target":"ratfiv"}
+{"id":"RATional Fortran","name":"RATional Fortran","scope":"languages","outcome":"card","target":"ratfor"}
+{"id":"RAWOOP-SNAP","name":"RAWOOP-SNAP","scope":"languages","outcome":"card","target":"rawoop-snap"}
+{"id":"REDUCE","name":"REDUCE","scope":"languages","outcome":"card","target":"reduce"}
+{"id":"RTL/1","name":"RTL/1","scope":"languages","outcome":"card","target":"rtl-1"}
+{"id":"Rapidly Extensible Language, English","name":"Rapidly Extensible Language, English","scope":"languages","outcome":"card","target":"rel-english"}
+{"id":"Rapidwrite","name":"Rapidwrite","scope":"languages","outcome":"card","target":"rapidwrite"}
+{"id":"Rationalized C","name":"Rationalized C","scope":"languages","outcome":"card","target":"rationalized-c"}
+{"id":"Real-Time Common Design Language","name":"Real-Time Common Design Language","scope":"languages","outcome":"card","target":"rt-cdl"}
+{"id":"Real-Time Pascal","name":"Real-Time Pascal","scope":"languages","outcome":"card","target":"real-time-pascal"}
+{"id":"Recursive Functional Algorithmic Language","name":"Recursive Functional Algorithmic Language","scope":"languages","outcome":"card","target":"refal"}
+{"id":"Redcode","name":"Redcode","scope":"languages","outcome":"card","target":"redcode"}
+{"id":"RefLisp","name":"RefLisp","scope":"languages","outcome":"card","target":"reflisp"}
+{"id":"Representation Language Language","name":"Representation Language Language","scope":"languages","outcome":"card","target":"representation-language-language"}
+{"id":"Restricted EPL","name":"Restricted EPL","scope":"languages","outcome":"card","target":"restricted-epl"}
+{"id":"Restructured EXtended eXecutor","name":"Restructured EXtended eXecutor","scope":"languages","outcome":"card","target":"rexx"}
+{"id":"Retrieve","name":"Retrieve","scope":"languages","outcome":"card","target":"retrieve"}
+{"id":"Rocky Mountain Basic","name":"Rocky Mountain Basic","scope":"languages","outcome":"card","target":"rocky-mountain-basic"}
+{"id":"Rosette","name":"Rosette","scope":"languages","outcome":"card","target":"rosette"}
+{"id":"Russell","name":"Russell","scope":"languages","outcome":"card","target":"russell"}
+{"id":"S","name":"S","scope":"languages","outcome":"card","target":"s-esolang"}
+{"id":"S-Lang","name":"S-Lang","scope":"languages","outcome":"card","target":"s-lang"}
+{"id":"SCALLOP","name":"SCALLOP","scope":"languages","outcome":"card","target":"scallop"}
+{"id":"SEESAW","name":"SEESAW","scope":"languages","outcome":"card","target":"seesaw"}
+{"id":"SHADOW","name":"SHADOW","scope":"languages","outcome":"card","target":"shadow"}
+{"id":"SHELL","name":"SHELL","scope":"languages","outcome":"card","target":"shell"}
+{"id":"SIGNAL","name":"SIGNAL","scope":"languages","outcome":"card","target":"signal"}
+{"id":"SIMULA","name":"SIMULA","scope":"languages","outcome":"card","target":"simula"}
+{"id":"SIMULA 67","name":"SIMULA 67","scope":"languages","outcome":"card","target":"simula-67"}
+{"id":"SIMULA I","name":"SIMULA I","scope":"languages","outcome":"card","target":"simula-i"}
+{"id":"SIMulation ANalysis","name":"SIMulation ANalysis","scope":"languages","outcome":"card","target":"siman"}
+{"id":"SISAL","name":"SISAL","scope":"languages","outcome":"card","target":"sisal"}
+{"id":"SLLIC","name":"SLLIC","scope":"languages","outcome":"card","target":"sllic"}
+{"id":"SNOBOL4","name":"SNOBOL4","scope":"languages","outcome":"card","target":"snobol4"}
+{"id":"SP/k","name":"SP/k","scope":"languages","outcome":"card","target":"sp-k"}
+{"id":"SPARK","name":"SPARK","scope":"languages","outcome":"card","target":"spark-pl"}
+{"id":"SPARK Annotation Language","name":"SPARK Annotation Language","scope":"languages","outcome":"card","target":"spark-annotation-language"}
+{"id":"SPARKS","name":"SPARKS","scope":"languages","outcome":"card","target":"sparks"}
+{"id":"SPECIAL","name":"SPECIAL","scope":"languages","outcome":"card","target":"special"}
+{"id":"SPLX","name":"SPLX","scope":"languages","outcome":"card","target":"splx"}
+{"id":"SQL","name":"SQL","scope":"languages","outcome":"card","target":"sql"}
+{"id":"SQL2","name":"SQL2","scope":"languages","outcome":"card","target":"sql2"}
+{"id":"SQL3","name":"SQL3","scope":"languages","outcome":"card","target":"sql3"}
+{"id":"SQR","name":"SQR","scope":"languages","outcome":"card","target":"sqr"}
+{"id":"SR","name":"SR","scope":"languages","outcome":"card","target":"sr"}
+{"id":"STAB","name":"STAB","scope":"languages","outcome":"card","target":"stab"}
+{"id":"STAPLE","name":"STAPLE","scope":"languages","outcome":"card","target":"staple"}
+{"id":"STSC APL","name":"STSC APL","scope":"languages","outcome":"card","target":"stsc-apl"}
+{"id":"STring Oriented Interactive Compiler","name":"STring Oriented Interactive Compiler","scope":"languages","outcome":"card","target":"string-oriented-interactive-compiler"}
+{"id":"SYMBOLIC ASSEMBLY","name":"SYMBOLIC ASSEMBLY","scope":"languages","outcome":"card","target":"symbolic-assembly"}
+{"id":"SYMPL","name":"SYMPL","scope":"languages","outcome":"card","target":"sympl"}
+{"id":"Sather","name":"Sather","scope":"languages","outcome":"card","target":"sather"}
+{"id":"Sather-K","name":"Sather-K","scope":"languages","outcome":"card","target":"sather-k"}
+{"id":"Scratchpad I","name":"Scratchpad I","scope":"languages","outcome":"card","target":"scratchpad-i"}
+{"id":"Screenwrite","name":"Screenwrite","scope":"languages","outcome":"card","target":"screenwrite"}
+{"id":"Self","name":"Self","scope":"languages","outcome":"card","target":"self"}
+{"id":"Shared Time Repair of Big Electronic Systems","name":"Shared Time Repair of Big Electronic Systems","scope":"languages","outcome":"card","target":"shared-time-repair-of-big-electronic-systems"}
+{"id":"Sharp APL","name":"Sharp APL","scope":"languages","outcome":"card","target":"sharp-apl"}
+{"id":"Simone","name":"Simone","scope":"languages","outcome":"card","target":"simone"}
+{"id":"Simple Actor Language","name":"Simple Actor Language","scope":"languages","outcome":"card","target":"simple-actor-language"}
+{"id":"Simulation Language for Alternative Modeling","name":"Simulation Language for Alternative Modeling","scope":"languages","outcome":"card","target":"simulation-language-for-alternative-modeling"}
+{"id":"Simulation Oriented Language","name":"Simulation Oriented Language","scope":"languages","outcome":"card","target":"simulation-oriented-language"}
+{"id":"Skim","name":"Skim","scope":"languages","outcome":"card","target":"skim"}
+{"id":"SmallWorld","name":"SmallWorld","scope":"languages","outcome":"card","target":"smallworld"}
+{"id":"Smalltalk","name":"Smalltalk","scope":"languages","outcome":"card","target":"smalltalk"}
+{"id":"Smalltalk-80","name":"Smalltalk-80","scope":"languages","outcome":"card","target":"smalltalk-80"}
+{"id":"Speedcoding","name":"Speedcoding","scope":"languages","outcome":"card","target":"speedcoding"}
+{"id":"Speedcoding 3","name":"Speedcoding 3","scope":"languages","outcome":"card","target":"speedcoding-3"}
+{"id":"Spice Lisp","name":"Spice Lisp","scope":"languages","outcome":"card","target":"spice-lisp"}
+{"id":"Spool","name":"Spool","scope":"languages","outcome":"card","target":"spool"}
+{"id":"Square","name":"Square","scope":"languages","outcome":"card","target":"square"}
+{"id":"St Andrews Static Language","name":"St Andrews Static Language","scope":"languages","outcome":"card","target":"st-andrews-static-language"}
+{"id":"Standard Generalized Markup Language","name":"Standard Generalized Markup Language","scope":"languages","outcome":"card","target":"sgml"}
+{"id":"Standard ML","name":"Standard ML","scope":"languages","outcome":"card","target":"standard-ml"}
+{"id":"Stanford Artificial Intelligence Language","name":"Stanford Artificial Intelligence Language","scope":"languages","outcome":"card","target":"stanford-artificial-intelligence-language"}
+{"id":"Staple","name":"Staple","scope":"languages","outcome":"card","target":"staple"}
+{"id":"Statistical Analysis System","name":"Statistical Analysis System","scope":"languages","outcome":"card","target":"statistical-analysis-system"}
+{"id":"Sticks&Stones","name":"Sticks&Stones","scope":"languages","outcome":"card","target":"sticks-stones"}
+{"id":"String Oriented Symbolic Language","name":"String Oriented Symbolic Language","scope":"languages","outcome":"card","target":"snobol"}
+{"id":"String PRocessING language","name":"String PRocessING language","scope":"languages","outcome":"card","target":"string-processing-language"}
+{"id":"Super Pascal","name":"Super Pascal","scope":"languages","outcome":"card","target":"superpascal"}
+{"id":"Symbolic Assembler Program","name":"Symbolic Assembler Program","scope":"languages","outcome":"card","target":"symbolic-assembler-program"}
+{"id":"Symbolic Optimal Assembly Program","name":"Symbolic Optimal Assembly Program","scope":"languages","outcome":"card","target":"soaplang"}
+{"id":"Symbolic Optimum DEUCE Assembly Program","name":"Symbolic Optimum DEUCE Assembly Program","scope":"languages","outcome":"card","target":"soda"}
+{"id":"Synchronized Multimedia Integration Language","name":"Synchronized Multimedia Integration Language","scope":"languages","outcome":"card","target":"synchronized-multimedia-integration-language"}
+{"id":"Syntax/Semantic Language","name":"Syntax/Semantic Language","scope":"languages","outcome":"card","target":"s-sl"}
+{"id":"System Control Language","name":"System Control Language","scope":"languages","outcome":"card","target":"system-control-language"}
+{"id":"TABLOG","name":"TABLOG","scope":"languages","outcome":"card","target":"tablog"}
+{"id":"TABSOL","name":"TABSOL","scope":"languages","outcome":"card","target":"tabsol"}
+{"id":"TACPOL","name":"TACPOL","scope":"languages","outcome":"card","target":"tacpol-programming-language"}
+{"id":"TALL","name":"TALL","scope":"languages","outcome":"card","target":"tall"}
+{"id":"TDF","name":"TDF","scope":"languages","outcome":"card","target":"tdf"}
+{"id":"TELCOMP","name":"TELCOMP","scope":"languages","outcome":"card","target":"telcomp"}
+{"id":"TFDL","name":"TFDL","scope":"languages","outcome":"card","target":"tfdl"}
+{"id":"TL/I","name":"TL/I","scope":"languages","outcome":"card","target":"tl-i"}
+{"id":"TRANS-USE","name":"TRANS-USE","scope":"languages","outcome":"card","target":"trans-use"}
+{"id":"TRANSCODE","name":"TRANSCODE","scope":"languages","outcome":"card","target":"transcode"}
+{"id":"TRANSIT","name":"TRANSIT","scope":"languages","outcome":"card","target":"transit"}
+{"id":"TYPOL","name":"TYPOL","scope":"languages","outcome":"card","target":"typol"}
+{"id":"TeX-78","name":"TeX-78","scope":"languages","outcome":"card","target":"tex-78"}
+{"id":"TeX-82","name":"TeX-82","scope":"languages","outcome":"card","target":"tex-82"}
+{"id":"Ten15","name":"Ten15","scope":"languages","outcome":"card","target":"ten15"}
+{"id":"TenDRA","name":"TenDRA","scope":"languages","outcome":"card","target":"tendra"}
+{"id":"Text Processing Utility","name":"Text Processing Utility","scope":"languages","outcome":"card","target":"text-processing-utility"}
+{"id":"Text Reckoning And Compiling","name":"Text Reckoning And Compiling","scope":"languages","outcome":"card","target":"trac"}
+{"id":"Theseus","name":"Theseus","scope":"languages","outcome":"card","target":"theseus"}
+{"id":"Thomas","name":"Thomas","scope":"languages","outcome":"card","target":"thomas"}
+{"id":"Tiny BASIC","name":"Tiny BASIC","scope":"languages","outcome":"card","target":"tiny-basic"}
+{"id":"Tool Command Language","name":"Tool Command Language","scope":"languages","outcome":"card","target":"tcl-language"}
+{"id":"Toronto Euclid","name":"Toronto Euclid","scope":"languages","outcome":"card","target":"toronto-euclid"}
+{"id":"Toyohashi University Parallel Lisp Environment","name":"Toyohashi University Parallel Lisp Environment","scope":"languages","outcome":"card","target":"toyohashi-university-parallel-lisp-environment"}
+{"id":"TrafoLa","name":"TrafoLa","scope":"languages","outcome":"card","target":"trafola"}
+{"id":"Transaction Application Language","name":"Transaction Application Language","scope":"languages","outcome":"card","target":"tal"}
+{"id":"Trilogy","name":"Trilogy","scope":"languages","outcome":"card","target":"trilogy"}
+{"id":"True BASIC","name":"True BASIC","scope":"languages","outcome":"card","target":"true-basic"}
+{"id":"Turbo C++","name":"Turbo C++","scope":"languages","outcome":"card","target":"turbo-cpp"}
+{"id":"Turbo Pascal","name":"Turbo Pascal","scope":"languages","outcome":"card","target":"turbo-pascal"}
+{"id":"Turingol","name":"Turingol","scope":"languages","outcome":"card","target":"turingol"}
+{"id":"TypedProlog","name":"TypedProlog","scope":"languages","outcome":"card","target":"typedprolog"}
+{"id":"UFO","name":"UFO","scope":"languages","outcome":"card","target":"ufo"}
+{"id":"UGLIAC","name":"UGLIAC","scope":"languages","outcome":"card","target":"ugliac"}
+{"id":"UNIQUE","name":"UNIQUE","scope":"languages","outcome":"card","target":"unique"}
+{"id":"USE","name":"USE","scope":"languages","outcome":"card","target":"use"}
+{"id":"UTOPIST","name":"UTOPIST","scope":"languages","outcome":"card","target":"utopist"}
+{"id":"Unified Modeling Language","name":"Unified Modeling Language","scope":"languages","outcome":"card","target":"unified-modeling-language"}
+{"id":"User Interface Language","name":"User Interface Language","scope":"languages","outcome":"card","target":"user-interface-language"}
+{"id":"VECTRAN","name":"VECTRAN","scope":"languages","outcome":"card","target":"vectran"}
+{"id":"Vector C","name":"Vector C","scope":"languages","outcome":"card","target":"vector-c"}
+{"id":"Verilog","name":"Verilog","scope":"languages","outcome":"card","target":"verilog"}
+{"id":"Vincennes LISP","name":"Vincennes LISP","scope":"languages","outcome":"card","target":"vincennes-lisp"}
+{"id":"Virtual Reality Modeling Language","name":"Virtual Reality Modeling Language","scope":"languages","outcome":"card","target":"vrml"}
+{"id":"Visual BASIC","name":"Visual BASIC","scope":"languages","outcome":"card","target":"visual-basic"}
+{"id":"Visual BASIC Script","name":"Visual BASIC Script","scope":"languages","outcome":"card","target":"vbscript"}
+{"id":"VisualWorks","name":"VisualWorks","scope":"languages","outcome":"card","target":"visualworks"}
+{"id":"WAVE","name":"WAVE","scope":"languages","outcome":"card","target":"wave"}
+{"id":"WEB - language","name":"WEB - language","scope":"languages","outcome":"card","target":"web-language"}
+{"id":"WPL+","name":"WPL+","scope":"languages","outcome":"card","target":"wplplus"}
+{"id":"WRITEACOURSE","name":"WRITEACOURSE","scope":"languages","outcome":"card","target":"writeacourse"}
+{"id":"Which Stands For Nothing","name":"Which Stands For Nothing","scope":"languages","outcome":"card","target":"wsfn-programming-language"}
+{"id":"WonderPop","name":"WonderPop","scope":"languages","outcome":"card","target":"wonderpop"}
+{"id":"X-1","name":"X-1","scope":"languages","outcome":"card","target":"x-1"}
+{"id":"XDL","name":"XDL","scope":"languages","outcome":"card","target":"xdl"}
+{"id":"XML User-Interface Language","name":"XML User-Interface Language","scope":"languages","outcome":"card","target":"xml-user-interface-language"}
+{"id":"XPL","name":"XPL","scope":"languages","outcome":"card","target":"xpl"}
+{"id":"XPOP","name":"XPOP","scope":"languages","outcome":"card","target":"xpop"}
+{"id":"XScheme","name":"XScheme","scope":"languages","outcome":"card","target":"xscheme"}
+{"id":"Xilinx Netlist Format","name":"Xilinx Netlist Format","scope":"languages","outcome":"card","target":"xilinx-netlist-format"}
+{"id":"YAML Ain't Markup Language","name":"YAML Ain't Markup Language","scope":"languages","outcome":"node","target":"yaml"}
+{"id":"Yale Haskell","name":"Yale Haskell","scope":"languages","outcome":"card","target":"yale-haskell"}
+{"id":"Yerk","name":"Yerk","scope":"languages","outcome":"card","target":"yerk"}
+{"id":"Yet Another Compiler Compiler","name":"Yet Another Compiler Compiler","scope":"languages","outcome":"card","target":"yacc"}
+{"id":"Yet Another Scheme Object System","name":"Yet Another Scheme Object System","scope":"languages","outcome":"card","target":"yet-another-scheme-object-system"}
+{"id":"Z","name":"Z","scope":"languages","outcome":"card","target":"z-esolang"}
+{"id":"Z++","name":"Z++","scope":"languages","outcome":"card","target":"zpp"}
+{"id":"ZERO","name":"ZERO","scope":"languages","outcome":"card","target":"zero"}
+{"id":"ZOPL","name":"ZOPL","scope":"languages","outcome":"card","target":"zopl"}
+{"id":"ZUSE","name":"ZUSE","scope":"languages","outcome":"card","target":"zuse"}
+{"id":"ZetaLisp","name":"ZetaLisp","scope":"languages","outcome":"card","target":"zetalisp"}
+{"id":"Zipcode","name":"Zipcode","scope":"languages","outcome":"card","target":"zipcode"}
+{"id":"Zuse","name":"Zuse","scope":"languages","outcome":"card","target":"zuse-language"}
+{"id":"[incr Tcl]","name":"[incr Tcl]","scope":"languages","outcome":"card","target":"incr-tcl-language"}
+{"id":"a1","name":"a1","scope":"languages","outcome":"card","target":"a1"}
+{"id":"abstract syntax","name":"abstract syntax","scope":"languages","outcome":"node","target":"abstract-syntax-tree"}
+{"id":"assembly language","name":"assembly language","scope":"languages","outcome":"card","target":"assembly-language"}
+{"id":"bawk","name":"bawk","scope":"languages","outcome":"card","target":"bawk"}
+{"id":"bc","name":"bc","scope":"languages","outcome":"card","target":"bc"}
+{"id":"bon","name":"bon","scope":"languages","outcome":"card","target":"bon-programming-language"}
+{"id":"d-Prolog","name":"d-Prolog","scope":"languages","outcome":"card","target":"d-prolog"}
+{"id":"dBASE","name":"dBASE","scope":"languages","outcome":"card","target":"dbase"}
+{"id":"eXperimental LISP","name":"eXperimental LISP","scope":"languages","outcome":"card","target":"xlisp"}
+{"id":"emTeX","name":"emTeX","scope":"languages","outcome":"card","target":"emtex"}
+{"id":"esoteric programming language","name":"esoteric programming language","scope":"languages","outcome":"card","target":"esolang"}
+{"id":"expect","name":"expect","scope":"languages","outcome":"card","target":"expect"}
+{"id":"gawk","name":"gawk","scope":"languages","outcome":"card","target":"gnu-awk"}
+{"id":"grammar","name":"grammar","scope":"languages","outcome":"node","target":"context-free-grammars"}
+{"id":"imperative language","name":"imperative language","scope":"languages","outcome":"card","target":"imperative"}
+{"id":"kernel","name":"kernel","scope":"languages","outcome":"card","target":"kernel"}
+{"id":"lexical analyser","name":"lexical analyser","scope":"languages","outcome":"node","target":"tokens-and-lexing"}
+{"id":"logic programming","name":"logic programming","scope":"languages","outcome":"node","target":"logic-programming"}
+{"id":"mawk","name":"mawk","scope":"languages","outcome":"card","target":"mawk"}
+{"id":"multiC","name":"multiC","scope":"languages","outcome":"card","target":"multic"}
+{"id":"nML","name":"nML","scope":"languages","outcome":"card","target":"nml"}
+{"id":"nroff","name":"nroff","scope":"languages","outcome":"card","target":"nroff"}
+{"id":"occam","name":"occam","scope":"languages","outcome":"card","target":"occam"}
+{"id":"occam 2","name":"occam 2","scope":"languages","outcome":"card","target":"occam-2"}
+{"id":"pForth","name":"pForth","scope":"languages","outcome":"card","target":"pforth"}
+{"id":"pSather","name":"pSather","scope":"languages","outcome":"card","target":"psather"}
+{"id":"parser","name":"parser","scope":"languages","outcome":"card","target":"parser"}
+{"id":"pm2","name":"pm2","scope":"languages","outcome":"card","target":"pm2"}
+{"id":"polymorphic lambda-calculus","name":"polymorphic lambda-calculus","scope":"languages","outcome":"card","target":"systemf"}
+{"id":"postfix notation","name":"postfix notation","scope":"languages","outcome":"card","target":"reverse-polish-notation"}
+{"id":"script","name":"script","scope":"languages","outcome":"node","target":"computer-program"}
+{"id":"source code","name":"source code","scope":"languages","outcome":"node","target":"computer-program"}
+{"id":"syntax tree","name":"syntax tree","scope":"languages","outcome":"node","target":"abstract-syntax-tree"}
+{"id":"tag","name":"tag","scope":"languages","outcome":"card","target":"tag"}
+{"id":"µCurse","name":"µCurse","scope":"languages","outcome":"card","target":"curse-language"}
