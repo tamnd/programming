@@ -234,8 +234,8 @@ items:
   - part: concepts
     group: "syntax-and-semantics"
     name: "BNF and EBNF"
-    target: "bnf-and-ebnf"
-    status: "planned"
+    target: "context-free-grammars"
+    status: "node"
     reason: "It is in CS2023 FPL-Translation (\"BNF and extended BNF representation of context-free grammar\"). It is in the canon books: SICP index (\"Backus, John\")."
   - part: concepts
     group: "syntax-and-semantics"
@@ -282,8 +282,8 @@ items:
   - part: concepts
     group: "syntax-and-semantics"
     name: "Scope"
-    target: "scope"
-    status: "planned"
+    target: "lexical-scope"
+    status: "node"
     reason: "It is in CS2023 FPL-Functional (\"Variable binding and scope rules. (See also: ...\"). It is in 6 of the 7 language references: Go spec (\"Declarations and scope\"); Rust Reference (\"Scopes\"); Java Language Specification (\"Scope of a Declaration\"); and 3 more. It is in the canon books: SICP index (\"lexical scoping and\"); HtDP contents (\"Intermezzo 3: Scope and Abstraction\")."
   - part: concepts
     group: "syntax-and-semantics"
@@ -318,8 +318,8 @@ items:
   - part: concepts
     group: "syntax-and-semantics"
     name: "Axiomatic semantics"
-    target: "axiomatic-semantics"
-    status: "planned"
+    target: "program-semantics"
+    status: "node"
     reason: "It is in CS2023 FPL-Abstraction (\"Types of semantics: operational, axiomatic, denotational, ...\"). It is in the canon books: SICP index (\"axiomatic definition of\")."
   - part: concepts
     group: "syntax-and-semantics"
@@ -414,8 +414,8 @@ items:
   - part: concepts
     group: "types"
     name: "Pointer type"
-    target: "pointer-type"
-    status: "planned"
+    target: "pointers-and-references"
+    status: "node"
     reason: "It is in CS2023 FPL-Systems (\"aliasing (sharing using pointers), indexed sequence and ...\"). It is in 4 of the 7 language references: Go spec (\"Pointer types\"); Rust Reference (\"Pointer types\"); C++ working draft (\"Pointer literals\"); and 1 more. It is in the canon books: SICP index (\"as equality of pointers , [2]\"); The Rust Programming Language contents (\"Smart Pointers\")."
   - part: concepts
     group: "types"
@@ -444,8 +444,8 @@ items:
   - part: concepts
     group: "types"
     name: "Type class and trait"
-    target: "type-class-and-trait"
-    status: "planned"
+    target: "interfaces"
+    status: "node"
     reason: "It is in CS2023 FPL-OOP (\"Abstract base classes, traits and mixins\"). It is in the canon books: The Rust Programming Language contents (\"Generic Types, Traits, and Lifetimes\")."
   - part: concepts
     group: "data-and-values"
