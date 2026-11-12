@@ -14822,7 +14822,7 @@ items:
     group: "fowler-catalog"
     name: "Combine Functions into Transform"
     target: "combine-functions-into-transform"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15170,7 +15170,7 @@ items:
     group: "fowler-catalog"
     name: "Split Phase"
     target: "split-phase"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
