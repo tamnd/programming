@@ -1,0 +1,24 @@
+typescript:
+  status: library
+  reason: Peggy, nearley, Chevrotain and ANTLR generate typed parsers from grammars.
+kotlin:
+  status: library
+  reason: ANTLR, better-parse and the Kotlin target of other generators build parsers from grammars; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: scripts split text with words, patterns and external tools such as awk, and have no notation for grammars.
+powershell:
+  status: idiom
+  reason: scripts use .NET regular expressions, whose balancing groups match nested structure; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: queries do not define grammars; each database parses SQL with its own grammar.
+regex:
+  status: native
+  reason: a regular expression is a grammar for a regular language, and PCRE and .NET add recursion or balancing groups for nested text.
+html:
+  status: n/a
+  reason: markup has a grammar but cannot define one.
+css:
+  status: n/a
+  reason: the value definition syntax of the CSS specifications is a grammar notation, but style sheets cannot use it.
