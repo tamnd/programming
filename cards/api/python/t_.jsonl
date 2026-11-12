@@ -1,0 +1,2 @@
+{"tag":"NEW-T_NONE","kind":"api","owner":"python","path":"T_NONE","entity":"C macro","module":"C API","doc":{"url":"https://docs.python.org/3/c-api/structures.html#c.T_NONE"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
+{"tag":"NEW-T_OBJECT","kind":"api","owner":"python","path":"T_OBJECT","entity":"C macro","module":"C API","doc":{"url":"https://docs.python.org/3/c-api/structures.html#c.T_OBJECT"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
