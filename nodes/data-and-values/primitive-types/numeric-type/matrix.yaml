@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the types number and bigint, which are the two numeric types of JavaScript, and the compiler rejects arithmetic that mixes them. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has Byte, Short, Int and Long, the unsigned types UInt and ULong, and Float and Double. It does not widen a number to another type in an assignment, so the program calls a conversion such as toLong(). No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash arithmetic in $(( )) works on signed integers of a fixed width, and integer division truncates. Bash has no floating-point arithmetic, so scripts use bc or awk for fractions. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell uses the .NET numeric types, such as [int], [long], [double], [decimal] and [bigint], and it converts the operands of mixed arithmetic to a common type. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has exact numeric types, such as INTEGER, BIGINT and DECIMAL(p, s), and approximate types, such as REAL and DOUBLE PRECISION. DECIMAL is the usual type for money. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches digits as characters, and it has no numeric values or arithmetic.
+html:
+  status: idiom
+  reason: An input element with type number accepts only numbers and has the attributes min, max and step, but the value that a script reads is a string.
+css:
+  status: idiom
+  reason: CSS values have types such as number, integer, length and percentage, and calc() does arithmetic on them, but CSS has no variables of a numeric type in the sense of a program.
