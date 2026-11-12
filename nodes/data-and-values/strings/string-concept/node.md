@@ -125,7 +125,7 @@ So `"😀".length` is 2 in JavaScript and Java, because the emoji is one code po
 
 **Strings and bytes.** Text is a sequence of characters, and the bytes of a file or of a network message are a sequence of numbers from 0 to 255. An encoding such as [UTF-8](/utf-8/) maps one to the other. Python keeps the two apart: "Bytes objects are immutable sequences of single bytes", and "bytearray objects are a mutable counterpart to bytes objects"[^2]. Java and C# use `byte[]` and convert with `getBytes` and `Encoding.UTF8`. Go is different. Its strings hold bytes, and "a string holds arbitrary bytes. It is not required to hold Unicode text, UTF-8 text, or any other predefined format"[^12]. Rust is strict in the other direction: a `String` is always valid UTF-8, and `String::from_utf8` returns an error for bytes that are not. The C language does not separate text from bytes at all, so a `char` array can hold either.
 
-**Operations.** The daily work with strings is a small set of operations, and the other pages of this sub-area show them in each tier 1 language: [length](/find-the-length-of-a-string/), [concatenation](/concatenate-strings/), [join](/join-a-list-of-strings/), [split](/split-a-string/), [substring](/get-a-substring/), search, replace, comparison, case change and trim.
+**Operations.** The daily work with strings is a small set of operations, and the other pages of this sub-area show them in each tier 1 language: [length](/find-the-length-of-a-string/), [concatenation](/concatenate-strings/), [join](/join-a-list-of-strings/), [split](/split-a-string/), [substring](/get-a-substring/), [search](/search-for-a-substring/), [replace](/replace-a-substring/), [comparison](/compare-strings/), case change and trim.
 
 ## In languages
 
@@ -165,7 +165,7 @@ The example files show these differences. Python shows that `+=` makes a new obj
 
 - **Length is not the number of characters.** `"😀".length` is 2 in JavaScript, Java and C#, `len("é")` is 2 in Go, and a flag emoji is two code points in every language. Decide which unit the program needs: bytes for storage, code points for most text processing, or [grapheme clusters](/grapheme-cluster/) for what a user sees.
 - **Repeated concatenation in a loop.** An immutable string cannot grow, so `s = s + part` copies all of `s` each time. Over n parts the copying grows with n². Use a builder or a join.
-- **`==` on Java strings.** `==` compares references, not characters, so two equal strings can give `false`. Use `equals`. See compare strings.
+- **`==` on Java strings.** `==` compares references, not characters, so two equal strings can give `false`. Use `equals`. See [compare strings](/compare-strings/).
 - **Mixing text and bytes.** A program that decodes bytes with the wrong encoding gets wrong characters, for example `cafÃ©` instead of `café`. Name the encoding at each boundary: file, network and database.
 - **C strings without room.** `strcpy` and `strcat` write past the end of the target array if it is too small, and the array needs one more byte for the null character. Also, "String literals are not modifiable", and "If a program attempts to modify the static array formed by a string literal, the behavior is undefined"[^14].
 - **A null character inside data.** The C string functions stop at the first null character. Bytes from a file or a network can contain one, so a C program must keep a length for such data.

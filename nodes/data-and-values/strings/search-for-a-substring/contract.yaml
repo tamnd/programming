@@ -1,0 +1,18 @@
+# The contract of the task "search for a substring" (spec 10.2). The index counts code points, so the result is the same in every language, and -1 means that sub is not in s.
+problem: search-for-a-substring
+entry: find
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+  - name: sub
+    type: string
+    pre: "any string of Unicode text; it can be empty"
+returns:
+  type: int
+  post: "the code point index of the first match of sub in s, or -1 if there is no match; 0 when sub is empty"
+checker: exact
+edge_classes: [empty, not-found, overlap, case-sensitive, non-ascii, astral, combining]
+# The match compares code points, so it is case-sensitive, and a precomposed letter does not match the same letter with a combining mark.
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/last.jsonl: find_last(s: string, sub: string) -> int. The code point index of the last match of sub in s, or -1 if there is no match; the number of code points of s when sub is empty.

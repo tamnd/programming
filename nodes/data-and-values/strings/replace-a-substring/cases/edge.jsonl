@@ -1,0 +1,14 @@
+{"name":"empty-s","class":["empty"],"args":{"s":"","old":"a","new":"b"},"expect":""}
+{"name":"delete","class":["empty-new"],"args":{"s":"a-b-c","old":"-","new":""},"expect":"abc"}
+{"name":"new-contains-old","class":["new-contains-old"],"args":{"s":"aXa","old":"X","new":"XXX"},"expect":"aXXXa"}
+{"name":"overlap","class":["overlap"],"args":{"s":"aaaa","old":"aa","new":"b"},"expect":"bb"}
+{"name":"overlap-odd","class":["overlap"],"args":{"s":"aaa","old":"aa","new":"b"},"expect":"ba"}
+{"name":"case-sensitive","class":["case-sensitive"],"args":{"s":"Hello hello","old":"hello","new":"bye"},"expect":"Hello bye"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"s":"naïve café","old":"é","new":"e"},"expect":"naïve cafe"}
+{"name":"astral","class":["astral"],"args":{"s":"a🙂b🙂","old":"🙂","new":"!"},"expect":"a!b!"}
+{"name":"combining","class":["combining"],"args":{"s":"cafe\u0301","old":"e","new":"E"},"expect":"cafE\u0301"}
+{"name":"precomposed","class":["combining"],"args":{"s":"café","old":"e","new":"E"},"expect":"café"}
+{"name":"dot","class":["special-chars"],"args":{"s":"a.b.c","old":".","new":"-"},"expect":"a-b-c"}
+{"name":"dollar","class":["special-chars"],"args":{"s":"price","old":"price","new":"$&!"},"expect":"$&!"}
+{"name":"ampersand","class":["special-chars"],"args":{"s":"a-b","old":"-","new":"&"},"expect":"a&b"}
+{"name":"backslash","class":["special-chars"],"args":{"s":"a/b","old":"/","new":"\\"},"expect":"a\\b"}

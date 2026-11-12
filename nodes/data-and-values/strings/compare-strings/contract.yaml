@@ -1,0 +1,18 @@
+# The contract of the task "compare strings" (spec 10.2). The order is the order of the code points, from the first code point. It is not the order of a dictionary or of a locale.
+problem: compare-strings
+entry: compare
+params:
+  - name: a
+    type: string
+    pre: "any string of Unicode text"
+  - name: b
+    type: string
+    pre: "any string of Unicode text"
+returns:
+  type: int
+  post: "-1 if a is before b, 0 if a and b have the same code points, and 1 if a is after b. At the first position where the code points are different, the smaller code point is first. If one string is a prefix of the other, the shorter string is first."
+checker: exact
+edge_classes: [empty, prefix, case-sensitive, digits, non-ascii, astral, combining]
+# The order of UTF-8 bytes is the order of the code points. The order of UTF-16 code units is different when a code point above U+FFFF meets a code point from U+E000 to U+FFFF.
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/equal.jsonl: equals(a: string, b: string) -> bool. True if a and b have the same code points in the same order.

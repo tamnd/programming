@@ -1,0 +1,7 @@
+{"name":"last-of-two","args":{"s":"abcabc","sub":"bc"},"expect":4}
+{"name":"last-not-found","args":{"s":"abc","sub":"d"},"expect":-1}
+{"name":"last-empty-sub","args":{"s":"abc","sub":""},"expect":3}
+{"name":"last-empty-s","args":{"s":"","sub":""},"expect":0}
+{"name":"last-overlap","args":{"s":"aaaa","sub":"aa"},"expect":2}
+{"name":"last-astral","args":{"s":"🙂a🙂a","sub":"a"},"expect":3}
+{"name":"last-non-ascii","args":{"s":"café café","sub":"é"},"expect":8}

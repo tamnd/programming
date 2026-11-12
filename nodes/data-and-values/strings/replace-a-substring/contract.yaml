@@ -1,0 +1,20 @@
+# The contract of the task "replace a substring" (spec 10.2). The search is literal and case-sensitive, and it goes from left to right. After a match, the search goes on after the end of the match, so the matches do not overlap and the new text is not searched again.
+problem: replace-a-substring
+entry: replace
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+  - name: old
+    type: string
+    pre: "a non-empty string; the languages do not agree on a replace of the empty string"
+  - name: new
+    type: string
+    pre: "any string; it can be empty; its characters have no special meaning"
+returns:
+  type: string
+  post: "s with each match of old replaced by new"
+checker: exact
+edge_classes: [empty, empty-new, new-contains-old, overlap, case-sensitive, non-ascii, astral, combining, special-chars]
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/first.jsonl: replace_first(s: string, old: string, new: string) -> string. s with only the first match of old replaced by new, or s if there is no match.

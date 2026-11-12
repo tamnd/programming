@@ -1,0 +1,8 @@
+{"name":"empty","class":["empty"],"args":{"s":""},"expect":true}
+{"name":"space","class":["whitespace"],"args":{"s":" "},"expect":false}
+{"name":"newline","class":["whitespace"],"args":{"s":"\n"},"expect":false}
+{"name":"nbsp","class":["whitespace"],"args":{"s":"\u00a0"},"expect":false}
+{"name":"zero-width","class":["invisible"],"args":{"s":"\u200b"},"expect":false}
+{"name":"combining","class":["combining"],"args":{"s":"\u0301"},"expect":false}
+{"name":"astral","class":["astral"],"args":{"s":"\ud83d\ude42"},"expect":false}
+{"name":"cjk","class":["non-ascii"],"args":{"s":"日"},"expect":false}

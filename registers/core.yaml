@@ -11768,13 +11768,13 @@ items:
     group: "strings"
     name: "Search for a substring"
     target: "search-for-a-substring"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (String matching, Count occurrences of a substring)."
   - part: tasks
     group: "strings"
     name: "Replace a substring"
     target: "replace-a-substring"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (String matching, Globally replace text in several files)."
   - part: tasks
     group: "strings"
@@ -11804,19 +11804,19 @@ items:
     group: "strings"
     name: "Compare strings"
     target: "compare-strings"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (String comparison)."
   - part: tasks
     group: "strings"
     name: "Check whether a string is empty"
     target: "check-whether-a-string-is-empty"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (Empty string)."
   - part: tasks
     group: "strings"
     name: "Check whether a string starts with a prefix"
     target: "check-whether-a-string-starts-with-a-prefix"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (String matching)."
   - part: tasks
     group: "strings"

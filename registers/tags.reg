@@ -340,3 +340,8 @@ BKXVH8 replace-derived-variable-with-query
 24HZJQ replace-magic-literal
 GD13VY replace-nested-conditional-with-guard-clauses
 9G8Q6V split-variable
+0WBE1M check-whether-a-string-is-empty
+AZD81Y check-whether-a-string-starts-with-a-prefix
+51ENB7 compare-strings
+5S107Z replace-a-substring
+APAQPG search-for-a-substring

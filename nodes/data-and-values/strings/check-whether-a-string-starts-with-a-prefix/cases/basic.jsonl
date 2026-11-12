@@ -1,0 +1,3 @@
+{"name":"yes","args":{"s":"Hello, world","prefix":"Hello"},"expect":true}
+{"name":"no","args":{"s":"Hello, world","prefix":"world"},"expect":false}
+{"name":"whole","args":{"s":"abc","prefix":"abc"},"expect":true}
