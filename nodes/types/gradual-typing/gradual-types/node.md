@@ -1,5 +1,5 @@
 ---
-tag: NEW-gradual-types
+tag: 0B7HTJ
 kind: concept
 slug: gradual-types
 name: Gradual typing
