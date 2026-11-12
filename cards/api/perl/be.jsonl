@@ -1,0 +1,2 @@
+{"tag":"NEW-BEGIN","kind":"api","owner":"perl","path":"BEGIN","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/BEGIN"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-Benchmark","kind":"api","owner":"perl","path":"Benchmark","entity":"core module","module":"Benchmark","doc":{"url":"https://perldoc.perl.org/Benchmark"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

@@ -1,0 +1,3 @@
+{"tag":"NEW-Win32","kind":"api","owner":"perl","path":"Win32","entity":"core module","module":"Win32","doc":{"url":"https://perldoc.perl.org/Win32"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-Win32API::File","kind":"api","owner":"perl","path":"Win32API::File","entity":"core module","module":"Win32API","doc":{"url":"https://perldoc.perl.org/Win32API::File"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-Win32CORE","kind":"api","owner":"perl","path":"Win32CORE","entity":"core module","module":"Win32CORE","doc":{"url":"https://perldoc.perl.org/Win32CORE"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

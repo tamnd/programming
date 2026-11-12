@@ -1,0 +1,2 @@
+{"tag":"NEW-alarm","kind":"api","owner":"perl","path":"alarm","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/alarm"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-all","kind":"api","owner":"perl","path":"all","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/all"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

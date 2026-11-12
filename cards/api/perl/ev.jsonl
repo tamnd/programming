@@ -1,0 +1,2 @@
+{"tag":"NEW-eval","kind":"api","owner":"perl","path":"eval","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/eval"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-evalbytes","kind":"api","owner":"perl","path":"evalbytes","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/evalbytes"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

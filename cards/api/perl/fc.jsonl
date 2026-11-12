@@ -1,0 +1,3 @@
+{"tag":"NEW-Fcntl","kind":"api","owner":"perl","path":"Fcntl","entity":"core module","module":"Fcntl","doc":{"url":"https://perldoc.perl.org/Fcntl"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-fc","kind":"api","owner":"perl","path":"fc","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/fc"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-fcntl","kind":"api","owner":"perl","path":"fcntl","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/fcntl"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

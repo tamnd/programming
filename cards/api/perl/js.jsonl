@@ -1,0 +1,2 @@
+{"tag":"NEW-JSON::PP","kind":"api","owner":"perl","path":"JSON::PP","entity":"core module","module":"JSON","doc":{"url":"https://perldoc.perl.org/JSON::PP"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-JSON::PP::Boolean","kind":"api","owner":"perl","path":"JSON::PP::Boolean","entity":"core module","module":"JSON","doc":{"url":"https://perldoc.perl.org/JSON::PP::Boolean"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

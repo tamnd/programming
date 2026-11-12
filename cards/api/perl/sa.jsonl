@@ -1,0 +1,2 @@
+{"tag":"NEW-Safe","kind":"api","owner":"perl","path":"Safe","entity":"core module","module":"Safe","doc":{"url":"https://perldoc.perl.org/Safe"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-say","kind":"api","owner":"perl","path":"say","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/say"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

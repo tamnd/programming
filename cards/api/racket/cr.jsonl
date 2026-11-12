@@ -1,0 +1,1 @@
+{"tag":"NEW-crypto-random-bytes","kind":"api","owner":"racket","path":"crypto-random-bytes","entity":"procedure","module":"racket/random","doc":{"url":"https://docs.racket-lang.org/reference/generic-numbers.html#%28def._%28%28lib._racket%2Frandom..rkt%29._crypto-random-bytes%29%29"},"source":{"url":"https://docs.racket-lang.org/reference/","licence":"MIT OR Apache-2.0"}}

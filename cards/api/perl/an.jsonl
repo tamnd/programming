@@ -1,0 +1,3 @@
+{"tag":"NEW-AnyDBM_File","kind":"api","owner":"perl","path":"AnyDBM_File","entity":"core module","module":"AnyDBM_File","doc":{"url":"https://perldoc.perl.org/AnyDBM_File"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-and","kind":"api","owner":"perl","path":"and","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/and"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-any","kind":"api","owner":"perl","path":"any","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/any"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

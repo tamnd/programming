@@ -1,0 +1,3 @@
+{"tag":"NEW-splice","kind":"api","owner":"perl","path":"splice","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/splice"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-split","kind":"api","owner":"perl","path":"split","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/split"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-sprintf","kind":"api","owner":"perl","path":"sprintf","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/sprintf"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
