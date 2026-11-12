@@ -1,0 +1,1 @@
+{"tag":"NEW-btoa","kind":"api","owner":"javascript","path":"btoa","entity":"interface","module":"Web APIs","spec_url":"https://html.spec.whatwg.org/multipage/webappapis.html#dom-btoa-dev","doc":{"url":"https://developer.mozilla.org/docs/Web/API/Window/btoa"},"source":{"url":"https://github.com/mdn/browser-compat-data","licence":"CC0-1.0","version":"8.1.8","key":"api.btoa"}}
