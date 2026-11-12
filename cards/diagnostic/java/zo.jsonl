@@ -1,0 +1,1 @@
+{"tag":"NEW-errorprone-ZoneIdOfZ","kind":"diagnostic","owner":"java","code":"ZoneIdOfZ","type":"lint","title":"Use ZoneOffset.UTC instead of ZoneId.of(\"Z\").","summary":"Error Prone turns it on by default.","severity":"error","url":"https://errorprone.info/bugpattern/ZoneIdOfZ","licence":"Apache-2.0","source":{"url":"https://errorprone.info/bugpatterns","licence":"Apache-2.0"}}
