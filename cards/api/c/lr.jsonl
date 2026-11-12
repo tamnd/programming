@@ -1,0 +1,2 @@
+{"tag":"NEW-c-lrint","kind":"api","owner":"c","path":"lrint","entity":"function","module":"numeric","doc":{"url":"https://en.cppreference.com/w/c/numeric/math/rint"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}
+{"tag":"NEW-c-lround","kind":"api","owner":"c","path":"lround","entity":"function","module":"numeric","doc":{"url":"https://en.cppreference.com/w/c/numeric/math/round"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}

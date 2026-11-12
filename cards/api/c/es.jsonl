@@ -1,0 +1,2 @@
+{"tag":"NEW-c-ESPIPE","kind":"api","owner":"c","path":"ESPIPE","entity":"constant","module":"error","doc":{"url":"https://en.cppreference.com/w/c/error/errno_macros"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}
+{"tag":"NEW-c-ESRCH","kind":"api","owner":"c","path":"ESRCH","entity":"constant","module":"error","doc":{"url":"https://en.cppreference.com/w/c/error/errno_macros"},"source":{"url":"https://github.com/p12tic/cppreference-doc/blob/master/index-functions-c.xml","licence":"CC-BY-SA-3.0"}}
