@@ -49,3 +49,6 @@
 - id: terms-glossary
   scope: terms
   rule: "A term of FOLDOC or the Jargon File gets no page of its own when it is not a language, a tool, a library, a format or a node of this site. Spec 18.4 gives a node only to the definitions in the core, and the core definitions are work of M2. FOLDOC and the Jargon File give only the names."
+- id: people-description
+  scope: people
+  rule: "A person or an organization that Wikidata links to programming only through an occupation or through a piece of software gets a card only when its Wikidata description names a field of computing, such as software, computers, programming, engineering, science or mathematics. A person who designed a programming language, wrote software or received an award of programming always gets a card. Many of the other items are designers and writers of video games, musicians or politicians who also had work as programmers."
