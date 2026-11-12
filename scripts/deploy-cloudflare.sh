@@ -3,7 +3,9 @@
 #
 # Run it from cron on a build server, for example every 5 minutes:
 #
-#   */5 * * * * $HOME/programming-deploy/deploy-cloudflare.sh >> $HOME/programming-deploy/deploy.log 2>&1; cp $HOME/programming-deploy/content/scripts/deploy-cloudflare.sh $HOME/programming-deploy/ 2>/dev/null
+#   */5 * * * * $HOME/programming-deploy/deploy-cloudflare.sh >> $HOME/programming-deploy/deploy.log 2>&1; cp $HOME/programming-deploy/content/scripts/deploy-cloudflare.sh $HOME/programming-deploy/deploy.new && mv $HOME/programming-deploy/deploy.new $HOME/programming-deploy/deploy-cloudflare.sh
+#
+# The cron line copies the script and then renames it, because sh reads a script while it runs it, and a run that has the file open keeps the old copy.
 #
 # The server needs git, curl, tar, sha256sum, flock, and Node with npx, and about 1 GB of free disk and 2 GB of free memory while it builds. It does not need Go: the script gets the prog release that .github/workflows/ci.yml pins and checks it against SHA256SUMS. The directory ($PROG_DEPLOY, default $HOME/programming-deploy) holds cloudflare.env with CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID, mode 600.
 #
