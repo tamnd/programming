@@ -1,0 +1,2 @@
+{"tag":"NEW-select","kind":"api","owner":"lua","path":"select","entity":"function","module":"basic","doc":{"url":"https://www.lua.org/manual/5.4/manual.html#pdf-select"},"source":{"url":"https://www.lua.org/manual/5.4/contents.html","licence":"MIT"}}
+{"tag":"NEW-setmetatable","kind":"api","owner":"lua","path":"setmetatable","entity":"function","module":"basic","doc":{"url":"https://www.lua.org/manual/5.4/manual.html#pdf-setmetatable"},"source":{"url":"https://www.lua.org/manual/5.4/contents.html","licence":"MIT"}}

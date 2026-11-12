@@ -1,0 +1,2 @@
+{"tag":"NEW-tonumber","kind":"api","owner":"lua","path":"tonumber","entity":"function","module":"basic","doc":{"url":"https://www.lua.org/manual/5.4/manual.html#pdf-tonumber"},"source":{"url":"https://www.lua.org/manual/5.4/contents.html","licence":"MIT"}}
+{"tag":"NEW-tostring","kind":"api","owner":"lua","path":"tostring","entity":"function","module":"basic","doc":{"url":"https://www.lua.org/manual/5.4/manual.html#pdf-tostring"},"source":{"url":"https://www.lua.org/manual/5.4/contents.html","licence":"MIT"}}

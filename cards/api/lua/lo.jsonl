@@ -1,0 +1,2 @@
+{"tag":"NEW-load","kind":"api","owner":"lua","path":"load","entity":"function","module":"basic","doc":{"url":"https://www.lua.org/manual/5.4/manual.html#pdf-load"},"source":{"url":"https://www.lua.org/manual/5.4/contents.html","licence":"MIT"}}
+{"tag":"NEW-loadfile","kind":"api","owner":"lua","path":"loadfile","entity":"function","module":"basic","doc":{"url":"https://www.lua.org/manual/5.4/manual.html#pdf-loadfile"},"source":{"url":"https://www.lua.org/manual/5.4/contents.html","licence":"MIT"}}

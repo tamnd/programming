@@ -1,0 +1,1 @@
+{"tag":"NEW-dofile","kind":"api","owner":"lua","path":"dofile","entity":"function","module":"basic","doc":{"url":"https://www.lua.org/manual/5.4/manual.html#pdf-dofile"},"source":{"url":"https://www.lua.org/manual/5.4/contents.html","licence":"MIT"}}
