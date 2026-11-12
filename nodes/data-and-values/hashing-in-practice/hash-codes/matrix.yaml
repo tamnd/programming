@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript uses the Map and Set of JavaScript, which compare objects by identity, so keys are built as strings, but no example file exists.
+kotlin:
+  status: native
+  reason: Data classes generate equals and hashCode from the properties of the primary constructor, on the JVM model, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: declare -A makes an associative array with string keys that the shell hashes, but no example file exists.
+powershell:
+  status: native
+  reason: The hashtable literal makes a hash table that uses the GetHashCode and Equals methods of .NET, case-insensitive for string keys by default, but no example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: The database engine uses hashing inside hash joins and hash indexes, and queries do not define hash functions.
+regex:
+  status: n/a
+  reason: Regular expressions have no hash tables.
+html:
+  status: n/a
+  reason: HTML has no hash tables.
+css:
+  status: n/a
+  reason: CSS has no hash tables.
