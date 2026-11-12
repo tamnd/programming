@@ -1,5 +1,5 @@
 ---
-tag: NEW-dependent-types
+tag: ADHEJ9
 kind: concept
 slug: dependent-types
 name: Dependent and refinement types
