@@ -1,0 +1,20 @@
+# The contract of the task "append to a file". Each solution adds one line to the end of a file, with one write call on a file that is open in append mode, so that many writers can share the file.
+problem: append-to-a-file
+entry: append_line
+params:
+  - name: path
+    type: string
+    pre: "the path of the file, in a directory that the test makes; the name is not a directory"
+  - name: line
+    type: string
+    pre: "a string with no \\n, no \\r, no NUL and no unpaired surrogate, of at most 1000 bytes in UTF-8"
+  - name: file
+    type: option<string>
+    mode: inout
+    pre: "the content of the file at path before the call, as UTF-8; null when no file is there"
+returns:
+  type: unit
+  post: "file is the content of the file after the call: the old content, then the UTF-8 bytes of line, then one \\n, with nothing between them. A missing file is made first. The bytes of line and its \\n go to the file in one write call, at the end of the file as it is at the time of the write"
+checker: exact
+edge_classes: [new-file, empty, no-final-newline, line-ends, whitespace, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and write nothing: not-found when the parent directory does not exist, invalid-line when line holds \n or \r. The native tests also start 8 writers that each append 250 lines to one file at the same time, and check that each of the 2000 lines is in the file once and whole.

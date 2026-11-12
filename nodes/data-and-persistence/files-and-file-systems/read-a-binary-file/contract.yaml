@@ -1,0 +1,15 @@
+# The contract of the task "read a binary file". Each solution reads the bytes of a file with no text decoding and no change to line ends, NUL bytes or other control bytes.
+problem: read-a-binary-file
+entry: read_bytes
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the file is small enough to keep in memory"
+returns:
+  type: string
+  post: "all of the bytes of the file in their order, written in the cases as lowercase hexadecimal with two digits for each byte; each solution returns a byte array, not a string; the empty file gives no bytes"
+checker: exact
+edge_classes: [empty, all-byte-values, zero-bytes, line-ends, ctrl-z, not-utf8]
+# The toolchain has one entry for each contract, and it loads only the basic, edge and regress case files. Two more case files hold a second function, and each solution tests them too.
+# cases/exact.jsonl: read_exact(path, n) -> bytes, written as lowercase hexadecimal. It reads exactly the first n bytes of the file, n >= 0, and calls read again when one read gives fewer bytes than it asked for.
+# cases/errors.jsonl: the inputs on which a function must report an error and return no bytes. A case with the argument n is for read_exact, and a case with no n is for read_bytes. not-found: the file does not exist. not-a-file: the path names a directory. unexpected-eof: the file ends before byte n.

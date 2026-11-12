@@ -1,0 +1,8 @@
+{"name":"empty","class":["empty"],"args":{"path":"fixtures/empty.txt"},"expect":""}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"fixtures/no-final-newline.txt"},"expect":"one\ntwo"}
+{"name":"trailing-newlines","class":["trailing-newlines"],"args":{"path":"fixtures/trailing-newlines.txt"},"expect":"end\n\n\n"}
+{"name":"crlf","class":["line-ends"],"args":{"path":"fixtures/crlf.txt"},"expect":"one\r\ntwo\r\n"}
+{"name":"mixed-endings","class":["line-ends"],"args":{"path":"fixtures/mixed-endings.txt"},"expect":"lf\ncrlf\r\ncr\rend"}
+{"name":"bom","class":["bom"],"args":{"path":"fixtures/bom.txt"},"expect":"﻿head\n"}
+{"name":"whitespace","class":["whitespace"],"args":{"path":"fixtures/whitespace.txt"},"expect":"  two spaces\ttab \n"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"fixtures/non-ascii.txt"},"expect":"naïve café\n日本語\n🙂\n"}

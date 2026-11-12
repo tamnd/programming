@@ -1,0 +1,2 @@
+{"name":"signature","args":{"path":"fixtures/signature.bin"},"expect":"89504e470d0a1a0a0000000d49484452"}
+{"name":"bytes","args":{"path":"fixtures/bytes.bin"},"expect":"0001027f80feff"}

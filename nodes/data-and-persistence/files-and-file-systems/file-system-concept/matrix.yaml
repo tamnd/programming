@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses the node:fs module, with the types from @types/node, so the calls are the calls of the JavaScript example. No example file exists.
+kotlin:
+  status: stdlib
+  reason: The kotlin.io.path package adds extension functions to java.nio.file.Path, so a Kotlin program uses the FileSystem, FileStore and Files classes of Java. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash works with names in the file tree. The tests -d, -f and -ef are built in, and -ef is true when two names refer to the same device and inode numbers. The commands ls -i, ln, df and mount show the rest. No example file exists.
+powershell:
+  status: native
+  reason: The FileSystem provider shows the directories and files as drives such as C and Temp, and Get-Item, Get-ChildItem and Get-PSDrive work on them. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query works on tables. The database server keeps the tables in files, but the SQL language has no operations on files or directories.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not name, open or list files.
+html:
+  status: n/a
+  reason: A web page cannot see the file system of the user. An input element of type file lets the user choose files and give them to the page.
+css:
+  status: n/a
+  reason: Style rules do not read, name or list files. A URL in a rule names a resource, not a file of the local file system.
