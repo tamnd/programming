@@ -1,0 +1,1 @@
+{"tag":"NEW-swift-all","kind":"api","owner":"swift","path":"all","entity":"function","module":"Swift","doc":{"url":"https://developer.apple.com/documentation/swift/all(_:)"},"source":{"url":"https://github.com/swiftlang/swift/blob/4f010677715a8396aac64d0742be7c15a8d4ed8a/stdlib/public/core/SIMDVector.swift#L1591","licence":"Apache-2.0 WITH Swift-exception"}}
