@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the syntax of JavaScript and adds type annotations, interfaces and generics, and the compiler API gives the syntax tree of a file. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has optional semicolons, trailing lambdas and string templates, and its specification gives the grammar. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The syntax of Bash is made of words, quoting, redirections and expansions, and bash -n checks the syntax of a script without running it. No example file exists.
+powershell:
+  status: native
+  reason: The PowerShell parser API, such as the Parser class in System.Management.Automation.Language, gives the syntax tree and the errors of a script. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The SQL standard gives a grammar, and each database adds its own syntax. Keywords are not case sensitive. No example file exists.
+regex:
+  status: native
+  reason: A regular expression has a small syntax of its own with atoms, quantifiers, groups, classes and alternation, and the syntax differs between engines.
+html:
+  status: native
+  reason: HTML has a syntax of elements, attributes and text, and the HTML parser has rules to recover from almost every error.
+css:
+  status: native
+  reason: CSS has a syntax of rules, selectors and declarations, and a parser skips a declaration that it cannot read and keeps the others.
