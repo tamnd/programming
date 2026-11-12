@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the blocks of JavaScript, with let and const scoped to the block and var scoped to the function. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin marks blocks with braces, and a lambda block gives the value of its last expression, which run, use and other scope functions use. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: "{ ...; } groups commands in the current shell, and ( ... ) runs them in a subshell, so a variable set in it is lost. A block is not a scope: local works only in a function. No example file exists."
+powershell:
+  status: native
+  reason: A script block in braces groups statements and is also a value that the program can store and call with the & operator. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: Procedural SQL such as PL/pgSQL and T-SQL groups statements with BEGIN and END, and a block can declare its own variables. No example file exists.
+regex:
+  status: n/a
+  reason: A group joins parts of a pattern, but a pattern has no statements to put in a block.
+html:
+  status: n/a
+  reason: HTML has no statements. A block element is a term of layout, not a group of statements.
+css:
+  status: idiom
+  reason: A rule has a declaration block in braces after its selector, and nested rules put a block inside a block.
