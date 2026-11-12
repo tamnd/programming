@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the typed arrays, DataView, BigInt and 32-bit bitwise operators of JavaScript, and its type number is a 64-bit float, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has Byte, Short, Int and Long in two's complement and the unsigned types UByte, UShort, UInt and ULong, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash arithmetic uses fixed-width signed integers, usually 64 bits, with no check for overflow, but no example file exists.
+powershell:
+  status: native
+  reason: PowerShell uses the .NET integer types, such as [int], [long], [byte] and [uint64], but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has the exact numeric types SMALLINT, INTEGER and BIGINT, and a value out of range is an error, but the widths of the types depend on the database.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but has no integer types.
+html:
+  status: n/a
+  reason: HTML has no numbers.
+css:
+  status: n/a
+  reason: CSS has integer values, such as z-index, but does not state their width or representation.
