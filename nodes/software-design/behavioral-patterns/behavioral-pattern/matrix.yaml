@@ -1,0 +1,24 @@
+kotlin:
+  status: native
+  reason: function types and lambdas make a strategy or a command a value, and a when expression on a sealed class can take the place of a visitor; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a function pointer with a context pointer is a strategy or a callback, and a switch on a type tag takes the place of a visitor.
+sql:
+  status: n/a
+  reason: a query is declarative, so there are no objects that divide the work.
+bash:
+  status: idiom
+  reason: the name of a function can be passed as a string and called later, which is a simple strategy or command.
+powershell:
+  status: idiom
+  reason: a script block is a value that can be stored and invoked later, which is a strategy or a command; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no objects or behaviour to vary.
+html:
+  status: n/a
+  reason: markup has no behaviour of its own.
+css:
+  status: n/a
+  reason: style rules have no objects or algorithms.
