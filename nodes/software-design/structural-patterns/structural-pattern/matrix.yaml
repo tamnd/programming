@@ -1,0 +1,24 @@
+kotlin:
+  status: native
+  reason: class delegation with by makes the compiler generate the methods of an interface that forward to a stored object, so a decorator declares only the methods that it changes; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: an opaque pointer hides a struct behind functions, and a struct of function pointers is an interface that a wrapper can implement and forward.
+sql:
+  status: idiom
+  reason: a view gives a simpler or a changed interface to one or more tables, which is the role of a facade or an adapter.
+bash:
+  status: idiom
+  reason: a pipeline joins filters, and a function with the name of a command can wrap the command and forward its arguments.
+powershell:
+  status: idiom
+  reason: the pipeline joins commands, and a class can implement an interface and wrap a .NET object; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no objects to compose.
+html:
+  status: n/a
+  reason: elements nest, but markup has no objects or interfaces to compose.
+css:
+  status: n/a
+  reason: style rules have no objects or interfaces to compose.
