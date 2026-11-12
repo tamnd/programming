@@ -14990,7 +14990,7 @@ items:
     group: "fowler-catalog"
     name: "Remove Dead Code"
     target: "remove-dead-code"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15080,7 +15080,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Inline Code with Function Call"
     target: "replace-inline-code-with-function-call"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
