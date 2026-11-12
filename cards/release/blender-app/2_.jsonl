@@ -1,0 +1,2 @@
+{"tag":"NEW-blender-app/2.93","kind":"release","owner":"blender-app","version":"2.93","name":"Blender 2.93 (LTS)","date":"2021-06-02","status":"end-of-life","lts":true,"latest":"2.93.18","eol":"2023-06-02","licence":"MIT","source":{"url":"https://endoflife.date/blender","licence":"MIT"}}
+{"tag":"NEW-blender-app/2.83","kind":"release","owner":"blender-app","version":"2.83","name":"Blender 2.83 (LTS)","date":"2020-06-03","status":"end-of-life","lts":true,"latest":"2.83.20","eol":"2022-06-01","licence":"MIT","source":{"url":"https://endoflife.date/blender","licence":"MIT"}}

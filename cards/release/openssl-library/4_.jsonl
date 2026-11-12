@@ -1,0 +1,2 @@
+{"tag":"NEW-openssl-library/4.1","kind":"release","owner":"openssl-library","version":"4.1","name":"OpenSSL 4.1","date":"2026-10-23","status":"supported","latest":"4.1.0","eol":"2027-11-23","licence":"MIT","source":{"url":"https://endoflife.date/openssl","licence":"MIT"}}
+{"tag":"NEW-openssl-library/4.0","kind":"release","owner":"openssl-library","version":"4.0","name":"OpenSSL 4.0","date":"2026-04-14","status":"supported","latest":"4.0.3","eol":"2027-05-14","licence":"MIT","source":{"url":"https://endoflife.date/openssl","licence":"MIT"}}

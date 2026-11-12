@@ -1,0 +1,3 @@
+{"tag":"NEW-splunk/10.4","kind":"release","owner":"splunk","version":"10.4","name":"Splunk 10.4","date":"2026-05-18","status":"supported","latest":"10.4.0","eol":"2028-05-18","licence":"MIT","source":{"url":"https://endoflife.date/splunk","licence":"MIT"}}
+{"tag":"NEW-splunk/10.2","kind":"release","owner":"splunk","version":"10.2","name":"Splunk 10.2","date":"2026-01-15","status":"supported","latest":"10.2.4","eol":"2028-01-15","licence":"MIT","source":{"url":"https://endoflife.date/splunk","licence":"MIT"}}
+{"tag":"NEW-splunk/10.0","kind":"release","owner":"splunk","version":"10.0","name":"Splunk 10.0","date":"2025-07-28","status":"supported","latest":"10.0.7","eol":"2027-07-28","licence":"MIT","source":{"url":"https://endoflife.date/splunk","licence":"MIT"}}

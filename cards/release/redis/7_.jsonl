@@ -1,0 +1,3 @@
+{"tag":"NEW-redis/7.4","kind":"release","owner":"redis","version":"7.4","name":"Redis 7.4","date":"2024-07-29","status":"supported","latest":"7.4.12","eol":"2029-12-01","licence":"MIT","source":{"url":"https://endoflife.date/redis","licence":"MIT"}}
+{"tag":"NEW-redis/7.2","kind":"release","owner":"redis","version":"7.2","name":"Redis 7.2","date":"2023-08-15","status":"supported","latest":"7.2.17","eol":"2029-12-01","licence":"MIT","source":{"url":"https://endoflife.date/redis","licence":"MIT"}}
+{"tag":"NEW-redis/7.0","kind":"release","owner":"redis","version":"7.0","name":"Redis 7.0","date":"2022-04-27","status":"end-of-life","latest":"7.0.15","eol":"2024-07-29","licence":"MIT","source":{"url":"https://endoflife.date/redis","licence":"MIT"}}

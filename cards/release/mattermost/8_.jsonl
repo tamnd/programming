@@ -1,0 +1,2 @@
+{"tag":"NEW-mattermost/8.1","kind":"release","owner":"mattermost","version":"8.1","name":"Mattermost 8.1 (ESR)","date":"2023-08-10","status":"end-of-life","lts":true,"latest":"8.1.13","eol":"2024-05-15","licence":"MIT","source":{"url":"https://endoflife.date/mattermost","licence":"MIT"}}
+{"tag":"NEW-mattermost/8.0","kind":"release","owner":"mattermost","version":"8.0","name":"Mattermost 8.0","date":"2023-07-09","status":"end-of-life","latest":"8.0.4","eol":"2023-10-15","licence":"MIT","source":{"url":"https://endoflife.date/mattermost","licence":"MIT"}}

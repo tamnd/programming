@@ -1,0 +1,2 @@
+{"tag":"NEW-fluent-bit","kind":"tool","owner":"","id":"fluent-bit","name":"Fluent Bit","class":"server application","aka":["fluentbit"],"url":"https://endoflife.date/fluent-bit","licence":"MIT","source":{"url":"https://endoflife.date/fluent-bit","licence":"MIT"}}
+{"tag":"NEW-flux-tool","kind":"tool","owner":"","id":"flux-tool","name":"Flux","class":"server application","aka":["flux2","fluxcd"],"url":"https://endoflife.date/flux","licence":"MIT","source":{"url":"https://endoflife.date/flux","licence":"MIT"}}

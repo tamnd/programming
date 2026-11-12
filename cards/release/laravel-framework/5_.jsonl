@@ -1,0 +1,2 @@
+{"tag":"NEW-laravel-framework/5.8","kind":"release","owner":"laravel-framework","version":"5.8","name":"Laravel 5.8","date":"2019-02-26","status":"end-of-life","latest":"5.8.38","eol":"2020-02-26","licence":"MIT","source":{"url":"https://endoflife.date/laravel","licence":"MIT"}}
+{"tag":"NEW-laravel-framework/5.5","kind":"release","owner":"laravel-framework","version":"5.5","name":"Laravel 5.5 (LTS)","date":"2017-08-30","status":"end-of-life","lts":true,"latest":"5.5.50","eol":"2020-08-30","licence":"MIT","source":{"url":"https://endoflife.date/laravel","licence":"MIT"}}

@@ -1,2 +1,4 @@
 {"tag":"NEW-oracle","kind":"tool","owner":"","id":"oracle","name":"Oracle","class":"database","appeared":1979,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/oracle.html","licence":"public-domain"}}
+{"tag":"NEW-oracle-database","kind":"tool","owner":"","id":"oracle-database","name":"Oracle Database","class":"database","url":"https://endoflife.date/oracle-database","licence":"MIT","source":{"url":"https://endoflife.date/oracle-database","licence":"MIT"}}
+{"tag":"NEW-oracle-linux","kind":"tool","owner":"","id":"oracle-linux","name":"Oracle Linux","class":"operating system","aka":["oraclelinux"],"url":"https://endoflife.date/oracle-linux","licence":"MIT","source":{"url":"https://endoflife.date/oracle-linux","licence":"MIT"}}
 {"tag":"NEW-orient-db","kind":"tool","owner":"","id":"orient-db","name":"OrientDB","class":"database","appeared":2010,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/orient-db.html","licence":"public-domain"}}

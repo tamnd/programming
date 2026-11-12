@@ -1,0 +1,2 @@
+{"tag":"NEW-valkey/8.1","kind":"release","owner":"valkey","version":"8.1","name":"Valkey 8.1","date":"2025-03-31","status":"supported","latest":"8.1.11","eol":"2030-03-31","licence":"MIT","source":{"url":"https://endoflife.date/valkey","licence":"MIT"}}
+{"tag":"NEW-valkey/8.0","kind":"release","owner":"valkey","version":"8.0","name":"Valkey 8.0","date":"2024-09-15","status":"supported","latest":"8.0.12","eol":"2027-09-15","licence":"MIT","source":{"url":"https://endoflife.date/valkey","licence":"MIT"}}

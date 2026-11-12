@@ -1,0 +1,1 @@
+{"tag":"NEW-microsoft-mysql-server/16.0","kind":"release","owner":"microsoft-mysql-server","version":"16.0","name":"Microsoft SQL Server 2022 'Dallas'","summary":"Codename: Dallas.","date":"2022-11-16","status":"supported","latest":"16.0.4315.2 CU27+GDR","eol":"2033-01-11","licence":"MIT","source":{"url":"https://endoflife.date/mssqlserver","licence":"MIT"}}

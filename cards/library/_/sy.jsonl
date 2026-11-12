@@ -1,1 +1,3 @@
+{"tag":"NEW-sylius","kind":"library","owner":"","id":"sylius","name":"Sylius","class":"framework","url":"https://endoflife.date/sylius","licence":"MIT","source":{"url":"https://endoflife.date/sylius","licence":"MIT"}}
+{"tag":"NEW-symfony","kind":"library","owner":"","id":"symfony","name":"Symfony","class":"framework","url":"https://endoflife.date/symfony","licence":"MIT","source":{"url":"https://endoflife.date/symfony","licence":"MIT"}}
 {"tag":"NEW-sympy","kind":"library","owner":"","id":"sympy","name":"SymPy","class":"library","appeared":2007,"creators":["Ondrej Certik"],"website":"https://www.sympy.org/","wikipedia":"https://en.wikipedia.org/wiki/SymPy","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/sympy.html","licence":"public-domain"}}

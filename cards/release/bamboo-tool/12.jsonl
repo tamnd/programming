@@ -1,0 +1,2 @@
+{"tag":"NEW-bamboo-tool/12.1","kind":"release","owner":"bamboo-tool","version":"12.1","name":"Bamboo 12.1 (LTS)","date":"2025-12-16","status":"supported","lts":true,"latest":"12.1.13","eol":"2027-12-17","licence":"MIT","source":{"url":"https://endoflife.date/bamboo","licence":"MIT"}}
+{"tag":"NEW-bamboo-tool/12.0","kind":"release","owner":"bamboo-tool","version":"12.0","name":"Bamboo 12.0","date":"2025-11-20","status":"supported","latest":"12.0.2","eol":"2027-11-20","licence":"MIT","source":{"url":"https://endoflife.date/bamboo","licence":"MIT"}}

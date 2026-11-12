@@ -1,0 +1,1 @@
+{"tag":"NEW-sonarqube-server/8","kind":"release","owner":"sonarqube-server","version":"8","name":"SonarQube Server 8 (LTS)","date":"2019-10-15","status":"end-of-life","lts":true,"latest":"8.9.10","eol":"2023-02-07","licence":"MIT","source":{"url":"https://endoflife.date/sonarqube-server","licence":"MIT"}}

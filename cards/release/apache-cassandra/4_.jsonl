@@ -1,0 +1,2 @@
+{"tag":"NEW-apache-cassandra/4.1","kind":"release","owner":"apache-cassandra","version":"4.1","name":"Apache Cassandra 4.1","date":"2022-12-13","status":"supported","latest":"4.1.12","licence":"MIT","source":{"url":"https://endoflife.date/apache-cassandra","licence":"MIT"}}
+{"tag":"NEW-apache-cassandra/4.0","kind":"release","owner":"apache-cassandra","version":"4.0","name":"Apache Cassandra 4.0","date":"2021-07-26","status":"supported","latest":"4.0.21","licence":"MIT","source":{"url":"https://endoflife.date/apache-cassandra","licence":"MIT"}}

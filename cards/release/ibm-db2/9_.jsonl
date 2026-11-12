@@ -1,0 +1,3 @@
+{"tag":"NEW-ibm-db2/9.7","kind":"release","owner":"ibm-db2","version":"9.7","name":"IBM Db2 9.7","date":"2009-08-28","status":"end-of-life","eol":"2017-09-30","licence":"MIT","source":{"url":"https://endoflife.date/ibm-db2","licence":"MIT"}}
+{"tag":"NEW-ibm-db2/9.5","kind":"release","owner":"ibm-db2","version":"9.5","name":"IBM Db2 9.5","date":"2007-12-14","status":"end-of-life","eol":"2015-04-30","licence":"MIT","source":{"url":"https://endoflife.date/ibm-db2","licence":"MIT"}}
+{"tag":"NEW-ibm-db2/9.1","kind":"release","owner":"ibm-db2","version":"9.1","name":"IBM Db2 9.1","date":"2006-09-22","status":"end-of-life","eol":"2012-04-30","licence":"MIT","source":{"url":"https://endoflife.date/ibm-db2","licence":"MIT"}}

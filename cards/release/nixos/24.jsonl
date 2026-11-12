@@ -1,0 +1,2 @@
+{"tag":"NEW-nixos/24.11","kind":"release","owner":"nixos","version":"24.11","name":"NixOS 24.11 'Vicuña'","summary":"Codename: Vicuña.","date":"2024-11-30","status":"end-of-life","eol":"2025-06-30","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}
+{"tag":"NEW-nixos/24.05","kind":"release","owner":"nixos","version":"24.05","name":"NixOS 24.05 'Uakari'","summary":"Codename: Uakari.","date":"2024-05-31","status":"end-of-life","eol":"2024-12-31","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}

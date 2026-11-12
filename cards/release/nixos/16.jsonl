@@ -1,0 +1,2 @@
+{"tag":"NEW-nixos/16.09","kind":"release","owner":"nixos","version":"16.09","name":"NixOS 16.09 'Flounder'","summary":"Codename: Flounder.","date":"2016-09-30","status":"end-of-life","eol":"2017-04-30","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}
+{"tag":"NEW-nixos/16.03","kind":"release","owner":"nixos","version":"16.03","name":"NixOS 16.03 'Emu'","summary":"Codename: Emu.","date":"2016-03-31","status":"end-of-life","eol":"2016-10-30","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}

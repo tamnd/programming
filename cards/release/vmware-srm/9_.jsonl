@@ -1,0 +1,2 @@
+{"tag":"NEW-vmware-srm/9.1","kind":"release","owner":"vmware-srm","version":"9.1","name":"VMware Site Recovery Manager 9.1","date":"2026-05-12","status":"supported","latest":"9.1.0.0","eol":"2028-08-12","licence":"MIT","source":{"url":"https://endoflife.date/vmware-srm","licence":"MIT"}}
+{"tag":"NEW-vmware-srm/9.0","kind":"release","owner":"vmware-srm","version":"9.0","name":"VMware Site Recovery Manager 9.0","date":"2024-03-19","status":"supported","latest":"9.0.5.1","eol":"2027-09-17","licence":"MIT","source":{"url":"https://endoflife.date/vmware-srm","licence":"MIT"}}

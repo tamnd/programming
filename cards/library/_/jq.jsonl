@@ -1,1 +1,2 @@
 {"tag":"NEW-jquery","kind":"library","owner":"","id":"jquery","name":"JQuery","class":"library","appeared":2006,"creators":["John Resig"],"version":"4.0.0-pre","website":"https://jquery.com","wikipedia":"https://en.wikipedia.org/wiki/JQuery","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jquery.html","licence":"public-domain"}}
+{"tag":"NEW-jquery-ui","kind":"library","owner":"","id":"jquery-ui","name":"jQuery UI","class":"framework","url":"https://endoflife.date/jquery-ui","licence":"MIT","source":{"url":"https://endoflife.date/jquery-ui","licence":"MIT"}}

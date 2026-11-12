@@ -1,0 +1,2 @@
+{"tag":"NEW-kiali/1.89","kind":"release","owner":"kiali","version":"1.89","name":"Kiali 1.89","date":"2024-08-19","status":"end-of-life","latest":"1.89.8","licence":"MIT","source":{"url":"https://endoflife.date/kiali","licence":"MIT"}}
+{"tag":"NEW-kiali/1.73","kind":"release","owner":"kiali","version":"1.73","name":"Kiali 1.73 (LTS)","date":"2023-08-28","status":"end-of-life","lts":true,"latest":"1.73.33","licence":"MIT","source":{"url":"https://endoflife.date/kiali","licence":"MIT"}}

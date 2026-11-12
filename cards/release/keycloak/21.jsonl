@@ -1,0 +1,2 @@
+{"tag":"NEW-keycloak/21.1","kind":"release","owner":"keycloak","version":"21.1","name":"Keycloak 21.1","date":"2023-04-19","status":"end-of-life","latest":"21.1.2","eol":"2023-07-11","licence":"MIT","source":{"url":"https://endoflife.date/keycloak","licence":"MIT"}}
+{"tag":"NEW-keycloak/21.0","kind":"release","owner":"keycloak","version":"21.0","name":"Keycloak 21.0","date":"2023-02-23","status":"end-of-life","latest":"21.0.2","eol":"2023-04-19","licence":"MIT","source":{"url":"https://endoflife.date/keycloak","licence":"MIT"}}

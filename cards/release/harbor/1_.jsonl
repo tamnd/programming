@@ -1,0 +1,2 @@
+{"tag":"NEW-harbor/1.10","kind":"release","owner":"harbor","version":"1.10","name":"Harbor 1.10","date":"2019-12-12","status":"end-of-life","latest":"1.10.19","eol":"2021-02-23","licence":"MIT","source":{"url":"https://endoflife.date/harbor","licence":"MIT"}}
+{"tag":"NEW-harbor/1.9","kind":"release","owner":"harbor","version":"1.9","name":"Harbor 1.9","date":"2019-09-17","status":"end-of-life","latest":"1.9.4","eol":"2020-09-18","licence":"MIT","source":{"url":"https://endoflife.date/harbor","licence":"MIT"}}

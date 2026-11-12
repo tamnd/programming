@@ -1,0 +1,2 @@
+{"tag":"NEW-mysql/4.1","kind":"release","owner":"mysql","version":"4.1","name":"MySQL 4.1","date":"2004-10-23","status":"end-of-life","latest":"4.1.24","eol":"2009-12-31","licence":"MIT","source":{"url":"https://endoflife.date/mysql","licence":"MIT"}}
+{"tag":"NEW-mysql/4.0","kind":"release","owner":"mysql","version":"4.0","name":"MySQL 4.0","date":"2003-03-15","status":"end-of-life","latest":"4.0.30","eol":"2008-09-30","licence":"MIT","source":{"url":"https://endoflife.date/mysql","licence":"MIT"}}

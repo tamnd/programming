@@ -1,0 +1,2 @@
+{"tag":"NEW-tomcat/8.5","kind":"release","owner":"tomcat","version":"8.5","name":"Apache Tomcat 8.5","date":"2016-03-17","status":"end-of-life","latest":"8.5.100","eol":"2024-03-31","licence":"MIT","source":{"url":"https://endoflife.date/tomcat","licence":"MIT"}}
+{"tag":"NEW-tomcat/8.0","kind":"release","owner":"tomcat","version":"8.0","name":"Apache Tomcat 8.0","date":"2014-01-29","status":"end-of-life","latest":"8.0.53","eol":"2018-06-30","licence":"MIT","source":{"url":"https://endoflife.date/tomcat","licence":"MIT"}}

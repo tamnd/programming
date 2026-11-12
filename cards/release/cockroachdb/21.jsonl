@@ -1,0 +1,2 @@
+{"tag":"NEW-cockroachdb/21.2","kind":"release","owner":"cockroachdb","version":"21.2","name":"CockroachDB 21.2","date":"2021-11-16","status":"end-of-life","latest":"21.2.17","eol":"2023-05-16","licence":"MIT","source":{"url":"https://endoflife.date/cockroachdb","licence":"MIT"}}
+{"tag":"NEW-cockroachdb/21.1","kind":"release","owner":"cockroachdb","version":"21.1","name":"CockroachDB 21.1","date":"2021-05-18","status":"end-of-life","latest":"21.1.21","eol":"2022-11-18","licence":"MIT","source":{"url":"https://endoflife.date/cockroachdb","licence":"MIT"}}

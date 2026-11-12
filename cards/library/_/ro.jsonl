@@ -1,1 +1,4 @@
+{"tag":"NEW-robo","kind":"library","owner":"","id":"robo","name":"Robo","class":"framework","url":"https://endoflife.date/robo","licence":"MIT","source":{"url":"https://endoflife.date/robo","licence":"MIT"}}
 {"tag":"NEW-root-lib","kind":"library","owner":"","id":"root-lib","name":"ROOT","class":"library","appeared":1994,"website":"https://root.cern.ch/","wikipedia":"https://en.wikipedia.org/wiki/ROOT","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/root-lib.html","licence":"public-domain"}}
+{"tag":"NEW-ros","kind":"library","owner":"","id":"ros","name":"ROS","class":"framework","url":"https://endoflife.date/ros","licence":"MIT","source":{"url":"https://endoflife.date/ros","licence":"MIT"}}
+{"tag":"NEW-ros-2","kind":"library","owner":"","id":"ros-2","name":"ROS 2","class":"framework","aka":["ros2"],"url":"https://endoflife.date/ros-2","licence":"MIT","source":{"url":"https://endoflife.date/ros-2","licence":"MIT"}}

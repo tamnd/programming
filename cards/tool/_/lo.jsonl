@@ -1,1 +1,4 @@
+{"tag":"NEW-logstash","kind":"tool","owner":"","id":"logstash","name":"Logstash","class":"server application","url":"https://endoflife.date/logstash","licence":"MIT","source":{"url":"https://endoflife.date/logstash","licence":"MIT"}}
+{"tag":"NEW-longhorn","kind":"tool","owner":"","id":"longhorn","name":"Longhorn","class":"server application","url":"https://endoflife.date/longhorn","licence":"MIT","source":{"url":"https://endoflife.date/longhorn","licence":"MIT"}}
+{"tag":"NEW-looker","kind":"tool","owner":"","id":"looker","name":"Looker","class":"server application","url":"https://endoflife.date/looker","licence":"MIT","source":{"url":"https://endoflife.date/looker","licence":"MIT"}}
 {"tag":"NEW-loom","kind":"tool","owner":"","id":"loom","name":"Loom","class":"knowledge base","appeared":1987,"website":"https://www.isi.edu/isd/LOOM/LOOM-HOME.html","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/loom.html","licence":"public-domain"}}

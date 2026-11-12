@@ -1,0 +1,2 @@
+{"tag":"NEW-nixos/23.11","kind":"release","owner":"nixos","version":"23.11","name":"NixOS 23.11 'Tapir'","summary":"Codename: Tapir.","date":"2023-11-29","status":"end-of-life","eol":"2024-06-30","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}
+{"tag":"NEW-nixos/23.05","kind":"release","owner":"nixos","version":"23.05","name":"NixOS 23.05 'Stoat'","summary":"Codename: Stoat.","date":"2023-05-31","status":"end-of-life","eol":"2023-12-31","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}

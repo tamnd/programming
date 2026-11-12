@@ -1,0 +1,1 @@
+{"tag":"NEW-microsoft-build-of-openjdk/11","kind":"release","owner":"microsoft-build-of-openjdk","version":"11","name":"Microsoft Build of OpenJDK 11 (LTS)","date":"2019-01-21","status":"supported","lts":true,"latest":"11.0.33","eol":"2027-09-30","licence":"MIT","source":{"url":"https://endoflife.date/microsoft-build-of-openjdk","licence":"MIT"}}

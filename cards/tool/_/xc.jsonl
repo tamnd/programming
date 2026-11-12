@@ -1,1 +1,2 @@
 {"tag":"NEW-xcompose","kind":"tool","owner":"","id":"xcompose","name":"XCompose","class":"application","appeared":2006,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/xcompose.html","licence":"public-domain"}}
+{"tag":"NEW-xcp-ng","kind":"tool","owner":"","id":"xcp-ng","name":"XCP-ng","class":"operating system","aka":["xcpng"],"url":"https://endoflife.date/xcp-ng","licence":"MIT","source":{"url":"https://endoflife.date/xcp-ng","licence":"MIT"}}

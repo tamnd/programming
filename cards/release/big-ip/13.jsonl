@@ -1,0 +1,2 @@
+{"tag":"NEW-big-ip/13.1","kind":"release","owner":"big-ip","version":"13.1","name":"BIG-IP 13.1","date":"2017-12-19","status":"end-of-life","latest":"13.1.5","eol":"2023-12-31","licence":"MIT","source":{"url":"https://endoflife.date/big-ip","licence":"MIT"}}
+{"tag":"NEW-big-ip/13.0","kind":"release","owner":"big-ip","version":"13.0","name":"BIG-IP 13.0","date":"2017-02-22","status":"end-of-life","latest":"13.0.1","eol":"2019-05-22","licence":"MIT","source":{"url":"https://endoflife.date/big-ip","licence":"MIT"}}

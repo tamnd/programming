@@ -1,0 +1,2 @@
+{"tag":"NEW-panos/7.1","kind":"release","owner":"panos","version":"7.1","name":"Palo Alto Networks PAN-OS 7.1","date":"2016-03-29","status":"end-of-life","latest":"7.1.26","eol":"2020-06-30","licence":"MIT","source":{"url":"https://endoflife.date/panos","licence":"MIT"}}
+{"tag":"NEW-panos/7.0","kind":"release","owner":"panos","version":"7.0","name":"Palo Alto Networks PAN-OS 7.0","date":"2015-06-04","status":"end-of-life","latest":"7.0.19","eol":"2017-12-04","licence":"MIT","source":{"url":"https://endoflife.date/panos","licence":"MIT"}}

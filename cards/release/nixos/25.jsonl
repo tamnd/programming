@@ -1,0 +1,2 @@
+{"tag":"NEW-nixos/25.11","kind":"release","owner":"nixos","version":"25.11","name":"NixOS 25.11 'Xantusia'","summary":"Codename: Xantusia.","date":"2025-11-30","status":"end-of-life","eol":"2026-06-30","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}
+{"tag":"NEW-nixos/25.05","kind":"release","owner":"nixos","version":"25.05","name":"NixOS 25.05 'Warbler'","summary":"Codename: Warbler.","date":"2025-05-23","status":"end-of-life","eol":"2025-12-31","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}

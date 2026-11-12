@@ -1,0 +1,2 @@
+{"tag":"NEW-amazon-mq-rabbitmq/3.13","kind":"release","owner":"amazon-mq-rabbitmq","version":"3.13","name":"Amazon MQ for RabbitMQ 3.13","date":"2024-07-02","status":"supported","licence":"MIT","source":{"url":"https://endoflife.date/amazon-mq-rabbitmq","licence":"MIT"}}
+{"tag":"NEW-amazon-mq-rabbitmq/3.12","kind":"release","owner":"amazon-mq-rabbitmq","version":"3.12","name":"Amazon MQ for RabbitMQ 3.12","date":"2023-05-09","status":"end-of-life","eol":"2025-03-17","licence":"MIT","source":{"url":"https://endoflife.date/amazon-mq-rabbitmq","licence":"MIT"}}

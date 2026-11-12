@@ -1,0 +1,3 @@
+{"tag":"NEW-ibm-i/2.3","kind":"release","owner":"ibm-i","version":"2.3","name":"IBM iSeries 2.3","date":"1993-12-17","status":"end-of-life","latest":"2.3","eol":"1996-05-31","licence":"MIT","source":{"url":"https://endoflife.date/ibm-i","licence":"MIT"}}
+{"tag":"NEW-ibm-i/2.2","kind":"release","owner":"ibm-i","version":"2.2","name":"IBM iSeries 2.2","date":"1992-09-18","status":"end-of-life","latest":"2.2","eol":"1995-03-31","licence":"MIT","source":{"url":"https://endoflife.date/ibm-i","licence":"MIT"}}
+{"tag":"NEW-ibm-i/2.1","kind":"release","owner":"ibm-i","version":"2.1","name":"IBM iSeries 2.1","date":"1991-05-24","status":"end-of-life","latest":"2.1.1","eol":"1994-06-30","licence":"MIT","source":{"url":"https://endoflife.date/ibm-i","licence":"MIT"}}

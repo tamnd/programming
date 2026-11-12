@@ -1,0 +1,2 @@
+{"tag":"NEW-symfony/8.1","kind":"release","owner":"symfony","version":"8.1","name":"Symfony 8.1","date":"2026-05-29","status":"supported","latest":"8.1.11","eol":"2027-01-31","licence":"MIT","source":{"url":"https://endoflife.date/symfony","licence":"MIT"}}
+{"tag":"NEW-symfony/8.0","kind":"release","owner":"symfony","version":"8.0","name":"Symfony 8.0","date":"2025-11-27","status":"end-of-life","latest":"8.0.16","eol":"2026-07-31","licence":"MIT","source":{"url":"https://endoflife.date/symfony","licence":"MIT"}}
