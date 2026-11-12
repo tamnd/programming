@@ -1,0 +1,2 @@
+{"tag":"NEW-sns-firmware/3.11","kind":"release","owner":"sns-firmware","version":"3.11","name":"Stormshield Firmware 3.11 (LTSB)","date":"2020-09-24","status":"end-of-life","lts":true,"eol":"2024-06-30","licence":"MIT","source":{"url":"https://endoflife.date/sns-firmware","licence":"MIT"}}
+{"tag":"NEW-sns-firmware/3.7","kind":"release","owner":"sns-firmware","version":"3.7","name":"Stormshield Firmware 3.7 (LTSB)","date":"2018-09-29","status":"end-of-life","lts":true,"eol":"2024-06-30","licence":"MIT","source":{"url":"https://endoflife.date/sns-firmware","licence":"MIT"}}

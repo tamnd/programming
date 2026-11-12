@@ -1,0 +1,2 @@
+{"tag":"NEW-valkey/9.1","kind":"release","owner":"valkey","version":"9.1","name":"Valkey 9.1","date":"2026-05-19","status":"supported","latest":"9.1.3","eol":"2031-05-19","licence":"MIT","source":{"url":"https://endoflife.date/valkey","licence":"MIT"}}
+{"tag":"NEW-valkey/9.0","kind":"release","owner":"valkey","version":"9.0","name":"Valkey 9.0","date":"2025-10-21","status":"supported","latest":"9.0.7","eol":"2028-10-21","licence":"MIT","source":{"url":"https://endoflife.date/valkey","licence":"MIT"}}

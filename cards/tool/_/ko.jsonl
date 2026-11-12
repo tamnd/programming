@@ -1,1 +1,2 @@
 {"tag":"NEW-komodo-editor","kind":"tool","owner":"","id":"komodo-editor","name":"komodo-editor","class":"editor","appeared":2007,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/komodo-editor.html","licence":"public-domain"}}
+{"tag":"NEW-kong-gateway","kind":"tool","owner":"","id":"kong-gateway","name":"Kong Gateway","class":"server application","aka":["kong","kong-api-gateway"],"url":"https://endoflife.date/kong-gateway","licence":"MIT","source":{"url":"https://endoflife.date/kong-gateway","licence":"MIT"}}

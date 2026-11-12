@@ -1,0 +1,2 @@
+{"tag":"NEW-dotnet","kind":"library","owner":"","id":"dotnet","name":"Microsoft .NET","class":"framework","aka":["dotnetcore"],"url":"https://endoflife.date/dotnet","licence":"MIT","source":{"url":"https://endoflife.date/dotnet","licence":"MIT"}}
+{"tag":"NEW-dotnetfx","kind":"library","owner":"","id":"dotnetfx","name":"Microsoft .NET Framework","class":"framework","url":"https://endoflife.date/dotnetfx","licence":"MIT","source":{"url":"https://endoflife.date/dotnetfx","licence":"MIT"}}

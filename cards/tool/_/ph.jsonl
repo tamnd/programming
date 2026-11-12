@@ -1,1 +1,3 @@
+{"tag":"NEW-phpbb","kind":"tool","owner":"","id":"phpbb","name":"phpBB","class":"server application","url":"https://endoflife.date/phpbb","licence":"MIT","source":{"url":"https://endoflife.date/phpbb","licence":"MIT"}}
+{"tag":"NEW-phpmyadmin","kind":"tool","owner":"","id":"phpmyadmin","name":"phpMyAdmin","class":"server application","url":"https://endoflife.date/phpmyadmin","licence":"MIT","source":{"url":"https://endoflife.date/phpmyadmin","licence":"MIT"}}
 {"tag":"NEW-phpstorm-editor","kind":"tool","owner":"","id":"phpstorm-editor","name":"PhpStorm","class":"editor","appeared":2011,"website":"https://www.jetbrains.com/phpstorm/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/phpstorm-editor.html","licence":"public-domain"}}

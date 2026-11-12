@@ -1,0 +1,2 @@
+{"tag":"NEW-dotnet/1.1","kind":"release","owner":"dotnet","version":"1.1","name":"Microsoft .NET Core 1.1","date":"2016-11-16","status":"end-of-life","latest":"1.1.13","eol":"2019-06-27","licence":"MIT","source":{"url":"https://endoflife.date/dotnet","licence":"MIT"}}
+{"tag":"NEW-dotnet/1.0","kind":"release","owner":"dotnet","version":"1.0","name":"Microsoft .NET Core 1.0","date":"2016-06-27","status":"end-of-life","latest":"1.0.16","eol":"2019-06-27","licence":"MIT","source":{"url":"https://endoflife.date/dotnet","licence":"MIT"}}

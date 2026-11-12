@@ -1,0 +1,2 @@
+{"tag":"NEW-mysql/26.10","kind":"release","owner":"mysql","version":"26.10","name":"MySQL 26.10","date":"2026-10-20","status":"supported","latest":"26.10.0","licence":"MIT","source":{"url":"https://endoflife.date/mysql","licence":"MIT"}}
+{"tag":"NEW-mysql/26.7","kind":"release","owner":"mysql","version":"26.7","name":"MySQL 26.7","date":"2026-07-28","status":"end-of-life","latest":"26.7.1","eol":"2026-10-20","licence":"MIT","source":{"url":"https://endoflife.date/mysql","licence":"MIT"}}

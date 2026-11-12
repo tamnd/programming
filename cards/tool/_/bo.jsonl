@@ -1,1 +1,2 @@
 {"tag":"NEW-boomerang-decompiler","kind":"tool","owner":"","id":"boomerang-decompiler","name":"Boomerang Decompiler","class":"decompiler","appeared":2002,"version":"v0.5.2","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/boomerang-decompiler.html","licence":"public-domain"}}
+{"tag":"NEW-boundary","kind":"tool","owner":"","id":"boundary","name":"Hashicorp Boundary","class":"server application","url":"https://endoflife.date/boundary","licence":"MIT","source":{"url":"https://endoflife.date/boundary","licence":"MIT"}}

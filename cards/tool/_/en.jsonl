@@ -1,1 +1,2 @@
+{"tag":"NEW-envoy","kind":"tool","owner":"","id":"envoy","name":"Envoy","class":"server application","aka":["envoy-proxy"],"url":"https://endoflife.date/envoy","licence":"MIT","source":{"url":"https://endoflife.date/envoy","licence":"MIT"}}
 {"tag":"NEW-envoy-app","kind":"tool","owner":"","id":"envoy-app","name":"envoy-app","class":"application","appeared":2017,"website":"https://www.envoyproxy.io/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/envoy-app.html","licence":"public-domain"}}

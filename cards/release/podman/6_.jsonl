@@ -1,0 +1,2 @@
+{"tag":"NEW-podman/6.1","kind":"release","owner":"podman","version":"6.1","name":"Podman 6.1","date":"2026-08-12","status":"supported","latest":"6.1.4","licence":"MIT","source":{"url":"https://endoflife.date/podman","licence":"MIT"}}
+{"tag":"NEW-podman/6.0","kind":"release","owner":"podman","version":"6.0","name":"Podman 6.0","date":"2026-06-24","status":"end-of-life","latest":"6.0.2","eol":"2026-08-12","licence":"MIT","source":{"url":"https://endoflife.date/podman","licence":"MIT"}}

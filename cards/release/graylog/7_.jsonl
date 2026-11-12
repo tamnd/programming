@@ -1,0 +1,3 @@
+{"tag":"NEW-graylog/7.2","kind":"release","owner":"graylog","version":"7.2","name":"Graylog 7.2","date":"2026-10-13","status":"supported","latest":"7.2.1","eol":"2027-10-13","licence":"MIT","source":{"url":"https://endoflife.date/graylog","licence":"MIT"}}
+{"tag":"NEW-graylog/7.1","kind":"release","owner":"graylog","version":"7.1","name":"Graylog 7.1","date":"2026-05-04","status":"supported","latest":"7.1.11","eol":"2027-05-04","licence":"MIT","source":{"url":"https://endoflife.date/graylog","licence":"MIT"}}
+{"tag":"NEW-graylog/7.0","kind":"release","owner":"graylog","version":"7.0","name":"Graylog 7.0","date":"2025-11-03","status":"end-of-life","latest":"7.0.15","eol":"2026-11-03","licence":"MIT","source":{"url":"https://endoflife.date/graylog","licence":"MIT"}}

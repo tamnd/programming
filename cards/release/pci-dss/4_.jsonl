@@ -1,0 +1,2 @@
+{"tag":"NEW-pci-dss/4.0.1","kind":"release","owner":"pci-dss","version":"4.0.1","name":"PCI-DSS 4.0.1","date":"2024-06-11","status":"supported","licence":"MIT","source":{"url":"https://endoflife.date/pci-dss","licence":"MIT"}}
+{"tag":"NEW-pci-dss/4.0","kind":"release","owner":"pci-dss","version":"4.0","name":"PCI-DSS 4.0","date":"2022-03-31","status":"end-of-life","eol":"2024-12-31","licence":"MIT","source":{"url":"https://endoflife.date/pci-dss","licence":"MIT"}}

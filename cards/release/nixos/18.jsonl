@@ -1,0 +1,2 @@
+{"tag":"NEW-nixos/18.09","kind":"release","owner":"nixos","version":"18.09","name":"NixOS 18.09 'Jellyfish'","summary":"Codename: Jellyfish.","date":"2018-10-05","status":"end-of-life","eol":"2019-04-30","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}
+{"tag":"NEW-nixos/18.03","kind":"release","owner":"nixos","version":"18.03","name":"NixOS 18.03 'Impala'","summary":"Codename: Impala.","date":"2018-04-04","status":"end-of-life","eol":"2018-10-30","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}

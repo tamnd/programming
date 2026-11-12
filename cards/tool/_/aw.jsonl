@@ -1,1 +1,2 @@
 {"tag":"NEW-aws","kind":"tool","owner":"","id":"aws","name":"AWS","class":"cloud","appeared":2006,"website":"https://aws.amazon.com/","wikipedia":"https://en.wikipedia.org/wiki/Amazon_Web_Services","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/aws.html","licence":"public-domain"}}
+{"tag":"NEW-aws-lambda","kind":"tool","owner":"","id":"aws-lambda","name":"AWS Lambda","class":"cloud service","url":"https://endoflife.date/aws-lambda","licence":"MIT","source":{"url":"https://endoflife.date/aws-lambda","licence":"MIT"}}

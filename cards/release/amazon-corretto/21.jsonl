@@ -1,0 +1,1 @@
+{"tag":"NEW-amazon-corretto/21","kind":"release","owner":"amazon-corretto","version":"21","name":"Amazon Corretto 21 (LTS)","date":"2023-08-21","status":"supported","lts":true,"latest":"21.0.13.0.11","eol":"2030-10-31","licence":"MIT","source":{"url":"https://endoflife.date/amazon-corretto","licence":"MIT"}}

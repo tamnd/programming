@@ -1,1 +1,2 @@
 {"tag":"NEW-gas","kind":"tool","owner":"","id":"gas","name":"GNU Assembler","class":"compiler","appeared":1986,"wikipedia":"https://en.wikipedia.org/wiki/GNU_Assembler","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/gas.html","licence":"public-domain"}}
+{"tag":"NEW-gatekeeper","kind":"tool","owner":"","id":"gatekeeper","name":"Gatekeeper","class":"server application","url":"https://endoflife.date/gatekeeper","licence":"MIT","source":{"url":"https://endoflife.date/gatekeeper","licence":"MIT"}}

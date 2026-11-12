@@ -1,0 +1,2 @@
+{"tag":"NEW-virtualbox/6.1","kind":"release","owner":"virtualbox","version":"6.1","name":"VirtualBox 6.1","date":"2019-12-10","status":"end-of-life","latest":"6.1.50","eol":"2024-01-31","licence":"MIT","source":{"url":"https://endoflife.date/virtualbox","licence":"MIT"}}
+{"tag":"NEW-virtualbox/6.0","kind":"release","owner":"virtualbox","version":"6.0","name":"VirtualBox 6.0","date":"2018-12-18","status":"end-of-life","latest":"6.0.24","eol":"2020-07-31","licence":"MIT","source":{"url":"https://endoflife.date/virtualbox","licence":"MIT"}}

@@ -1,1 +1,2 @@
+{"tag":"NEW-pgadmin","kind":"tool","owner":"","id":"pgadmin","name":"pgAdmin","class":"server application","aka":["pgadmin4"],"url":"https://endoflife.date/pgadmin","licence":"MIT","source":{"url":"https://endoflife.date/pgadmin","licence":"MIT"}}
 {"tag":"NEW-pgbouncer","kind":"tool","owner":"","id":"pgbouncer","name":"PgBouncer","class":"application","appeared":2007,"creators":["Frank McGeough"],"website":"https://www.pgbouncer.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pgbouncer.html","licence":"public-domain"}}

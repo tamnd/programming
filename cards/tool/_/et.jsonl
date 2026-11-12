@@ -1,1 +1,2 @@
+{"tag":"NEW-etcd","kind":"tool","owner":"","id":"etcd","name":"etcd","class":"database","url":"https://endoflife.date/etcd","licence":"MIT","source":{"url":"https://endoflife.date/etcd","licence":"MIT"}}
 {"tag":"NEW-ethereum-vm","kind":"tool","owner":"","id":"ethereum-vm","name":"Ethereum Virtual Machine","class":"virtual machine","appeared":2015,"creators":["Vitalik Buterin"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ethereum-vm.html","licence":"public-domain"}}

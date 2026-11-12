@@ -1,0 +1,2 @@
+{"tag":"NEW-nixos/21.11","kind":"release","owner":"nixos","version":"21.11","name":"NixOS 21.11 'Porcupine'","summary":"Codename: Porcupine.","date":"2021-11-30","status":"end-of-life","eol":"2022-06-30","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}
+{"tag":"NEW-nixos/21.05","kind":"release","owner":"nixos","version":"21.05","name":"NixOS 21.05 'Okapi'","summary":"Codename: Okapi.","date":"2021-05-31","status":"end-of-life","eol":"2021-12-31","licence":"MIT","source":{"url":"https://endoflife.date/nixos","licence":"MIT"}}

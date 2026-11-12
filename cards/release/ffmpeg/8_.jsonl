@@ -1,0 +1,2 @@
+{"tag":"NEW-ffmpeg/8.1","kind":"release","owner":"ffmpeg","version":"8.1","name":"FFmpeg 8.1 'Hoare'","summary":"Codename: Hoare.","date":"2026-03-16","status":"supported","latest":"8.1.3","licence":"MIT","source":{"url":"https://endoflife.date/ffmpeg","licence":"MIT"}}
+{"tag":"NEW-ffmpeg/8.0","kind":"release","owner":"ffmpeg","version":"8.0","name":"FFmpeg 8.0 'Huffman'","summary":"Codename: Huffman.","date":"2025-08-22","status":"supported","latest":"8.0.3","licence":"MIT","source":{"url":"https://endoflife.date/ffmpeg","licence":"MIT"}}

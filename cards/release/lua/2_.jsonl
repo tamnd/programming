@@ -1,0 +1,4 @@
+{"tag":"NEW-lua/2.5","kind":"release","owner":"lua","version":"2.5","name":"Lua 2.5","date":"1996-11-19","status":"end-of-life","latest":"2.5.1","eol":"1997-07-01","licence":"MIT","source":{"url":"https://endoflife.date/lua","licence":"MIT"}}
+{"tag":"NEW-lua/2.4","kind":"release","owner":"lua","version":"2.4","name":"Lua 2.4","date":"1996-05-14","status":"end-of-life","latest":"2.4","eol":"1996-11-19","licence":"MIT","source":{"url":"https://endoflife.date/lua","licence":"MIT"}}
+{"tag":"NEW-lua/2.2","kind":"release","owner":"lua","version":"2.2","name":"Lua 2.2","date":"1995-11-28","status":"end-of-life","latest":"2.2","eol":"1996-05-14","licence":"MIT","source":{"url":"https://endoflife.date/lua","licence":"MIT"}}
+{"tag":"NEW-lua/2.1","kind":"release","owner":"lua","version":"2.1","name":"Lua 2.1","date":"1995-02-07","status":"end-of-life","latest":"2.1","eol":"1995-11-28","licence":"MIT","source":{"url":"https://endoflife.date/lua","licence":"MIT"}}

@@ -1,0 +1,3 @@
+{"tag":"NEW-fortios/6.4","kind":"release","owner":"fortios","version":"6.4","name":"FortiOS 6.4","date":"2020-03-31","status":"end-of-life","eol":"2024-09-30","licence":"MIT","source":{"url":"https://endoflife.date/fortios","licence":"MIT"}}
+{"tag":"NEW-fortios/6.2","kind":"release","owner":"fortios","version":"6.2","name":"FortiOS 6.2","date":"2019-03-28","status":"end-of-life","eol":"2023-09-28","licence":"MIT","source":{"url":"https://endoflife.date/fortios","licence":"MIT"}}
+{"tag":"NEW-fortios/6.0","kind":"release","owner":"fortios","version":"6.0","name":"FortiOS 6.0","date":"2018-03-29","status":"end-of-life","eol":"2022-09-29","licence":"MIT","source":{"url":"https://endoflife.date/fortios","licence":"MIT"}}

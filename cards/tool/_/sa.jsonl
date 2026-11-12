@@ -1,2 +1,4 @@
 {"tag":"NEW-safari","kind":"tool","owner":"","id":"safari","name":"Safari","class":"web browser","appeared":2003,"wikipedia":"https://en.wikipedia.org/wiki/Safari_(web_browser)","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/safari.html","licence":"public-domain"}}
+{"tag":"NEW-salt-tool","kind":"tool","owner":"","id":"salt-tool","name":"Salt","class":"server application","aka":["saltstack"],"url":"https://endoflife.date/salt","licence":"MIT","source":{"url":"https://endoflife.date/salt","licence":"MIT"}}
+{"tag":"NEW-samba","kind":"tool","owner":"","id":"samba","name":"Samba","class":"server application","url":"https://endoflife.date/samba","licence":"MIT","source":{"url":"https://endoflife.date/samba","licence":"MIT"}}
 {"tag":"NEW-sap-hana","kind":"tool","owner":"","id":"sap-hana","name":"SAP HANA","class":"database","appeared":2010,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/sap-hana.html","licence":"public-domain"}}

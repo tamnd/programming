@@ -1,1 +1,2 @@
 {"tag":"NEW-diff","kind":"tool","owner":"","id":"diff","name":"Diff","class":"Unix application","appeared":1974,"extensions":["diff","patch"],"wikipedia":"https://en.wikipedia.org/wiki/Diff_utility","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/diff.html","licence":"public-domain"}}
+{"tag":"NEW-discourse","kind":"tool","owner":"","id":"discourse","name":"Discourse","class":"server application","url":"https://endoflife.date/discourse","licence":"MIT","source":{"url":"https://endoflife.date/discourse","licence":"MIT"}}

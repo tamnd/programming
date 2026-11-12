@@ -1,0 +1,2 @@
+{"tag":"NEW-pop-os/18.10","kind":"release","owner":"pop-os","version":"18.10","name":"Pop!_OS 18.10","date":"2018-10-19","status":"end-of-life","eol":"2019-07-19","licence":"MIT","source":{"url":"https://endoflife.date/pop-os","licence":"MIT"}}
+{"tag":"NEW-pop-os/18.04","kind":"release","owner":"pop-os","version":"18.04","name":"Pop!_OS 18.04 (LTS)","date":"2018-04-30","status":"end-of-life","lts":true,"eol":"2023-04-30","licence":"MIT","source":{"url":"https://endoflife.date/pop-os","licence":"MIT"}}

@@ -1,0 +1,2 @@
+{"tag":"NEW-discourse/3.5","kind":"release","owner":"discourse","version":"3.5","name":"Discourse 3.5 (ESR)","date":"2025-08-19","status":"end-of-life","lts":true,"latest":"3.5.4","eol":"2026-01-28","licence":"MIT","source":{"url":"https://endoflife.date/discourse","licence":"MIT"}}
+{"tag":"NEW-discourse/3.4","kind":"release","owner":"discourse","version":"3.4","name":"Discourse 3.4 (ESR)","date":"2025-02-04","status":"end-of-life","lts":true,"latest":"3.4.7","eol":"2025-08-19","licence":"MIT","source":{"url":"https://endoflife.date/discourse","licence":"MIT"}}

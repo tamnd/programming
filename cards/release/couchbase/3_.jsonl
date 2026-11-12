@@ -1,0 +1,2 @@
+{"tag":"NEW-couchbase/3.1","kind":"release","owner":"couchbase","version":"3.1","name":"Couchbase Server 3.1","date":"2015-08-31","status":"end-of-life","latest":"3.1.3","eol":"2017-02-28","licence":"MIT","source":{"url":"https://endoflife.date/couchbase-server","licence":"MIT"}}
+{"tag":"NEW-couchbase/3.0","kind":"release","owner":"couchbase","version":"3.0","name":"Couchbase Server 3.0","date":"2014-12-17","status":"end-of-life","latest":"3.0.3","eol":"2016-04-30","licence":"MIT","source":{"url":"https://endoflife.date/couchbase-server","licence":"MIT"}}

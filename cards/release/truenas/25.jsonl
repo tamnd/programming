@@ -1,0 +1,2 @@
+{"tag":"NEW-truenas/25.10","kind":"release","owner":"truenas","version":"25.10","name":"TrueNAS 25.10 (Goldeye)","summary":"Codename: Goldeye.","date":"2025-10-28","status":"supported","latest":"25.10.8","licence":"MIT","source":{"url":"https://endoflife.date/truenas","licence":"MIT"}}
+{"tag":"NEW-truenas/25.04","kind":"release","owner":"truenas","version":"25.04","name":"TrueNAS 25.04 (Fangtooth)","summary":"Codename: Fangtooth.","date":"2025-04-15","status":"supported","latest":"25.04.2.6","licence":"MIT","source":{"url":"https://endoflife.date/truenas","licence":"MIT"}}

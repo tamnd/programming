@@ -1,0 +1,2 @@
+{"tag":"NEW-ibm-db2/11.5","kind":"release","owner":"ibm-db2","version":"11.5","name":"IBM Db2 11.5","date":"2019-06-25","status":"supported","eol":"2027-04-30","licence":"MIT","source":{"url":"https://endoflife.date/ibm-db2","licence":"MIT"}}
+{"tag":"NEW-ibm-db2/11.1","kind":"release","owner":"ibm-db2","version":"11.1","name":"IBM Db2 11.1","date":"2016-06-15","status":"end-of-life","eol":"2022-04-30","licence":"MIT","source":{"url":"https://endoflife.date/ibm-db2","licence":"MIT"}}

@@ -1,0 +1,3 @@
+{"tag":"NEW-zabbix/7.4","kind":"release","owner":"zabbix","version":"7.4","name":"Zabbix 7.4","date":"2025-06-30","status":"supported","latest":"7.4.16","eol":"2027-05-31","licence":"MIT","source":{"url":"https://endoflife.date/zabbix","licence":"MIT"}}
+{"tag":"NEW-zabbix/7.2","kind":"release","owner":"zabbix","version":"7.2","name":"Zabbix 7.2","date":"2024-12-10","status":"end-of-life","latest":"7.2.15","eol":"2025-12-31","licence":"MIT","source":{"url":"https://endoflife.date/zabbix","licence":"MIT"}}
+{"tag":"NEW-zabbix/7.0","kind":"release","owner":"zabbix","version":"7.0","name":"Zabbix 7.0 (LTS)","date":"2024-06-04","status":"supported","lts":true,"latest":"7.0.32","eol":"2029-06-30","licence":"MIT","source":{"url":"https://endoflife.date/zabbix","licence":"MIT"}}

@@ -1,0 +1,3 @@
+{"tag":"NEW-splunk/8.2","kind":"release","owner":"splunk","version":"8.2","name":"Splunk 8.2","date":"2021-05-12","status":"end-of-life","latest":"8.2.12","eol":"2023-09-30","licence":"MIT","source":{"url":"https://endoflife.date/splunk","licence":"MIT"}}
+{"tag":"NEW-splunk/8.1","kind":"release","owner":"splunk","version":"8.1","name":"Splunk 8.1","date":"2020-10-19","status":"end-of-life","latest":"8.1.14","eol":"2023-04-19","licence":"MIT","source":{"url":"https://endoflife.date/splunk","licence":"MIT"}}
+{"tag":"NEW-splunk/8.0","kind":"release","owner":"splunk","version":"8.0","name":"Splunk 8.0","date":"2019-10-22","status":"end-of-life","latest":"8.0.10","eol":"2021-10-22","licence":"MIT","source":{"url":"https://endoflife.date/splunk","licence":"MIT"}}

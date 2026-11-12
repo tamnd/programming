@@ -1,0 +1,5 @@
+{"tag":"NEW-centos","kind":"tool","owner":"","id":"centos","name":"CentOS","class":"operating system","url":"https://endoflife.date/centos","licence":"MIT","source":{"url":"https://endoflife.date/centos","licence":"MIT"}}
+{"tag":"NEW-centos-stream","kind":"tool","owner":"","id":"centos-stream","name":"CentOS Stream","class":"operating system","url":"https://endoflife.date/centos-stream","licence":"MIT","source":{"url":"https://endoflife.date/centos-stream","licence":"MIT"}}
+{"tag":"NEW-centreon","kind":"tool","owner":"","id":"centreon","name":"Centreon","class":"server application","url":"https://endoflife.date/centreon","licence":"MIT","source":{"url":"https://endoflife.date/centreon","licence":"MIT"}}
+{"tag":"NEW-ceph","kind":"tool","owner":"","id":"ceph","name":"Ceph","class":"server application","url":"https://endoflife.date/ceph","licence":"MIT","source":{"url":"https://endoflife.date/ceph","licence":"MIT"}}
+{"tag":"NEW-cert-manager","kind":"tool","owner":"","id":"cert-manager","name":"cert-manager","class":"application","url":"https://endoflife.date/cert-manager","licence":"MIT","source":{"url":"https://endoflife.date/cert-manager","licence":"MIT"}}

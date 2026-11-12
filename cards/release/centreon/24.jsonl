@@ -1,0 +1,2 @@
+{"tag":"NEW-centreon/24.10","kind":"release","owner":"centreon","version":"24.10","name":"Centreon 24.10","date":"2024-10-31","status":"supported","latest":"24.10.31","eol":"2027-10-31","licence":"MIT","source":{"url":"https://endoflife.date/centreon","licence":"MIT"}}
+{"tag":"NEW-centreon/24.04","kind":"release","owner":"centreon","version":"24.04","name":"Centreon 24.04","date":"2024-04-22","status":"end-of-life","latest":"24.04.26","eol":"2026-04-30","licence":"MIT","source":{"url":"https://endoflife.date/centreon","licence":"MIT"}}

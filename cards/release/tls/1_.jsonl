@@ -1,0 +1,4 @@
+{"tag":"NEW-tls/1.3","kind":"release","owner":"tls","version":"1.3","name":"TLS TLS 1.3","date":"2018-08-10","status":"supported","licence":"MIT","source":{"url":"https://endoflife.date/tls","licence":"MIT"}}
+{"tag":"NEW-tls/1.2","kind":"release","owner":"tls","version":"1.2","name":"TLS TLS 1.2","date":"2008-08-15","status":"supported","licence":"MIT","source":{"url":"https://endoflife.date/tls","licence":"MIT"}}
+{"tag":"NEW-tls/1.1","kind":"release","owner":"tls","version":"1.1","name":"TLS TLS 1.1","date":"2006-04-26","status":"end-of-life","eol":"2021-03-23","licence":"MIT","source":{"url":"https://endoflife.date/tls","licence":"MIT"}}
+{"tag":"NEW-tls/1.0","kind":"release","owner":"tls","version":"1.0","name":"TLS TLS 1.0","date":"1999-01-01","status":"end-of-life","eol":"2021-03-23","licence":"MIT","source":{"url":"https://endoflife.date/tls","licence":"MIT"}}

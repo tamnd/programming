@@ -1,0 +1,2 @@
+{"tag":"NEW-panos/5.1","kind":"release","owner":"panos","version":"5.1","name":"Palo Alto Networks PAN-OS 5.1","date":"2013-05-09","status":"end-of-life","eol":"2017-05-09","licence":"MIT","source":{"url":"https://endoflife.date/panos","licence":"MIT"}}
+{"tag":"NEW-panos/5.0","kind":"release","owner":"panos","version":"5.0","name":"Palo Alto Networks PAN-OS 5.0","date":"2012-11-13","status":"end-of-life","eol":"2016-11-13","licence":"MIT","source":{"url":"https://endoflife.date/panos","licence":"MIT"}}

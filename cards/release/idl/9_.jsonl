@@ -1,0 +1,4 @@
+{"tag":"NEW-idl/9.3","kind":"release","owner":"idl","version":"9.3","name":"IDL 9.3","date":"2026-08-13","status":"supported","latest":"9.3.0","licence":"MIT","source":{"url":"https://endoflife.date/idl","licence":"MIT"}}
+{"tag":"NEW-idl/9.2","kind":"release","owner":"idl","version":"9.2","name":"IDL 9.2","date":"2025-08-15","status":"end-of-life","latest":"9.2.0","eol":"2026-08-13","licence":"MIT","source":{"url":"https://endoflife.date/idl","licence":"MIT"}}
+{"tag":"NEW-idl/9.1","kind":"release","owner":"idl","version":"9.1","name":"IDL 9.1","date":"2024-09-25","status":"end-of-life","latest":"9.1.0","eol":"2025-08-15","licence":"MIT","source":{"url":"https://endoflife.date/idl","licence":"MIT"}}
+{"tag":"NEW-idl/9.0","kind":"release","owner":"idl","version":"9.0","name":"IDL 9.0","date":"2023-07-01","status":"end-of-life","latest":"9.0.0","eol":"2024-09-25","licence":"MIT","source":{"url":"https://endoflife.date/idl","licence":"MIT"}}

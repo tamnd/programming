@@ -1,1 +1,2 @@
 {"tag":"NEW-vuejs","kind":"library","owner":"","id":"vuejs","name":"Vue","class":"framework","appeared":2014,"creators":["Evan You"],"extensions":["vue"],"version":"2.7.16","website":"https://vuejs.org","wikipedia":"https://en.wikipedia.org/wiki/Vue.js","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/vuejs.html","licence":"public-domain"}}
+{"tag":"NEW-vuetify","kind":"library","owner":"","id":"vuetify","name":"Vuetify","class":"framework","url":"https://endoflife.date/vuetify","licence":"MIT","source":{"url":"https://endoflife.date/vuetify","licence":"MIT"}}

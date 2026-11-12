@@ -1,0 +1,2 @@
+{"tag":"NEW-windows-powershell/5.1","kind":"release","owner":"windows-powershell","version":"5.1","name":"Microsoft Windows PowerShell 5.1","date":"2016-08-02","status":"supported","licence":"MIT","source":{"url":"https://endoflife.date/windows-powershell","licence":"MIT"}}
+{"tag":"NEW-windows-powershell/5.0","kind":"release","owner":"windows-powershell","version":"5.0","name":"Microsoft Windows PowerShell 5.0","date":"2016-02-24","status":"end-of-life","eol":"2016-08-02","licence":"MIT","source":{"url":"https://endoflife.date/windows-powershell","licence":"MIT"}}
