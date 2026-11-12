@@ -1,0 +1,3 @@
+{"name":"one-char","args":{"s":"banana","chars":"a"},"expect":"bnn"}
+{"name":"set","args":{"s":"hello, world","chars":"lo"},"expect":"he, wrd"}
+{"name":"punct","args":{"s":"a-b_c.d","chars":"-_."},"expect":"abcd"}

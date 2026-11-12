@@ -1,0 +1,10 @@
+{"name":"empty","class":["empty"],"args":{"s":""},"expect":""}
+{"name":"all-space","class":["all-space"],"args":{"s":" \t\n\r "},"expect":""}
+{"name":"vt-ff","class":["control"],"args":{"s":"\u000b\fx\f\u000b"},"expect":"x"}
+{"name":"other-control","class":["control"],"args":{"s":"\u0001x\u0001"},"expect":"\u0001x\u0001"}
+{"name":"no-break-space","class":["unicode-space"],"args":{"s":"\u00a0x\u00a0"},"expect":"\u00a0x\u00a0"}
+{"name":"ideographic-space","class":["unicode-space"],"args":{"s":"\u3000x\u3000"},"expect":"\u3000x\u3000"}
+{"name":"next-line","class":["unicode-space"],"args":{"s":"\u0085x\u0085"},"expect":"\u0085x\u0085"}
+{"name":"bom","class":["unicode-space"],"args":{"s":"\ufeffx"},"expect":"\ufeffx"}
+{"name":"astral","class":["astral"],"args":{"s":" \ud83d\ude42 "},"expect":"\ud83d\ude42"}
+{"name":"combining","class":["combining"],"args":{"s":" \u0301x "},"expect":"\u0301x"}

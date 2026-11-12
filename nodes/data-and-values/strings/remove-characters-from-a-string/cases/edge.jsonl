@@ -1,0 +1,11 @@
+{"name":"empty","class":["empty"],"args":{"s":"","chars":"abc"},"expect":""}
+{"name":"empty-set","class":["empty"],"args":{"s":"hello","chars":""},"expect":"hello"}
+{"name":"none-found","class":["none"],"args":{"s":"hello","chars":"xyz"},"expect":"hello"}
+{"name":"all","class":["all"],"args":{"s":"aaa","chars":"a"},"expect":""}
+{"name":"adjacent","class":["adjacent"],"args":{"s":"aab","chars":"a"},"expect":"b"}
+{"name":"astral","class":["astral"],"args":{"s":"a\ud83d\ude42b\ud83d\ude42","chars":"\ud83d\ude42"},"expect":"ab"}
+{"name":"astral-other","class":["astral"],"args":{"s":"\ud83d\ude42\ud83d\ude43","chars":"\ud83d\ude43"},"expect":"\ud83d\ude42"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"s":"\u00e0\u00e9","chars":"\u00e9"},"expect":"\u00e0"}
+{"name":"combining-mark","class":["combining"],"args":{"s":"e\u0301x","chars":"\u0301"},"expect":"ex"}
+{"name":"combining-base","class":["combining"],"args":{"s":"e\u0301","chars":"e"},"expect":"\u0301"}
+{"name":"composed","class":["combining"],"args":{"s":"e\u0301","chars":"\u00e9"},"expect":"e\u0301"}

@@ -1,0 +1,14 @@
+# The contract of the task "trim white space" (spec 10.2). The white space is the 6 ASCII white space characters, the same set as the C locale and the task check-whether-a-string-is-empty. The trim of the library in each language uses another set, so the solutions give the set.
+problem: trim-whitespace
+entry: trim
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+returns:
+  type: string
+  post: "s with each white space character at the start and at the end removed, where white space is U+0009 to U+000D and U+0020; the characters between the first and the last other character do not change"
+checker: exact
+edge_classes: [empty, all-space, control, unicode-space, astral, combining]
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/start.jsonl: trim_start(s: string) -> string. s with the white space at the start removed; the end does not change.

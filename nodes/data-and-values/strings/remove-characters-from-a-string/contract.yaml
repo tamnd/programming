@@ -1,0 +1,15 @@
+# The contract of the task "remove characters from a string" (spec 10.2). A character is a code point, so a code point above U+FFFF is one character, and a combining mark is a character of its own.
+problem: remove-characters-from-a-string
+entry: remove_chars
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+  - name: chars
+    type: string
+    pre: "any string of Unicode text; each code point of it is a character to remove"
+returns:
+  type: string
+  post: "s with each code point that is also in chars removed; the other code points stay in the same order"
+checker: exact
+edge_classes: [empty, none, all, adjacent, astral, non-ascii, combining]

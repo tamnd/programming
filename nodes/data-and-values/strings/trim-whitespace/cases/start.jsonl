@@ -1,0 +1,6 @@
+{"name":"start-both-ends","args":{"s":"  hello  "},"expect":"hello  "}
+{"name":"start-tab-newline","args":{"s":"\n\tx"},"expect":"x"}
+{"name":"start-empty","args":{"s":""},"expect":""}
+{"name":"start-all-space","args":{"s":"   "},"expect":""}
+{"name":"start-no-break-space","args":{"s":"\u00a0 x"},"expect":"\u00a0 x"}
+{"name":"start-end-only","args":{"s":"x \t"},"expect":"x \t"}

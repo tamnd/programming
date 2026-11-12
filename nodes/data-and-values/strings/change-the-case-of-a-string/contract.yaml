@@ -1,0 +1,15 @@
+# The contract of the task "change the case of a string" (spec 10.2). The change is the ASCII case change: it changes only the 26 ASCII letters, and it keeps each other code point. A program uses it for identifiers, keywords, hex digits and protocol names, which must not depend on a locale.
+problem: change-the-case-of-a-string
+entry: to_upper
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+returns:
+  type: string
+  post: "s with each code point from U+0061 to U+007A (a to z) changed to the code point 0x20 lower (A to Z); the other code points do not change, and the result has the same number of code points"
+checker: exact
+edge_classes: [empty, non-letter, non-ascii, astral, combining]
+# The Unicode case change of each language is in the page. It can change the length (ß to SS) and it can depend on the locale (i to İ in Turkish), so the languages do not agree on it.
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/lower.jsonl: to_lower(s: string) -> string. s with each code point from U+0041 to U+005A (A to Z) changed to the code point 0x20 higher (a to z).
