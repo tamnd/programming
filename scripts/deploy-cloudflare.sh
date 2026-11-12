@@ -9,6 +9,8 @@
 #
 # The script fetches main, and it gets the test results of the last CI run on main from the release ci-results. It does nothing when main, the prog version and the results are the same as at the last deploy. Use -f to deploy again. It removes the site tree after the deploy, because the disk of the server is small.
 set -eu
+# cron gives a short PATH. Node and npx are often in /usr/local/bin.
+PATH=$PATH:/usr/local/bin:/usr/local/sbin; export PATH
 
 dir=${PROG_DEPLOY:-$HOME/programming-deploy}
 repo=https://github.com/tamnd/programming
