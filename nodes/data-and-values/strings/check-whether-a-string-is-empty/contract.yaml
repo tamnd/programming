@@ -1,0 +1,15 @@
+# The contract of the task "check whether a string is empty" (spec 10.2). A string is empty when it has no code points. A string of white space or of invisible characters is not empty.
+problem: check-whether-a-string-is-empty
+entry: is_empty
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+returns:
+  type: bool
+  post: "true if s has no code points"
+checker: exact
+edge_classes: [empty, whitespace, invisible, combining, astral, non-ascii]
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/blank.jsonl: is_blank(s: string) -> bool. True if each code point of s is ASCII white space: U+0020, U+0009, U+000A, U+000B, U+000C or U+000D. True for the empty string.
+# The languages do not agree on which other code points are white space, so the contract uses only the six ASCII code points.

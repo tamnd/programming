@@ -1,0 +1,6 @@
+{"name":"eq-same","args":{"a":"abc","b":"abc"},"expect":true}
+{"name":"eq-case","args":{"a":"abc","b":"ABC"},"expect":false}
+{"name":"eq-empty","args":{"a":"","b":""},"expect":true}
+{"name":"eq-combining","args":{"a":"cafe\u0301","b":"caf\u00e9"},"expect":false}
+{"name":"eq-astral","args":{"a":"\ud83d\ude42","b":"\ud83d\ude42"},"expect":true}
+{"name":"eq-trailing-space","args":{"a":"abc","b":"abc "},"expect":false}

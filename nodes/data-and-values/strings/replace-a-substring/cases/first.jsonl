@@ -1,0 +1,5 @@
+{"name":"first-only","args":{"s":"a-b-c","old":"-","new":"+"},"expect":"a+b-c"}
+{"name":"first-none","args":{"s":"abc","old":"x","new":"y"},"expect":"abc"}
+{"name":"first-overlap","args":{"s":"aaa","old":"aa","new":"b"},"expect":"ba"}
+{"name":"first-astral","args":{"s":"🙂🙂","old":"🙂","new":"x"},"expect":"x🙂"}
+{"name":"first-dollar","args":{"s":"a.b","old":".","new":"$&"},"expect":"a$&b"}

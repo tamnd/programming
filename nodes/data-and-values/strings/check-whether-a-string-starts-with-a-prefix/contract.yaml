@@ -1,0 +1,18 @@
+# The contract of the task "check whether a string starts with a prefix" (spec 10.2). The test compares code points, so it is case-sensitive, and the empty string is a prefix of each string.
+problem: check-whether-a-string-starts-with-a-prefix
+entry: starts_with
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+  - name: prefix
+    type: string
+    pre: "any string of Unicode text; it can be empty"
+returns:
+  type: bool
+  post: "true if the first code points of s are the code points of prefix, in order; true when prefix is empty"
+checker: exact
+edge_classes: [empty, longer-prefix, case-sensitive, non-ascii, astral, combining]
+# A letter with a combining mark is two code points, so cafe is a prefix of cafe followed by U+0301, and it is not a prefix of caf followed by the precomposed U+00E9.
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/ends.jsonl: ends_with(s: string, suffix: string) -> bool. True if the last code points of s are the code points of suffix; true when suffix is empty.

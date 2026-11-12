@@ -1,0 +1,3 @@
+{"name":"found","args":{"s":"Hello, world","sub":"world"},"expect":7}
+{"name":"first-of-two","args":{"s":"abcabc","sub":"bc"},"expect":1}
+{"name":"not-found","args":{"s":"abc","sub":"d"},"expect":-1}

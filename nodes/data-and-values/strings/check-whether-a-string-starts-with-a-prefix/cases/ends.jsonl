@@ -1,0 +1,7 @@
+{"name":"ends-yes","args":{"s":"report.txt","suffix":".txt"},"expect":true}
+{"name":"ends-no","args":{"s":"report.txt","suffix":".csv"},"expect":false}
+{"name":"ends-empty","args":{"s":"abc","suffix":""},"expect":true}
+{"name":"ends-longer","args":{"s":"txt","suffix":"a.txt"},"expect":false}
+{"name":"ends-case","args":{"s":"A.TXT","suffix":".txt"},"expect":false}
+{"name":"ends-astral","args":{"s":"a🙂","suffix":"🙂"},"expect":true}
+{"name":"ends-combining","args":{"s":"cafe\u0301","suffix":"e"},"expect":false}

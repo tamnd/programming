@@ -1,0 +1,10 @@
+{"name":"blank-empty","args":{"s":""},"expect":true}
+{"name":"blank-space","args":{"s":" "},"expect":true}
+{"name":"blank-mixed","args":{"s":" \t\n\r"},"expect":true}
+{"name":"blank-vt-ff","args":{"s":"\u000b\f"},"expect":true}
+{"name":"blank-letter","args":{"s":"a"},"expect":false}
+{"name":"blank-padded","args":{"s":"  a  "},"expect":false}
+{"name":"blank-nbsp","args":{"s":"\u00a0"},"expect":false}
+{"name":"blank-zero-width","args":{"s":"\u200b"},"expect":false}
+{"name":"blank-ideographic","args":{"s":"\u3000"},"expect":false}
+{"name":"blank-astral","args":{"s":" \ud83d\ude42 "},"expect":false}

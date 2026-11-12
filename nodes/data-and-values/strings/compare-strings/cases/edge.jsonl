@@ -1,0 +1,11 @@
+{"name":"both-empty","class":["empty"],"args":{"a":"","b":""},"expect":0}
+{"name":"empty-first","class":["empty"],"args":{"a":"","b":"a"},"expect":-1}
+{"name":"prefix","class":["prefix"],"args":{"a":"app","b":"apple"},"expect":-1}
+{"name":"prefix-longer","class":["prefix"],"args":{"a":"apple","b":"app"},"expect":1}
+{"name":"upper-before-lower","class":["case-sensitive"],"args":{"a":"Zebra","b":"apple"},"expect":-1}
+{"name":"lower-after-upper","class":["case-sensitive"],"args":{"a":"a","b":"A"},"expect":1}
+{"name":"digits","class":["digits"],"args":{"a":"10","b":"9"},"expect":-1}
+{"name":"non-ascii","class":["non-ascii"],"args":{"a":"\u00e9","b":"z"},"expect":1}
+{"name":"astral-after-bmp","class":["astral"],"args":{"a":"\uff61","b":"\ud83d\ude42"},"expect":-1}
+{"name":"astral","class":["astral"],"args":{"a":"\ud83d\ude42","b":"\ud83d\ude43"},"expect":-1}
+{"name":"combining","class":["combining"],"args":{"a":"cafe\u0301","b":"caf\u00e9"},"expect":-1}
