@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: a class or an object declaration implements the interface with empty methods; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a struct of function pointers can hold functions with empty bodies, and a client calls them with no check for NULL.
+sql:
+  status: n/a
+  reason: a query has no objects or interfaces.
+bash:
+  status: n/a
+  reason: shell scripts have no objects or interfaces.
+powershell:
+  status: idiom
+  reason: a PowerShell class can implement an interface with empty methods; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no objects.
+html:
+  status: n/a
+  reason: markup has no objects or interfaces.
+css:
+  status: n/a
+  reason: style rules have no objects or interfaces.

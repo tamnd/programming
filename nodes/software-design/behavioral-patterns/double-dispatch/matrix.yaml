@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: method calls dispatch on the receiver and overloads are chosen at compile time, so double dispatch uses callbacks, or a when expression on both values; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a two-dimensional table of function pointers, indexed by a type tag of each object, selects the function for a pair.
+sql:
+  status: n/a
+  reason: a query has no methods or dispatch.
+bash:
+  status: n/a
+  reason: shell scripts have no types to dispatch on.
+powershell:
+  status: idiom
+  reason: PowerShell classes dispatch a method call on the receiver, so a pair needs callbacks; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no methods.
+html:
+  status: n/a
+  reason: markup has no methods.
+css:
+  status: n/a
+  reason: style rules have no methods.
