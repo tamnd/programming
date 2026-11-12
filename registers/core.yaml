@@ -1056,7 +1056,7 @@ items:
   - part: concepts
     group: "software-design"
     name: "Software design"
-    target: "software-design"
+    target: "software-design-concept"
     status: "planned"
     reason: "It is in CS2023 FPL (\"design new languages, an exercise which requires greater ...\"). It is in the canon books: HtDP contents (\"How to Design Programs, Second Edition\"); Crafting Interpreters contents (\"Design Note: What’s in a Name?\")."
   - part: concepts
@@ -2052,7 +2052,7 @@ items:
     group: "cpp"
     area: "functions"
     name: "Functions"
-    target: "cpp/functions/functions"
+    target: "cpp/functions/functions-overview"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Functions\")."
   - part: features
@@ -2143,7 +2143,7 @@ items:
     group: "cpp"
     area: "user-types"
     name: "Class and struct types"
-    target: "cpp/user-types/class-and-struct-types"
+    target: "cpp/user-types/class-declaration"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Class/struct types\", in \"class\")."
   - part: features
@@ -2199,7 +2199,7 @@ items:
     group: "cpp"
     area: "memory"
     name: "Storage duration specifiers"
-    target: "cpp/memory/storage-duration-specifiers"
+    target: "cpp/memory/storage-duration-and-linkage"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Storage duration specifiers\", in \"storage_duration\")."
   - part: features
@@ -2486,7 +2486,7 @@ items:
     group: "cpp"
     area: "variables-and-scope"
     name: "static"
-    target: "cpp/variables-and-scope/static"
+    target: "cpp/variables-and-scope/static-specifier"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"static\")."
   - part: features
@@ -2535,7 +2535,7 @@ items:
     group: "cpp"
     area: "metaprogramming"
     name: "Templates"
-    target: "cpp/metaprogramming/templates"
+    target: "cpp/templates/template-declarations"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Templates\")."
   - part: features
@@ -2556,7 +2556,7 @@ items:
     group: "cpp"
     area: "metaprogramming"
     name: "Template specialization"
-    target: "cpp/metaprogramming/template-specialization"
+    target: "cpp/templates/explicit-specialization"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Template specialization\", in \"template_specialization\")."
   - part: features
@@ -2689,7 +2689,7 @@ items:
     group: "cpp"
     area: "syntax"
     name: "Evaluation order"
-    target: "cpp/syntax/evaluation-order"
+    target: "cpp/syntax/order-of-evaluation"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Evaluation order\", in \"eval_order\")."
   - part: features
@@ -2822,21 +2822,21 @@ items:
     group: "cpp"
     area: "user-types"
     name: "Enumerations and enumerators"
-    target: "cpp/user-types/enumerations-and-enumerators"
+    target: "cpp/user-types/enumeration-types"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Enumerations and enumerators\", in \"enum\")."
   - part: features
     group: "cpp"
     area: "values-and-types"
     name: "Typedef"
-    target: "cpp/values-and-types/typedef"
+    target: "cpp/variables-and-scope/typedef-declaration"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"typedef\")."
   - part: features
     group: "cpp"
     area: "values-and-types"
     name: "Type alias"
-    target: "cpp/values-and-types/type-alias"
+    target: "cpp/variables-and-scope/type-alias-declaration"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Type alias\", in \"type_alias\")."
   - part: features
@@ -3004,7 +3004,7 @@ items:
     group: "cpp"
     area: "memory"
     name: "Constructors and member initializer lists"
-    target: "cpp/memory/constructors-and-member-initializer-lists"
+    target: "cpp/user-types/constructors"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Constructors and member initializer lists\", in \"constructor\")."
   - part: features
@@ -3109,21 +3109,21 @@ items:
     group: "cpp"
     area: "errors"
     name: "Throwing exceptions"
-    target: "cpp/errors/throwing-exceptions"
+    target: "cpp/errors/throw-expression"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Throwing exceptions\", in \"throw\")."
   - part: features
     group: "cpp"
     area: "errors"
     name: "Handling exceptions"
-    target: "cpp/errors/handling-exceptions"
+    target: "cpp/errors/catch-handler"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"Handling exceptions\", in \"catch\")."
   - part: features
     group: "cpp"
     area: "errors"
     name: "Noexcept specification"
-    target: "cpp/errors/noexcept-specification"
+    target: "cpp/errors/noexcept-specifier"
     status: "planned"
     reason: "It is a section of cppreference (C++ language) (\"noexcept specification\", in \"noexcept_spec\")."
   - part: features
@@ -3991,7 +3991,7 @@ items:
     group: "c"
     area: "functions"
     name: "Functions"
-    target: "c/functions/functions"
+    target: "c/functions/function-basics"
     status: "planned"
     reason: "It is a section of cppreference (C language) (\"Functions\")."
   - part: features
@@ -4292,7 +4292,7 @@ items:
     group: "c"
     area: "memory"
     name: "Pointers"
-    target: "c/memory/pointers"
+    target: "c/pointers/pointer-types"
     status: "planned"
     reason: "It is a section of cppreference (C language) (\"Pointers\", in \"pointer\")."
   - part: features
@@ -5146,14 +5146,14 @@ items:
     group: "csharp"
     area: "syntax"
     name: "The + and += operators"
-    target: "csharp/syntax/the-and-operators"
+    target: "csharp/syntax/addition-operators"
     status: "planned"
     reason: "It is a section of The C# language reference (\"+ and += operators\", in \"Operators and expressions\")."
   - part: features
     group: "csharp"
     area: "syntax"
     name: "- and -= operators"
-    target: "csharp/syntax/and-operators"
+    target: "csharp/syntax/subtraction-operators"
     status: "planned"
     reason: "It is a section of The C# language reference (\"- and -= operators\", in \"Operators and expressions\")."
   - part: features
@@ -5174,7 +5174,7 @@ items:
     group: "csharp"
     area: "syntax"
     name: "=> operator"
-    target: "csharp/syntax/operator"
+    target: "csharp/syntax/lambda-operator"
     status: "planned"
     reason: "It is a section of The C# language reference (\"=> operator\", in \"Operators and expressions\")."
   - part: features
@@ -5524,7 +5524,7 @@ items:
     group: "javascript"
     area: "functions"
     name: "Functions"
-    target: "javascript/functions/functions"
+    target: "javascript/functions/function-basics"
     status: "planned"
     reason: "It is a section of MDN (\"Functions\")."
   - part: features
@@ -6322,7 +6322,7 @@ items:
     group: "typescript"
     area: "functions"
     name: "Functions"
-    target: "typescript/functions/functions"
+    target: "typescript/functions/function-type-basics"
     status: "planned"
     reason: "It is a section of The TypeScript Handbook (\"Functions\", in \"Everyday Types\")."
   - part: features
@@ -6847,7 +6847,7 @@ items:
     group: "go"
     area: "functions"
     name: "Functions"
-    target: "go/functions/functions"
+    target: "go/functions/function-declarations"
     status: "planned"
     reason: "It is a section of A Tour of Go (\"Functions\", in \"Packages, variables, and functions\")."
   - part: features
@@ -7169,7 +7169,7 @@ items:
     group: "go"
     area: "errors"
     name: "Errors"
-    target: "go/errors/errors"
+    target: "go/errors/error-values"
     status: "planned"
     reason: "It is a section of A Tour of Go (\"Errors\", in \"Methods and interfaces\")."
   - part: features
@@ -7365,14 +7365,14 @@ items:
     group: "rust"
     area: "functions"
     name: "Functions"
-    target: "rust/functions/functions"
+    target: "rust/functions/function-definitions"
     status: "planned"
     reason: "It is a section of The Rust Programming Language (\"Functions\", in \"Common Programming Concepts\")."
   - part: features
     group: "rust"
     area: "control-flow"
     name: "Control Flow"
-    target: "rust/control-flow/control-flow"
+    target: "rust/control-flow/if-and-loops"
     status: "planned"
     reason: "It is a section of The Rust Programming Language (\"Control Flow\", in \"Common Programming Concepts\")."
   - part: features
@@ -7897,21 +7897,21 @@ items:
     group: "kotlin"
     area: "collections"
     name: "Collections"
-    target: "kotlin/collections/collections"
+    target: "kotlin/collections/collections-overview"
     status: "planned"
     reason: "It is a section of The Kotlin docs (\"Kotlin tour collections\", in \"Beginner\")."
   - part: features
     group: "kotlin"
     area: "control-flow"
     name: "Control flow"
-    target: "kotlin/control-flow/control-flow"
+    target: "kotlin/control-flow/conditions-and-loops"
     status: "planned"
     reason: "It is a section of The Kotlin docs (\"Kotlin tour control flow\", in \"Beginner\")."
   - part: features
     group: "kotlin"
     area: "functions"
     name: "Functions"
-    target: "kotlin/functions/functions"
+    target: "kotlin/functions/function-declarations"
     status: "planned"
     reason: "It is a section of The Kotlin docs (\"Kotlin tour functions\", in \"Beginner\")."
   - part: features
@@ -8254,7 +8254,7 @@ items:
     group: "kotlin"
     area: "concurrency"
     name: "Concurrency"
-    target: "kotlin/concurrency/concurrency"
+    target: "kotlin/concurrency/concurrency-overview"
     status: "planned"
     reason: "It is a section of The Kotlin docs (\"Concurrency\", in \"Language guide\")."
   - part: features
@@ -8317,14 +8317,14 @@ items:
     group: "sql"
     area: "transactions"
     name: "Transactions"
-    target: "sql/transactions/transactions"
+    target: "sql/transactions/transaction-basics"
     status: "planned"
     reason: "It is a section of The PostgreSQL manual (\"Transactions\", in \"Tutorial\")."
   - part: features
     group: "sql"
     area: "window-functions"
     name: "Window Functions"
-    target: "sql/window-functions/window-functions"
+    target: "sql/window-functions/window-function-basics"
     status: "planned"
     reason: "It is a section of The PostgreSQL manual (\"Window Functions\", in \"Tutorial\")."
   - part: features
@@ -8380,7 +8380,7 @@ items:
     group: "sql"
     area: "constraints"
     name: "Constraints"
-    target: "sql/constraints/constraints"
+    target: "sql/constraints/constraint-kinds"
     status: "planned"
     reason: "It is a section of The PostgreSQL manual (\"Constraints\", in \"The SQL Language\")."
   - part: features
@@ -9213,7 +9213,7 @@ items:
     group: "bash"
     area: "job-control"
     name: "Job Control"
-    target: "bash/job-control/job-control"
+    target: "bash/job-control/job-control-basics"
     status: "planned"
     reason: "It is a section of The Bash Reference Manual (\"Job Control\")."
   - part: features
@@ -9542,7 +9542,7 @@ items:
     group: "powershell"
     area: "error-handling"
     name: "Error Handling"
-    target: "powershell/error-handling/error-handling"
+    target: "powershell/error-handling/error-model"
     status: "planned"
     reason: "It is a section of The PowerShell about topics (\"Error Handling\")."
   - part: features
@@ -9724,7 +9724,7 @@ items:
     group: "powershell"
     area: "modules"
     name: "Modules"
-    target: "powershell/modules/modules"
+    target: "powershell/modules/module-system"
     status: "planned"
     reason: "It is a section of The PowerShell about topics (\"Modules\")."
   - part: features
@@ -9878,7 +9878,7 @@ items:
     group: "powershell"
     area: "providers"
     name: "Providers"
-    target: "powershell/providers/providers"
+    target: "powershell/providers/provider-model"
     status: "planned"
     reason: "It is a section of The PowerShell about topics (\"Providers\")."
   - part: features
@@ -10788,7 +10788,7 @@ items:
     group: "css"
     area: "the-cascade"
     name: "The cascade"
-    target: "css/the-cascade/the-cascade"
+    target: "css/the-cascade/cascade-algorithm"
     status: "planned"
     reason: "It is a section of MDN (\"Understanding the cascade\", in \"Handling conflicts\")."
   - part: features
@@ -10970,7 +10970,7 @@ items:
     group: "css"
     area: "layout"
     name: "Position"
-    target: "css/layout/position"
+    target: "css/values-and-units/position-values"
     status: "planned"
     reason: "It is a section of MDN (\"Position\", in \"CSS values and units\")."
   - part: features
@@ -11899,7 +11899,7 @@ items:
   - part: tasks
     group: "strings"
     name: "Escape a string for HTML"
-    target: "escape-a-string-for-html"
+    target: "escape-html"
     status: "planned"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (XML Input, XML XPath); Go by Example (XML)."
   - part: tasks
