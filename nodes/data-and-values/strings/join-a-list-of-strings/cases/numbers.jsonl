@@ -1,0 +1,5 @@
+{"name":"numbers","args":{"items":[1,2,3],"sep":","},"expect":"1,2,3"}
+{"name":"negative","args":{"items":[-1,0,1],"sep":" "},"expect":"-1 0 1"}
+{"name":"empty","args":{"items":[],"sep":","},"expect":""}
+{"name":"single","args":{"items":[42],"sep":","},"expect":"42"}
+{"name":"int32-ends","args":{"items":[2147483647,-2147483648],"sep":";"},"expect":"2147483647;-2147483648"}

@@ -1,0 +1,9 @@
+{"name":"empty-list","class":["empty-list"],"args":{"items":[],"sep":","},"expect":""}
+{"name":"single","class":["single"],"args":{"items":["only"],"sep":","},"expect":"only"}
+{"name":"empty-items","class":["empty-item"],"args":{"items":["","",""],"sep":","},"expect":",,"}
+{"name":"empty-middle","class":["empty-item"],"args":{"items":["a","","b"],"sep":"-"},"expect":"a--b"}
+{"name":"empty-sep","class":["empty-sep"],"args":{"items":["a","b","c"],"sep":""},"expect":"abc"}
+{"name":"long-sep","class":["multi-char-sep"],"args":{"items":["x","y"],"sep":" -> "},"expect":"x -> y"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"items":["naïve","日本"],"sep":"·"},"expect":"naïve·日本"}
+{"name":"astral-sep","class":["non-ascii"],"args":{"items":["a","b"],"sep":"🙂"},"expect":"a🙂b"}
+{"name":"sep-in-item","class":["sep-in-item"],"args":{"items":["a,b","c"],"sep":","},"expect":"a,b,c"}

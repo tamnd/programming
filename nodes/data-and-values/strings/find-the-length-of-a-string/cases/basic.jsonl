@@ -1,0 +1,5 @@
+{"name":"ascii","args":{"s":"hello"},"expect":[5,5,5]}
+{"name":"words","args":{"s":"Hello, world"},"expect":[12,12,12]}
+{"name":"two-byte","args":{"s":"naïve"},"expect":[6,5,5]}
+{"name":"three-byte","args":{"s":"日本語"},"expect":[9,3,3]}
+{"name":"cyrillic","args":{"s":"Привет"},"expect":[12,6,6]}

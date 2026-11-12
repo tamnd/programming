@@ -1,0 +1,6 @@
+{"name":"positive","args":{"s":"item","n":3},"expect":"item3"}
+{"name":"zero","args":{"s":"n=","n":0},"expect":"n=0"}
+{"name":"negative","args":{"s":"x","n":-5},"expect":"x-5"}
+{"name":"empty-prefix","args":{"s":"","n":42},"expect":"42"}
+{"name":"int32-max","args":{"s":"max=","n":2147483647},"expect":"max=2147483647"}
+{"name":"int32-min","args":{"s":"min=","n":-2147483648},"expect":"min=-2147483648"}

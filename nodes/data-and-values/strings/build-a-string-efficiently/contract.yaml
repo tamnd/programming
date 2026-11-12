@@ -1,0 +1,13 @@
+# The contract of the task "build a string efficiently" (spec 10.2). The result is built in a loop, one number at a time, so the cost of each append matters.
+problem: build-a-string-efficiently
+entry: number_line
+params:
+  - name: n
+    type: int
+    pre: "0 <= n <= 1000000"
+returns:
+  type: string
+  post: "the decimal forms of the integers 1 to n in order, with one comma U+002C between each two and no comma at the start or the end; the empty string for n = 0"
+checker: exact
+edge_classes: [zero, one, digit-boundary, large]
+# The case thousand is in the class large. Each solution also tests number_line(100000) in its own test file, because that result is too long for a case file: the result has a length of 588894, starts with "1,2,3," and ends with ",99999,100000". The time limit of the test runner catches a solution that copies the whole string on each append.

@@ -11744,25 +11744,25 @@ items:
     group: "strings"
     name: "Join a list of strings"
     target: "join-a-list-of-strings"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (String concatenation, Hash join)."
   - part: tasks
     group: "strings"
     name: "Concatenate strings"
     target: "concatenate-strings"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (String concatenation, String append)."
   - part: tasks
     group: "strings"
     name: "Find the length of a string"
     target: "find-the-length-of-a-string"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (String length)."
   - part: tasks
     group: "strings"
     name: "Get a substring"
     target: "get-a-substring"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (Substring, Substring primes)."
   - part: tasks
     group: "strings"
@@ -11906,7 +11906,7 @@ items:
     group: "strings"
     name: "Build a string efficiently"
     target: "build-a-string-efficiently"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (String append)."
   - part: tasks
     group: "strings"

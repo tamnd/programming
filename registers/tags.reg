@@ -298,3 +298,8 @@ C17WE0 rename-variable
 EKTA28 combine-functions-into-transform
 4WBAB8 split-phase
 2ADZBJ read-and-write-with-buffers
+ASRJAM build-a-string-efficiently
+V1CQDW concatenate-strings
+MRBAQA find-the-length-of-a-string
+P4KMR1 get-a-substring
+GK43CQ join-a-list-of-strings

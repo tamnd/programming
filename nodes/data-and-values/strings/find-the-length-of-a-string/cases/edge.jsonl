@@ -1,0 +1,10 @@
+{"name":"empty","class":["empty"],"args":{"s":""},"expect":[0,0,0]}
+{"name":"single","class":["single"],"args":{"s":"a"},"expect":[1,1,1]}
+{"name":"euro-sign","class":["non-ascii"],"args":{"s":"€"},"expect":[3,1,1]}
+{"name":"astral","class":["astral"],"args":{"s":"🙂"},"expect":[4,2,1]}
+{"name":"mixed","class":["astral"],"args":{"s":"a🙂b"},"expect":[6,4,3]}
+{"name":"combining-mark","class":["combining"],"args":{"s":"é"},"expect":[3,2,2]}
+{"name":"precomposed","class":["combining"],"args":{"s":"é"},"expect":[2,1,1]}
+{"name":"flag","class":["flag"],"args":{"s":"🇫🇷"},"expect":[8,4,2]}
+{"name":"zwj-family","class":["zwj"],"args":{"s":"👨‍👩‍👧"},"expect":[18,8,5]}
+{"name":"nul","class":["nul"],"args":{"s":"a\u0000b"},"expect":[3,3,3]}

@@ -1,0 +1,3 @@
+{"name":"comma","args":{"items":["a","b","c"],"sep":","},"expect":"a,b,c"}
+{"name":"comma-space","args":{"items":["red","green","blue"],"sep":", "},"expect":"red, green, blue"}
+{"name":"words","args":{"items":["Hello","world"],"sep":" "},"expect":"Hello world"}

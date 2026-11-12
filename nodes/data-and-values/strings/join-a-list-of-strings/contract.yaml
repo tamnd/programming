@@ -1,0 +1,17 @@
+# The contract of the task "join a list of strings" (spec 10.2). The result has the items in order, with the separator between each two items and not at the start or the end.
+problem: join-a-list-of-strings
+entry: join
+params:
+  - name: items
+    type: list<string>
+    pre: "any list of strings; an item can be empty"
+  - name: sep
+    type: string
+    pre: "any string; it can be empty"
+returns:
+  type: string
+  post: "items[0] + sep + items[1] + ... + sep + items[k-1]; the empty string for an empty list, and the item itself for a list of one item"
+checker: exact
+edge_classes: [empty-list, single, empty-item, empty-sep, multi-char-sep, non-ascii, sep-in-item]
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/numbers.jsonl: join_numbers(items: list<int>, sep: string) -> string. The result is the decimal form of each item, with a minus sign U+002D for a negative item, joined with sep. Pre: each item is a 32-bit signed integer.
