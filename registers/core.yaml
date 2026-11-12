@@ -13922,7 +13922,7 @@ items:
     group: "posa1"
     name: "Blackboard"
     target: "blackboard"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Pattern-Oriented Software Architecture, Volume 1 (Buschmann and others, 1996), a canon book of spec 13.3."
   - part: patterns
     group: "posa1"
@@ -13958,7 +13958,7 @@ items:
     group: "posa1"
     name: "Whole-Part"
     target: "whole-part"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Pattern-Oriented Software Architecture, Volume 1 (Buschmann and others, 1996), a canon book of spec 13.3."
   - part: patterns
     group: "posa1"
@@ -13970,7 +13970,7 @@ items:
     group: "posa1"
     name: "Command Processor"
     target: "command-processor"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Pattern-Oriented Software Architecture, Volume 1 (Buschmann and others, 1996), a canon book of spec 13.3."
   - part: patterns
     group: "posa1"
@@ -14498,7 +14498,7 @@ items:
     group: "ddd"
     name: "Specification"
     target: "specification"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Domain-Driven Design (Evans, 2003), a canon book of spec 13.3."
   - part: patterns
     group: "ddd"
