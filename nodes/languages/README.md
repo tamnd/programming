@@ -3,7 +3,8 @@ This area holds the catalogue of programming languages. Each language of the reg
 ## What it holds
 
 - The page of each language: its paradigms, its type system, its memory model, its execution model, its designers and its lineage.
-- The guide of each language of tiers 1 to 3, with the sub-areas of the language template in topics/languages.yaml: overview, getting started, syntax, values and types, variables and scope, control flow, functions, collections, strings and text, user types, errors, memory, modules and packages, concurrency, metaprogramming, the standard library, I/O and the OS, testing, tooling, the ecosystem, performance, interop, idioms and style, pitfalls, and versions.
+- The guide of each language of tiers 1 to 3, with the sub-areas of the language template in topics/languages.yaml: overview, getting started, syntax, values and types, variables and scope, control flow, functions, collections, strings and text, user types, errors, memory, modules and packages, concurrency, metaprogramming, the standard library, I/O and the OS, testing, tooling, the ecosystem, performance, interop, idioms and style, pitfalls, and versions. The domain languages SQL, Bash, regular expressions, HTML, CSS and PowerShell use a domain template in topics/domains.yaml in place of the language template, with sub-areas such as joins for SQL and quantifiers for regular expressions.
+- The sub-areas that a language adds to its template, in nodes/languages/<lang>/areas.yaml, each with a reason.
 - The release cards, proposal cards and diagnostic cards of each language.
 - Language families and lineage, such as the Algol family, the C family, Lisps and MLs.
 - Language design principles.
