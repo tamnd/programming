@@ -1,0 +1,93 @@
+{"id":"csv","name":"CSV","scope":"formats","outcome":"node","target":"csv"}
+{"id":"json","name":"JSON","scope":"formats","outcome":"node","target":"json"}
+{"id":"nrl","name":"Namespace Routing Language","scope":"formats","outcome":"card","target":"nrl-format"}
+{"id":"toml","name":"TOML","scope":"formats","outcome":"node","target":"toml"}
+{"id":"utf-8","name":"UTF-8","scope":"formats","outcome":"node","target":"utf-8"}
+{"id":"yaml","name":"YAML","scope":"formats","outcome":"node","target":"yaml"}
+{"id":"abacus-machine","name":"Abacus","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"amperes-circuital-equation","name":"Ampère's Circuital Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"analytical-engine-machine","name":"Analytical engine","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"apple-1-machine","name":"Apple I","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"arabic-numerals","name":"Hindu-Arabic numeral system","scope":"languages","outcome":"elsewhere:math2","reason":"a numeral system is mathematics, not a language; the math site holds it"}
+{"id":"attic-numerals","name":"Attic numerals","scope":"languages","outcome":"elsewhere:math2","reason":"a numeral system is mathematics, not a language; the math site holds it"}
+{"id":"aui","name":"aUI","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"babylonian-numerals","name":"Babylonian numerals","scope":"languages","outcome":"elsewhere:math2","reason":"a numeral system is mathematics, not a language; the math site holds it"}
+{"id":"bayes-equation","name":"Bayes' Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"binary-equation","name":"Binary Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"blake-hash-function","name":"BLAKE","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"c","name":"C","scope":"languages","outcome":"node","target":"c"}
+{"id":"cityhash-hash-function","name":"cityhash-hash-function","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"clips","name":"CLIPS","scope":"languages","outcome":"card","target":"clips-language"}
+{"id":"coulombs-equation","name":"Coulomb's Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"cpp","name":"C++","scope":"languages","outcome":"node","target":"cpp"}
+{"id":"csharp","name":"C#","scope":"languages","outcome":"node","target":"csharp"}
+{"id":"cube","name":"CUBE","scope":"languages","outcome":"card","target":"cube-language"}
+{"id":"curl","name":"Curl","scope":"languages","outcome":"card","target":"curl-language"}
+{"id":"dec64","name":"dec64","scope":"languages","outcome":"elsewhere:math2","reason":"a numeral system is mathematics, not a language; the math site holds it"}
+{"id":"dot-product-equation","name":"Dot Product Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"energy-momentum-equation","name":"Energy Momentum Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"etruscan-numerals","name":"Etruscan numerals","scope":"languages","outcome":"elsewhere:math2","reason":"a numeral system is mathematics, not a language; the math site holds it"}
+{"id":"eulers-equation","name":"Euler's Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"faradays-induction-equation","name":"Faraday's Induction Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"fast-fourier-transform-equation","name":"Fast Fourier Transform Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"gauss-flux-equation","name":"Gauss Flux Formula","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"gauss-magnetism-equation","name":"Gauss Magnetism Formula","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"glide","name":"GLIDE","scope":"languages","outcome":"card","target":"glide-language"}
+{"id":"gnuplot","name":"Gnuplot","scope":"languages","outcome":"card","target":"gnuplot-language"}
+{"id":"go","name":"Go","scope":"languages","outcome":"node","target":"go"}
+{"id":"gravity-equation","name":"Gravity Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"greek-numerals","name":"Greek numerals","scope":"languages","outcome":"elsewhere:math2","reason":"a numeral system is mathematics, not a language; the math site holds it"}
+{"id":"humanhash-hash-function","name":"humanhash-hash-function","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"imac-machine","name":"IMac","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"imaginary-number-equation","name":"Imaginary Number Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"information-theory-equation","name":"Information Theory Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"integral-equation","name":"Integral Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"ipa","name":"IPA","scope":"languages","outcome":"card","target":"ipa-language"}
+{"id":"ipad-machine","name":"IPad","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"iphone-machine","name":"IPhone","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"java","name":"Java","scope":"languages","outcome":"node","target":"java"}
+{"id":"javascript","name":"JavaScript","scope":"languages","outcome":"node","target":"javascript"}
+{"id":"kotlin","name":"Kotlin","scope":"languages","outcome":"node","target":"kotlin"}
+{"id":"loglan","name":"Loglan","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"macbook-air-machine","name":"MacBook Air","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"macintosh-machine","name":"Macintosh","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"mass-energy-equation","name":"Mass Energy Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"maya-numerals","name":"Maya numeral system","scope":"languages","outcome":"elsewhere:math2","reason":"a numeral system is mathematics, not a language; the math site holds it"}
+{"id":"md5-hash-function","name":"MD5","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"memex-machine","name":"Memex","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"mips","name":"MIPS architecture","scope":"languages","outcome":"card","target":"mips-language"}
+{"id":"multics","name":"Multics","scope":"languages","outcome":"card","target":"multics-language"}
+{"id":"multihash-hash-function","name":"Multihash","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"murmur-hash-function","name":"MurmurHash","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"navier-stokes-equation","name":"Navier-Stokes Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"ncl","name":"NCAR Command Language","scope":"languages","outcome":"card","target":"ncl-language"}
+{"id":"nlpl","name":"nlpl","scope":"languages","outcome":"card","target":"nlpl-language"}
+{"id":"normal-distribution-equation","name":"Normal Distribution Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"noweb","name":"Noweb","scope":"languages","outcome":"card","target":"noweb-language"}
+{"id":"ntp","name":"Network Time Protocol","scope":"languages","outcome":"card","target":"ntp-language"}
+{"id":"pascals-calculator-machine","name":"Pascal's calculator","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"pdp-11-machine","name":"PDP-11","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"pearson-correlation-coefficient-equation","name":"Pearson correlation coefficient equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"postgresql","name":"PostgreSQL","scope":"languages","outcome":"card","target":"postgresql-language"}
+{"id":"price-equation","name":"Price Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"pythagorean-equation","name":"Pythagorean Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"python","name":"Python","scope":"languages","outcome":"node","target":"python"}
+{"id":"roman-abacus-machine","name":"Roman abacus","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"roman-numerals","name":"Roman numerals","scope":"languages","outcome":"elsewhere:math2","reason":"a numeral system is mathematics, not a language; the math site holds it"}
+{"id":"ruby","name":"Ruby","scope":"languages","outcome":"card","target":"ruby-language"}
+{"id":"rust","name":"Rust","scope":"languages","outcome":"node","target":"rust"}
+{"id":"schrodingers-equation","name":"Schrödinger's Equation","scope":"languages","outcome":"elsewhere:math2","reason":"an equation is mathematics, not a language; the math site holds it"}
+{"id":"setun","name":"Setun","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"sha-1-hash-function","name":"SHA-1","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"sha-2-hash-function","name":"SHA-2","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"sha-3-hash-function","name":"SHA-3","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"siphash-hash-function","name":"SipHash","scope":"languages","outcome":"elsewhere:algorithm","reason":"a hash function is an algorithm; the algorithm site holds it"}
+{"id":"sl","name":"SL","scope":"languages","outcome":"card","target":"sl-language"}
+{"id":"systemz","name":"IBM System z","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"tcl","name":"Tcl","scope":"languages","outcome":"card","target":"tcl-language"}
+{"id":"tptp","name":"TPTP","scope":"languages","outcome":"elsewhere:math2","reason":"a field of mathematics, not a language; the math site holds it"}
+{"id":"trs-80-color-computer","name":"TRS-80 Color Computer","scope":"languages","outcome":"out-of-scope","reason":"not-programming"}
+{"id":"typescript","name":"TypeScript","scope":"languages","outcome":"node","target":"typescript"}
+{"id":"zed","name":"Zed","scope":"languages","outcome":"card","target":"zed-language"}
+{"id":"git","name":"Git","scope":"tools","outcome":"node","target":"git"}
+{"id":"vim","name":"Vim","scope":"tools","outcome":"card","target":"vim-tool"}
