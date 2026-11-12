@@ -354,3 +354,10 @@ J09WED double-checked-locking
 78MAN6 scoped-locking
 EWN7HA strategized-locking
 J5466E thread-safe-interface
+K5GKAQ parameterize-function
+72AAWM preserve-whole-object
+H3HFC3 remove-flag-argument
+D35XSR replace-parameter-with-query
+MJJ808 replace-query-with-parameter
+ZZV861 return-modified-value
+P2TV52 separate-query-from-modifier
