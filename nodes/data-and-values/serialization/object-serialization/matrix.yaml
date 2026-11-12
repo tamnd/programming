@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JSON object of JavaScript, and the types are removed, so parsed data needs a check, but no example file exists.
+kotlin:
+  status: library
+  reason: The kotlinx.serialization library and its compiler plugin generate serializers for classes marked with the Serializable annotation, but no example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: declare -p prints a variable as shell code that recreates it, and jq handles JSON, but no example file exists.
+powershell:
+  status: stdlib
+  reason: ConvertTo-Json, ConvertFrom-Json, Export-Clixml and Import-Clixml serialize objects, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The JSON functions of SQL 2016, such as JSON_OBJECT and JSON_ARRAYAGG, turn rows into JSON text, and JSON_TABLE turns it back into rows.
+regex:
+  status: n/a
+  reason: Regular expressions match text and do not serialize values.
+html:
+  status: n/a
+  reason: HTML is itself a serialization of a document tree, and it has no values to serialize.
+css:
+  status: n/a
+  reason: CSS has no values that a program serializes.
