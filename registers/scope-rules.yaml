@@ -1,0 +1,33 @@
+- id: libraries-npm
+  scope: libraries
+  rule: "A package of npm gets a card when at least 427 other packages in npm depend on it. The base rule of spec 18.5 is 100, and the bar is higher so that the registry gives at most 5,000 cards. Each other package of npm is out of scope."
+- id: libraries-pypi
+  scope: libraries
+  rule: "A package of PyPI gets a card when at least 100 other packages in PyPI depend on it, the rule of spec 18.5. Each other package of PyPI is out of scope."
+- id: libraries-crates
+  scope: libraries
+  rule: "A package of crates.io gets a card when at least 50 other packages in crates.io depend on it, the rule of spec 18.5. Each other package of crates.io is out of scope."
+- id: libraries-maven
+  scope: libraries
+  rule: "A package of Maven Central gets a card when at least 74 other packages in Maven Central depend on it. The base rule of spec 18.5 is 50, and the bar is higher so that the registry gives at most 5,000 cards. Each other package of Maven Central is out of scope."
+- id: libraries-nuget
+  scope: libraries
+  rule: "A package of NuGet gets a card when at least 50 other packages in NuGet depend on it, the rule of spec 18.5. Each other package of NuGet is out of scope."
+- id: libraries-gem
+  scope: libraries
+  rule: "A package of RubyGems gets a card when at least 50 other packages in RubyGems depend on it, the rule of spec 18.5. Each other package of RubyGems is out of scope."
+- id: libraries-hex
+  scope: libraries
+  rule: "A package of Hex gets a card when at least 50 other packages in Hex depend on it, the rule of spec 18.5. Each other package of Hex is out of scope."
+- id: libraries-hackage
+  scope: libraries
+  rule: "A package of Hackage gets a card when at least 50 other packages in Hackage depend on it, the rule of spec 18.5. Each other package of Hackage is out of scope."
+- id: libraries-swiftpm
+  scope: libraries
+  rule: "A package of the Swift Package Index gets a card when at least 50 other packages in the Swift Package Index depend on it, the rule of spec 18.5. Each other package of the Swift Package Index is out of scope."
+- id: libraries-bioc
+  scope: libraries
+  rule: "A package of Bioconductor gets a card when at least 50 other packages in Bioconductor depend on it, the rule of spec 18.5. Each other package of Bioconductor is out of scope."
+- id: libraries-vcpkg
+  scope: libraries
+  rule: "A package of vcpkg gets a card when at least 50 other packages in vcpkg depend on it, the rule of spec 18.5. Each other package of vcpkg is out of scope."
