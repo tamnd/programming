@@ -14882,7 +14882,7 @@ items:
     group: "fowler-catalog"
     name: "Hide Delegate"
     target: "hide-delegate"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15002,7 +15002,7 @@ items:
     group: "fowler-catalog"
     name: "Remove Middle Man"
     target: "remove-middle-man"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15182,7 +15182,7 @@ items:
     group: "fowler-catalog"
     name: "Substitute Algorithm"
     target: "substitute-algorithm"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: smells
     group: "fowler-smells"
