@@ -79,7 +79,7 @@ items:
     group: "foundations"
     name: "Machine code"
     target: "machine-code"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Abstraction (\"Low level instruction representation such as virtual ...\"). It is in the canon books: SICP index (\"high-level language, machine language vs\")."
   - part: concepts
     group: "foundations"

@@ -1,0 +1,24 @@
+typescript:
+  status: absent
+  reason: TypeScript compiles to JavaScript, so the program reaches machine code only as WebAssembly bytes, as in JavaScript, but no example file exists.
+kotlin:
+  status: absent
+  reason: Kotlin on the JVM compiles to bytecode, and Kotlin/Native compiles to machine code with LLVM but has no inline assembly, and no example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: The shell interprets commands and runs programs that are already machine code, and it cannot write instructions.
+powershell:
+  status: absent
+  reason: PowerShell runs on .NET, whose JIT makes the machine code, and a script can reach CIL only through the .NET Reflection.Emit types, but no example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query says what data to get, and the database decides how to run it.
+regex:
+  status: n/a
+  reason: Some engines compile a pattern to machine code, but the pattern language has no instructions.
+html:
+  status: n/a
+  reason: HTML describes a document and has no instructions.
+css:
+  status: n/a
+  reason: CSS describes presentation and has no instructions.
