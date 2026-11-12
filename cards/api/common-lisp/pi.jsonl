@@ -1,0 +1,1 @@
+{"tag":"NEW-common-lisp-pi","kind":"api","owner":"common-lisp","path":"pi","entity":"constant variable","module":"Numbers","doc":{"url":"https://www.lispworks.com/documentation/HyperSpec/Body/v_pi.htm"},"source":{"url":"https://www.lispworks.com/documentation/HyperSpec/Body/c_number.htm","licence":"LicenseRef-names-only"}}

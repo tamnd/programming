@@ -1,0 +1,1 @@
+{"tag":"NEW-common-lisp-peek-char","kind":"api","owner":"common-lisp","path":"peek-char","entity":"function","module":"Streams","doc":{"url":"https://www.lispworks.com/documentation/HyperSpec/Body/f_peek_c.htm"},"source":{"url":"https://www.lispworks.com/documentation/HyperSpec/Body/c_stream.htm","licence":"LicenseRef-names-only"}}

@@ -1,0 +1,1 @@
+{"tag":"NEW-common-lisp-error","kind":"api","owner":"common-lisp","path":"error","entity":"condition type, function","module":"Conditions","doc":{"url":"https://www.lispworks.com/documentation/HyperSpec/Body/e_error.htm"},"source":{"url":"https://www.lispworks.com/documentation/HyperSpec/Body/c_condit.htm","licence":"LicenseRef-names-only"}}
