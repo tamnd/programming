@@ -1,5 +1,5 @@
 ---
-tag: NEW-hash-codes
+tag: 81CRZ8
 kind: concept
 slug: hash-codes
 name: Hash codes
