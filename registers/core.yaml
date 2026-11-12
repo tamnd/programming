@@ -198,8 +198,8 @@ items:
   - part: concepts
     group: "syntax-and-semantics"
     name: "Lexical structure"
-    target: "lexical-structure"
-    status: "planned"
+    target: "tokens-and-lexing"
+    status: "node"
     reason: "It is in CS2023 FPL-Syntax (\"Lexical analysis using regular expressions\"). It is in 6 of the 7 language references: Python Language Reference (\"Lexical analysis\"); Go spec (\"Lexical elements\"); Rust Reference (\"Lexical structure\"); and 3 more."
   - part: concepts
     group: "syntax-and-semantics"
@@ -216,8 +216,8 @@ items:
   - part: concepts
     group: "syntax-and-semantics"
     name: "Keyword"
-    target: "keyword-concept"
-    status: "planned"
+    target: "tokens-and-lexing"
+    status: "node"
     reason: "It is in 7 of the 7 language references: Python Language Reference (\"Names (identifiers and keywords)\"); Go spec (\"Keywords\"); Rust Reference (\"Keywords\"); and 4 more. It is in the canon books: SICP index (\"reserved words , [2]\"); The Rust Programming Language contents (\"Bringing Paths Into Scope with the ...\")."
   - part: concepts
     group: "syntax-and-semantics"
@@ -228,8 +228,8 @@ items:
   - part: concepts
     group: "syntax-and-semantics"
     name: "Grammar"
-    target: "grammar-concept"
-    status: "planned"
+    target: "context-free-grammars"
+    status: "node"
     reason: "It is in CS2023 FPL-Translation (\"BNF and extended BNF representation of context-free grammar\"). It is in 6 of the 7 language references: Python Language Reference (\"Full Grammar specification\"); Rust Reference (\"Grammar summary\"); Java Language Specification (\"Grammars\"); and 3 more. It is in the canon books: SICP index (\"grammar\"); HtDP contents (\"BSL Grammar\")."
   - part: concepts
     group: "syntax-and-semantics"
@@ -240,14 +240,14 @@ items:
   - part: concepts
     group: "syntax-and-semantics"
     name: "Expression"
-    target: "expression-concept"
-    status: "planned"
+    target: "statements-and-expressions"
+    status: "node"
     reason: "It is in CS2023 FPL-Functional (\"Lambda expressions and evaluation: (See also: AL-Models, ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Expressions\"); Go spec (\"Expressions\"); Rust Reference (\"Statements and expressions\"); and 4 more. It is in the canon books: SICP index (\"algebraic expression\"); HtDP contents (\"Boolean Expressions\")."
   - part: concepts
     group: "syntax-and-semantics"
     name: "Statement"
-    target: "statement"
-    status: "planned"
+    target: "statements-and-expressions"
+    status: "node"
     reason: "It is in CS2023 FPL-Translation (\"Parse tree using a simple sentence such as arithmetic ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Simple statements\"); Go spec (\"Statements\"); Rust Reference (\"Statements and expressions\"); and 4 more. It is in the canon books: SICP index (\"statements, see instruction sequence\"); Crafting Interpreters contents (\"Design Note: Expressions and Statements\")."
   - part: concepts
     group: "syntax-and-semantics"
@@ -360,8 +360,8 @@ items:
   - part: concepts
     group: "types"
     name: "Implicit conversion"
-    target: "implicit-conversion"
-    status: "planned"
+    target: "type-conversion"
+    status: "node"
     reason: "It is in CS2023 FPL-Types (\"Definition and advantages of polymorphism: parametric, ...\"). It is in 4 of the 7 language references: Rust Reference (\"Type coercions\"); Java Language Specification (\"Unary Numeric Promotion\"); C++ working draft (\"Integral promotions\"); and 1 more. It is in the canon books: SICP index (\"with coercion , [2]\")."
   - part: concepts
     group: "types"
@@ -660,8 +660,8 @@ items:
   - part: concepts
     group: "functions-and-abstraction"
     name: "Tail call"
-    target: "tail-call"
-    status: "planned"
+    target: "recursion"
+    status: "node"
     reason: "It is in CS2023 FPL-Systems (\"Implementing loops, recursion, and tail calls\"). It is in the canon books: SICP index (\"tail recursion, stack allocation, and ...\")."
   - part: concepts
     group: "functions-and-abstraction"
@@ -702,8 +702,8 @@ items:
   - part: concepts
     group: "functions-and-abstraction"
     name: "Continuation"
-    target: "continuation"
-    status: "planned"
+    target: "continuation-passing-style"
+    status: "node"
     reason: "It is in CS2023 FPL-Constructs (\"Control abstractions: exception handling, continuations, ...\"). It is in the canon books: SICP index (\"continuation\")."
   - part: concepts
     group: "functions-and-abstraction"
@@ -756,14 +756,14 @@ items:
   - part: concepts
     group: "objects-and-classes"
     name: "Object"
-    target: "object"
-    status: "planned"
+    target: "objects-and-messages"
+    status: "node"
     reason: "It is in CS2023 FPL-OOP (\"Decomposition into objects carrying state and having ...\"). It is in 6 of the 7 language references: Python Language Reference (\"Objects, values and types\"); Rust Reference (\"Trait object types\"); Java Language Specification (\"Objects\"); and 3 more. It is in the canon books: SICP index (\"weakness in handling compound objects\"); The Rust Programming Language contents (\"Object Oriented Programming Features\")."
   - part: concepts
     group: "objects-and-classes"
     name: "Class"
-    target: "class-concept"
-    status: "planned"
+    target: "classes-and-instances"
+    status: "node"
     reason: "It is in CS2023 FPL-OOP (\"Definition of classes: fields, methods, and constructors. ...\"). It is in 5 of the 7 language references: Python Language Reference (\"Class definitions\"); Java Language Specification (\"Relationship to Predefined Classes and ...\"); C++ working draft (\"Class scope\"); and 2 more. It is in the canon books: Crafting Interpreters contents (\"Classes\")."
   - part: concepts
     group: "objects-and-classes"
@@ -810,8 +810,8 @@ items:
   - part: concepts
     group: "objects-and-classes"
     name: "Method overriding"
-    target: "method-overriding"
-    status: "planned"
+    target: "dynamic-dispatch"
+    status: "node"
     reason: "It is in CS2023 FPL-OOP (\"Subclasses, inheritance (including multiple inheritance), ...\"). It is in 3 of the 7 language references: Java Language Specification (\"Inheritance, Overriding, and Hiding\"); C++ working draft (\"Overridden virtual functions\"); C# standard (\"Overriding a “maybe null” determination\")."
   - part: concepts
     group: "memory-and-resources"
@@ -978,8 +978,8 @@ items:
   - part: concepts
     group: "metaprogramming"
     name: "Macro"
-    target: "macro-concept"
-    status: "planned"
+    target: "syntactic-macros"
+    status: "node"
     reason: "It is in CS2023 FPL-Constructs (\"Metaprogramming: macros, generative programming, ...\"). It is in the canon books: SICP index (\"macro , see also reader macro character\"); The Rust Programming Language contents (\"Macros\")."
   - part: concepts
     group: "metaprogramming"
@@ -996,20 +996,20 @@ items:
   - part: concepts
     group: "language-implementation"
     name: "Compilation"
-    target: "compilation"
-    status: "planned"
+    target: "compilers-and-interpreters"
+    status: "node"
     reason: "It is in CS2023 FPL-Code (\"Separate compilation; linking\"). It is in 3 of the 7 language references: Rust Reference (\"Conditional compilation\"); Java Language Specification (\"Compilation Units\"); C# standard (\"Conditional compilation symbols\"). It is in the canon books: SICP index (\"compiling Scheme into\"); Crafting Interpreters contents (\"Compiling Expressions\")."
   - part: concepts
     group: "language-implementation"
     name: "Interpretation"
-    target: "interpretation"
-    status: "planned"
+    target: "compilers-and-interpreters"
+    status: "node"
     reason: "It is in CS2023 FPL-Translation (\"Execution models for JIT (Just-In-Time), compiler, ...\"). It is in the canon books: SICP index (\"in query interpreter\"); HtDP contents (\"interpretation\")."
   - part: concepts
     group: "language-implementation"
     name: "Lexical analysis"
-    target: "lexical-analysis"
-    status: "planned"
+    target: "tokens-and-lexing"
+    status: "node"
     reason: "It is in CS2023 FPL-Syntax (\"Scanning and parsing based on language specifications\"). It is in the canon books: Crafting Interpreters contents (\"Scanning\")."
   - part: concepts
     group: "language-implementation"
