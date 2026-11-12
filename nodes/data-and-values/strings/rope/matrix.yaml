@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no rope type. The JavaScript code works with types for the leaf and the node. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin has no rope in its standard library. A class can implement CharSequence, as in the Java example. No example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash has strings and arrays but no tree types, so it cannot hold a rope. No example file exists.
+powershell:
+  status: absent
+  reason: PowerShell uses .NET types, and .NET has no rope type. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: SQL has no rope type. A database stores the text of a column in its own format. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern has no data structures. In Java, a regex can read a rope through CharSequence.
+html:
+  status: n/a
+  reason: HTML has no data structures.
+css:
+  status: n/a
+  reason: CSS has no data structures.

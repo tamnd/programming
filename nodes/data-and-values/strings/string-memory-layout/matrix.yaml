@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript compiles to JavaScript, so its strings have the JavaScript layout of UTF-16 code units, and the types do not change the representation. No example file exists.
+kotlin:
+  status: native
+  reason: On the JVM a Kotlin String is a java.lang.String, so it has the same layout, with compact Latin-1 storage when the text allows it. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash keeps the value of a variable as a C string, so a variable cannot hold a null byte, and the length in characters depends on the locale. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell strings are .NET System.String objects, with a stored length and UTF-16 code units. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: Each database has its own storage. CHAR(n) pads the value to n characters, and VARCHAR(n) stores a length with the characters, in the character set of the column. No example file exists.
+regex:
+  status: n/a
+  reason: A regex engine reads the strings of its host language and has no storage of its own.
+html:
+  status: n/a
+  reason: HTML is text. A browser stores the text of the document in DOM strings, which are sequences of UTF-16 code units.
+css:
+  status: n/a
+  reason: A stylesheet is text, and the browser engine decides how to store its strings.
