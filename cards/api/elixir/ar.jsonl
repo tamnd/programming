@@ -1,0 +1,2 @@
+{"tag":"NEW-ArgumentError","kind":"api","owner":"elixir","path":"ArgumentError","entity":"exception","module":"ArgumentError","doc":{"url":"https://hexdocs.pm/elixir/ArgumentError.html"},"source":{"url":"https://hexdocs.pm/elixir/","licence":"Apache-2.0"}}
+{"tag":"NEW-ArithmeticError","kind":"api","owner":"elixir","path":"ArithmeticError","entity":"exception","module":"ArithmeticError","doc":{"url":"https://hexdocs.pm/elixir/ArithmeticError.html"},"source":{"url":"https://hexdocs.pm/elixir/","licence":"Apache-2.0"}}
