@@ -85,7 +85,7 @@ items:
     group: "foundations"
     name: "Binary number"
     target: "binary-number"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Abstraction (\"binary representation (See also: AR-Representation, ...\"). It is in the canon books: SICP index (\"binary numbers, addition of, see adder\")."
   - part: concepts
     group: "foundations"

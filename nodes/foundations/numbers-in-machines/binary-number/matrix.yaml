@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the binary literals, toString(2) and parseInt of JavaScript, and the type number is a 64-bit float, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has 0b literals with underscores, Int.toString(2) and String.toInt(2), and the JVM methods of Integer, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash arithmetic reads numbers in any base from 2 to 64 with the form base#digits, such as $((2#101101)), but printf has no binary conversion, and no example file exists.
+powershell:
+  status: native
+  reason: PowerShell has 0b literals and the .NET method [Convert]::ToString(value, 2), but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The current SQL standard and PostgreSQL accept 0b, 0o and 0x integer literals, and some databases have bit-string types, but other databases do not support them yet.
+regex:
+  status: n/a
+  reason: A pattern such as [01]+ matches binary digits as text but has no numbers.
+html:
+  status: n/a
+  reason: HTML has no numbers.
+css:
+  status: n/a
+  reason: CSS writes colours in hexadecimal, such as #ff8000, but has no binary numbers.
