@@ -1,0 +1,3 @@
+{"tag":"NEW-Carp","kind":"api","owner":"perl","path":"Carp","entity":"core module","module":"Carp","doc":{"url":"https://perldoc.perl.org/Carp"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-caller","kind":"api","owner":"perl","path":"caller","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/caller"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-catch","kind":"api","owner":"perl","path":"catch","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/catch"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

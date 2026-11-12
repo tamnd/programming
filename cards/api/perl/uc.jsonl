@@ -1,0 +1,2 @@
+{"tag":"NEW-uc","kind":"api","owner":"perl","path":"uc","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/uc"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-ucfirst","kind":"api","owner":"perl","path":"ucfirst","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/ucfirst"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

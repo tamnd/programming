@@ -1,0 +1,1 @@
+{"tag":"NEW-s-exp-fasl","kind":"api","owner":"racket","path":"s-exp->fasl","entity":"procedure","module":"racket/fasl","doc":{"url":"https://docs.racket-lang.org/reference/fasl.html#%28def._%28%28lib._racket%2Ffasl..rkt%29._s-exp-~3efasl%29%29"},"source":{"url":"https://docs.racket-lang.org/reference/","licence":"MIT OR Apache-2.0"}}

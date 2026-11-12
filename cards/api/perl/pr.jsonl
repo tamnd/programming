@@ -1,0 +1,3 @@
+{"tag":"NEW-print","kind":"api","owner":"perl","path":"print","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/print"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-printf","kind":"api","owner":"perl","path":"printf","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/printf"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-prototype","kind":"api","owner":"perl","path":"prototype","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/prototype"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

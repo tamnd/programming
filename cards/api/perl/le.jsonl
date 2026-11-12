@@ -1,0 +1,3 @@
+{"tag":"NEW-le","kind":"api","owner":"perl","path":"le","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/le"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-length","kind":"api","owner":"perl","path":"length","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/length"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-less","kind":"api","owner":"perl","path":"less","entity":"core module","module":"less","doc":{"url":"https://perldoc.perl.org/less"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

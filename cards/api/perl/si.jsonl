@@ -1,0 +1,2 @@
+{"tag":"NEW-sigtrap","kind":"api","owner":"perl","path":"sigtrap","entity":"core module","module":"sigtrap","doc":{"url":"https://perldoc.perl.org/sigtrap"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-sin","kind":"api","owner":"perl","path":"sin","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/sin"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

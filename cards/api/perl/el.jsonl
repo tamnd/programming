@@ -1,0 +1,3 @@
+{"tag":"NEW-else","kind":"api","owner":"perl","path":"else","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/else"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-elseif","kind":"api","owner":"perl","path":"elseif","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/elseif"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-elsif","kind":"api","owner":"perl","path":"elsif","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/elsif"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

@@ -1,0 +1,3 @@
+{"tag":"NEW-XS::APItest","kind":"api","owner":"perl","path":"XS::APItest","entity":"core module","module":"XS","doc":{"url":"https://perldoc.perl.org/XS::APItest"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-XS::Typemap","kind":"api","owner":"perl","path":"XS::Typemap","entity":"core module","module":"XS","doc":{"url":"https://perldoc.perl.org/XS::Typemap"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-XSLoader","kind":"api","owner":"perl","path":"XSLoader","entity":"core module","module":"XSLoader","doc":{"url":"https://perldoc.perl.org/XSLoader"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

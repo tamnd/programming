@@ -1,0 +1,2 @@
+{"tag":"NEW-or","kind":"api","owner":"perl","path":"or","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/or"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-ord","kind":"api","owner":"perl","path":"ord","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/ord"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

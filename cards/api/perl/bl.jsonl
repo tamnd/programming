@@ -1,0 +1,2 @@
+{"tag":"NEW-bless","kind":"api","owner":"perl","path":"bless","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/bless"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-blib","kind":"api","owner":"perl","path":"blib","entity":"core module","module":"blib","doc":{"url":"https://perldoc.perl.org/blib"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

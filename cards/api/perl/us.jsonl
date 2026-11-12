@@ -1,0 +1,3 @@
+{"tag":"NEW-User::grent","kind":"api","owner":"perl","path":"User::grent","entity":"core module","module":"User","doc":{"url":"https://perldoc.perl.org/User::grent"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-User::pwent","kind":"api","owner":"perl","path":"User::pwent","entity":"core module","module":"User","doc":{"url":"https://perldoc.perl.org/User::pwent"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-use","kind":"api","owner":"perl","path":"use","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/use"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

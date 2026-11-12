@@ -1,0 +1,2 @@
+{"tag":"NEW-values","kind":"api","owner":"perl","path":"values","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/values"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-vars","kind":"api","owner":"perl","path":"vars","entity":"core module","module":"vars","doc":{"url":"https://perldoc.perl.org/vars"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

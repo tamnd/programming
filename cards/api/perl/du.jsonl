@@ -1,0 +1,2 @@
+{"tag":"NEW-Dumpvalue","kind":"api","owner":"perl","path":"Dumpvalue","entity":"core module","module":"Dumpvalue","doc":{"url":"https://perldoc.perl.org/Dumpvalue"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-dump","kind":"api","owner":"perl","path":"dump","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/dump"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

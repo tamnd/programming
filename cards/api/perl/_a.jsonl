@@ -1,0 +1,3 @@
+{"tag":"NEW-ARGV","kind":"api","owner":"perl","path":"$ARGV","entity":"variable","module":"perlvar","doc":{"url":"https://perldoc.perl.org/variables/$ARGV"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-a","kind":"api","owner":"perl","path":"$a","entity":"variable","module":"perlvar","doc":{"url":"https://perldoc.perl.org/variables/$a"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-ARGV","kind":"api","owner":"perl","path":"@ARGV","entity":"variable","module":"perlvar","doc":{"url":"https://perldoc.perl.org/variables/@ARGV"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}

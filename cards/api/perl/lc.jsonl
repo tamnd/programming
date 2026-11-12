@@ -1,0 +1,2 @@
+{"tag":"NEW-lc","kind":"api","owner":"perl","path":"lc","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/lc"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
+{"tag":"NEW-lcfirst","kind":"api","owner":"perl","path":"lcfirst","entity":"function","module":"perlfunc","doc":{"url":"https://perldoc.perl.org/functions/lcfirst"},"source":{"url":"https://perldoc.perl.org/","licence":"Artistic-1.0-Perl OR GPL-1.0-or-later"}}
