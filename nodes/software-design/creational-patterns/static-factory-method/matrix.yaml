@@ -1,0 +1,27 @@
+kotlin:
+  status: idiom
+  reason: a function in the companion object, such as Point.fromPolar, or a top-level factory function; no example is executed here because the test image has no kotlinc.
+  alternative: a secondary constructor when the arguments differ in type and no special semantics are needed.
+c:
+  status: idiom
+  reason: C has no constructors, so a function that allocates and returns an object is the usual way to create one, as fopen returns a FILE pointer.
+  alternative: an opaque struct type in the header, so that callers must use the create function.
+sql:
+  status: n/a
+  reason: a query creates rows, not objects, and has no constructors.
+bash:
+  status: n/a
+  reason: Bash has no objects and no constructors.
+powershell:
+  status: idiom
+  reason: PowerShell classes can have static methods that return a new instance; no example is executed here because the test image has no pwsh.
+  alternative: a function that returns a PSCustomObject.
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: n/a
+  reason: markup creates no objects.
+css:
+  status: n/a
+  reason: style rules create no objects.

@@ -1,0 +1,27 @@
+kotlin:
+  status: idiom
+  reason: the Java form works, with a class that holds an ArrayDeque and a use function that releases in finally; no example is executed here because the test image has no kotlinc.
+  alternative: an inline function that takes a lambda and releases the object after it returns.
+c:
+  status: idiom
+  reason: C has no pool in the standard library, so programs keep a free list, an array or a linked list of released objects, and reuse them before they call malloc.
+  alternative: an arena or slab allocator when the goal is only to make allocation cheap.
+sql:
+  status: n/a
+  reason: a query does not create objects; the database server and the client driver pool the connections.
+bash:
+  status: n/a
+  reason: Bash has no objects to keep and reuse.
+powershell:
+  status: idiom
+  reason: a script can keep objects in a System.Collections.Generic.Stack and take them from it; no example is executed here because the test image has no pwsh.
+  alternative: the runspace pools of the PowerShell API, for a pool of runspaces.
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: n/a
+  reason: markup creates no objects.
+css:
+  status: n/a
+  reason: style rules create no objects.

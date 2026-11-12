@@ -1,0 +1,27 @@
+kotlin:
+  status: idiom
+  reason: a private constructor and a companion object with a ConcurrentHashMap and computeIfAbsent, as in Java; an enum class gives one instance per constant; no example is executed here because the test image has no kotlinc.
+  alternative: an enum class when the keys are fixed.
+c:
+  status: idiom
+  reason: a static array or table of structs, one per key, and a function that returns a pointer into the table; the struct type can be opaque so that callers cannot create one.
+  alternative: a mutex from threads.h around the lookup when the table grows at run time.
+sql:
+  status: n/a
+  reason: a query has no objects with identity; a primary key gives one row for each key, which is the nearest relational form.
+bash:
+  status: n/a
+  reason: the shell has strings and arrays, not objects with identity.
+powershell:
+  status: idiom
+  reason: a class with a static hashtable and a static method can return one instance per key; no example is executed here because the test image has no pwsh.
+  alternative: a .NET ConcurrentDictionary from a PowerShell class.
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: n/a
+  reason: markup creates no objects with identity; the id attribute names one element per document, but the author writes each element.
+css:
+  status: n/a
+  reason: style rules create no objects.

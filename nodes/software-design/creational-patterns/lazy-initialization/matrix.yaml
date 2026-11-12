@@ -1,0 +1,29 @@
+kotlin:
+  status: stdlib
+  reason: the property delegate by lazy runs its lambda on first access, and its default mode is synchronized; no example is executed here because the test image has no kotlinc.
+  alternative: lateinit var for a non-null property that is set later by other code.
+c:
+  status: idiom
+  reason: a static pointer that is NULL until the first call, set by the accessor; for many threads, call_once from threads.h runs the initializer once.
+  alternative: pthread_once on POSIX systems.
+sql:
+  status: n/a
+  reason: a query has no objects to initialize; a database may materialize a view or a cache, but that is not written in the query.
+bash:
+  status: idiom
+  reason: a function tests whether a variable is set and computes it only when it is empty.
+  alternative: a cache file that the script writes on first use.
+powershell:
+  status: idiom
+  reason: a script property or a function can test a variable and compute it on first use; no example is executed here because the test image has no pwsh.
+  alternative: "[System.Lazy[T]]::new() from .NET."
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: idiom
+  reason: the loading attribute with the value lazy asks the browser to load an image or an iframe only when it comes near the viewport.
+  alternative: a script with the defer attribute, which runs after the document is parsed.
+css:
+  status: n/a
+  reason: style rules create no objects; the browser decides when to load fonts and images.

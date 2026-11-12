@@ -1,0 +1,27 @@
+kotlin:
+  status: native
+  reason: an object declaration is a singleton in the language, initialized on first access in a thread-safe way; named and default arguments replace most builders, and a companion object holds factory functions; no example is executed here because the test image has no kotlinc.
+  alternative: data classes with copy for changed copies.
+c:
+  status: idiom
+  reason: a function allocates a struct and returns a pointer to it, often to an opaque type, as fopen returns a FILE pointer; a struct of function pointers lets a factory pick the behaviour.
+  alternative: a static variable inside a function for a single shared instance.
+sql:
+  status: n/a
+  reason: INSERT creates rows, and default values and sequences fill columns, but there are no objects or classes to create.
+bash:
+  status: n/a
+  reason: the shell has strings and arrays, not objects; a function can print a value or set a variable.
+powershell:
+  status: idiom
+  reason: a class can have static factory methods, a hashtable converts to a pscustomobject, and .NET objects that support it have a Clone method; no example is executed here because the test image has no pwsh.
+  alternative: a function that returns a pscustomobject.
+regex:
+  status: n/a
+  reason: a pattern creates no objects.
+html:
+  status: n/a
+  reason: the author writes each element; the template element holds markup that a script can copy into the document.
+css:
+  status: n/a
+  reason: style rules create no objects.

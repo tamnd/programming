@@ -232,3 +232,9 @@ E53BEZ duplicated-code
 CR987H long-function
 B3W15R long-parameter-list
 DEHPTN mysterious-name
+ZFKCA8 creational-pattern
+4XE8YW lazy-initialization
+Z2NCVX multiton-pattern
+CAQSKE object-pool-pattern
+DCC5WZ simple-factory
+1ESRA6 static-factory-method
