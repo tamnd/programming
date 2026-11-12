@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
-  PROG_VERSION: v0.0.23
+  PROG_VERSION: v0.0.24
   GO_VERSION: "1.27.x"
 
 jobs:
@@ -50,6 +50,9 @@ jobs:
         run: prog check -checkers -main
       - name: Count the universe items of each scope
         run: prog universe
+      # Spec 18.2: the exit of M1 needs each card scope at C1. The gate fails when a card has a blocking finding of the R rules.
+      - name: Check that each card scope is at C1
+        run: prog coverage -gate
       - name: Check the scenes
         run: prog viz check
 
