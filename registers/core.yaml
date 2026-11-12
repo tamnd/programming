@@ -12488,7 +12488,7 @@ items:
     group: "files"
     name: "Read and write with buffers"
     target: "read-and-write-with-buffers"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. Related titles, found by keyword: Rosetta Code (File input output)."
   - part: tasks
     group: "files"

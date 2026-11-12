@@ -1,0 +1,19 @@
+# The contract of the task "read and write with buffers". Each solution copies a file through a buffered reader and a buffered writer of a given size, then flushes and closes the output and reports each error, also an error that comes only at the flush or the close.
+problem: read-and-write-with-buffers
+entry: copy_buffered
+params:
+  - name: src
+    type: string
+    pre: "the path of a file, relative to the node directory"
+  - name: dst
+    type: string
+    pre: "the path of the output file, in a directory that the test makes; a file that is there is replaced"
+  - name: size
+    type: int
+    pre: "the size of each buffer in bytes; a value below 1 is an error"
+returns:
+  type: int
+  post: "the number of bytes copied; after the call, dst holds exactly the bytes of src. The solution reads src through a buffered reader and writes dst through a buffered writer, each with a buffer of size bytes, or the smallest size that the library allows if that is larger. It flushes and closes dst before it returns"
+checker: exact
+edge_classes: [empty, smaller-than-buffer, exact-buffer, one-past-buffer, size-one, binary]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error: not-found when src does not exist or the parent directory of dst does not exist, invalid-size when size is below 1. The native tests also copy 1 MiB with buffers of 4096 and 4093 bytes, and on Linux they copy to /dev/full, where each write fails with ENOSPC: the solution must report that error, which comes only when the buffer goes to the file.

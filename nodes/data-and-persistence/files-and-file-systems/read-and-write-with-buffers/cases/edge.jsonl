@@ -1,0 +1,6 @@
+{"name":"empty","class":["empty"],"args":{"src":"fixtures/empty.bin","dst":"out.bin","size":8},"expect":0}
+{"name":"smaller-than-buffer","class":["smaller-than-buffer"],"args":{"src":"fixtures/five.bin","dst":"out.bin","size":8},"expect":5}
+{"name":"exact-buffer","class":["exact-buffer"],"args":{"src":"fixtures/eight.bin","dst":"out.bin","size":8},"expect":8}
+{"name":"one-past-buffer","class":["one-past-buffer"],"args":{"src":"fixtures/nine.bin","dst":"out.bin","size":8},"expect":9}
+{"name":"size-one","class":["size-one"],"args":{"src":"fixtures/text.txt","dst":"out.bin","size":1},"expect":17}
+{"name":"binary","class":["binary"],"args":{"src":"fixtures/all-bytes.bin","dst":"out.bin","size":64},"expect":256}

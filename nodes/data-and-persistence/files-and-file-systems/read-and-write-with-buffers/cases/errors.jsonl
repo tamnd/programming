@@ -1,0 +1,4 @@
+{"name":"missing-src","args":{"src":"fixtures/missing.bin","dst":"out.bin","size":8},"error":"not-found","why":"the source file does not exist"}
+{"name":"missing-dst-dir","args":{"src":"fixtures/text.txt","dst":"no-such-dir/out.bin","size":8},"error":"not-found","why":"the parent directory of dst does not exist"}
+{"name":"zero-size","args":{"src":"fixtures/text.txt","dst":"out.bin","size":0},"error":"invalid-size","why":"a buffer must hold at least 1 byte"}
+{"name":"negative-size","args":{"src":"fixtures/text.txt","dst":"out.bin","size":-1},"error":"invalid-size","why":"a buffer must hold at least 1 byte"}
