@@ -361,3 +361,8 @@ D35XSR replace-parameter-with-query
 MJJ808 replace-query-with-parameter
 ZZV861 return-modified-value
 P2TV52 separate-query-from-modifier
+749ESG active-object
+QGA6WS half-sync-half-async
+66RDDY leader-followers
+EAEHE8 monitor-object
+P2W06C thread-specific-storage
