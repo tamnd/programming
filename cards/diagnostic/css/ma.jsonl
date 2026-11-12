@@ -1,0 +1,1 @@
+{"tag":"NEW-stylelint-max-nesting-depth","kind":"diagnostic","owner":"css","code":"max-nesting-depth","type":"lint","title":"Limit the depth of nesting.","url":"https://stylelint.io/user-guide/rules/max-nesting-depth","licence":"MIT","source":{"url":"https://github.com/stylelint/stylelint/blob/ee4f118acae33876a93ced5866872328e36660c2/docs/user-guide/rules.md","licence":"MIT"}}

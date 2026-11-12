@@ -1,0 +1,1 @@
+{"tag":"NEW-eslint-yoda","kind":"diagnostic","owner":"javascript","code":"yoda","type":"lint","title":"Require or disallow \"Yoda\" conditions.","summary":"It suggests a better way to write code.","url":"https://eslint.org/docs/latest/rules/yoda","licence":"MIT","source":{"url":"https://eslint.org/docs/latest/rules/yoda","licence":"MIT"}}
