@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the if statement and the conditional operator of JavaScript, and the compiler narrows the type of a variable in each branch, for example after typeof x === "string". No example file exists.
+kotlin:
+  status: native
+  reason: In Kotlin, if is an expression, so it replaces the conditional operator, and when without an argument is a chain of conditions. A condition must be a Boolean. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash runs the branch of if, elif and else according to the exit status of a command, and [[ ]] and test give that status for comparisons. && and || run a command only when the previous one succeeds or fails. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell has if, elseif and else, a switch statement with conditions, and a conditional operator with ? and :. It converts other values to bool in a condition. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The CASE expression chooses a value with WHEN, THEN and ELSE, and WHERE and HAVING keep only the rows for which a condition is true. No example file exists.
+regex:
+  status: idiom
+  reason: Alternation with | chooses between patterns, and some engines, such as PCRE and .NET, have conditionals that test whether a group matched.
+html:
+  status: n/a
+  reason: HTML has no conditionals. Scripts or a template language decide which content a page contains.
+css:
+  status: idiom
+  reason: The rules @media, @supports and @container apply only when their condition is true.
