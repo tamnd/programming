@@ -5,7 +5,7 @@
 #
 #   */5 * * * * $HOME/programming-deploy/deploy-cloudflare.sh >> $HOME/programming-deploy/deploy.log 2>&1; cp $HOME/programming-deploy/content/scripts/deploy-cloudflare.sh $HOME/programming-deploy/ 2>/dev/null
 #
-# The server needs git, curl, tar, sha256sum, flock, and Node with npx. It does not need Go: the script gets the prog release that .github/workflows/ci.yml pins and checks it against SHA256SUMS. The directory ($PROG_DEPLOY, default $HOME/programming-deploy) holds cloudflare.env with CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID, mode 600.
+# The server needs git, curl, tar, sha256sum, flock, and Node with npx, and about 1 GB of free disk and 2 GB of free memory while it builds. It does not need Go: the script gets the prog release that .github/workflows/ci.yml pins and checks it against SHA256SUMS. The directory ($PROG_DEPLOY, default $HOME/programming-deploy) holds cloudflare.env with CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID, mode 600.
 #
 # The script fetches main, and it gets the test results of the last CI run on main from the release ci-results. It does nothing when main, the prog version and the results are the same as at the last deploy. Use -f to deploy again. It removes the site tree after the deploy, because the disk of the server is small.
 set -eu
@@ -62,11 +62,11 @@ if [ ! -x "$bin" ]; then
 	url=https://github.com/tamnd/programming-agent/releases/download/$version
 	curl -fsSL -o "$tmp/prog_linux_$arch.tar.gz" "$url/prog_linux_$arch.tar.gz"
 	curl -fsSL -o "$tmp/SHA256SUMS" "$url/SHA256SUMS"
-	(cd "$tmp" && grep " prog_linux_$arch.tar.gz\$" SHA256SUMS | sha256sum -c --quiet -)
+	(cd "$tmp" && grep -E "[ /]prog_linux_$arch\.tar\.gz\$" SHA256SUMS | sha256sum -c --quiet -)
 	tar -xzf "$tmp/prog_linux_$arch.tar.gz" -C "$tmp"
 	mkdir -p "$dir/bin"
 	rm -f "$dir"/bin/prog-*
-	mv "$tmp/prog" "$bin"
+	mv "$tmp/prog_linux_$arch/prog" "$bin"
 	rm -rf "$tmp"
 fi
 
@@ -78,8 +78,12 @@ if [ "$results" != none ]; then
 fi
 rm -rf "$dir/results.new"
 
-if ! GOMEMLIMIT=${PROG_BUILD_MEMORY:-2GiB} "$bin" site check -out "$dir/site" -minify; then
-	rm -rf "$dir/site"
+# The server runs other work, so the build runs at a low CPU and disk priority.
+low=""
+command -v nice >/dev/null && low="nice -n 15"
+command -v ionice >/dev/null && low="$low ionice -c 3"
+if ! GOMEMLIMIT=${PROG_BUILD_MEMORY:-2GiB} $low "$bin" site check -out "$dir/site" -minify; then
+	rm -rf "$dir/site" "$dir/site.next"
 	exit 1
 fi
 # prog does not print the token. The filter is a second guard, and the exit status of the deploy is kept.
