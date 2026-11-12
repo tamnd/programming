@@ -1,0 +1,24 @@
+typescript:
+  status: absent
+  reason: TypeScript has the same runtime as JavaScript, so it has no addresses, and typed arrays and DataView give byte offsets in an ArrayBuffer, but no example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM gives references only and can use the foreign memory API of Java, and Kotlin/Native has CPointer for C interop, but no example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash works with strings, files and processes and gives no access to memory or addresses.
+powershell:
+  status: stdlib
+  reason: PowerShell gives references to .NET objects, and the .NET types IntPtr and Marshal read memory at an address, but no example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL works with rows and keys, and the database engine decides where the data is in memory and on disk.
+regex:
+  status: n/a
+  reason: A pattern matches text by positions in the text, not by memory addresses.
+html:
+  status: n/a
+  reason: HTML describes a document and has no memory model.
+css:
+  status: n/a
+  reason: CSS describes presentation and has no memory model.
