@@ -1,0 +1,1 @@
+{"tag":"NEW-eslint-eqeqeq","kind":"diagnostic","owner":"javascript","code":"eqeqeq","type":"lint","title":"Require the use of `===` and `!==`.","summary":"It suggests a better way to write code.","url":"https://eslint.org/docs/latest/rules/eqeqeq","licence":"MIT","source":{"url":"https://eslint.org/docs/latest/rules/eqeqeq","licence":"MIT"}}

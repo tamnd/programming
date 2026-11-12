@@ -1,0 +1,1 @@
+{"tag":"NEW-eslint-curly","kind":"diagnostic","owner":"javascript","code":"curly","type":"lint","title":"Enforce consistent brace style for all control statements.","summary":"It suggests a better way to write code.","url":"https://eslint.org/docs/latest/rules/curly","licence":"MIT","source":{"url":"https://eslint.org/docs/latest/rules/curly","licence":"MIT"}}

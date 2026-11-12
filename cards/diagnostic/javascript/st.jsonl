@@ -1,0 +1,1 @@
+{"tag":"NEW-eslint-strict","kind":"diagnostic","owner":"javascript","code":"strict","type":"lint","title":"Require or disallow strict mode directives.","summary":"It suggests a better way to write code.","url":"https://eslint.org/docs/latest/rules/strict","licence":"MIT","source":{"url":"https://eslint.org/docs/latest/rules/strict","licence":"MIT"}}
