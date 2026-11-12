@@ -1,0 +1,10 @@
+{"id":"A01:2025","name":"Broken Access Control","scope":"weaknesses","outcome":"card","target":"owasp-a01-2025"}
+{"id":"A02:2025","name":"Security Misconfiguration","scope":"weaknesses","outcome":"card","target":"owasp-a02-2025"}
+{"id":"A03:2025","name":"Software Supply Chain Failures","scope":"weaknesses","outcome":"card","target":"owasp-a03-2025"}
+{"id":"A04:2025","name":"Cryptographic Failures","scope":"weaknesses","outcome":"card","target":"owasp-a04-2025"}
+{"id":"A05:2025","name":"Injection","scope":"weaknesses","outcome":"card","target":"owasp-a05-2025"}
+{"id":"A06:2025","name":"Insecure Design","scope":"weaknesses","outcome":"card","target":"owasp-a06-2025"}
+{"id":"A07:2025","name":"Authentication Failures","scope":"weaknesses","outcome":"card","target":"owasp-a07-2025"}
+{"id":"A08:2025","name":"Software or Data Integrity Failures","scope":"weaknesses","outcome":"card","target":"owasp-a08-2025"}
+{"id":"A09:2025","name":"Security Logging and Alerting Failures","scope":"weaknesses","outcome":"card","target":"owasp-a09-2025"}
+{"id":"A10:2025","name":"Mishandling of Exceptional Conditions","scope":"weaknesses","outcome":"card","target":"owasp-a10-2025"}
