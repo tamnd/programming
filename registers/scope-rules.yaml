@@ -31,3 +31,18 @@
 - id: libraries-vcpkg
   scope: libraries
   rule: "A package of vcpkg gets a card when at least 50 other packages in vcpkg depend on it, the rule of spec 18.5. Each other package of vcpkg is out of scope."
+- id: libraries-cran
+  scope: libraries
+  rule: "A package of CRAN gets a card when at least 50 other packages in CRAN depend on it, the rule of spec 18.5. Each other package of CRAN is out of scope."
+- id: libraries-pub
+  scope: libraries
+  rule: "A package of pub.dev gets a card when at least 50 other packages in pub.dev depend on it, the rule of spec 18.5. Each other package of pub.dev is out of scope."
+- id: libraries-pod
+  scope: libraries
+  rule: "A package of CocoaPods gets a card when at least 50 other packages in CocoaPods depend on it, the rule of spec 18.5. Each other package of CocoaPods is out of scope."
+- id: libraries-cpan
+  scope: libraries
+  rule: "A package of CPAN gets a card when at least 50 other packages in CPAN depend on it, the rule of spec 18.5. Each other package of CPAN is out of scope."
+- id: libraries-julia
+  scope: libraries
+  rule: "A package of the Julia General registry gets a card when at least 50 other packages in the Julia General registry depend on it, the rule of spec 18.5. Each other package of the Julia General registry is out of scope."
