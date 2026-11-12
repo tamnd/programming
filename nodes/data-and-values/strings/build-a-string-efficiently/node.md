@@ -75,7 +75,7 @@ A loop of `s = s + piece` on an immutable string copies the whole result on each
 - **Rust.** A `String` is a builder. `String::with_capacity` "creates an empty String, but one with an initial buffer that can hold at least capacity bytes"[^7]. The code uses `write!` from `std::fmt::Write`, which formats the number into the buffer and makes no temporary `String`.
 - **C.** C has no builder. `strcat` finds the end of the destination on each call, because "The character src[0] replaces the null terminator at the end of dest"[^8], so a loop of `strcat` calls reads the result again on each step. The code keeps the length and the capacity in a struct, writes at the end with `memcpy`, and doubles the capacity with `realloc` when the buffer is full[^9]. The caller frees the result.
 - **C++.** `std::string` grows like a builder. The complexity of `push_back` is "Amortized constant"[^10], and `reserve` can make the buffer large enough before the loop[^11]. The code appends with `+=` and `std::to_string`.
-- **Bash.** "If the word is double-quoted, ${name[*]} expands to a single word with the value of each array member separated by the first character of the IFS variable"[^12]. The function collects the numbers in an array, sets a local `IFS` to a comma and prints `"${parts[*]}"`.
+- **Bash.** "If the word is double-quoted, `${name[*]}` expands to a single word with the value of each array member separated by the first character of the IFS variable"[^12]. The function collects the numbers in an array, sets a local `IFS` to a comma and prints `"${parts[*]}"`.
 
 ## Edge cases
 
