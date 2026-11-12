@@ -1,0 +1,1 @@
+{"tag":"NEW-var","kind":"api","owner":"css","path":"var","entity":"function","module":"types","spec_url":"https://drafts.csswg.org/css-variables/#using-variables","doc":{"url":"https://developer.mozilla.org/docs/Web/CSS/Reference/Values/var"},"source":{"url":"https://github.com/mdn/browser-compat-data","licence":"CC0-1.0","version":"8.1.8","key":"css.types.var"}}
