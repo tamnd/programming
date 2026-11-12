@@ -1,0 +1,1 @@
+{"tag":"NEW-abort","kind":"api","owner":"crystal","path":"abort","entity":"function","module":"Top Level Namespace","signature":"abort(message = nil, status = 1) : NoReturn","doc":{"url":"https://crystal-lang.org/api/latest/toplevel.html#abort(message=nil,status=1):NoReturn-class-method"},"source":{"url":"https://crystal-lang.org/api/latest/","licence":"Apache-2.0"}}

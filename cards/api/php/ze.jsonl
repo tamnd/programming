@@ -1,0 +1,2 @@
+{"tag":"NEW-zend_thread_id","kind":"api","owner":"php","path":"zend_thread_id","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.zend-thread-id.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-zend_version","kind":"api","owner":"php","path":"zend_version","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.zend-version.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

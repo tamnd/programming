@@ -1,0 +1,2 @@
+{"tag":"NEW-Logging.Logging","kind":"api","owner":"julia","path":"Logging.Logging","entity":"module","module":"Base","doc":{"url":"https://docs.julialang.org/en/v1/stdlib/Logging/#Logging.Logging"},"source":{"url":"https://docs.julialang.org/en/v1/","licence":"MIT"}}
+{"tag":"NEW-local","kind":"api","owner":"julia","path":"local","entity":"keyword","module":"keywords","doc":{"url":"https://docs.julialang.org/en/v1/base/base/#local"},"source":{"url":"https://docs.julialang.org/en/v1/","licence":"MIT"}}

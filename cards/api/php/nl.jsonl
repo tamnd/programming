@@ -1,0 +1,2 @@
+{"tag":"NEW-nl2br","kind":"api","owner":"php","path":"nl2br","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.nl2br.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-nl_langinfo","kind":"api","owner":"php","path":"nl_langinfo","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.nl-langinfo.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

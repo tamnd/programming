@@ -1,0 +1,2 @@
+{"tag":"NEW-natcasesort","kind":"api","owner":"php","path":"natcasesort","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.natcasesort.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-natsort","kind":"api","owner":"php","path":"natsort","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.natsort.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

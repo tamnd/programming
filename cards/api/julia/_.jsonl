@@ -1,0 +1,3 @@
+{"tag":"NEW-..op-","kind":"api","owner":"julia","path":".","entity":"keyword","module":"keywords","doc":{"url":"https://docs.julialang.org/en/v1/base/base/#."},"source":{"url":"https://docs.julialang.org/en/v1/","licence":"MIT"}}
+{"tag":"NEW-op-3b","kind":"api","owner":"julia","path":";","entity":"keyword","module":"keywords","doc":{"url":"https://docs.julialang.org/en/v1/base/base/#;"},"source":{"url":"https://docs.julialang.org/en/v1/","licence":"MIT"}}
+{"tag":"NEW-op-3d","kind":"api","owner":"julia","path":"=","entity":"keyword","module":"keywords","doc":{"url":"https://docs.julialang.org/en/v1/base/base/#="},"source":{"url":"https://docs.julialang.org/en/v1/","licence":"MIT"}}

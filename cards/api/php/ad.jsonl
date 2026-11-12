@@ -1,0 +1,2 @@
+{"tag":"NEW-addcslashes","kind":"api","owner":"php","path":"addcslashes","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.addcslashes.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}
+{"tag":"NEW-addslashes","kind":"api","owner":"php","path":"addslashes","entity":"function","module":"functions","doc":{"url":"https://www.php.net/manual/en/function.addslashes.php"},"source":{"url":"https://www.php.net/manual/en/indexes.functions.php","licence":"CC-BY-3.0"}}

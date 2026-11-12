@@ -1,0 +1,1 @@
+{"tag":"NEW-puts","kind":"api","owner":"crystal","path":"puts","entity":"function","module":"Top Level Namespace","signature":"puts(*objects) : Nil","doc":{"url":"https://crystal-lang.org/api/latest/toplevel.html#puts(*objects):Nil-class-method"},"source":{"url":"https://crystal-lang.org/api/latest/","licence":"Apache-2.0"}}

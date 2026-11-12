@@ -1,0 +1,1 @@
+{"tag":"NEW-offsetof","kind":"api","owner":"crystal","path":"offsetof","entity":"function","module":"Top Level Namespace","signature":"offsetof(type : Class, offset) : Int32","doc":{"url":"https://crystal-lang.org/api/latest/toplevel.html#offsetof(type:Class,offset):Int32-class-method"},"source":{"url":"https://crystal-lang.org/api/latest/","licence":"Apache-2.0"}}

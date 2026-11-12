@@ -1,0 +1,1 @@
+{"tag":"NEW-ccall","kind":"api","owner":"julia","path":"ccall","entity":"keyword","module":"keywords","signature":"ccall((function_name, library), returntype, (argtype1, ...), argvalue1, ...)","doc":{"url":"https://docs.julialang.org/en/v1/base/c/#ccall"},"source":{"url":"https://docs.julialang.org/en/v1/","licence":"MIT"}}
