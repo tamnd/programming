@@ -39,7 +39,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) before you open a pull request.
 
 ## How the site is built
 
-Each push to `main` runs the CI workflow. It runs the audit and the tests of each language in its own job. Then it renders the site and deploys it to Cloudflare Pages. A pull request from this repository gets a preview site.
+Each push to `main` runs the CI workflow. It runs the audit and the tests of each language in its own job, renders the site, and publishes the test results to the release `ci-results`. A build server deploys `main` to Cloudflare with `scripts/deploy-cloudflare.sh`: a cron job runs it every 5 minutes, and it deploys only when `main`, the pinned `prog` or the test results changed. So a merge reaches the site in minutes and does not wait for the tests. A pull request from this repository gets a preview site from the CI. To deploy production from the CI, run the CI workflow by hand on `main`.
 
 ## Roadmap
 
