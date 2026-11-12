@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: TypeScript uses the JavaScript Intl.Segmenter, and its library types describe the segments. No example file exists.
+kotlin:
+  status: stdlib
+  reason: On the JVM, Kotlin uses java.text.BreakIterator.getCharacterInstance and the regex \X of java.util.regex. No example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash has no grapheme operation. ${#s} counts the characters of the locale, which are code points in a UTF-8 locale. No example file exists.
+powershell:
+  status: stdlib
+  reason: PowerShell can use the .NET System.Globalization.StringInfo class, which counts text elements. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: Standard SQL has no grapheme function. LENGTH and CHAR_LENGTH count the characters of the character set of the column. No example file exists.
+regex:
+  status: native
+  reason: In Java and in the Python regex module, \X matches one extended grapheme cluster. A JavaScript RegExp has no \X.
+html:
+  status: n/a
+  reason: HTML has no string operations. The browser finds grapheme clusters when it draws and selects the text.
+css:
+  status: n/a
+  reason: CSS has no string operations. The browser segments the text for line breaks and selection.

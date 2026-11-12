@@ -511,7 +511,7 @@ items:
     group: "data-and-values"
     name: "String"
     target: "string-concept"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Systems (\"aliasing (sharing using pointers), indexed sequence and ...\"). It is in 7 of the 7 language references: Python Language Reference (\"String and Bytes literals\"); Go spec (\"String literals\"); Rust Reference (\"String slice type\"); and 4 more. It is in the canon books: SICP index (\"character strings\"); HtDP contents (\"The Arithmetic of Strings\")."
   - part: concepts
     group: "data-and-values"

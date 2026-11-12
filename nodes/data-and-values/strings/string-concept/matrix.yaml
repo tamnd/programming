@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript string type, with the type string, and it adds string literal types and template literal types that limit a value to some strings. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has the immutable type String, which is java.lang.String on the JVM, with string templates, raw strings in triple quotes, StringBuilder and buildString. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The value of a Bash variable is a string, and parameter expansions such as ${#s}, ${s:i:n} and ${s/a/b} give its length, a substring and a replacement. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell uses the .NET type System.String, with single-quoted literal strings and double-quoted strings that expand variables. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: Standard SQL has the character string types CHARACTER, CHARACTER VARYING and CHARACTER LARGE OBJECT, the concatenation operator || and functions such as SUBSTRING and CHAR_LENGTH. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches strings and parts of strings, but the pattern language has no string values of its own.
+html:
+  status: n/a
+  reason: The text content and the attribute values of an HTML document are text, but HTML has no data types, so it has no string type.
+css:
+  status: native
+  reason: CSS has the data type string, a sequence of characters in single or double quotes, which properties such as content and font-family take.

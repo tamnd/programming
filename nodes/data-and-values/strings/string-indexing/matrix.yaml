@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript compiles to JavaScript, so s[i], charAt and at count UTF-16 code units, and s[i] has the type string. No example file exists.
+kotlin:
+  status: native
+  reason: On the JVM, s[i] calls String.get and gives a Char, which is one UTF-16 code unit, as in Java. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The expansion ${s:i:n} takes a substring by offset and length. In a UTF-8 locale it counts characters, and in the C locale it counts bytes. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell strings are .NET System.String objects, so $s[i] gives a char, one UTF-16 code unit. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SUBSTRING counts positions from 1, and each database counts characters in the character set of the column. No example file exists.
+regex:
+  status: n/a
+  reason: A regex engine reports match offsets in the units of its host language, such as UTF-16 code units in JavaScript and bytes in Go.
+html:
+  status: n/a
+  reason: HTML is markup and has no string indexes.
+css:
+  status: n/a
+  reason: CSS has no string indexes.
