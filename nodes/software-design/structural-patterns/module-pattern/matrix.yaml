@@ -1,0 +1,24 @@
+kotlin:
+  status: native
+  reason: an object declaration is a named single instance with private members, and private top-level declarations are visible only inside their file; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a source file is the module; static functions and variables at file scope are private to the file, and a header declares the public functions.
+sql:
+  status: idiom
+  reason: a schema groups tables, views and functions under one name, and grants decide which roles can use them.
+bash:
+  status: idiom
+  reason: a file that the script sources groups the functions; a name prefix and local variables inside functions are the only privacy.
+powershell:
+  status: native
+  reason: a script module file exports only the functions that Export-ModuleMember names, and script-scoped variables stay inside the module; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no state or functions to group.
+html:
+  status: n/a
+  reason: markup has no private state; a script element of type module loads an ES module.
+css:
+  status: idiom
+  reason: cascade layers and the @scope rule limit where a group of rules applies, but style rules have no private state.

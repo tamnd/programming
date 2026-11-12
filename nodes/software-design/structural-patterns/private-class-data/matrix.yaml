@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: a data class with val properties is a read-only data object, and val in a class forbids reassignment after construction; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a header can declare a struct without its fields, so callers hold only a pointer and use accessor functions, and a const-qualified pointer stops writes through it.
+sql:
+  status: idiom
+  reason: a view or a grant can expose columns for reading only, and a trigger can reject an update of a column that must not change.
+bash:
+  status: idiom
+  reason: readonly or declare -r makes a variable read-only after it is set.
+powershell:
+  status: idiom
+  reason: a class can expose a hidden field through a property with only a getter, and Set-Variable -Option ReadOnly makes a variable read-only; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no fields or write access.
+html:
+  status: n/a
+  reason: markup has no class fields; the readonly attribute of an input only stops the user from editing it.
+css:
+  status: n/a
+  reason: style rules have no fields or write access.

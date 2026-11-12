@@ -1,0 +1,25 @@
+kotlin:
+  status: idiom
+  reason: an interface with default method bodies works as a mixin with no state, and a class can implement many; no example is executed here because the test image has no kotlinc.
+  alternative: class delegation with by, which reuses the behaviour of an object.
+c:
+  status: n/a
+  reason: C has no classes or inheritance; a struct of function pointers can share functions, but there is nothing to mix in.
+sql:
+  status: n/a
+  reason: tables have no methods to share.
+bash:
+  status: idiom
+  reason: a script can source a file of functions, and those functions then work on the variables of the script.
+powershell:
+  status: idiom
+  reason: a class can implement interfaces but they have no method bodies, so a shared base class or a module of functions takes the role; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no classes or methods.
+html:
+  status: n/a
+  reason: markup has no classes with behaviour.
+css:
+  status: idiom
+  reason: native CSS has no mixins, but a rule can apply the same declarations to many selectors, and custom properties share values; preprocessors such as Sass add mixins.
