@@ -1,0 +1,3 @@
+{"name":"hello-world","args":{"a":"Hello, ","b":"world"},"expect":"Hello, world"}
+{"name":"two-words","args":{"a":"good","b":"bye"},"expect":"goodbye"}
+{"name":"keep-spaces","args":{"a":"a ","b":" b"},"expect":"a  b"}

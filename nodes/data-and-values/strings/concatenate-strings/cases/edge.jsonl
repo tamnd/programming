@@ -1,0 +1,8 @@
+{"name":"empty-both","class":["empty"],"args":{"a":"","b":""},"expect":""}
+{"name":"empty-left","class":["empty"],"args":{"a":"","b":"abc"},"expect":"abc"}
+{"name":"empty-right","class":["empty"],"args":{"a":"abc","b":""},"expect":"abc"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"a":"naï","b":"ve"},"expect":"naïve"}
+{"name":"astral","class":["astral"],"args":{"a":"a","b":"🙂"},"expect":"a🙂"}
+{"name":"combining-mark","class":["combining"],"args":{"a":"e","b":"́"},"expect":"é"}
+{"name":"flag-halves","class":["flag"],"args":{"a":"🇫","b":"🇷"},"expect":"🇫🇷"}
+{"name":"digit-strings","class":["digits"],"args":{"a":"1","b":"2"},"expect":"12"}

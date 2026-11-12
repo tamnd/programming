@@ -1,0 +1,10 @@
+{"name":"empty","class":["empty"],"args":{"s":"","start":0,"end":0},"expect":""}
+{"name":"whole","class":["whole"],"args":{"s":"abc","start":0,"end":3},"expect":"abc"}
+{"name":"empty-range","class":["empty-range"],"args":{"s":"abc","start":1,"end":1},"expect":""}
+{"name":"at-end","class":["at-end"],"args":{"s":"abc","start":3,"end":3},"expect":""}
+{"name":"non-ascii","class":["non-ascii"],"args":{"s":"naïve café","start":2,"end":5},"expect":"ïve"}
+{"name":"cjk","class":["non-ascii"],"args":{"s":"日本語テキスト","start":3,"end":7},"expect":"テキスト"}
+{"name":"astral","class":["astral"],"args":{"s":"a🙂b🙃c","start":1,"end":4},"expect":"🙂b🙃"}
+{"name":"astral-only","class":["astral"],"args":{"s":"🙂🙃","start":1,"end":2},"expect":"🙃"}
+{"name":"combining","class":["combining"],"args":{"s":"e\u0301té","start":0,"end":1},"expect":"e"}
+{"name":"combining-mark","class":["combining"],"args":{"s":"e\u0301té","start":1,"end":3},"expect":"\u0301t"}

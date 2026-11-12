@@ -1,0 +1,17 @@
+# The contract of the task "concatenate strings" (spec 10.2). The result is the characters of a followed by the characters of b, with nothing between them.
+problem: concatenate-strings
+entry: concat
+params:
+  - name: a
+    type: string
+    pre: "any string of Unicode text"
+  - name: b
+    type: string
+    pre: "any string of Unicode text"
+returns:
+  type: string
+  post: "the characters of a followed by the characters of b; the length of the result is the sum of the two lengths, in every unit"
+checker: exact
+edge_classes: [empty, non-ascii, astral, combining, flag, digits]
+# The toolchain has one entry for each contract. A second entry is in another case file, and each solution tests it too.
+# cases/number.jsonl: concat_number(s: string, n: int) -> string. The result is s followed by the decimal form of n, with a minus sign U+002D for a negative n and no plus sign. Pre: n is a 32-bit signed integer.

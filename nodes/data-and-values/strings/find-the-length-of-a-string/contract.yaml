@@ -1,0 +1,14 @@
+# The contract of the task "find the length of a string" (spec 10.2). A string has more than one length, so the solution returns three of them.
+problem: find-the-length-of-a-string
+entry: lengths
+params:
+  - name: s
+    type: string
+    pre: "a string of Unicode scalar values: valid UTF-8 where the language stores bytes, valid UTF-16 where it stores 16-bit units"
+returns:
+  type: "list<int>"
+  post: "three numbers: the length of s in UTF-8 bytes, the length of s in UTF-16 code units, and the number of code points in s"
+checker: exact
+edge_classes: [empty, single, non-ascii, astral, combining, flag, zwj, nul]
+# A Bash variable cannot hold a NUL character, so the Bash solution has no nul case.
+# The number of grapheme clusters is a fourth length. It is the task count-the-graphemes-of-a-string.

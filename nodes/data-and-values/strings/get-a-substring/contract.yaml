@@ -1,0 +1,19 @@
+# The contract of the task "get a substring" (spec 10.2). The indexes count code points, so the result is the same in every language, and a cut never falls inside the encoding of one code point.
+problem: get-a-substring
+entry: substring
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+  - name: start
+    type: int
+    pre: "0 <= start <= end"
+  - name: end
+    type: int
+    pre: "start <= end <= the number of code points of s"
+returns:
+  type: string
+  post: "the code points of s at the indexes start to end - 1, in order; the empty string when start = end"
+checker: exact
+edge_classes: [empty, whole, empty-range, at-end, non-ascii, astral, combining]
+# The range is half-open, as in Python, Go, Rust and the substring methods of Java and JavaScript. A cut between a base letter and its combining mark is valid here, because the mark is a separate code point. Count the graphemes of a string covers cuts that keep a reader's characters whole.
