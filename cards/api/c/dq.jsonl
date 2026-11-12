@@ -1,0 +1,2 @@
+{"tag":"NEW-dqblk","kind":"api","owner":"c","path":"dqblk","entity":"type","module":"Linux system calls","doc":{"url":"https://man7.org/linux/man-pages/man2/dqblk.2type.html"},"source":{"url":"https://man7.org/linux/man-pages/dir_section_2.html","licence":"LicenseRef-names-only"}}
+{"tag":"NEW-dqinfo","kind":"api","owner":"c","path":"dqinfo","entity":"type","module":"Linux system calls","doc":{"url":"https://man7.org/linux/man-pages/man2/dqinfo.2type.html"},"source":{"url":"https://man7.org/linux/man-pages/dir_section_2.html","licence":"LicenseRef-names-only"}}
