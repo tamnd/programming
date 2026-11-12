@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: a specification can wrap a function of type (T) -> Boolean, with infix functions and, or and a function not that return new specifications; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a tree of structs, with a tag for the operator and a function pointer for each leaf test, can hold a composite specification.
+sql:
+  status: idiom
+  reason: a WHERE clause combines conditions with AND, OR and NOT, and a view can give a name to a selection, but a condition is not a value that a query can pass.
+bash:
+  status: n/a
+  reason: shell scripts have no objects to combine.
+powershell:
+  status: idiom
+  reason: a script block can be the test, and new script blocks can combine tests with -and, -or and -not; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern matches text, not objects.
+html:
+  status: n/a
+  reason: markup has no objects or tests.
+css:
+  status: n/a
+  reason: a selector selects elements, but it is not a value that a program can pass and combine at run time.
