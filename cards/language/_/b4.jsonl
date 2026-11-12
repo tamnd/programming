@@ -1,1 +1,2 @@
 {"tag":"NEW-b4tran","kind":"language","owner":"","id":"b4tran","name":"B4Tran","class":"programming language","appeared":1975,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/b4tran.html","licence":"public-domain"}}
+{"tag":"NEW-b4x","kind":"language","owner":"","id":"b4x","name":"B4X","class":"programming language","aka":["basic for android"],"extensions":["bas"],"licence":"MIT","source":{"url":"https://github.com/github-linguist/linguist/blob/v9.7.0/lib/linguist/languages.yml","title":"Linguist v9.7.0, languages.yml, the entry B4X","licence":"MIT"}}

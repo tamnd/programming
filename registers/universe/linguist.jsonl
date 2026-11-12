@@ -1,0 +1,845 @@
+{"id":"1013566805","name":"LTspice Symbol","scope":"formats","outcome":"card","target":"ltspice-symbol"}
+{"id":"1016912802","name":"Tor Config","scope":"formats","outcome":"card","target":"tor-config"}
+{"id":"1020148948","name":"Redirect Rules","scope":"formats","outcome":"card","target":"redirect-rules"}
+{"id":"1035892117","name":"TSV","scope":"formats","outcome":"card","target":"tsv"}
+{"id":"105187618","name":"OASv2-yaml","scope":"formats","outcome":"card","target":"oasv2-yaml"}
+{"id":"1054391671","name":"Go Checksums","scope":"formats","outcome":"card","target":"go-checksums"}
+{"id":"111148035","name":"Dotenv","scope":"formats","outcome":"card","target":"dotenv"}
+{"id":"113","name":"Formatted","scope":"formats","outcome":"card","target":"formatted-table"}
+{"id":"131750475","name":"Git Commit","scope":"formats","outcome":"card","target":"git-commit"}
+{"id":"134534086","name":"WebAssembly Interface Type","scope":"formats","outcome":"card","target":"webassembly-interface-type"}
+{"id":"136","name":"Gradle","scope":"formats","outcome":"card","target":"gradle"}
+{"id":"138","name":"Graph Modeling Language","scope":"formats","outcome":"card","target":"graph-modeling-language"}
+{"id":"139","name":"GraphQL","scope":"formats","outcome":"card","target":"graphql"}
+{"id":"140","name":"Graphviz (DOT)","scope":"formats","outcome":"card","target":"dot"}
+{"id":"140848857","name":"KiCad Legacy Layout","scope":"formats","outcome":"card","target":"kicad"}
+{"id":"147198098","name":"Adobe Font Metrics","scope":"formats","outcome":"card","target":"adobe-font-metrics"}
+{"id":"15","name":"Ant Build System","scope":"formats","outcome":"card","target":"ant-build-system"}
+{"id":"152","name":"HTTP","scope":"formats","outcome":"card","target":"http"}
+{"id":"153503348","name":"Browserslist","scope":"formats","outcome":"card","target":"browserslist"}
+{"id":"16","name":"ApacheConf","scope":"formats","outcome":"card","target":"apacheconf"}
+{"id":"163","name":"INI","scope":"formats","outcome":"card","target":"ini"}
+{"id":"164","name":"IRC log","scope":"formats","outcome":"card","target":"irc-log"}
+{"id":"174","name":"JSON","scope":"formats","outcome":"node","target":"json"}
+{"id":"175","name":"JSON5","scope":"formats","outcome":"card","target":"json5"}
+{"id":"176","name":"JSONLD","scope":"formats","outcome":"card","target":"json-ld"}
+{"id":"187","name":"KiCad Layout","scope":"formats","outcome":"card","target":"kicad-layout"}
+{"id":"187772328","name":"Altium Designer","scope":"formats","outcome":"card","target":"altium-designer"}
+{"id":"201049282","name":"DirectX 3D File","scope":"formats","outcome":"card","target":"directx-3d-file"}
+{"id":"203","name":"Linux Kernel Module","scope":"formats","outcome":"card","target":"linux-kernel-module"}
+{"id":"208700028","name":"X Font Directory Index","scope":"formats","outcome":"card","target":"x-font-directory-index"}
+{"id":"222900098","name":"Soong","scope":"formats","outcome":"card","target":"soong"}
+{"id":"225167241","name":"XCompose","scope":"formats","outcome":"card","target":"xcompose"}
+{"id":"225697190","name":"Kusto","scope":"formats","outcome":"card","target":"kusto"}
+{"id":"226","name":"Maven POM","scope":"formats","outcome":"card","target":"maven-pom"}
+{"id":"231021894","name":"Hosts File","scope":"formats","outcome":"card","target":"hosts-file"}
+{"id":"241","name":"NL","scope":"formats","outcome":"card","target":"nl"}
+{"id":"24470517","name":"Survex data","scope":"formats","outcome":"card","target":"survex-data"}
+{"id":"248","name":"Nginx","scope":"formats","outcome":"card","target":"nginx-config"}
+{"id":"250","name":"Ninja","scope":"formats","outcome":"card","target":"ninja"}
+{"id":"256","name":"ObjDump","scope":"formats","outcome":"card","target":"objdump"}
+{"id":"284","name":"Pickle","scope":"formats","outcome":"card","target":"pickle-format"}
+{"id":"29176339","name":"CIL","scope":"formats","outcome":"card","target":"cilk"}
+{"id":"297","name":"Protocol Buffer","scope":"formats","outcome":"card","target":"protobuf"}
+{"id":"298","name":"Public Key","scope":"formats","outcome":"card","target":"public-key-file"}
+{"id":"300","name":"Pure Data","scope":"formats","outcome":"card","target":"puredata"}
+{"id":"302957008","name":"GN","scope":"formats","outcome":"card","target":"generate-ninja"}
+{"id":"304","name":"Python traceback","scope":"formats","outcome":"merged","target":"python","reason":"Linguist lists it as a variant in the group Python"}
+{"id":"314","name":"RPM Spec","scope":"formats","outcome":"card","target":"rpm-spec"}
+{"id":"318","name":"Raw token data","scope":"formats","outcome":"card","target":"raw-token-data"}
+{"id":"321684729","name":"CODEOWNERS","scope":"formats","outcome":"card","target":"codeowners"}
+{"id":"32760317","name":"STEP","scope":"formats","outcome":"card","target":"step"}
+{"id":"331","name":"SPARQL","scope":"formats","outcome":"card","target":"sparql"}
+{"id":"333","name":"SQL","scope":"formats","outcome":"card","target":"sql"}
+{"id":"336","name":"STON","scope":"formats","outcome":"card","target":"ston"}
+{"id":"337","name":"SVG","scope":"formats","outcome":"card","target":"svg"}
+{"id":"342840477","name":"Easybuild","scope":"formats","outcome":"card","target":"easybuild"}
+{"id":"342840478","name":"Edje Data Collection","scope":"formats","outcome":"card","target":"edje-data-collection"}
+{"id":"360","name":"SubRip Text","scope":"formats","outcome":"card","target":"subrip-text"}
+{"id":"363378884","name":"Regular Expression","scope":"formats","outcome":"card","target":"regex"}
+{"id":"365","name":"TOML","scope":"formats","outcome":"node","target":"toml"}
+{"id":"366607477","name":"HAProxy","scope":"formats","outcome":"card","target":"haproxy"}
+{"id":"372063053","name":"Checksums","scope":"formats","outcome":"card","target":"checksums"}
+{"id":"374317347","name":"OpenType Feature File","scope":"formats","outcome":"card","target":"opentype-feature-file"}
+{"id":"376","name":"Turtle","scope":"formats","outcome":"card","target":"turtle"}
+{"id":"380","name":"Unity3D Asset","scope":"formats","outcome":"card","target":"unity3d-asset"}
+{"id":"387204628","name":"2-Dimensional Array","scope":"formats","outcome":"card","target":"2-dimensional-array"}
+{"id":"392","name":"Wavefront Material","scope":"formats","outcome":"card","target":"wavefront-material"}
+{"id":"393","name":"Wavefront Object","scope":"formats","outcome":"card","target":"wavefront-object"}
+{"id":"394","name":"Web Ontology Language","scope":"formats","outcome":"card","target":"owl"}
+{"id":"396","name":"World of Warcraft Addon Data","scope":"formats","outcome":"card","target":"world-of-warcraft-addon-data"}
+{"id":"399","name":"XML","scope":"formats","outcome":"card","target":"xml"}
+{"id":"400","name":"XPages","scope":"formats","outcome":"card","target":"xpages"}
+{"id":"404627610","name":"Gerber Image","scope":"formats","outcome":"card","target":"gerber-image"}
+{"id":"407","name":"YAML","scope":"formats","outcome":"node","target":"yaml"}
+{"id":"407996372","name":"Cloud Firestore Security Rules","scope":"formats","outcome":"card","target":"cloud-firestore-security-rules"}
+{"id":"408","name":"YANG","scope":"formats","outcome":"card","target":"yang"}
+{"id":"412","name":"desktop","scope":"formats","outcome":"card","target":"desktop"}
+{"id":"414","name":"edn","scope":"formats","outcome":"card","target":"edn"}
+{"id":"421026389","name":"CoNLL-U","scope":"formats","outcome":"card","target":"conll-u"}
+{"id":"423","name":"JSON with Comments","scope":"formats","outcome":"card","target":"json-with-comments"}
+{"id":"423304113","name":"IFC","scope":"formats","outcome":"merged","target":"step","reason":"Linguist lists it as a variant in the group STEP"}
+{"id":"424","name":"CSON","scope":"formats","outcome":"card","target":"cson"}
+{"id":"424510560","name":"STAR","scope":"formats","outcome":"card","target":"star"}
+{"id":"429","name":"ABNF","scope":"formats","outcome":"card","target":"abnf"}
+{"id":"430","name":"EBNF","scope":"formats","outcome":"card","target":"ebnf"}
+{"id":"432600901","name":"Gradle Kotlin DSL","scope":"formats","outcome":"merged","target":"gradle","reason":"Linguist lists it as a variant in the group Gradle"}
+{"id":"436081647","name":"Tree-sitter Query","scope":"formats","outcome":"card","target":"tree-sitter-query"}
+{"id":"436568854","name":"Protocol Buffer Text Format","scope":"formats","outcome":"card","target":"protocol-buffer-text-format"}
+{"id":"44","name":"C-ObjDump","scope":"formats","outcome":"card","target":"c-objdump"}
+{"id":"447261135","name":"JAR Manifest","scope":"formats","outcome":"card","target":"jar-manifest"}
+{"id":"455361735","name":"STL","scope":"formats","outcome":"card","target":"stl"}
+{"id":"459577965","name":"GEDCOM","scope":"formats","outcome":"card","target":"gedcom"}
+{"id":"461881235","name":"Git Revision List","scope":"formats","outcome":"card","target":"git-revision-list"}
+{"id":"476447814","name":"Cylc","scope":"formats","outcome":"merged","target":"ini","reason":"Linguist lists it as a variant in the group INI"}
+{"id":"481192983","name":"NEON","scope":"formats","outcome":"card","target":"neon"}
+{"id":"4896465","name":"MiniYAML","scope":"formats","outcome":"card","target":"miniyaml"}
+{"id":"49","name":"COLLADA","scope":"formats","outcome":"card","target":"collada"}
+{"id":"499933428","name":"Prisma","scope":"formats","outcome":"card","target":"prisma"}
+{"id":"51","name":"CSV","scope":"formats","outcome":"node","target":"csv"}
+{"id":"51239111","name":"OASv3-yaml","scope":"formats","outcome":"card","target":"oasv3-yaml"}
+{"id":"519377561","name":"Java Properties","scope":"formats","outcome":"card","target":"java-properties"}
+{"id":"527438264","name":"Debian Package Control File","scope":"formats","outcome":"card","target":"debian-package-control-file"}
+{"id":"529653389","name":"E-mail","scope":"formats","outcome":"card","target":"mbox"}
+{"id":"538732839","name":"Readline Config","scope":"formats","outcome":"merged","target":"ini","reason":"Linguist lists it as a variant in the group INI"}
+{"id":"544060961","name":"Valve Data Format","scope":"formats","outcome":"card","target":"valve-data-format"}
+{"id":"554920715","name":"SSH Config","scope":"formats","outcome":"merged","target":"ini","reason":"Linguist lists it as a variant in the group INI"}
+{"id":"557959099","name":"OpenAPI Specification v3","scope":"formats","outcome":"card","target":"openapi-specification-v3"}
+{"id":"577640576","name":"FlatBuffers","scope":"formats","outcome":"card","target":"flatbuffers"}
+{"id":"584191811","name":"BIRD2","scope":"formats","outcome":"card","target":"bird"}
+{"id":"587855233","name":"RON","scope":"formats","outcome":"card","target":"ron"}
+{"id":"587879709","name":"Vespa Schema Definition","scope":"formats","outcome":"card","target":"vespa-schema-definition"}
+{"id":"598917541","name":"OpenStep Property List","scope":"formats","outcome":"card","target":"openstep-property-list"}
+{"id":"615465151","name":"Caddyfile","scope":"formats","outcome":"card","target":"caddyfile"}
+{"id":"622447435","name":"KiCad Schematic","scope":"formats","outcome":"card","target":"kicad-schematic"}
+{"id":"632765617","name":"Type Language","scope":"formats","outcome":"card","target":"type-language"}
+{"id":"658679714","name":"WebVTT","scope":"formats","outcome":"card","target":"webvtt"}
+{"id":"668457123","name":"Wget Config","scope":"formats","outcome":"merged","target":"ini","reason":"Linguist lists it as a variant in the group INI"}
+{"id":"674736065","name":"Robots Exclusion Rules","scope":"formats","outcome":"card","target":"robots.txt"}
+{"id":"677095381","name":"Cabal Config","scope":"formats","outcome":"card","target":"cabal"}
+{"id":"679725279","name":"HOCON","scope":"formats","outcome":"card","target":"hocon"}
+{"id":"684385621","name":"Pip Requirements","scope":"formats","outcome":"card","target":"pip-requirements"}
+{"id":"685022663","name":"NPM Config","scope":"formats","outcome":"merged","target":"ini","reason":"Linguist lists it as a variant in the group INI"}
+{"id":"686129783","name":"FIGlet Font","scope":"formats","outcome":"card","target":"figlet-font"}
+{"id":"687511714","name":"ShellCheck Config","scope":"formats","outcome":"card","target":"shellcheck-config"}
+{"id":"691605112","name":"dircolors","scope":"formats","outcome":"card","target":"dircolors"}
+{"id":"692635484","name":"Kickstart","scope":"formats","outcome":"card","target":"kickstart"}
+{"id":"7","name":"ASN.1","scope":"formats","outcome":"card","target":"asn-1"}
+{"id":"70","name":"Cpp-ObjDump","scope":"formats","outcome":"card","target":"cpp-objdump"}
+{"id":"705203557","name":"crontab","scope":"formats","outcome":"card","target":"crontab"}
+{"id":"716513858","name":"Proguard","scope":"formats","outcome":"card","target":"proguard"}
+{"id":"723589315","name":"Option List","scope":"formats","outcome":"card","target":"option-list"}
+{"id":"735623761","name":"Simple File Verification","scope":"formats","outcome":"merged","target":"checksums","reason":"Linguist lists it as a variant in the group Checksums"}
+{"id":"738107771","name":"Godot Resource","scope":"formats","outcome":"card","target":"godot-resource"}
+{"id":"74444240","name":"Ignore List","scope":"formats","outcome":"card","target":"gitignore"}
+{"id":"75622871","name":"XML Property List","scope":"formats","outcome":"merged","target":"xml","reason":"Linguist lists it as a variant in the group XML"}
+{"id":"758480799","name":"Lark","scope":"formats","outcome":"card","target":"lark"}
+{"id":"767169629","name":"Spline Font Database","scope":"formats","outcome":"card","target":"spline-font-database"}
+{"id":"769162295","name":"TMDL","scope":"formats","outcome":"card","target":"tmdl"}
+{"id":"774635084","name":"Jest Snapshot","scope":"formats","outcome":"card","target":"jest-snapshot"}
+{"id":"775996197","name":"nanorc","scope":"formats","outcome":"merged","target":"ini","reason":"Linguist lists it as a variant in the group INI"}
+{"id":"781846279","name":"X PixMap","scope":"formats","outcome":"card","target":"xpm-format"}
+{"id":"782911107","name":"X BitMap","scope":"formats","outcome":"card","target":"x-bitmap"}
+{"id":"785497837","name":"Avro IDL","scope":"formats","outcome":"card","target":"avro-idl"}
+{"id":"786683730","name":"HXML","scope":"formats","outcome":"card","target":"hxml"}
+{"id":"800983837","name":"Microsoft Developer Studio Project","scope":"formats","outcome":"card","target":"microsoft-developer-studio-project"}
+{"id":"803760908","name":"Zmodel","scope":"formats","outcome":"card","target":"zmodel"}
+{"id":"807968997","name":"Git Config","scope":"formats","outcome":"card","target":"git-config"}
+{"id":"809230569","name":"ROS Interface","scope":"formats","outcome":"card","target":"ros-msg"}
+{"id":"81","name":"D-ObjDump","scope":"formats","outcome":"card","target":"d-objdump"}
+{"id":"828144309","name":"Quartus Simulation IP","scope":"formats","outcome":"card","target":"quartus-simulation-ip"}
+{"id":"833504686","name":"PlantUML","scope":"formats","outcome":"card","target":"plantuml"}
+{"id":"834374816","name":"OASv2-json","scope":"formats","outcome":"card","target":"oasv2-json"}
+{"id":"84","name":"DNS Zone","scope":"formats","outcome":"card","target":"zone"}
+{"id":"84359046","name":"BuildStream","scope":"formats","outcome":"card","target":"buildstream"}
+{"id":"848295328","name":"OpenAPI Specification v2","scope":"formats","outcome":"card","target":"openapi-specification-v2"}
+{"id":"849523096","name":"Microsoft Visual Studio Solution","scope":"formats","outcome":"card","target":"microsoft-visual-studio-solution"}
+{"id":"851476558","name":"vCard","scope":"formats","outcome":"card","target":"vcard"}
+{"id":"86","name":"Darcs Patch","scope":"formats","outcome":"card","target":"darcs"}
+{"id":"864005057","name":"SpiceDB Schema","scope":"formats","outcome":"card","target":"spicedb-schema"}
+{"id":"865765202","name":"Record Jar","scope":"formats","outcome":"card","target":"record-jar"}
+{"id":"876401352","name":"GtkRC","scope":"formats","outcome":"card","target":"gtkrc"}
+{"id":"88","name":"Diff","scope":"formats","outcome":"card","target":"diff"}
+{"id":"880010326","name":"SELinux Policy","scope":"formats","outcome":"card","target":"selinux-policy"}
+{"id":"884614762","name":"Adblock Filter List","scope":"formats","outcome":"card","target":"adblock-filter-list"}
+{"id":"89289301","name":"TSPLIB data","scope":"formats","outcome":"card","target":"tsplib-data"}
+{"id":"89638692","name":"M3U","scope":"formats","outcome":"card","target":"m3u"}
+{"id":"899227493","name":"RBS","scope":"formats","outcome":"card","target":"rbs"}
+{"id":"907065713","name":"Gemfile.lock","scope":"formats","outcome":"card","target":"gemfile-lock"}
+{"id":"925023573","name":"pkg-config","scope":"formats","outcome":"card","target":"pkgconfig"}
+{"id":"931123626","name":"KDL","scope":"formats","outcome":"card","target":"kdl"}
+{"id":"934546256","name":"Go Workspace","scope":"formats","outcome":"card","target":"go-workspace"}
+{"id":"938193433","name":"MiniZinc Data","scope":"formats","outcome":"card","target":"minizinc-data"}
+{"id":"942714150","name":"Cue Sheet","scope":"formats","outcome":"card","target":"cue-sheet"}
+{"id":"947461016","name":"Go Module","scope":"formats","outcome":"card","target":"go-module"}
+{"id":"950967261","name":"Win32 Message File","scope":"formats","outcome":"card","target":"win32-message-file"}
+{"id":"956324166","name":"Git Attributes","scope":"formats","outcome":"card","target":"git-attributes"}
+{"id":"96139566","name":"EditorConfig","scope":"formats","outcome":"merged","target":"ini","reason":"Linguist lists it as a variant in the group INI"}
+{"id":"965696054","name":"TextGrid","scope":"formats","outcome":"card","target":"textgrid"}
+{"id":"969674868","name":"Windows Registry Entries","scope":"formats","outcome":"card","target":"windows-registry-entries"}
+{"id":"97","name":"Eagle","scope":"formats","outcome":"card","target":"eagle"}
+{"id":"98","name":"Ecere Projects","scope":"formats","outcome":"merged","target":"javascript","reason":"Linguist lists it as a variant in the group JavaScript"}
+{"id":"980062566","name":"OASv3-json","scope":"formats","outcome":"card","target":"oasv3-json"}
+{"id":"981795023","name":"TextMate Properties","scope":"formats","outcome":"card","target":"textmate-properties"}
+{"id":"98384424","name":"iCalendar","scope":"formats","outcome":"card","target":"icalendar-format"}
+{"id":"985227236","name":"Object Data Instance Notation","scope":"formats","outcome":"card","target":"object-data-instance-notation"}
+{"id":"992375436","name":"cURL Config","scope":"formats","outcome":"merged","target":"ini","reason":"Linguist lists it as a variant in the group INI"}
+{"id":"997665271","name":"Glyph Bitmap Distribution Format","scope":"formats","outcome":"card","target":"glyph-bitmap-distribution-format"}
+{"id":"0","name":"1C Enterprise","scope":"languages","outcome":"card","target":"1c-enterprise"}
+{"id":"1","name":"ABAP","scope":"languages","outcome":"card","target":"abap"}
+{"id":"10","name":"ActionScript","scope":"languages","outcome":"card","target":"actionscript"}
+{"id":"100","name":"Elixir","scope":"languages","outcome":"card","target":"elixir"}
+{"id":"101","name":"Elm","scope":"languages","outcome":"card","target":"elm"}
+{"id":"102","name":"Emacs Lisp","scope":"languages","outcome":"card","target":"emacs-lisp"}
+{"id":"1027892786","name":"Smithy","scope":"languages","outcome":"card","target":"smithy"}
+{"id":"1028705371","name":"Janet","scope":"languages","outcome":"card","target":"janet"}
+{"id":"1029438153","name":"Sail","scope":"languages","outcome":"card","target":"sail"}
+{"id":"103","name":"EmberScript","scope":"languages","outcome":"card","target":"emberscript"}
+{"id":"1031374237","name":"RPC","scope":"languages","outcome":"card","target":"xdr"}
+{"id":"1032978328","name":"EasyCrypt","scope":"languages","outcome":"card","target":"easycrypt"}
+{"id":"1037612668","name":"MeTTa","scope":"languages","outcome":"card","target":"metta"}
+{"id":"104","name":"Erlang","scope":"languages","outcome":"card","target":"erlang"}
+{"id":"1040646257","name":"LigoLANG","scope":"languages","outcome":"card","target":"ligolang"}
+{"id":"1042332086","name":"Circom","scope":"languages","outcome":"card","target":"circom"}
+{"id":"1045019587","name":"Mojo","scope":"languages","outcome":"card","target":"mojo"}
+{"id":"105","name":"F#","scope":"languages","outcome":"card","target":"f-sharp"}
+{"id":"1052003890","name":"KCL","scope":"languages","outcome":"card","target":"kcl"}
+{"id":"1054258749","name":"Gleam","scope":"languages","outcome":"card","target":"gleam"}
+{"id":"1055528081","name":"Bikeshed","scope":"languages","outcome":"card","target":"bikeshed"}
+{"id":"1055641948","name":"Vyper","scope":"languages","outcome":"card","target":"vyper"}
+{"id":"1057618448","name":"Imba","scope":"languages","outcome":"card","target":"imba"}
+{"id":"1058854440","name":"METAFONT","scope":"languages","outcome":"card","target":"metafont"}
+{"id":"106","name":"FLUX","scope":"languages","outcome":"card","target":"flux"}
+{"id":"106029007","name":"Praat","scope":"languages","outcome":"card","target":"praat"}
+{"id":"1061635506","name":"Untyped Plutus Core","scope":"languages","outcome":"card","target":"untyped-plutus-core"}
+{"id":"1066250075","name":"SWIG","scope":"languages","outcome":"card","target":"swig"}
+{"id":"1067292663","name":"Antlers","scope":"languages","outcome":"card","target":"antlers"}
+{"id":"1067292664","name":"Nickel","scope":"languages","outcome":"card","target":"nickel"}
+{"id":"107","name":"Fortran","scope":"languages","outcome":"card","target":"fortran"}
+{"id":"108","name":"Factor","scope":"languages","outcome":"card","target":"factor"}
+{"id":"109","name":"Fancy","scope":"languages","outcome":"card","target":"fancy"}
+{"id":"11","name":"Ada","scope":"languages","outcome":"card","target":"ada"}
+{"id":"110","name":"Fantom","scope":"languages","outcome":"card","target":"fantom"}
+{"id":"111","name":"Filebench WML","scope":"languages","outcome":"card","target":"filebench-wml"}
+{"id":"112","name":"Filterscript","scope":"languages","outcome":"card","target":"filterscript"}
+{"id":"114","name":"Forth","scope":"languages","outcome":"card","target":"forth"}
+{"id":"115","name":"FreeMarker","scope":"languages","outcome":"card","target":"freemarker"}
+{"id":"116","name":"Frege","scope":"languages","outcome":"card","target":"frege"}
+{"id":"117","name":"G-code","scope":"languages","outcome":"card","target":"g-code"}
+{"id":"118","name":"GAMS","scope":"languages","outcome":"card","target":"general-algebraic-modeling-system"}
+{"id":"118656070","name":"TL-Verilog","scope":"languages","outcome":"card","target":"tl-verilog"}
+{"id":"119","name":"GAP","scope":"languages","outcome":"card","target":"gap"}
+{"id":"119900149","name":"Slint","scope":"languages","outcome":"card","target":"slint"}
+{"id":"12","name":"Agda","scope":"languages","outcome":"card","target":"agda"}
+{"id":"120","name":"Unix Assembly","scope":"languages","outcome":"card","target":"x86-assembly"}
+{"id":"121","name":"GCC Machine Description","scope":"languages","outcome":"card","target":"gcc-machine-description"}
+{"id":"121855308","name":"Berry","scope":"languages","outcome":"card","target":"berry"}
+{"id":"122","name":"GDB","scope":"languages","outcome":"card","target":"gdb"}
+{"id":"123","name":"GDScript","scope":"languages","outcome":"card","target":"gdscript"}
+{"id":"124","name":"GLSL","scope":"languages","outcome":"card","target":"glsl"}
+{"id":"124996147","name":"ASL","scope":"languages","outcome":"card","target":"asl"}
+{"id":"125","name":"Game Maker Language","scope":"languages","outcome":"card","target":"game-maker-language"}
+{"id":"126","name":"Genshi","scope":"languages","outcome":"card","target":"genshi"}
+{"id":"127","name":"Gentoo Ebuild","scope":"languages","outcome":"card","target":"gentoo-ebuild"}
+{"id":"128","name":"Gentoo Eclass","scope":"languages","outcome":"card","target":"gentoo-eclass"}
+{"id":"128447695","name":"Just","scope":"languages","outcome":"card","target":"just"}
+{"id":"129","name":"Gettext Catalog","scope":"languages","outcome":"card","target":"gettext"}
+{"id":"13","name":"Alloy","scope":"languages","outcome":"card","target":"alloy"}
+{"id":"130","name":"Glyph","scope":"languages","outcome":"card","target":"glyph"}
+{"id":"131","name":"Gnuplot","scope":"languages","outcome":"card","target":"gnuplot-language"}
+{"id":"132","name":"Go","scope":"languages","outcome":"node","target":"go"}
+{"id":"133","name":"Golo","scope":"languages","outcome":"card","target":"golo"}
+{"id":"134","name":"Gosu","scope":"languages","outcome":"card","target":"gosu"}
+{"id":"135","name":"Grace","scope":"languages","outcome":"card","target":"grace"}
+{"id":"136456478","name":"NMODL","scope":"languages","outcome":"card","target":"nmodl"}
+{"id":"137","name":"Grammatical Framework","scope":"languages","outcome":"card","target":"grammatical-framework"}
+{"id":"14","name":"Alpine Abuild","scope":"languages","outcome":"card","target":"alpine-abuild"}
+{"id":"141","name":"Roff","scope":"languages","outcome":"card","target":"roff"}
+{"id":"142","name":"Groovy","scope":"languages","outcome":"card","target":"groovy"}
+{"id":"143","name":"Groovy Server Pages","scope":"languages","outcome":"card","target":"groovy-server-pages"}
+{"id":"144","name":"HCL","scope":"languages","outcome":"card","target":"hcl"}
+{"id":"145","name":"HLSL","scope":"languages","outcome":"card","target":"hlsl"}
+{"id":"146","name":"HTML","scope":"languages","outcome":"card","target":"html"}
+{"id":"147","name":"Jinja","scope":"languages","outcome":"card","target":"jinja"}
+{"id":"148","name":"HTML+ECR","scope":"languages","outcome":"card","target":"ecr"}
+{"id":"149","name":"HTML+EEX","scope":"languages","outcome":"card","target":"eex"}
+{"id":"150","name":"HTML+ERB","scope":"languages","outcome":"card","target":"erb"}
+{"id":"151","name":"HTML+PHP","scope":"languages","outcome":"merged","target":"html","reason":"Linguist lists it as a variant in the group HTML"}
+{"id":"151241392","name":"Snakemake","scope":"languages","outcome":"card","target":"snakemake"}
+{"id":"153","name":"Hack","scope":"languages","outcome":"card","target":"hack"}
+{"id":"153739399","name":"OpenQASM","scope":"languages","outcome":"card","target":"openqasm"}
+{"id":"154","name":"Haml","scope":"languages","outcome":"card","target":"haml"}
+{"id":"155","name":"Handlebars","scope":"languages","outcome":"card","target":"handlebars"}
+{"id":"155357471","name":"Pod 6","scope":"languages","outcome":"card","target":"pod6"}
+{"id":"156","name":"Harbour","scope":"languages","outcome":"card","target":"harbour"}
+{"id":"157","name":"Haskell","scope":"languages","outcome":"card","target":"haskell"}
+{"id":"158","name":"Haxe","scope":"languages","outcome":"card","target":"haxe"}
+{"id":"159","name":"Hy","scope":"languages","outcome":"card","target":"hy"}
+{"id":"160","name":"HyPhy","scope":"languages","outcome":"card","target":"hyphy"}
+{"id":"161","name":"IDL","scope":"languages","outcome":"card","target":"idl"}
+{"id":"162","name":"IGOR Pro","scope":"languages","outcome":"card","target":"igor-pro"}
+{"id":"163763508","name":"Clue","scope":"languages","outcome":"card","target":"clue"}
+{"id":"164123055","name":"SmPL","scope":"languages","outcome":"card","target":"smpl"}
+{"id":"165","name":"Idris","scope":"languages","outcome":"card","target":"idris"}
+{"id":"166","name":"Inform 7","scope":"languages","outcome":"card","target":"inform"}
+{"id":"167","name":"Inno Setup","scope":"languages","outcome":"card","target":"inno-setup"}
+{"id":"168","name":"Io","scope":"languages","outcome":"card","target":"io"}
+{"id":"169","name":"Ioke","scope":"languages","outcome":"card","target":"ioke"}
+{"id":"17","name":"Apex","scope":"languages","outcome":"card","target":"apex"}
+{"id":"170","name":"Isabelle","scope":"languages","outcome":"card","target":"isabelle"}
+{"id":"171","name":"Isabelle ROOT","scope":"languages","outcome":"merged","target":"isabelle","reason":"Linguist lists it as a variant in the group Isabelle"}
+{"id":"171666519","name":"NASL","scope":"languages","outcome":"card","target":"nasl"}
+{"id":"172","name":"J","scope":"languages","outcome":"card","target":"j"}
+{"id":"173","name":"JFlex","scope":"languages","outcome":"card","target":"jflex"}
+{"id":"173616037","name":"Rascal","scope":"languages","outcome":"card","target":"rascal"}
+{"id":"177","name":"JSONiq","scope":"languages","outcome":"card","target":"jsoniq"}
+{"id":"178322513","name":"Nasal","scope":"languages","outcome":"card","target":"nasal"}
+{"id":"179","name":"Pug","scope":"languages","outcome":"card","target":"pug"}
+{"id":"18","name":"Apollo Guidance Computer","scope":"languages","outcome":"card","target":"apollo-guidance-computer"}
+{"id":"180","name":"Jasmin","scope":"languages","outcome":"card","target":"jasmin"}
+{"id":"180832205","name":"Verse","scope":"languages","outcome":"card","target":"verse"}
+{"id":"181","name":"Java","scope":"languages","outcome":"node","target":"java"}
+{"id":"181453007","name":"MoonBit","scope":"languages","outcome":"card","target":"moonbit"}
+{"id":"182","name":"Java Server Pages","scope":"languages","outcome":"card","target":"java-server-pages"}
+{"id":"183","name":"JavaScript","scope":"languages","outcome":"node","target":"javascript"}
+{"id":"184","name":"Julia","scope":"languages","outcome":"card","target":"julia"}
+{"id":"184265095","name":"LLVM TableGen","scope":"languages","outcome":"card","target":"llvm-tablegen"}
+{"id":"185","name":"Jupyter Notebook","scope":"languages","outcome":"card","target":"jupyter-notebook"}
+{"id":"186","name":"KRL","scope":"languages","outcome":"card","target":"krl"}
+{"id":"188","name":"Kit","scope":"languages","outcome":"card","target":"kit"}
+{"id":"189","name":"Kotlin","scope":"languages","outcome":"node","target":"kotlin"}
+{"id":"19","name":"AppleScript","scope":"languages","outcome":"card","target":"applescript"}
+{"id":"190","name":"LFE","scope":"languages","outcome":"card","target":"lfe"}
+{"id":"191","name":"LLVM","scope":"languages","outcome":"card","target":"llvmir"}
+{"id":"192","name":"LOLCODE","scope":"languages","outcome":"card","target":"lolcode"}
+{"id":"193","name":"LSL","scope":"languages","outcome":"card","target":"lsl"}
+{"id":"194","name":"LabVIEW","scope":"languages","outcome":"card","target":"labview"}
+{"id":"195","name":"Lasso","scope":"languages","outcome":"card","target":"lasso"}
+{"id":"196","name":"Latte","scope":"languages","outcome":"card","target":"latte"}
+{"id":"197","name":"Lean","scope":"languages","outcome":"card","target":"lean"}
+{"id":"198","name":"Less","scope":"languages","outcome":"card","target":"less"}
+{"id":"199","name":"Lex","scope":"languages","outcome":"card","target":"lex"}
+{"id":"2","name":"AGS Script","scope":"languages","outcome":"card","target":"ags-script"}
+{"id":"20","name":"Arc","scope":"languages","outcome":"card","target":"arc"}
+{"id":"200","name":"LilyPond","scope":"languages","outcome":"card","target":"lilypond"}
+{"id":"201","name":"Limbo","scope":"languages","outcome":"card","target":"limbo"}
+{"id":"202","name":"Linker Script","scope":"languages","outcome":"card","target":"linker-script"}
+{"id":"202735509","name":"ObjectScript","scope":"languages","outcome":"card","target":"objectscript"}
+{"id":"202937027","name":"Motoko","scope":"languages","outcome":"card","target":"motoko"}
+{"id":"204","name":"Liquid","scope":"languages","outcome":"card","target":"liquid"}
+{"id":"205","name":"Literate Agda","scope":"languages","outcome":"card","target":"literate-agda"}
+{"id":"206","name":"Literate CoffeeScript","scope":"languages","outcome":"card","target":"literate-coffeescript"}
+{"id":"206353404","name":"Fluent","scope":"languages","outcome":"card","target":"fluent"}
+{"id":"206921123","name":"BBCode","scope":"languages","outcome":"card","target":"bbcode"}
+{"id":"207","name":"Literate Haskell","scope":"languages","outcome":"card","target":"literate-haskell"}
+{"id":"208","name":"LiveScript","scope":"languages","outcome":"card","target":"livescript"}
+{"id":"208976687","name":"Sieve","scope":"languages","outcome":"card","target":"sieve"}
+{"id":"209","name":"Logos","scope":"languages","outcome":"card","target":"logos"}
+{"id":"210","name":"Logtalk","scope":"languages","outcome":"card","target":"logtalk"}
+{"id":"211","name":"LookML","scope":"languages","outcome":"card","target":"lookml"}
+{"id":"212","name":"LoomScript","scope":"languages","outcome":"card","target":"loomscript"}
+{"id":"213","name":"Lua","scope":"languages","outcome":"card","target":"lua"}
+{"id":"214","name":"M","scope":"languages","outcome":"card","target":"mumps"}
+{"id":"215","name":"M4","scope":"languages","outcome":"card","target":"m4"}
+{"id":"216","name":"M4Sugar","scope":"languages","outcome":"card","target":"m4sugar"}
+{"id":"217","name":"MAXScript","scope":"languages","outcome":"card","target":"maxscript"}
+{"id":"218","name":"MTML","scope":"languages","outcome":"card","target":"mtml"}
+{"id":"219","name":"MUF","scope":"languages","outcome":"card","target":"muf"}
+{"id":"22","name":"AsciiDoc","scope":"languages","outcome":"card","target":"asciidoc"}
+{"id":"220","name":"Makefile","scope":"languages","outcome":"card","target":"make"}
+{"id":"220689142","name":"Julia REPL","scope":"languages","outcome":"merged","target":"julia","reason":"Linguist lists it as a variant in the group Julia"}
+{"id":"221","name":"Mako","scope":"languages","outcome":"card","target":"mako"}
+{"id":"222","name":"Markdown","scope":"languages","outcome":"card","target":"markdown"}
+{"id":"223","name":"Mask","scope":"languages","outcome":"card","target":"maskjs"}
+{"id":"224","name":"Wolfram Language","scope":"languages","outcome":"card","target":"mathematica"}
+{"id":"225","name":"MATLAB","scope":"languages","outcome":"card","target":"matlab"}
+{"id":"225223071","name":"Xmake","scope":"languages","outcome":"card","target":"xmake"}
+{"id":"227","name":"Max","scope":"languages","outcome":"card","target":"max"}
+{"id":"228","name":"Wikitext","scope":"languages","outcome":"card","target":"mediawiki"}
+{"id":"229","name":"Mercury","scope":"languages","outcome":"card","target":"mercury"}
+{"id":"23","name":"AspectJ","scope":"languages","outcome":"card","target":"aspectj"}
+{"id":"230","name":"Metal","scope":"languages","outcome":"card","target":"metal"}
+{"id":"231","name":"MiniD","scope":"languages","outcome":"card","target":"minid"}
+{"id":"231751931","name":"Monkey C","scope":"languages","outcome":"card","target":"monkey-c"}
+{"id":"232","name":"Mirah","scope":"languages","outcome":"card","target":"mirah"}
+{"id":"233","name":"Modelica","scope":"languages","outcome":"card","target":"modelica"}
+{"id":"234","name":"Modula-2","scope":"languages","outcome":"card","target":"modula-2"}
+{"id":"235","name":"Module Management System","scope":"languages","outcome":"card","target":"module-management-system"}
+{"id":"235277043","name":"Jac","scope":"languages","outcome":"card","target":"jac"}
+{"id":"236","name":"Monkey","scope":"languages","outcome":"card","target":"monkey"}
+{"id":"237","name":"Moocode","scope":"languages","outcome":"card","target":"moo"}
+{"id":"237469032","name":"Solidity","scope":"languages","outcome":"card","target":"solidity"}
+{"id":"237469033","name":"Yul","scope":"languages","outcome":"card","target":"yul"}
+{"id":"238","name":"MoonScript","scope":"languages","outcome":"card","target":"moonscript"}
+{"id":"238874535","name":"MiniZinc","scope":"languages","outcome":"card","target":"minizinc"}
+{"id":"239","name":"Myghty","scope":"languages","outcome":"card","target":"myghty"}
+{"id":"239357863","name":"Slang","scope":"languages","outcome":"card","target":"s-lang"}
+{"id":"239946126","name":"Fennel","scope":"languages","outcome":"card","target":"fennel"}
+{"id":"24","name":"Assembly","scope":"languages","outcome":"card","target":"assembly-language"}
+{"id":"240","name":"NCL","scope":"languages","outcome":"card","target":"ncl-language"}
+{"id":"242","name":"NSIS","scope":"languages","outcome":"card","target":"nsis"}
+{"id":"243","name":"Nemerle","scope":"languages","outcome":"card","target":"nemerle"}
+{"id":"244","name":"NetLinx","scope":"languages","outcome":"card","target":"netlinx"}
+{"id":"245","name":"NetLinx+ERB","scope":"languages","outcome":"card","target":"netlinxpluserb"}
+{"id":"246","name":"NetLogo","scope":"languages","outcome":"card","target":"netlogo"}
+{"id":"247","name":"NewLisp","scope":"languages","outcome":"card","target":"newlisp"}
+{"id":"247918769","name":"Go Template","scope":"languages","outcome":"card","target":"go-template"}
+{"id":"249","name":"Nim","scope":"languages","outcome":"card","target":"nim"}
+{"id":"25","name":"Augeas","scope":"languages","outcome":"card","target":"augeas"}
+{"id":"251","name":"Nit","scope":"languages","outcome":"card","target":"nit"}
+{"id":"252","name":"Nix","scope":"languages","outcome":"card","target":"nix"}
+{"id":"252360067","name":"FPP","scope":"languages","outcome":"card","target":"fpp"}
+{"id":"252961827","name":"Pyret","scope":"languages","outcome":"card","target":"pyret"}
+{"id":"253","name":"Nu","scope":"languages","outcome":"card","target":"nu"}
+{"id":"254","name":"NumPy","scope":"languages","outcome":"card","target":"numpy"}
+{"id":"255","name":"OCaml","scope":"languages","outcome":"card","target":"ocaml"}
+{"id":"257","name":"Objective-C","scope":"languages","outcome":"card","target":"objective-c"}
+{"id":"257856279","name":"GSC","scope":"languages","outcome":"card","target":"gsc"}
+{"id":"258","name":"Objective-C++","scope":"languages","outcome":"card","target":"objective-cpp"}
+{"id":"259","name":"Objective-J","scope":"languages","outcome":"card","target":"objective-j"}
+{"id":"26","name":"AutoHotkey","scope":"languages","outcome":"card","target":"autohotkey"}
+{"id":"260","name":"Omgrofl","scope":"languages","outcome":"card","target":"omgrofl"}
+{"id":"261","name":"Opa","scope":"languages","outcome":"card","target":"opa"}
+{"id":"262","name":"Opal","scope":"languages","outcome":"card","target":"opal"}
+{"id":"262764437","name":"PostCSS","scope":"languages","outcome":"card","target":"postcss"}
+{"id":"263","name":"OpenCL","scope":"languages","outcome":"card","target":"opencl"}
+{"id":"264","name":"OpenEdge ABL","scope":"languages","outcome":"card","target":"openedge-advanced-business-language"}
+{"id":"265","name":"OpenRC runscript","scope":"languages","outcome":"card","target":"openrc-runscript"}
+{"id":"266","name":"OpenSCAD","scope":"languages","outcome":"card","target":"openscad"}
+{"id":"267","name":"Org","scope":"languages","outcome":"card","target":"org"}
+{"id":"268","name":"Ox","scope":"languages","outcome":"card","target":"ox"}
+{"id":"269","name":"Oxygene","scope":"languages","outcome":"card","target":"oxygene"}
+{"id":"27","name":"AutoIt","scope":"languages","outcome":"card","target":"autoit"}
+{"id":"270","name":"Oz","scope":"languages","outcome":"card","target":"oz"}
+{"id":"270184138","name":"Cadence","scope":"languages","outcome":"card","target":"cadence"}
+{"id":"271","name":"Pawn","scope":"languages","outcome":"card","target":"pawn-scripting-language"}
+{"id":"271471144","name":"Sway","scope":"languages","outcome":"card","target":"sway"}
+{"id":"272","name":"PHP","scope":"languages","outcome":"card","target":"php"}
+{"id":"273","name":"PLSQL","scope":"languages","outcome":"card","target":"pl-sql"}
+{"id":"274","name":"PLpgSQL","scope":"languages","outcome":"card","target":"plpgsql"}
+{"id":"275","name":"POV-Ray SDL","scope":"languages","outcome":"card","target":"pov-ray-sdl"}
+{"id":"276","name":"Pan","scope":"languages","outcome":"card","target":"pan"}
+{"id":"277","name":"Papyrus","scope":"languages","outcome":"card","target":"papyrus"}
+{"id":"278","name":"Parrot","scope":"languages","outcome":"card","target":"parrot-vm"}
+{"id":"279","name":"Parrot Assembly","scope":"languages","outcome":"card","target":"parrot-assembly"}
+{"id":"279301301","name":"Gno","scope":"languages","outcome":"card","target":"gno"}
+{"id":"28","name":"Awk","scope":"languages","outcome":"card","target":"awk"}
+{"id":"280","name":"Parrot Internal Representation","scope":"languages","outcome":"card","target":"parrot-internal-representation"}
+{"id":"281","name":"Pascal","scope":"languages","outcome":"card","target":"pascal"}
+{"id":"282","name":"Perl","scope":"languages","outcome":"card","target":"perl"}
+{"id":"283","name":"Raku","scope":"languages","outcome":"card","target":"raku"}
+{"id":"284531423","name":"Jison","scope":"languages","outcome":"card","target":"jison"}
+{"id":"285","name":"PicoLisp","scope":"languages","outcome":"card","target":"picolisp"}
+{"id":"286","name":"PigLatin","scope":"languages","outcome":"card","target":"pig"}
+{"id":"287","name":"Pike","scope":"languages","outcome":"card","target":"pike"}
+{"id":"288","name":"Pod","scope":"languages","outcome":"card","target":"pod"}
+{"id":"288822799","name":"Pkl","scope":"languages","outcome":"card","target":"pkl"}
+{"id":"289","name":"PogoScript","scope":"languages","outcome":"card","target":"pogoscript"}
+{"id":"28923963","name":"BASIC","scope":"languages","outcome":"card","target":"basic"}
+{"id":"29","name":"Batchfile","scope":"languages","outcome":"card","target":"batch"}
+{"id":"290","name":"Pony","scope":"languages","outcome":"card","target":"pony"}
+{"id":"290345951","name":"GAML","scope":"languages","outcome":"card","target":"gaml"}
+{"id":"291","name":"PostScript","scope":"languages","outcome":"card","target":"postscript"}
+{"id":"292","name":"PowerBuilder","scope":"languages","outcome":"card","target":"powerbuilder"}
+{"id":"292377326","name":"Velocity Template Language","scope":"languages","outcome":"card","target":"vtl-lang"}
+{"id":"293","name":"PowerShell","scope":"languages","outcome":"card","target":"powershell"}
+{"id":"294","name":"Processing","scope":"languages","outcome":"card","target":"processing"}
+{"id":"295","name":"Prolog","scope":"languages","outcome":"card","target":"prolog"}
+{"id":"296","name":"Propeller Spin","scope":"languages","outcome":"card","target":"spin"}
+{"id":"299","name":"Puppet","scope":"languages","outcome":"card","target":"puppet"}
+{"id":"3","name":"AMPL","scope":"languages","outcome":"card","target":"ampl"}
+{"id":"30","name":"Befunge","scope":"languages","outcome":"card","target":"befunge"}
+{"id":"301","name":"PureBasic","scope":"languages","outcome":"card","target":"purebasic"}
+{"id":"302","name":"PureScript","scope":"languages","outcome":"card","target":"purescript"}
+{"id":"303","name":"Python","scope":"languages","outcome":"node","target":"python"}
+{"id":"305","name":"QML","scope":"languages","outcome":"card","target":"qml"}
+{"id":"305313959","name":"Procfile","scope":"languages","outcome":"card","target":"procfile"}
+{"id":"306","name":"QMake","scope":"languages","outcome":"card","target":"qmake"}
+{"id":"307","name":"R","scope":"languages","outcome":"card","target":"r"}
+{"id":"308","name":"RAML","scope":"languages","outcome":"card","target":"raml"}
+{"id":"309","name":"RDoc","scope":"languages","outcome":"card","target":"rdoc"}
+{"id":"31","name":"Bison","scope":"languages","outcome":"card","target":"bison"}
+{"id":"310","name":"REALbasic","scope":"languages","outcome":"card","target":"realbasic"}
+{"id":"310828396","name":"Gemini","scope":"languages","outcome":"card","target":"gemini"}
+{"id":"311","name":"REXX","scope":"languages","outcome":"card","target":"rexx"}
+{"id":"313","name":"RMarkdown","scope":"languages","outcome":"card","target":"rmarkdown"}
+{"id":"315","name":"RUNOFF","scope":"languages","outcome":"card","target":"runoff"}
+{"id":"316","name":"Racket","scope":"languages","outcome":"card","target":"racket"}
+{"id":"316620079","name":"JCL","scope":"languages","outcome":"card","target":"jcl"}
+{"id":"317","name":"Ragel","scope":"languages","outcome":"card","target":"ragel"}
+{"id":"319","name":"Rebol","scope":"languages","outcome":"card","target":"rebol"}
+{"id":"319002153","name":"ReasonLIGO","scope":"languages","outcome":"card","target":"ligo"}
+{"id":"32","name":"BitBake","scope":"languages","outcome":"card","target":"bitbake"}
+{"id":"320","name":"Red","scope":"languages","outcome":"card","target":"red"}
+{"id":"321","name":"Redcode","scope":"languages","outcome":"card","target":"redcode"}
+{"id":"321200902","name":"Bicep","scope":"languages","outcome":"card","target":"bicep"}
+{"id":"322","name":"Ren'Py","scope":"languages","outcome":"card","target":"renpy"}
+{"id":"323","name":"RenderScript","scope":"languages","outcome":"card","target":"renderscript"}
+{"id":"324","name":"RobotFramework","scope":"languages","outcome":"card","target":"robotframework"}
+{"id":"325","name":"Rouge","scope":"languages","outcome":"card","target":"rouge"}
+{"id":"326","name":"Ruby","scope":"languages","outcome":"card","target":"ruby-language"}
+{"id":"327","name":"Rust","scope":"languages","outcome":"node","target":"rust"}
+{"id":"327071","name":"ISPC","scope":"languages","outcome":"card","target":"ispc"}
+{"id":"328","name":"SAS","scope":"languages","outcome":"card","target":"sas"}
+{"id":"329","name":"SCSS","scope":"languages","outcome":"card","target":"scss"}
+{"id":"33","name":"Blade","scope":"languages","outcome":"card","target":"blade"}
+{"id":"330","name":"SMT","scope":"languages","outcome":"card","target":"smt"}
+{"id":"330386870","name":"BQN","scope":"languages","outcome":"card","target":"bqn"}
+{"id":"330845793","name":"MetaPost","scope":"languages","outcome":"card","target":"metapost"}
+{"id":"332","name":"SQF","scope":"languages","outcome":"card","target":"status-quo-function"}
+{"id":"334","name":"SQLPL","scope":"languages","outcome":"card","target":"sqlpl"}
+{"id":"335","name":"SRecode Template","scope":"languages","outcome":"card","target":"srecode-template"}
+{"id":"336943375","name":"F*","scope":"languages","outcome":"card","target":"fstar"}
+{"id":"338","name":"Sage","scope":"languages","outcome":"card","target":"sagemath"}
+{"id":"339","name":"Salt","scope":"languages","outcome":"card","target":"saltstack"}
+{"id":"34","name":"BlitzBasic","scope":"languages","outcome":"card","target":"blitzbasic"}
+{"id":"340","name":"Sass","scope":"languages","outcome":"card","target":"sass"}
+{"id":"341","name":"Scala","scope":"languages","outcome":"card","target":"scala"}
+{"id":"34167825","name":"Macaulay2","scope":"languages","outcome":"card","target":"macaulay2"}
+{"id":"342","name":"Scaml","scope":"languages","outcome":"card","target":"scaml"}
+{"id":"343","name":"Scheme","scope":"languages","outcome":"card","target":"scheme"}
+{"id":"344","name":"Scilab","scope":"languages","outcome":"card","target":"scilab"}
+{"id":"345","name":"Self","scope":"languages","outcome":"card","target":"self"}
+{"id":"346","name":"Shell","scope":"languages","outcome":"card","target":"bash"}
+{"id":"347","name":"ShellSession","scope":"languages","outcome":"card","target":"shellsession"}
+{"id":"348","name":"Shen","scope":"languages","outcome":"card","target":"shen"}
+{"id":"348895984","name":"P4","scope":"languages","outcome":"card","target":"p4"}
+{"id":"349","name":"Slash","scope":"languages","outcome":"card","target":"slash"}
+{"id":"35","name":"BlitzMax","scope":"languages","outcome":"card","target":"blitzmax"}
+{"id":"350","name":"Slim","scope":"languages","outcome":"card","target":"slim"}
+{"id":"351","name":"Smali","scope":"languages","outcome":"card","target":"smali"}
+{"id":"352","name":"Smalltalk","scope":"languages","outcome":"card","target":"smalltalk"}
+{"id":"353","name":"Smarty","scope":"languages","outcome":"card","target":"smarty"}
+{"id":"354","name":"SourcePawn","scope":"languages","outcome":"card","target":"sourcepawn"}
+{"id":"355","name":"Squirrel","scope":"languages","outcome":"card","target":"squirrel"}
+{"id":"356","name":"Stan","scope":"languages","outcome":"card","target":"stan"}
+{"id":"356063509","name":"CUE","scope":"languages","outcome":"card","target":"cuelang"}
+{"id":"356554395","name":"Toit","scope":"languages","outcome":"card","target":"toit"}
+{"id":"357","name":"Standard ML","scope":"languages","outcome":"card","target":"standard-ml"}
+{"id":"357046146","name":"Closure Templates","scope":"languages","outcome":"card","target":"closure-templates"}
+{"id":"358","name":"Stata","scope":"languages","outcome":"card","target":"stata"}
+{"id":"359","name":"Stylus","scope":"languages","outcome":"card","target":"stylus"}
+{"id":"36","name":"Bluespec","scope":"languages","outcome":"card","target":"bluespec"}
+{"id":"361","name":"SuperCollider","scope":"languages","outcome":"card","target":"supercollider"}
+{"id":"362","name":"Swift","scope":"languages","outcome":"card","target":"swift"}
+{"id":"363","name":"SystemVerilog","scope":"languages","outcome":"card","target":"systemverilog"}
+{"id":"364","name":"TLA","scope":"languages","outcome":"card","target":"tla"}
+{"id":"365050359","name":"Luau","scope":"languages","outcome":"card","target":"luau"}
+{"id":"365454253","name":"ucode","scope":"languages","outcome":"card","target":"ucode"}
+{"id":"366","name":"TXL","scope":"languages","outcome":"card","target":"txl"}
+{"id":"367","name":"Tcl","scope":"languages","outcome":"card","target":"tcl-language"}
+{"id":"368","name":"Tcsh","scope":"languages","outcome":"card","target":"tcsh"}
+{"id":"369","name":"TeX","scope":"languages","outcome":"card","target":"tex"}
+{"id":"37","name":"Boo","scope":"languages","outcome":"card","target":"boo"}
+{"id":"370","name":"Tea","scope":"languages","outcome":"card","target":"tea"}
+{"id":"371","name":"Terra","scope":"languages","outcome":"card","target":"terra"}
+{"id":"372","name":"Text","scope":"languages","outcome":"card","target":"txt"}
+{"id":"373","name":"Textile","scope":"languages","outcome":"card","target":"textile"}
+{"id":"374","name":"Thrift","scope":"languages","outcome":"card","target":"thrift"}
+{"id":"374521672","name":"WDL","scope":"languages","outcome":"card","target":"wdl"}
+{"id":"37496382","name":"Power Query","scope":"languages","outcome":"card","target":"power-query-m"}
+{"id":"375","name":"Turing","scope":"languages","outcome":"card","target":"turing"}
+{"id":"375265331","name":"Quake","scope":"languages","outcome":"card","target":"quake"}
+{"id":"37531557","name":"D2","scope":"languages","outcome":"card","target":"d2"}
+{"id":"377","name":"Twig","scope":"languages","outcome":"card","target":"twig"}
+{"id":"377204539","name":"Linear Programming","scope":"languages","outcome":"card","target":"linear-programming"}
+{"id":"378","name":"TypeScript","scope":"languages","outcome":"node","target":"typescript"}
+{"id":"378760102","name":"YASnippet","scope":"languages","outcome":"card","target":"yasnippet"}
+{"id":"379","name":"Unified Parallel C","scope":"languages","outcome":"card","target":"unified-parallel-c"}
+{"id":"38","name":"Brainfuck","scope":"languages","outcome":"card","target":"brainfuck"}
+{"id":"381","name":"Uno","scope":"languages","outcome":"card","target":"uno"}
+{"id":"382","name":"UnrealScript","scope":"languages","outcome":"card","target":"unrealscript"}
+{"id":"383","name":"UrWeb","scope":"languages","outcome":"card","target":"urweb"}
+{"id":"384","name":"VCL","scope":"languages","outcome":"card","target":"vcl"}
+{"id":"385","name":"VHDL","scope":"languages","outcome":"card","target":"vhdl"}
+{"id":"385992043","name":"Mermaid","scope":"languages","outcome":"card","target":"mermaid"}
+{"id":"386","name":"Vala","scope":"languages","outcome":"card","target":"vala"}
+{"id":"387","name":"Verilog","scope":"languages","outcome":"card","target":"verilog"}
+{"id":"388","name":"Vim script","scope":"languages","outcome":"card","target":"vim-script"}
+{"id":"389","name":"Visual Basic .NET","scope":"languages","outcome":"card","target":"visual-basic.net"}
+{"id":"389477596","name":"AngelScript","scope":"languages","outcome":"card","target":"angelscript"}
+{"id":"39","name":"Brightscript","scope":"languages","outcome":"card","target":"roku-brightscript"}
+{"id":"390","name":"Volt","scope":"languages","outcome":"card","target":"volt"}
+{"id":"390788699","name":"CAP CDS","scope":"languages","outcome":"card","target":"cap-cds"}
+{"id":"391","name":"Vue","scope":"languages","outcome":"card","target":"vuejs"}
+{"id":"395","name":"WebIDL","scope":"languages","outcome":"card","target":"web-idl"}
+{"id":"397","name":"X10","scope":"languages","outcome":"card","target":"x10"}
+{"id":"398","name":"XC","scope":"languages","outcome":"card","target":"xc"}
+{"id":"399230729","name":"VBA","scope":"languages","outcome":"card","target":"vba"}
+{"id":"4","name":"ANTLR","scope":"languages","outcome":"card","target":"antlr"}
+{"id":"40","name":"Zeek","scope":"languages","outcome":"card","target":"zeek"}
+{"id":"401","name":"XProc","scope":"languages","outcome":"card","target":"xproc"}
+{"id":"402","name":"XQuery","scope":"languages","outcome":"card","target":"xquery"}
+{"id":"403","name":"XS","scope":"languages","outcome":"card","target":"xs"}
+{"id":"404","name":"XSLT","scope":"languages","outcome":"card","target":"xslt"}
+{"id":"405","name":"Xojo","scope":"languages","outcome":"card","target":"xojo"}
+{"id":"406","name":"Xtend","scope":"languages","outcome":"card","target":"xtend"}
+{"id":"406395330","name":"Jison Lex","scope":"languages","outcome":"card","target":"jison-lex"}
+{"id":"408016005","name":"VBScript","scope":"languages","outcome":"card","target":"vbscript"}
+{"id":"409","name":"Yacc","scope":"languages","outcome":"card","target":"yacc"}
+{"id":"41","name":"C","scope":"languages","outcome":"node","target":"c"}
+{"id":"410","name":"Zephir","scope":"languages","outcome":"card","target":"zephir"}
+{"id":"411","name":"Zimpl","scope":"languages","outcome":"card","target":"zimpl"}
+{"id":"413","name":"eC","scope":"languages","outcome":"card","target":"ec"}
+{"id":"415","name":"fish","scope":"languages","outcome":"card","target":"fish"}
+{"id":"416","name":"mupad","scope":"languages","outcome":"card","target":"mupad"}
+{"id":"417","name":"nesC","scope":"languages","outcome":"card","target":"nesc"}
+{"id":"418","name":"ooc","scope":"languages","outcome":"card","target":"ooc"}
+{"id":"419","name":"reStructuredText","scope":"languages","outcome":"card","target":"restructuredtext"}
+{"id":"42","name":"C#","scope":"languages","outcome":"node","target":"csharp"}
+{"id":"420","name":"wisp","scope":"languages","outcome":"card","target":"wisp"}
+{"id":"421","name":"xBase","scope":"languages","outcome":"card","target":"xbase"}
+{"id":"422","name":"TI Program","scope":"languages","outcome":"card","target":"ti-basic-assembly"}
+{"id":"424259634","name":"CodeQL","scope":"languages","outcome":"card","target":"codeql"}
+{"id":"425","name":"Pic","scope":"languages","outcome":"card","target":"pic"}
+{"id":"426","name":"MQL4","scope":"languages","outcome":"card","target":"mql"}
+{"id":"427","name":"MQL5","scope":"languages","outcome":"card","target":"mql"}
+{"id":"428","name":"Python console","scope":"languages","outcome":"merged","target":"python","reason":"Linguist lists it as a variant in the group Python"}
+{"id":"429002699","name":"Mathematical Programming System","scope":"languages","outcome":"card","target":"mathematical-programming-system"}
+{"id":"43","name":"C++","scope":"languages","outcome":"node","target":"cpp"}
+{"id":"431","name":"Ring","scope":"languages","outcome":"card","target":"ring"}
+{"id":"433009171","name":"Answer Set Programming","scope":"languages","outcome":"card","target":"answer-set-programming"}
+{"id":"435000929","name":"DenizenScript","scope":"languages","outcome":"card","target":"denizenscript"}
+{"id":"439829048","name":"Curry","scope":"languages","outcome":"card","target":"curry"}
+{"id":"440182480","name":"Roc","scope":"languages","outcome":"card","target":"roc"}
+{"id":"441858312","name":"Promela","scope":"languages","outcome":"card","target":"promela"}
+{"id":"446573572","name":"Nushell","scope":"languages","outcome":"card","target":"nushell"}
+{"id":"448253929","name":"MLIR","scope":"languages","outcome":"card","target":"mlir"}
+{"id":"45","name":"C2hs Haskell","scope":"languages","outcome":"merged","target":"haskell","reason":"Linguist lists it as a variant in the group Haskell"}
+{"id":"451700185","name":"AIDL","scope":"languages","outcome":"card","target":"aidl"}
+{"id":"452025714","name":"Elvish Transcript","scope":"languages","outcome":"merged","target":"elvish","reason":"Linguist lists it as a variant in the group Elvish"}
+{"id":"452681853","name":"ABAP CDS","scope":"languages","outcome":"card","target":"abap-cds"}
+{"id":"455147478","name":"Lean 4","scope":"languages","outcome":"merged","target":"lean","reason":"Linguist lists it as a variant in the group Lean"}
+{"id":"46","name":"CLIPS","scope":"languages","outcome":"card","target":"clips-language"}
+{"id":"460509620","name":"Edge","scope":"languages","outcome":"card","target":"edge"}
+{"id":"461856962","name":"Nunjucks","scope":"languages","outcome":"card","target":"nunjucks"}
+{"id":"462488745","name":"mcfunction","scope":"languages","outcome":"card","target":"mcfunction"}
+{"id":"463518941","name":"Hare","scope":"languages","outcome":"card","target":"hare"}
+{"id":"465165328","name":"JetBrains MPS","scope":"languages","outcome":"card","target":"mps"}
+{"id":"47","name":"CMake","scope":"languages","outcome":"card","target":"cmake"}
+{"id":"472308069","name":"QuakeC","scope":"languages","outcome":"card","target":"quakec"}
+{"id":"472896659","name":"FreeBASIC","scope":"languages","outcome":"card","target":"freebasic"}
+{"id":"474864066","name":"Muse","scope":"languages","outcome":"card","target":"muse"}
+{"id":"477582706","name":"Motorola 68K Assembly","scope":"languages","outcome":"merged","target":"assembly-language","reason":"Linguist lists it as a variant in the group Assembly"}
+{"id":"479039817","name":"HTML+Razor","scope":"languages","outcome":"card","target":"razor"}
+{"id":"48","name":"COBOL","scope":"languages","outcome":"card","target":"cobol"}
+{"id":"492781155","name":"OverPy","scope":"languages","outcome":"card","target":"overpy"}
+{"id":"494938890","name":"ZenScript","scope":"languages","outcome":"card","target":"zenscript"}
+{"id":"498022874","name":"Rez","scope":"languages","outcome":"card","target":"rez"}
+{"id":"5","name":"API Blueprint","scope":"languages","outcome":"card","target":"api-blueprint"}
+{"id":"50","name":"CSS","scope":"languages","outcome":"card","target":"css"}
+{"id":"501875647","name":"ReScript","scope":"languages","outcome":"card","target":"rescript"}
+{"id":"502521509","name":"BAML","scope":"languages","outcome":"card","target":"baml"}
+{"id":"504860504","name":"JASS","scope":"languages","outcome":"card","target":"jass"}
+{"id":"506780613","name":"Nextflow","scope":"languages","outcome":"card","target":"nextflow"}
+{"id":"508563686","name":"Vim Help File","scope":"languages","outcome":"card","target":"vim-help-file"}
+{"id":"512838272","name":"MDX","scope":"languages","outcome":"card","target":"mdx"}
+{"id":"51601661","name":"Rich Text Format","scope":"languages","outcome":"card","target":"rtf"}
+{"id":"516874200","name":"Tape","scope":"languages","outcome":"card","target":"tape"}
+{"id":"517654727","name":"mIRC Script","scope":"languages","outcome":"card","target":"mirc-script"}
+{"id":"52","name":"Cap'n Proto","scope":"languages","outcome":"card","target":"capn-proto"}
+{"id":"521429430","name":"Nearley","scope":"languages","outcome":"card","target":"nearley"}
+{"id":"52486065","name":"Uiua","scope":"languages","outcome":"card","target":"uiua"}
+{"id":"53","name":"CartoCSS","scope":"languages","outcome":"card","target":"cartocss"}
+{"id":"54","name":"Ceylon","scope":"languages","outcome":"card","target":"ceylon"}
+{"id":"545626333","name":"Beef","scope":"languages","outcome":"card","target":"beef"}
+{"id":"548603830","name":"Langium","scope":"languages","outcome":"card","target":"langium"}
+{"id":"55","name":"Chapel","scope":"languages","outcome":"card","target":"chapel"}
+{"id":"5523150","name":"Glimmer JS","scope":"languages","outcome":"merged","target":"javascript","reason":"Linguist lists it as a variant in the group JavaScript"}
+{"id":"55627273","name":"Carbon","scope":"languages","outcome":"card","target":"carbon"}
+{"id":"558193693","name":"Qt Script","scope":"languages","outcome":"card","target":"qtscript"}
+{"id":"558779190","name":"Sweave","scope":"languages","outcome":"card","target":"sweave"}
+{"id":"56","name":"Charity","scope":"languages","outcome":"card","target":"charity"}
+{"id":"560883276","name":"hoon","scope":"languages","outcome":"card","target":"hoon"}
+{"id":"562056483","name":"Quint","scope":"languages","outcome":"card","target":"quint"}
+{"id":"56341321","name":"ArkTS","scope":"languages","outcome":"card","target":"arkts"}
+{"id":"564186416","name":"ASP.NET","scope":"languages","outcome":"card","target":"asp.net"}
+{"id":"564743864","name":"Modula-3","scope":"languages","outcome":"card","target":"modula-3"}
+{"id":"566198445","name":"mdsvex","scope":"languages","outcome":"card","target":"mdsvex"}
+{"id":"566431048","name":"Aleo","scope":"languages","outcome":"card","target":"aleo"}
+{"id":"57","name":"ChucK","scope":"languages","outcome":"card","target":"chuck"}
+{"id":"570996448","name":"Elvish","scope":"languages","outcome":"card","target":"elvish"}
+{"id":"571794812","name":"Bend","scope":"languages","outcome":"card","target":"bend"}
+{"id":"575143428","name":"ImageJ Macro","scope":"languages","outcome":"card","target":"imagej-macro"}
+{"id":"577529595","name":"4D","scope":"languages","outcome":"card","target":"4th-dimension"}
+{"id":"578209015","name":"Astro","scope":"languages","outcome":"card","target":"astro"}
+{"id":"58","name":"Cirru","scope":"languages","outcome":"card","target":"cirru"}
+{"id":"581895317","name":"Cangjie","scope":"languages","outcome":"card","target":"cangjie"}
+{"id":"59","name":"Clarion","scope":"languages","outcome":"card","target":"clarion"}
+{"id":"591605007","name":"Asymptote","scope":"languages","outcome":"card","target":"asymptote"}
+{"id":"592065806","name":"IL Assembly","scope":"languages","outcome":"card","target":"il-assembly"}
+{"id":"592853203","name":"RouterOS Script","scope":"languages","outcome":"card","target":"routeros-script"}
+{"id":"593107205","name":"QuickBASIC","scope":"languages","outcome":"card","target":"quickbasic"}
+{"id":"59716426","name":"KerboScript","scope":"languages","outcome":"card","target":"kerboscript"}
+{"id":"597930447","name":"Koka","scope":"languages","outcome":"card","target":"koka"}
+{"id":"599494012","name":"Java Template Engine","scope":"languages","outcome":"merged","target":"java","reason":"Linguist lists it as a variant in the group Java"}
+{"id":"6","name":"APL","scope":"languages","outcome":"card","target":"apl"}
+{"id":"60","name":"Clean","scope":"languages","outcome":"card","target":"clean"}
+{"id":"601118790","name":"RAScript","scope":"languages","outcome":"card","target":"rascript"}
+{"id":"603336474","name":"KakouneScript","scope":"languages","outcome":"card","target":"kakounescript"}
+{"id":"603371597","name":"V","scope":"languages","outcome":"card","target":"v"}
+{"id":"606708469","name":"Tact","scope":"languages","outcome":"card","target":"tact"}
+{"id":"609977990","name":"RPGLE","scope":"languages","outcome":"card","target":"rpgle"}
+{"id":"61","name":"Click","scope":"languages","outcome":"card","target":"click"}
+{"id":"612669833","name":"Roff Manpage","scope":"languages","outcome":"merged","target":"roff","reason":"Linguist lists it as a variant in the group Roff"}
+{"id":"614078284","name":"Xonsh","scope":"languages","outcome":"card","target":"xonsh"}
+{"id":"614641732","name":"Liquidsoap","scope":"languages","outcome":"card","target":"liquidsoap"}
+{"id":"619814037","name":"Scenic","scope":"languages","outcome":"card","target":"scenic"}
+{"id":"62","name":"Clojure","scope":"languages","outcome":"card","target":"clojure"}
+{"id":"620599567","name":"Cairo","scope":"languages","outcome":"card","target":"cairo"}
+{"id":"622529198","name":"Faust","scope":"languages","outcome":"card","target":"faust"}
+{"id":"63","name":"CoffeeScript","scope":"languages","outcome":"card","target":"coffeescript"}
+{"id":"632745969","name":"Wollok","scope":"languages","outcome":"card","target":"wollok"}
+{"id":"638334590","name":"Mustache","scope":"languages","outcome":"card","target":"mustache"}
+{"id":"638334599","name":"Move","scope":"languages","outcome":"card","target":"move"}
+{"id":"64","name":"ColdFusion","scope":"languages","outcome":"card","target":"coldfusion"}
+{"id":"641580358","name":"Bluespec BH","scope":"languages","outcome":"merged","target":"bluespec","reason":"Linguist lists it as a variant in the group Bluespec"}
+{"id":"646424281","name":"Zig","scope":"languages","outcome":"card","target":"zig"}
+{"id":"647519071","name":"TSRX","scope":"languages","outcome":"card","target":"tsrx"}
+{"id":"648759486","name":"Daslang","scope":"languages","outcome":"card","target":"daslang"}
+{"id":"65","name":"ColdFusion CFC","scope":"languages","outcome":"merged","target":"coldfusion","reason":"Linguist lists it as a variant in the group ColdFusion"}
+{"id":"657332628","name":"CWeb","scope":"languages","outcome":"card","target":"cweb"}
+{"id":"658971832","name":"AL","scope":"languages","outcome":"card","target":"al"}
+{"id":"66","name":"Common Lisp","scope":"languages","outcome":"card","target":"common-lisp"}
+{"id":"664100008","name":"OMNeT++ MSG","scope":"languages","outcome":"card","target":"omnetpp-msg"}
+{"id":"664257356","name":"ShaderLab","scope":"languages","outcome":"card","target":"shaderlab"}
+{"id":"664885656","name":"Jsonnet","scope":"languages","outcome":"card","target":"jsonnet"}
+{"id":"67","name":"Component Pascal","scope":"languages","outcome":"card","target":"component-pascal"}
+{"id":"674379998","name":"HIP","scope":"languages","outcome":"card","target":"hip"}
+{"id":"677210597","name":"Oberon","scope":"languages","outcome":"card","target":"oberon"}
+{"id":"678673060","name":"Tolk","scope":"languages","outcome":"card","target":"tolk"}
+{"id":"679594952","name":"Visual Basic 6.0","scope":"languages","outcome":"card","target":"visual-basic-6-0"}
+{"id":"68","name":"Cool","scope":"languages","outcome":"card","target":"cool"}
+{"id":"686691365","name":"Redscript","scope":"languages","outcome":"card","target":"redscript"}
+{"id":"686821385","name":"Witcher Script","scope":"languages","outcome":"card","target":"witcher-script"}
+{"id":"689079655","name":"OverpassQL","scope":"languages","outcome":"card","target":"overpassql"}
+{"id":"69","name":"Rocq Prover","scope":"languages","outcome":"card","target":"coq"}
+{"id":"694638086","name":"GDShader","scope":"languages","outcome":"card","target":"gdshader"}
+{"id":"697448245","name":"Q#","scope":"languages","outcome":"card","target":"q-sharp"}
+{"id":"700792152","name":"B","scope":"languages","outcome":"card","target":"b"}
+{"id":"70127133","name":"Jai","scope":"languages","outcome":"card","target":"jai"}
+{"id":"704299647","name":"MiniScript","scope":"languages","outcome":"card","target":"miniscript"}
+{"id":"704730682","name":"Typst","scope":"languages","outcome":"card","target":"typst"}
+{"id":"71","name":"Creole","scope":"languages","outcome":"card","target":"creole"}
+{"id":"71155397","name":"CQL","scope":"languages","outcome":"card","target":"cql"}
+{"id":"713228814","name":"Rhai","scope":"languages","outcome":"card","target":"rhai"}
+{"id":"713580619","name":"Wren","scope":"languages","outcome":"card","target":"wren"}
+{"id":"719038619","name":"Teal","scope":"languages","outcome":"card","target":"teal"}
+{"id":"72","name":"Crystal","scope":"languages","outcome":"card","target":"crystal"}
+{"id":"720859680","name":"Ballerina","scope":"languages","outcome":"card","target":"ballerina"}
+{"id":"73","name":"Csound","scope":"languages","outcome":"card","target":"csound"}
+{"id":"731233819","name":"NWScript","scope":"languages","outcome":"card","target":"nwscript"}
+{"id":"735141027","name":"SurrealQL","scope":"languages","outcome":"card","target":"surrealql"}
+{"id":"736235603","name":"PDDL","scope":"languages","outcome":"card","target":"pddl"}
+{"id":"74","name":"Csound Document","scope":"languages","outcome":"card","target":"csound-document"}
+{"id":"75","name":"Csound Score","scope":"languages","outcome":"card","target":"csound-score"}
+{"id":"754574151","name":"Dune","scope":"languages","outcome":"card","target":"dune"}
+{"id":"756774415","name":"Pact","scope":"languages","outcome":"card","target":"pact"}
+{"id":"757053899","name":"Vento","scope":"languages","outcome":"card","target":"vento"}
+{"id":"759240513","name":"Lambdapi","scope":"languages","outcome":"card","target":"lambdapi"}
+{"id":"76","name":"Gherkin","scope":"languages","outcome":"card","target":"gherkin"}
+{"id":"761352333","name":"Fortran Free Form","scope":"languages","outcome":"merged","target":"fortran","reason":"Linguist lists it as a variant in the group Fortran"}
+{"id":"765545512","name":"Blueprint","scope":"languages","outcome":"card","target":"blueprint"}
+{"id":"769248603","name":"C3","scope":"languages","outcome":"card","target":"c-cubed"}
+{"id":"77","name":"Cuda","scope":"languages","outcome":"card","target":"cuda"}
+{"id":"78","name":"Cycript","scope":"languages","outcome":"card","target":"cycript"}
+{"id":"781893374","name":"AviSynth","scope":"languages","outcome":"card","target":"avi-synth"}
+{"id":"788037493","name":"Cooklang","scope":"languages","outcome":"card","target":"cooklang"}
+{"id":"79","name":"Cython","scope":"languages","outcome":"card","target":"cython"}
+{"id":"790066842","name":"Lobster","scope":"languages","outcome":"card","target":"lobster"}
+{"id":"79217948","name":"ALGOL","scope":"languages","outcome":"card","target":"algol"}
+{"id":"792408528","name":"Genie","scope":"languages","outcome":"card","target":"genie"}
+{"id":"793969321","name":"Dhall","scope":"languages","outcome":"card","target":"dhall"}
+{"id":"795579337","name":"templ","scope":"languages","outcome":"card","target":"templ"}
+{"id":"796891177","name":"SIP","scope":"languages","outcome":"card","target":"sip"}
+{"id":"799141244","name":"Meson","scope":"languages","outcome":"card","target":"meson"}
+{"id":"8","name":"Classic ASP","scope":"languages","outcome":"card","target":"asp"}
+{"id":"80","name":"D","scope":"languages","outcome":"card","target":"d"}
+{"id":"800935960","name":"Flix","scope":"languages","outcome":"card","target":"flix"}
+{"id":"805122868","name":"YARA","scope":"languages","outcome":"card","target":"yara"}
+{"id":"805861688","name":"ImHex Pattern Language","scope":"languages","outcome":"card","target":"imhex"}
+{"id":"81265970","name":"Vim Snippet","scope":"languages","outcome":"card","target":"vim-snippet"}
+{"id":"813068465","name":"Noir","scope":"languages","outcome":"card","target":"noir"}
+{"id":"81442128","name":"PEG.js","scope":"languages","outcome":"card","target":"pegjs"}
+{"id":"818804755","name":"Kaitai Struct","scope":"languages","outcome":"card","target":"kaitai-struct"}
+{"id":"82","name":"DIGITAL Command Language","scope":"languages","outcome":"card","target":"digital-command-language"}
+{"id":"826404698","name":"SugarSS","scope":"languages","outcome":"card","target":"sugarss"}
+{"id":"829207807","name":"CameLIGO","scope":"languages","outcome":"card","target":"ligo"}
+{"id":"83","name":"DM","scope":"languages","outcome":"card","target":"dm"}
+{"id":"832391833","name":"Portugol","scope":"languages","outcome":"card","target":"portugol"}
+{"id":"836605993","name":"WGSL","scope":"languages","outcome":"card","target":"wgsl"}
+{"id":"838252715","name":"Ink","scope":"languages","outcome":"card","target":"ink"}
+{"id":"839112914","name":"Polar","scope":"languages","outcome":"card","target":"polar"}
+{"id":"840372442","name":"Pep8","scope":"languages","outcome":"card","target":"pep8"}
+{"id":"840483232","name":"Open Policy Agent","scope":"languages","outcome":"card","target":"open-policy-agent"}
+{"id":"844766630","name":"Ecmarkup","scope":"languages","outcome":"merged","target":"html","reason":"Linguist lists it as a variant in the group HTML"}
+{"id":"847830017","name":"sed","scope":"languages","outcome":"card","target":"sed"}
+{"id":"85","name":"DTrace","scope":"languages","outcome":"card","target":"dtrace"}
+{"id":"850806976","name":"Cypher","scope":"languages","outcome":"card","target":"cypher"}
+{"id":"852099832","name":"KoLmafia ASH","scope":"languages","outcome":"card","target":"kolmafia-ash"}
+{"id":"856832701","name":"Terraform Template","scope":"languages","outcome":"merged","target":"hcl","reason":"Linguist lists it as a variant in the group HCL"}
+{"id":"858810660","name":"WESL","scope":"languages","outcome":"card","target":"wesl"}
+{"id":"869538413","name":"Reason","scope":"languages","outcome":"card","target":"reason"}
+{"id":"87","name":"Dart","scope":"languages","outcome":"card","target":"dart"}
+{"id":"878396783","name":"Riot","scope":"languages","outcome":"card","target":"riot"}
+{"id":"880693982","name":"Euphoria","scope":"languages","outcome":"card","target":"euphoria"}
+{"id":"888779559","name":"Whiley","scope":"languages","outcome":"card","target":"whiley"}
+{"id":"889244082","name":"Odin","scope":"languages","outcome":"card","target":"odin"}
+{"id":"89","name":"Dockerfile","scope":"languages","outcome":"card","target":"dockerfile"}
+{"id":"891017","name":"LiveCode Script","scope":"languages","outcome":"card","target":"livecode-script"}
+{"id":"891399890","name":"Cairo Zero","scope":"languages","outcome":"merged","target":"cairo","reason":"Linguist lists it as a variant in the group Cairo"}
+{"id":"894641667","name":"Slice","scope":"languages","outcome":"card","target":"slice"}
+{"id":"89855901","name":"StringTemplate","scope":"languages","outcome":"card","target":"stringtemplate"}
+{"id":"899409497","name":"Aiken","scope":"languages","outcome":"card","target":"aiken"}
+{"id":"9","name":"ATS","scope":"languages","outcome":"card","target":"ats"}
+{"id":"90","name":"Dogescript","scope":"languages","outcome":"card","target":"dogescript"}
+{"id":"902995658","name":"Genero per","scope":"languages","outcome":"card","target":"genero-per"}
+{"id":"905371884","name":"jq","scope":"languages","outcome":"card","target":"jq"}
+{"id":"906627898","name":"Bru","scope":"languages","outcome":"card","target":"bru"}
+{"id":"906694254","name":"FIRRTL","scope":"languages","outcome":"card","target":"firrtl"}
+{"id":"909569041","name":"BibTeX Style","scope":"languages","outcome":"card","target":"bibtex-style"}
+{"id":"91","name":"Dylan","scope":"languages","outcome":"card","target":"dylan"}
+{"id":"914318960","name":"JavaScript+ERB","scope":"languages","outcome":"merged","target":"javascript","reason":"Linguist lists it as a variant in the group JavaScript"}
+{"id":"91493841","name":"Clarity","scope":"languages","outcome":"card","target":"clarity"}
+{"id":"916034822","name":"Leo","scope":"languages","outcome":"card","target":"leo"}
+{"id":"918334941","name":"TSQL","scope":"languages","outcome":"card","target":"tsql"}
+{"id":"92","name":"E","scope":"languages","outcome":"card","target":"e"}
+{"id":"924868392","name":"OMNeT++ NED","scope":"languages","outcome":"card","target":"omnetpp-ned"}
+{"id":"925235833","name":"EdgeQL","scope":"languages","outcome":"card","target":"edgeql"}
+{"id":"928121743","name":"HolyC","scope":"languages","outcome":"card","target":"holyc"}
+{"id":"928734530","name":"Svelte","scope":"languages","outcome":"card","target":"svelte"}
+{"id":"93","name":"ECL","scope":"languages","outcome":"card","target":"ecl"}
+{"id":"931814087","name":"HiveQL","scope":"languages","outcome":"card","target":"hiveql"}
+{"id":"932782397","name":"Marko","scope":"languages","outcome":"card","target":"marko"}
+{"id":"94","name":"ECLiPSe","scope":"languages","outcome":"card","target":"eclipse-command-language"}
+{"id":"943571030","name":"BrighterScript","scope":"languages","outcome":"card","target":"brighterscript"}
+{"id":"9479532","name":"KFramework","scope":"languages","outcome":"card","target":"k-framework"}
+{"id":"94901924","name":"TSX","scope":"languages","outcome":"merged","target":"typescript","reason":"Linguist lists it as a variant in the group TypeScript"}
+{"id":"95","name":"EJS","scope":"languages","outcome":"card","target":"ejs"}
+{"id":"95110458","name":"Glimmer TS","scope":"languages","outcome":"merged","target":"typescript","reason":"Linguist lists it as a variant in the group TypeScript"}
+{"id":"952272597","name":"TypeSpec","scope":"languages","outcome":"card","target":"typespec"}
+{"id":"952972794","name":"ZAP","scope":"languages","outcome":"card","target":"zap"}
+{"id":"955017407","name":"Boogie","scope":"languages","outcome":"card","target":"boogie"}
+{"id":"956556503","name":"WebAssembly","scope":"languages","outcome":"card","target":"wasm"}
+{"id":"959040217","name":"Hurl","scope":"languages","outcome":"card","target":"hurl"}
+{"id":"959889508","name":"Talon","scope":"languages","outcome":"card","target":"talon"}
+{"id":"96","name":"EQ","scope":"languages","outcome":"card","target":"eq"}
+{"id":"960266174","name":"Starlark","scope":"languages","outcome":"card","target":"starlark"}
+{"id":"963512632","name":"Earthly","scope":"languages","outcome":"card","target":"earthly"}
+{"id":"96642275","name":"B4X","scope":"languages","outcome":"card","target":"b4x"}
+{"id":"968740319","name":"Mint","scope":"languages","outcome":"card","target":"mint"}
+{"id":"969323346","name":"Dafny","scope":"languages","outcome":"card","target":"dafny"}
+{"id":"970539067","name":"q","scope":"languages","outcome":"card","target":"q"}
+{"id":"970675279","name":"kvlang","scope":"languages","outcome":"card","target":"kvlang"}
+{"id":"973483626","name":"ZIL","scope":"languages","outcome":"card","target":"zil"}
+{"id":"97358117","name":"Futhark","scope":"languages","outcome":"card","target":"futhark"}
+{"id":"974514097","name":"DataWeave","scope":"languages","outcome":"card","target":"dataweave"}
+{"id":"982188347","name":"BibTeX","scope":"languages","outcome":"card","target":"bibtex"}
+{"id":"986054050","name":"Genero 4gl","scope":"languages","outcome":"card","target":"genero-4gl"}
+{"id":"987024632","name":"Singularity","scope":"languages","outcome":"card","target":"singularity"}
+{"id":"988020015","name":"Texinfo","scope":"languages","outcome":"card","target":"texinfo"}
+{"id":"988547172","name":"Common Workflow Language","scope":"languages","outcome":"card","target":"common-workflow-language"}
+{"id":"99","name":"Eiffel","scope":"languages","outcome":"card","target":"eiffel"}
+{"id":"991047534","name":"Pro*C","scope":"languages","outcome":"card","target":"pro-star-c"}
+{"id":"993355937","name":"B (Formal Method)","scope":"languages","outcome":"card","target":"b-formal-method"}
+{"id":"998078858","name":"Jolie","scope":"languages","outcome":"card","target":"jolie"}

@@ -1,1 +1,2 @@
 {"tag":"NEW-todotxt","kind":"format","owner":"","id":"todotxt","name":"Todotxt","class":"data notation","appeared":2006,"website":"http://todotxt.com/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/todotxt.html","licence":"public-domain"}}
+{"tag":"NEW-tor-config","kind":"format","owner":"","id":"tor-config","name":"Tor Config","class":"data format","aka":["torrc"],"licence":"MIT","source":{"url":"https://github.com/github-linguist/linguist/blob/v9.7.0/lib/linguist/languages.yml","title":"Linguist v9.7.0, languages.yml, the entry Tor Config","licence":"MIT"}}
