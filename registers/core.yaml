@@ -373,7 +373,7 @@ items:
     group: "types"
     name: "Numeric type"
     target: "numeric-type"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Types (\"Primitive types (e.g., numbers, Booleans) (See also: ...\"). It is in 5 of the 7 language references: Go spec (\"Numeric types\"); Rust Reference (\"Numeric types\"); Java Language Specification (\"Additive Operators ( + and - ) for ...\"); and 2 more. It is in the canon books: SICP index (\"on complex numbers\"); HtDP contents (\"Intermezzo 4: The Nature of Numbers\")."
   - part: concepts
     group: "types"
