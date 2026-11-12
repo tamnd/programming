@@ -168,8 +168,8 @@ items:
   - part: concepts
     group: "paradigms"
     name: "Message passing"
-    target: "message-passing"
-    status: "planned"
+    target: "message-passing-concept"
+    status: "node"
     reason: "It is in CS2023 FPL-Parallel (\"Message-passing\"). It is in the canon books: SICP index (\"with message passing\"); The Rust Programming Language contents (\"Transfer Data Between Threads with ...\")."
   - part: concepts
     group: "paradigms"
