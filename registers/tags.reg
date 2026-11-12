@@ -350,3 +350,7 @@ R1CFJN change-value-to-reference
 YSP8Q9 introduce-special-case
 WPBMPA replace-conditional-with-polymorphism
 AA2DYV replace-control-flag-with-break
+J09WED double-checked-locking
+78MAN6 scoped-locking
+EWN7HA strategized-locking
+J5466E thread-safe-interface
