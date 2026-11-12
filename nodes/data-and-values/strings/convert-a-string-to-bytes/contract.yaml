@@ -1,0 +1,12 @@
+# The contract of the task "convert a string to bytes" (spec 10.2). The encoding is UTF-8, and the bytes are the numbers from 0 to 255.
+problem: convert-a-string-to-bytes
+entry: to_bytes
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text, with no NUL character"
+returns:
+  type: "list<int>"
+  post: "the bytes of s in UTF-8, in order, each from 0 to 255; a code point gives 1 to 4 bytes, and the empty string gives an empty list"
+checker: exact
+edge_classes: [empty, control, non-ascii, astral, combining]

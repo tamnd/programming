@@ -1,0 +1,14 @@
+# The contract of the task "encode and decode UTF-8" (spec 10.2). The encoder gives the bytes of one code point, and the decoder reads one sequence and rejects each sequence that is not well formed.
+problem: encode-and-decode-utf-8
+entry: encode_utf8
+params:
+  - name: cp
+    type: int
+    pre: "a Unicode scalar value: from 0 to 0x10FFFF, and not from 0xD800 to 0xDFFF"
+returns:
+  type: "list<int>"
+  post: "the shortest UTF-8 form of cp: 1 byte to 0x7F, 2 bytes to 0x7FF, 3 bytes to 0xFFFF and 4 bytes to 0x10FFFF, each byte from 0 to 255"
+checker: exact
+edge_classes: [boundary]
+# The toolchain has one entry for each contract. One more entry is in cases/decode.jsonl, and each solution tests it too. Its cases have the classes invalid, overlong and surrogate.
+# cases/decode.jsonl: decode_utf8(b: list<int>) -> int. If b is exactly one well-formed UTF-8 sequence, the result is its code point. Otherwise the result is -1: for an empty list, a stray or missing continuation byte, an overlong form, a surrogate, a value above 0x10FFFF, or more than one sequence. Pre: each element of b is from 0 to 255.

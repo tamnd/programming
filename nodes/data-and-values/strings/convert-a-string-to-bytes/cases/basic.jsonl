@@ -1,0 +1,3 @@
+{"name":"ascii","args":{"s":"abc"},"expect":[97,98,99]}
+{"name":"letter","args":{"s":"A"},"expect":[65]}
+{"name":"punct","args":{"s":"hi!"},"expect":[104,105,33]}

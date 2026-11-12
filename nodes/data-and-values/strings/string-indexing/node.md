@@ -101,7 +101,7 @@ The text has 7 code points, 11 UTF-8 bytes and 8 UTF-16 code units. The three in
 
 **Boundaries.** A byte index or a code unit index can point into the middle of a character. In UTF-8 the bytes of the form `10xxxxxx` continue a character, so a valid start is any other byte. In UTF-16 a low surrogate continues a character. A slice that starts or ends at a continuation unit cuts the character in half. Rust and Swift check this. Go, Java, JavaScript, C# and C++ do not, and they return a string that is not valid text.
 
-**Iteration instead of an index.** Most code that seems to need `s[i]` reads the characters in order. An iterator decodes each character once, so the whole loop is O(n). In Go, the `range` clause on a string "iterates over the Unicode code points in the string starting at byte index 0", and each step gives "the index of the first byte of successive UTF-8-encoded code points in the string"[^2]. Rust `char_indices` gives the same pairs. See iterate over the characters of a string.
+**Iteration instead of an index.** Most code that seems to need `s[i]` reads the characters in order. An iterator decodes each character once, so the whole loop is O(n). In Go, the `range` clause on a string "iterates over the Unicode code points in the string starting at byte index 0", and each step gives "the index of the first byte of successive UTF-8-encoded code points in the string"[^2]. Rust `char_indices` gives the same pairs. See [iterate over the characters of a string](/iterate-over-the-characters-of-a-string/).
 
 ## In languages
 

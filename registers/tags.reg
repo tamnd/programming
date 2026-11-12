@@ -410,3 +410,7 @@ SB5E36 law-of-demeter
 HXQD41 principle-of-least-astonishment
 8Q5R21 program-to-an-interface
 24RQE8 service-locator
+R5CD07 convert-a-string-to-bytes
+8PZDZM encode-and-decode-utf-8
+QSJE4Y get-the-code-point-of-a-character
+ZHK7ZJ iterate-over-the-characters-of-a-string

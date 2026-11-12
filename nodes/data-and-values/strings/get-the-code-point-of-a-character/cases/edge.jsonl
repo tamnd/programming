@@ -1,0 +1,9 @@
+{"name":"space","class":["ascii"],"args":{"c":" "},"expect":32}
+{"name":"tab","class":["control"],"args":{"c":"\t"},"expect":9}
+{"name":"tilde","class":["ascii"],"args":{"c":"~"},"expect":126}
+{"name":"two-byte","class":["two-byte"],"args":{"c":"\u00e9"},"expect":233}
+{"name":"three-byte","class":["three-byte"],"args":{"c":"\u20ac"},"expect":8364}
+{"name":"cjk","class":["three-byte"],"args":{"c":"\u65e5"},"expect":26085}
+{"name":"combining","class":["combining"],"args":{"c":"\u0301"},"expect":769}
+{"name":"astral","class":["astral"],"args":{"c":"\ud83d\ude42"},"expect":128578}
+{"name":"max","class":["max"],"args":{"c":"\udbff\udfff"},"expect":1114111}
