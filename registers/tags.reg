@@ -226,3 +226,9 @@ Z1Y171 value
 VTXJS0 numeric-type
 KR08XP message-passing-concept
 F62G2R conditional
+3PD0MH code-smell
+E53BEZ duplicated-code
+68AC90 global-data
+CR987H long-function
+B3W15R long-parameter-list
+DEHPTN mysterious-name
