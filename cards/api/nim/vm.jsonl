@@ -1,0 +1,1 @@
+{"tag":"NEW-vmutils.vmTrace","kind":"api","owner":"nim","path":"vmutils.vmTrace","entity":"proc","module":"vmutils","signature":"proc vmTrace(on: bool)","doc":{"url":"https://nim-lang.org/docs/vmutils.html#vmTrace%2Cbool"},"source":{"url":"https://nim-lang.org/docs/theindex.html","licence":"MIT"}}

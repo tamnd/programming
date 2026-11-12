@@ -1,0 +1,1 @@
+{"tag":"NEW-objectdollar..op-24","kind":"api","owner":"nim","path":"objectdollar.$","entity":"proc","module":"objectdollar","signature":"proc `$`[T: object](x: T): string","doc":{"url":"https://nim-lang.org/docs/objectdollar.html#%24%2CT"},"source":{"url":"https://nim-lang.org/docs/theindex.html","licence":"MIT"}}

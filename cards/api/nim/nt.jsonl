@@ -1,0 +1,1 @@
+{"tag":"NEW-ntpath.splitDrive","kind":"api","owner":"nim","path":"ntpath.splitDrive","entity":"proc","module":"ntpath","signature":"proc splitDrive(p: string): tuple[drive, path: string]","doc":{"url":"https://nim-lang.org/docs/ntpath.html#splitDrive%2Cstring"},"source":{"url":"https://nim-lang.org/docs/theindex.html","licence":"MIT"}}

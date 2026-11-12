@@ -1,0 +1,1 @@
+{"tag":"NEW-importutils.privateAccess","kind":"api","owner":"nim","path":"importutils.privateAccess","entity":"proc","module":"importutils","signature":"proc privateAccess(t: typedesc)","doc":{"url":"https://nim-lang.org/docs/importutils.html#privateAccess%2Ctypedesc"},"source":{"url":"https://nim-lang.org/docs/theindex.html","licence":"MIT"}}
