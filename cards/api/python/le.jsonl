@@ -1,1 +1,2 @@
 {"tag":"NEW-len","kind":"api","owner":"python","path":"len","entity":"function","module":"builtins","doc":{"url":"https://docs.python.org/3/builtins/functions.html#len"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
+{"tag":"NEW-lenfunc","kind":"api","owner":"python","path":"lenfunc","entity":"C type","module":"C API","doc":{"url":"https://docs.python.org/3/c-api/typeobj.html#c.lenfunc"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}

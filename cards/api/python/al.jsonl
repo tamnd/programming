@@ -1,1 +1,2 @@
 {"tag":"NEW-all","kind":"api","owner":"python","path":"all","entity":"function","module":"builtins","doc":{"url":"https://docs.python.org/3/builtins/functions.html#all"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
+{"tag":"NEW-allocfunc","kind":"api","owner":"python","path":"allocfunc","entity":"C type","module":"C API","doc":{"url":"https://docs.python.org/3/c-api/typeobj.html#c.allocfunc"},"source":{"url":"https://docs.python.org/3/objects.inv","inventory":"objects.inv","version":"3.15"}}
