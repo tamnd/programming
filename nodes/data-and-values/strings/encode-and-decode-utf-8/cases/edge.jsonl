@@ -1,0 +1,9 @@
+{"name":"nul","class":["boundary"],"args":{"cp":0},"expect":[0]}
+{"name":"one-byte-max","class":["boundary"],"args":{"cp":127},"expect":[127]}
+{"name":"two-byte-min","class":["boundary"],"args":{"cp":128},"expect":[194,128]}
+{"name":"two-byte","class":["boundary"],"args":{"cp":233},"expect":[195,169]}
+{"name":"two-byte-max","class":["boundary"],"args":{"cp":2047},"expect":[223,191]}
+{"name":"three-byte-min","class":["boundary"],"args":{"cp":2048},"expect":[224,160,128]}
+{"name":"three-byte-max","class":["boundary"],"args":{"cp":65535},"expect":[239,191,191]}
+{"name":"four-byte-min","class":["boundary"],"args":{"cp":65536},"expect":[240,144,128,128]}
+{"name":"max","class":["boundary"],"args":{"cp":1114111},"expect":[244,143,191,191]}

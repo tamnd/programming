@@ -1,0 +1,9 @@
+{"name":"empty","class":["empty"],"args":{"s":""},"expect":[]}
+{"name":"control","class":["control"],"args":{"s":"\t\n"},"expect":[9,10]}
+{"name":"two-byte","class":["non-ascii"],"args":{"s":"\u00e9"},"expect":[195,169]}
+{"name":"latin-1-max","class":["non-ascii"],"args":{"s":"\u00ff"},"expect":[195,191]}
+{"name":"three-byte","class":["non-ascii"],"args":{"s":"\u20ac"},"expect":[226,130,172]}
+{"name":"bom","class":["non-ascii"],"args":{"s":"\ufeff"},"expect":[239,187,191]}
+{"name":"astral","class":["astral"],"args":{"s":"\ud83d\ude42"},"expect":[240,159,153,130]}
+{"name":"combining","class":["combining"],"args":{"s":"e\u0301"},"expect":[101,204,129]}
+{"name":"mixed","class":["astral"],"args":{"s":"a\u00e9\ud83d\ude42"},"expect":[97,195,169,240,159,153,130]}

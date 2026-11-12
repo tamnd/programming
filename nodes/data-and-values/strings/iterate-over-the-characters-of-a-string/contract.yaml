@@ -1,0 +1,12 @@
+# The contract of the task "iterate over the characters of a string" (spec 10.2). A character is a code point, so a code point above U+FFFF is one character, and a combining mark is a character of its own.
+problem: iterate-over-the-characters-of-a-string
+entry: characters
+params:
+  - name: s
+    type: string
+    pre: "any string of Unicode text"
+returns:
+  type: "list<string>"
+  post: "the code points of s from the start to the end, each as a string of one code point; the empty string gives an empty list"
+checker: exact
+edge_classes: [empty, single, non-ascii, astral, combining, regional-indicator, zwj, control]

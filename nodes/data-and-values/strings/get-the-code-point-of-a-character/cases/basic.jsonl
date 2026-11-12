@@ -1,0 +1,3 @@
+{"name":"upper","args":{"c":"A"},"expect":65}
+{"name":"lower","args":{"c":"a"},"expect":97}
+{"name":"digit","args":{"c":"0"},"expect":48}

@@ -1,0 +1,3 @@
+{"name":"ascii-a","args":{"cp":65},"expect":[65]}
+{"name":"euro","args":{"cp":8364},"expect":[226,130,172]}
+{"name":"emoji","args":{"cp":128578},"expect":[240,159,153,130]}

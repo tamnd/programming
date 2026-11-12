@@ -11828,13 +11828,13 @@ items:
     group: "strings"
     name: "Iterate over the characters of a string"
     target: "iterate-over-the-characters-of-a-string"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (Character codes); Go by Example (Strings and Runes)."
   - part: tasks
     group: "strings"
     name: "Get the code point of a character"
     target: "get-the-code-point-of-a-character"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (Character codes)."
   - part: tasks
     group: "strings"
@@ -11852,13 +11852,13 @@ items:
     group: "strings"
     name: "Convert a string to bytes"
     target: "convert-a-string-to-bytes"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (UTF 8 encode and decode); Go by Example (Strings and Runes)."
   - part: tasks
     group: "strings"
     name: "Encode and decode UTF-8"
     target: "encode-and-decode-utf-8"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (UTF 8 encode and decode)."
   - part: tasks
     group: "strings"

@@ -1,0 +1,9 @@
+{"name":"empty","class":["empty"],"args":{"s":""},"expect":[]}
+{"name":"single","class":["single"],"args":{"s":"x"},"expect":["x"]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"s":"h\u00e9"},"expect":["h","\u00e9"]}
+{"name":"cjk","class":["non-ascii"],"args":{"s":"\u65e5\u672c"},"expect":["\u65e5","\u672c"]}
+{"name":"astral","class":["astral"],"args":{"s":"a\ud83d\ude42b"},"expect":["a","\ud83d\ude42","b"]}
+{"name":"combining","class":["combining"],"args":{"s":"e\u0301"},"expect":["e","\u0301"]}
+{"name":"regional-indicator","class":["regional-indicator"],"args":{"s":"\ud83c\uddfa\ud83c\uddf8"},"expect":["\ud83c\uddfa","\ud83c\uddf8"]}
+{"name":"zwj","class":["zwj"],"args":{"s":"\ud83d\udc69\u200d\ud83d\udcbb"},"expect":["\ud83d\udc69","\u200d","\ud83d\udcbb"]}
+{"name":"control","class":["control"],"args":{"s":"a\tb\nc"},"expect":["a","\t","b","\n","c"]}

@@ -1,0 +1,12 @@
+# The contract of the task "get the code point of a character" (spec 10.2). A character is a code point, so the argument is a string of one code point, and U+1F642 is one character.
+problem: get-the-code-point-of-a-character
+entry: code_point
+params:
+  - name: c
+    type: string
+    pre: "a string of exactly one code point, from U+0001 to U+10FFFF, and not a surrogate"
+returns:
+  type: int
+  post: "the number of the code point in c, from 1 to 1114111"
+checker: exact
+edge_classes: [ascii, control, two-byte, three-byte, combining, astral, max]
