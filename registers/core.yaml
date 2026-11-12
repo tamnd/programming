@@ -14828,13 +14828,13 @@ items:
     group: "fowler-catalog"
     name: "Consolidate Conditional Expression"
     target: "consolidate-conditional-expression"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Decompose Conditional"
     target: "decompose-conditional"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -14906,7 +14906,7 @@ items:
     group: "fowler-catalog"
     name: "Introduce Assertion"
     target: "introduce-assertion"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15020,7 +15020,7 @@ items:
     group: "fowler-catalog"
     name: "Rename Field"
     target: "rename-field"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15056,7 +15056,7 @@ items:
     group: "fowler-catalog"
     name: "Replace Derived Variable with Query"
     target: "replace-derived-variable-with-query"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15092,13 +15092,13 @@ items:
     group: "fowler-catalog"
     name: "Replace Magic Literal"
     target: "replace-magic-literal"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
     name: "Replace Nested Conditional with Guard Clauses"
     target: "replace-nested-conditional-with-guard-clauses"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
@@ -15176,7 +15176,7 @@ items:
     group: "fowler-catalog"
     name: "Split Variable"
     target: "split-variable"
-    status: "planned"
+    status: "node"
     reason: "A refactoring of Refactoring, 2nd edition (Fowler, 2018), in the catalogue at refactoring.com."
   - part: refactorings
     group: "fowler-catalog"
