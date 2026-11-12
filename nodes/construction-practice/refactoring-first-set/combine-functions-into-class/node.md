@@ -16,7 +16,7 @@ history:
   year: 2018
   people: [Martin Fowler]
   note: The second edition of Refactoring (2018) has Combine Functions into Class in its first set of refactorings, next to Combine Functions into Transform.
-see_also: [introduce-parameter-object, encapsulate-variable, data-class, feature-envy, code-smell]
+see_also: [combine-functions-into-transform, introduce-parameter-object, encapsulate-variable, data-class, feature-envy, code-smell]
 sources:
   - url: https://refactoring.com/catalog/combineFunctionsIntoClass.html
     title: Martin Fowler, Catalog of Refactorings, Combine Functions into Class
