@@ -1,0 +1,1 @@
+{"tag":"NEW-py-EOFError","kind":"diagnostic","owner":"python","code":"EOFError","title":"Read beyond end of file.","summary":"A subclass of Exception, BaseException.","severity":"exception","url":"https://docs.python.org/3/library/exceptions.html#EOFError","licence":"PSF-2.0","source":{"url":"https://docs.python.org/3/library/exceptions.html#EOFError","licence":"PSF-2.0"}}

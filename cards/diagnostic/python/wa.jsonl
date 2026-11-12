@@ -1,0 +1,1 @@
+{"tag":"NEW-py-Warning","kind":"diagnostic","owner":"python","code":"Warning","title":"Base class for warning categories.","summary":"A subclass of Exception, BaseException.","severity":"warning","url":"https://docs.python.org/3/library/exceptions.html#Warning","licence":"PSF-2.0","source":{"url":"https://docs.python.org/3/library/exceptions.html#Warning","licence":"PSF-2.0"}}
