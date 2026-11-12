@@ -404,3 +404,9 @@ V37PWB fork-join
 2GNXEZ future-pattern
 GA9K7G guarded-suspension
 9D9V70 read-write-lock
+4FRA6Y command-query-separation
+V9T0GQ inversion-of-control
+SB5E36 law-of-demeter
+HXQD41 principle-of-least-astonishment
+8Q5R21 program-to-an-interface
+24RQE8 service-locator

@@ -16466,7 +16466,7 @@ items:
     group: "canon"
     name: "Decoupling and the Law of Demeter"
     target: "law-of-demeter"
-    status: "planned"
+    status: "node"
     reason: "A practice that The Pragmatic Programmer, a canon book of spec 13.3, names."
   - part: practices
     group: "canon"
@@ -16766,7 +16766,7 @@ items:
     group: "canon"
     name: "Program to an interface, not an implementation"
     target: "program-to-an-interface"
-    status: "planned"
+    status: "node"
     reason: "A practice that Design Patterns, a canon book of spec 13.3, names."
   - part: practices
     group: "canon"
@@ -16850,7 +16850,7 @@ items:
     group: "other"
     name: "Command-query separation"
     target: "command-query-separation"
-    status: "planned"
+    status: "node"
     reason: "A practice that Meyer, Object-Oriented Software Construction (1988) names."
   - part: practices
     group: "other"
@@ -16862,7 +16862,7 @@ items:
     group: "other"
     name: "Principle of least astonishment"
     target: "principle-of-least-astonishment"
-    status: "planned"
+    status: "node"
     reason: "A practice that a common rule of interface design names."
   - part: practices
     group: "other"
