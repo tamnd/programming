@@ -1,0 +1,3 @@
+{"tag":"NEW-Oo","kind":"api","owner":"ocaml","path":"Oo","entity":"module","module":"Oo","doc":{"url":"https://ocaml.org/manual/5.3/api/Oo.html"},"source":{"url":"https://ocaml.org/manual/5.3/api/","licence":"LGPL-2.1"}}
+{"tag":"NEW-Oo.copy","kind":"api","owner":"ocaml","path":"Oo.copy","entity":"value","module":"Oo","doc":{"url":"https://ocaml.org/manual/5.3/api/Oo.html#VALcopy"},"source":{"url":"https://ocaml.org/manual/5.3/api/","licence":"LGPL-2.1"}}
+{"tag":"NEW-Oo.id","kind":"api","owner":"ocaml","path":"Oo.id","entity":"value","module":"Oo","doc":{"url":"https://ocaml.org/manual/5.3/api/Oo.html#VALid"},"source":{"url":"https://ocaml.org/manual/5.3/api/","licence":"LGPL-2.1"}}
