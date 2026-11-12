@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
-  PROG_VERSION: v0.0.19
+  PROG_VERSION: v0.0.20
   GO_VERSION: "1.27.x"
 
 jobs:
@@ -56,7 +56,7 @@ jobs:
   test:
     name: Test (${{ matrix.lang }})
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:
