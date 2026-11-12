@@ -211,7 +211,7 @@ items:
     group: "syntax-and-semantics"
     name: "Identifier"
     target: "identifier"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Abstraction (\"names to R-values\"). It is in 7 of the 7 language references: Python Language Reference (\"Names (identifiers and keywords)\"); Go spec (\"Identifiers\"); Rust Reference (\"Identifiers\"); and 4 more. It is in the canon books: SICP index (\"! in names\")."
   - part: concepts
     group: "syntax-and-semantics"

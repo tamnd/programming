@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the identifier rules of JavaScript and adds contextual keywords such as type, keyof and satisfies, which are still valid names. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin allows Unicode letters in names, has hard, soft and modifier keywords, and lets a name in backticks hold a keyword or spaces, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: A Bash variable name is letters, digits and _ and does not start with a digit, and the shell is case-sensitive. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell variables start with $, the form ${...} allows any characters in a name, and names are not case-sensitive, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has regular identifiers, which the database folds to one case, and delimited identifiers in double quotes, which keep their case and can be keywords. No example file exists.
+regex:
+  status: native
+  reason: Named capture groups such as (?<year>[0-9]{4}) give a group a name, and the name follows the identifier rule of the regex engine.
+html:
+  status: idiom
+  reason: HTML has no variables, but the id attribute names an element for CSS, scripts and fragment links, and custom element names must contain a hyphen.
+css:
+  status: native
+  reason: CSS identifiers name classes, IDs, properties, animations and custom properties such as --main-color, and a backslash escape allows any character in them.
