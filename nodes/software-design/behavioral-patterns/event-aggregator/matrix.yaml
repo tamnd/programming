@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: lists of lambdas are the events, and the aggregator adds its lambdas to each source; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: arrays of function pointers with a context pointer are the events, and the aggregator registers its functions with each source.
+sql:
+  status: n/a
+  reason: a query has no objects that raise events.
+bash:
+  status: n/a
+  reason: shell scripts have no event objects to aggregate.
+powershell:
+  status: idiom
+  reason: .NET events, as in C#; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a regular expression has no events.
+html:
+  status: n/a
+  reason: markup has no code to aggregate events.
+css:
+  status: n/a
+  reason: a style sheet has no events.

@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: an interface for the served classes and a servant class that takes them as parameters, as in Java; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a struct of function pointers plays the part of the interface, and the servant functions take a pointer to it with the served data.
+sql:
+  status: n/a
+  reason: a query has no classes or methods to serve.
+bash:
+  status: n/a
+  reason: shell scripts have no classes.
+powershell:
+  status: idiom
+  reason: a class with methods that take the served objects as parameters, as in C#; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a regular expression has no objects.
+html:
+  status: n/a
+  reason: markup has no objects.
+css:
+  status: n/a
+  reason: a style sheet has no objects.

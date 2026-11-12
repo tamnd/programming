@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: a mutable map is the blackboard, and lambdas or objects are the knowledge sources; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: a struct is the blackboard, and an array of structs with function pointers holds the knowledge sources.
+sql:
+  status: idiom
+  reason: a table can hold the blackboard data, and separate programs read and write it; the control is outside SQL.
+bash:
+  status: idiom
+  reason: a directory of files can be the blackboard, and separate scripts are the knowledge sources.
+powershell:
+  status: idiom
+  reason: a hashtable is the blackboard, and script blocks are the knowledge sources; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a regular expression has no shared data store.
+html:
+  status: n/a
+  reason: markup has no control flow.
+css:
+  status: n/a
+  reason: a style sheet has no control flow.
