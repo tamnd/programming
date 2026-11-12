@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript allows effects anywhere, as JavaScript does, and readonly properties and ReadonlyArray reject some writes when the program compiles, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin allows effects anywhere, and val and the read-only interfaces List and Map prevent some changes, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Commands act on files and the environment, and a subshell or a pipeline stage runs in a copy of the shell, so its changes to variables are lost, but no example file exists.
+powershell:
+  status: native
+  reason: Cmdlets that change the system support -WhatIf and -Confirm, which show or ask before the effect, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SELECT reads data, and INSERT, UPDATE and DELETE change it; functions can be marked deterministic or immutable in some systems.
+regex:
+  status: n/a
+  reason: A pattern matches text and has no side effects.
+html:
+  status: n/a
+  reason: HTML is markup and has no evaluation.
+css:
+  status: n/a
+  reason: CSS rules have no evaluation that changes state.

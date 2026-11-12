@@ -127,7 +127,7 @@ items:
     group: "foundations"
     name: "Side effect"
     target: "side-effect"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Functional (\"Function calls have no side effects, facilitating ...\"). It is in the canon books: SICP index (\"side effect with aliasing\")."
   - part: concepts
     group: "paradigms"
