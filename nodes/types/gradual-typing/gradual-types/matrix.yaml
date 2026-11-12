@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript is a gradual layer over JavaScript, with any and unknown types and the noImplicitAny and strict options; the types are removed before the code runs.
+kotlin:
+  status: idiom
+  reason: Kotlin is statically typed with Any, safe casts with as? and smart casts after is checks, and a dynamic type only when it compiles to JavaScript; no example file because kotlinc is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: every value is a string, and declare -i only changes how assignment works.
+powershell:
+  status: native
+  reason: variables are untyped unless a type constrains them, as in [int]$n, and each later assignment to a constrained variable is converted or rejected when it runs; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: columns have declared types, and the database checks or converts values when it stores them.
+regex:
+  status: n/a
+  reason: patterns have no types.
+html:
+  status: n/a
+  reason: markup has no types.
+css:
+  status: n/a
+  reason: properties have value grammars, not types that a program declares.
