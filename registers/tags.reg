@@ -372,3 +372,9 @@ YC32KZ replace-constructor-with-factory-function
 N3VZ77 replace-error-code-with-exception
 GM1PA3 replace-exception-with-precheck
 4QMAXW replace-function-with-command
+CGVKYV pull-up-constructor-body
+G2P8YE pull-up-field
+0P5NED pull-up-method
+KX6AKP push-down-field
+ZF7RND push-down-method
+RCQY38 replace-type-code-with-subclasses
