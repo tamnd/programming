@@ -25,7 +25,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  PROG_VERSION: v0.0.19
+  PROG_VERSION: v0.0.20
   GO_VERSION: "1.27.x"
 
 jobs:
