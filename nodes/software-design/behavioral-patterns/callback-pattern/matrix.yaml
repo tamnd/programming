@@ -1,0 +1,24 @@
+kotlin:
+  status: native
+  reason: functions are values with function types such as (String) -> Unit, and lambdas can be passed directly; no example is executed here because the test image has no kotlinc.
+c:
+  status: native
+  reason: a callback is a function pointer, as in the comparator of qsort() and bsearch().
+sql:
+  status: n/a
+  reason: a query cannot pass a function as a value.
+bash:
+  status: idiom
+  reason: the name of a function can be passed as a string and called later, as with trap for a signal.
+powershell:
+  status: native
+  reason: script blocks are values and can be passed and invoked; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a regular expression has no functions.
+html:
+  status: n/a
+  reason: markup has no functions of its own.
+css:
+  status: n/a
+  reason: a style sheet has no functions to pass.
