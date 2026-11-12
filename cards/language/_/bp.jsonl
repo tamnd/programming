@@ -1,0 +1,3 @@
+{"tag":"NEW-bpl","kind":"language","owner":"","id":"bpl","name":"BPL","class":"programming language","appeared":1978,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/bpl.html","licence":"public-domain"}}
+{"tag":"NEW-bpmn","kind":"language","owner":"","id":"bpmn","name":"BPMN","class":"visual language","appeared":2004,"wikipedia":"https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/bpmn.html","licence":"public-domain"}}
+{"tag":"NEW-bpn2","kind":"language","owner":"","id":"bpn2","name":"Basic Petri Net Programming Notation","class":"programming language","appeared":1992,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/bpn2.html","licence":"public-domain"}}

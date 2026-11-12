@@ -1,0 +1,2 @@
+{"tag":"NEW-dsd","kind":"format","owner":"","id":"dsd","name":"Document Structure Description","class":"xml format","appeared":2000,"website":"https://www.brics.dk/DSD/","wikipedia":"https://en.wikipedia.org/wiki/Document_Structure_Description","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/dsd.html","licence":"public-domain"}}
+{"tag":"NEW-dsym","kind":"format","owner":"","id":"dsym","name":"dsym","class":"binary data format","appeared":2011,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/dsym.html","licence":"public-domain"}}

@@ -1,0 +1,3 @@
+{"tag":"NEW-gcc-machine-description","kind":"language","owner":"","id":"gcc-machine-description","name":"GCC Machine Description","class":"programming language","appeared":2001,"extensions":["md"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/gcc-machine-description.html","licence":"public-domain"}}
+{"tag":"NEW-gcla-ii","kind":"language","owner":"","id":"gcla-ii","name":"GCLA II","class":"programming language","appeared":1992,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/gcla-ii.html","licence":"public-domain"}}
+{"tag":"NEW-gcp","kind":"language","owner":"","id":"gcp","name":"GCP","class":"programming language","appeared":1985,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/gcp.html","licence":"public-domain"}}

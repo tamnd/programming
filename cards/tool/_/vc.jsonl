@@ -1,0 +1,2 @@
+{"tag":"NEW-vcl","kind":"tool","owner":"","id":"vcl","name":"Varnish Configuration Language","class":"application","appeared":2006,"extensions":["vcl"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/vcl.html","licence":"public-domain"}}
+{"tag":"NEW-vcpkg-pm","kind":"tool","owner":"","id":"vcpkg-pm","name":"Vcpkg","class":"package manager","appeared":2016,"version":"2023.12.12","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/vcpkg-pm.html","licence":"public-domain"}}

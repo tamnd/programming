@@ -1,0 +1,3 @@
+{"tag":"NEW-nimble-pm","kind":"tool","owner":"","id":"nimble-pm","name":"nimble-pm","class":"package manager","appeared":2016,"website":"https://nimble.directory/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/nimble-pm.html","licence":"public-domain"}}
+{"tag":"NEW-nix","kind":"tool","owner":"","id":"nix","name":"Nix","class":"package manager","appeared":2003,"extensions":["nix"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/nix.html","licence":"public-domain"}}
+{"tag":"NEW-nixos","kind":"tool","owner":"","id":"nixos","name":"NixOS","class":"operating system","appeared":2003,"wikipedia":"https://en.wikipedia.org/wiki/NixOS","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/nixos.html","licence":"public-domain"}}

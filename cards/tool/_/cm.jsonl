@@ -1,0 +1,1 @@
+{"tag":"NEW-cmake","kind":"tool","owner":"","id":"cmake","name":"CMake","class":"application","appeared":2000,"extensions":["cmake","cmakein"],"website":"https://cmake.org/","wikipedia":"https://en.wikipedia.org/wiki/CMake","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/cmake.html","licence":"public-domain"}}

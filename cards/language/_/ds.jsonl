@@ -1,0 +1,4 @@
+{"tag":"NEW-dscript","kind":"language","owner":"","id":"dscript","name":"Dimensional Script","class":"notation","appeared":2012,"website":"http://www.dscript.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/dscript.html","licence":"public-domain"}}
+{"tag":"NEW-dsl-90","kind":"language","owner":"","id":"dsl-90","name":"DSL/90","class":"programming language","appeared":1965,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/dsl-90.html","licence":"public-domain"}}
+{"tag":"NEW-dslx","kind":"language","owner":"","id":"dslx","name":"dslx","class":"programming language","appeared":2020,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/dslx.html","licence":"public-domain"}}
+{"tag":"NEW-dss","kind":"language","owner":"","id":"dss","name":"dss","class":"programming language","appeared":2018,"website":"https://dss-lang.com","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/dss.html","licence":"public-domain"}}

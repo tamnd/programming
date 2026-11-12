@@ -1,0 +1,3 @@
+{"tag":"NEW-dda","kind":"language","owner":"","id":"dda","name":"DDA","class":"programming language","appeared":1979,"wikipedia":"https://en.wikipedia.org/wiki/DDA","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/dda.html","licence":"public-domain"}}
+{"tag":"NEW-ddfql","kind":"language","owner":"","id":"ddfql","name":"ddfql","class":"query language","appeared":2016,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ddfql.html","licence":"public-domain"}}
+{"tag":"NEW-ddp","kind":"language","owner":"","id":"ddp","name":"DDP","class":"programming language","appeared":2022,"version":"v0.3.0-alpha","website":"https://ddp.le0n.dev/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ddp.html","licence":"public-domain"}}

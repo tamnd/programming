@@ -1,0 +1,2 @@
+{"tag":"NEW-xbl","kind":"format","owner":"","id":"xbl","name":"XML Binding Language","class":"xml format","appeared":2000,"wikipedia":"https://en.wikipedia.org/wiki/XBL","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/xbl.html","licence":"public-domain"}}
+{"tag":"NEW-xbrl","kind":"format","owner":"","id":"xbrl","name":"XBRL","class":"xml format","appeared":2003,"wikipedia":"https://en.wikipedia.org/wiki/XBRL","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/xbrl.html","licence":"public-domain"}}

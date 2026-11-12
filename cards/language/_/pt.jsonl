@@ -1,0 +1,2 @@
+{"tag":"NEW-pt","kind":"language","owner":"","id":"pt","name":"PT","class":"programming language","appeared":1983,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/pt.html","licence":"public-domain"}}
+{"tag":"NEW-ptx","kind":"language","owner":"","id":"ptx","name":"PTX","class":"assembly language","appeared":2009,"aka":["nvptx"],"website":"https://llvm.org/docs/NVPTXUsage.html","wikipedia":"https://en.wikipedia.org/wiki/Parallel_Thread_Execution","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ptx.html","licence":"public-domain"}}

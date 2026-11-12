@@ -1,0 +1,2 @@
+{"tag":"NEW-prettier","kind":"library","owner":"","id":"prettier","name":"Prettier","class":"library","appeared":2016,"creators":["James Long"],"website":"https://prettier.io","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/prettier.html","licence":"public-domain"}}
+{"tag":"NEW-prismjs","kind":"library","owner":"","id":"prismjs","name":"Prism","class":"library","appeared":2012,"creators":["Lea Verou"],"version":"1.29.0","website":"https://prismjs.com/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/prismjs.html","licence":"public-domain"}}

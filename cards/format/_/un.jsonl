@@ -1,0 +1,2 @@
+{"tag":"NEW-unicode","kind":"format","owner":"","id":"unicode","name":"Unicode","class":"character encoding","appeared":1987,"wikipedia":"https://en.wikipedia.org/wiki/Unicode","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/unicode.html","licence":"public-domain"}}
+{"tag":"NEW-unified-diff","kind":"format","owner":"","id":"unified-diff","name":"Unified Diff","class":"diff format","appeared":1990,"creators":["Wayne Davison"],"aka":["unidiff"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/unified-diff.html","licence":"public-domain"}}

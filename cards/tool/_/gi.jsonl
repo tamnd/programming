@@ -1,0 +1,1 @@
+{"tag":"NEW-git-config","kind":"tool","owner":"","id":"git-config","name":"git-config","class":"application","appeared":2005,"extensions":["gitconfig"],"website":"https://git-scm.com/docs/git-config#_syntax","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/git-config.html","licence":"public-domain"}}

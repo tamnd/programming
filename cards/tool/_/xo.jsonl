@@ -1,0 +1,1 @@
+{"tag":"NEW-xoc-compiler","kind":"tool","owner":"","id":"xoc-compiler","name":"Xoc","class":"compiler","appeared":2008,"creators":["Russ Cox","Tom Bergan†","Austin T. Clements","Frans Kaashoek","Eddie Kohler"],"website":"https://pdos.csail.mit.edu/archive/xoc/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/xoc-compiler.html","licence":"public-domain"}}

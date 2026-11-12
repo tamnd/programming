@@ -1,0 +1,2 @@
+{"tag":"NEW-wddx","kind":"language","owner":"","id":"wddx","name":"WDDX","class":"programming language","appeared":1998,"wikipedia":"https://en.wikipedia.org/wiki/WDDX","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/wddx.html","licence":"public-domain"}}
+{"tag":"NEW-wdl","kind":"language","owner":"","id":"wdl","name":"WDL","class":"programming language","appeared":2012,"extensions":["wdl"],"version":"1.1.2","website":"http://www.openwdl.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/wdl.html","licence":"public-domain"}}

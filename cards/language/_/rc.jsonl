@@ -1,0 +1,2 @@
+{"tag":"NEW-rc","kind":"language","owner":"","id":"rc","name":"Rc","class":"programming language","appeared":1989,"creators":["Tom Duff"],"wikipedia":"https://en.wikipedia.org/wiki/Rc","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/rc.html","licence":"public-domain"}}
+{"tag":"NEW-rcpp","kind":"language","owner":"","id":"rcpp","name":"RC++","class":"programming language","appeared":2001,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/rcpp.html","licence":"public-domain"}}

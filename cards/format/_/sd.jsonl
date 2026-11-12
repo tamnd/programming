@@ -1,0 +1,2 @@
+{"tag":"NEW-sdf-format","kind":"format","owner":"","id":"sdf-format","name":"sdf-format","class":"xml format","appeared":2012,"website":"http://sdformat.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/sdf-format.html","licence":"public-domain"}}
+{"tag":"NEW-sdlang","kind":"format","owner":"","id":"sdlang","name":"SDLang","class":"data notation","appeared":2011,"creators":["Sönke Ludwig"],"extensions":["sdl"],"website":"https://sdlang.org","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/sdlang.html","licence":"public-domain"}}

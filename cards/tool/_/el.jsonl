@@ -1,0 +1,2 @@
+{"tag":"NEW-elm-packages-pm","kind":"tool","owner":"","id":"elm-packages-pm","name":"Elm Packages","class":"package manager","appeared":2012,"website":"https://package.elm-lang.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/elm-packages-pm.html","licence":"public-domain"}}
+{"tag":"NEW-elpa-pm","kind":"tool","owner":"","id":"elpa-pm","name":"Emacs Lisp Package Archive","class":"package manager","appeared":2016,"website":"https://elpa.gnu.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/elpa-pm.html","licence":"public-domain"}}

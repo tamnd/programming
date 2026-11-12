@@ -1,0 +1,1 @@
+{"tag":"NEW-gdb","kind":"tool","owner":"","id":"gdb","name":"GDB","class":"application","appeared":1986,"extensions":["gdb","gdbinit"],"website":"https://www.gnu.org/software/gdb","wikipedia":"https://en.wikipedia.org/wiki/GNU_Debugger","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/gdb.html","licence":"public-domain"}}

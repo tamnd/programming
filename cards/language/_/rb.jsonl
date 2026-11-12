@@ -1,0 +1,3 @@
+{"tag":"NEW-rbasic","kind":"language","owner":"","id":"rbasic","name":"rbasic","class":"programming language","appeared":1985,"creators":["Mike Welch"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/rbasic.html","licence":"public-domain"}}
+{"tag":"NEW-rbs","kind":"language","owner":"","id":"rbs","name":"rbs","class":"header language","appeared":2020,"extensions":["rbs"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/rbs.html","licence":"public-domain"}}
+{"tag":"NEW-rbscript","kind":"language","owner":"","id":"rbscript","name":"rbscript","class":"programming language","appeared":1996,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/rbscript.html","licence":"public-domain"}}

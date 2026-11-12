@@ -1,0 +1,2 @@
+{"tag":"NEW-jflex","kind":"language","owner":"","id":"jflex","name":"JFlex","class":"grammar language","appeared":2003,"extensions":["flex","jflex"],"version":"v1.9.1","website":"http://jflex.de/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jflex.html","licence":"public-domain"}}
+{"tag":"NEW-jfugue","kind":"language","owner":"","id":"jfugue","name":"JFugue","class":"programming language","appeared":2002,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/jfugue.html","licence":"public-domain"}}

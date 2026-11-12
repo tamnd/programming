@@ -1,0 +1,2 @@
+{"tag":"NEW-yugabytedb","kind":"tool","owner":"","id":"yugabytedb","name":"YugabyteDB","class":"database","appeared":2018,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/yugabytedb.html","licence":"public-domain"}}
+{"tag":"NEW-yum-pm","kind":"tool","owner":"","id":"yum-pm","name":"Yum","class":"package manager","appeared":1999,"creators":["Seth Vidal","Michael Stenner"],"wikipedia":"https://en.wikipedia.org/wiki/Yum_(software)","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/yum-pm.html","licence":"public-domain"}}

@@ -1,0 +1,2 @@
+{"tag":"NEW-hackage-pm","kind":"tool","owner":"","id":"hackage-pm","name":"hackage-pm","class":"package manager","appeared":2007,"website":"https://hackage.haskell.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/hackage-pm.html","licence":"public-domain"}}
+{"tag":"NEW-haxelibs-pm","kind":"tool","owner":"","id":"haxelibs-pm","name":"Haxe Library Manager","class":"package manager","appeared":2013,"version":"4.1.0","website":"https://lib.haxe.org/","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/haxelibs-pm.html","licence":"public-domain"}}

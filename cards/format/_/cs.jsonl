@@ -1,0 +1,2 @@
+{"tag":"NEW-cson","kind":"format","owner":"","id":"cson","name":"CSON","class":"data notation","appeared":2011,"creators":["Benjamin Lupton"],"extensions":["cson"],"version":"8.4.0","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/cson.html","licence":"public-domain"}}
+{"tag":"NEW-csvpp","kind":"format","owner":"","id":"csvpp","name":"CSV++","class":"data notation","appeared":2016,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/csvpp.html","licence":"public-domain"}}

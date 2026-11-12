@@ -1,0 +1,2 @@
+{"tag":"NEW-graphml","kind":"format","owner":"","id":"graphml","name":"GraphML","class":"xml format","appeared":2001,"wikipedia":"https://en.wikipedia.org/wiki/GraphML","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/graphml.html","licence":"public-domain"}}
+{"tag":"NEW-grid-notation","kind":"format","owner":"","id":"grid-notation","name":"grid-notation","class":"text data format","appeared":2013,"creators":["Cameron McEfee"],"version":"v0.0.20","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/grid-notation.html","licence":"public-domain"}}

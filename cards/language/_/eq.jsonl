@@ -1,0 +1,5 @@
+{"tag":"NEW-eql","kind":"language","owner":"","id":"eql","name":"EqL","class":"programming language","appeared":1989,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/eql.html","licence":"public-domain"}}
+{"tag":"NEW-eqlog","kind":"language","owner":"","id":"eqlog","name":"EQLog","class":"programming language","appeared":1986,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/eqlog.html","licence":"public-domain"}}
+{"tag":"NEW-eqn","kind":"language","owner":"","id":"eqn","name":"eqn","class":"markup language","appeared":1974,"wikipedia":"https://en.wikipedia.org/wiki/Eqn_(software)","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/eqn.html","licence":"public-domain"}}
+{"tag":"NEW-eqs","kind":"language","owner":"","id":"eqs","name":"EQS","class":"programming language","appeared":1978,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/eqs.html","licence":"public-domain"}}
+{"tag":"NEW-equate","kind":"language","owner":"","id":"equate","name":"EQUATE","class":"programming language","appeared":1991,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/equate.html","licence":"public-domain"}}

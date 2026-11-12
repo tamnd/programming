@@ -1,0 +1,1 @@
+{"tag":"NEW-gcc","kind":"tool","owner":"","id":"gcc","name":"GCC","class":"compiler","appeared":1987,"creators":["Richard Stallman"],"aka":["GNU C Compiler"],"website":"https://gcc.gnu.org/","wikipedia":"https://en.wikipedia.org/wiki/GNU_Compiler_Collection","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/gcc.html","licence":"public-domain"}}

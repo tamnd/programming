@@ -1,0 +1,2 @@
+{"tag":"NEW-ascii","kind":"format","owner":"","id":"ascii","name":"ASCII","class":"character encoding","appeared":1963,"wikipedia":"https://en.wikipedia.org/wiki/ASCII","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ascii.html","licence":"public-domain"}}
+{"tag":"NEW-ascii-armor","kind":"format","owner":"","id":"ascii-armor","name":"ASCII Armor","class":"text encoding format","appeared":2007,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ascii-armor.html","licence":"public-domain"}}

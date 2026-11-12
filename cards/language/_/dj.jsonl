@@ -1,0 +1,2 @@
+{"tag":"NEW-djangoql","kind":"language","owner":"","id":"djangoql","name":"djangoql","class":"programming language","appeared":2017,"creators":["Denis Stebunov"],"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/djangoql.html","licence":"public-domain"}}
+{"tag":"NEW-djot","kind":"language","owner":"","id":"djot","name":"Djot","class":"markup language","appeared":2022,"creators":["John MacFarlane"],"extensions":["dj"],"version":"0.2.0","website":"https://djot.net","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/djot.html","licence":"public-domain"}}

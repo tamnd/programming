@@ -1,0 +1,3 @@
+{"tag":"NEW-ia-32","kind":"language","owner":"","id":"ia-32","name":"IA-32","class":"instruction set","appeared":1985,"wikipedia":"https://en.wikipedia.org/wiki/IA-32","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ia-32.html","licence":"public-domain"}}
+{"tag":"NEW-ial","kind":"language","owner":"","id":"ial","name":"IAL","class":"programming language","appeared":1958,"wikipedia":"https://en.wikipedia.org/wiki/IAL","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/ial.html","licence":"public-domain"}}
+{"tag":"NEW-iam","kind":"language","owner":"","id":"iam","name":"IAM","class":"programming language","appeared":1968,"licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/iam.html","licence":"public-domain"}}

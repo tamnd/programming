@@ -1,0 +1,2 @@
+{"tag":"NEW-zone","kind":"tool","owner":"","id":"zone","name":"DNS Zone","class":"application","appeared":2001,"extensions":["zone","arpa"],"wikipedia":"https://en.wikipedia.org/wiki/Zone_file","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/zone.html","licence":"public-domain"}}
+{"tag":"NEW-zope","kind":"tool","owner":"","id":"zope","name":"Zope","class":"application","appeared":1999,"wikipedia":"https://en.wikipedia.org/wiki/Zope","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/zope.html","licence":"public-domain"}}

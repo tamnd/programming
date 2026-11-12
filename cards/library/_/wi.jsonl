@@ -1,0 +1,1 @@
+{"tag":"NEW-wiredtiger","kind":"library","owner":"","id":"wiredtiger","name":"WiredTiger","class":"library","appeared":2010,"creators":["Keith Bostic","Michael Cahill"],"website":"http://source.wiredtiger.com/","wikipedia":"https://en.wikipedia.org/wiki/WiredTiger","licence":"CC0-1.0","source":{"url":"https://pldb.io/concepts/wiredtiger.html","licence":"public-domain"}}
