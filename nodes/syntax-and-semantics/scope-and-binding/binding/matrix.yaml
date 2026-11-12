@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the let, const and var bindings of JavaScript, and adds readonly properties and the as const assertion, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin binds names with val, which cannot be rebound, and var, and a destructuring declaration binds several names at once, but no example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash binds a variable with name=value, local makes a binding that is visible in the functions that the function calls, and declare -n makes a name reference. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell binds variables with $name = value, and scope modifiers such as $script:name and $global:name choose the scope of the binding, but no example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: A column alias, a table alias and a WITH clause bind names inside a query, and procedural SQL such as PL/pgSQL has DECLARE for variables. No example file exists.
+regex:
+  status: native
+  reason: A capture group binds the text that it matches to a number, and a named group binds it to a name that a backreference or the program can use.
+html:
+  status: n/a
+  reason: HTML has no names that are bound to values.
+css:
+  status: idiom
+  reason: "A custom property such as --gap: 8px binds a name to a value on an element, and var(--gap) reads the binding that the element inherits."
