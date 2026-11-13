@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript iterable protocol with types. Iterable<T>, Iterator<T> and Generator<T> describe sequences, and ArrayLike<T> describes objects with length and indices. No example file exists.
+kotlin:
+  status: stdlib
+  reason: List<T> is the ordered collection, and Sequence<T> is a lazy sequence that runs its steps item by item. sequenceOf, generateSequence and asSequence make sequences. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: An indexed array is the only sequence type. A for loop over "${a[@]}" visits the items in order, and seq or brace expansion makes a sequence of numbers. No example file exists.
+powershell:
+  status: native
+  reason: Arrays and the .NET collections are sequences, and the pipeline sends the items of a sequence one at a time. 1..5 makes an array of numbers. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A table has no order of its own. ORDER BY gives the rows an order, and CREATE SEQUENCE makes a generator of numbers, not a collection. Array types exist in PostgreSQL.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no sequence values.
+html:
+  status: n/a
+  reason: HTML is markup. The order of elements in a list is document order, not a data type.
+css:
+  status: n/a
+  reason: CSS style rules have no sequence values. Counters number elements, but they are not data.

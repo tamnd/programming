@@ -157,7 +157,7 @@ The example files show these forms. Python shows `list` and `tuple` as two seque
 - **Persistent lists.** A cons list shares its tail, so a new list with one more item at the front costs one cell, and the old list stays the same. Functional languages use this property to keep old versions of a list at no extra cost.
 - **Tuples.** A tuple also has an order, but it usually has a fixed length and items of different types, such as a point `(x, y)`.
 - **Sets and multisets.** A list keeps duplicates and order. Wikipedia notes that "A finite set in the mathematical sense can be realized as a list with additional restrictions; that is, duplicate elements are disallowed and order is irrelevant"[^1].
-- **Streams and lazy lists.** A lazy list makes its items when the program reads them, so it can be infinite. Wikipedia calls a stream "the potentially infinite analog of a list"[^1].
+- **Streams and lazy lists.** A lazy list makes its items when the program reads them, so it can be infinite. Wikipedia calls a stream "the potentially infinite analog of a list"[^1]. See [sequence](/sequence/) for the general idea of an ordered collection, lazy or not.
 - **Arrays.** An [array](/array/) has a fixed length. A list can grow: "Unlike in an array, a list can expand and shrink"[^1].
 
 ## Pitfalls
