@@ -1,0 +1,2 @@
+{"name":"two-by-three","args":{"rows":2,"cols":3,"value":0},"expect":[[0,0,0],[0,0,0]]}
+{"name":"three-by-one","args":{"rows":3,"cols":1,"value":7},"expect":[[7],[7],[7]]}

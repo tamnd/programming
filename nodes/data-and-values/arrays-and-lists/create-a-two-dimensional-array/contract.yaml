@@ -1,0 +1,18 @@
+# The contract of the task "create a two-dimensional array" (spec 10.2). Each row is a separate list, so a change to one row does not change another row.
+problem: create-a-two-dimensional-array
+entry: grid
+params:
+  - name: rows
+    type: "int"
+    pre: "0 <= rows <= 100"
+  - name: cols
+    type: "int"
+    pre: "0 <= cols <= 100"
+  - name: value
+    type: "int"
+    pre: "a 32-bit signed integer"
+returns:
+  type: "list<list<int>>"
+  post: "a list of rows lists; each row has cols items, and each item is value; no two rows share storage"
+checker: exact
+edge_classes: [empty, single, shape, negative, limit]

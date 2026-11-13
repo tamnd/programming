@@ -144,7 +144,7 @@ The example files show these forms. Python shows slice objects, `slice.indices`,
 
 ## Pitfalls
 
-- **A view that the program thinks is a copy.** A change through a Go slice, a Java `subList`, a NumPy slice or a `Span<T>` changes the original. Copy the slice when the code needs its own data.
+- **A view that the program thinks is a copy.** A change through a Go slice, a Java `subList`, a NumPy slice or a `Span<T>` changes the original. Copy the slice when the code needs its own data. The task [slice a list](/slice-a-list/) makes a copy in ten languages.
 - **A copy that the program thinks is a view.** A change to a Python list slice or a JavaScript `slice` result does not reach the original. Use slice assignment, `splice` or an index to change the original.
 - **Shallow copies.** A slice copies the references, not the objects. In the Python example, an `append` to an inner list of a sliced grid changes the original grid.
 - **A Go append through a shared array.** In the Go example, `append(s, 77)` writes 77 into the array, because `s` has spare capacity. Use `a[low:high:high]` or `slices.Clone` before an `append` that must not touch the array.

@@ -1,0 +1,8 @@
+{"name":"no-rows","class":["empty"],"args":{"rows":0,"cols":3,"value":1},"expect":[]}
+{"name":"no-cols","class":["empty"],"args":{"rows":2,"cols":0,"value":1},"expect":[[],[]]}
+{"name":"one-cell","class":["single"],"args":{"rows":1,"cols":1,"value":5},"expect":[[5]]}
+{"name":"one-row","class":["shape"],"args":{"rows":1,"cols":4,"value":2},"expect":[[2,2,2,2]]}
+{"name":"one-col","class":["shape"],"args":{"rows":4,"cols":1,"value":2},"expect":[[2],[2],[2],[2]]}
+{"name":"negative","class":["negative"],"args":{"rows":2,"cols":2,"value":-3},"expect":[[-3,-3],[-3,-3]]}
+{"name":"min-int","class":["limit"],"args":{"rows":2,"cols":2,"value":-2147483648},"expect":[[-2147483648,-2147483648],[-2147483648,-2147483648]]}
+{"name":"max-int","class":["limit"],"args":{"rows":1,"cols":2,"value":2147483647},"expect":[[2147483647,2147483647]]}
