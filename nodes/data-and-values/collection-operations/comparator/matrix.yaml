@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the JavaScript compare function, and its type is (a, b) => number. A function that returns a boolean does not match that type, so the compiler finds the error that JavaScript does not find. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has the Java interfaces Comparator and Comparable, and the functions compareBy, thenBy and reversed build comparators from keys. sortedWith takes a comparator and sortedBy takes a key. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash cannot give a function to a sort. The sort command takes keys and options instead, for example -k for a field, -n for numbers, -r for the reverse order and -t for the field separator. No example file exists.
+powershell:
+  status: native
+  reason: Sort-Object takes properties or script blocks as keys, and a hash table with Expression and Descending sets the direction of each key. The .NET method [Array]::Sort takes a Comparison delegate. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: ORDER BY takes a list of key expressions, each with ASC or DESC and optional NULLS FIRST or NULLS LAST. COLLATE selects the order of text. A query cannot give a compare function of two rows. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not compare two values or order them.
+html:
+  status: n/a
+  reason: HTML is markup. It has no functions that order values.
+css:
+  status: n/a
+  reason: CSS has no functions that compare values. The order property takes an integer for each flex or grid item, not a comparator.
