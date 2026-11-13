@@ -1,0 +1,12 @@
+# The contract of the task "filter a list" (spec 10.2). The function keeps the odd items of a list of integers, in their input order. A negative item such as -3 is odd too.
+problem: filter-a-list
+entry: keep_odd
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty"
+returns:
+  type: "list<int>"
+  post: "the odd items in their input order; an item is odd if the remainder of the item divided by 2 is not 0, so -3 is odd"
+checker: exact
+edge_classes: [empty, none, all, negative, zero, order, extremes, duplicates]

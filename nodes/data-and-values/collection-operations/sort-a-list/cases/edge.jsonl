@@ -1,0 +1,8 @@
+{"name":"empty","class":["empty"],"args":{"items":[]},"expect":[]}
+{"name":"single","class":["single"],"args":{"items":[1]},"expect":[1]}
+{"name":"sorted","class":["sorted"],"args":{"items":[1,2,3]},"expect":[1,2,3]}
+{"name":"reversed","class":["reversed"],"args":{"items":[9,8,7]},"expect":[7,8,9]}
+{"name":"duplicates","class":["duplicates"],"args":{"items":[2,1,2,1]},"expect":[1,1,2,2]}
+{"name":"negative","class":["negative"],"args":{"items":[-1,-10,5]},"expect":[-10,-1,5]}
+{"name":"digits","class":["digits"],"args":{"items":[10,9,100,1]},"expect":[1,9,10,100]}
+{"name":"extremes","class":["extremes"],"args":{"items":[2147483647,-2147483648,0]},"expect":[-2147483648,0,2147483647]}

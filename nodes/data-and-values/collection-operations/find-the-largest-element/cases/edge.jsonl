@@ -1,0 +1,9 @@
+{"name":"single","class":["single"],"args":{"items":[7]},"expect":7}
+{"name":"all-negative","class":["negative"],"args":{"items":[-3,-1,-2]},"expect":-1}
+{"name":"first","class":["position"],"args":{"items":[9,2,3]},"expect":9}
+{"name":"last","class":["position"],"args":{"items":[1,2,9]},"expect":9}
+{"name":"duplicates","class":["duplicates"],"args":{"items":[5,9,9,1]},"expect":9}
+{"name":"all-same","class":["duplicates"],"args":{"items":[4,4,4]},"expect":4}
+{"name":"zero","class":["zero"],"args":{"items":[-5,0,-1]},"expect":0}
+{"name":"extremes","class":["extremes"],"args":{"items":[-2147483648,2147483647,0]},"expect":2147483647}
+{"name":"min-only","class":["extremes"],"args":{"items":[-2147483648]},"expect":-2147483648}

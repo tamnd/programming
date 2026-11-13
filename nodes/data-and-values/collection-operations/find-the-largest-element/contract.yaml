@@ -1,0 +1,12 @@
+# The contract of the task "find the largest element" (spec 10.2). The function returns the largest item of a list of integers. The list must not be empty, so each solution fails for an empty list.
+problem: find-the-largest-element
+entry: largest
+params:
+  - name: items
+    type: "list<int>"
+    pre: "at least one item; each item is a 32-bit signed integer"
+returns:
+  type: int
+  post: "the largest item; if more than one item has this value, the result is that value"
+checker: exact
+edge_classes: [single, negative, position, duplicates, zero, extremes]

@@ -1,0 +1,2 @@
+{"name":"small","args":{"items":[1,2,3]},"expect":[1,4,9]}
+{"name":"tens","args":{"items":[5,10]},"expect":[25,100]}

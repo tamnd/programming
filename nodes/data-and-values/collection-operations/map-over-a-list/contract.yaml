@@ -1,0 +1,12 @@
+# The contract of the task "map over a list" (spec 10.2). The function returns a new list with the square of each item, in the same order. The input list does not change.
+problem: map-over-a-list
+entry: square_all
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item x is an integer with -46340 <= x <= 46340, so each square fits in a 32-bit signed integer; the list can be empty"
+returns:
+  type: "list<int>"
+  post: "a new list of the same length; item i of the result is the square of item i of the input"
+checker: exact
+edge_classes: [empty, single, negative, zero, limit, order, duplicates]
