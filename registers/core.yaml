@@ -12146,7 +12146,7 @@ items:
     group: "collections"
     name: "Sort with a custom key"
     target: "sort-with-a-custom-key"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Sort using a custom comparator); Go by Example (Sorting by Functions)."
   - part: tasks
     group: "collections"
@@ -12188,7 +12188,7 @@ items:
     group: "collections"
     name: "Flatten a nested list"
     target: "flatten-a-nested-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Flatten a list)."
   - part: tasks
     group: "collections"

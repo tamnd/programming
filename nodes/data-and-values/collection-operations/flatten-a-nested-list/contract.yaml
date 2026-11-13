@@ -1,0 +1,12 @@
+# The contract of the task "flatten a nested list" (spec 10.2). The function joins a list of lists of integers into one list, one level deep.
+problem: flatten-a-nested-list
+entry: flatten
+params:
+  - name: lists
+    type: "list<list<int>>"
+    pre: "each item is a 32-bit signed integer; the outer list and each inner list can be empty"
+returns:
+  type: "list<int>"
+  post: "the items of the first inner list, then the items of the second inner list, and so on, each in its input order"
+checker: exact
+edge_classes: [empty, empty-inner, all-empty, single, one-list, negative, extremes]
