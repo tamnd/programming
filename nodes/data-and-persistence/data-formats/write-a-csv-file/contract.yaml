@@ -1,0 +1,13 @@
+# The contract of the task "write a CSV file" (spec 10.2). The format is RFC 4180, written as UTF-8 with no byte order mark.
+problem: write-a-csv-file
+entry: format_csv
+params:
+  - name: records
+    type: "list<list<string>>"
+    pre: "the records in file order; the first record is the header; each record has at least one field and the same number of fields as the first record; a field is any string"
+returns:
+  type: string
+  post: "the CSV text that the solution writes to the file: for each record, its fields joined by commas, then CRLF, also after the last record; a field that holds a comma, a double quote, a CR or an LF is enclosed in double quotes, and each double quote in it is written twice; the field of a record with one empty field is written as two double quotes, so that the line is not empty; every other field is written as it is, also when it starts or ends with a space; no records give an empty text"
+checker: exact
+edge_classes: [quoted, newline-in-field, empty-field, whitespace, empty, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report field-count and write no file: a record with more or fewer fields than the header.
