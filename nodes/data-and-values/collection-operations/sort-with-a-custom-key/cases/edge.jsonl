@@ -1,0 +1,8 @@
+{"name":"empty","class":["empty"],"args":{"words":[]},"expect":[]}
+{"name":"single","class":["single"],"args":{"words":["x"]},"expect":["x"]}
+{"name":"same-length","class":["same-length"],"args":{"words":["dog","cat","ant"]},"expect":["ant","cat","dog"]}
+{"name":"duplicates","class":["duplicates"],"args":{"words":["b","a","b"]},"expect":["a","b","b"]}
+{"name":"sorted","class":["sorted"],"args":{"words":["a","bb","ccc"]},"expect":["a","bb","ccc"]}
+{"name":"reverse","class":["reverse"],"args":{"words":["ccc","bb","a"]},"expect":["a","bb","ccc"]}
+{"name":"long","class":["long"],"args":{"words":["abcdefghij","abcdefghi","z"]},"expect":["z","abcdefghi","abcdefghij"]}
+{"name":"prefix","class":["prefix"],"args":{"words":["ab","a","abc","b"]},"expect":["a","b","ab","abc"]}

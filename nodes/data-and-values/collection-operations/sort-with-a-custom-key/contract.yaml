@@ -1,0 +1,12 @@
+# The contract of the task "sort with a custom key" (spec 10.2). The function sorts words by a key of two parts: the length, then the word.
+problem: sort-with-a-custom-key
+entry: sort_by_length
+params:
+  - name: words
+    type: "list<string>"
+    pre: "each word has 1 or more lowercase ASCII letters; the list can be empty and can have the same word more than once"
+returns:
+  type: "list<string>"
+  post: "the words in ascending order of the length; words with the same length are in ascending order of their bytes"
+checker: exact
+edge_classes: [empty, single, same-length, duplicates, sorted, reverse, long, prefix]
