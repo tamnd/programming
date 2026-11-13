@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript arrays and typed arrays. The types number[] and Array<number> mean the same thing, and a tuple type such as [number, number] gives a fixed length to the type checker. No example file exists.
+kotlin:
+  status: native
+  reason: Array<T> holds a fixed number of items, and IntArray, DoubleArray and the other primitive arrays hold the values without boxing, like Java int[] and double[]. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash has one-dimensional indexed arrays such as a=(x y z). They are zero-based, they grow and they can have gaps, so they are not contiguous storage. No example file exists.
+powershell:
+  status: native
+  reason: "@(1, 2, 3) makes a .NET array with a fixed size. The += operator makes a new array with the old items and the new item. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: Some databases have array column types. PostgreSQL integer[] holds a variable-length array with one-based indices by default. Other databases have no array type. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no arrays.
+html:
+  status: n/a
+  reason: HTML is markup. It has no arrays.
+css:
+  status: n/a
+  reason: CSS style rules have no arrays.
