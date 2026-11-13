@@ -1,0 +1,35 @@
+go:
+  status: library
+  reason: the package encoding/xml of the Go standard library parses XML but has no XPath engine.
+  alternative: a module such as github.com/antchfx/xmlquery, which evaluates XPath 1.0 over a parsed tree.
+javascript:
+  status: library
+  reason: Node.js has no XML parser and no XPath; browsers have document.evaluate over the DOM.
+  alternative: the package xpath over the DOM of @xmldom/xmldom.
+typescript:
+  status: library
+  reason: TypeScript has the same runtime as JavaScript, and Node.js has no XML parser and no XPath.
+  alternative: the package xpath over the DOM of @xmldom/xmldom.
+rust:
+  status: library
+  reason: the Rust standard library has no XML parser and no XPath.
+  alternative: the crate sxd-xpath, or the bindings of the crate libxml to libxml2.
+c:
+  status: library
+  reason: ISO C has no XML functions.
+  alternative: libxml2, with xmlXPathNewContext, xmlXPathRegisterNs and xmlXPathEvalExpression.
+cpp:
+  status: library
+  reason: the C++ standard library has no XML parser.
+  alternative: pugixml (select_nodes) or libxml2.
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no XPath; on the JVM a program can use javax.xml.xpath, as in the Java solution. No example file exists because kotlinc is not installed.
+  alternative: the javax.xml.xpath API of the Java platform.
+bash:
+  status: library
+  reason: Bash has no XML parser.
+  alternative: xmllint --xpath of libxml2, or xmlstarlet sel with -N to bind a prefix.
+powershell:
+  status: stdlib
+  reason: the cmdlet Select-Xml takes an XPath query and a -Namespace hash table; no example file because PowerShell is not installed on the machine that recorded the examples.

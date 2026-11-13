@@ -1,0 +1,20 @@
+# The contract of the task "query XML with XPath" (spec 10.2). Each solution parses the text with the XML parser of its standard library and evaluates the path with the XPath support of the same library.
+problem: query-xml-with-xpath
+entry: query_xpath
+params:
+  - name: text
+    type: string
+    pre: "an XML 1.0 document with no document type declaration, or a text that is not well-formed XML; no element has a descendant with the same expanded name as itself"
+  - name: path
+    type: string
+    pre: "a relative path in the abbreviated syntax of XPath 1.0, or a text that is not such a path. The path is . or a list of steps joined by /, and it can start with .// to select descendants. A step is a name, prefix:name or *, and * is only the last step. A name step can have one predicate: [@a], [@a='v'], [@a!='v'], [c], [c='v'], [.='v'], an integer of 1 or more, or last(), where a and c are names and v holds no quote"
+  - name: namespaces
+    type: "map<string, string>"
+    pre: "a map from prefixes to namespace names, with no empty prefix and no empty namespace name"
+returns:
+  type: "list<string>"
+  post: "the string value of each element that the path selects when the root element is the context node, in document order. The string value of an element joins the text of all its descendants, after the parser has replaced the entity and character references and removed the CDATA markers, and it holds no comment. A name with no prefix in the path is in no namespace, and a name with a prefix is in the namespace that namespaces gives for the prefix"
+checker: exact
+edge_classes: [descendant, attribute, child-value, position, wildcard, string-value, namespace, empty, whitespace, non-ascii]
+# The toolchain has no field for errors yet, and it loads only the basic, edge and regress case files. cases/errors.jsonl holds the inputs on which each solution must report an error and return no values: parse-error when the text is empty or not well-formed, and bad-path when the path is not valid or uses a prefix that namespaces does not give.
+# The standard libraries of Go, JavaScript, TypeScript, Rust, C, C++ and Bash have no XPath, so this task has no solution in those languages. matrix.yaml holds the verdict for each one and the library that is used instead.
