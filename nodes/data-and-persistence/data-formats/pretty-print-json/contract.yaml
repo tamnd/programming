@@ -1,0 +1,14 @@
+# The contract of the task "pretty-print JSON" (spec 10.2). Each solution parses a JSON text with the JSON library of its standard library and writes it back indented, with the names of each object sorted.
+problem: pretty-print-json
+entry: pretty_json
+params:
+  - name: text
+    type: string
+    pre: "a JSON text as in RFC 8259. Each number in it is an integer with no fraction and no exponent and with at most 4300 digits. No string in it holds an unpaired surrogate, U+2028 or U+2029, as a character or as an escape. Arrays and objects nest at most 64 levels deep"
+returns:
+  type: string
+  post: "the same JSON value as an indented text. Each element of a non-empty array and each member of a non-empty object is on its own line, indented by two spaces more than the line of its array or object, and each line but the last of a container ends with a comma. The closing bracket or brace is on its own line at the indent of the container. An empty array is [] and an empty object is {}. A name is followed by a colon and one space. The members of each object are sorted by name in code point order, and when a name occurs more than once the last member wins. Each integer is written in full with no plus sign, and -0 is written as 0. Each string escapes the quotation mark and the reverse solidus, writes the control characters U+0008, U+0009, U+000A, U+000C and U+000D as \\b, \\t, \\n, \\f and \\r, writes each other control character below U+0020 as \\u00 and two lowercase hexadecimal digits, and writes every other character as itself. The text has no white space at the start and no line break at the end, and the solution applied to its own output returns the output unchanged"
+checker: exact
+edge_classes: [nesting, key-order, duplicate-name, big-int, non-ascii, escapes, empty-containers, scalar-root, whitespace, idempotent]
+# The toolchain has no field for errors yet, and it loads only the basic, edge and regress case files. cases/errors.jsonl holds the inputs on which each solution must report invalid-json: a trailing comma, single quotes, a name with no quotes, NaN, Infinity, -Infinity, a leading zero, a plus sign, an empty text, data after the value, a comment, a byte order mark, a raw control character in a string, a bad escape and a text with no end.
+# The standard libraries of Java, Rust, C, C++ and Bash have no JSON parser, so this task has no solution in those languages. matrix.yaml holds the verdict for each one and the library that is used instead.

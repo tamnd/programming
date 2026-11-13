@@ -1,0 +1,20 @@
+java:
+  status: library
+  reason: The Java SE API has no JSON parser.
+  alternative: the streaming API of Jackson (jackson-core), where a JsonParser returns one token at a time.
+rust:
+  status: library
+  reason: The Rust standard library has no JSON parser.
+  alternative: the crate serde_json with a custom Visitor that reads the elements of the array one at a time, as in the serde example "Process an array of values without buffering into a Vec".
+c:
+  status: library
+  reason: ISO C has no JSON functions in its standard library.
+  alternative: an event-based parser library such as YAJL.
+cpp:
+  status: library
+  reason: The C++ standard library has no JSON parser.
+  alternative: the SAX-style Reader of RapidJSON, or the sax_parse function of nlohmann/json.
+bash:
+  status: library
+  reason: Bash has no JSON parser.
+  alternative: the command-line tool jq with the option --stream, which outputs arrays of path and leaf values.

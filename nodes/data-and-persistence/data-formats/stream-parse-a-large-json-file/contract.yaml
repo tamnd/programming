@@ -1,0 +1,13 @@
+# The contract of the task "stream-parse a large JSON file" (spec 10.2). The file is RFC 8259 JSON text in UTF-8, read one element at a time.
+problem: stream-parse-a-large-json-file
+entry: stream_sum
+params:
+  - name: path
+    type: string
+    pre: "the path of a UTF-8 file, relative to the node directory, with an optional byte order mark at the start; the file can be larger than the memory of the program, but each element of the array fits in memory; the amounts are integers, and the absolute value of each amount and of each partial sum is at most 2^53 - 1; no object has two members with the same name"
+returns:
+  type: "list<int>"
+  post: "two numbers: the count of the elements of the top-level JSON array, and the sum of the member amount of all of the elements; the solution holds at most one element and one buffer in memory at a time, not the whole array; an empty array gives [0, 0]; members other than amount are skipped, also when they hold nested values or a nested member that is named amount"
+checker: exact
+edge_classes: [empty, no-final-newline, whitespace, nested, strings, non-ascii, bom, big-number, chunk-boundary]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error: invalid-json when the file is not one JSON array (a syntax error, an empty file, NaN, or data after the array), bad-record when an element is not an object with a number member amount, and not-found when the file does not exist. A solution can report invalid-json after it has read some of the elements.

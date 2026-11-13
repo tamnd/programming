@@ -1,0 +1,18 @@
+{"name": "trailing-comma-array", "args": {"text": "[1, 2,]"}, "error": "invalid-json"}
+{"name": "trailing-comma-object", "args": {"text": "{\"a\": 1,}"}, "error": "invalid-json"}
+{"name": "single-quotes", "args": {"text": "{'a': 1}"}, "error": "invalid-json"}
+{"name": "unquoted-name", "args": {"text": "{a: 1}"}, "error": "invalid-json"}
+{"name": "nan", "args": {"text": "[NaN]"}, "error": "invalid-json"}
+{"name": "infinity", "args": {"text": "[Infinity]"}, "error": "invalid-json"}
+{"name": "negative-infinity", "args": {"text": "-Infinity"}, "error": "invalid-json"}
+{"name": "leading-zero", "args": {"text": "[01]"}, "error": "invalid-json"}
+{"name": "plus-sign", "args": {"text": "+1"}, "error": "invalid-json"}
+{"name": "empty-text", "args": {"text": ""}, "error": "invalid-json"}
+{"name": "whitespace-only", "args": {"text": " \n"}, "error": "invalid-json"}
+{"name": "trailing-data", "args": {"text": "[1] x"}, "error": "invalid-json"}
+{"name": "two-values", "args": {"text": "1 2"}, "error": "invalid-json"}
+{"name": "comment", "args": {"text": "{\"a\": 1} // note"}, "error": "invalid-json"}
+{"name": "byte-order-mark", "args": {"text": "﻿{\"a\": 1}"}, "error": "invalid-json"}
+{"name": "raw-control-char", "args": {"text": "[\"a\tb\"]"}, "error": "invalid-json"}
+{"name": "bad-escape", "args": {"text": "[\"\\x41\"]"}, "error": "invalid-json"}
+{"name": "unclosed", "args": {"text": "[1, 2"}, "error": "invalid-json"}

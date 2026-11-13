@@ -1,0 +1,22 @@
+{"name": "key-order-ascii", "class": ["key-order"], "args": {"text": "{\"b\": 1, \"a\": 2, \"B\": 3, \"10\": 4, \"9\": 5}"}, "expect": "{\n  \"10\": 4,\n  \"9\": 5,\n  \"B\": 3,\n  \"a\": 2,\n  \"b\": 1\n}"}
+{"name": "key-order-prefix", "class": ["key-order"], "args": {"text": "{\"ab\": 1, \"a\": 2, \"\": 3}"}, "expect": "{\n  \"\": 3,\n  \"a\": 2,\n  \"ab\": 1\n}"}
+{"name": "key-order-astral", "class": ["key-order"], "args": {"text": "{\"😀\": 1, \"ﬁ\": 2, \"é\": 3}"}, "expect": "{\n  \"é\": 3,\n  \"ﬁ\": 2,\n  \"😀\": 1\n}"}
+{"name": "key-order-nested", "class": ["key-order", "nesting"], "args": {"text": "{\"z\": {\"y\": 1, \"x\": 2}, \"a\": [{\"d\": 1, \"c\": 2}]}"}, "expect": "{\n  \"a\": [\n    {\n      \"c\": 2,\n      \"d\": 1\n    }\n  ],\n  \"z\": {\n    \"x\": 2,\n    \"y\": 1\n  }\n}"}
+{"name": "duplicate-name", "class": ["duplicate-name"], "args": {"text": "{\"a\": 1, \"b\": 0, \"a\": {\"c\": 3}}"}, "expect": "{\n  \"a\": {\n    \"c\": 3\n  },\n  \"b\": 0\n}"}
+{"name": "big-int", "class": ["big-int"], "args": {"text": "{\"id\": 9007199254740993}"}, "expect": "{\n  \"id\": 9007199254740993\n}"}
+{"name": "beyond-int64", "class": ["big-int"], "args": {"text": "[18446744073709551617, -18446744073709551617]"}, "expect": "[\n  18446744073709551617,\n  -18446744073709551617\n]"}
+{"name": "negative-zero", "class": ["big-int"], "args": {"text": "[-0, 0]"}, "expect": "[\n  0,\n  0\n]"}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"text": "[\"Zürich\", \"日本語\", \"😀\"]"}, "expect": "[\n  \"Zürich\",\n  \"日本語\",\n  \"😀\"\n]"}
+{"name": "escaped-non-ascii", "class": ["non-ascii", "escapes"], "args": {"text": "[\"\\u00e9\\ud83d\\ude00\"]"}, "expect": "[\n  \"é😀\"\n]"}
+{"name": "escapes", "class": ["escapes"], "args": {"text": "[\"q\\\" b\\\\ s\\/ t\\t n\\n r\\r\"]"}, "expect": "[\n  \"q\\\" b\\\\ s/ t\\t n\\n r\\r\"\n]"}
+{"name": "control-chars", "class": ["escapes"], "args": {"text": "[\"\\u0000\\u001f\\b\\f\\u007f\"]"}, "expect": "[\n  \"\\u0000\\u001f\\b\\f\"\n]"}
+{"name": "html-chars", "class": ["escapes"], "args": {"text": "{\"html\": \"<a href='x'>&amp;</a>\"}"}, "expect": "{\n  \"html\": \"<a href='x'>&amp;</a>\"\n}"}
+{"name": "empty-containers", "class": ["empty-containers"], "args": {"text": "{\"a\": {}, \"b\": [], \"c\": \"\"}"}, "expect": "{\n  \"a\": {},\n  \"b\": [],\n  \"c\": \"\"\n}"}
+{"name": "empty-object-root", "class": ["empty-containers", "scalar-root"], "args": {"text": "{}"}, "expect": "{}"}
+{"name": "empty-array-root", "class": ["empty-containers", "scalar-root"], "args": {"text": "[ ]"}, "expect": "[]"}
+{"name": "scalar-root", "class": ["scalar-root"], "args": {"text": "42"}, "expect": "42"}
+{"name": "string-root", "class": ["scalar-root"], "args": {"text": "\"text\""}, "expect": "\"text\""}
+{"name": "literals", "class": ["scalar-root"], "args": {"text": "[true, false, null]"}, "expect": "[\n  true,\n  false,\n  null\n]"}
+{"name": "whitespace-inside", "class": ["whitespace"], "args": {"text": "\n{ \"a\" :\t[ 1 , 2 ] }\r\n"}, "expect": "{\n  \"a\": [\n    1,\n    2\n  ]\n}"}
+{"name": "already-pretty", "class": ["idempotent"], "args": {"text": "{\n  \"a\": [\n    1,\n    2\n  ],\n  \"b\": {}\n}"}, "expect": "{\n  \"a\": [\n    1,\n    2\n  ],\n  \"b\": {}\n}"}
+{"name": "deep", "class": ["nesting"], "args": {"text": "[[[[1]]]]"}, "expect": "[\n  [\n    [\n      [\n        1\n      ]\n    ]\n  ]\n]"}

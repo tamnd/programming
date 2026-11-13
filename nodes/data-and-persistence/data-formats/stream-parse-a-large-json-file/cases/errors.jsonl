@@ -1,0 +1,17 @@
+{"name": "not-array", "args": {"path": "fixtures/not-array.json"}, "error": "invalid-json"}
+{"name": "trailing-comma", "args": {"path": "fixtures/trailing-comma.json"}, "error": "invalid-json"}
+{"name": "missing-comma", "args": {"path": "fixtures/missing-comma.json"}, "error": "invalid-json"}
+{"name": "unclosed", "args": {"path": "fixtures/unclosed.json"}, "error": "invalid-json"}
+{"name": "unclosed-element", "args": {"path": "fixtures/unclosed-element.json"}, "error": "invalid-json"}
+{"name": "data-after", "args": {"path": "fixtures/data-after.json"}, "error": "invalid-json"}
+{"name": "two-arrays", "args": {"path": "fixtures/two-arrays.json"}, "error": "invalid-json"}
+{"name": "empty-file", "args": {"path": "fixtures/empty-file.json"}, "error": "invalid-json"}
+{"name": "bad-element", "args": {"path": "fixtures/bad-element.json"}, "error": "invalid-json"}
+{"name": "nan", "args": {"path": "fixtures/nan.json"}, "error": "invalid-json"}
+{"name": "not-object", "args": {"path": "fixtures/not-object.json"}, "error": "bad-record"}
+{"name": "missing-amount", "args": {"path": "fixtures/missing-amount.json"}, "error": "bad-record"}
+{"name": "string-amount", "args": {"path": "fixtures/string-amount.json"}, "error": "bad-record"}
+{"name": "null-amount", "args": {"path": "fixtures/null-amount.json"}, "error": "bad-record"}
+{"name": "bool-amount", "args": {"path": "fixtures/bool-amount.json"}, "error": "bad-record"}
+{"name": "nested-array", "args": {"path": "fixtures/nested-array.json"}, "error": "bad-record"}
+{"name": "not-found", "args": {"path": "fixtures/no-such-file.json"}, "error": "not-found"}
