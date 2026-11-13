@@ -1,0 +1,15 @@
+# The contract of the task "iterate in chunks" (spec 10.2). The function splits a list into consecutive chunks of a fixed size; the last chunk can be shorter.
+problem: iterate-in-chunks
+entry: chunks
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty"
+  - name: size
+    type: "int"
+    pre: "size >= 1"
+returns:
+  type: "list<list<int>>"
+  post: "the chunks in order; each chunk has size items, except the last chunk, which has 1 to size items; the chunks together are the items in input order; an empty list gives no chunks"
+checker: exact
+edge_classes: [empty, size-one, size-larger, size-equal, last-shorter, negative, extremes]
