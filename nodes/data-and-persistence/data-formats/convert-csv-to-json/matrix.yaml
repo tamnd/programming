@@ -1,0 +1,20 @@
+java:
+  status: library
+  reason: The Java SE API has no JSON writer.
+  alternative: a library such as Jackson or Gson.
+rust:
+  status: library
+  reason: The Rust standard library has no JSON writer.
+  alternative: the crates csv and serde_json.
+c:
+  status: library
+  reason: ISO C has no CSV or JSON functions in its standard library.
+  alternative: a library such as libcsv with cJSON or Jansson.
+cpp:
+  status: library
+  reason: The C++ standard library has no CSV parser and no JSON writer.
+  alternative: the library nlohmann/json with a CSV parser.
+bash:
+  status: library
+  reason: Bash has no CSV parser and no JSON writer.
+  alternative: a command-line tool such as Miller (mlr --icsv --ojson) or jq.

@@ -1,0 +1,12 @@
+{"name":"escaped-quote","class":["quoted","escapes"],"args":{"text":"note\n\"She said \"\"hi\"\".\"\n"},"expect":"[{\"note\":\"She said \\\"hi\\\".\"}]"}
+{"name":"newline-in-field","class":["newline-in-field","escapes"],"args":{"text":"id,note\n1,\"one\ntwo\"\n"},"expect":"[{\"id\":\"1\",\"note\":\"one\\ntwo\"}]"}
+{"name":"crlf","class":["crlf","newline-in-field"],"args":{"text":"a,b\r\n1,\"x\r\ny\"\r\n"},"expect":"[{\"a\":\"1\",\"b\":\"x\\ny\"}]"}
+{"name":"backslash-and-tab","class":["escapes"],"args":{"text":"path,cols\nC:\\temp,a\tb\n"},"expect":"[{\"path\":\"C:\\\\temp\",\"cols\":\"a\\tb\"}]"}
+{"name":"numeric-text","class":["numeric-text"],"args":{"text":"id,zip,flag,price\n007,02134,true,1e3\n"},"expect":"[{\"id\":\"007\",\"zip\":\"02134\",\"flag\":\"true\",\"price\":\"1e3\"}]"}
+{"name":"numeric-names","class":["key-order"],"args":{"text":"2024,2023,name\n10,9,x\n"},"expect":"[{\"2024\":\"10\",\"2023\":\"9\",\"name\":\"x\"}]"}
+{"name":"html-chars","class":["html-chars"],"args":{"text":"expr\na<b && c>d\n"},"expect":"[{\"expr\":\"a<b && c>d\"}]"}
+{"name":"empty-fields","class":["empty-field"],"args":{"text":"a,b,c\n,,\n\"\",x,\n"},"expect":"[{\"a\":\"\",\"b\":\"\",\"c\":\"\"},{\"a\":\"\",\"b\":\"x\",\"c\":\"\"}]"}
+{"name":"spaces","class":["whitespace"],"args":{"text":"a,b\n x , y \n"},"expect":"[{\"a\":\" x \",\"b\":\" y \"}]"}
+{"name":"blank-lines","class":["empty"],"args":{"text":"a\n1\n\n2\n\n"},"expect":"[{\"a\":\"1\"},{\"a\":\"2\"}]"}
+{"name":"empty-text","class":["empty"],"args":{"text":""},"expect":"[]"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"text":"city,word\nZürich,東京\nLondon,🙂\n"},"expect":"[{\"city\":\"Zürich\",\"word\":\"東京\"},{\"city\":\"London\",\"word\":\"🙂\"}]"}

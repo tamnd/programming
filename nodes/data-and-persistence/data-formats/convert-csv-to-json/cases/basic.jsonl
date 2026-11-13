@@ -1,0 +1,4 @@
+{"name":"simple","args":{"text":"name,age\nAda,36\nAlan,41\n"},"expect":"[{\"name\":\"Ada\",\"age\":\"36\"},{\"name\":\"Alan\",\"age\":\"41\"}]"}
+{"name":"quoted-comma","class":["quoted"],"args":{"text":"name,city\n\"Lovelace, Ada\",London\n"},"expect":"[{\"name\":\"Lovelace, Ada\",\"city\":\"London\"}]"}
+{"name":"header-only","class":["empty"],"args":{"text":"name,age\n"},"expect":"[]"}
+{"name":"no-final-newline","args":{"text":"a,b\n1,2"},"expect":"[{\"a\":\"1\",\"b\":\"2\"}]"}
