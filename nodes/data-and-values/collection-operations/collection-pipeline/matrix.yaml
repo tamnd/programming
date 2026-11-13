@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the JavaScript array methods and iterator helpers, and the compiler checks the type of the items after each step. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin collections have filter, map, flatMap, groupBy, sortedBy and fold, which are eager. asSequence gives a Sequence with the same functions, which is lazy. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The shell connects commands with |, and each command reads lines and writes lines, for example grep, sort, uniq -c and head. Fowler first saw the pattern in Unix pipelines. No example file exists.
+powershell:
+  status: native
+  reason: The PowerShell pipeline passes objects, not lines, from one command to the next, for example Where-Object, Sort-Object, Group-Object and Select-Object. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A SELECT statement has fixed clauses, not a chain of steps. Fowler says that SQL uses "an approach that's rather like comprehensions". A query can name its steps with WITH clauses, and each step reads the one before it. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not pass collections between operations.
+html:
+  status: n/a
+  reason: HTML is markup. It has no operations on collections.
+css:
+  status: n/a
+  reason: CSS has no operations on collections.
