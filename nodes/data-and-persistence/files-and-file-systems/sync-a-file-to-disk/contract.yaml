@@ -1,0 +1,20 @@
+# The contract of the task "sync a file to disk". Each solution writes a string to a file as UTF-8, with no byte order mark and with no change to the line ends, and does not return until the data is on the storage device: it creates or truncates the file, writes all the bytes, empties the buffer of the language, calls fsync (or the equal call of the language) on the file, closes the file and checks the error of the close, and then calls fsync on the directory that holds the file, so that the name of a new file is on the device too. A test cannot cut the power, so the cases check the content of the file after the call, and the native tests check that each step reports its error.
+problem: sync-a-file-to-disk
+entry: write_synced
+params:
+  - name: path
+    type: string
+    pre: "the path of the file, in a directory that the test makes"
+  - name: text
+    type: string
+    pre: "any string with no NUL and no unpaired surrogate"
+  - name: file
+    type: option<string>
+    mode: inout
+    pre: "the content of the file at path before the call, as UTF-8; null when no file is there"
+returns:
+  type: unit
+  post: "file holds the bytes of text and no old byte, as UTF-8 with no byte order mark, and each \\n, \\r\\n and \\r stays as it is; the file and the entry of the file in its directory were synced before the call returned"
+checker: exact
+edge_classes: [new-file, replace, empty, no-final-newline, non-ascii, line-ends]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error: not-found when the parent directory does not exist (no file is made), and is-a-directory when path names an existing directory (the directory stays as it was).

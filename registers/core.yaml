@@ -12464,7 +12464,7 @@ items:
     group: "files"
     name: "Create a temporary file"
     target: "create-a-temporary-file"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. Related titles, found by keyword: Rosetta Code (Secure temporary file); Go by Example (Temporary Files and Directories)."
   - part: tasks
     group: "files"
@@ -12494,7 +12494,7 @@ items:
     group: "files"
     name: "Lock a file"
     target: "lock-a-file"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "files"

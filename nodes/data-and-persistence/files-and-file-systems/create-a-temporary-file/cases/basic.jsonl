@@ -1,0 +1,3 @@
+{"name":"one-line","class":["one-line"],"args":{"dir":".","prefix":"tmp-","data":"alpha\n"},"expect":"alpha\n"}
+{"name":"many-lines","class":["many-lines"],"args":{"dir":".","prefix":"report-","data":"alpha\nbeta\ngamma\n"},"expect":"alpha\nbeta\ngamma\n"}
+{"name":"in-subdirectory","class":["in-subdirectory"],"args":{"dir":"sub","prefix":"tmp-","data":"alpha\n"},"expect":"alpha\n"}

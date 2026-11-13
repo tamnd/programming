@@ -1,0 +1,3 @@
+{"name":"shared-with-shared","class":["shared-with-shared"],"args":{"path":"data.txt","held":"shared","want":"shared"},"expect":true}
+{"name":"shared-with-exclusive","class":["shared-with-exclusive"],"args":{"path":"data.txt","held":"shared","want":"exclusive"},"expect":false}
+{"name":"exclusive-with-shared","class":["exclusive-with-shared"],"args":{"path":"data.txt","held":"exclusive","want":"shared"},"expect":false}

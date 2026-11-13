@@ -455,3 +455,7 @@ WS8915 reduce-a-list-to-a-value
 3HDHGW rotate-a-list
 PVEFE0 partition-a-list
 T5W8S8 search-a-sorted-list
+GT2DXC create-a-temporary-file
+ZKJVPE lock-a-file
+QKEG1Z sync-a-file-to-disk
+1W9Y7Z write-a-file-atomically

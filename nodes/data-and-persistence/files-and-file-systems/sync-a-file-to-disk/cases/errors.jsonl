@@ -1,0 +1,2 @@
+{"name":"missing-directory","args":{"path":"missing/out.txt","text":"x\n","file":null},"error":"not-found"}
+{"name":"onto-directory","args":{"path":"out.txt","text":"x\n","file":null},"error":"is-a-directory","why":"the test makes out.txt as an empty directory first"}
