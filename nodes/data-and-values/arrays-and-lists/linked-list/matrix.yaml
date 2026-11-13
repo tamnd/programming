@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: "TypeScript has no linked list type. A program declares a node type such as { value: T; next: Node<T> | null } and links plain objects, as in JavaScript. No example file exists."
+kotlin:
+  status: stdlib
+  reason: On the JVM, Kotlin uses java.util.LinkedList. The Kotlin standard library has ArrayDeque but no linked list of its own. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash values cannot refer to each other, so it has no links. Indexed arrays are its only sequence.
+powershell:
+  status: stdlib
+  reason: "[System.Collections.Generic.LinkedList[T]] gives the .NET doubly linked list with AddFirst, AddAfter and Remove. No example file exists because pwsh is not installed."
+sql:
+  status: idiom
+  reason: A table can store the key of the next row in a column, and a recursive common table expression follows the links. Most schemas use an ordering column instead.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no data structures.
+html:
+  status: n/a
+  reason: HTML is markup. The DOM links sibling nodes with nextSibling, but HTML has no list type for data.
+css:
+  status: n/a
+  reason: CSS style rules have no data structures.
