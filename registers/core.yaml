@@ -12152,7 +12152,7 @@ items:
     group: "collections"
     name: "Search a sorted list"
     target: "search-a-sorted-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Binary search)."
   - part: tasks
     group: "collections"
@@ -12230,7 +12230,7 @@ items:
     group: "collections"
     name: "Partition a list"
     target: "partition-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Partition function P, Partition an integer x into n primes)."
   - part: tasks
     group: "collections"
