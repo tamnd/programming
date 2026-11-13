@@ -1,0 +1,2 @@
+{"name":"shrink","class":["shrink"],"args":{"path":"a.txt","length":5,"file":"alpha beta\n"},"expect":"alpha"}
+{"name":"extend","class":["extend"],"args":{"path":"a.txt","length":8,"file":"alpha"},"expect":"alpha\u0000\u0000\u0000"}

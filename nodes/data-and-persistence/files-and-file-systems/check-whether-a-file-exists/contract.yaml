@@ -1,0 +1,13 @@
+# The contract of the task "check whether a file exists". Each solution tells what is at a path: a file, a directory, something else, nothing, or a symbolic link to nothing. It reports an error when it cannot tell, and it never gives "missing" for an error such as a permission error.
+problem: check-whether-a-file-exists
+entry: file_status
+params:
+  - name: path
+    type: string
+    pre: "a path, relative to the node directory"
+returns:
+  type: string
+  post: "file for a regular file, directory for a directory, other for an entry of another type, such as a device or a named pipe, missing if there is no entry at the path, and broken-link for a symbolic link whose target does not exist. A symbolic link to an entry gives the type of that entry. A path through a regular file, such as a.txt/b.txt, gives missing"
+checker: exact
+edge_classes: [directory, empty-file, missing-parent, through-a-file, trailing-slash]
+# The toolchain has no field for errors yet. The native tests make the cases that need symbolic links or permissions in a temporary directory: a link to a file gives file, a link to a directory gives directory, a link to a missing file gives broken-link, /dev/null gives other, and a path in a directory that the process cannot search gives an error, not missing. The tests skip that last case when the process runs as root.

@@ -1,0 +1,2 @@
+{"name":"file","args":{"path":"fixtures/a.txt"},"expect":"file"}
+{"name":"missing","args":{"path":"fixtures/missing.txt"},"expect":"missing"}

@@ -1,0 +1,4 @@
+{"name":"empty-file","class":["empty-file"],"args":{"path":"a.txt","file":""},"expect":true}
+{"name":"missing-parent","class":["missing","missing-parent"],"args":{"path":"no-such-dir/a.txt","file":null},"expect":false}
+{"name":"name-with-spaces","class":["name-with-spaces"],"args":{"path":"my notes.txt","file":"alpha\n"},"expect":true}
+{"name":"non-ascii-name","class":["non-ascii-name"],"args":{"path":"café 日本.txt","file":"alpha\n"},"expect":true}

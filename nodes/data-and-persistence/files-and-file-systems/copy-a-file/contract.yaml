@@ -1,0 +1,23 @@
+# The contract of the task "copy a file". Each solution copies the bytes of the file at src to the path dst, and gives dst the permission bits of src. A file at dst is replaced. src does not change. The times, the owner and other metadata are not part of the contract.
+problem: copy-a-file
+entry: copy_file
+params:
+  - name: src
+    type: string
+    pre: "the path of a regular file, in a directory that the test makes"
+  - name: dst
+    type: string
+    pre: "the path of the copy, in the same directory or in a directory that the test makes"
+  - name: src_file
+    type: string
+    pre: "the content that the test writes to src before the call, as UTF-8"
+  - name: dst_file
+    type: option<string>
+    mode: inout
+    pre: "the content that the test writes to dst before the call, as UTF-8; null for no file"
+returns:
+  type: unit
+  post: "dst_file is the content at dst after the call, byte for byte the content of src. src has the same content as before the call"
+checker: exact
+edge_classes: [replace-existing, empty-file, other-directory, name-with-spaces, non-ascii-name, binary-data]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and change no file: not-found when src is missing or when the directory of dst does not exist, is-a-directory when src or dst is a directory, and same-file when src and dst name the same file, because a copy of a file onto itself can make it empty. The native tests also check, in a temporary directory: dst gets the permission bits of src (0750), also when it replaces a file with other bits; a file of 5000003 bytes, which is more than one buffer, is copied byte for byte; a symbolic link at src gives a copy of its target; and a hard link to src at dst gives same-file, and the file keeps its data.

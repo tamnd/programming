@@ -1,0 +1,5 @@
+{"name":"empty-file","class":["empty-file","replace-existing"],"args":{"src":"a.txt","dst":"b.txt","src_file":"","dst_file":"beta\n"},"expect":""}
+{"name":"other-directory","class":["other-directory"],"args":{"src":"a.txt","dst":"sub/a.txt","src_file":"alpha\n","dst_file":null},"expect":"alpha\n"}
+{"name":"name-with-spaces","class":["name-with-spaces"],"args":{"src":"my notes.txt","dst":"copy of my notes.txt","src_file":"alpha\n","dst_file":null},"expect":"alpha\n"}
+{"name":"non-ascii-name","class":["non-ascii-name"],"args":{"src":"a.txt","dst":"café 日本.txt","src_file":"alpha\n","dst_file":null},"expect":"alpha\n"}
+{"name":"binary-data","class":["binary-data"],"args":{"src":"a.bin","dst":"b.bin","src_file":"\u0000\r\nÿ\u0000","dst_file":null},"expect":"\u0000\r\nÿ\u0000"}

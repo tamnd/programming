@@ -1,0 +1,3 @@
+{"name":"missing-src","args":{"src":"a.txt","dst":"b.txt","src_file":null,"dst_file":null},"error":"not-found"}
+{"name":"missing-dst-dir","args":{"src":"a.txt","dst":"no-such-dir/b.txt","src_file":"alpha\n","dst_file":null},"error":"not-found"}
+{"name":"dst-is-a-directory","args":{"src":"a.txt","dst":"dir","src_file":"alpha\n","dst_file":null},"error":"is-a-directory"}

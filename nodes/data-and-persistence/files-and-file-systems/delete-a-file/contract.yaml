@@ -1,0 +1,16 @@
+# The contract of the task "delete a file". Each solution deletes the file at a path and tells whether a file was there. A missing file is not an error, but each other error, such as a permission error, goes to the caller. A directory is an error, also an empty one.
+problem: delete-a-file
+entry: delete_file
+params:
+  - name: path
+    type: string
+    pre: "the path of the file, in a directory that the test makes"
+  - name: file
+    type: option<string>
+    pre: "the content that the test writes to a file at path before the call, as UTF-8; null for no file"
+returns:
+  type: bool
+  post: "true if a file was at path and the call deleted it, false if no file was there. After the call, no entry is at path. A missing directory in the path also gives false"
+checker: exact
+edge_classes: [missing, empty-file, missing-parent, name-with-spaces, non-ascii-name]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and delete nothing: is-a-directory when the test makes an empty directory at path. The native tests also check, in a temporary directory: a path through a regular file gives false; a symbolic link is deleted and its target stays; a broken link is deleted and gives true; a read-only file is deleted, because on Unix the permissions of the directory decide; a file in a directory with no write permission gives an error and stays (skipped for root); a file that is open is deleted, and on Unix the open file can still be read.

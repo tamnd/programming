@@ -1,0 +1,5 @@
+{"name":"directory","class":["directory"],"args":{"path":"fixtures/dir"},"expect":"directory"}
+{"name":"empty-file","class":["empty-file"],"args":{"path":"fixtures/empty.txt"},"expect":"file"}
+{"name":"missing-parent","class":["missing-parent"],"args":{"path":"fixtures/no-such-dir/a.txt"},"expect":"missing"}
+{"name":"through-a-file","class":["through-a-file"],"args":{"path":"fixtures/a.txt/b.txt"},"expect":"missing"}
+{"name":"trailing-slash-on-a-directory","class":["trailing-slash"],"args":{"path":"fixtures/dir/"},"expect":"directory"}

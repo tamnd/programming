@@ -1,0 +1,2 @@
+{"name":"delete","args":{"path":"a.txt","file":"alpha\n"},"expect":true}
+{"name":"missing","class":["missing"],"args":{"path":"a.txt","file":null},"expect":false}

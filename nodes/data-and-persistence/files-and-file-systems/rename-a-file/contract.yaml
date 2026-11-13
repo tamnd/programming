@@ -1,0 +1,23 @@
+# The contract of the task "rename a file". Each solution gives a file a new name, also in another directory, with one rename call of the operating system. The call is atomic: a program that opens dst sees the old file or the new file, never a part of one. If a file is at dst, the call replaces it.
+problem: rename-a-file
+entry: rename_file
+params:
+  - name: src
+    type: string
+    pre: "the path of a regular file, in a directory that the test makes"
+  - name: dst
+    type: string
+    pre: "the new path, in the same directory or in a directory that the test makes, on the same file system as src"
+  - name: src_file
+    type: string
+    pre: "the content that the test writes to src before the call, as UTF-8"
+  - name: dst_file
+    type: option<string>
+    mode: inout
+    pre: "the content that the test writes to dst before the call, as UTF-8; null for no file"
+returns:
+  type: unit
+  post: "dst_file is the content at dst after the call: the content of src. No entry is at src after the call, except when src and dst are the same path; then the file does not change"
+checker: exact
+edge_classes: [replace-existing, same-path, empty-file, other-directory, name-with-spaces, non-ascii-name]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and change nothing: not-found when src is missing or when the directory of dst does not exist, is-a-directory when the test makes a directory at dst. The native tests also check, in a temporary directory: a symbolic link at src is renamed, and its target stays; a program that has the old dst open still reads the old data; and, on Linux, when /dev/shm is on another file system, a rename to it gives a cross-device error and src stays.

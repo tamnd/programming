@@ -1,0 +1,20 @@
+# The contract of the task "truncate a file". Each solution sets the size of an existing file to length bytes. If the file was longer, the bytes after length are gone. If the file was shorter, the size grows, and the new bytes read as zero bytes. The function does not make a missing file.
+problem: truncate-a-file
+entry: truncate_file
+params:
+  - name: path
+    type: string
+    pre: "the path of a regular file, in a directory that the test makes"
+  - name: length
+    type: int
+    pre: "the new size in bytes, 0 or more"
+  - name: file
+    type: string
+    mode: inout
+    pre: "the content that the test writes to path before the call, as UTF-8"
+returns:
+  type: unit
+  post: "file is the content at path after the call: the first length bytes of the old content, then zero bytes up to length"
+checker: exact
+edge_classes: [shrink, extend, same-length, to-zero, empty-file, name-with-spaces]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and change nothing: not-found when no file is at path (the function must not make one), is-a-directory for a directory, and invalid-length for a length under 0, in the languages where the type of length lets the caller give one. The native tests also check, in a temporary directory: a file that another stream has open in append mode gets the next write at the new end; and a file that another stream has open at a position after the new end gets a hole of zero bytes before the next write.
