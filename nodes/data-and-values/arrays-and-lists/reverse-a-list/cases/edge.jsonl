@@ -1,0 +1,7 @@
+{"name":"empty","class":["empty"],"args":{"items":[]},"expect":[]}
+{"name":"single","class":["single"],"args":{"items":[5]},"expect":[5]}
+{"name":"two","class":["boundary"],"args":{"items":[1,2]},"expect":[2,1]}
+{"name":"duplicates","class":["duplicates"],"args":{"items":[1,1,2]},"expect":[2,1,1]}
+{"name":"palindrome","class":["duplicates"],"args":{"items":[1,2,1]},"expect":[1,2,1]}
+{"name":"negative","class":["negative"],"args":{"items":[-1,0,-3]},"expect":[-3,0,-1]}
+{"name":"limit","class":["limit"],"args":{"items":[2147483647,-2147483648,0]},"expect":[0,-2147483648,2147483647]}

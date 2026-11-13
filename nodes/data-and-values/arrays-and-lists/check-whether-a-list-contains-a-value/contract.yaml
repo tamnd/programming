@@ -1,0 +1,15 @@
+# The contract of the task "check whether a list contains a value" (spec 10.2). The function does not change the list.
+problem: check-whether-a-list-contains-a-value
+entry: contains
+params:
+  - name: items
+    type: "list<int>"
+    pre: "a list of 0 to 1000 32-bit signed integers"
+  - name: value
+    type: "int"
+    pre: "a 32-bit signed integer"
+returns:
+  type: "bool"
+  post: "true if and only if some item of items is equal to value"
+checker: exact
+edge_classes: [empty, single, boundary, duplicates, negative, limit]

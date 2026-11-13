@@ -12200,13 +12200,13 @@ items:
     group: "collections"
     name: "Reverse a list"
     target: "reverse-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Reverse a string, Reverse words in a string)."
   - part: tasks
     group: "collections"
     name: "Check whether a list contains a value"
     target: "check-whether-a-list-contains-a-value"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Search a list, Search a list of records)."
   - part: tasks
     group: "collections"

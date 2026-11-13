@@ -255,6 +255,7 @@ number: 10 >= 9
 ## Related tasks
 
 - [[sort-a-list]]: sort the list before the search.
+- [[check-whether-a-list-contains-a-value]]: test for a value in a list that is not sorted.
 - [[find-the-largest-element]]: find a value without a sorted list.
 - [[filter-a-list]]: find all the items that pass a test.
 - [[rotate-a-list]]: a rotated sorted list is not sorted, so a binary search does not work on it.
