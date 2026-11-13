@@ -176,7 +176,7 @@ The example files show these forms. Python shows a list as the usual array, nega
 
 ## Variations and related ideas
 
-- **Dynamic arrays.** A dynamic array keeps a fixed array and a count of the items in use. When the array is full, it makes a bigger array and copies the items. Wikipedia says: "If this operation is done infrequently, insertions at the end of the array require only amortized constant time"[^1]. Python `list`, Java `ArrayList`, C# `List<T>`, C++ `std::vector`, Rust `Vec` and Go slices are dynamic arrays. See [dynamic array](/dynamic-array/).
+- **Dynamic arrays.** A dynamic array keeps a fixed array and a count of the items in use. When the array is full, it makes a bigger array and copies the items. Wikipedia says: "If this operation is done infrequently, insertions at the end of the array require only amortized constant time"[^1]. Python `list`, Java `ArrayList`, C# `List<T>`, C++ `std::vector`, Rust `Vec` and Go slices are dynamic arrays. See [dynamic array](/dynamic-array/) and [list](/list/).
 - **Slices and views.** A slice is a view of a part of an array: a pointer, a length and in Go a capacity. Rust says: "Arrays coerce to slices ([T]), so a slice method may be called on an array. Indeed, this provides most of the API for working with arrays"[^5].
 - **Multidimensional arrays.** A grid can be one block of memory with a formula for two indices, or an array of arrays, which C# calls a jagged array[^7].
 - **Arrays of bytes.** A byte array holds raw data, such as the content of a file. JavaScript typed arrays share one buffer of bytes in different numeric types[^10]. A string is a sequence of characters, and in many languages it is stored in an array of bytes or code units. See [string](/string-concept/).
