@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no comprehension syntax. It uses the JavaScript methods filter, map and flatMap, and the compiler checks the types of the items and the result. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin has no comprehension syntax. The standard library has filter, map, flatMap and associate on collections, and sequence builds a lazy chain. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash has no comprehension. A for loop over words with a test appends to an array, or a pipeline of commands such as grep and sed filters and changes lines. No example file exists.
+powershell:
+  status: idiom
+  reason: A pipeline with Where-Object for the filter and ForEach-Object for the expression gives a new array. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: A SELECT statement has the same three parts as a comprehension. FROM names the source, WHERE is the filter and the select list gives the expression for each row. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not build collections.
+html:
+  status: n/a
+  reason: HTML is markup. It has no expressions that build collections.
+css:
+  status: n/a
+  reason: CSS has no expressions that build collections from other collections.
