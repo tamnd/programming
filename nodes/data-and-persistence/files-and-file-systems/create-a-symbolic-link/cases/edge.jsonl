@@ -1,0 +1,5 @@
+{"name":"dangling-target","class":["dangling-target"],"args":{"target":"missing.txt","link":"link"},"expect":"missing.txt"}
+{"name":"relative-target","class":["relative-target"],"args":{"target":"a.txt","link":"sub/link"},"expect":"a.txt"}
+{"name":"parent-target","class":["parent-target"],"args":{"target":"../a.txt","link":"sub/link"},"expect":"../a.txt"}
+{"name":"name-with-spaces","class":["name-with-spaces"],"args":{"target":"my notes.txt","link":"my link"},"expect":"my notes.txt"}
+{"name":"non-ascii-name","class":["non-ascii-name"],"args":{"target":"café 日本.txt","link":"lien 日本"},"expect":"café 日本.txt"}

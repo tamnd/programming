@@ -1,0 +1,16 @@
+# The contract of the task "create a symbolic link". Each solution makes a symbolic link at the path link that holds the string target, with the symlink call of the language, and returns the target that it reads back from the link with readlink. The target is stored as it is: it need not exist, and a relative target is read from the directory of the link, not from the current directory. Each test runs in a new temporary directory that holds the file a.txt and the directory sub, which holds the file b.txt.
+problem: create-a-symbolic-link
+entry: make_symlink
+params:
+  - name: target
+    type: string
+    pre: "the string that the link holds: a relative or absolute path, which need not exist; not empty"
+  - name: link
+    type: string
+    pre: "the path of the new link, relative to the test directory; no file or link has this path"
+returns:
+  type: string
+  post: "the target that the link holds, read back with readlink; it is equal to target"
+checker: exact
+edge_classes: [dangling-target, relative-target, parent-target, name-with-spaces, non-ascii-name]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error: exists when a file, a directory or a link already has the path link, and not-found when the directory of link does not exist. The native tests also check, in the temporary directory: a dangling link at the path link gives exists, not a new link; the new link is a symbolic link (lstat), and a link to a.txt reads the data of a.txt; an absolute target is stored as it is; and when link names a directory, no link is made in that directory.

@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses the node:fs module, with the types from @types/node, so link, symlink, readlink and lstat are the same as in the JavaScript example. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM uses java.nio.file, and the kotlin.io.path package adds extensions of Path such as createLinkPointingTo, createSymbolicLinkPointingTo and readSymbolicLink, so the calls of the Java example do the work. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The ln command makes a hard link, ln -s makes a symbolic link, and the test -L checks for a symbolic link. GNU and BSD systems also have a readlink command. No example file exists.
+powershell:
+  status: native
+  reason: New-Item with -ItemType HardLink, SymbolicLink or Junction makes a link, and the LinkType and Target properties of an item read it. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL works on tables in a database. It does not make or read links in a file system.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not make or read links.
+html:
+  status: n/a
+  reason: A web page cannot make or read a link in the local file system.
+css:
+  status: n/a
+  reason: CSS gives style rules to a document. It does not make or read files.
