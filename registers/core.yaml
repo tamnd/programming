@@ -16442,7 +16442,7 @@ items:
     group: "canon"
     name: "Reversibility"
     target: "reversibility"
-    status: "planned"
+    status: "node"
     reason: "A practice that The Pragmatic Programmer, a canon book of spec 13.3, names."
   - part: practices
     group: "canon"
