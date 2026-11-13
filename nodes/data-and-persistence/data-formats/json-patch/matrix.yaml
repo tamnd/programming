@@ -1,0 +1,42 @@
+typescript:
+  status: native
+  reason: TypeScript runs on a JavaScript runtime and uses its JSON object. No example file exists, because the JavaScript example applies.
+java:
+  status: library
+  reason: The Java SE API has no JSON parser. Jakarta JSON Processing defines the interfaces JsonPatch and JsonMergePatch.
+  alternative: jakarta.json.JsonPatch from a Jakarta JSON Processing implementation.
+kotlin:
+  status: library
+  reason: The Kotlin standard library has no JSON. A patch function works on the JsonElement tree of kotlinx.serialization. No example file exists because kotlinc is not installed.
+  alternative: kotlinx.serialization, or Jakarta JSON Processing on the JVM.
+rust:
+  status: library
+  reason: The Rust standard library has no JSON parser. The crate serde_json gives the Value tree, and its method Value::pointer_mut finds a target.
+  alternative: the crate json-patch, which works on serde_json values.
+c:
+  status: library
+  reason: ISO C has no JSON functions in its standard library.
+  alternative: a JSON library with a mutable tree of values, such as Jansson or cJSON.
+cpp:
+  status: library
+  reason: The C++ standard library has no JSON parser.
+  alternative: the library nlohmann/json, which has patch and merge_patch functions.
+bash:
+  status: library
+  reason: Bash has no JSON parser.
+  alternative: the command-line tool jq; the filter `. * $patch` merges objects, but it does not remove members for null, so it is not a merge patch.
+powershell:
+  status: stdlib
+  reason: ConvertFrom-Json gives objects and arrays, and a script changes them and writes the result with ConvertTo-Json. No example file exists because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: SQL databases change JSON columns with their own functions, such as json_set in SQLite.
+regex:
+  status: n/a
+  reason: a regular expression cannot change a JSON document safely.
+html:
+  status: n/a
+  reason: markup has no JSON values to patch.
+css:
+  status: n/a
+  reason: style sheets have no JSON values to patch.
