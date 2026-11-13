@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: a class with typed methods over a database client, and an interface for the row type; the JavaScript example shows the same class without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a class with one method per operation over ADO.NET commands with parameters, returning records or a DataTable; the Java example shows the same design with records.
+  alternative: the Java example, with records.
+cpp:
+  status: idiom
+  reason: a class over a database client library, returning structs; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a set of functions that take a connection and prepare one statement each, returning structs; the C API of SQLite fits this shape.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a class with one function per operation, returning data classes; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL is the language inside the gateway; views and stored procedures can name queries, but the gateway object belongs to the client language.
+bash:
+  status: n/a
+  reason: the shell has no objects to hold the operations of a table.
+powershell:
+  status: idiom
+  reason: a class with methods over database commands; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no tables and no operations.
+html:
+  status: n/a
+  reason: markup has no tables of data to access.
+css:
+  status: n/a
+  reason: style rules have no data access.

@@ -436,3 +436,7 @@ G23VJ9 count-the-graphemes-of-a-string
 KPSK22 normalize-unicode-text
 ZN3FT7 concurrency-pattern
 2J1DHE master-worker-pattern
+AVTYES active-record
+MS2MYG data-mapper
+01FS9B row-data-gateway
+GZ4XD3 table-data-gateway
