@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript slice, splice and subarray methods with types. slice on a T[] returns a T[]. No example file exists.
+kotlin:
+  status: stdlib
+  reason: slice(range) and copyOfRange copy a part of a list or an array, and subList returns a view as in Java. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: "${a[@]:start:count} expands to a range of an indexed array, and ${s:start:len} gives a substring. The result is a copy. No example file exists."
+powershell:
+  status: native
+  reason: "$a[1..3] makes a new array with the items at 1, 2 and 3, so the end is included. $a[-2..-1] takes the last two items. No example file exists because pwsh is not installed."
+sql:
+  status: idiom
+  reason: ORDER BY with LIMIT and OFFSET, or OFFSET and FETCH, returns a range of the sorted rows. Without ORDER BY the range has no fixed order.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no slices.
+html:
+  status: n/a
+  reason: HTML is markup. It has no data operations.
+css:
+  status: n/a
+  reason: CSS style rules have no slices. Selectors such as nth-child select elements, not data.
