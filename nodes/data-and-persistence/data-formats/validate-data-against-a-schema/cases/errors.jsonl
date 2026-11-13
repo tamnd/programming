@@ -1,0 +1,5 @@
+{"name":"trailing-comma","args":{"schema":"{\"type\": \"array\"}","instance":"[1, 2,]"},"error":"invalid-json"}
+{"name":"nan","args":{"schema":"{\"type\": \"number\"}","instance":"NaN"},"error":"invalid-json"}
+{"name":"empty-instance","args":{"schema":"{}","instance":""},"error":"invalid-json"}
+{"name":"bad-schema","args":{"schema":"{\"type\": ","instance":"1"},"error":"invalid-json"}
+{"name":"single-quotes","args":{"schema":"{}","instance":"{'a': 1}"},"error":"invalid-json"}

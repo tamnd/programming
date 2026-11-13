@@ -1,0 +1,44 @@
+typescript:
+  status: library
+  reason: TypeScript types are removed before the program runs, so they cannot check JSON at run time. No example file exists, because the JavaScript example applies.
+  alternative: a validator such as Ajv, with the schema or with types generated from it.
+java:
+  status: library
+  reason: The Java SE API has no JSON parser and no JSON Schema validator.
+  alternative: a JSON Schema validator library for the JVM that supports draft 2020-12.
+kotlin:
+  status: library
+  reason: The Kotlin standard library has no JSON. No example file exists because kotlinc is not installed.
+  alternative: a JSON Schema validator for the JVM.
+rust:
+  status: library
+  reason: The Rust standard library has no JSON parser.
+  alternative: a JSON Schema validator crate over serde_json values.
+c:
+  status: library
+  reason: ISO C has no JSON functions in its standard library.
+  alternative: a JSON Schema validator library for C, or a validator in another language at the boundary of the program.
+cpp:
+  status: library
+  reason: The C++ standard library has no JSON parser.
+  alternative: a JSON Schema validator over nlohmann/json or another JSON library.
+bash:
+  status: library
+  reason: Bash has no JSON parser.
+  alternative: a command-line validator, called from the script.
+powershell:
+  status: stdlib
+  reason: PowerShell 7 has the cmdlet Test-Json with the parameter -Schema. No example file exists because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: library
+  reason: Standard SQL has no JSON Schema function. Some databases add one, such as JSON_SCHEMA_VALID in MySQL.
+  alternative: a CHECK constraint with the JSON functions of the database, or validation in the application.
+regex:
+  status: n/a
+  reason: a regular expression cannot validate the structure of a JSON document; the keyword pattern uses regular expressions for strings.
+html:
+  status: n/a
+  reason: markup does not validate JSON.
+css:
+  status: n/a
+  reason: style sheets do not validate JSON.

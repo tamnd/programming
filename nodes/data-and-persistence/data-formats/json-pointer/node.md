@@ -8,7 +8,7 @@ area: data-and-persistence/data-formats
 level: advanced
 summary: >-
   JSON Pointer (RFC 6901) is a string such as /users/0/name that identifies one value inside a JSON document. JSON Patch, JSON Schema and many APIs use it to name a location.
-see_also: [json, json-patch, jsonpath]
+see_also: [json, json-patch, jsonpath, json-schema]
 sources:
 - url: https://www.rfc-editor.org/rfc/rfc6901
   title: "P. Bryan (Ed.), K. Zyp, M. Nottingham (Ed.), RFC 6901: JavaScript Object Notation (JSON) Pointer, April 2013"
