@@ -27,6 +27,9 @@ Console.WriteLine(Names(indexed.Select(x => x.p)));
 ```
 
 ```output
+bob di ann cy ed
+bob di cy ed ann
+bob di ann cy ed
 ```
 
 - Verdict: native. LINQ `OrderBy` is stable, so equal teams keep the name order, and `ThenBy` adds the grade. `List<T>.Sort` is not stable, so the program pairs each item with its position and compares the position when the teams are equal.
