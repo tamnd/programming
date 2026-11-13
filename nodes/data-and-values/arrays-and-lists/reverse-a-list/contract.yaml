@@ -1,0 +1,12 @@
+# The contract of the task "reverse a list" (spec 10.2). The function returns a new list, and the input list does not change.
+problem: reverse-a-list
+entry: reverse
+params:
+  - name: items
+    type: "list<int>"
+    pre: "a list of 0 to 1000 32-bit signed integers"
+returns:
+  type: "list<int>"
+  post: "a new list of the same items in the opposite order: item i of the result is items[len(items) - 1 - i]"
+checker: exact
+edge_classes: [empty, single, boundary, duplicates, negative, limit]

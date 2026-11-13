@@ -1,0 +1,2 @@
+{"name":"present","args":{"items":[1,2,3],"value":2},"expect":true}
+{"name":"absent","args":{"items":[1,2,3],"value":4},"expect":false}
