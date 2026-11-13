@@ -253,7 +253,7 @@ int main() {
 1
 ```
 
-- **Bash ${items:0:2} is a part of the first item.** "Referencing an array variable without a subscript is equivalent to referencing with a subscript of 0."[^10] Thus `${items:0:2}` is the first 2 characters of `123`. With `@`, "the result is the length members of the array beginning with ${parameter[offset]}"[^10]:
+- **Bash `${items:0:2}` is a part of the first item.** "Referencing an array variable without a subscript is equivalent to referencing with a subscript of 0."[^10] Thus `${items:0:2}` is the first 2 characters of `123`. With `@`, "the result is the length members of the array beginning with `${parameter[offset]}`"[^10]:
 
 ```bash run id=bash-array-slice
 #!/usr/bin/env bash

@@ -242,7 +242,7 @@ int main() {
 9 2 3
 ```
 
-- **Bash ${#b} is not the number of items.** "${#name[subscript]} expands to the length of ${name[subscript]}. If subscript is ‘@’ or ‘*’, the expansion is the number of elements in the array."[^9] Also, "Referencing an array variable without a subscript is equivalent to referencing with a subscript of 0."[^9] Thus `${#b}` is the length of the text `10`:
+- **Bash `${#b}` is not the number of items.** "`${#name[subscript]}` expands to the length of `${name[subscript]}`. If subscript is ‘@’ or ‘*’, the expansion is the number of elements in the array."[^9] Also, "Referencing an array variable without a subscript is equivalent to referencing with a subscript of 0."[^9] Thus `${#b}` is the length of the text `10`:
 
 ```bash run id=bash-array-length
 #!/usr/bin/env bash
