@@ -1,0 +1,17 @@
+# The contract of the task "validate data against a schema" (spec 10.2). Each solution parses a JSON Schema and a JSON instance, applies nine keywords of JSON Schema 2020-12 and the two boolean schemas, and lists each assertion that fails with its instance location and keyword location, as in the output units of the core specification (section 12.3).
+problem: validate-data-against-a-schema
+entry: validate
+params:
+  - name: schema
+    type: string
+    pre: "a JSON text as in RFC 8259 that is a JSON Schema: true, false, or an object. In an object, type is a type name or an array of type names; minimum and maximum are numbers; minLength and maxLength are non-negative integers; required is an array of strings; properties is an object whose values are schemas; additionalProperties and items are schemas. Any other keyword is ignored, as the core specification says for keywords that an implementation does not support. The dollar keywords, such as a reference, do not occur"
+  - name: instance
+    type: string
+    pre: "a JSON text as in RFC 8259. In both texts, no object has a name twice, each name holds only characters below U+D800, no string holds an unpaired surrogate, and each number has at most 15 significant digits and a magnitude from 1e-300 to 1e300, or is zero"
+returns:
+  type: "list<tuple<string, string>>"
+  post: "one pair for each assertion that fails, sorted by the first element and then the second in code point order, and empty when the instance is valid. The first element is the instance location and the second is the keyword location, both as JSON Pointers (RFC 6901) from the root, where a name has each ~ written as ~0 and then each / written as ~1. The false schema fails at its own location. type fails when the instance has none of the listed types, where integer matches any number with a zero fractional part and number matches every number. minimum, maximum, minLength and maxLength apply only to a number or a string, and are inclusive; the length of a string is its number of code points. required applies only to an object and fails once when one or more names are missing. properties applies its schema for each name to the member of that name, if the member exists; additionalProperties applies its schema to each other member; items applies its schema to each element of an array"
+checker: exact
+edge_classes: [required, type, range, length, items, additional, integer, boolean, null-value, unknown-keyword, boolean-schema, pointer-escape, sort-order, inherited-name, non-ascii, nested]
+# The toolchain has no field for errors yet, and it loads only the basic, edge and regress case files. cases/errors.jsonl holds the inputs on which each solution must report invalid-json, because the schema or the instance is not a JSON text: a trailing comma, NaN, an empty text, a text with no end, and single quotes.
+# The standard libraries of the tier-1 languages have no JSON Schema validator, so each solution implements the nine keywords with the JSON parser of its standard library. matrix.yaml holds the verdict for each language and the library that is used instead.

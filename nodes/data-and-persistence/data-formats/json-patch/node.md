@@ -8,7 +8,7 @@ area: data-and-persistence/data-formats
 level: advanced
 summary: >-
   JSON Patch (RFC 6902) is a list of operations that change a JSON document. JSON Merge Patch (RFC 7396) is a partial document that is merged into the target. Both are bodies for HTTP PATCH.
-see_also: [json, json-pointer, jsonpath]
+see_also: [json, json-pointer, jsonpath, json-schema]
 sources:
 - url: https://www.rfc-editor.org/rfc/rfc5789
   title: "L. Dusseault, J. Snell, RFC 5789: PATCH Method for HTTP, March 2010"

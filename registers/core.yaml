@@ -12608,7 +12608,7 @@ items:
     group: "formats"
     name: "Validate data against a schema"
     target: "validate-data-against-a-schema"
-    status: "planned"
+    status: "node"
     reason: "A job on a common data format. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "dates"
@@ -16268,7 +16268,7 @@ items:
     group: "by-hand"
     name: "JSON Schema"
     target: "json-schema"
-    status: "card"
+    status: "node"
     reason: "The schema language of JSON documents, used by OpenAPI and by editors."
   - part: formats
     group: "by-hand"
