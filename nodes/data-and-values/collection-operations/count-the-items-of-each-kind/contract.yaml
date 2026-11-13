@@ -1,0 +1,12 @@
+# The contract of the task "count the items of each kind" (spec 10.2). The function counts how many times each distinct item is in a list, and gives the counts in ascending order of the item.
+problem: count-the-items-of-each-kind
+entry: count_items
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty"
+returns:
+  type: "list<tuple<int, int>>"
+  post: "one pair (item, count) for each distinct item, in ascending order of the item; count is the number of times the item is in the list, and it is at least 1"
+checker: exact
+edge_classes: [empty, single, negative, distinct, order, zero, extremes]

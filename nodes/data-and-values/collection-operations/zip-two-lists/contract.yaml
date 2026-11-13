@@ -1,0 +1,15 @@
+# The contract of the task "zip two lists" (spec 10.2). The function pairs the items of two lists at the same index, and stops at the end of the shorter list.
+problem: zip-two-lists
+entry: zip_pairs
+params:
+  - name: a
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty"
+  - name: b
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty; the length can be different from the length of a"
+returns:
+  type: "list<tuple<int, int>>"
+  post: "the pair (a[i], b[i]) for each index i that is in both lists, in index order; the length is the smaller of the two lengths"
+checker: exact
+edge_classes: [empty, one-empty, shorter, negative, extremes, duplicates]
