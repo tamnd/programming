@@ -1,0 +1,7 @@
+{"name":"empty","class":["empty"],"args":{"items":[]},"expect":[]}
+{"name":"single","class":["single"],"args":{"items":[7]},"expect":[49]}
+{"name":"negative","class":["negative"],"args":{"items":[-3,-1]},"expect":[9,1]}
+{"name":"zero","class":["zero"],"args":{"items":[0]},"expect":[0]}
+{"name":"limit","class":["limit"],"args":{"items":[46340,-46340]},"expect":[2147395600,2147395600]}
+{"name":"order","class":["order"],"args":{"items":[3,1,2]},"expect":[9,1,4]}
+{"name":"duplicates","class":["duplicates"],"args":{"items":[2,2]},"expect":[4,4]}

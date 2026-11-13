@@ -12134,7 +12134,7 @@ items:
     group: "collections"
     name: "Sort a list"
     target: "sort-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Sort an integer array, Natural sorting); Go by Example (Sorting, Sorting by Functions)."
   - part: tasks
     group: "collections"
@@ -12158,19 +12158,19 @@ items:
     group: "collections"
     name: "Find the largest element"
     target: "find-the-largest-element"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Greatest element of a list)."
   - part: tasks
     group: "collections"
     name: "Filter a list"
     target: "filter-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Filter, Median filter)."
   - part: tasks
     group: "collections"
     name: "Map over a list"
     target: "map-over-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Apply a callback to an array, Map range); Rust by Example (map for Result, Combinators: map)."
   - part: tasks
     group: "collections"

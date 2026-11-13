@@ -1,0 +1,12 @@
+# The contract of the task "sort a list" (spec 10.2). The function returns the items in ascending numeric order. The comparison is by value, not by the text of the numbers, so 9 comes before 10.
+problem: sort-a-list
+entry: sort_ints
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty"
+returns:
+  type: "list<int>"
+  post: "the items in ascending numeric order; equal items stay, so the result has the same length as the input"
+checker: exact
+edge_classes: [empty, single, sorted, reversed, duplicates, negative, digits, extremes]
