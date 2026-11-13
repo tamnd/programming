@@ -1,0 +1,12 @@
+# The contract of the task "compute the Cartesian product" (spec 10.2). The function returns each tuple that takes one item from each list, in the order of nested loops.
+problem: compute-the-cartesian-product
+entry: cartesian_product
+params:
+  - name: lists
+    type: "list<list<int>>"
+    pre: "each item is a 32-bit signed integer; the outer list and each inner list can be empty; the product of the lengths is at most 100000"
+returns:
+  type: "list<list<int>>"
+  post: "each tuple (lists[0][i0], lists[1][i1], ...) once, in the order of nested loops with the last index changing fastest; one empty tuple when there are no lists; no tuples when a list is empty"
+checker: exact
+edge_classes: [no-lists, one-empty, single, duplicates, negative, extremes]

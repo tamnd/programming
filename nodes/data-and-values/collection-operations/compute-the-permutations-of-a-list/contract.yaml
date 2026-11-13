@@ -1,0 +1,12 @@
+# The contract of the task "compute the permutations of a list" (spec 10.2). The function returns each order of the items, with the items treated as different by their position.
+problem: compute-the-permutations-of-a-list
+entry: permutations
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty; the length is at most 8; items can be equal"
+returns:
+  type: "list<list<int>>"
+  post: "the n! orders of the items, in the lexicographic order of the positions: the order of the input first, and the reverse order last; equal items at different positions count as different items"
+checker: exact
+edge_classes: [empty, single, duplicates, unsorted, extremes]

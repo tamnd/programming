@@ -1,0 +1,15 @@
+# The contract of the task "compute the combinations of a list" (spec 10.2). The function returns each choice of k items, with the items treated as different by their position.
+problem: compute-the-combinations-of-a-list
+entry: combinations
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty; the length is at most 16; items can be equal"
+  - name: k
+    type: int
+    pre: "0 <= k; k can be more than the length"
+returns:
+  type: "list<list<int>>"
+  post: "each choice of k positions, with the items in the order of their positions; the choices come in the lexicographic order of the positions; k = 0 gives one empty choice, and k more than the length gives no choices"
+checker: exact
+edge_classes: [zero-k, empty, k-too-large, all, duplicates, unsorted, extremes]

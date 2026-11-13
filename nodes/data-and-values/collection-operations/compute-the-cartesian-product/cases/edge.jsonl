@@ -1,0 +1,6 @@
+{"name":"no-lists","class":["no-lists"],"args":{"lists":[]},"expect":[[]]}
+{"name":"one-empty","class":["one-empty"],"args":{"lists":[[1,2],[]]},"expect":[]}
+{"name":"single","class":["single"],"args":{"lists":[[7,8,9]]},"expect":[[7],[8],[9]]}
+{"name":"duplicates","class":["duplicates"],"args":{"lists":[[1,1],[2]]},"expect":[[1,2],[1,2]]}
+{"name":"negative","class":["negative"],"args":{"lists":[[-1],[-2,-3]]},"expect":[[-1,-2],[-1,-3]]}
+{"name":"extremes","class":["extremes"],"args":{"lists":[[-2147483648,2147483647],[0]]},"expect":[[-2147483648,0],[2147483647,0]]}
