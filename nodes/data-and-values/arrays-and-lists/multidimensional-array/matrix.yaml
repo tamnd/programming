@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript uses the JavaScript forms, arrays of arrays and typed arrays with an index formula, with types such as number[][]. No example file exists.
+kotlin:
+  status: native
+  reason: Array<IntArray> and List<List<T>> are arrays of rows, made with Array(rows) { IntArray(cols) }. Each row is a separate object, so rows can differ in length. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash arrays have one dimension. An associative array with keys such as "1,2" can imitate a table, but it is not a multidimensional array.
+powershell:
+  status: native
+  reason: An array of arrays works as in .NET, and New-Object 'int[,]' 2,3 makes a rectangular .NET array. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: A table with rows and columns is the usual form of two-dimensional data. PostgreSQL arrays can have more than one dimension, and a multidimensional PostgreSQL array must be rectangular.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no arrays.
+html:
+  status: n/a
+  reason: HTML is markup. The table element shows rows and columns, but it holds no data values.
+css:
+  status: n/a
+  reason: CSS Grid places elements in rows and columns. It is layout, not data.
