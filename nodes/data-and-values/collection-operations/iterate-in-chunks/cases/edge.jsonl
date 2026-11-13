@@ -1,0 +1,7 @@
+{"name":"empty","class":["empty"],"args":{"items":[],"size":3},"expect":[]}
+{"name":"size-one","class":["size-one"],"args":{"items":[7,8,9],"size":1},"expect":[[7],[8],[9]]}
+{"name":"size-larger","class":["size-larger"],"args":{"items":[1,2],"size":5},"expect":[[1,2]]}
+{"name":"size-equal","class":["size-equal"],"args":{"items":[1,2,3],"size":3},"expect":[[1,2,3]]}
+{"name":"last-shorter","class":["last-shorter"],"args":{"items":[1,2,3,4],"size":3},"expect":[[1,2,3],[4]]}
+{"name":"negative","class":["negative"],"args":{"items":[-1,-2,-3],"size":2},"expect":[[-1,-2],[-3]]}
+{"name":"extremes","class":["extremes"],"args":{"items":[-2147483648,2147483647,0],"size":2},"expect":[[-2147483648,2147483647],[0]]}

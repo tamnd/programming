@@ -1,0 +1,12 @@
+# The contract of the task "group items by a key" (spec 10.2). The function groups words by their length, gives the groups in ascending order of the length, and keeps the words of each group in input order.
+problem: group-items-by-a-key
+entry: group_by_length
+params:
+  - name: words
+    type: "list<string>"
+    pre: "each word has 1 or more ASCII letters, so its length is the same in bytes, code units and code points; the list can be empty"
+returns:
+  type: "list<tuple<int, list<string>>>"
+  post: "one pair (length, words) for each distinct length, in ascending order of the length; the words of a pair are the words of that length, in input order"
+checker: exact
+edge_classes: [empty, single, same-length, order, duplicates, long]

@@ -1,0 +1,2 @@
+{"name":"fruits","args":{"words":["apple","fig","kiwi","pear","plum","date"]},"expect":[[3,["fig"]],[4,["kiwi","pear","plum","date"]],[5,["apple"]]]}
+{"name":"letters","args":{"words":["a","bb","c"]},"expect":[[1,["a","c"]],[2,["bb"]]]}

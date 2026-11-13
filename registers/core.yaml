@@ -12218,7 +12218,7 @@ items:
     group: "collections"
     name: "Group items by a key"
     target: "group-items-by-a-key"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Top rank per group, World Cup group stage)."
   - part: tasks
     group: "collections"
@@ -12344,7 +12344,7 @@ items:
     group: "collections"
     name: "Iterate in chunks"
     target: "iterate-in-chunks"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "collections"
