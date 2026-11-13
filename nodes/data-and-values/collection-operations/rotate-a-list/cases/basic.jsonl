@@ -1,0 +1,2 @@
+{"name":"by-two","args":{"items":[1,2,3,4,5],"k":2},"expect":[3,4,5,1,2]}
+{"name":"by-one","args":{"items":[1,2,3],"k":1},"expect":[2,3,1]}
