@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: a class with typed fields for the columns, static finders and a save method; TypeORM supports this form with its BaseEntity class; the JavaScript example shows the same class without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a class with fields for the columns, the domain methods, and Save and Delete methods over ADO.NET commands with parameters; the Java example shows the same design.
+  alternative: the Java example, with records.
+cpp:
+  status: idiom
+  reason: a class with fields for the columns, the domain methods and a save method over a database client library; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a struct for the row with functions for the domain rules and for saving, which take a connection and the struct.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a class with var properties for the columns, a companion object with the finders, and a save function; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL is the language of the statements that the record runs; the record object belongs to the client language.
+bash:
+  status: n/a
+  reason: the shell has no objects to stand for rows.
+powershell:
+  status: idiom
+  reason: a class with properties for the columns, the domain methods and a save method over database commands; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no rows and no storage.
+html:
+  status: n/a
+  reason: markup has no tables of data to access.
+css:
+  status: n/a
+  reason: style rules have no data access.
