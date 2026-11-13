@@ -1,0 +1,43 @@
+javascript:
+  status: library
+  reason: browsers have the tree parser DOMParser, and Node.js has no built-in XML parser; JSON.parse builds a tree of values.
+  alternative: the packages sax or saxes for events, and @xmldom/xmldom for a tree.
+typescript:
+  status: library
+  reason: TypeScript has the same runtime as JavaScript; Node.js has no built-in XML parser.
+  alternative: the packages sax or saxes for events, and @xmldom/xmldom for a tree.
+rust:
+  status: library
+  reason: the Rust standard library has no XML parser.
+  alternative: quick-xml is a pull parser, and roxmltree builds a read-only tree.
+c:
+  status: library
+  reason: ISO C has no XML functions.
+  alternative: Expat is an event parser; libxml2 has a tree, a SAX interface and the pull reader xmlTextReader.
+cpp:
+  status: library
+  reason: the C++ standard library has no XML parser.
+  alternative: pugixml and TinyXML-2 build trees; the C libraries Expat and libxml2 give events and pull reading.
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no XML; on the JVM a program can use DOM, SAX and StAX of Java, as in the Java example. No example file exists because kotlinc is not installed.
+  alternative: the java.xml module of the Java platform.
+bash:
+  status: library
+  reason: Bash has no XML parser.
+  alternative: xmlstarlet and xmllint load a tree; a program in another language can stream.
+powershell:
+  status: stdlib
+  reason: the [xml] type accelerator builds an XmlDocument tree, and [System.Xml.XmlReader]::Create gives the .NET pull parser; no example file because PowerShell is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a database parses an XML value inside its own engine, and the query sees the result, not the parser model.
+regex:
+  status: n/a
+  reason: a regular expression has no parser model for nested markup.
+html:
+  status: n/a
+  reason: markup has no parser API; the browser builds a DOM tree of the page.
+css:
+  status: n/a
+  reason: style sheets have no parser API.
