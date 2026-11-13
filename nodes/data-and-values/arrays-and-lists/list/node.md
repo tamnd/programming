@@ -61,7 +61,7 @@ A list is the simplest collection with an order. Wikipedia defines it: "a list o
 The word has two uses in programming:
 
 - an **abstract type**: a set of operations, such as add an item at the end, get the item at position `i` and get the number of items, with no rule about the storage;
-- a **concrete type** in a language, with a fixed storage. In Python, Java `ArrayList`, C# `List<T>` and Rust `Vec`, the storage is a [dynamic array](/dynamic-array/). In Lisp and Haskell, a list is a chain of pairs, which is a linked list. Wikipedia notes: "In some contexts, such as in Lisp programming, the term list may refer specifically to a linked list rather than an array"[^1].
+- a **concrete type** in a language, with a fixed storage. In Python, Java `ArrayList`, C# `List<T>` and Rust `Vec`, the storage is a [dynamic array](/dynamic-array/). In Lisp and Haskell, a list is a chain of pairs, which is a [linked list](/linked-list/). Wikipedia notes: "In some contexts, such as in Lisp programming, the term list may refer specifically to a linked list rather than an array"[^1].
 
 The two forms give the same answers but at different costs. In an array list, item `i` is one step away. In a chain of pairs, a new first item costs one step, but item `i` is `i` steps away.
 
