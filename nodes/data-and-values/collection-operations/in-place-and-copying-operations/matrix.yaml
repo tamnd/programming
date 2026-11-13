@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the JavaScript methods, so sort and reverse mutate and toSorted and toReversed copy. The type ReadonlyArray has no mutating methods, so a call of sort on it does not compile. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin pairs the names. sort, reverse and shuffle change a MutableList, and sorted, reversed and shuffled return a new list from any collection. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash has no collection methods. The sort command reads its input and writes a new output, and it changes a file only when the -o option names that file. No example file exists.
+powershell:
+  status: native
+  reason: Sort-Object sends new sorted objects down the pipeline and does not change its input, and the .NET method [Array]::Sort sorts an array in place. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: A SELECT with ORDER BY returns a sorted result and does not change the table, and UPDATE and DELETE change the rows of the table in place. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not sort, filter or change a collection.
+html:
+  status: n/a
+  reason: HTML is markup. It has no operations that change or copy a collection.
+css:
+  status: n/a
+  reason: CSS has no collections. The order property changes the visual order of flex and grid items, but the document order stays the same.
