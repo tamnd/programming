@@ -16310,7 +16310,7 @@ items:
     group: "by-hand"
     name: "CommonMark"
     target: "commonmark"
-    status: "card"
+    status: "node"
     reason: "The specification of Markdown, the common text format of documentation."
   - part: formats
     group: "by-hand"
