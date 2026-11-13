@@ -72,7 +72,7 @@ A dynamic array has two sizes:
 - the **length** (or size, or count), the number of items in the list;
 - the **capacity**, the number of slots in the array inside it.
 
-An append that finds a free slot writes the item and adds 1 to the length. An append that finds no free slot must first grow the array: it makes a new, bigger array, copies every item into it and frees the old array. The trick is the size of the new array. If each new array is a constant factor bigger than the old one, such as twice as big, the copies are rare, and the average cost of an append is a constant.
+An append that finds a free slot writes the item and adds 1 to the length. An append that finds no free slot must first grow the array: it makes a new, bigger array, copies every item into it and frees the old array. The trick is the size of the new array. If each new array is a constant factor bigger than the old one, such as twice as big, the copies are rare, and the average cost of an append is a constant. The task [append to a list](/append-to-a-list/) shows the append call in each language.
 
 ```python run id=idea
 class DynamicArray:
