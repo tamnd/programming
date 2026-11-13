@@ -427,3 +427,8 @@ GQPMEX convention-over-configuration
 XFH5RY separation-of-mechanism-and-policy
 JNQMC0 deep-modules
 56ES6S single-source-of-truth
+02BA2X barrier-pattern
+18YDA2 event-loop-pattern
+0M24GG pipeline-concurrency
+1PF1PG scheduler-pattern
+HKN4DH worker-queue
