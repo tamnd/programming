@@ -1,0 +1,15 @@
+# The contract of the task "create an array" (spec 10.2). The function returns a new array of n items, and each item is value.
+problem: create-an-array
+entry: filled
+params:
+  - name: n
+    type: int
+    pre: "0 <= n <= 1000"
+  - name: value
+    type: int
+    pre: "a 32-bit signed integer"
+returns:
+  type: "list<int>"
+  post: "a new list of length n, and each item is value"
+checker: exact
+edge_classes: [empty, single, zero, negative, limit, many]
