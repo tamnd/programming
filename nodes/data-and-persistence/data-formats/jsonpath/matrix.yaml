@@ -1,0 +1,43 @@
+typescript:
+  status: native
+  reason: TypeScript runs on a JavaScript runtime and uses its JSON object. No example file exists, because the JavaScript example applies.
+java:
+  status: library
+  reason: The Java SE API has no JSON parser and no JSONPath.
+  alternative: a JSONPath library over a JSON tree; check that it follows RFC 9535.
+kotlin:
+  status: library
+  reason: The Kotlin standard library has no JSON. No example file exists because kotlinc is not installed.
+  alternative: a JSONPath library for the JVM, over kotlinx.serialization or another JSON tree.
+rust:
+  status: library
+  reason: The Rust standard library has no JSON parser.
+  alternative: the crate serde_json_path, which runs RFC 9535 queries on a serde_json::Value.
+c:
+  status: library
+  reason: ISO C has no JSON functions in its standard library.
+  alternative: a JSON library with a tree of values, such as Jansson or cJSON, and a query function over it.
+cpp:
+  status: library
+  reason: The C++ standard library has no JSON parser.
+  alternative: a JSON library such as nlohmann/json, with its json_pointer for single values, or a JSONPath library.
+bash:
+  status: library
+  reason: Bash has no JSON parser.
+  alternative: the command-line tool jq, which has its own query language, or kubectl -o jsonpath for Kubernetes objects.
+powershell:
+  status: stdlib
+  reason: ConvertFrom-Json gives objects and arrays, and member access with the wildcard and Where-Object does the work of simple queries. No example file exists because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: library
+  reason: SQL databases use the SQL/JSON path language of the SQL standard, which is not RFC 9535.
+  alternative: jsonb_path_query in PostgreSQL, with SQL/JSON path expressions.
+regex:
+  status: n/a
+  reason: a regular expression cannot walk a JSON document.
+html:
+  status: n/a
+  reason: markup has no JSON values to query.
+css:
+  status: n/a
+  reason: style sheets have no JSON values to query.

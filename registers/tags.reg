@@ -471,3 +471,7 @@ D7CMAP sort-with-a-custom-key
 7GXT8V data-interchange-format
 1TN7KC pretty-print-json
 H5Z0HS stream-parse-a-large-json-file
+TCXQ0P json-lines
+3J41ZW json-patch
+NZAZBX json-pointer
+9JQ7BS jsonpath

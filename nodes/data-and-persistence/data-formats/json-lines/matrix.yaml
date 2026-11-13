@@ -1,0 +1,42 @@
+typescript:
+  status: native
+  reason: TypeScript runs on a JavaScript runtime and uses its JSON object and the readline module of Node.js. No example file exists, because the JavaScript example applies.
+java:
+  status: library
+  reason: The Java SE API has no JSON parser. BufferedReader.readLine reads the lines, and a library parses each one.
+  alternative: a library such as Jackson or Gson for each line.
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no JSON; File.useLines reads the lines, and the official kotlinx.serialization library parses each one. No example file exists because kotlinc is not installed.
+  alternative: kotlinx.serialization, or a Java library such as Jackson on the JVM.
+rust:
+  status: library
+  reason: The Rust standard library has no JSON parser. BufRead::lines reads the lines, and a crate parses each one.
+  alternative: the crate serde_json for each line.
+c:
+  status: library
+  reason: ISO C has no JSON functions in its standard library. fgets or getline reads the lines, and a library parses each one.
+  alternative: a library such as cJSON or Jansson for each line.
+cpp:
+  status: library
+  reason: The C++ standard library has no JSON parser. std::getline reads the lines, and a library parses each one.
+  alternative: the library nlohmann/json for each line.
+bash:
+  status: library
+  reason: Bash reads lines with read, but it has no JSON parser.
+  alternative: the command-line tool jq, which reads a sequence of JSON values; jq -c writes one value on each line.
+powershell:
+  status: stdlib
+  reason: Get-Content reads the lines and ConvertFrom-Json parses each one; ConvertTo-Json -Compress writes one line. No example file exists because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: SQL works on tables, not on files of lines; database systems load JSON Lines with their own bulk load commands.
+regex:
+  status: n/a
+  reason: a regular expression cannot parse JSON in general.
+html:
+  status: n/a
+  reason: markup has no data values to serialise.
+css:
+  status: n/a
+  reason: style sheets have no data values to serialise.

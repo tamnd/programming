@@ -1,0 +1,42 @@
+typescript:
+  status: native
+  reason: TypeScript runs on a JavaScript runtime and uses its JSON object. No example file exists, because the JavaScript example applies.
+java:
+  status: library
+  reason: The Java SE API has no JSON parser. Jakarta JSON Processing defines the interface JsonPointer.
+  alternative: jakarta.json.JsonPointer from a Jakarta JSON Processing implementation.
+kotlin:
+  status: library
+  reason: The Kotlin standard library has no JSON. A resolver walks the JsonElement tree of kotlinx.serialization. No example file exists because kotlinc is not installed.
+  alternative: kotlinx.serialization, or Jakarta JSON Processing on the JVM.
+rust:
+  status: library
+  reason: The Rust standard library has no JSON parser. The crate serde_json has the method Value::pointer.
+  alternative: serde_json::Value::pointer and Value::pointer_mut.
+c:
+  status: library
+  reason: ISO C has no JSON functions in its standard library.
+  alternative: a JSON library with a tree of values, such as Jansson or cJSON, and a resolver over it.
+cpp:
+  status: library
+  reason: The C++ standard library has no JSON parser.
+  alternative: the type json_pointer of the library nlohmann/json.
+bash:
+  status: library
+  reason: Bash has no JSON parser.
+  alternative: the command-line tool jq; its function getpath takes an array of keys and indexes, which a script makes from the tokens of a pointer.
+powershell:
+  status: stdlib
+  reason: ConvertFrom-Json gives objects and arrays, and a loop over the tokens walks them. No example file exists because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: SQL databases use their own JSON path syntax, not JSON Pointer.
+regex:
+  status: n/a
+  reason: a regular expression cannot walk a JSON document.
+html:
+  status: n/a
+  reason: markup has no JSON values to address.
+css:
+  status: n/a
+  reason: style sheets have no JSON values to address.
