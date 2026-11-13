@@ -12350,19 +12350,19 @@ items:
     group: "collections"
     name: "Compute the cartesian product"
     target: "compute-the-cartesian-product"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Cartesian product of two or more lists)."
   - part: tasks
     group: "collections"
     name: "Compute the permutations of a list"
     target: "compute-the-permutations-of-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Permutations, Permutations by swapping)."
   - part: tasks
     group: "collections"
     name: "Compute the combinations of a list"
     target: "compute-the-combinations-of-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Combinations, Combinations and permutations)."
   - part: tasks
     group: "collections"
