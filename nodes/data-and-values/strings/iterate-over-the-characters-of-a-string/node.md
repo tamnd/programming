@@ -248,7 +248,7 @@ int main() {
 5 5 2
 ```
 
-- **Bash for over $s gives words.** "The shell treats each character of $IFS as a delimiter, and splits the results of the other expansions into fields using these characters as field terminators"[^9]. So `for w in $s` gives words, and the space is lost. Use an index loop with `${s:i:1}`:
+- **Bash `for` over `$s` gives words.** "The shell treats each character of `$IFS` as a delimiter, and splits the results of the other expansions into fields using these characters as field terminators"[^9]. So `for w in $s` gives words, and the space is lost. Use an index loop with `${s:i:1}`:
 
 ```bash run id=bash-for-words
 s='a b'

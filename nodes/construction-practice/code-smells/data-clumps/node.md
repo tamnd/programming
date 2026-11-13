@@ -41,7 +41,7 @@ Find the values that the code always passes and stores together, and give the gr
 
 Some values only make sense as a group. A start date and an end date are a period. A street, a city and a postcode are an address. A host and a port are an endpoint. When the program has no type for the group, the values travel one by one: two fields in each class that needs them, and two parameters in each function that uses them.
 
-Fowler states the fix as a joke in the bliki entry: "Whenever two or three values are gathered together - turn them into a $%#$%^ object."[^1] He describes how to see the smell: "You spot it when you constantly see the same few data items passed around together", and gives the example that "start and end are a good example of a data clump wanting to be a range."[^1]
+Fowler states the fix as a joke in the bliki entry: "Whenever two or three values are gathered together - turn them into a `$%#$%^` object."[^1] He describes how to see the smell: "You spot it when you constantly see the same few data items passed around together", and gives the example that "start and end are a good example of a data clump wanting to be a range."[^1]
 
 The forces are these:
 
