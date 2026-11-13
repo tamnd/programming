@@ -165,7 +165,7 @@ A loop over a range needs only a counter, as in `for (i = a; i < b; i++)`, so it
 
 ## History
 
-Dijkstra wrote "Why numbering should start at zero" (EWD 831) on 11 August 1982[^2]. He gave the half-open convention and noted the experience with the Mesa language at Xerox PARC, which had notations for all four conventions: "Extensive experience with Mesa has shown that the use of the other three conventions has been a constant source of clumsiness and mistakes"[^2]. The note is also the usual argument for indices from 0, because the indices of an array of length `n` are then `0 ≤ i < n`.
+Dijkstra wrote "Why numbering should start at zero" (EWD 831) on 11 August 1982[^2]. He gave the half-open convention and noted the experience with the Mesa language at Xerox PARC, which had notations for all four conventions: "Extensive experience with Mesa has shown that the use of the other three conventions has been a constant source of clumsiness and mistakes"[^2]. The note is also the usual argument for [indices from 0](/array-indexing/), because the indices of an array of length `n` are then `0 ≤ i < n`.
 
 Later languages made half-open ranges the default. Python's `range`, the C++ iterator pair `[begin, end)`, Go slice expressions and Rust `..` all exclude the end. Newer additions are the C++20 `iota_view`[^11], the Go 1.22 range over integers[^10] and the C# index and range operators `^` and `..`[^6]. The TC39 proposal for `Iterator.range` is at stage 2[^12].
 
