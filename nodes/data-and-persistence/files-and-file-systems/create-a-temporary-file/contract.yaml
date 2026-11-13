@@ -1,0 +1,19 @@
+# The contract of the task "create a temporary file". Each solution has two functions. make_temp_file(dir, prefix) makes a new, empty regular file in the directory dir, with a name that is prefix followed by at least six random characters, and with the mode 0600 (read and write for the owner only). It makes the file and checks that no file has the name in one call (O_EXCL or the equal option of the language), so another process cannot put a file or a link at the name first. It returns the path of the file. use_temp_file(dir, prefix, data) is the entry of the cases: it makes a temporary file with make_temp_file, writes data to it as UTF-8, reads the file back from the start, removes the file, and returns the text that it read. The name is random, so the cases test the entry, and the native tests test make_temp_file.
+problem: create-a-temporary-file
+entry: use_temp_file
+params:
+  - name: dir
+    type: string
+    pre: "the directory of the temporary file, relative to the test directory; the test directory is new, and it holds only the empty directory sub"
+  - name: prefix
+    type: string
+    pre: "the start of the file name; it can be empty, it has no slash, and it does not end with X, because mkstemp can replace more than six X characters at the end of a template"
+  - name: data
+    type: string
+    pre: "the text to write to the temporary file"
+returns:
+  type: string
+  post: "the text read back from the temporary file; it is equal to data, and the file does not exist after the call"
+checker: exact
+edge_classes: [empty-prefix, empty-data, non-ascii-data, prefix-with-spaces, non-ascii-prefix]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error: not-found when the directory dir does not exist, and invalid-prefix when prefix has a slash. The native tests also check make_temp_file, in a temporary directory: the name starts with prefix and has at least six more characters; the file is a new, empty regular file with the permission bits 0600; two calls give two different files; and after use_temp_file, the directory holds no new file.

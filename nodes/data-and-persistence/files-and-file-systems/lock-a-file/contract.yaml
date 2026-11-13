@@ -1,0 +1,19 @@
+# The contract of the task "lock a file". Each solution has two functions. try_lock_file(path, mode) opens the file at path, which must exist, and asks for an advisory lock on the whole file without a wait: a shared lock when mode is shared, and an exclusive lock when mode is exclusive. It returns a lock object when it gets the lock, and nothing (null, None, false) when another open file has a lock that conflicts. A shared lock conflicts with an exclusive lock, and an exclusive lock conflicts with each other lock. The lock goes away when the program releases the lock object or closes it. try_lock(path, held, want) is the entry of the cases: it first takes the lock held with a second, separate open of the same file (none means no lock), then calls try_lock_file(path, want), releases the locks, and returns true when the second call got the lock. The locks are flock locks, which belong to an open file, so the two opens conflict in one process too. Java locks belong to the whole virtual machine, so the Java tests take the held lock in a child process.
+problem: lock-a-file
+entry: try_lock
+params:
+  - name: path
+    type: string
+    pre: "the path of an existing regular file in a directory that the test makes"
+  - name: held
+    type: string
+    pre: "none, shared or exclusive: the lock that another open of the file holds before the call"
+  - name: want
+    type: string
+    pre: "shared or exclusive: the lock that the call asks for"
+returns:
+  type: bool
+  post: "true when the call got the lock without a wait; false when the held lock conflicts with it. The call does not wait, and the file and its content do not change"
+checker: exact
+edge_classes: [shared-with-shared, shared-with-exclusive, exclusive-with-shared]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error: not-found when the file does not exist (the call does not make it). The native tests also check that a lock goes away when it is released and when its file is closed, so that a new call gets it.

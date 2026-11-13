@@ -1,0 +1,2 @@
+{"name":"missing-directory","args":{"dir":"nodir","prefix":"tmp-","data":"alpha\n"},"error":"not-found"}
+{"name":"prefix-with-slash","args":{"dir":".","prefix":"sub/tmp-","data":"alpha\n"},"error":"invalid-prefix"}

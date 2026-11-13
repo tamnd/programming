@@ -1,0 +1,5 @@
+{"name":"empty-replace","class":["empty","replace"],"args":{"path":"out.txt","text":"","file":"old\n"},"expect":""}
+{"name":"empty-new","class":["empty","new-file"],"args":{"path":"out.txt","text":"","file":null},"expect":""}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"out.txt","text":"last line","file":null},"expect":"last line"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"out.txt","text":"naïve café\n日本語\n🙂\n","file":null},"expect":"naïve café\n日本語\n🙂\n"}
+{"name":"crlf","class":["line-ends"],"args":{"path":"out.txt","text":"one\r\ntwo\r\n","file":null},"expect":"one\r\ntwo\r\n"}

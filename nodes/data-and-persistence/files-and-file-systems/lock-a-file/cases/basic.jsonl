@@ -1,0 +1,3 @@
+{"name":"no-lock-exclusive","args":{"path":"data.txt","held":"none","want":"exclusive"},"expect":true}
+{"name":"no-lock-shared","args":{"path":"data.txt","held":"none","want":"shared"},"expect":true}
+{"name":"exclusive-with-exclusive","args":{"path":"data.txt","held":"exclusive","want":"exclusive"},"expect":false}

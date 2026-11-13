@@ -1,0 +1,5 @@
+{"name":"empty-prefix","class":["empty-prefix"],"args":{"dir":".","prefix":"","data":"alpha\n"},"expect":"alpha\n"}
+{"name":"empty-data","class":["empty-data"],"args":{"dir":".","prefix":"tmp-","data":""},"expect":""}
+{"name":"non-ascii-data","class":["non-ascii-data"],"args":{"dir":".","prefix":"tmp-","data":"café 日本\n"},"expect":"café 日本\n"}
+{"name":"prefix-with-spaces","class":["prefix-with-spaces"],"args":{"dir":".","prefix":"my temp ","data":"alpha\n"},"expect":"alpha\n"}
+{"name":"non-ascii-prefix","class":["non-ascii-prefix"],"args":{"dir":".","prefix":"café-","data":"alpha\n"},"expect":"alpha\n"}

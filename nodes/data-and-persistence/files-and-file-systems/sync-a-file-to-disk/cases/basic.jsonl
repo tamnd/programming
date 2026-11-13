@@ -1,0 +1,3 @@
+{"name":"new-file","class":["new-file"],"args":{"path":"out.txt","text":"alpha\nbeta\n","file":null},"expect":"alpha\nbeta\n"}
+{"name":"replace-longer","class":["replace"],"args":{"path":"out.txt","text":"short\n","file":"a much longer old line\n"},"expect":"short\n"}
+{"name":"many-lines","args":{"path":"out.txt","text":"one\ntwo\nthree\nfour\n","file":null},"expect":"one\ntwo\nthree\nfour\n"}
