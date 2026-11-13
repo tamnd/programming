@@ -1,0 +1,24 @@
+kotlin:
+  status: idiom
+  reason: the JVM threads, locks and queues of Java are available, and suspend functions with a coroutine library add channels and structured concurrency; no example is executed here because the test image has no kotlinc.
+c:
+  status: idiom
+  reason: threads, mutexes and condition variables come from a library, such as the optional threads.h of C11 or POSIX threads, and the programmer must keep the rules of each pattern by hand.
+sql:
+  status: idiom
+  reason: the database runs concurrent sessions, and transactions, isolation levels and row locks keep their updates correct; the program does not create threads.
+bash:
+  status: idiom
+  reason: a command with & runs as a separate process and wait joins it; processes share no memory, so they exchange data through pipes and files.
+powershell:
+  status: idiom
+  reason: thread jobs and parallel loops run script blocks at the same time, and the .NET locks and concurrent collections are available; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern has no threads or shared state.
+html:
+  status: n/a
+  reason: markup has no threads or shared state; workers are started and used from JavaScript.
+css:
+  status: n/a
+  reason: style rules have no threads or shared state.
