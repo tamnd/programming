@@ -1,0 +1,14 @@
+# The contract of the task "read and write XML" (spec 10.2). Each solution parses the text with the XML parser of its standard library and writes the tree back with its own code, in a form that follows the rules of Canonical XML (RFC 3076) for the cases that the pre allows.
+problem: read-and-write-xml
+entry: xml_rewrite
+params:
+  - name: text
+    type: string
+    pre: "an XML 1.0 document, or a text that is not well-formed XML. Every namespace prefix is declared, the element and attribute names are ASCII, and no attribute value holds a literal tab, line feed or carriage return (a character reference to one is allowed)"
+returns:
+  type: string
+  post: "the root element written back from the parsed tree. An element is <qname, then its attributes, then >, its content and </qname>, also when it has no content. The attributes are written as a space, the qname, =, and the value in double quotes: first the default namespace declaration, then the other namespace declarations sorted by qname, then the other attributes sorted by qname, where the sort compares code points. In a value, & < and \" are written as &amp; &lt; &quot;, and tab, line feed and carriage return as &#x9; &#xA; &#xD;. In text, & < > and carriage return are written as &amp; &lt; &gt; &#xD;, and the text of a CDATA section is written as text. Each other character is written as itself. Comments, processing instructions, the XML declaration and everything outside the root element are not written"
+checker: exact
+edge_classes: [prolog, empty, attributes, escapes, whitespace, non-ascii, namespaces]
+# The toolchain has no field for errors yet, and it loads only the basic, edge and regress case files. cases/errors.jsonl holds the inputs on which each solution must report parse-error and return no text: a text that is empty or not well-formed, and a text with a document type declaration.
+# The standard libraries of JavaScript, TypeScript, Rust, C, C++ and Bash have no XML parser, so this task has no solution in those languages. matrix.yaml holds the verdict for each one and the library that is used instead.
