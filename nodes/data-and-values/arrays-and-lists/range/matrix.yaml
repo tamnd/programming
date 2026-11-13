@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no range type. The JavaScript idioms, Array.from with a length and a generator function, work with the types number[] and Generator<number>. No example file exists.
+kotlin:
+  status: native
+  reason: a..b includes b and a..<b excludes it. step and downTo make progressions, and the types IntRange and IntProgression store the bounds. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Brace expansion {1..5} and {0..10..2} gives numbers with both ends included, and the arithmetic for loop counts with a test such as i < n. No example file exists.
+powershell:
+  status: native
+  reason: The range operator 1..5 makes an array of the numbers from 1 to 5, with both ends included. 5..1 counts down. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: PostgreSQL has range types such as int4range, numrange, daterange and tsrange, with operators for containment and overlap. generate_series gives a range of numbers as rows. Other databases use BETWEEN, which includes both ends.
+regex:
+  status: idiom
+  reason: "A character class such as [a-z] is a range of characters, and a quantifier such as {2,5} is a range of counts. Both include their ends."
+html:
+  status: n/a
+  reason: HTML is markup. The input element with type range is a slider control, not a range value.
+css:
+  status: n/a
+  reason: CSS has no range values. Media queries can test a range of widths, but that is a condition, not data.
