@@ -140,7 +140,7 @@ The example files show these forms. Python shows slice objects, `slice.indices`,
 - **String slices.** A substring is a slice of a string. Rust's `&str` and C++ `std::string_view` are views. In Rust, a slice of a UTF-8 string must start and end on a character boundary. See [get a substring](/get-a-substring/).
 - **Slice assignment.** In Python, `xs[1:3] = items` replaces a range with a new sequence, and the list can grow or shrink.
 - **Iterator slices.** `itertools.islice` in Python and `skip` and `take` in Rust select a range of a stream without indices.
-- **Ranges.** A range such as `1..3` or `range(1, 3)` names the indices without the items. Many languages use the same range value to make a slice.
+- **Ranges.** A range such as `1..3` or `range(1, 3)` names the indices without the items. Many languages use the same range value to make a slice. A slice is one kind of [sequence](/sequence/): it has a length and integer indices.
 
 ## Pitfalls
 
