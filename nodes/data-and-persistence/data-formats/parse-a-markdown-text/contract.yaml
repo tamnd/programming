@@ -1,0 +1,14 @@
+# The contract of the task "parse a Markdown text". The input is a text in a subset of CommonMark 0.31.2, and the output is the HTML that the CommonMark reference converters give for it.
+problem: parse-a-markdown-text
+entry: markdown_to_html
+params:
+  - name: text
+    type: string
+    pre: "a Markdown text in this subset of CommonMark: LF ends each line; the text has no CR, no U+0000 and no tab outside fenced code; outside fenced code, no line starts with a space, a tab, >, +, <, ~, '* ', ***, digits followed by . or ), or [label]:, and no line holds only the characters -, =, *, _ and space; a heading is 1 to 6 # characters, then a space or the end of the line; a list item is '- ' and then text that does not start a block; a list is followed by a blank line, a heading, a fence or the end of the text; a fence is 3 or more backticks, and its info string has no backtick, backslash or &; no < comes directly before a letter, /, ! or ?; no & starts a character reference; each _ has a letter or a digit on both sides; the text has no ![; each ]( is part of a link [text](url), where the text has no brackets, backticks or backslashes, and the url is not empty, holds only letters, digits and the characters -._~:/?#=&+%, and has two hex digits after each %; no character outside the Basic Multilingual Plane comes directly before or after a run of *"
+returns:
+  type: string
+  post: "the HTML that CommonMark 0.31.2 gives for the text: <h1> to <h6> for headings, <p> for paragraphs, <ul> and <li> for lists (with <p> in each item of a loose list), <pre><code> for fenced code with a class language-<first word of the info string>, <em> and <strong> for emphasis, <code> for code spans, <a href> for links and <br /> for hard line breaks; each block ends with LF; &, <, > and the double quote in text are written as &amp;, &lt;, &gt; and &quot;"
+checker: exact
+edge_classes: [heading, paragraph, list, code-block, code-span, emphasis, link, line-break, escapes, html-chars, empty, non-ascii]
+# The function accepts every text in the subset and never reports an error, so the task has no errors.jsonl.
+# The standard libraries of Java, Rust, C, C++ and Bash have no Markdown converter, and the task asks for the CommonMark rules, so matrix.yaml sends those languages to a CommonMark library.

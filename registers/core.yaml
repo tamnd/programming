@@ -12596,7 +12596,7 @@ items:
     group: "formats"
     name: "Parse a Markdown text"
     target: "parse-a-markdown-text"
-    status: "planned"
+    status: "node"
     reason: "A job on a common data format. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "formats"
