@@ -12194,7 +12194,7 @@ items:
     group: "collections"
     name: "Zip two lists"
     target: "zip-two-lists"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Loop over multiple arrays simultaneously)."
   - part: tasks
     group: "collections"
@@ -12224,7 +12224,7 @@ items:
     group: "collections"
     name: "Count the items of each kind"
     target: "count-the-items-of-each-kind"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Letter frequency, Word frequency)."
   - part: tasks
     group: "collections"
