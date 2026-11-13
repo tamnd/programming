@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript rules. With the noUncheckedIndexedAccess option, the type of a[i] includes undefined, so the compiler asks the code to handle a missing item. No example file exists.
+kotlin:
+  status: native
+  reason: Indices start at 0, and lastIndex is size - 1. A bad index throws IndexOutOfBoundsException, and getOrNull and getOrElse return a value instead. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: "Indexed arrays start at 0, and ${a[-1]} is the last item. An unset index gives an empty string and no error. No example file exists."
+powershell:
+  status: native
+  reason: "Arrays start at 0, and $a[-1] is the last item. An index out of bounds gives $null and no error unless strict mode is on. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: PostgreSQL arrays start at 1 by default, and an index out of bounds gives NULL. ROW_NUMBER() numbers rows from 1.
+regex:
+  status: n/a
+  reason: A regular expression has no array indices. Capture groups are numbered from 1, and group 0 is the whole match.
+html:
+  status: n/a
+  reason: HTML is markup and has no array indices.
+css:
+  status: n/a
+  reason: CSS has no arrays. The nth-child selector counts elements from 1.
