@@ -1,0 +1,4 @@
+{"name":"too-few-fields","args":{"text":"a,b\n1\n"},"error":"field-count"}
+{"name":"too-many-fields","args":{"text":"a\n1,2\n"},"error":"field-count"}
+{"name":"unclosed-quote","args":{"text":"a\n\"x\n"},"error":"bad-quote"}
+{"name":"text-after-quote","args":{"text":"a\n\"x\"y\n"},"error":"bad-quote"}

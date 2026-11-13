@@ -1,0 +1,14 @@
+# The contract of the task "convert CSV to JSON" (spec 10.2). The input is RFC 4180 text with a header line, and the output is a JSON text as in RFC 8259.
+problem: convert-csv-to-json
+entry: csv_to_json
+params:
+  - name: text
+    type: string
+    pre: "CSV text: commas separate the fields, and LF or CRLF ends a record; a field that holds a comma, a double quote or a line break is enclosed in double quotes, and a double quote in it is written twice; a field that is not enclosed holds no double quote; the first record is the header, and its names are distinct; no CR stands alone; no field holds a control character other than tab, LF and the CR of a CRLF, and no field holds U+2028 or U+2029"
+returns:
+  type: string
+  post: "a JSON array with one object for each record after the header, in text order; each object has one member for each name of the header, in the order of the header, and the value of each member is the field as a JSON string, with no change to its type; a line with no characters outside a quoted field is skipped, so an empty text and a header with no records give []; a CRLF inside a quoted field becomes LF; the text has no white space outside strings; each string writes the quotation mark and the reverse solidus as \\\" and \\\\, tab as \\t and LF as \\n, and every other character as itself"
+checker: exact
+edge_classes: [quoted, newline-in-field, crlf, empty-field, whitespace, empty, numeric-text, key-order, escapes, html-chars, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and return no text: field-count when a record has more or fewer fields than the header, and bad-quote when a quoted field has no closing quote or has text after its closing quote.
+# The standard libraries of Java, Rust, C, C++ and Bash have no JSON writer, so this task has no solution in those languages. matrix.yaml holds the verdict for each one and the library that is used instead.
