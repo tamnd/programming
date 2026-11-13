@@ -1,0 +1,12 @@
+{"name": "empty-array", "class": ["empty"], "args": {"path": "fixtures/empty-array.json"}, "expect": [0, 0]}
+{"name": "one-record", "class": ["no-final-newline"], "args": {"path": "fixtures/one-record.json"}, "expect": [1, 7]}
+{"name": "extra-members", "class": ["nested"], "args": {"path": "fixtures/extra-members.json"}, "expect": [2, 11]}
+{"name": "strings-with-brackets", "class": ["strings"], "args": {"path": "fixtures/strings-with-brackets.json"}, "expect": [3, 6]}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"path": "fixtures/non-ascii.json"}, "expect": [2, 7]}
+{"name": "crlf", "class": ["whitespace"], "args": {"path": "fixtures/crlf.json"}, "expect": [2, 3]}
+{"name": "bom", "class": ["bom"], "args": {"path": "fixtures/bom.json"}, "expect": [1, 4]}
+{"name": "big-total", "class": ["big-number"], "args": {"path": "fixtures/big-total.json"}, "expect": [3, 9007199254740991]}
+{"name": "negative-total", "class": ["big-number"], "args": {"path": "fixtures/negative-total.json"}, "expect": [2, -9007199254740991]}
+{"name": "whitespace", "class": ["whitespace"], "args": {"path": "fixtures/whitespace.json"}, "expect": [2, 3]}
+{"name": "long-string", "class": ["chunk-boundary"], "args": {"path": "fixtures/long-string.json"}, "expect": [2, 17]}
+{"name": "many-records", "class": ["chunk-boundary"], "args": {"path": "fixtures/many-records.json"}, "expect": [2500, 249750]}

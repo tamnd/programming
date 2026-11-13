@@ -1,0 +1,4 @@
+{"name": "object", "class": ["nesting"], "args": {"text": "{\"name\": \"Ada\", \"born\": 1815, \"tags\": [\"math\", \"code\"]}"}, "expect": "{\n  \"born\": 1815,\n  \"name\": \"Ada\",\n  \"tags\": [\n    \"math\",\n    \"code\"\n  ]\n}"}
+{"name": "nested", "class": ["nesting"], "args": {"text": "{\"user\": {\"id\": 7, \"roles\": [\"admin\"]}, \"ok\": true}"}, "expect": "{\n  \"ok\": true,\n  \"user\": {\n    \"id\": 7,\n    \"roles\": [\n      \"admin\"\n    ]\n  }\n}"}
+{"name": "array-of-objects", "class": ["nesting"], "args": {"text": "[{\"a\": 1}, {\"b\": null}]"}, "expect": "[\n  {\n    \"a\": 1\n  },\n  {\n    \"b\": null\n  }\n]"}
+{"name": "compact-input", "class": ["whitespace"], "args": {"text": "{\"a\":[1,2,{\"b\":false}]}"}, "expect": "{\n  \"a\": [\n    1,\n    2,\n    {\n      \"b\": false\n    }\n  ]\n}"}
