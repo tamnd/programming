@@ -75,7 +75,7 @@ An array keeps many values of one type under one name, and the program selects a
 
 For a one-dimensional array, the formula is simple. If the first item is at the base address `B` and each item takes `k` bytes, item `i` is at `B + i * k`. Wikipedia gives an example: ten 4-byte integers at address 2000, "so that the element with index i has the address 2000 + (i × 4)"[^1]. One multiplication and one addition find any item, so the program reads or writes item 5 or item 5000 in the same time.
 
-A plain array has a fixed length. The C rules say that the number of items "never changes during the array lifetime"[^2], and Java says: "Once an array object is created, its length never changes"[^3]. A collection that can grow is a dynamic array. It keeps its items in an array and moves them to a bigger array when it is full.
+A plain array has a fixed length. The C rules say that the number of items "never changes during the array lifetime"[^2], and Java says: "Once an array object is created, its length never changes"[^3]. A collection that can grow is a [dynamic array](/dynamic-array/). It keeps its items in an array and moves them to a bigger array when it is full.
 
 ```python run id=idea
 import ctypes
@@ -176,7 +176,7 @@ The example files show these forms. Python shows a list as the usual array, nega
 
 ## Variations and related ideas
 
-- **Dynamic arrays.** A dynamic array keeps a fixed array and a count of the items in use. When the array is full, it makes a bigger array and copies the items. Wikipedia says: "If this operation is done infrequently, insertions at the end of the array require only amortized constant time"[^1]. Python `list`, Java `ArrayList`, C# `List<T>`, C++ `std::vector`, Rust `Vec` and Go slices are dynamic arrays.
+- **Dynamic arrays.** A dynamic array keeps a fixed array and a count of the items in use. When the array is full, it makes a bigger array and copies the items. Wikipedia says: "If this operation is done infrequently, insertions at the end of the array require only amortized constant time"[^1]. Python `list`, Java `ArrayList`, C# `List<T>`, C++ `std::vector`, Rust `Vec` and Go slices are dynamic arrays. See [dynamic array](/dynamic-array/).
 - **Slices and views.** A slice is a view of a part of an array: a pointer, a length and in Go a capacity. Rust says: "Arrays coerce to slices ([T]), so a slice method may be called on an array. Indeed, this provides most of the API for working with arrays"[^5].
 - **Multidimensional arrays.** A grid can be one block of memory with a formula for two indices, or an array of arrays, which C# calls a jagged array[^7].
 - **Arrays of bytes.** A byte array holds raw data, such as the content of a file. JavaScript typed arrays share one buffer of bytes in different numeric types[^10]. A string is a sequence of characters, and in many languages it is stored in an array of bytes or code units. See [string](/string-concept/).
