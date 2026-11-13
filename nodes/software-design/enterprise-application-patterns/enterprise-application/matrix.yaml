@@ -1,0 +1,24 @@
+kotlin:
+  status: library
+  reason: Kotlin runs on the JVM and uses the same frameworks as Java, such as Spring, for transactions, persistence and web screens; no example is executed here because the test image has no kotlinc.
+c:
+  status: library
+  reason: client libraries connect C to most databases, but the business logic and the screens of an enterprise application are rarely written in C.
+sql:
+  status: native
+  reason: the database keeps the persistent data, checks the constraints and runs the transactions that many users share.
+bash:
+  status: idiom
+  reason: scripts run the offline batch jobs and move files between systems, but they do not hold the business logic of the application.
+powershell:
+  status: idiom
+  reason: scripts run batch jobs and administer the servers and the databases of an enterprise application; no example is executed here because the test image has no pwsh.
+regex:
+  status: n/a
+  reason: a pattern can check one field of a form, but it has no data, transactions or screens.
+html:
+  status: idiom
+  reason: pages and forms are the screens of a web enterprise application, but the data and the rules are elsewhere.
+css:
+  status: n/a
+  reason: style rules change how a screen looks, but they hold no data or rules.
