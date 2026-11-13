@@ -12500,7 +12500,7 @@ items:
     group: "files"
     name: "Watch a file for changes"
     target: "watch-a-file-for-changes"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "files"
@@ -12512,7 +12512,7 @@ items:
     group: "files"
     name: "Embed a file in a program"
     target: "embed-a-file-in-a-program"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. Related titles, found by keyword: Go by Example (Embed Directive)."
   - part: tasks
     group: "formats"

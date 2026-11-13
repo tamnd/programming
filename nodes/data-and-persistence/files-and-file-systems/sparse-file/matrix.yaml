@@ -1,0 +1,30 @@
+python:
+  status: stdlib
+  reason: The os module has lseek, ftruncate, st_blocks and the SEEK_DATA and SEEK_HOLE constants, and the two run blocks of this page use them. No example file exists, because the blocks show the Python calls.
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses the node:fs module, with the types from @types/node, so a write at a position, ftruncate and stats.blocks are the same as in the JavaScript example. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM uses java.nio, so a write at a position of a FileChannel and the SPARSE option of the Java example do the work. No example file exists because kotlinc is not installed.
+csharp:
+  status: stdlib
+  reason: FileStream.SetLength makes a file longer and Seek moves past the end. The .NET docs say that on Windows the contents of the new area are undefined, and a program marks a file sparse with FSCTL_SET_SPARSE through DeviceIoControl. .NET has no call for the allocated size. No example file exists.
+bash:
+  status: native
+  reason: The truncate -s and dd seek= commands make a hole, du --apparent-size shows the size and du shows the space, and cp --sparse=always copies with holes. No example file exists.
+powershell:
+  status: native
+  reason: The fsutil sparse command marks a file sparse on NTFS, and the .NET calls of FileStream do the rest. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL works on tables in a database. The engine chooses the layout of its files, and a query does not make holes.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not write files.
+html:
+  status: n/a
+  reason: A web page cannot write a file in the local file system.
+css:
+  status: n/a
+  reason: CSS gives style rules to a document. It does not write files.

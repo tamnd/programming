@@ -1,0 +1,13 @@
+# The contract of the task "embed a file in a program". Each solution puts the text file lines.txt, which is next to its source, into the program when the program is built, and then reads it from memory. A language with no build step ships the file with the code and finds it through its loader, not through the working directory. The file is UTF-8, and each line ends with "\n". Its first line is the license header "# SPDX-License-Identifier: MIT". The four lines after it are "alpha", "café", an empty line, and "gamma". The entry returns one of these four lines, with no line end.
+problem: embed-a-file-in-a-program
+entry: embedded_line
+params:
+  - name: n
+    type: int
+    pre: "any integer; line 1 is the first line after the license header"
+returns:
+  type: option<string>
+  post: "line n of the embedded file with no line end, or null when n is less than 1 or more than the number of lines"
+checker: exact
+edge_classes: [last-line, non-ascii-line, empty-line, zero, negative, past-the-end]
+# The native tests also check that the embedded bytes are the same as the bytes of lines.txt (50 bytes, with the two bytes of "é" in UTF-8), and, where the language can do it, that the program reads no file: the test changes the working directory before the call, or the compiled data does not depend on lines.txt at run time.

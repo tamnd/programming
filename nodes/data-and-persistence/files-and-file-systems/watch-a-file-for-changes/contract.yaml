@@ -1,0 +1,16 @@
+# The contract of the task "watch a file for changes". Each solution has a watcher that keeps the last signature of the file at path: its size and its modification time (mtime), or nothing when the file does not exist. A poll takes a new signature, compares it with the last one, keeps the new one, and returns created, deleted, modified or none. watch_changes(path, steps) is the entry of the cases: it makes a watcher, then for each step it makes the change of the step and polls. The steps are create:TEXT and write:TEXT (write TEXT to the file), append:TEXT, replace:TEXT (write TEXT to path.tmp and rename it onto the file), recreate:TEXT (delete the file, then write TEXT to a new file), touch (change only the mtime), delete, mkdir (make a directory at path) and none (no change). After each step except none, when the file exists, the entry sets its mtime to 1700000000 + n seconds, where n is the number of the step from 1. So the result does not depend on the clock resolution of the file system.
+problem: watch-a-file-for-changes
+entry: watch_changes
+params:
+  - name: path
+    type: string
+    pre: "the path of a file in a new, empty directory that the test makes; the file does not exist at the start"
+  - name: steps
+    type: list<string>
+    pre: "one or more steps, each create:TEXT, write:TEXT, append:TEXT, replace:TEXT, recreate:TEXT, touch, delete, mkdir or none; append, recreate, touch and delete come only when the file exists"
+returns:
+  type: list<string>
+  post: "one result for each step, in order: created when the file did not exist at the last poll and exists now, deleted for the reverse, modified when it exists at both polls and its size or its mtime changed, and none when the signature is the same"
+checker: exact
+edge_classes: [no-change, same-size, touch-only, replace-by-rename, delete-and-create, never-created]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error: is-a-directory when path is a directory at a poll. The native tests also check that a change that keeps the size and the mtime is not seen, and that the watch loop calls its function once for a burst of changes.

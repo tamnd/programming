@@ -1,0 +1,4 @@
+{"name":"create","args":{"path":"watched.txt","steps":["create:hello\n"]},"expect":["created"]}
+{"name":"create-then-write","args":{"path":"watched.txt","steps":["create:a\n","write:a much longer line\n"]},"expect":["created","modified"]}
+{"name":"create-then-delete","args":{"path":"watched.txt","steps":["create:a\n","delete"]},"expect":["created","deleted"]}
+{"name":"append","args":{"path":"watched.txt","steps":["create:a\n","append:b\n","append:c\n"]},"expect":["created","modified","modified"]}

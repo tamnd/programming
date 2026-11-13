@@ -1,0 +1,1 @@
+{"name":"directory","args":{"path":"watched.txt","steps":["mkdir"]},"error":"is-a-directory"}
