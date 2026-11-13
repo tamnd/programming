@@ -16178,7 +16178,7 @@ items:
     group: "by-hand"
     name: "XML"
     target: "xml"
-    status: "card"
+    status: "node"
     reason: "The W3C markup language of documents, of Maven and of many older APIs."
   - part: formats
     group: "by-hand"
