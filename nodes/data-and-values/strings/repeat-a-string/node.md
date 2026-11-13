@@ -227,7 +227,7 @@ int main() {
 ababab
 ```
 
-- **Bash {1..$n} does not use the variable.** "Brace expansion is performed before any other expansions"[^9], so `$n` is not yet a number, and the text stays as it is. Use a loop with `((`:
+- **Bash `{1..$n}` does not use the variable.** "Brace expansion is performed before any other expansions"[^9], so `$n` is not yet a number, and the text stays as it is. Use a loop with `((`:
 
 ```bash run id=bash-brace-variable
 n=3
