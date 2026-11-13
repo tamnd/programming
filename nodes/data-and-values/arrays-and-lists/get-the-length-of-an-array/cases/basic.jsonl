@@ -1,0 +1,2 @@
+{"name":"three","args":{"items":["a","b","c"]},"expect":3}
+{"name":"two-words","args":{"items":["apple","banana"]},"expect":2}

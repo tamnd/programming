@@ -1,0 +1,7 @@
+{"name":"empty","class":["empty"],"args":{"n":0,"value":7},"expect":[]}
+{"name":"single","class":["single"],"args":{"n":1,"value":42},"expect":[42]}
+{"name":"zero","class":["zero"],"args":{"n":2,"value":0},"expect":[0,0]}
+{"name":"negative","class":["negative"],"args":{"n":2,"value":-1},"expect":[-1,-1]}
+{"name":"max-int","class":["limit"],"args":{"n":2,"value":2147483647},"expect":[2147483647,2147483647]}
+{"name":"min-int","class":["limit"],"args":{"n":2,"value":-2147483648},"expect":[-2147483648,-2147483648]}
+{"name":"ten","class":["many"],"args":{"n":10,"value":1},"expect":[1,1,1,1,1,1,1,1,1,1]}

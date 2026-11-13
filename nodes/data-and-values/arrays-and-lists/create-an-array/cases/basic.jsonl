@@ -1,0 +1,2 @@
+{"name":"three-sevens","args":{"n":3,"value":7},"expect":[7,7,7]}
+{"name":"five-zeros","args":{"n":5,"value":0},"expect":[0,0,0,0,0]}

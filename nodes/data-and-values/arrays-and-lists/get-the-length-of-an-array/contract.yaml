@@ -1,0 +1,12 @@
+# The contract of the task "get the length of an array" (spec 10.2). The function returns the number of items, not the number of characters or bytes.
+problem: get-the-length-of-an-array
+entry: length
+params:
+  - name: items
+    type: "list<string>"
+    pre: "a list of 0 to 1000 strings of Unicode text; a string can be empty"
+returns:
+  type: int
+  post: "the number of items in items; an empty string counts as one item"
+checker: exact
+edge_classes: [empty, single, empty-item, non-ascii, duplicates, many]

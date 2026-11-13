@@ -12098,7 +12098,7 @@ items:
     group: "collections"
     name: "Create an array"
     target: "create-an-array"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Arrays, Hash from two arrays); Go by Example (Arrays); Rust by Example (arrays/slices, Arrays and Slices)."
   - part: tasks
     group: "collections"
@@ -12110,7 +12110,7 @@ items:
     group: "collections"
     name: "Get the length of an array"
     target: "get-the-length-of-an-array"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Array length)."
   - part: tasks
     group: "collections"
