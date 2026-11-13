@@ -1,0 +1,3 @@
+{"name":"file-exists","args":{"target":"b.txt","link":"a.txt"},"error":"exists"}
+{"name":"directory-exists","args":{"target":"a.txt","link":"sub"},"error":"exists"}
+{"name":"missing-directory","args":{"target":"a.txt","link":"nodir/link"},"error":"not-found"}
