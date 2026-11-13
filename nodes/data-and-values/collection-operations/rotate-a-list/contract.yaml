@@ -1,0 +1,15 @@
+# The contract of the task "rotate a list" (spec 10.2). The function moves the first k items of a list to its end, and keeps the order of the other items.
+problem: rotate-a-list
+entry: rotate_left
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty"
+  - name: k
+    type: int
+    pre: "0 <= k <= 2147483647; k can be larger than the length of the list"
+returns:
+  type: "list<int>"
+  post: "a new list of the same length; if the length n is not 0, item i of the result is item (i + k) mod n of the input; an empty list gives an empty list"
+checker: exact
+edge_classes: [zero, length, larger, empty, single, duplicates, negative]

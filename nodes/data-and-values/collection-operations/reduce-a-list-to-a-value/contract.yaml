@@ -1,0 +1,12 @@
+# The contract of the task "reduce a list to a value" (spec 10.2). The function reduces a list of integers to one value, the sum of the items. The sum of an empty list is 0.
+problem: reduce-a-list-to-a-value
+entry: total
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the total fits in a 32-bit signed integer, but a partial sum can be outside this range; the list can be empty"
+returns:
+  type: int
+  post: "the sum of the items; the sum of an empty list is 0"
+checker: exact
+edge_classes: [empty, single, negative, zero, extremes, partial-overflow]

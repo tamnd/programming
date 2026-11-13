@@ -12176,7 +12176,7 @@ items:
     group: "collections"
     name: "Reduce a list to a value"
     target: "reduce-a-list-to-a-value"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Catamorphism, Sum and product of an array)."
   - part: tasks
     group: "collections"
@@ -12368,7 +12368,7 @@ items:
     group: "collections"
     name: "Rotate a list"
     target: "rotate-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "collections"

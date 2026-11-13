@@ -1,0 +1,9 @@
+{"name":"empty","class":["empty"],"args":{"items":[]},"expect":0}
+{"name":"single","class":["single"],"args":{"items":[7]},"expect":7}
+{"name":"negative","class":["negative"],"args":{"items":[-1,-2,-3]},"expect":-6}
+{"name":"zero-sum","class":["zero"],"args":{"items":[5,-5]},"expect":0}
+{"name":"max","class":["extremes"],"args":{"items":[2147483647]},"expect":2147483647}
+{"name":"min","class":["extremes"],"args":{"items":[-2147483648]},"expect":-2147483648}
+{"name":"to-the-limit","class":["extremes"],"args":{"items":[2147483646,1]},"expect":2147483647}
+{"name":"partial-overflow","class":["partial-overflow"],"args":{"items":[2147483647,1,-1]},"expect":2147483647}
+{"name":"partial-underflow","class":["partial-overflow"],"args":{"items":[-2147483648,-1,1]},"expect":-2147483648}
