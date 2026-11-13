@@ -16268,7 +16268,7 @@ items:
     group: "by-hand"
     name: "JSON Schema"
     target: "json-schema"
-    status: "card"
+    status: "node"
     reason: "The schema language of JSON documents, used by OpenAPI and by editors."
   - part: formats
     group: "by-hand"

@@ -1,0 +1,37 @@
+{"name":"integer-from-fraction-zero","class":["integer"],"args":{"schema":"{\"type\": \"integer\"}","instance":"1.0"},"expect":[]}
+{"name":"integer-from-exponent","class":["integer"],"args":{"schema":"{\"type\": \"integer\"}","instance":"1e2"},"expect":[]}
+{"name":"integer-with-fraction","class":["integer"],"args":{"schema":"{\"type\": \"integer\"}","instance":"3.5"},"expect":[["","/type"]]}
+{"name":"boolean-not-integer","class":["integer","boolean"],"args":{"schema":"{\"type\": \"integer\"}","instance":"true"},"expect":[["","/type"]]}
+{"name":"boolean-not-number","class":["boolean"],"args":{"schema":"{\"type\": \"number\"}","instance":"false"},"expect":[["","/type"]]}
+{"name":"integer-is-number","class":["integer"],"args":{"schema":"{\"type\": \"number\"}","instance":"3"},"expect":[]}
+{"name":"null-not-object","class":["null-value"],"args":{"schema":"{\"type\": \"object\"}","instance":"null"},"expect":[["","/type"]]}
+{"name":"array-not-object","class":["type"],"args":{"schema":"{\"type\": \"object\"}","instance":"[]"},"expect":[["","/type"]]}
+{"name":"type-list-match","class":["type"],"args":{"schema":"{\"type\": [\"string\", \"null\"]}","instance":"null"},"expect":[]}
+{"name":"type-list-miss","class":["type"],"args":{"schema":"{\"type\": [\"string\", \"null\"]}","instance":"5"},"expect":[["","/type"]]}
+{"name":"max-length-astral","class":["length"],"args":{"schema":"{\"maxLength\": 1}","instance":"\"😀\""},"expect":[]}
+{"name":"min-length-astral","class":["length"],"args":{"schema":"{\"minLength\": 2}","instance":"\"\\ud83d\\ude00\""},"expect":[["","/minLength"]]}
+{"name":"combining-mark","class":["length"],"args":{"schema":"{\"maxLength\": 1}","instance":"\"e\\u0301\""},"expect":[["","/maxLength"]]}
+{"name":"other-type-keywords","class":["type"],"args":{"schema":"{\"minimum\": 5, \"required\": [\"a\"], \"items\": false}","instance":"\"abc\""},"expect":[]}
+{"name":"other-type-keywords-number","class":["type"],"args":{"schema":"{\"maxLength\": 1, \"required\": [\"a\"], \"additionalProperties\": false}","instance":"3"},"expect":[]}
+{"name":"unknown-keyword","class":["unknown-keyword"],"args":{"schema":"{\"minimun\": 5}","instance":"1"},"expect":[]}
+{"name":"format-is-annotation","class":["unknown-keyword"],"args":{"schema":"{\"type\": \"string\", \"format\": \"email\"}","instance":"\"not an email\""},"expect":[]}
+{"name":"true-schema","class":["boolean-schema"],"args":{"schema":"true","instance":"{\"a\": [1]}"},"expect":[]}
+{"name":"false-schema","class":["boolean-schema"],"args":{"schema":"false","instance":"{}"},"expect":[["",""]]}
+{"name":"empty-schema","class":["boolean-schema"],"args":{"schema":"{}","instance":"null"},"expect":[]}
+{"name":"false-member-schema","class":["boolean-schema"],"args":{"schema":"{\"properties\": {\"a\": false}}","instance":"{\"a\": 0, \"b\": 0}"},"expect":[["/a","/properties/a"]]}
+{"name":"pointer-escape","class":["pointer-escape"],"args":{"schema":"{\"properties\": {\"a/b\": {\"type\": \"string\"}, \"m~n\": {\"type\": \"string\"}}}","instance":"{\"a/b\": 1, \"m~n\": 2}"},"expect":[["/a~1b","/properties/a~1b/type"],["/m~0n","/properties/m~0n/type"]]}
+{"name":"pointer-escape-order","class":["pointer-escape"],"args":{"schema":"{\"properties\": {\"~1\": false}}","instance":"{\"~1\": 0}"},"expect":[["/~01","/properties/~01"]]}
+{"name":"nested-items","class":["items"],"args":{"schema":"{\"items\": {\"items\": {\"type\": \"integer\"}}}","instance":"[[1, \"x\"], [2]]"},"expect":[["/0/1","/items/items/type"]]}
+{"name":"additional-schema","class":["additional"],"args":{"schema":"{\"properties\": {\"id\": {}}, \"additionalProperties\": {\"type\": \"string\"}}","instance":"{\"id\": 1, \"a\": \"x\", \"b\": 2}"},"expect":[["/b","/additionalProperties/type"]]}
+{"name":"absent-property","class":["required"],"args":{"schema":"{\"properties\": {\"a\": {\"type\": \"string\"}}}","instance":"{}"},"expect":[]}
+{"name":"required-all-missing","class":["required"],"args":{"schema":"{\"required\": [\"a\", \"b\", \"c\"]}","instance":"{}"},"expect":[["","/required"]]}
+{"name":"required-null-member","class":["required","null-value"],"args":{"schema":"{\"required\": [\"a\"]}","instance":"{\"a\": null}"},"expect":[]}
+{"name":"inclusive-bounds","class":["range"],"args":{"schema":"{\"items\": {\"minimum\": 0, \"maximum\": 10}}","instance":"[0, 10, 10.5, -0.5]"},"expect":[["/2","/items/maximum"],["/3","/items/minimum"]]}
+{"name":"negative-zero","class":["range"],"args":{"schema":"{\"minimum\": 0}","instance":"-0"},"expect":[]}
+{"name":"fraction-minimum","class":["range"],"args":{"schema":"{\"minimum\": 0.5}","instance":"0.4"},"expect":[["","/minimum"]]}
+{"name":"index-order","class":["sort-order"],"args":{"schema":"{\"items\": {\"type\": \"string\"}}","instance":"[0, \"\", 0, \"\", \"\", \"\", \"\", \"\", \"\", \"\", 0]"},"expect":[["/0","/items/type"],["/10","/items/type"],["/2","/items/type"]]}
+{"name":"keyword-order","class":["sort-order"],"args":{"schema":"{\"type\": \"string\", \"minimum\": 5}","instance":"3"},"expect":[["","/minimum"],["","/type"]]}
+{"name":"inherited-name","class":["inherited-name"],"args":{"schema":"{\"required\": [\"toString\", \"constructor\"]}","instance":"{}"},"expect":[["","/required"]]}
+{"name":"proto-member","class":["inherited-name"],"args":{"schema":"{\"properties\": {\"__proto__\": {\"type\": \"string\"}}}","instance":"{\"__proto__\": 1}"},"expect":[["/__proto__","/properties/__proto__/type"]]}
+{"name":"non-ascii-name","class":["non-ascii"],"args":{"schema":"{\"required\": [\"é\"], \"properties\": {\"日本\": {\"type\": \"integer\"}}}","instance":"{\"é\": 1, \"日本\": \"x\"}"},"expect":[["/日本","/properties/日本/type"]]}
+{"name":"deep-path","class":["nested"],"args":{"schema":"{\"properties\": {\"a\": {\"items\": {\"properties\": {\"b\": {\"required\": [\"c\"]}}}}}}","instance":"{\"a\": [{\"b\": {}}, {\"b\": {\"c\": 1}}, {\"b\": {}}]}"},"expect":[["/a/0/b","/properties/a/items/properties/b/required"],["/a/2/b","/properties/a/items/properties/b/required"]]}
