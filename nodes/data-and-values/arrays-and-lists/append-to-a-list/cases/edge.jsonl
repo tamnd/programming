@@ -1,0 +1,7 @@
+{"name":"empty","class":["empty"],"args":{"items":[],"index":0,"value":7},"expect":[7]}
+{"name":"single-front","class":["single"],"args":{"items":[5],"index":0,"value":4},"expect":[4,5]}
+{"name":"single-end","class":["single"],"args":{"items":[5],"index":1,"value":6},"expect":[5,6]}
+{"name":"end-of-many","class":["boundary"],"args":{"items":[1,2,3,4],"index":4,"value":5},"expect":[1,2,3,4,5]}
+{"name":"front-of-many","class":["boundary"],"args":{"items":[1,2,3,4],"index":0,"value":0},"expect":[0,1,2,3,4]}
+{"name":"duplicates","class":["duplicates"],"args":{"items":[1,1],"index":1,"value":1},"expect":[1,1,1]}
+{"name":"limit","class":["limit"],"args":{"items":[2147483647],"index":1,"value":-2147483648},"expect":[2147483647,-2147483648]}

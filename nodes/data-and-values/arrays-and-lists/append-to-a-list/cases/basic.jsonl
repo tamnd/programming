@@ -1,0 +1,3 @@
+{"name":"at-end","args":{"items":[1,2],"index":2,"value":3},"expect":[1,2,3]}
+{"name":"at-front","args":{"items":[2,3],"index":0,"value":1},"expect":[1,2,3]}
+{"name":"in-middle","args":{"items":[1,3],"index":1,"value":2},"expect":[1,2,3]}

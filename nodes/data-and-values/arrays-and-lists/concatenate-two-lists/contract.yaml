@@ -1,0 +1,15 @@
+# The contract of the task "concatenate two lists" (spec 10.2). The function returns a new list, and the two input lists do not change.
+problem: concatenate-two-lists
+entry: concat
+params:
+  - name: a
+    type: "list<int>"
+    pre: "a list of 0 to 1000 32-bit signed integers"
+  - name: b
+    type: "list<int>"
+    pre: "a list of 0 to 1000 32-bit signed integers"
+returns:
+  type: "list<int>"
+  post: "a new list of length len(a) + len(b): the items of a in order, then the items of b in order"
+checker: exact
+edge_classes: [empty, duplicates, order, limit]
