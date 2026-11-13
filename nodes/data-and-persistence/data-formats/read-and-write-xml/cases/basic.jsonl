@@ -1,0 +1,5 @@
+{"name":"element-and-text","args":{"text":"<note><to>Ada</to><body>Hello</body></note>"},"expect":"<note><to>Ada</to><body>Hello</body></note>"}
+{"name":"declaration-and-comment","class":["prolog"],"args":{"text":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- a list -->\n<list><item>1</item></list>\n"},"expect":"<list><item>1</item></list>"}
+{"name":"empty-element","class":["empty"],"args":{"text":"<list><item/><item></item></list>"},"expect":"<list><item></item><item></item></list>"}
+{"name":"attributes-sorted","class":["attributes"],"args":{"text":"<book year=\"1999\" id=\"b1\" lang=\"en\"/>"},"expect":"<book id=\"b1\" lang=\"en\" year=\"1999\"></book>"}
+{"name":"escapes-in-text","class":["escapes"],"args":{"text":"<p>Tom &amp; Jerry &lt;3 &gt; 2</p>"},"expect":"<p>Tom &amp; Jerry &lt;3 &gt; 2</p>"}

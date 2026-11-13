@@ -1,0 +1,15 @@
+{"name":"single-quotes","class":["attributes"],"args":{"text":"<a title='say \"hi\"'/>"},"expect":"<a title=\"say &quot;hi&quot;\"></a>"}
+{"name":"escapes-in-attribute","class":["escapes","attributes"],"args":{"text":"<a v=\"x &lt; y &amp; &apos;z&apos;\"/>"},"expect":"<a v=\"x &lt; y &amp; 'z'\"></a>"}
+{"name":"greater-than-in-attribute","class":["escapes","attributes"],"args":{"text":"<a v=\"1 &gt; 0\">2 > 1</a>"},"expect":"<a v=\"1 > 0\">2 &gt; 1</a>"}
+{"name":"character-references","class":["escapes"],"args":{"text":"<a v=\"&#9;&#10;&#13;\">&#65;&#x42;&#13;</a>"},"expect":"<a v=\"&#x9;&#xA;&#xD;\">AB&#xD;</a>"}
+{"name":"cdata","class":["escapes"],"args":{"text":"<code><![CDATA[if (a < b && c) {}]]></code>"},"expect":"<code>if (a &lt; b &amp;&amp; c) {}</code>"}
+{"name":"mixed-content","class":["whitespace"],"args":{"text":"<p>An <b>old</b> and <i>new</i> text.</p>"},"expect":"<p>An <b>old</b> and <i>new</i> text.</p>"}
+{"name":"whitespace-kept","class":["whitespace"],"args":{"text":"<list>\n  <item> a </item>\n</list>"},"expect":"<list>\n  <item> a </item>\n</list>"}
+{"name":"crlf","class":["whitespace"],"args":{"text":"<list>\r\n<item>a\r\nb</item>\r\n</list>\r\n"},"expect":"<list>\n<item>a\nb</item>\n</list>"}
+{"name":"attribute-whitespace","class":["whitespace","attributes"],"args":{"text":"<a v=\"  two  spaces  \"/>"},"expect":"<a v=\"  two  spaces  \"></a>"}
+{"name":"comment-and-pi-inside","class":["prolog"],"args":{"text":"<a>x<!-- note -->y<?app data?>z</a>"},"expect":"<a>xyz</a>"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"text":"<city name=\"Zürich\">東京 &#x1F600; &#233;</city>"},"expect":"<city name=\"Zürich\">東京 😀 é</city>"}
+{"name":"default-namespace","class":["namespaces"],"args":{"text":"<feed xmlns=\"urn:example:feed\"><entry/></feed>"},"expect":"<feed xmlns=\"urn:example:feed\"><entry></entry></feed>"}
+{"name":"prefixes-kept","class":["namespaces"],"args":{"text":"<x:list xmlns:x=\"urn:example:x\"><x:item x:id=\"1\"/></x:list>"},"expect":"<x:list xmlns:x=\"urn:example:x\"><x:item x:id=\"1\"></x:item></x:list>"}
+{"name":"declarations-first","class":["namespaces","attributes"],"args":{"text":"<r b=\"2\" xmlns:z=\"urn:z\" a=\"1\" xmlns=\"urn:d\" xmlns:m=\"urn:m\"/>"},"expect":"<r xmlns=\"urn:d\" xmlns:m=\"urn:m\" xmlns:z=\"urn:z\" a=\"1\" b=\"2\"></r>"}
+{"name":"inner-declaration","class":["namespaces","empty"],"args":{"text":"<a xmlns=\"urn:a\"><b xmlns=\"urn:b\"><c/></b></a>"},"expect":"<a xmlns=\"urn:a\"><b xmlns=\"urn:b\"><c></c></b></a>"}

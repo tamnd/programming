@@ -1,0 +1,11 @@
+{"name":"mismatched-tags","args":{"text":"<a><b></a></b>"},"error":"parse-error"}
+{"name":"unclosed","args":{"text":"<a><b></b>"},"error":"parse-error"}
+{"name":"empty-text","args":{"text":""},"error":"parse-error"}
+{"name":"two-roots","args":{"text":"<a/><b/>"},"error":"parse-error"}
+{"name":"text-after-root","args":{"text":"<a/>tail"},"error":"parse-error"}
+{"name":"bare-ampersand","args":{"text":"<a>Tom & Jerry</a>"},"error":"parse-error"}
+{"name":"undefined-entity","args":{"text":"<a>&nbsp;</a>"},"error":"parse-error"}
+{"name":"lt-in-attribute","args":{"text":"<a v=\"1 < 2\"/>"},"error":"parse-error"}
+{"name":"duplicate-attribute","args":{"text":"<a v=\"1\" v=\"2\"/>"},"error":"parse-error"}
+{"name":"doctype","args":{"text":"<!DOCTYPE a [<!ENTITY e \"text\">]><a>&e;</a>"},"error":"parse-error"}
+{"name":"external-entity","args":{"text":"<!DOCTYPE a [<!ENTITY e SYSTEM \"file:///etc/hostname\">]><a>&e;</a>"},"error":"parse-error"}

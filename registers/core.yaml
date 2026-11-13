@@ -12536,7 +12536,7 @@ items:
     group: "formats"
     name: "Read and write XML"
     target: "read-and-write-xml"
-    status: "planned"
+    status: "node"
     reason: "A job on a common data format. Related titles, found by keyword: Rosetta Code (XML Input, XML XPath); Go by Example (XML)."
   - part: tasks
     group: "formats"
