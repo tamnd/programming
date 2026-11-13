@@ -132,7 +132,7 @@ The example files show these rules. Python uses negative indices, `IndexError` o
 - **Arbitrary lower bounds.** Wikipedia notes that "Ada, ALGOL 60, PL/I, allow an arbitrary lower bound for each index"[^1], and Pascal allows any ordinal type as the index type[^1], so an array can be indexed by the days of the week.
 - **A run-time origin.** "APL allows setting the index origin to 0 or 1 during runtime programmatically"[^1].
 - **Index types.** Rust uses the unsigned `usize`, so a negative index cannot exist, and a signed value must be converted first. Java uses `int`, so the length of an array must fit in an `int`.
-- **Multidimensional indices.** `m[i][j]` selects a row and then an item. A true matrix computes one offset from both indices.
+- **Multidimensional indices.** `m[i][j]` selects a row and then an item. A true matrix computes one offset from both indices. See [multidimensional array](/multidimensional-array/).
 - **Strings.** A string index can count bytes, code units or characters, and each choice gives a different item for a non-ASCII string. In the Go and Rust examples, `"héllo"` has 6 bytes. See [string indexing](/string-indexing/).
 - **Safe access.** `get` in Rust, `getOrNull` in Kotlin and `at` in JavaScript return a value that marks a missing item instead of an error.
 
