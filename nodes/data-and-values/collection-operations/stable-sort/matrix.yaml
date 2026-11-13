@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript methods sort and toSorted, and the language specification requires them to be stable. No example file exists.
+kotlin:
+  status: native
+  reason: The Kotlin functions sortWith, sortedWith and sortedBy are stable, so equal items keep their order. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The sort command of GNU coreutils has the option -s, which turns off the last-resort comparison of whole lines, so lines with equal keys keep their input order. No example file exists.
+powershell:
+  status: native
+  reason: Sort-Object has the switch -Stable. With it, objects with equal sort criteria come out in the order in which Sort-Object received them. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: ORDER BY has no stable form, because a table has no input order. A query adds a unique column, for example the primary key, as the last sort key, so no two rows are equal. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not sort values.
+html:
+  status: n/a
+  reason: HTML is markup. It has no operation that sorts values.
+css:
+  status: n/a
+  reason: CSS has no sort operation. Flex and grid items with the same order value keep their document order, but this is a layout rule and not a sort of data.
