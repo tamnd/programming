@@ -1,0 +1,6 @@
+{"name":"last-line","class":["last-line"],"args":{"n":4},"expect":"gamma"}
+{"name":"non-ascii-line","class":["non-ascii-line"],"args":{"n":2},"expect":"café"}
+{"name":"empty-line","class":["empty-line"],"args":{"n":3},"expect":""}
+{"name":"zero","class":["zero"],"args":{"n":0},"expect":null}
+{"name":"negative","class":["negative"],"args":{"n":-1},"expect":null}
+{"name":"past-the-end","class":["past-the-end"],"args":{"n":5},"expect":null}

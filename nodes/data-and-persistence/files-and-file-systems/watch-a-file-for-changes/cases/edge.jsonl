@@ -1,0 +1,6 @@
+{"name":"no-change","class":["no-change"],"args":{"path":"watched.txt","steps":["create:a\n","none","none"]},"expect":["created","none","none"]}
+{"name":"same-size","class":["same-size"],"args":{"path":"watched.txt","steps":["create:abc\n","write:xyz\n"]},"expect":["created","modified"]}
+{"name":"touch-only","class":["touch-only"],"args":{"path":"watched.txt","steps":["create:a\n","touch"]},"expect":["created","modified"]}
+{"name":"replace-by-rename","class":["replace-by-rename"],"args":{"path":"watched.txt","steps":["create:old\n","replace:new\n"]},"expect":["created","modified"]}
+{"name":"delete-and-create","class":["delete-and-create"],"args":{"path":"watched.txt","steps":["create:a\n","recreate:b\n"]},"expect":["created","modified"]}
+{"name":"never-created","class":["never-created"],"args":{"path":"watched.txt","steps":["none"]},"expect":["none"]}
