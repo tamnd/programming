@@ -414,3 +414,8 @@ R5CD07 convert-a-string-to-bytes
 8PZDZM encode-and-decode-utf-8
 QSJE4Y get-the-code-point-of-a-character
 ZHK7ZJ iterate-over-the-characters-of-a-string
+KBHB5J check-whether-a-file-exists
+7DWYBX copy-a-file
+VPR8VW delete-a-file
+GDJXNM rename-a-file
+VHM159 truncate-a-file

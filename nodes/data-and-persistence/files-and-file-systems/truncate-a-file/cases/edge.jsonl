@@ -1,0 +1,4 @@
+{"name":"same-length","class":["same-length"],"args":{"path":"a.txt","length":6,"file":"alpha\n"},"expect":"alpha\n"}
+{"name":"to-zero","class":["to-zero","shrink"],"args":{"path":"a.txt","length":0,"file":"alpha\n"},"expect":""}
+{"name":"empty-file","class":["empty-file","extend"],"args":{"path":"a.txt","length":3,"file":""},"expect":"\u0000\u0000\u0000"}
+{"name":"name-with-spaces","class":["name-with-spaces","shrink"],"args":{"path":"my notes.txt","length":2,"file":"alpha\n"},"expect":"al"}

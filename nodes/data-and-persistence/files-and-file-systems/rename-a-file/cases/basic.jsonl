@@ -1,0 +1,2 @@
+{"name":"rename","args":{"src":"a.txt","dst":"b.txt","src_file":"alpha\n","dst_file":null},"expect":"alpha\n"}
+{"name":"replace-existing","class":["replace-existing"],"args":{"src":"a.txt","dst":"b.txt","src_file":"alpha\n","dst_file":"beta\n"},"expect":"alpha\n"}
