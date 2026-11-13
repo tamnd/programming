@@ -193,7 +193,7 @@ The example files show these forms. Python shows that a list asks for memory onl
 ## Variations and related ideas
 
 - **Bounded arrays.** Some arrays keep a count of the items in use but never grow. They work like a dynamic array with a fixed maximum capacity, and an append to a full array fails. A ring buffer is also bounded.
-- **Slices.** A Go slice is a view of a dynamic array: "A slice is a descriptor of an array segment. It consists of a pointer to the array, the length of the segment, and its capacity (the maximum length of the segment)"[^13]. Two slices can share one array, so an append to one can change the other.
+- **Slices.** A Go slice is a view of a dynamic array: "A slice is a descriptor of an array segment. It consists of a pointer to the array, the length of the segment, and its capacity (the maximum length of the segment)"[^13]. Two slices can share one array, so an append to one can change the other. See [slice](/slice-concept/).
 - **Deques and gap buffers.** A plain dynamic array is fast only at the end. A double-ended queue, such as Python `collections.deque`, Java `ArrayDeque` or Rust `VecDeque`, is also fast at the front. A gap buffer keeps the free slots at the cursor of a text editor, so inserts near the cursor are fast.
 - **Linked lists.** The other common way to store a [list](/list/) is a [linked list](/linked-list/), a chain of cells with one item each. It inserts at the front in constant time but reaches item `i` in `i` steps.
 - **Persistent vectors.** Functional languages such as Clojure and Scala use trees of small arrays, so a change makes a new version and keeps the old one.
