@@ -1,0 +1,17 @@
+# The contract of the task "get the size of a file". Each solution returns the size in bytes of the regular file at path, as the file system records it (st_size). The size does not depend on text mode, line ends or the encoding: each byte counts as one.
+problem: get-the-size-of-a-file
+entry: file_size
+params:
+  - name: path
+    type: string
+    pre: "the path of a regular file, in a directory that the test makes"
+  - name: file
+    type: string
+    mode: inout
+    pre: "the content that the test writes to path before the call, as UTF-8; the call does not change it"
+returns:
+  type: int
+  post: "the number of bytes in the UTF-8 form of file"
+checker: exact
+edge_classes: [empty-file, binary-data, crlf-line-ends, name-with-spaces, non-ascii-name]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error: not-found when no file is at path, and is-a-directory for a directory, because the size that the file system gives for a directory is not the size of a file. The native tests also check, in a temporary directory: a symbolic link gives the size of its target; a sparse file of 5368709120 bytes (5 GiB, more than a 32-bit integer can hold) gives that size, also though it has almost no blocks on the disk; and a file that a stream has open gives the new size after the stream flushes its data.

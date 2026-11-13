@@ -440,3 +440,8 @@ AVTYES active-record
 MS2MYG data-mapper
 01FS9B row-data-gateway
 GZ4XD3 table-data-gateway
+X4W26P file-metadata
+78QPZ3 file-permissions
+Z8YPVC get-the-modification-time-of-a-file
+P9HCNV get-the-size-of-a-file
+665PF5 set-file-permissions

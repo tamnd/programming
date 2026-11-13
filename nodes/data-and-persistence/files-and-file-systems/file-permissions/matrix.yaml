@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses the node:fs module, with the types from @types/node, so chmod, access and process.umask are the same as in the JavaScript example. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM uses java.nio.file, and the kotlin.io.path package adds getPosixFilePermissions and setPosixFilePermissions as extensions of Path, so the PosixFilePermission set of the Java example does the work. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The chmod command takes octal modes such as 640 and symbolic modes such as u+x, the umask builtin sets the mask of the shell, and the tests -r, -w and -x check the access of the shell. No example file exists.
+powershell:
+  status: native
+  reason: Get-Acl and Set-Acl read and write the ACL of a file on Windows, and the IsReadOnly property of a FileInfo object sets the read-only attribute. On Unix, the chmod command and the UnixFileMode API of .NET do the work. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL has permissions on tables and other database objects, with GRANT and REVOKE, but it has no operations on the permissions of files.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not read or set the permissions of a file.
+html:
+  status: n/a
+  reason: A web page cannot read or set the permissions of a local file. The browser decides which files a page can see.
+css:
+  status: n/a
+  reason: Style rules do not read files or their permissions.

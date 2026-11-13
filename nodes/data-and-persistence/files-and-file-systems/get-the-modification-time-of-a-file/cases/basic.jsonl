@@ -1,0 +1,2 @@
+{"name":"whole-second","class":["whole-second"],"args":{"path":"a.txt","mtime_ns":1709296496000000000},"expect":1709296496}
+{"name":"sub-second","class":["sub-second"],"args":{"path":"a.txt","mtime_ns":1709296496500000000},"expect":1709296496}

@@ -1,0 +1,2 @@
+{"name":"missing","args":{"path":"a.txt","file":null},"error":"not-found"}
+{"name":"directory","args":{"path":"dir","file":null},"error":"is-a-directory"}

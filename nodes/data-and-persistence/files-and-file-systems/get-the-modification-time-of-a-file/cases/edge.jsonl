@@ -1,0 +1,6 @@
+{"name":"epoch","class":["epoch"],"args":{"path":"a.txt","mtime_ns":0},"expect":0}
+{"name":"before-1970","class":["before-1970"],"args":{"path":"a.txt","mtime_ns":-86400000000000},"expect":-86400}
+{"name":"before-1970-sub-second","class":["before-1970","sub-second"],"args":{"path":"a.txt","mtime_ns":-1500000000},"expect":-2}
+{"name":"after-2038","class":["after-2038"],"args":{"path":"a.txt","mtime_ns":4102444800000000000},"expect":4102444800}
+{"name":"directory","class":["directory"],"args":{"path":"dir","mtime_ns":1709296496000000000},"expect":1709296496}
+{"name":"name-with-spaces","class":["name-with-spaces"],"args":{"path":"my notes.txt","mtime_ns":1709296496000000000},"expect":1709296496}

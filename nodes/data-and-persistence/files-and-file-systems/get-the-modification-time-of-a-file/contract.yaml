@@ -1,0 +1,16 @@
+# The contract of the task "get the modification time of a file". Each solution returns the time of the last change to the data of the file at path, as a count of whole seconds since 1970-01-01T00:00:00Z (Unix time). A time with a part of a second gives the second before it (the floor), also for a time before 1970.
+problem: get-the-modification-time-of-a-file
+entry: file_mtime
+params:
+  - name: path
+    type: string
+    pre: "the path of a file or a directory, in a directory that the test makes"
+  - name: mtime_ns
+    type: int
+    pre: "the modification time that the test sets on path before the call, in nanoseconds since 1970-01-01T00:00:00Z, a multiple of 100"
+returns:
+  type: int
+  post: "the floor of mtime_ns / 1000000000"
+checker: exact
+edge_classes: [sub-second, epoch, before-1970, after-2038, directory, name-with-spaces]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error: not-found when no file is at path. The native tests also check, in a temporary directory: a symbolic link gives the time of its target, not of the link; and a write to the file sets its time to the present time.
