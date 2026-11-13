@@ -1,0 +1,16 @@
+# The contract of the task "normalize Unicode text" (spec 10.2). The forms are NFC and NFD of UAX #15. The contract has a small set of code points, so that a table of 40 pairs is the full rule: the vowels a, e, i, o, u, A, E, I, O and U, with U+0300, U+0301, U+0302 or U+0308, and each composite of these pairs, from U+00C0 to U+00FC.
+# The other Latin-1 letters with a canonical decomposition are not in the set: U+00C3, U+00C5, U+00C7, U+00D1, U+00D5, U+00DD, U+00E3, U+00E5, U+00E7, U+00F1, U+00F5, U+00FD and U+00FF.
+problem: normalize-unicode-text
+entry: normalize
+params:
+  - name: s
+    type: string
+    pre: "each code point of s is from U+0000 to U+00FF and not one of the 13 letters above, or it is U+0300, U+0301, U+0302 or U+0308 right after one of the 10 vowels"
+  - name: form
+    type: string
+    pre: "NFC or NFD"
+returns:
+  type: string
+  post: "s in the normalization form: NFC gives each vowel and its mark as one composite, and NFD gives each composite as the vowel and its mark"
+checker: exact
+edge_classes: [composed, decomposed, mixed, compatibility, no-decomposition]

@@ -1,0 +1,4 @@
+{"name":"nfc-composes","args":{"s":"e\u0301","form":"NFC"},"expect":"\u00e9"}
+{"name":"nfd-decomposes","args":{"s":"\u00e9","form":"NFD"},"expect":"e\u0301"}
+{"name":"ascii","args":{"s":"abc","form":"NFC"},"expect":"abc"}
+{"name":"empty","args":{"s":"","form":"NFD"},"expect":""}

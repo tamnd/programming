@@ -1,0 +1,14 @@
+{"name":"combining","class":["combining"],"args":{"s":"e\u0301"},"expect":1}
+{"name":"two-marks","class":["combining"],"args":{"s":"e\u0301\u0302"},"expect":1}
+{"name":"leading-mark","class":["combining"],"args":{"s":"\u0301a"},"expect":2}
+{"name":"crlf","class":["crlf"],"args":{"s":"\r\n"},"expect":1}
+{"name":"lfcr","class":["crlf"],"args":{"s":"\n\r"},"expect":2}
+{"name":"cr-mark","class":["control"],"args":{"s":"\r\u0301"},"expect":2}
+{"name":"soft-hyphen","class":["control"],"args":{"s":"a\u00adb"},"expect":3}
+{"name":"flag","class":["regional-indicator"],"args":{"s":"\ud83c\uddeb\ud83c\uddf7"},"expect":1}
+{"name":"three-indicators","class":["regional-indicator"],"args":{"s":"\ud83c\uddeb\ud83c\uddf7\ud83c\uddea"},"expect":2}
+{"name":"two-flags","class":["regional-indicator"],"args":{"s":"\ud83c\uddeb\ud83c\uddf7\ud83c\uddea\ud83c\uddf8"},"expect":2}
+{"name":"zwj-sequence","class":["zwj"],"args":{"s":"\ud83d\udc69\u200d\ud83d\udcbb"},"expect":1}
+{"name":"zwj-after-letter","class":["zwj"],"args":{"s":"a\u200d\ud83d\ude42"},"expect":2}
+{"name":"skin-tone","class":["modifier"],"args":{"s":"\ud83d\udc4d\ud83c\udffd"},"expect":1}
+{"name":"variation-selector","class":["modifier"],"args":{"s":"\u2764\ufe0f"},"expect":1}
