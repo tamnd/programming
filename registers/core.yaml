@@ -12104,7 +12104,7 @@ items:
     group: "collections"
     name: "Create a two-dimensional array"
     target: "create-a-two-dimensional-array"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Create a two dimensional array at runtime, Multi dimensional array)."
   - part: tasks
     group: "collections"
@@ -12128,7 +12128,7 @@ items:
     group: "collections"
     name: "Slice a list"
     target: "slice-a-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Go by Example (Slices); Rust by Example (arrays/slices, Arrays and Slices)."
   - part: tasks
     group: "collections"

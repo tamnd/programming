@@ -1,0 +1,18 @@
+# The contract of the task "slice a list" (spec 10.2). The function returns a new list, and the input list does not change.
+problem: slice-a-list
+entry: slice
+params:
+  - name: items
+    type: "list<int>"
+    pre: "a list of 0 to 1000 32-bit signed integers"
+  - name: start
+    type: "int"
+    pre: "0 <= start <= stop"
+  - name: stop
+    type: "int"
+    pre: "start <= stop <= len(items)"
+returns:
+  type: "list<int>"
+  post: "a new list of the stop - start items items[start], ..., items[stop - 1] in order; the item at stop is not part of it"
+checker: exact
+edge_classes: [empty, whole, single, boundary, limit]
