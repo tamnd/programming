@@ -1,0 +1,11 @@
+{"name":"already-nfc","class":["composed"],"args":{"s":"\u00e9","form":"NFC"},"expect":"\u00e9"}
+{"name":"already-nfd","class":["decomposed"],"args":{"s":"e\u0301","form":"NFD"},"expect":"e\u0301"}
+{"name":"mixed-nfc","class":["mixed"],"args":{"s":"cafe\u0301 caf\u00e9","form":"NFC"},"expect":"caf\u00e9 caf\u00e9"}
+{"name":"mixed-nfd","class":["mixed"],"args":{"s":"cafe\u0301 caf\u00e9","form":"NFD"},"expect":"cafe\u0301 cafe\u0301"}
+{"name":"upper-grave","class":["decomposed"],"args":{"s":"E\u0300","form":"NFC"},"expect":"\u00c8"}
+{"name":"diaeresis","class":["decomposed"],"args":{"s":"u\u0308ber","form":"NFC"},"expect":"\u00fcber"}
+{"name":"circumflex","class":["composed"],"args":{"s":"\u00ee","form":"NFD"},"expect":"i\u0302"}
+{"name":"umlauts","class":["composed"],"args":{"s":"\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc","form":"NFD"},"expect":"A\u0308O\u0308U\u0308a\u0308o\u0308u\u0308"}
+{"name":"spacing-accent","class":["compatibility"],"args":{"s":"\u00b4e","form":"NFC"},"expect":"\u00b4e"}
+{"name":"no-break-space","class":["compatibility"],"args":{"s":"a\u00a0b","form":"NFD"},"expect":"a\u00a0b"}
+{"name":"sharp-s","class":["no-decomposition"],"args":{"s":"stra\u00dfe","form":"NFD"},"expect":"stra\u00dfe"}

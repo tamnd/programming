@@ -67,7 +67,7 @@ Find the length of a string. A string has more than one length, so the function 
 
 UTF-8 uses 1 to 4 bytes for each code point, because characters "are encoded using sequences of 1 to 4 octets"[^1]. UTF-16 uses one 16-bit code unit for a code point up to U+FFFF, and a pair of code units, a high surrogate and a low surrogate, for a code point above U+FFFF[^2]. So `"🙂"` (U+1F642) has a length of 4 bytes, 2 code units and 1 code point.
 
-The number of graphemes, the characters that a reader sees, is a fourth length. It needs the segmentation rules of Unicode, so it is a separate task, "Count the graphemes of a string". See [grapheme cluster](/grapheme-cluster/).
+The number of graphemes, the characters that a reader sees, is a fourth length. It needs the segmentation rules of Unicode, so it is a separate task, [count the graphemes of a string](/count-the-graphemes-of-a-string/). See [grapheme cluster](/grapheme-cluster/).
 
 ## Solutions
 

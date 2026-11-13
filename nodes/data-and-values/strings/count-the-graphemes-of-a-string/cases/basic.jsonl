@@ -1,0 +1,4 @@
+{"name":"empty","args":{"s":""},"expect":0}
+{"name":"ascii","args":{"s":"abc"},"expect":3}
+{"name":"precomposed","args":{"s":"\u00e9"},"expect":1}
+{"name":"emoji","args":{"s":"\ud83d\ude42"},"expect":1}
