@@ -16676,7 +16676,7 @@ items:
     group: "canon"
     name: "Deep modules"
     target: "deep-modules"
-    status: "planned"
+    status: "node"
     reason: "A practice that A Philosophy of Software Design, a canon book of spec 13.3, names."
   - part: practices
     group: "canon"
