@@ -1,0 +1,20 @@
+java:
+  status: library
+  reason: The Java SE API has no Markdown parser.
+  alternative: the library commonmark-java.
+rust:
+  status: library
+  reason: The Rust standard library has no Markdown parser.
+  alternative: a crate such as pulldown-cmark or comrak.
+c:
+  status: library
+  reason: ISO C has no Markdown parser in its standard library.
+  alternative: the reference library cmark.
+cpp:
+  status: library
+  reason: The C++ standard library has no Markdown parser.
+  alternative: the C library cmark, or a parser such as MD4C.
+bash:
+  status: library
+  reason: Bash has no Markdown parser.
+  alternative: the cmark command-line program, which reads Markdown and writes HTML.

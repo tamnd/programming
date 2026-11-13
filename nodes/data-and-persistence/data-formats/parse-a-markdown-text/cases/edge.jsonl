@@ -1,0 +1,30 @@
+{"name":"html-chars","class":["html-chars"],"args":{"text":"a < b & \"c\" > d\n"},"expect":"<p>a &lt; b &amp; &quot;c&quot; &gt; d</p>\n"}
+{"name":"backslash-escape","class":["escapes"],"args":{"text":"\\*not emphasis\\* and \\`not code\\`\n"},"expect":"<p>*not emphasis* and `not code`</p>\n"}
+{"name":"intraword-star","class":["emphasis"],"args":{"text":"foo*bar*baz\n"},"expect":"<p>foo<em>bar</em>baz</p>\n"}
+{"name":"intraword-underscore","class":["emphasis"],"args":{"text":"snake_case_name\n"},"expect":"<p>snake_case_name</p>\n"}
+{"name":"star-with-spaces","class":["emphasis"],"args":{"text":"a * b * c\n"},"expect":"<p>a * b * c</p>\n"}
+{"name":"triple-star","class":["emphasis"],"args":{"text":"***both***\n"},"expect":"<p><em><strong>both</strong></em></p>\n"}
+{"name":"unmatched-star","class":["emphasis"],"args":{"text":"**foo*\n"},"expect":"<p>*<em>foo</em></p>\n"}
+{"name":"rule-of-three","class":["emphasis"],"args":{"text":"*foo**bar**baz*\n"},"expect":"<p><em>foo<strong>bar</strong>baz</em></p>\n"}
+{"name":"punctuation-flanking","class":["emphasis"],"args":{"text":"*\"quoted\"* and a*\"b\"*\n"},"expect":"<p><em>&quot;quoted&quot;</em> and a*&quot;b&quot;*</p>\n"}
+{"name":"code-span-backticks","class":["code-span"],"args":{"text":"`` a ` b ``\n"},"expect":"<p><code>a ` b</code></p>\n"}
+{"name":"code-span-precedence","class":["code-span","emphasis"],"args":{"text":"*a `*` b*\n"},"expect":"<p><em>a <code>*</code> b</em></p>\n"}
+{"name":"unclosed-backtick","class":["code-span"],"args":{"text":"`foo\n"},"expect":"<p>`foo</p>\n"}
+{"name":"hard-break-spaces","class":["line-break"],"args":{"text":"foo  \nbar\n"},"expect":"<p>foo<br />\nbar</p>\n"}
+{"name":"hard-break-backslash","class":["line-break","escapes"],"args":{"text":"foo\\\nbar\n"},"expect":"<p>foo<br />\nbar</p>\n"}
+{"name":"trailing-spaces","class":["line-break"],"args":{"text":"foo  \n"},"expect":"<p>foo</p>\n"}
+{"name":"heading-closing","class":["heading"],"args":{"text":"## Title ##\n"},"expect":"<h2>Title</h2>\n"}
+{"name":"heading-empty","class":["heading"],"args":{"text":"#\n"},"expect":"<h1></h1>\n"}
+{"name":"not-a-heading","class":["heading"],"args":{"text":"#hashtag\n\n####### seven\n"},"expect":"<p>#hashtag</p>\n<p>####### seven</p>\n"}
+{"name":"list-interrupts-paragraph","class":["list"],"args":{"text":"Colors:\n- red\n- green\n"},"expect":"<p>Colors:</p>\n<ul>\n<li>red</li>\n<li>green</li>\n</ul>\n"}
+{"name":"loose-list","class":["list"],"args":{"text":"- red\n\n- green\n"},"expect":"<ul>\n<li>\n<p>red</p>\n</li>\n<li>\n<p>green</p>\n</li>\n</ul>\n"}
+{"name":"unclosed-fence","class":["code-block"],"args":{"text":"```\ncode < 1\n"},"expect":"<pre><code>code &lt; 1\n</code></pre>\n"}
+{"name":"longer-fence","class":["code-block"],"args":{"text":"````\n```\n````\n"},"expect":"<pre><code>```\n</code></pre>\n"}
+{"name":"fence-info-words","class":["code-block"],"args":{"text":"``` js extra words\nx\n```\n"},"expect":"<pre><code class=\"language-js\">x\n</code></pre>\n"}
+{"name":"fence-keeps-markup","class":["code-block"],"args":{"text":"```\n# not a heading\n*not em*\n```\n"},"expect":"<pre><code># not a heading\n*not em*\n</code></pre>\n"}
+{"name":"link-with-emphasis","class":["link","emphasis"],"args":{"text":"[*a*](u) and *[b](v)*\n"},"expect":"<p><a href=\"u\"><em>a</em></a> and <em><a href=\"v\">b</a></em></p>\n"}
+{"name":"not-a-link","class":["link"],"args":{"text":"[a] (u) and [b]\n"},"expect":"<p>[a] (u) and [b]</p>\n"}
+{"name":"link-ampersand","class":["link","html-chars"],"args":{"text":"[q](https://example.com/?a=1&b=2)\n"},"expect":"<p><a href=\"https://example.com/?a=1&amp;b=2\">q</a></p>\n"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"text":"Zürich *東京* 🙂\n"},"expect":"<p>Zürich <em>東京</em> 🙂</p>\n"}
+{"name":"blank-lines-only","class":["empty"],"args":{"text":"\n\n"},"expect":""}
+{"name":"paragraph-ends-at-block","class":["paragraph","heading","code-block"],"args":{"text":"text\n# Head\nmore\n```\nx\n```\n"},"expect":"<p>text</p>\n<h1>Head</h1>\n<p>more</p>\n<pre><code>x\n</code></pre>\n"}

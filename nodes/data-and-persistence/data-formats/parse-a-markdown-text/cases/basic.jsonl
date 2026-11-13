@@ -1,0 +1,8 @@
+{"name":"heading-and-paragraph","class":["heading","emphasis"],"args":{"text":"# Release notes\n\nVersion **2.1** adds one *small* feature.\n"},"expect":"<h1>Release notes</h1>\n<p>Version <strong>2.1</strong> adds one <em>small</em> feature.</p>\n"}
+{"name":"paragraph-lines","class":["paragraph"],"args":{"text":"one line\nanother line\n"},"expect":"<p>one line\nanother line</p>\n"}
+{"name":"bullet-list","class":["list"],"args":{"text":"- red\n- green\n- blue\n"},"expect":"<ul>\n<li>red</li>\n<li>green</li>\n<li>blue</li>\n</ul>\n"}
+{"name":"fenced-code","class":["code-block"],"args":{"text":"```python\nprint(1 < 2)\n```\n"},"expect":"<pre><code class=\"language-python\">print(1 &lt; 2)\n</code></pre>\n"}
+{"name":"code-span","class":["code-span"],"args":{"text":"Use `x < y` here.\n"},"expect":"<p>Use <code>x &lt; y</code> here.</p>\n"}
+{"name":"link","class":["link"],"args":{"text":"See [the spec](https://spec.commonmark.org/0.31.2/).\n"},"expect":"<p>See <a href=\"https://spec.commonmark.org/0.31.2/\">the spec</a>.</p>\n"}
+{"name":"empty","class":["empty"],"args":{"text":""},"expect":""}
+{"name":"no-final-newline","class":["paragraph"],"args":{"text":"# Title\n\ntext"},"expect":"<h1>Title</h1>\n<p>text</p>\n"}
