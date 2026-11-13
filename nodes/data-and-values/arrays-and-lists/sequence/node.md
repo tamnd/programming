@@ -151,7 +151,7 @@ The example files show these forms. Python shows which built-in types are sequen
 
 - **Strings.** A string is a sequence of characters, bytes or code units. Python strings are sequences of strings of length 1. See [string](/string-concept/).
 - **Tuples.** A tuple is a fixed-length sequence, usually with items of different types.
-- **Ranges.** A range such as `range(0, 10, 2)` is an indexed sequence that stores only its start, stop and step. In the Python example, `len(range(10**18))` takes no memory for the items.
+- **Ranges.** A [range](/range/) such as `range(0, 10, 2)` is an indexed sequence that stores only its start, stop and step. In the Python example, `len(range(10**18))` takes no memory for the items.
 - **Persistent sequences.** Haskell's `Data.Seq` gives "General-purpose finite sequences"[^13] that are immutable and fast at both ends. "The implementation uses 2-3 finger trees annotated with sizes"[^13].
 - **Streams.** Wikipedia uses stream for a sequence that can be infinite[^1]. Java `Stream`, Kotlin `Sequence` and Rust iterators are examples.
 - **Slices.** A [slice](/slice-concept/) is a part of an indexed sequence, and in many languages it is a sequence of the same type.
