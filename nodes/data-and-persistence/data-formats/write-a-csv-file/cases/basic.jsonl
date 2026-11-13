@@ -1,0 +1,4 @@
+{"name":"simple","args":{"records":[["name","age"],["Ada","36"],["Alan","41"]]},"expect":"name,age\r\nAda,36\r\nAlan,41\r\n"}
+{"name":"comma","class":["quoted"],"args":{"records":[["name","born"],["Lovelace, Ada","1815"]]},"expect":"name,born\r\n\"Lovelace, Ada\",1815\r\n"}
+{"name":"double-quote","class":["quoted"],"args":{"records":[["id","quote"],["1","She said \"hi\"."]]},"expect":"id,quote\r\n1,\"She said \"\"hi\"\".\"\r\n"}
+{"name":"header-only","args":{"records":[["name","age"]]},"expect":"name,age\r\n"}

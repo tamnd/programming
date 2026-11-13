@@ -1,0 +1,9 @@
+{"name":"only-a-quote","class":["quoted"],"args":{"records":[["q"],["\""]]},"expect":"q\r\n\"\"\"\"\r\n"}
+{"name":"newline-in-field","class":["newline-in-field"],"args":{"records":[["id","address"],["1","12 High St\nLeeds"]]},"expect":"id,address\r\n1,\"12 High St\nLeeds\"\r\n"}
+{"name":"crlf-in-field","class":["newline-in-field"],"args":{"records":[["id","address"],["1","12 High St\r\nLeeds"]]},"expect":"id,address\r\n1,\"12 High St\r\nLeeds\"\r\n"}
+{"name":"cr-in-field","class":["newline-in-field"],"args":{"records":[["id","text"],["1","a\rb"]]},"expect":"id,text\r\n1,\"a\rb\"\r\n"}
+{"name":"empty-fields","class":["empty-field"],"args":{"records":[["a","b","c"],["","",""]]},"expect":"a,b,c\r\n,,\r\n"}
+{"name":"one-empty-field","class":["empty-field"],"args":{"records":[["note"],[""],["x"]]},"expect":"note\r\n\"\"\r\nx\r\n"}
+{"name":"spaces","class":["whitespace"],"args":{"records":[["a","b"],[" x "," y"]]},"expect":"a,b\r\n x , y\r\n"}
+{"name":"no-records","class":["empty"],"args":{"records":[]},"expect":""}
+{"name":"non-ascii","class":["non-ascii"],"args":{"records":[["city"],["Zürich"],["東京"]]},"expect":"city\r\nZürich\r\n東京\r\n"}

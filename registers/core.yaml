@@ -12530,7 +12530,7 @@ items:
     group: "formats"
     name: "Write a CSV file"
     target: "write-a-csv-file"
-    status: "planned"
+    status: "node"
     reason: "A job on a common data format. Related titles, found by keyword: Rosetta Code (CSV data manipulation, CSV to HTML translation)."
   - part: tasks
     group: "formats"
