@@ -12434,13 +12434,13 @@ items:
     group: "files"
     name: "Get the size of a file"
     target: "get-the-size-of-a-file"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. Related titles, found by keyword: Rosetta Code (File size, File size distribution)."
   - part: tasks
     group: "files"
     name: "Get the modification time of a file"
     target: "get-the-modification-time-of-a-file"
-    status: "planned"
+    status: "node"
     reason: "A job on files and directories that most programs do. Related titles, found by keyword: Rosetta Code (File modification time)."
   - part: tasks
     group: "files"

@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses the node:fs module, with the types from @types/node, so stat, lstat and the fs.Stats object are the same as in the JavaScript example. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM uses java.nio.file, and the kotlin.io.path package adds extensions such as readAttributes, so the attribute views of the Java example do the work. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The test operators -e, -f, -d, -L, -r, -w, -x and -s read the metadata of a file, and -nt and -ot compare the modification times. The stat command of the system prints the other fields. No example file exists.
+powershell:
+  status: native
+  reason: Get-Item returns a FileInfo or a DirectoryInfo object of .NET, with Length, Attributes, the times, LinkType, Target and UnixMode. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query works on rows in tables. The database server reads the files, but the SQL language has no operations on file metadata.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It does not read the size, the times or the mode of a file.
+html:
+  status: n/a
+  reason: A web page cannot read the metadata of a local file by a path. A file that the user chooses becomes a File object with a name, a size, a type and a lastModified time.
+css:
+  status: n/a
+  reason: Style rules do not read files or their metadata.

@@ -1,0 +1,16 @@
+# The contract of the task "set file permissions". Each solution takes a mode as a string of three or four octal digits, as the chmod command does, sets the mode of the file at path to it with the chmod call of the language, and returns the permission bits that the file has after the call (st_mode & 07777), read back from the file system. The umask does not apply, because the file exists.
+problem: set-file-permissions
+entry: set_mode
+params:
+  - name: path
+    type: string
+    pre: "the path of a regular file with the mode 0644, in a directory that the test makes"
+  - name: mode
+    type: string
+    pre: "the new mode: three or four octal digits, such as 640 or 4755"
+returns:
+  type: int
+  post: "the permission bits of the file after the call, st_mode & 07777; for example 416 for the mode 0640"
+checker: exact
+edge_classes: [no-permissions, leading-zero, set-user-id, name-with-spaces, non-ascii-name]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error: not-found when no file is at path, and invalid-mode when the mode is not three or four octal digits. The mode "640\n" with a newline at the end is invalid, because a pattern with $ in some regex engines matches before a final newline. The native tests also check, in a temporary directory: a symbolic link changes the mode of its target; a directory gets the mode 0700; and where the language can set the umask, a umask of 077 does not change the result.

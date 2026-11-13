@@ -1,0 +1,5 @@
+{"name":"no-permissions","class":["no-permissions"],"args":{"path":"a.txt","mode":"000"},"expect":0}
+{"name":"leading-zero","class":["leading-zero"],"args":{"path":"a.txt","mode":"0640"},"expect":416}
+{"name":"set-user-id","class":["set-user-id"],"args":{"path":"a.txt","mode":"4755"},"expect":2541}
+{"name":"name-with-spaces","class":["name-with-spaces"],"args":{"path":"my notes.txt","mode":"640"},"expect":416}
+{"name":"non-ascii-name","class":["non-ascii-name"],"args":{"path":"café 日本.txt","mode":"640"},"expect":416}

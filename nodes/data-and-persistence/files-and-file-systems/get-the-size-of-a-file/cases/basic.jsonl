@@ -1,0 +1,2 @@
+{"name":"text","class":["text"],"args":{"path":"a.txt","file":"alpha\n"},"expect":6}
+{"name":"non-ascii-text","class":["non-ascii-text"],"args":{"path":"a.txt","file":"café\n"},"expect":6}

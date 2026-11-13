@@ -1,0 +1,7 @@
+{"name":"missing","args":{"path":"missing.txt","mode":"640"},"error":"not-found"}
+{"name":"not-octal","args":{"path":"a.txt","mode":"648"},"error":"invalid-mode"}
+{"name":"too-short","args":{"path":"a.txt","mode":"64"},"error":"invalid-mode"}
+{"name":"too-long","args":{"path":"a.txt","mode":"10640"},"error":"invalid-mode"}
+{"name":"symbolic","args":{"path":"a.txt","mode":"u+x"},"error":"invalid-mode"}
+{"name":"empty","args":{"path":"a.txt","mode":""},"error":"invalid-mode"}
+{"name":"trailing-newline","args":{"path":"a.txt","mode":"640\n"},"error":"invalid-mode"}

@@ -1,0 +1,4 @@
+{"name":"owner-read-write-group-read","class":["owner-read-write-group-read"],"args":{"path":"a.txt","mode":"640"},"expect":416}
+{"name":"owner-only","class":["owner-only"],"args":{"path":"a.txt","mode":"600"},"expect":384}
+{"name":"executable","class":["executable"],"args":{"path":"a.txt","mode":"755"},"expect":493}
+{"name":"same-mode","class":["same-mode"],"args":{"path":"a.txt","mode":"644"},"expect":420}

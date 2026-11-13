@@ -1,0 +1,5 @@
+{"name":"empty-file","class":["empty-file"],"args":{"path":"a.txt","file":""},"expect":0}
+{"name":"binary-data","class":["binary-data"],"args":{"path":"a.bin","file":"\u0000\r\nÿ\u0000"},"expect":6}
+{"name":"crlf-line-ends","class":["crlf-line-ends"],"args":{"path":"a.txt","file":"a\r\nb\r\n"},"expect":6}
+{"name":"name-with-spaces","class":["name-with-spaces"],"args":{"path":"my notes.txt","file":"alpha\n"},"expect":6}
+{"name":"non-ascii-name","class":["non-ascii-name"],"args":{"path":"café 日本.txt","file":"alpha\n"},"expect":6}
