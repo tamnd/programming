@@ -8,7 +8,7 @@ area: data-and-persistence/data-formats
 level: core
 summary: >-
   Markdown is a plain text syntax for documents that a program converts to HTML. The original description is not exact, so CommonMark and GitHub Flavored Markdown give exact specifications of it.
-see_also: [cross-site-scripting, csv]
+see_also: [commonmark, cross-site-scripting, csv]
 sources:
 - url: https://daringfireball.net/projects/markdown/
   title: John Gruber, Daring Fireball, Markdown
