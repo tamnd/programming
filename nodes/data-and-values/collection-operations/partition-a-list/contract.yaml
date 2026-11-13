@@ -1,0 +1,12 @@
+# The contract of the task "partition a list" (spec 10.2). The function splits a list into the items that pass a test and the items that do not, here the odd and the even items, and keeps the order in each part.
+problem: partition-a-list
+entry: partition_odd
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty"
+returns:
+  type: "tuple<list<int>, list<int>>"
+  post: "the first list has the odd items and the second list has the even items, each in input order; an item is odd if the remainder of the item divided by 2 is not 0, so -3 is odd"
+checker: exact
+edge_classes: [empty, one-side, negative, zero, order, extremes, duplicates]

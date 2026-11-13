@@ -1,0 +1,15 @@
+# The contract of the task "search a sorted list" (spec 10.2). The function finds the first index of a value in a sorted list with a binary search, or gives -1.
+problem: search-a-sorted-list
+entry: index_of
+params:
+  - name: items
+    type: "list<int>"
+    pre: "the items are 32-bit signed integers in ascending order; equal items can occur; the list can be empty"
+  - name: target
+    type: int
+    pre: "a 32-bit signed integer"
+returns:
+  type: int
+  post: "the smallest index i with items[i] == target, or -1 if no item is equal to target"
+checker: exact
+edge_classes: [position, missing, empty, single, duplicates, negative, extremes]
