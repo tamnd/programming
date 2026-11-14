@@ -1,0 +1,25 @@
+typescript:
+  status: native
+  reason: "TypeScript uses the JavaScript Date.prototype.toISOString, Date.parse and Temporal. No example file exists, because the JavaScript example applies."
+kotlin:
+  status: stdlib
+  reason: "On the JVM, Kotlin uses java.time.format.DateTimeFormatter and the toString and parse methods of java.time. kotlinx-datetime reads and writes ISO 8601 on all platforms. No example file exists because kotlinc is not installed."
+rust:
+  status: library
+  reason: "The Rust standard library has no dates or text formats for time."
+  alternative: "The crates chrono (to_rfc3339 and parse_from_rfc3339), time (the Iso8601 and Rfc3339 formats) and jiff read and write ISO 8601."
+powershell:
+  status: stdlib
+  reason: "Get-Date -Format o writes the round-trip ISO 8601 form of .NET, and [datetime]::Parse reads it. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: "SQL date and timestamp literals use the ISO form, such as DATE '2024-07-09' and TIMESTAMP '2024-07-09 14:30:05'. Most systems also read and write the T form, and PostgreSQL has the interval output style iso_8601."
+regex:
+  status: idiom
+  reason: "A regular expression can check the form of an ISO 8601 text, such as ^\\d{4}-\\d{2}-\\d{2}$, but not that the date exists. Check the value with a date parser after the match."
+html:
+  status: native
+  reason: "The datetime attribute of the time element, and the values of input type=date, time and datetime-local, use forms of ISO 8601."
+css:
+  status: n/a
+  reason: CSS has no dates.
