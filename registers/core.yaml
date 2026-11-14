@@ -12272,7 +12272,7 @@ items:
     group: "collections"
     name: "Do set operations"
     target: "do-set-operations"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Set, Julia set)."
   - part: tasks
     group: "collections"

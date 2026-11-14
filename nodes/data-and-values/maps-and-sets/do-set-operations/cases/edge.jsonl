@@ -1,0 +1,7 @@
+{"name":"both-empty","class":["empty"],"args":{"a":[],"b":[]},"expect":[[],[],[],[],true]}
+{"name":"empty-a","class":["empty"],"args":{"a":[],"b":["x"]},"expect":[["x"],[],[],["x"],true]}
+{"name":"empty-b","class":["empty"],"args":{"a":["x"],"b":[]},"expect":[["x"],[],["x"],["x"],false]}
+{"name":"equal","class":["equal"],"args":{"a":["a","b"],"b":["b","a"]},"expect":[["a","b"],["a","b"],[],[],true]}
+{"name":"disjoint","class":["disjoint"],"args":{"a":["a"],"b":["b"]},"expect":[["a","b"],[],["a"],["a","b"],false]}
+{"name":"duplicates","class":["duplicates"],"args":{"a":["a","a","b"],"b":["b","b"]},"expect":[["a","b"],["b"],["a"],["a"],false]}
+{"name":"case","class":["case"],"args":{"a":["a"],"b":["A"]},"expect":[["A","a"],[],["a"],["A","a"],false]}

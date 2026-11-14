@@ -1,0 +1,15 @@
+# The contract of the task "do set operations" (spec 10.2). The function makes a set of each list and returns the union, the intersection, the difference and the symmetric difference of the two sets, and whether the first set is a subset of the second.
+problem: do-set-operations
+entry: compare_sets
+params:
+  - name: a
+    type: "list<string>"
+    pre: "each word has 1 or more ASCII letters; the list can be empty and can have a word more than one time"
+  - name: b
+    type: "list<string>"
+    pre: "the same as for a"
+returns:
+  type: "tuple<list<string>, list<string>, list<string>, list<string>, bool>"
+  post: "with A the set of the words of a and B the set of the words of b: the words of A or B, the words of A and B, the words of A that are not in B, the words that are in exactly one of A and B, each list in ascending order by bytes with no repeats; then true if each word of A is in B"
+checker: exact
+edge_classes: [empty, equal, disjoint, duplicates, case]

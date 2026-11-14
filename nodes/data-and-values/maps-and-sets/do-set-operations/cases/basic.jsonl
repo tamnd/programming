@@ -1,0 +1,2 @@
+{"name":"colors","args":{"a":["red","blue","green"],"b":["blue","yellow"]},"expect":[["blue","green","red","yellow"],["blue"],["green","red"],["green","red","yellow"],false]}
+{"name":"subset","args":{"a":["b"],"b":["a","b","c"]},"expect":[["a","b","c"],["b"],[],["a","c"],true]}
