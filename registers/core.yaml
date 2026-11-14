@@ -13627,7 +13627,7 @@ items:
     group: "text-processing"
     name: "Count the lines of a file"
     target: "count-the-lines-of-a-file"
-    status: "planned"
+    status: "node"
     reason: "A job that processes text in bulk, as Unix tools do. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "text-processing"
