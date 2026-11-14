@@ -1,0 +1,33 @@
+# The contract of the task "convert between time zones" (spec 10.2). The zones are IANA time zone names, and the rules come from the tz database of the system.
+problem: convert-between-time-zones
+entry: convert_time_zone
+params:
+  - name: year
+    type: int
+    pre: "the year of the local date and time in from_zone, from 1970 to 2100"
+  - name: month
+    type: int
+    pre: "the month, from 1 to 12"
+  - name: day
+    type: int
+    pre: "the day, valid for the year and month"
+  - name: hour
+    type: int
+    pre: "the hour, from 0 to 23"
+  - name: minute
+    type: int
+    pre: "the minute, from 0 to 59"
+  - name: second
+    type: int
+    pre: "the second, from 0 to 59"
+  - name: from_zone
+    type: string
+    pre: "an IANA time zone name, such as America/New_York or UTC"
+  - name: to_zone
+    type: string
+    pre: "an IANA time zone name"
+returns:
+  type: string
+  post: "the same instant as local time in to_zone, in the form YYYY-MM-DDTHH:MM:SS+HH:MM with the UTC offset of to_zone at that instant; a local time that does not exist in from_zone moves forward by the length of the gap, and a local time that occurs two times in from_zone uses the earlier instant"
+checker: exact
+edge_classes: [gap, overlap, dst, southern-hemisphere, fractional-offset, date-line, history, posix-sign, before-epoch, future]

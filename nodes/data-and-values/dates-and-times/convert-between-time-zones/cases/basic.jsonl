@@ -1,0 +1,5 @@
+{"name":"new-york-to-utc","args":{"year":2024,"month":7,"day":1,"hour":12,"minute":0,"second":0,"from_zone":"America/New_York","to_zone":"UTC"},"expect":"2024-07-01T16:00:00+00:00"}
+{"name":"utc-to-tokyo","args":{"year":2024,"month":1,"day":15,"hour":0,"minute":0,"second":0,"from_zone":"UTC","to_zone":"Asia/Tokyo"},"expect":"2024-01-15T09:00:00+09:00"}
+{"name":"london-to-new-york","args":{"year":2024,"month":1,"day":15,"hour":12,"minute":0,"second":0,"from_zone":"Europe/London","to_zone":"America/New_York"},"expect":"2024-01-15T07:00:00-05:00"}
+{"name":"date-changes","args":{"year":2024,"month":1,"day":15,"hour":22,"minute":0,"second":0,"from_zone":"America/Los_Angeles","to_zone":"Asia/Tokyo"},"expect":"2024-01-16T15:00:00+09:00"}
+{"name":"same-zone","args":{"year":2024,"month":3,"day":10,"hour":12,"minute":0,"second":0,"from_zone":"America/New_York","to_zone":"America/New_York"},"expect":"2024-03-10T12:00:00-04:00"}
