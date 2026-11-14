@@ -1,0 +1,14 @@
+{"name":"year-1600","class":["four-hundred"],"args":{"year":1600},"expect":true}
+{"name":"year-1700","class":["century"],"args":{"year":1700},"expect":false}
+{"name":"year-2400","class":["four-hundred"],"args":{"year":2400},"expect":true}
+{"name":"year-1","class":["small-year"],"args":{"year":1},"expect":false}
+{"name":"year-4","class":["small-year"],"args":{"year":4},"expect":true}
+{"name":"year-100","class":["small-year","century"],"args":{"year":100},"expect":false}
+{"name":"year-1500-julian-leap","class":["proleptic","century"],"args":{"year":1500},"expect":false}
+{"name":"year-1582","class":["proleptic"],"args":{"year":1582},"expect":false}
+{"name":"year-9999","class":["year-range"],"args":{"year":9999},"expect":false}
+{"name":"year-zero","class":["year-zero","four-hundred"],"args":{"year":0},"expect":true}
+{"name":"year-minus-1","class":["negative"],"args":{"year":-1},"expect":false}
+{"name":"year-minus-4","class":["negative"],"args":{"year":-4},"expect":true}
+{"name":"year-minus-100","class":["negative","century"],"args":{"year":-100},"expect":false}
+{"name":"year-minus-400","class":["negative","four-hundred"],"args":{"year":-400},"expect":true}

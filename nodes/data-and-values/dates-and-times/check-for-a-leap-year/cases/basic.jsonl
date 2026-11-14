@@ -1,0 +1,5 @@
+{"name":"divisible-by-4","args":{"year":2024},"expect":true}
+{"name":"not-divisible-by-4","args":{"year":2023},"expect":false}
+{"name":"century","args":{"year":1900},"expect":false}
+{"name":"divisible-by-400","args":{"year":2000},"expect":true}
+{"name":"next-century","args":{"year":2100},"expect":false}
