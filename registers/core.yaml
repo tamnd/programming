@@ -13700,7 +13700,7 @@ items:
     group: "text-processing"
     name: "Compute a word count"
     target: "compute-a-word-count"
-    status: "planned"
+    status: "node"
     reason: "A job that processes text in bulk, as Unix tools do. Related titles, found by keyword: Rosetta Code (Word frequency)."
   - part: tasks
     group: "text-processing"

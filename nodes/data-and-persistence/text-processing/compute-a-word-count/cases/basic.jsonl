@@ -1,0 +1,3 @@
+{"name":"simple","args":{"path":"fixtures/simple.txt"},"expect":[1,3,14]}
+{"name":"multiple-spaces","args":{"path":"fixtures/multiple-spaces.txt"},"expect":[1,2,10]}
+{"name":"tabs-and-lines","args":{"path":"fixtures/tabs-and-lines.txt"},"expect":[2,3,6]}

@@ -1,0 +1,4 @@
+{"name":"invalid-bytes","args":{"path":"fixtures/invalid-bytes.txt"},"error":"invalid-utf8"}
+{"name":"truncated","args":{"path":"fixtures/truncated.txt"},"error":"invalid-utf8"}
+{"name":"surrogate","args":{"path":"fixtures/surrogate.txt"},"error":"invalid-utf8"}
+{"name":"missing","args":{"path":"fixtures/missing.txt"},"error":"not-found"}
