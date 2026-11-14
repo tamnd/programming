@@ -1,0 +1,19 @@
+# The contract of the task "remove lines from a file" (spec 10.2). Each solution removes count lines from the file, from line start, and writes the rest of the file back under the same name. It returns the number of lines that it removed.
+problem: remove-lines-from-a-file
+entry: remove_lines
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the solution changes the file, so a test runs it on a copy"
+  - name: start
+    type: int
+    pre: "any 32-bit signed integer; line 1 is the first line of the file"
+  - name: count
+    type: int
+    pre: "any 32-bit signed integer"
+returns:
+  type: int
+  post: "the number of lines that were in the file from line start to line start + count - 1. These lines are no longer in the file, and the other bytes of the file do not change. A line ends at LF, and the LF is part of the line that it ends; a CR is a byte like the others. A last line with no LF is a line too. fixtures/NAME.after.txt holds the file after the call. If the result is 0, the file is not written again. If the result is more than 0, the new file has the permissions of the old file, and it takes the place of the old file in one rename"
+checker: exact
+edge_classes: [past-the-end, zero, all, empty, empty-line, no-final-newline, crlf, non-ascii, large-count]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error, return no result and leave the file as it was: not-found when the file does not exist, and bad-range when start is less than 1 or count is less than 0. A solution checks the range before it opens the file.

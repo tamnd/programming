@@ -1,0 +1,3 @@
+{"name": "not-found", "args": {"path": "fixtures/missing.txt", "start": 1, "count": 1}, "error": "not-found"}
+{"name": "start-zero", "args": {"path": "fixtures/first-two.txt", "start": 0, "count": 1}, "error": "bad-range"}
+{"name": "negative-count", "args": {"path": "fixtures/first-two.txt", "start": 1, "count": -1}, "error": "bad-range"}

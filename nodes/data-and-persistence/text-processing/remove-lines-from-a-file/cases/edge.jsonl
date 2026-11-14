@@ -1,0 +1,12 @@
+{"name": "past-the-end", "class": ["past-the-end"], "args": {"path": "fixtures/past-the-end.txt", "start": 3, "count": 1}, "expect": 0}
+{"name": "partly-past-the-end", "class": ["past-the-end"], "args": {"path": "fixtures/partly-past-the-end.txt", "start": 2, "count": 5}, "expect": 2}
+{"name": "count-zero", "class": ["zero"], "args": {"path": "fixtures/count-zero.txt", "start": 1, "count": 0}, "expect": 0}
+{"name": "all-lines", "class": ["all"], "args": {"path": "fixtures/all-lines.txt", "start": 1, "count": 2}, "expect": 2}
+{"name": "empty", "class": ["empty"], "args": {"path": "fixtures/empty.txt", "start": 1, "count": 1}, "expect": 0}
+{"name": "empty-line", "class": ["empty-line"], "args": {"path": "fixtures/empty-line.txt", "start": 2, "count": 1}, "expect": 1}
+{"name": "no-final-newline", "class": ["no-final-newline"], "args": {"path": "fixtures/no-final-newline.txt", "start": 1, "count": 1}, "expect": 1}
+{"name": "remove-incomplete-line", "class": ["no-final-newline"], "args": {"path": "fixtures/remove-incomplete-line.txt", "start": 2, "count": 1}, "expect": 1}
+{"name": "crlf", "class": ["crlf"], "args": {"path": "fixtures/crlf.txt", "start": 2, "count": 1}, "expect": 1}
+{"name": "lone-cr", "class": ["crlf"], "args": {"path": "fixtures/lone-cr.txt", "start": 1, "count": 1}, "expect": 1}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"path": "fixtures/non-ascii.txt", "start": 2, "count": 1}, "expect": 1}
+{"name": "large-count", "class": ["large-count"], "args": {"path": "fixtures/large-count.txt", "start": 2, "count": 2147483647}, "expect": 1}
