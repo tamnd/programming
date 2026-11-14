@@ -1,0 +1,25 @@
+typescript:
+  status: native
+  reason: "TypeScript uses the JavaScript Date, whose setMonth and setDate let the day overflow, and Temporal, whose add method clamps the day by default. No example file exists."
+kotlin:
+  status: stdlib
+  reason: "On the JVM, Kotlin uses java.time, with plusMonths, Period and Duration. The library kotlinx-datetime has DatePeriod and DateTimePeriod for calendar arithmetic. No example file exists because kotlinc is not installed."
+rust:
+  status: library
+  reason: "The Rust standard library has no calendar, so it cannot add months or calendar days. Duration adds exact time only. No example file exists."
+  alternative: "The crate chrono has checked_add_months, which uses the last day of the month when the day does not exist. The crate jiff has Span for calendar units and time units."
+powershell:
+  status: stdlib
+  reason: "PowerShell uses the .NET DateTime methods AddMonths, AddDays and AddHours, so it has the same clamping and the same wall-clock arithmetic. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: "SQL has date and interval arithmetic. In PostgreSQL, adding an interval of 1 month uses the last day of the month when the day does not exist, and a timestamp with time zone plus 1 day keeps the local time of day."
+regex:
+  status: n/a
+  reason: A regular expression has no date values and no arithmetic.
+html:
+  status: n/a
+  reason: "HTML has no date arithmetic. The step attribute of a date input counts days, but the browser does the computation."
+css:
+  status: n/a
+  reason: CSS has no dates.
