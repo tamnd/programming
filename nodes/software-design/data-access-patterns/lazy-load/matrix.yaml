@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: a getter over a private field that starts as null, or a Proxy object with a get trap; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: Entity Framework Core makes virtual proxies for virtual navigation properties, or injects an ILazyLoader; by hand, a property that loads on first read.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a std::optional member that a const getter fills on first use through a mutable field; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a struct with a pointer that starts as NULL and an accessor function that loads the row on first call.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: the by lazy property delegate gives lazy initialization, and the initializer runs the query; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: a query returns the rows that it selects; the choice to delay a query belongs to the client language.
+bash:
+  status: n/a
+  reason: the shell has no objects with associations to load.
+powershell:
+  status: idiom
+  reason: a class with a hidden field and a method that loads it on first call; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: the loading attribute delays images and frames, not data objects from a database.
+css:
+  status: n/a
+  reason: style rules have no data access.
