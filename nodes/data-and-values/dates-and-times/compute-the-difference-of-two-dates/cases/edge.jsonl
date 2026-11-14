@@ -1,0 +1,12 @@
+{"name":"across-a-dst-change","class":["dst"],"args":{"start_year":2024,"start_month":3,"start_day":9,"end_year":2024,"end_month":3,"end_day":11},"expect":2}
+{"name":"across-leap-day","class":["leap-years"],"args":{"start_year":2024,"start_month":2,"start_day":28,"end_year":2024,"end_month":3,"end_day":1},"expect":2}
+{"name":"month-end-to-next-month","class":["month-end","leap-years"],"args":{"start_year":2024,"start_month":1,"start_day":31,"end_year":2024,"end_month":3,"end_day":1},"expect":30}
+{"name":"year-1900-is-not-leap","class":["leap-years"],"args":{"start_year":1900,"start_month":1,"start_day":1,"end_year":1901,"end_month":1,"end_day":1},"expect":365}
+{"name":"year-2000-is-leap","class":["leap-years"],"args":{"start_year":2000,"start_month":1,"start_day":1,"end_year":2001,"end_month":1,"end_day":1},"expect":366}
+{"name":"400-years","class":["leap-years","large"],"args":{"start_year":2000,"start_month":1,"start_day":1,"end_year":2400,"end_month":1,"end_day":1},"expect":146097}
+{"name":"across-the-epoch","class":["before-epoch"],"args":{"start_year":1969,"start_month":12,"start_day":31,"end_year":1970,"end_month":1,"end_day":1},"expect":1}
+{"name":"gregorian-reform-gap","class":["proleptic"],"args":{"start_year":1582,"start_month":10,"start_day":4,"end_year":1582,"end_month":10,"end_day":15},"expect":11}
+{"name":"more-than-292-years","class":["large"],"args":{"start_year":1700,"start_month":1,"start_day":1,"end_year":2300,"end_month":1,"end_day":1},"expect":219145}
+{"name":"whole-range","class":["large","year-range"],"args":{"start_year":1,"start_month":1,"start_day":1,"end_year":9999,"end_month":12,"end_day":31},"expect":3652058}
+{"name":"whole-range-backward","class":["large","year-range","negative"],"args":{"start_year":9999,"start_month":12,"start_day":31,"end_year":1,"end_month":1,"end_day":1},"expect":-3652058}
+{"name":"year-99","class":["two-digit-year"],"args":{"start_year":99,"start_month":12,"start_day":31,"end_year":100,"end_month":1,"end_day":1},"expect":1}

@@ -1,0 +1,27 @@
+# The contract of the task "compute the difference of two dates" (spec 10.2). A date has no time of day and no time zone, so the result does not depend on the zone of the system or on daylight saving time.
+problem: compute-the-difference-of-two-dates
+entry: days_between
+params:
+  - name: start_year
+    type: int
+    pre: "the year of the start date in the proleptic Gregorian calendar, from 1 to 9999"
+  - name: start_month
+    type: int
+    pre: "the month of the start date, from 1 to 12"
+  - name: start_day
+    type: int
+    pre: "the day of the start date, from 1 to the number of days in that month"
+  - name: end_year
+    type: int
+    pre: "the year of the end date, from 1 to 9999"
+  - name: end_month
+    type: int
+    pre: "the month of the end date, from 1 to 12"
+  - name: end_day
+    type: int
+    pre: "the day of the end date, from 1 to the number of days in that month"
+returns:
+  type: int
+  post: "the number of days from the start date to the end date: 0 for the same date, 1 for the next date, negative if the end date is before the start date"
+checker: exact
+edge_classes: [dst, leap-years, month-end, before-epoch, proleptic, large, year-range, negative, two-digit-year]
