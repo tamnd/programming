@@ -1,0 +1,11 @@
+{"name":"empty","class":["empty"],"args":{"path":"fixtures/empty.txt","n":3},"expect":[]}
+{"name":"no-letters","class":["no-words"],"args":{"path":"fixtures/no-letters.txt","n":3},"expect":[]}
+{"name":"ties","class":["ties"],"args":{"path":"fixtures/ties.txt","n":2},"expect":[["a",2],["b",2]]}
+{"name":"digits","class":["digits"],"args":{"path":"fixtures/digits.txt","n":10},"expect":[["abc",1],["def",1],["x",1]]}
+{"name":"n-zero","class":["n-zero"],"args":{"path":"fixtures/simple.txt","n":0},"expect":[]}
+{"name":"n-above-count","class":["n-above-count"],"args":{"path":"fixtures/n-above-count.txt","n":10},"expect":[["x",2],["y",1]]}
+{"name":"crlf","class":["crlf"],"args":{"path":"fixtures/crlf.txt","n":5},"expect":[["two",2],["one",1]]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"fixtures/non-ascii.txt","n":10},"expect":[["caf",1],["cafe",1],["na",1],["ve",1]]}
+{"name":"leading-separators","class":["leading-separators"],"args":{"path":"fixtures/leading-separators.txt","n":5},"expect":[["hello",2],["world",1]]}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"fixtures/no-final-newline.txt","n":5},"expect":[["dog",2],["cat",1]]}
+{"name":"not-utf8","class":["not-utf8"],"args":{"path":"fixtures/not-utf8.txt","n":5},"expect":[["ok",2]]}
