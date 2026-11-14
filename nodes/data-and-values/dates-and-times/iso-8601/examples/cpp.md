@@ -2,7 +2,6 @@
 #include <chrono>
 #include <format>
 #include <iostream>
-#include <sstream>
 
 int main() {
     using namespace std::chrono;
@@ -14,12 +13,6 @@ int main() {
     // %Ez writes the offset in the extended format, with a colon.
     zoned_time z{"Asia/Kolkata", sys_days{2024y / 7 / 9} + 12h + 30min + 5s};
     std::cout << std::format("{:%FT%T%Ez}", z) << "\n";
-
-    // parse reads the same conversions. The offset is subtracted, so the result is UTC.
-    std::istringstream in{"2024-07-09T18:00:05+05:30"};
-    sys_seconds u;
-    in >> parse("%FT%T%Ez", u);
-    std::cout << std::format("{:%FT%TZ}", u) << " " << !in.fail() << "\n";
 }
 ```
 
@@ -28,7 +21,6 @@ int main() {
 2025-W01-1
 2024-365
 2024-07-09T18:00:05+05:30
-2024-07-09T12:30:05Z 1
 ```
 
-- Verdict: stdlib. Since C++20, `std::format` and `std::chrono::parse` use the conversions of `strftime`, plus `%Ez` for an offset with a colon. The library has no parser for ISO 8601 durations.
+- Verdict: stdlib. Since C++20, `std::format` and `std::chrono::parse` use the conversions of `strftime`, plus `%Ez` for an offset with a colon. The example does not call `parse`, because libstdc++ added it only in GCC 14 and the test server builds with GCC 13. The library has no parser for ISO 8601 durations.

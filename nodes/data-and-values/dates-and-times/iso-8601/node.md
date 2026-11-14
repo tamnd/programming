@@ -139,7 +139,7 @@ The text of the standard is sold by ISO, so most programmers read RFC 3339 and t
 
 ## Tools and libraries
 
-- Python: `datetime.isoformat()` and `fromisoformat()`. Since Python 3.11, `fromisoformat` reads most forms of ISO 8601; before that it read only the output of `isoformat()`[^7].
+- Python: `datetime.isoformat()` and `fromisoformat()`. `fromisoformat()` reads most forms of ISO 8601; older versions read only the output of `isoformat()`[^7].
 - JavaScript: `Date.prototype.toISOString()` and the format of `Date.parse`, "a simplified format based on ISO 8601"[^8]. Temporal reads and writes RFC 9557 and durations.
 - Java: `DateTimeFormatter` has predefined formatters such as `ISO_LOCAL_DATE`, `ISO_OFFSET_DATE_TIME`, `ISO_WEEK_DATE`, `ISO_ORDINAL_DATE` and `BASIC_ISO_DATE`[^5]. `Duration` and `Period` read durations.
 - .NET: the format specifier `"o"`, the "round-trip date/time pattern"[^9], `System.Globalization.ISOWeek`, and `XmlConvert` for durations.
