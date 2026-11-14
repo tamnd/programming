@@ -1,0 +1,12 @@
+# The contract of the task "use a custom key in a map" (spec 10.2). The function counts each distinct point with a map whose key is a point type.
+problem: use-a-custom-key-in-a-map
+entry: count_points
+params:
+  - name: points
+    type: "list<tuple<int, int>>"
+    pre: "each point is (x, y), and each coordinate fits in a signed 32-bit integer; the list can be empty and can have a point more than one time"
+returns:
+  type: "list<tuple<int, int, int>>"
+  post: "one triple (x, y, count) for each distinct point, where count is the number of times the point is in points, in ascending order of x, then of y"
+checker: exact
+edge_classes: [empty, negative, joined-digits, all-same]

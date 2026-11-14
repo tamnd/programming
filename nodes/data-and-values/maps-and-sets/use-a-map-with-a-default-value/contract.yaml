@@ -1,0 +1,18 @@
+# The contract of the task "use a map with a default value" (spec 10.2). The function reads each key from the map, and uses the fallback value for a key that is not in the map. The map does not change.
+problem: use-a-map-with-a-default-value
+entry: lookup
+params:
+  - name: table
+    type: "map<string, int>"
+    pre: "each key has 1 or more ASCII letters; each value fits in a signed 32-bit integer; the map can be empty"
+  - name: keys
+    type: "list<string>"
+    pre: "each key has 1 or more ASCII letters; the list can be empty and can have a key more than one time"
+  - name: fallback
+    type: int
+    pre: "fits in a signed 32-bit integer"
+returns:
+  type: "list<int>"
+  post: "one value for each key, in the order of keys: the value of the key in table if table has the key, else fallback; table does not change"
+checker: exact
+edge_classes: [empty, zero-value, repeat, case]

@@ -1,0 +1,2 @@
+{"name":"prices","args":{"table":{"apple":3,"pear":5},"keys":["apple","fig","pear"],"fallback":0},"expect":[3,0,5]}
+{"name":"negative-fallback","args":{"table":{"a":1},"keys":["b","a"],"fallback":-1},"expect":[-1,1]}

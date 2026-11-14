@@ -1,0 +1,12 @@
+# The contract of the task "create a set" (spec 10.2). The function adds each word to a set if the set does not have it, and removes it if the set has it.
+problem: create-a-set
+entry: toggle
+params:
+  - name: words
+    type: "list<string>"
+    pre: "each word has 1 or more ASCII letters; the list can be empty and can have a word more than one time"
+returns:
+  type: "list<string>"
+  post: "the words that are in words an odd number of times, each one time, in ascending order by their bytes"
+checker: exact
+edge_classes: [empty, all-removed, odd-count, case, prefix]

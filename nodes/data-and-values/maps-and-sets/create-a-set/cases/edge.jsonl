@@ -1,0 +1,5 @@
+{"name":"empty","class":["empty"],"args":{"words":[]},"expect":[]}
+{"name":"two-times","class":["all-removed"],"args":{"words":["a","a"]},"expect":[]}
+{"name":"three-times","class":["odd-count"],"args":{"words":["a","a","a"]},"expect":["a"]}
+{"name":"case","class":["case"],"args":{"words":["a","A"]},"expect":["A","a"]}
+{"name":"prefix","class":["prefix"],"args":{"words":["ab","a"]},"expect":["a","ab"]}

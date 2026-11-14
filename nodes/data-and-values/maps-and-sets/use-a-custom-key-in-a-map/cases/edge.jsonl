@@ -1,0 +1,5 @@
+{"name":"empty","class":["empty"],"args":{"points":[]},"expect":[]}
+{"name":"one","args":{"points":[[0,0]]},"expect":[[0,0,1]]}
+{"name":"negative","class":["negative"],"args":{"points":[[-1,0],[0,-1],[-1,0]]},"expect":[[-1,0,2],[0,-1,1]]}
+{"name":"joined-digits","class":["joined-digits"],"args":{"points":[[1,23],[12,3]]},"expect":[[1,23,1],[12,3,1]]}
+{"name":"all-same","class":["all-same"],"args":{"points":[[5,5],[5,5],[5,5]]},"expect":[[5,5,3]]}
