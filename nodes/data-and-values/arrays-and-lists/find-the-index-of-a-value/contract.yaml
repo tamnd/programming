@@ -1,0 +1,15 @@
+# The contract of the task "find the index of a value" (spec 10.2). The function does not change the list.
+problem: find-the-index-of-a-value
+entry: index_of
+params:
+  - name: items
+    type: "list<int>"
+    pre: "a list of 0 to 1000 32-bit signed integers, in any order"
+  - name: value
+    type: "int"
+    pre: "a 32-bit signed integer"
+returns:
+  type: "int"
+  post: "the smallest index i with items[i] == value, or -1 if no item is equal to value"
+checker: exact
+edge_classes: [empty, single, boundary, duplicates, negative, limit]

@@ -100,7 +100,7 @@ The cases are in `cases/basic.jsonl` and `cases/edge.jsonl`.
 - `duplicates`: the value can be in the list more than once, and the result is still true.
 - `negative` and `zero-absent`: negative items, and 0 when the list has no 0. A test that uses a position as a truth value fails here.
 - `limit` and `limit-absent`: the smallest 32-bit integer is found in a list that has it, and is not found in a list that has only the largest.
-- Each test checks that `items` does not change.
+- Each test checks that `items` does not change. The task [find the index of a value](/find-the-index-of-a-value/) also gives the position.
 
 ## Pitfalls
 
