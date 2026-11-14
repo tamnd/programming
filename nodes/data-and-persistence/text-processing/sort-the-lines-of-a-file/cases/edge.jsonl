@@ -1,0 +1,11 @@
+{"name":"empty","class":["empty"],"args":{"path":"fixtures/empty.txt"},"expect":[]}
+{"name":"one-empty-line","class":["empty-line"],"args":{"path":"fixtures/one-empty-line.txt"},"expect":[""]}
+{"name":"empty-lines","class":["empty-line"],"args":{"path":"fixtures/empty-lines.txt"},"expect":["","","a","b"]}
+{"name":"duplicates","class":["duplicates"],"args":{"path":"fixtures/duplicates.txt"},"expect":["a","b","b"]}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"fixtures/no-final-newline.txt"},"expect":["a","b"]}
+{"name":"crlf","class":["crlf"],"args":{"path":"fixtures/crlf.txt"},"expect":["a\r","b\r"]}
+{"name":"prefix","class":["prefix"],"args":{"path":"fixtures/prefix.txt"},"expect":["a","ab"]}
+{"name":"whitespace","class":["whitespace"],"args":{"path":"fixtures/whitespace.txt"},"expect":["\tc"," a","b"]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"fixtures/non-ascii.txt"},"expect":["e","z","\u00e9"]}
+{"name":"supplementary","class":["supplementary"],"args":{"path":"fixtures/supplementary.txt"},"expect":["\uff61","\ud83d\ude00"]}
+{"name":"other-line-breaks","class":["other-line-breaks"],"args":{"path":"fixtures/other-line-breaks.txt"},"expect":["b\fa","b\u001ca","b\u2028a"]}

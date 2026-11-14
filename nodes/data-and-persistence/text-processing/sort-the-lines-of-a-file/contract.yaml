@@ -1,0 +1,13 @@
+# The contract of the task "sort the lines of a file" (spec 10.2). Each solution reads the whole file, splits it at each LF, and sorts the lines by their UTF-8 bytes, which is the order of the code points.
+problem: sort-the-lines-of-a-file
+entry: sort_lines
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the file holds valid UTF-8"
+returns:
+  type: "list<string>"
+  post: "the lines of the file, sorted by code point, with duplicates kept. A line ends at LF, and the LF is not part of it; a CR before the LF stays in the line. A last line with no LF is a line too. An empty file gives [], and a file that holds only an LF gives one empty line"
+checker: exact
+edge_classes: [empty, empty-line, duplicates, no-final-newline, crlf, prefix, whitespace, non-ascii, supplementary, other-line-breaks]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when the file does not exist.

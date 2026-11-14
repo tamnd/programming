@@ -1,0 +1,3 @@
+{"name":"simple","args":{"path":"fixtures/simple.txt"},"expect":["apple","fig","pear"]}
+{"name":"case","args":{"path":"fixtures/case.txt"},"expect":["A","B","a","b"]}
+{"name":"numbers","args":{"path":"fixtures/numbers.txt"},"expect":["10","100","9"]}
