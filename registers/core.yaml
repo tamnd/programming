@@ -12650,7 +12650,7 @@ items:
     group: "dates"
     name: "Check for a leap year"
     target: "check-for-a-leap-year"
-    status: "planned"
+    status: "node"
     reason: "A job on dates and times. Related titles, found by keyword: Rosetta Code (Leap year)."
   - part: tasks
     group: "dates"

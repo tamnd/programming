@@ -1,0 +1,12 @@
+# The contract of the task "check for a leap year" (spec 10.2). The years use the proleptic Gregorian calendar with astronomical numbering, as in ISO 8601: year 0 is 1 BC and year -1 is 2 BC.
+problem: check-for-a-leap-year
+entry: is_leap_year
+params:
+  - name: year
+    type: int
+    pre: "the year in the proleptic Gregorian calendar with astronomical numbering, from -9999 to 9999"
+returns:
+  type: bool
+  post: "true if the year is divisible by 4 and not by 100, or divisible by 400; false otherwise"
+checker: exact
+edge_classes: [century, four-hundred, small-year, proleptic, year-range, year-zero, negative]
