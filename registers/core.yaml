@@ -547,19 +547,19 @@ items:
     group: "data-and-values"
     name: "Set"
     target: "set-concept"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Logic (\"Advance programming constructs such as difference-lists, ...\"). It is in the canon books: HtDP contents (\"A Note on Lists and Sets\")."
   - part: concepts
     group: "data-and-values"
     name: "Map and dictionary"
     target: "map-and-dictionary"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Code (\"Schematics of code lookup using hash tables for methods in ...\"). It is in the canon books: HtDP contents (\"Real-World Data: Dictionaries\"); Crafting Interpreters contents (\"Hash Tables\")."
   - part: concepts
     group: "data-and-values"
     name: "Hash table"
     target: "hash-table"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Code (\"Schematics of code lookup using hash tables for methods in ...\"). It is in the canon books: Crafting Interpreters contents (\"Hash Tables\"); The Rust Programming Language contents (\"Storing Keys with Associated Values in ...\")."
   - part: concepts
     group: "data-and-values"

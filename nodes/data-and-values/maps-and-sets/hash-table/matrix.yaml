@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript Map and Set. The language gives no hash code to a program, and object keys are compared by identity. No example file exists.
+kotlin:
+  status: stdlib
+  reason: HashMap, HashSet and the default LinkedHashMap come from the JVM. A data class defines equals and hashCode from its properties, so it is a safe key. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: An associative array made with declare -A is a hash table inside Bash, with string keys. The shell does not show its buckets or hash function. No example file exists.
+powershell:
+  status: native
+  reason: "The literal @{} makes a System.Collections.Hashtable, and keys use GetHashCode with a comparer that ignores case. No example file exists because pwsh is not installed."
+sql:
+  status: idiom
+  reason: A database can store an index as a hash index, as with CREATE INDEX ... USING HASH in PostgreSQL, and a query planner can use a hash join. The program does not handle the buckets.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no hash tables.
+html:
+  status: n/a
+  reason: HTML is markup and has no data structures.
+css:
+  status: n/a
+  reason: CSS has no data structures.

@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript Set with the type Set<T> and ReadonlySet<T>. The ES2025 set methods need the lib setting ES2025 or later. No example file exists.
+kotlin:
+  status: stdlib
+  reason: setOf makes a read-only set and mutableSetOf a mutable one, both a LinkedHashSet that keeps insertion order. union, intersect and subtract are infix functions. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash has no set type. An associative array with the elements as keys is a set, and the test -v tells whether an element is there. No example file exists.
+powershell:
+  status: stdlib
+  reason: "PowerShell uses the .NET class System.Collections.Generic.HashSet, made with [System.Collections.Generic.HashSet[string]]::new(). A hash table with the elements as keys also works. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: A query result is a bag of rows. SELECT DISTINCT removes duplicates, and UNION, INTERSECT and EXCEPT are set operations on query results. A UNIQUE constraint keeps a column free of duplicates.
+regex:
+  status: idiom
+  reason: "A character class such as [aeiou] is a set of characters, and [^aeiou] is its complement. Some engines also have set operations on classes, such as intersection with && in Java."
+html:
+  status: n/a
+  reason: HTML is markup. The class attribute holds a set of class names, but it is text, not a set value.
+css:
+  status: n/a
+  reason: CSS has no set values. A selector list matches the union of what each selector matches, but it is a rule, not data.
