@@ -12212,7 +12212,7 @@ items:
     group: "collections"
     name: "Find the index of a value"
     target: "find-the-index-of-a-value"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Search a list, Search a list of records)."
   - part: tasks
     group: "collections"

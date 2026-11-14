@@ -1,0 +1,2 @@
+{"name":"middle","args":{"items":[4,7,1],"value":7},"expect":1}
+{"name":"absent","args":{"items":[4,7,1],"value":9},"expect":-1}
