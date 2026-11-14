@@ -87,9 +87,17 @@ int convert_time_zone(int year, int month, int day, int hour, int minute,
     set_zone(saved);
     free(saved);
 
+    // The buffer has room for any int values, so the compiler can see that
+    // snprintf does not truncate. For the years 1970 to 2100 the text has
+    // TZCONV_SIZE - 1 characters.
+    char text[128];
     const long long a = offset < 0 ? -offset : offset;
-    snprintf(out, TZCONV_SIZE, "%04d-%02d-%02dT%02d:%02d:%02d%c%02lld:%02lld",
-             tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min,
-             tm.tm_sec, offset < 0 ? '-' : '+', a / 3600, a % 3600 / 60);
+    const int n = snprintf(text, sizeof text, "%04d-%02d-%02dT%02d:%02d:%02d%c%02lld:%02lld",
+                           tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min,
+                           tm.tm_sec, offset < 0 ? '-' : '+', a / 3600, a % 3600 / 60);
+    if (n != TZCONV_SIZE - 1) {
+        return -1;
+    }
+    memcpy(out, text, TZCONV_SIZE);
     return 0;
 }

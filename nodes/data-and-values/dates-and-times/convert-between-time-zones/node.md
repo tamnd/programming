@@ -264,6 +264,8 @@ public class Main {
 2024-07-02T01:00+09:00[Asia/Tokyo]
 ```
 
+- **Two libraries can read the same change in different ways.** Each library has its own code for the tz data, and a rare change can show a difference. On the test system, with the tz data 2026e, Python, Java, JavaScript and Go give -10:00 for `Pacific/Apia` at 22:00 UTC on 2011-12-29, and +14:00 after the change at 10:00 UTC on 2011-12-30. libstdc++ of GCC 13 and of GCC 15 gives +13:00 from 00:00 UTC on 2011-12-29. The C++ tests check the offset first and skip the cases for Apia when the library gives this result. Test the dates of rare changes in each library that you use.
+
 - **An unknown zone name gives UTC with no error.** For the variable `TZ`, the C library says that if "its value cannot be interpreted using any of the formats specified below, then Coordinated Universal Time (UTC) is used." A misspelled name gives UTC, with part of the name as the abbreviation, and `date` exits with status 0:
 
 ```bash wrong id=bash-misspelled-zone
