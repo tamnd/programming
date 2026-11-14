@@ -1,0 +1,21 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript Date.now, getTime and Temporal.Instant, which count milliseconds or nanoseconds since the epoch. No example file exists.
+kotlin:
+  status: stdlib
+  reason: "On the JVM, Kotlin uses java.time.Instant with ofEpochSecond and getEpochSecond, and System.currentTimeMillis. The library kotlinx-datetime has an Instant with the same conversions on all platforms. No example file exists because kotlinc is not installed."
+powershell:
+  status: stdlib
+  reason: "PowerShell uses the .NET methods, such as [DateTimeOffset]::UtcNow.ToUnixTimeSeconds() and [DateTimeOffset]::FromUnixTimeSeconds(). Get-Date -UFormat %s prints the current Unix time. No example file exists because pwsh is not installed."
+sql:
+  status: idiom
+  reason: "Standard SQL has no function for Unix time. Each system has its own: extract(epoch from ...) and to_timestamp in PostgreSQL, UNIX_TIMESTAMP and FROM_UNIXTIME in MySQL, and unixepoch in SQLite."
+regex:
+  status: n/a
+  reason: A regular expression has no time values. A pattern can only check that a string has the digits of a timestamp.
+html:
+  status: n/a
+  reason: "HTML has no Unix time. The datetime attribute of the time element and the date inputs use text in ISO 8601 form."
+css:
+  status: n/a
+  reason: CSS has no dates or timestamps.
