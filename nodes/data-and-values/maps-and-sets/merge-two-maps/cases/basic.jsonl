@@ -1,0 +1,2 @@
+{"name":"prices","args":{"base":{"apple":3,"pear":5},"override":{"pear":6,"fig":2}},"expect":[["apple",3],["fig",2],["pear",6]]}
+{"name":"disjoint","args":{"base":{"a":1},"override":{"b":2}},"expect":[["a",1],["b",2]]}

@@ -1,0 +1,2 @@
+{"name":"scores","args":{"scores":{"bob":7,"amy":9,"cal":4}},"expect":["amy=9","bob=7","cal=4","total=20"]}
+{"name":"one","args":{"scores":{"x":1}},"expect":["x=1","total=1"]}

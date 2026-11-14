@@ -12236,19 +12236,19 @@ items:
     group: "collections"
     name: "Create a map"
     target: "create-a-map"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Associative array Creation); Go by Example (Maps); Rust by Example (HashMap)."
   - part: tasks
     group: "collections"
     name: "Iterate over a map"
     target: "iterate-over-a-map"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Associative array Iteration)."
   - part: tasks
     group: "collections"
     name: "Merge two maps"
     target: "merge-two-maps"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Associative array Merging)."
   - part: tasks
     group: "collections"
