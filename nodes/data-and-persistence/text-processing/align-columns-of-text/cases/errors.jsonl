@@ -1,0 +1,1 @@
+{"name": "bad-align", "args": {"text": "a$b\n", "align": "justify"}, "error": "bad-align"}
