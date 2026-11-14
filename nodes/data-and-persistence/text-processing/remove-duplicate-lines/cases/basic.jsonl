@@ -1,0 +1,3 @@
+{"name":"simple","args":{"path":"fixtures/simple.txt"},"expect":["b","a","c"]}
+{"name":"adjacent","args":{"path":"fixtures/adjacent.txt"},"expect":["a","b"]}
+{"name":"no-duplicates","args":{"path":"fixtures/no-duplicates.txt"},"expect":["c","b","a"]}
