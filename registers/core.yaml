@@ -12644,7 +12644,7 @@ items:
     group: "dates"
     name: "Find the day of the week"
     target: "find-the-day-of-the-week"
-    status: "planned"
+    status: "node"
     reason: "A job on dates and times. Related titles, found by keyword: Rosetta Code (Day of the week, Day of the week of Christmas and New Year)."
   - part: tasks
     group: "dates"
