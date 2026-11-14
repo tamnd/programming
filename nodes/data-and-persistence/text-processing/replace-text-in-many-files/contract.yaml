@@ -1,0 +1,19 @@
+# The contract of the task "replace text in many files" (spec 10.2). Each solution replaces each instance of a text in each file of a list with another text, and writes each changed file back under the same name. It returns the number of replacements in each file.
+problem: replace-text-in-many-files
+entry: replace_in_files
+params:
+  - name: paths
+    type: "list<string>"
+    pre: "the paths of the files, relative to the node directory; the solution changes the files, so a test runs it on copies"
+  - name: old
+    type: string
+    pre: "the text to find, not a pattern; the solution compares its UTF-8 bytes with the bytes of each file"
+  - name: new
+    type: string
+    pre: "the text to put in the place of each instance of old; no character in it has a special meaning"
+returns:
+  type: "list<int>"
+  post: "one number for each path, in the same order: the number of instances of old in the file. The search goes from the start of the file to the end, and after each instance it continues after the end of that instance, so instances do not overlap. Each instance becomes new, and the other bytes of the file do not change. An instance can contain LF bytes. fixtures/NAME/FILE holds a file before the call and fixtures/NAME.after/FILE holds it after the call. A file with 0 instances is not written again. A file with instances gets a new file with the permissions of the old file, which takes the place of the old file in one rename"
+checker: exact
+edge_classes: [empty-list, no-match, empty, empty-new, new-contains-old, overlap, special-chars, multi-line, crlf, no-final-newline, non-ascii, case]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error: not-found when a file does not exist, and bad-old when old is empty. A solution checks old before it opens a file. It does the files in the order of the list and stops at the first error, so the files before that file are changed and the files after it are not (the case stop).

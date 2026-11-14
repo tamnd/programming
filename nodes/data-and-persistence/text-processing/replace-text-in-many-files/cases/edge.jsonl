@@ -1,0 +1,16 @@
+{"name": "no-files", "class": ["empty-list"], "args": {"paths": [], "old": "a", "new": "b"}, "expect": []}
+{"name": "no-match", "class": ["no-match"], "args": {"paths": ["fixtures/no-match/a.txt"], "old": "x", "new": "y"}, "expect": [0]}
+{"name": "empty-file", "class": ["empty"], "args": {"paths": ["fixtures/empty-file/a.txt"], "old": "a", "new": "b"}, "expect": [0]}
+{"name": "delete", "class": ["empty-new"], "args": {"paths": ["fixtures/delete/a.txt"], "old": "-", "new": ""}, "expect": [2]}
+{"name": "whole-file", "class": ["empty-new"], "args": {"paths": ["fixtures/whole-file/a.txt"], "old": "abc", "new": ""}, "expect": [1]}
+{"name": "new-contains-old", "class": ["new-contains-old"], "args": {"paths": ["fixtures/new-contains-old/a.txt"], "old": "a", "new": "aa"}, "expect": [2]}
+{"name": "overlapping", "class": ["overlap"], "args": {"paths": ["fixtures/overlapping/a.txt"], "old": "aa", "new": "b"}, "expect": [1]}
+{"name": "adjacent", "class": ["overlap"], "args": {"paths": ["fixtures/adjacent/a.txt"], "old": "aa", "new": "b"}, "expect": [2]}
+{"name": "special-chars", "class": ["special-chars"], "args": {"paths": ["fixtures/special-chars/a.txt"], "old": "1.5", "new": "\\&$1 $& [x]"}, "expect": [1]}
+{"name": "glob-chars", "class": ["special-chars"], "args": {"paths": ["fixtures/glob-chars/a.txt"], "old": "*.txt", "new": "?"}, "expect": [1]}
+{"name": "across-lines", "class": ["multi-line"], "args": {"paths": ["fixtures/across-lines/a.txt"], "old": "end\nstart", "new": "end start"}, "expect": [1]}
+{"name": "lf-to-crlf", "class": ["multi-line"], "args": {"paths": ["fixtures/lf-to-crlf/a.txt"], "old": "\n", "new": "\r\n"}, "expect": [2]}
+{"name": "crlf", "class": ["crlf"], "args": {"paths": ["fixtures/crlf/a.txt"], "old": "a", "new": "c"}, "expect": [1]}
+{"name": "no-final-newline", "class": ["no-final-newline"], "args": {"paths": ["fixtures/no-final-newline/a.txt"], "old": "b", "new": "c"}, "expect": [1]}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"paths": ["fixtures/non-ascii/a.txt"], "old": "\u00e9", "new": "e"}, "expect": [1]}
+{"name": "case-sensitive", "class": ["case"], "args": {"paths": ["fixtures/case-sensitive/a.txt"], "old": "hello", "new": "bye"}, "expect": [1]}
