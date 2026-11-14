@@ -1,0 +1,13 @@
+# The contract of the task "compute a word count" (spec 10.2). Each solution decodes the file as strict UTF-8, in chunks or in lines.
+problem: compute-a-word-count
+entry: word_count
+params:
+  - name: path
+    type: string
+    pre: "the path of a UTF-8 file with no byte order mark, relative to the node directory"
+returns:
+  type: "tuple<int, int, int>"
+  post: "(lines, words, bytes): lines is the number of LF bytes (0x0A), as wc -l counts them; words is the number of runs of one or more code points that do not have the Unicode property White_Space; bytes is the size of the file; (0, 0, 0) for an empty file"
+checker: exact
+edge_classes: [empty, white-space-only, no-final-newline, crlf, non-ascii, unicode-white-space, not-white-space, control-characters]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the inputs on which each solution must report an error and return no result: invalid-utf8 for bytes that are not valid UTF-8 (a bad byte, a sequence cut by the end of the file, an encoded surrogate), and not-found when the file does not exist.

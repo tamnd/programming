@@ -1,0 +1,9 @@
+{"name":"empty","class":["empty"],"args":{"path":"fixtures/empty.txt"},"expect":[0,0,0]}
+{"name":"only-white-space","class":["white-space-only"],"args":{"path":"fixtures/only-white-space.txt"},"expect":[2,0,4]}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"fixtures/no-final-newline.txt"},"expect":[0,2,7]}
+{"name":"crlf","class":["crlf"],"args":{"path":"fixtures/crlf.txt"},"expect":[2,3,8]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"path":"fixtures/non-ascii.txt"},"expect":[1,2,13]}
+{"name":"unicode-spaces","class":["unicode-white-space"],"args":{"path":"fixtures/unicode-spaces.txt"},"expect":[1,4,13]}
+{"name":"not-white-space","class":["not-white-space"],"args":{"path":"fixtures/not-white-space.txt"},"expect":[1,1,13]}
+{"name":"control-separators","class":["control-characters"],"args":{"path":"fixtures/control-separators.txt"},"expect":[1,1,6]}
+{"name":"nel","class":["unicode-white-space"],"args":{"path":"fixtures/nel.txt"},"expect":[1,2,5]}
