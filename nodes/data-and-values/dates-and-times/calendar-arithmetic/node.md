@@ -1,5 +1,5 @@
 ---
-tag: NEW-calendar-arithmetic
+tag: AVBVQ4
 kind: concept
 slug: calendar-arithmetic
 name: Calendar arithmetic
@@ -11,7 +11,7 @@ summary: >-
 applies_to: core-languages
 viz: optional
 formal: none
-see_also: [date-and-time-values, time-zone, iso-8601, add-days-to-a-date, compute-the-difference-of-two-dates, unix-time]
+see_also: [date-and-time-values, time-zone, iso-8601, unix-time, leap-seconds]
 sources:
 - url: https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Period.html
   title: Class Period, Java SE 25 API
