@@ -1,0 +1,7 @@
+{"name":"empty","class":["empty"],"args":{"pairs":[],"remove":[]},"expect":[]}
+{"name":"replace","class":["replace"],"args":{"pairs":[["k",1],["k",2],["k",3]],"remove":[]},"expect":[["k",3]]}
+{"name":"delete-absent","class":["delete-absent"],"args":{"pairs":[["a",1]],"remove":["z"]},"expect":[["a",1]]}
+{"name":"delete-all","class":["delete-all"],"args":{"pairs":[["a",1],["b",2]],"remove":["a","b"]},"expect":[]}
+{"name":"delete-twice","class":["delete-twice"],"args":{"pairs":[["a",1],["b",2]],"remove":["a","a"]},"expect":[["b",2]]}
+{"name":"zero-value","class":["zero-value"],"args":{"pairs":[["a",0],["b",-4]],"remove":[]},"expect":[["a",0],["b",-4]]}
+{"name":"case","class":["case"],"args":{"pairs":[["b",1],["B",2],["a",3],["A",4]],"remove":[]},"expect":[["A",4],["B",2],["a",3],["b",1]]}

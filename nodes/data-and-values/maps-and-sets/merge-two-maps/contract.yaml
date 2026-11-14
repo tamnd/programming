@@ -1,0 +1,15 @@
+# The contract of the task "merge two maps" (spec 10.2). The function makes a new map with the entries of both maps; for a key in both, the value of override wins. The two maps do not change.
+problem: merge-two-maps
+entry: merge_maps
+params:
+  - name: base
+    type: "map<string, int>"
+    pre: "each key has 1 or more ASCII letters; each value fits in a signed 32-bit integer; the map can be empty"
+  - name: override
+    type: "map<string, int>"
+    pre: "the same as base"
+returns:
+  type: "list<tuple<string, int>>"
+  post: "one pair (key, value) for each key of base or override, with the value from override if the key is in override, else the value from base, in ascending order of the key by its bytes; base and override do not change"
+checker: exact
+edge_classes: [empty, same-keys, zero-wins, case]

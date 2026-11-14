@@ -1,0 +1,15 @@
+# The contract of the task "create a map" (spec 10.2). The function puts each pair in a new map, so a later pair with the same key replaces the value, then deletes the keys to remove, and gives the entries in ascending order of the key.
+problem: create-a-map
+entry: build_map
+params:
+  - name: pairs
+    type: "list<tuple<string, int>>"
+    pre: "each key has 1 or more ASCII letters; each value fits in a signed 32-bit integer; the list can be empty and can repeat a key"
+  - name: remove
+    type: "list<string>"
+    pre: "each key has 1 or more ASCII letters; a key need not be in the map, and the list can repeat a key"
+returns:
+  type: "list<tuple<string, int>>"
+  post: "one pair (key, value) for each key of pairs that is not in remove, with the value of the last pair with that key, in ascending order of the key by its bytes"
+checker: exact
+edge_classes: [empty, replace, delete-absent, delete-all, delete-twice, zero-value, case]

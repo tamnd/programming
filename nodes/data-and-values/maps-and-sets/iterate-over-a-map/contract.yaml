@@ -1,0 +1,12 @@
+# The contract of the task "iterate over a map" (spec 10.2). The function walks the entries of a map in ascending order of the key and gives one line for each entry, then walks the values and gives their total.
+problem: iterate-over-a-map
+entry: score_lines
+params:
+  - name: scores
+    type: "map<string, int>"
+    pre: "each key has 1 or more ASCII letters; each value is from -1000000 to 1000000; the map has at most 1000 entries, so the total fits in a signed 32-bit integer; the map can be empty"
+returns:
+  type: "list<string>"
+  post: "one line key=value for each entry, in ascending order of the key by its bytes, then the line total=N, where N is the sum of the values"
+checker: exact
+edge_classes: [empty, case, negative, prefix, reverse]

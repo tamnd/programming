@@ -1,0 +1,5 @@
+{"name":"empty","class":["empty"],"args":{"scores":{}},"expect":["total=0"]}
+{"name":"case","class":["case"],"args":{"scores":{"b":1,"B":2,"a":3,"A":4}},"expect":["A=4","B=2","a=3","b=1","total=10"]}
+{"name":"negative","class":["negative"],"args":{"scores":{"a":-5,"b":5}},"expect":["a=-5","b=5","total=0"]}
+{"name":"prefix","class":["prefix"],"args":{"scores":{"abc":3,"a":2,"ab":1}},"expect":["a=2","ab=1","abc=3","total=6"]}
+{"name":"reverse","class":["reverse"],"args":{"scores":{"j":1,"i":2,"h":3,"g":4,"f":5,"e":6,"d":7,"c":8,"b":9,"a":10}},"expect":["a=10","b=9","c=8","d=7","e=6","f=5","g=4","h=3","i=2","j=1","total=55"]}

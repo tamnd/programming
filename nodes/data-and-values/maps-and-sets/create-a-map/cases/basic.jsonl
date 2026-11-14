@@ -1,0 +1,2 @@
+{"name":"fruits","args":{"pairs":[["apple",3],["pear",5],["fig",2]],"remove":[]},"expect":[["apple",3],["fig",2],["pear",5]]}
+{"name":"update-and-delete","args":{"pairs":[["a",1],["b",2],["a",7],["c",3]],"remove":["b"]},"expect":[["a",7],["c",3]]}
