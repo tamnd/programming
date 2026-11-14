@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: "TypeScript uses the JavaScript Intl.DateTimeFormat with the option timeZone, and Temporal.ZonedDateTime where the runtime has it. No example file exists."
+kotlin:
+  status: stdlib
+  reason: "On the JVM, Kotlin uses java.time.ZoneId, ZoneRules and ZonedDateTime. The library kotlinx-datetime has a TimeZone type with the same IANA names on all platforms. No example file exists because kotlinc is not installed."
+rust:
+  status: library
+  reason: "The Rust standard library has no time zones. SystemTime is an instant only. The crate chrono-tz compiles the IANA data into the program, and the crate jiff reads the zone data of the system. No example file exists because the examples use the standard library only."
+powershell:
+  status: stdlib
+  reason: "Get-TimeZone returns the local zone or a named zone, and PowerShell uses the .NET TimeZoneInfo for conversions, such as [TimeZoneInfo]::ConvertTimeBySystemTimeZoneId(). No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: "Standard SQL has TIMESTAMP WITH TIME ZONE and the AT TIME ZONE expression. Each system differs: PostgreSQL stores an instant in UTC and drops the zone, Oracle can keep a zone region name, and SQLite has no zone type."
+regex:
+  status: n/a
+  reason: A regular expression has no zones. A pattern can only check the text of an offset such as +05:30.
+html:
+  status: n/a
+  reason: "The datetime attribute of the time element holds an offset in text, not a zone. HTML has no zone rules."
+css:
+  status: n/a
+  reason: CSS has no dates or time zones.
