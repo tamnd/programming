@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: a class with an id field typed number or null, set from the result of the insert; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: Entity Framework Core makes a property named Id or <type name>Id the key by convention and sets a generated value on insert.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a std::optional<std::int64_t> member that the mapper sets after the insert; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a struct with an integer key field and 0 as the marker for an unsaved row; the SQLite C API gives the new key with sqlite3_last_insert_rowid.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a data class with a nullable Long id; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: the primary key is part of the table itself; the pattern is the copy of that key in a program object.
+bash:
+  status: n/a
+  reason: the shell has no objects that hold row data.
+powershell:
+  status: idiom
+  reason: a class with a nullable id property that the save function sets; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: markup has no objects mapped to database rows.
+css:
+  status: n/a
+  reason: style rules have no data access.

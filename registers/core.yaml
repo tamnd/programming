@@ -14150,19 +14150,19 @@ items:
     group: "poeaa"
     name: "Lazy Load"
     target: "lazy-load"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
     name: "Identity Field"
     target: "identity-field"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
     name: "Foreign Key Mapping"
     target: "foreign-key-mapping"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
