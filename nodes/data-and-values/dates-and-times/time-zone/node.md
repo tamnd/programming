@@ -1,5 +1,5 @@
 ---
-tag: NEW-time-zone
+tag: 2M7FMR
 kind: concept
 slug: time-zone
 name: Time zone
