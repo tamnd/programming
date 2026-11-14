@@ -1,0 +1,16 @@
+# The contract of the task "filter lines that match a pattern" (spec 10.2). Each solution reads the file line by line and keeps each line in which the regular expression matches some part, as grep -E does.
+problem: filter-lines-that-match-a-pattern
+entry: filter_lines
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the file holds valid UTF-8"
+  - name: pattern
+    type: string
+    pre: "a regular expression made only of characters that are not special, '.', '*' after a character or '.', '^' as the first character, and '$' as the last character. The cases use '.' only with ASCII text"
+returns:
+  type: "list<string>"
+  post: "the lines of the file in which the pattern matches some part, in the order of the file, with duplicates kept. A line ends at LF, and the LF is not part of it; a CR before the LF stays in the line. A last line with no LF is a line too. An empty file gives []"
+checker: exact
+edge_classes: [empty, no-match, empty-line, match-all, duplicates, no-final-newline, crlf, case, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when the file does not exist.

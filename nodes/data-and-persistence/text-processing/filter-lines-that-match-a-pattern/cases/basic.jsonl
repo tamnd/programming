@@ -1,0 +1,7 @@
+{"name": "literal", "args": {"path": "fixtures/literal.txt", "pattern": "an"}, "expect": ["banana"]}
+{"name": "several", "args": {"path": "fixtures/several.txt", "pattern": "cat"}, "expect": ["cat", "catalog"]}
+{"name": "start", "args": {"path": "fixtures/start.txt", "pattern": "^a"}, "expect": ["ab"]}
+{"name": "end", "args": {"path": "fixtures/end.txt", "pattern": "a$"}, "expect": ["ba"]}
+{"name": "dot", "args": {"path": "fixtures/dot.txt", "pattern": "a.c"}, "expect": ["abc", "axc"]}
+{"name": "star", "args": {"path": "fixtures/star.txt", "pattern": "ab*c"}, "expect": ["ac", "abc", "abbc"]}
+{"name": "whole-line", "args": {"path": "fixtures/whole-line.txt", "pattern": "^a$"}, "expect": ["a"]}

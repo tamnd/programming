@@ -1,0 +1,4 @@
+ac
+abc
+abbc
+adc
