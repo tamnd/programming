@@ -1,0 +1,40 @@
+typescript:
+  status: idiom
+  reason: a collection of object references in memory and a link table of key pairs, mapped by hand or by an ORM; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: Entity Framework Core maps two collection navigations to a join table, which it can hide or map to a join entity class.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a set of key pairs, such as std::set of std::pair, holds the links, mapped by the program; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: an array of key pairs in memory and a link table written by hand with the SQLite C API.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a class with a collection of references and a mapper that writes the link rows; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: the link table with two REFERENCES constraints and a primary key on the pair is the database side of the pattern; the object side belongs to the client language.
+  alternative: the Python example, which declares the link table in SQLite.
+bash:
+  status: n/a
+  reason: the shell has no objects with collections to map.
+powershell:
+  status: idiom
+  reason: a class with a collection of references and a function that writes the link rows; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: markup has no objects mapped to database rows.
+css:
+  status: n/a
+  reason: style rules have no data access.

@@ -1,0 +1,40 @@
+typescript:
+  status: idiom
+  reason: an owner class with an array of child objects and a mapper that writes both, by hand or by an ORM; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: Entity Framework Core maps a collection of owned types with OwnsMany, and the owner's queries include it.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: an owner struct with a std::vector of children and one mapper for both; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: an owner struct with an array of children, written in one function with the SQLite C API.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: an owner class with a list of children and one mapper that writes both; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a child table keyed by the owner's key and a position is the database side of the pattern; the mapper belongs to the client language.
+  alternative: the Python example, which declares the tables in SQLite.
+bash:
+  status: n/a
+  reason: the shell has no objects with child collections to map.
+powershell:
+  status: idiom
+  reason: an owner class with a list of children and one function that writes both; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: markup has no objects mapped to database rows.
+css:
+  status: n/a
+  reason: style rules have no data access.
