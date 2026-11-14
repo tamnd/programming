@@ -1,0 +1,11 @@
+{"name": "empty", "class": ["empty"], "args": {"path": "fixtures/empty.txt", "count": 2}, "expect": [[], []]}
+{"name": "zero", "class": ["zero"], "args": {"path": "fixtures/zero.txt", "count": 0}, "expect": [[], []]}
+{"name": "short", "class": ["short"], "args": {"path": "fixtures/short.txt", "count": 5}, "expect": [["a", "b"], ["a", "b"]]}
+{"name": "exact", "class": ["short"], "args": {"path": "fixtures/exact.txt", "count": 2}, "expect": [["a", "b"], ["a", "b"]]}
+{"name": "overlap", "class": ["overlap"], "args": {"path": "fixtures/overlap.txt", "count": 2}, "expect": [["a", "b"], ["b", "c"]]}
+{"name": "one-line", "class": ["overlap"], "args": {"path": "fixtures/one-line.txt", "count": 1}, "expect": [["a"], ["a"]]}
+{"name": "empty-lines", "class": ["empty-line"], "args": {"path": "fixtures/empty-lines.txt", "count": 1}, "expect": [[""], [""]]}
+{"name": "only-newline", "class": ["empty-line"], "args": {"path": "fixtures/only-newline.txt", "count": 1}, "expect": [[""], [""]]}
+{"name": "no-final-newline", "class": ["no-final-newline"], "args": {"path": "fixtures/no-final-newline.txt", "count": 1}, "expect": [["a"], ["c"]]}
+{"name": "crlf", "class": ["crlf"], "args": {"path": "fixtures/crlf.txt", "count": 1}, "expect": [["a\r"], ["b\r"]]}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"path": "fixtures/non-ascii.txt", "count": 1}, "expect": [["caf\u00e9"], ["zo\u00eb"]]}
