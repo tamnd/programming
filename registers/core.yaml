@@ -12302,7 +12302,7 @@ items:
     group: "collections"
     name: "Use a linked list"
     target: "use-a-linked-list"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Singly linked list Reversal, Doubly linked list Traversal); Rust by Example (Testcase: linked-list)."
   - part: tasks
     group: "collections"

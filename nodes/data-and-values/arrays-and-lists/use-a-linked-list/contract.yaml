@@ -1,0 +1,12 @@
+# The contract of the task "use a linked list" (spec 10.2). The function runs the operations on a new, empty linked list.
+problem: use-a-linked-list
+entry: run_ops
+params:
+  - name: ops
+    type: "list<string>"
+    pre: "0 to 1000 operations; each is push_front N, push_back N, pop_front, pop_back or remove N, with N a 32-bit signed integer in decimal; no pop is done on an empty list"
+returns:
+  type: "list<int>"
+  post: "the items of the list from front to back after all the operations; remove N takes out only the first item equal to N, and does nothing if no item is equal to N"
+checker: exact
+edge_classes: [empty, single, boundary, duplicates, negative, limit]
