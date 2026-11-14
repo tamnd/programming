@@ -1,0 +1,5 @@
+{"name":"same-day","args":{"start_year":2024,"start_month":3,"start_day":10,"end_year":2024,"end_month":3,"end_day":10},"expect":0}
+{"name":"next-day","args":{"start_year":2024,"start_month":3,"start_day":10,"end_year":2024,"end_month":3,"end_day":11},"expect":1}
+{"name":"common-year","args":{"start_year":2023,"start_month":1,"start_day":1,"end_year":2024,"end_month":1,"end_day":1},"expect":365}
+{"name":"leap-year","args":{"start_year":2024,"start_month":1,"start_day":1,"end_year":2025,"end_month":1,"end_day":1},"expect":366}
+{"name":"end-before-start","args":{"start_year":2024,"start_month":3,"start_day":11,"end_year":2024,"end_month":3,"end_day":10},"expect":-1}
