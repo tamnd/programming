@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no sorted map. The JavaScript idioms apply, a Map with entries sorted on demand or a sorted array of keys with a binary search. No example file exists.
+kotlin:
+  status: stdlib
+  reason: sortedMapOf makes a java.util.TreeMap, and toSortedMap copies a map into one. The NavigableMap methods of Java, such as floorKey and subMap, work on it. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash has no sorted map. A program sorts the keys of an associative array with printf and sort, and loops over the result. No example file exists.
+powershell:
+  status: stdlib
+  reason: "PowerShell uses the .NET classes SortedDictionary and SortedList, for example [System.Collections.Generic.SortedDictionary[int,string]]::new(). No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: A table with an index on the key keeps the keys in order, usually in a B-tree. ORDER BY gives the order, and WHERE key BETWEEN a AND b or key >= a ORDER BY key LIMIT 1 gives ranges and ceilings.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no maps.
+html:
+  status: n/a
+  reason: HTML is markup and has no data structures.
+css:
+  status: n/a
+  reason: CSS has no data structures.

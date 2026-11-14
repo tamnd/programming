@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript uses the JavaScript idiom, a Map<T, number> from item to count. No example file exists.
+kotlin:
+  status: idiom
+  reason: groupingBy { it }.eachCount() counts the items of a collection into a Map<T, Int>. A MutableMap updated with merge or getOrDefault is the form that can change. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: An associative array of counts, updated with ((count[key]++)). The pipeline sort | uniq -c counts the lines of a text. No example file exists.
+powershell:
+  status: idiom
+  reason: "Group-Object gives each distinct value with its Count, and a hashtable of counts is the form that can change. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: A table without a unique constraint and the result of a query are multisets of rows. GROUP BY with COUNT(*) gives the count of each value, and UNION ALL keeps the copies that UNION removes.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no collections.
+html:
+  status: n/a
+  reason: HTML is markup and has no data structures.
+css:
+  status: n/a
+  reason: CSS has no data structures.

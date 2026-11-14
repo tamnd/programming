@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript Map, which iterates its keys in insertion order. Map<K, V> types the keys and the values. No example file exists.
+kotlin:
+  status: stdlib
+  reason: mutableMapOf, mapOf and linkedMapOf return maps that keep the entry iteration order. On the JVM they are a java.util.LinkedHashMap. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash associative arrays give their keys in no defined order. A script keeps an indexed array of keys in insertion order next to the associative array. No example file exists.
+powershell:
+  status: stdlib
+  reason: "The [ordered] type accelerator, added in PowerShell 3.0, makes an OrderedDictionary whose keys keep the order in which they are listed. A plain @{} hashtable has no fixed order. No example file exists because pwsh is not installed."
+sql:
+  status: idiom
+  reason: A table has no row order without ORDER BY. A table keeps insertion order with an identity or sequence column, and a query sorts by that column.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no maps.
+html:
+  status: n/a
+  reason: HTML is markup and has no data structures.
+css:
+  status: n/a
+  reason: CSS has no data structures.

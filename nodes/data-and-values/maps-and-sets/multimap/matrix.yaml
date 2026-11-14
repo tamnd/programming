@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: "TypeScript uses the JavaScript idioms: a Map<K, V[]>, Map.groupBy, and URLSearchParams for query strings. No example file exists."
+kotlin:
+  status: idiom
+  reason: A MutableMap<K, MutableList<V>> filled with getOrPut(key) { mutableListOf() }.add(v). groupBy builds a Map<K, List<V>> from a collection. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash associative arrays hold one string for each key. A script joins the values of a key into one string with a separator, or keeps one array for each key. No example file exists.
+powershell:
+  status: idiom
+  reason: "A hashtable whose values are lists, or Group-Object, which groups objects by a property. The .NET ToLookup method also works. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: A table with a key column that is not unique is a multimap. WHERE key = x returns all values of a key, and GROUP BY with an aggregate such as COUNT or STRING_AGG works on each key.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no maps.
+html:
+  status: n/a
+  reason: HTML is markup and has no data structures.
+css:
+  status: n/a
+  reason: CSS has no data structures.

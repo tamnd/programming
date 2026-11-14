@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: "TypeScript uses the JavaScript Map with the type Map<K, V>, and a plain object with the type Record<string, V> or an index signature. The traps of object keys are the same as in JavaScript. No example file exists."
+kotlin:
+  status: stdlib
+  reason: mapOf makes a read-only map and mutableMapOf a mutable one, both from the standard library. m[key] returns null for a missing key, and getValue throws. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: declare -A makes an associative array with string keys. A missing key expands to an empty string, and the test -v tells a missing key from an empty value. No example file exists.
+powershell:
+  status: native
+  reason: "The literal @{ a = 1 } makes a hash table with keys that ignore case, and [ordered]@{} keeps the insertion order. The .NET Dictionary class also works. No example file exists because pwsh is not installed."
+sql:
+  status: idiom
+  reason: A table with a primary key maps each key to one row, and a lookup is a SELECT with WHERE on the key. Some databases also have a map column type, such as hstore and jsonb in PostgreSQL.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no data structures.
+html:
+  status: n/a
+  reason: HTML is markup. The dl element lists terms and their descriptions, but it is text for a reader, not a map that a program looks up.
+css:
+  status: n/a
+  reason: CSS has no map values. Custom properties are names with values, but they are style rules, not a data structure.
