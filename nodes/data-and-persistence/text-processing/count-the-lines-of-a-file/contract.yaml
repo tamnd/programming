@@ -1,0 +1,13 @@
+# The contract of the task "count the lines of a file" (spec 10.2). Each solution reads the file as bytes, in chunks, and does not decode it.
+problem: count-the-lines-of-a-file
+entry: count_lines
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the file can hold any bytes, also bytes that are not valid UTF-8 and NUL bytes"
+returns:
+  type: "tuple<int, int>"
+  post: "(newlines, lines): newlines is the number of LF bytes (0x0A) in the file, the number that wc -l prints; lines is newlines plus 1 if the file is not empty and its last byte is not LF, else newlines; CR, VT, FF, NEL and U+2028 do not end a line; (0, 0) for an empty file"
+checker: exact
+edge_classes: [empty, empty-line, no-final-newline, crlf, cr-only, other-breaks, invalid-utf8, nul-bytes]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when the file does not exist.

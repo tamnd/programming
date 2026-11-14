@@ -1,0 +1,9 @@
+{"name":"empty","class":["empty"],"args":{"path":"fixtures/empty.txt"},"expect":[0,0]}
+{"name":"only-newline","class":["empty-line"],"args":{"path":"fixtures/only-newline.txt"},"expect":[1,1]}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"fixtures/no-final-newline.txt"},"expect":[2,3]}
+{"name":"one-line-no-newline","class":["no-final-newline"],"args":{"path":"fixtures/one-line-no-newline.txt"},"expect":[0,1]}
+{"name":"crlf-no-final-newline","class":["crlf","no-final-newline"],"args":{"path":"fixtures/crlf-no-final-newline.txt"},"expect":[1,2]}
+{"name":"cr-only","class":["cr-only"],"args":{"path":"fixtures/cr-only.txt"},"expect":[0,1]}
+{"name":"other-breaks","class":["other-breaks"],"args":{"path":"fixtures/other-breaks.txt"},"expect":[1,1]}
+{"name":"invalid-utf8","class":["invalid-utf8"],"args":{"path":"fixtures/invalid-utf8.txt"},"expect":[2,2]}
+{"name":"nul-bytes","class":["nul-bytes"],"args":{"path":"fixtures/nul-bytes.txt"},"expect":[2,2]}
