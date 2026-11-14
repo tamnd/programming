@@ -1,0 +1,5 @@
+{"name":"empty-table","class":["empty"],"args":{"table":{},"keys":["a","b"],"fallback":7},"expect":[7,7]}
+{"name":"empty-keys","class":["empty"],"args":{"table":{"a":1},"keys":[],"fallback":0},"expect":[]}
+{"name":"zero-value","class":["zero-value"],"args":{"table":{"a":0},"keys":["a","b"],"fallback":5},"expect":[0,5]}
+{"name":"repeat","class":["repeat"],"args":{"table":{"a":1},"keys":["b","b","a"],"fallback":2},"expect":[2,2,1]}
+{"name":"case","class":["case"],"args":{"table":{"a":1},"keys":["A"],"fallback":0},"expect":[0]}

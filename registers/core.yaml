@@ -12254,19 +12254,19 @@ items:
     group: "collections"
     name: "Use a map with a default value"
     target: "use-a-map-with-a-default-value"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rust by Example (Defaults: or, or_else, get_or_insert, get_or_insert_with)."
   - part: tasks
     group: "collections"
     name: "Use a custom key in a map"
     target: "use-a-custom-key-in-a-map"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rust by Example (Alternate/custom key types)."
   - part: tasks
     group: "collections"
     name: "Create a set"
     target: "create-a-set"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Set, Julia set); Rust by Example (HashSet)."
   - part: tasks
     group: "collections"
