@@ -1,0 +1,16 @@
+# The contract of the task "read a specific line from a file" (spec 10.2). Each solution reads the file up to the line that it needs, and returns that line, or null if there is no such line.
+problem: read-a-specific-line-from-a-file
+entry: read_line
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the file holds valid UTF-8"
+  - name: number
+    type: int
+    pre: "any 32-bit signed integer; line 1 is the first line of the file"
+returns:
+  type: option<string>
+  post: "line number of the file, or null when number is less than 1 or more than the number of lines. A line ends at LF, and the LF is not part of it; a CR before the LF stays in the line, and a CR that is not before an LF does not end a line. A last line with no LF is a line too"
+checker: exact
+edge_classes: [past-the-end, zero, negative, empty, empty-line, no-final-newline, crlf, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when the file does not exist.
