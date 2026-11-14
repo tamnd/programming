@@ -1,0 +1,27 @@
+python:
+  status: stdlib
+  reason: str.split with a separator keeps empty fields, str.split with no argument splits at runs of white space, and the csv module reads and writes fields with quotes. The three run blocks of this page show them, so no example file exists.
+typescript:
+  status: stdlib
+  reason: TypeScript has the String.prototype.split of JavaScript, so the JavaScript example applies. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin has its own split for strings, and the JVM has String.split as in the Java example. No example file exists because kotlinc is not installed.
+csharp:
+  status: stdlib
+  reason: String.Split takes one or more separator characters, and StringSplitOptions.RemoveEmptyEntries drops the empty fields. No example file exists.
+powershell:
+  status: native
+  reason: The -split operator splits a string at a pattern, and Import-Csv reads a file with a -Delimiter parameter. No example file exists because pwsh is not installed.
+sql:
+  status: stdlib
+  reason: SQL engines load and unload delimited files with bulk commands, such as COPY in PostgreSQL, and PostgreSQL has split_part to take one field from a string. The commands differ from engine to engine.
+regex:
+  status: native
+  reason: A split at a pattern such as a comma with optional spaces handles some variations, and a pattern such as [^:]* matches one field. A pattern alone does not handle quoted fields well.
+html:
+  status: n/a
+  reason: Markup has no fields or records to split. A table element can show the rows of a delimited file.
+css:
+  status: n/a
+  reason: Style sheets have no fields or records to split.
