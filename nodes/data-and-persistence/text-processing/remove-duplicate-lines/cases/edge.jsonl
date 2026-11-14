@@ -1,0 +1,8 @@
+{"name":"empty","class":["empty"],"args":{"path":"fixtures/empty.txt"},"expect":[]}
+{"name":"empty-lines","class":["empty-line"],"args":{"path":"fixtures/empty-lines.txt"},"expect":["","a"]}
+{"name":"all-same","class":["all-duplicates"],"args":{"path":"fixtures/all-same.txt"},"expect":["x"]}
+{"name":"no-final-newline","class":["no-final-newline"],"args":{"path":"fixtures/no-final-newline.txt"},"expect":["a","b"]}
+{"name":"crlf","class":["crlf"],"args":{"path":"fixtures/crlf.txt"},"expect":["a\r","a"]}
+{"name":"case","class":["case"],"args":{"path":"fixtures/case.txt"},"expect":["A","a"]}
+{"name":"whitespace","class":["whitespace"],"args":{"path":"fixtures/whitespace.txt"},"expect":["a ","a"," a"]}
+{"name":"normalization","class":["non-ascii"],"args":{"path":"fixtures/normalization.txt"},"expect":["\u00e9","e\u0301"]}

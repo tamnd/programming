@@ -1,0 +1,13 @@
+# The contract of the task "remove duplicate lines" (spec 10.2). Each solution reads the file line by line, keeps a set of the lines that it has seen, and keeps only the first copy of each line, in the order of the file.
+problem: remove-duplicate-lines
+entry: remove_duplicate_lines
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the file holds valid UTF-8"
+returns:
+  type: "list<string>"
+  post: "the lines of the file, each one only once, in the order of their first copies. Two lines are equal if their bytes are equal. A line ends at LF, and the LF is not part of it; a CR before the LF stays in the line. A last line with no LF is a line too. An empty file gives []"
+checker: exact
+edge_classes: [empty, empty-line, all-duplicates, no-final-newline, crlf, case, whitespace, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when the file does not exist.
