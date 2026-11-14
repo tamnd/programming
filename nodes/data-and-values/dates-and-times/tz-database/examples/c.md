@@ -35,8 +35,8 @@ int main(void) {
     for (int i = 0; i < 3; i++) {
         show(instants[i]);
     }
-    /* A link name works the same way. */
-    setenv("TZ", "US/Central", 1);
+    /* A link name works the same way: Europe/Vatican is a link to Europe/Rome. */
+    setenv("TZ", "Europe/Vatican", 1);
     tzset();
     show(instants[2]);
     return 0;
@@ -47,7 +47,7 @@ int main(void) {
 1880-01-01T06:09:24 LMT -21036
 1936-06-01T07:00:00 EST -18000
 2024-07-01T07:00:00 CDT -18000
-2024-07-01T07:00:00 CDT -18000
+2024-07-01T14:00:00 CEST +7200
 ```
 
 - Verdict: stdlib. ISO C has no zone names. On POSIX systems, `TZ` set to a name such as `America/Chicago` makes `localtime` read the compiled file of that zone. The example computes the offset itself, because `%z` of `strftime` does not give the offset of each instant on all systems. The offset -21036 seconds is -5:50:36.

@@ -15,7 +15,7 @@ for (const iso of ["1880-01-01T12:00:00Z", "1936-06-01T12:00:00Z", "2024-07-01T1
 }
 // A link name gives the same local time as the zone it points to.
 const t = new Date("2024-07-01T12:00:00Z");
-console.log(show(t, "US/Central") === show(t, "America/Chicago"));
+console.log(show(t, "Europe/Vatican") === show(t, "Europe/Rome"));
 console.log(Intl.supportedValuesOf("timeZone").includes("America/Chicago"));
 ```
 

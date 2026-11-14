@@ -15,9 +15,9 @@ public class Main {
         }
         // The next change after a given instant, as the tz data gives it.
         System.out.println(rules.nextTransition(Instant.parse("2024-01-01T00:00:00Z")));
-        // US/Central is a link to America/Chicago in the tz data.
+        // Europe/Vatican is a link to Europe/Rome in the tz data.
         Instant t = Instant.parse("2024-07-01T12:00:00Z");
-        System.out.println(ZoneId.of("US/Central").getRules().getOffset(t).equals(rules.getOffset(t)));
+        System.out.println(ZoneId.of("Europe/Vatican").getRules().getOffset(t).equals(ZoneId.of("Europe/Rome").getRules().getOffset(t)));
         System.out.println(ZoneId.getAvailableZoneIds().contains("America/Chicago"));
     }
 }
@@ -32,4 +32,4 @@ true
 true
 ```
 
-- Verdict: stdlib. The JDK compiles the tz data into its own file, so the version of the data changes with updates of the JDK, not of the system. `ZoneRules` gives the offset for an instant and the next or previous transition. `ZoneId.of` accepts link names such as `US/Central`.
+- Verdict: stdlib. The JDK compiles the tz data into its own file, so the version of the data changes with updates of the JDK, not of the system. `ZoneRules` gives the offset for an instant and the next or previous transition. `ZoneId.of` accepts link names such as `Europe/Vatican`.

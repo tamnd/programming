@@ -9,7 +9,8 @@ in_zone() (
 for t in -2840097600 -1059825600 1719835200; do
   in_zone America/Chicago "$t"
 done
-in_zone US/Central 1719835200
+# Europe/Vatican is a link to Europe/Rome.
+in_zone Europe/Vatican 1719835200
 # The compiled files are in a directory such as /usr/share/zoneinfo.
 [ -f /usr/share/zoneinfo/America/Chicago ] && echo "file found"
 ```
@@ -18,7 +19,7 @@ in_zone US/Central 1719835200
 1880-01-01T06:09:24-0550 LMT
 1936-06-01T07:00:00-0500 EST
 2024-07-01T07:00:00-0500 CDT
-2024-07-01T07:00:00-0500 CDT
+2024-07-01T14:00:00+0200 CEST
 file found
 ```
 

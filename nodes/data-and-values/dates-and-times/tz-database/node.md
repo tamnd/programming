@@ -142,7 +142,7 @@ US 2024 Mar Sun>=8 -> 2024-03-10 CST -> CDT
 US 2024 Nov Sun>=1 -> 2024-11-03 CDT -> CST
 ```
 
-The example files show one zone at three instants in each language: 1880 with the local mean time -5:50:36, 1936 with EST and no daylight saving time, and 2024 with CDT. They also load the link name `US/Central`. The C# example shows the mapping between IANA names and the zone IDs of Windows.
+The example files show one zone at three instants in each language: 1880 with the local mean time -5:50:36, 1936 with EST and no daylight saving time, and 2024 with CDT. They also load the link name `Europe/Vatican`, which points to `Europe/Rome`. The C# example shows the mapping between IANA names and the zone IDs of Windows.
 
 ## Versions
 
@@ -159,6 +159,7 @@ The project goes back to 1986 or earlier, and its founding contributor was Arthu
 - **Old data on the machine.** A program uses the copy of the data that its platform has. Java has its own copy in the JDK, the JavaScript engines have one in ICU, and Python, Go and C read the files of the system. "End users typically receive updates to this data through their software and operating system vendors."[^1] After a government changes its rules, two machines can give different local times for the same instant until both are updated.
 - **History before 1970 is partial.** The database records transitions before 1970 for its zones, "because most systems support timestamps before 1970 and could misbehave if data entries were omitted for pre-1970 transitions. However, the database is not designed for and does not suffice for applications requiring accurate handling of all past times everywhere"[^4]. Two cities that share a zone since 1970 can have different clocks before 1970.
 - **Names are not stable keys for people.** Names change when city names change, and old names become links. Store the name, but do not show it as the name of a country or compare names as text to decide if two zones are equal. Compare offsets at the instants that matter, or resolve links first.
+- **Old names missing on the system.** Some Linux distributions put the old names of the file `backward` in a separate package, such as `tzdata-legacy` on Debian and Ubuntu. On the Ubuntu 24.04 server that ran these examples, `ZoneInfo("US/Central")` in Python failed and `TZ=US/Central` in C fell back to UTC with no error, while Java, JavaScript and C++ found the name in their own copies of the data. Store the current name, such as `America/Chicago`.
 - **Offsets with seconds.** Local mean time offsets such as -5:50:36 have seconds. A format with `%z`, or a type that stores whole minutes, loses them. The Bash example shows -0550.
 - **The 32-bit limit.** A program that reads only the version 1 block of a TZif file gets no transitions after 2038-01-19. Read the version 2 block and the footer. See [[unix-time]] for the year 2038 problem.
 - **Windows zone IDs.** Windows has its own set of zone IDs, such as `Central Standard Time`, and fewer zones than the IANA database. A mapping between them "cannot be perfect because the number of time zones in Windows systems is significantly lower than in the IANA TZ database."[^3]
