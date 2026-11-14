@@ -1,0 +1,13 @@
+{"name":"leap-day","class":["leap-years"],"args":{"year":2024,"month":2,"day":29},"expect":4}
+{"name":"after-leap-day-2000","class":["leap-years","century"],"args":{"year":2000,"month":3,"day":1},"expect":3}
+{"name":"year-1900-is-not-leap","class":["leap-years","century"],"args":{"year":1900,"month":3,"day":1},"expect":4}
+{"name":"year-2100-is-not-leap","class":["leap-years","century"],"args":{"year":2100,"month":3,"day":1},"expect":1}
+{"name":"before-the-epoch","class":["before-epoch"],"args":{"year":1969,"month":12,"day":31},"expect":3}
+{"name":"gregorian-reform","class":["proleptic"],"args":{"year":1582,"month":10,"day":15},"expect":5}
+{"name":"day-before-the-reform","class":["proleptic"],"args":{"year":1582,"month":10,"day":4},"expect":1}
+{"name":"first-day","class":["year-range","proleptic"],"args":{"year":1,"month":1,"day":1},"expect":1}
+{"name":"last-day","class":["year-range"],"args":{"year":9999,"month":12,"day":31},"expect":5}
+{"name":"year-99","class":["two-digit-year"],"args":{"year":99,"month":12,"day":31},"expect":4}
+{"name":"iso-week-of-next-year","class":["iso-week"],"args":{"year":2024,"month":12,"day":30},"expect":1}
+{"name":"iso-week-of-last-year","class":["iso-week"],"args":{"year":2027,"month":1,"day":1},"expect":5}
+{"name":"month-end","class":["month-end"],"args":{"year":2024,"month":4,"day":30},"expect":2}

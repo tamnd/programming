@@ -1,0 +1,18 @@
+# The contract of the task "find the day of the week" (spec 10.2). The result uses the numbers of ISO 8601: 1 is Monday and 7 is Sunday. A date has no time zone, so the result does not depend on the zone of the system.
+problem: find-the-day-of-the-week
+entry: day_of_week
+params:
+  - name: year
+    type: int
+    pre: "the year in the proleptic Gregorian calendar, from 1 to 9999"
+  - name: month
+    type: int
+    pre: "the month, from 1 to 12"
+  - name: day
+    type: int
+    pre: "the day, from 1 to the number of days in that month"
+returns:
+  type: int
+  post: "the ISO 8601 day of the week: 1 for Monday, 2 for Tuesday and so on to 7 for Sunday"
+checker: exact
+edge_classes: [leap-years, century, before-epoch, proleptic, year-range, two-digit-year, iso-week, month-end]
