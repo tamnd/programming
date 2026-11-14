@@ -1,0 +1,25 @@
+typescript:
+  status: native
+  reason: "TypeScript uses the JavaScript Date, which counts milliseconds with leap seconds ignored. Temporal.Instant also has no leap seconds. No example file exists."
+kotlin:
+  status: stdlib
+  reason: "On the JVM, Kotlin uses java.time, whose Java Time-Scale has exactly 86400 seconds in each day. The Instant of kotlinx-datetime also ignores leap seconds. No example file exists because kotlinc is not installed."
+rust:
+  status: library
+  reason: "std::time::SystemTime does not count leap seconds, and its behavior near a leap second depends on the platform. The standard library has no calendar and no table of leap seconds. No example file exists."
+  alternative: "The crate chrono can hold a leap second as a nanosecond value of 1,000,000,000 or more. The crate hifitime has TAI and a table of leap seconds."
+powershell:
+  status: stdlib
+  reason: "PowerShell uses the .NET DateTime and DateTimeOffset, with 86400 seconds in each day, so Get-Date rejects the second 60 on Linux and macOS. No example file exists because pwsh is not installed."
+sql:
+  status: idiom
+  reason: "Standard SQL has no leap seconds. PostgreSQL, MySQL and SQLite store timestamps with 86400 seconds in each day. A table of leap seconds in the database is the usual way to compute exact intervals."
+regex:
+  status: n/a
+  reason: "A regular expression has no time values. A pattern for a time can allow the second 60, as the ABNF of RFC 3339 does."
+html:
+  status: n/a
+  reason: "HTML has no leap seconds. The valid time string of HTML allows seconds from 00 to 59 only."
+css:
+  status: n/a
+  reason: CSS has no dates or time scales.
