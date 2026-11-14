@@ -1,0 +1,10 @@
+{"name": "past-the-end", "class": ["past-the-end"], "args": {"path": "fixtures/past-the-end.txt", "number": 3}, "expect": null}
+{"name": "zero", "class": ["zero"], "args": {"path": "fixtures/zero.txt", "number": 0}, "expect": null}
+{"name": "negative", "class": ["negative"], "args": {"path": "fixtures/negative.txt", "number": -1}, "expect": null}
+{"name": "empty", "class": ["empty"], "args": {"path": "fixtures/empty.txt", "number": 1}, "expect": null}
+{"name": "empty-line", "class": ["empty-line"], "args": {"path": "fixtures/empty-line.txt", "number": 2}, "expect": ""}
+{"name": "only-newline", "class": ["empty-line"], "args": {"path": "fixtures/only-newline.txt", "number": 1}, "expect": ""}
+{"name": "no-final-newline", "class": ["no-final-newline"], "args": {"path": "fixtures/no-final-newline.txt", "number": 2}, "expect": "b"}
+{"name": "crlf", "class": ["crlf"], "args": {"path": "fixtures/crlf.txt", "number": 1}, "expect": "a\r"}
+{"name": "lone-cr", "class": ["crlf"], "args": {"path": "fixtures/lone-cr.txt", "number": 2}, "expect": "c"}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"path": "fixtures/non-ascii.txt", "number": 2}, "expect": "zo\u00eb"}
