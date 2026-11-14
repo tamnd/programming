@@ -12680,7 +12680,7 @@ items:
     group: "dates"
     name: "Format a duration"
     target: "format-a-duration"
-    status: "planned"
+    status: "node"
     reason: "A job on dates and times. Related titles, found by keyword: Rosetta Code (Convert seconds to compound duration)."
   - part: tasks
     group: "regex"

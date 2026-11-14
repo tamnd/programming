@@ -1,0 +1,14 @@
+{"name":"just-under-an-hour","class":["carry"],"args":{"seconds":3599},"expect":"00:59:59"}
+{"name":"just-under-a-day","class":["carry"],"args":{"seconds":86399},"expect":"23:59:59"}
+{"name":"one-day","class":["day"],"args":{"seconds":86400},"expect":"24:00:00"}
+{"name":"more-than-a-day","class":["day"],"args":{"seconds":90061},"expect":"25:01:01"}
+{"name":"hundred-hours","class":["day"],"args":{"seconds":360000},"expect":"100:00:00"}
+{"name":"one-week","class":["day"],"args":{"seconds":604800},"expect":"168:00:00"}
+{"name":"one-year","class":["day","large"],"args":{"seconds":31536000},"expect":"8760:00:00"}
+{"name":"minus-one-second","class":["negative"],"args":{"seconds":-1},"expect":"-00:00:01"}
+{"name":"negative-minute","class":["negative"],"args":{"seconds":-61},"expect":"-00:01:01"}
+{"name":"negative-hours","class":["negative"],"args":{"seconds":-3723},"expect":"-01:02:03"}
+{"name":"negative-day","class":["negative","day"],"args":{"seconds":-90061},"expect":"-25:01:01"}
+{"name":"beyond-go-duration","class":["large"],"args":{"seconds":10000000000},"expect":"2777777:46:40"}
+{"name":"largest","class":["large"],"args":{"seconds":1000000000000000},"expect":"277777777777:46:40"}
+{"name":"most-negative","class":["large","negative"],"args":{"seconds":-1000000000000000},"expect":"-277777777777:46:40"}
