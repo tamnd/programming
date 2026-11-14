@@ -1,0 +1,25 @@
+typescript:
+  status: native
+  reason: "TypeScript uses the JavaScript Intl.DateTimeFormat and Temporal, which read the copy of the tz data in the engine. No example file exists, because the JavaScript example applies."
+kotlin:
+  status: stdlib
+  reason: "On the JVM, Kotlin uses java.time.ZoneId and ZoneRules, which read the copy of the tz data in the JDK. kotlinx-datetime uses the same names on all platforms. No example file exists because kotlinc is not installed."
+rust:
+  status: library
+  reason: "The Rust standard library has no access to the tz data."
+  alternative: "The crate chrono-tz compiles the tz source into the program, and the crate jiff reads the TZif files of the system or embeds a copy."
+powershell:
+  status: stdlib
+  reason: "Get-TimeZone -ListAvailable lists the zones, and the .NET TimeZoneInfo reads the tz files on Linux and macOS. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: "Most database systems ship a copy of the tz data or load it into tables. PostgreSQL has the view pg_timezone_names, and MySQL fills its time zone tables with the tool mysql_tzinfo_to_sql."
+regex:
+  status: n/a
+  reason: A regular expression has no zone data. A pattern can only check the form Area/Location of a name.
+html:
+  status: n/a
+  reason: HTML has no zone data. The datetime attribute holds offsets only.
+css:
+  status: n/a
+  reason: CSS has no dates or time zones.
