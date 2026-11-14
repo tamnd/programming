@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: a class with typed lists of new, dirty and removed objects and a commit method that runs in one transaction; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: Entity Framework Core gives every DbContext a change tracker, and SaveChanges writes the tracked changes in one transaction; the Java example shows the same design by hand.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a class that holds pointers to the changed objects and writes them through a database client library in one transaction; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: arrays of pointers to the new, changed and removed structs, and a commit function that runs the statements between BEGIN and COMMIT of a client library.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a class with mutable lists and a commit function over JDBC or an ORM session; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL has transactions but no objects in memory to track; the unit of work belongs to the client language and runs its statements inside one SQL transaction.
+bash:
+  status: n/a
+  reason: the shell has no objects to track.
+powershell:
+  status: idiom
+  reason: a class with lists of changed objects and a commit method over database commands in one transaction; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: markup has no objects or transactions.
+css:
+  status: n/a
+  reason: style rules have no data access.
