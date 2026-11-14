@@ -19,11 +19,11 @@ Console.WriteLine(iana);
 ```
 
 ```output
-1880-01-01T06:09:24 -05:50:36
+1880-01-01T06:09:00 -05:51:00
 1936-06-01T07:00:00 -05:00:00
 2024-07-01T07:00:00 -05:00:00
 Central Standard Time
 America/Chicago
 ```
 
-- Verdict: stdlib. `TimeZoneInfo.FindSystemTimeZoneById` accepts IANA names on Linux and macOS, and since .NET 6 also on Windows when ICU is present. `TryConvertIanaIdToWindowsId` and `TryConvertWindowsIdToIanaId` use the mapping data of the Unicode CLDR.
+- Verdict: stdlib. `TimeZoneInfo.FindSystemTimeZoneById` accepts IANA names on Linux and macOS, and since .NET 6 also on Windows when ICU is present. `TryConvertIanaIdToWindowsId` and `TryConvertWindowsIdToIanaId` use the mapping data of the Unicode CLDR. A `DateTimeOffset` stores its offset in whole minutes, so the offset -5:50:36 of Chicago in 1880 becomes -05:51, and the local time loses its 24 seconds.
