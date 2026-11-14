@@ -1,0 +1,27 @@
+python:
+  status: stdlib
+  reason: open() reads text with universal newlines and its newline argument controls the translation, and str.splitlines() splits at all line boundaries. The two run blocks of this page show them, so no example file exists.
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses os.EOL and the node:readline module with the types from @types/node, so the JavaScript example applies. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM can use BufferedReader.readLine and System.lineSeparator() as in the Java example. No example file exists because kotlinc is not installed.
+csharp:
+  status: stdlib
+  reason: StreamReader.ReadLine ends a line at a line feed, a carriage return or a carriage return and a line feed, and Environment.NewLine is the ending of the platform. No example file exists.
+powershell:
+  status: stdlib
+  reason: PowerShell runs on .NET, so StreamReader.ReadLine and Environment.NewLine of the C# entry apply. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL works on rows of tables. A string value can hold CR and LF, but SQL has no lines of a file to read.
+regex:
+  status: native
+  reason: The dot does not match a newline by default, and $ matches at the end or before a final newline. A pattern such as \r?\n matches both LF and CRLF.
+html:
+  status: native
+  reason: The HTML parser normalizes newlines before tokenization, so the DOM holds only LF characters.
+css:
+  status: native
+  reason: CSS Syntax filters the input, and each CR, each form feed and each CRLF pair becomes one LF.
