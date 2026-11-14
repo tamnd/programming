@@ -1,5 +1,5 @@
 ---
-tag: NEW-iso-8601
+tag: 7AP6MC
 kind: standard
 slug: iso-8601
 name: ISO 8601
