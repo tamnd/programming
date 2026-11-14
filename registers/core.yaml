@@ -12632,7 +12632,7 @@ items:
     group: "dates"
     name: "Add days to a date"
     target: "add-days-to-a-date"
-    status: "planned"
+    status: "node"
     reason: "A job on dates and times. Related titles, found by keyword: Rosetta Code (Date manipulation)."
   - part: tasks
     group: "dates"
