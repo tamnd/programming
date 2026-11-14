@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript uses the JavaScript Date and Temporal objects, with types from the lib settings. No example file exists.
+kotlin:
+  status: stdlib
+  reason: "On the JVM, Kotlin uses java.time with Instant, LocalDate, ZonedDateTime, Duration and Period. kotlin.time.Duration is in the standard library, and the library kotlinx-datetime gives the same types on all platforms. No example file exists because kotlinc is not installed."
+bash:
+  status: idiom
+  reason: "Bash has no date type. The variable EPOCHSECONDS gives the Unix time, the printf format %(datefmt)T formats it, and the external command date converts and formats dates. No example file exists."
+powershell:
+  status: stdlib
+  reason: "PowerShell uses the .NET types DateTime, DateTimeOffset and TimeSpan. Get-Date gives the current date and time, and New-TimeSpan makes a duration. No example file exists because pwsh is not installed."
+sql:
+  status: native
+  reason: "SQL has the types DATE, TIME, TIMESTAMP, TIMESTAMP WITH TIME ZONE and INTERVAL. The functions and the time zone support differ between database systems."
+regex:
+  status: n/a
+  reason: A regular expression has no time values. A pattern can check only the form of a date string, not whether the date exists.
+html:
+  status: idiom
+  reason: "The time element marks a date or time, and its datetime attribute holds a machine-readable form such as 2024-03-09T12:00Z. The input types date, time and datetime-local let a user pick a value."
+css:
+  status: n/a
+  reason: "CSS has no dates. Its time type, such as 200ms or 1s, is a duration for transitions and animations."
