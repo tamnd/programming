@@ -1,0 +1,3 @@
+{"name":"simple","args":{"path":"fixtures/simple.txt","n":2},"expect":[["the",2],["and",1]]}
+{"name":"case","args":{"path":"fixtures/case.txt","n":5},"expect":[["the",4]]}
+{"name":"punctuation","args":{"path":"fixtures/punctuation.txt","n":10},"expect":[["it",2],["dressed",1],["isn",1],["s",1],["t",1],["well",1]]}

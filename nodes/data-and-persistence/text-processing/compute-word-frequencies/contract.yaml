@@ -1,0 +1,16 @@
+# The contract of the task "compute word frequencies" (spec 10.2). Each solution reads the bytes of the file in parts, without decoding them, and counts the words in a map.
+problem: compute-word-frequencies
+entry: word_frequencies
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the bytes can be in any encoding, and they need not be valid UTF-8"
+  - name: n
+    type: int
+    pre: "0 or more"
+returns:
+  type: "list<tuple<string, int>>"
+  post: "(word, count) pairs. A word is a maximal run of the bytes of the ASCII letters A to Z and a to z; every other byte, such as a space, a digit, an apostrophe, a hyphen or a byte above 0x7F, ends a word. Each word is changed to lower case before it is counted. The pairs are sorted by count from high to low, then by word in byte order. The list holds the first n pairs, or all of them when there are fewer; a file with no words gives []"
+checker: exact
+edge_classes: [empty, no-words, ties, digits, n-zero, n-above-count, crlf, non-ascii, leading-separators, no-final-newline, not-utf8]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when the file does not exist.
