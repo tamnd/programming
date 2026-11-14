@@ -1,5 +1,5 @@
 ---
-tag: NEW-date-and-time-values
+tag: 4W6JX1
 kind: concept
 slug: date-and-time-values
 name: Date and time values
@@ -11,7 +11,7 @@ summary: >-
 applies_to: core-languages
 viz: optional
 formal: none
-see_also: [unix-time, time-zone, tz-database, iso-8601, calendar-arithmetic, leap-seconds, measure-elapsed-time, parse-and-format-a-date]
+see_also: [measure-elapsed-time, parse-and-format-a-date, immutability, integer-overflow, get-the-modification-time-of-a-file]
 sources:
 - url: https://docs.python.org/3/library/datetime.html
   title: datetime, Basic date and time types, The Python Standard Library
