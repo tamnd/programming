@@ -1,0 +1,12 @@
+# The contract of the task "format a duration" (spec 10.2). A duration is a whole number of seconds, and the hours do not wrap at 24.
+problem: format-a-duration
+entry: format_duration
+params:
+  - name: seconds
+    type: int
+    pre: "the duration in seconds, from -10^15 to 10^15"
+returns:
+  type: string
+  post: "the duration as HH:MM:SS, where HH is the whole number of hours with at least two digits, MM and SS have two digits from 00 to 59, and a negative duration starts with a minus sign"
+checker: exact
+edge_classes: [carry, day, negative, large]

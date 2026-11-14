@@ -1,0 +1,5 @@
+{"name":"zero","args":{"seconds":0},"expect":"00:00:00"}
+{"name":"seconds-only","args":{"seconds":59},"expect":"00:00:59"}
+{"name":"one-minute","args":{"seconds":60},"expect":"00:01:00"}
+{"name":"one-hour","args":{"seconds":3600},"expect":"01:00:00"}
+{"name":"hours-minutes-seconds","args":{"seconds":3723},"expect":"01:02:03"}
