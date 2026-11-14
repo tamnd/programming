@@ -1,0 +1,16 @@
+# The contract of the task "print the first and last lines of a file" (spec 10.2). Each solution reads the file one time and returns its first lines and its last lines, as head -n and tail -n do.
+problem: print-the-first-and-last-lines-of-a-file
+entry: first_and_last_lines
+params:
+  - name: path
+    type: string
+    pre: "the path of a file, relative to the node directory; the file holds valid UTF-8"
+  - name: count
+    type: int
+    pre: "the number of lines to take from each end; 0 <= count <= 1000000"
+returns:
+  type: "tuple<list<string>, list<string>>"
+  post: "the first list has the first count lines of the file, and the second list has the last count lines, each in the order of the file. If the file has fewer than count lines, each list has all the lines, and a line can be in both lists. A line ends at LF, and the LF is not part of it; a CR before the LF stays in the line. A last line with no LF is a line too. An empty file gives two empty lists"
+checker: exact
+edge_classes: [empty, zero, short, overlap, empty-line, no-final-newline, crlf, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when the file does not exist.
