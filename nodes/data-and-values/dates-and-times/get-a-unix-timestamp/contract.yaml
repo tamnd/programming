@@ -1,0 +1,31 @@
+# The contract of the task "get a Unix timestamp" (spec 10.2). The real clock gives a new value on each run, so the cases test the conversion of a date, a time of day and a UTC offset to a Unix timestamp in seconds.
+problem: get-a-unix-timestamp
+entry: unix_timestamp
+params:
+  - name: year
+    type: int
+    pre: "the year in the proleptic Gregorian calendar, from 1 to 9999"
+  - name: month
+    type: int
+    pre: "the month, from 1 to 12"
+  - name: day
+    type: int
+    pre: "the day of the month, from 1 to the number of days in that month"
+  - name: hour
+    type: int
+    pre: "the hour, from 0 to 23"
+  - name: minute
+    type: int
+    pre: "the minute, from 0 to 59"
+  - name: second
+    type: int
+    pre: "the second, from 0 to 59; a leap second (60) is not accepted"
+  - name: offset_minutes
+    type: int
+    pre: "the UTC offset of the local time in minutes, from -840 (-14:00) to 840 (+14:00), positive east of Greenwich; the UTC time must also be in the years 1 to 9999"
+returns:
+  type: int
+  post: "the number of seconds from 1970-01-01T00:00:00Z to the given local time minus its offset, without leap seconds (Unix time); negative before 1970"
+checker: exact
+edge_classes: [epoch, before-epoch, offsets, leap-years, int32-limit, two-digit-year, year-range]
+# The toolchain has one entry for each contract. Each solution also has now_unix_seconds() and now_unix_millis(), which read the system clock. The test of each language checks that both are in 2024 or later and that they agree, and converts one result back to a date with the date type of the language.

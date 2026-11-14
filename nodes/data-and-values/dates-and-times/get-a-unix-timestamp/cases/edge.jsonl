@@ -1,0 +1,16 @@
+{"name":"one-second-before-epoch","class":["before-epoch","epoch"],"args":{"year":1969,"month":12,"day":31,"hour":23,"minute":59,"second":59,"offset_minutes":0},"expect":-1}
+{"name":"offset-moves-before-epoch","class":["before-epoch","offsets"],"args":{"year":1970,"month":1,"day":1,"hour":0,"minute":0,"second":0,"offset_minutes":60},"expect":-3600}
+{"name":"offset-moves-to-next-year","class":["offsets"],"args":{"year":2023,"month":12,"day":31,"hour":19,"minute":0,"second":0,"offset_minutes":-300},"expect":1704067200}
+{"name":"offset-of-45-minutes","class":["offsets"],"args":{"year":2024,"month":1,"day":1,"hour":5,"minute":45,"second":0,"offset_minutes":345},"expect":1704067200}
+{"name":"offset-of-minus-9-30","class":["offsets"],"args":{"year":2023,"month":12,"day":31,"hour":14,"minute":30,"second":0,"offset_minutes":-570},"expect":1704067200}
+{"name":"offset-plus-14","class":["offsets","epoch"],"args":{"year":1970,"month":1,"day":1,"hour":14,"minute":0,"second":0,"offset_minutes":840},"expect":0}
+{"name":"offset-minus-12","class":["offsets","epoch"],"args":{"year":1969,"month":12,"day":31,"hour":12,"minute":0,"second":0,"offset_minutes":-720},"expect":0}
+{"name":"leap-day","class":["leap-years"],"args":{"year":2024,"month":2,"day":29,"hour":0,"minute":0,"second":0,"offset_minutes":0},"expect":1709164800}
+{"name":"year-2000-is-leap","class":["leap-years"],"args":{"year":2000,"month":2,"day":29,"hour":0,"minute":0,"second":0,"offset_minutes":0},"expect":951782400}
+{"name":"year-1900-is-not-leap","class":["leap-years","before-epoch"],"args":{"year":1900,"month":3,"day":1,"hour":0,"minute":0,"second":0,"offset_minutes":0},"expect":-2203891200}
+{"name":"int32-max","class":["int32-limit"],"args":{"year":2038,"month":1,"day":19,"hour":3,"minute":14,"second":7,"offset_minutes":0},"expect":2147483647}
+{"name":"after-int32-max","class":["int32-limit"],"args":{"year":2038,"month":1,"day":19,"hour":3,"minute":14,"second":8,"offset_minutes":0},"expect":2147483648}
+{"name":"int32-min","class":["int32-limit","before-epoch"],"args":{"year":1901,"month":12,"day":13,"hour":20,"minute":45,"second":52,"offset_minutes":0},"expect":-2147483648}
+{"name":"year-99-is-not-1999","class":["two-digit-year","before-epoch"],"args":{"year":99,"month":12,"day":31,"hour":23,"minute":59,"second":59,"offset_minutes":0},"expect":-59011459201}
+{"name":"first-second-of-year-1","class":["year-range","before-epoch"],"args":{"year":1,"month":1,"day":1,"hour":0,"minute":0,"second":0,"offset_minutes":0},"expect":-62135596800}
+{"name":"last-second-of-year-9999","class":["year-range"],"args":{"year":9999,"month":12,"day":31,"hour":23,"minute":59,"second":59,"offset_minutes":0},"expect":253402300799}

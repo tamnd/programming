@@ -1,0 +1,4 @@
+{"name":"epoch","args":{"year":1970,"month":1,"day":1,"hour":0,"minute":0,"second":0,"offset_minutes":0},"expect":0}
+{"name":"billennium","args":{"year":2001,"month":9,"day":9,"hour":1,"minute":46,"second":40,"offset_minutes":0},"expect":1000000000}
+{"name":"negative-offset","args":{"year":2024,"month":3,"day":10,"hour":2,"minute":0,"second":0,"offset_minutes":-300},"expect":1710054000}
+{"name":"positive-offset","args":{"year":2024,"month":3,"day":10,"hour":16,"minute":0,"second":0,"offset_minutes":540},"expect":1710054000}
