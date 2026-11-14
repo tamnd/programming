@@ -1,0 +1,4 @@
+{"name": "append-lines", "args": {"path": "followed.txt", "initial": "old\n", "steps": ["append:a\nb\n", "poll", "append:c\n", "poll"]}, "expect": [["a", "b"], ["c"]]}
+{"name": "partial-line", "class": ["partial-line"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:ab", "poll", "append:c\nd", "poll", "append:\n", "poll"]}, "expect": [[], ["abc"], ["d"]]}
+{"name": "rotate", "class": ["rotate"], "args": {"path": "followed.txt", "initial": "1\n", "steps": ["append:2\n", "poll", "rotate", "append:3\n", "poll"]}, "expect": [["2"], ["3"]]}
+{"name": "truncate", "class": ["truncate"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:a\nb\n", "poll", "truncate:", "poll", "append:c\n", "poll"]}, "expect": [["a", "b"], [], ["c"]]}

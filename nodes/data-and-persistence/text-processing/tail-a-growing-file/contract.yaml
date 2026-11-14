@@ -1,0 +1,19 @@
+# The contract of the task "follow a growing file". Each solution has a follower that keeps a file open, keeps its read offset and keeps the bytes after the last LF that it has read. A poll reads the new bytes and returns the complete lines. follow_file(path, initial, steps) is the entry of the cases: it writes initial to the file at path, makes a follower, then does each step in order and returns the lines of each poll. The steps are append:TEXT (append TEXT to the file), append-old:TEXT (append TEXT to path.1), truncate:TEXT (make the file empty and write TEXT to it, so the file stays the same file), rotate (rename the file to path.1 and make a new empty file at path), delete, create:TEXT (make a new file at path with TEXT) and poll.
+problem: tail-a-growing-file
+entry: follow_file
+params:
+  - name: path
+    type: string
+    pre: "the path of a file in a new, empty directory that the test makes"
+  - name: initial
+    type: string
+    pre: "the text of the file when the follower starts"
+  - name: steps
+    type: list<string>
+    pre: "steps, each append:TEXT, append-old:TEXT, truncate:TEXT, rotate, delete, create:TEXT or poll; append, append-old, truncate and rotate come only when the file at their path exists, and create only when no file is at path"
+returns:
+  type: list<list<string>>
+  post: "one list for each poll step, in order. The follower starts at the end of the file, so the initial text gives no lines. A poll first checks whether the open file is now shorter than the read offset. If so, the file was truncated, the kept bytes become a line, and the follower reads the file again from the start. Then the poll reads the new bytes of the open file. Each LF ends a line, and the line does not include the LF. The bytes after the last LF stay for the next poll. Then the poll checks whether path still names the open file. If path names no file or another file, the kept bytes become a line, and the follower closes the open file. Then, if no file is open and path names a file, the follower opens it and reads it from the start. The lines are UTF-8 text"
+checker: exact
+edge_classes: [no-change, partial-line, empty-line, crlf, truncate, truncate-partial, rotate, rotate-late-writes, rotate-partial, delete, delete-partial, delete-and-create, start-mid-line, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error: not-found when the directory of path does not exist, so no file is at path when the follower starts.
