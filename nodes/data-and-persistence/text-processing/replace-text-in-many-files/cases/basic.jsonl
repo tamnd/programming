@@ -1,0 +1,3 @@
+{"name": "rosetta", "args": {"paths": ["fixtures/rosetta/a.txt", "fixtures/rosetta/b.txt"], "old": "Goodbye London!", "new": "Hello New York!"}, "expect": [1, 2]}
+{"name": "some-files-match", "args": {"paths": ["fixtures/some-files-match/a.txt", "fixtures/some-files-match/b.txt"], "old": "dog", "new": "fox"}, "expect": [0, 2]}
+{"name": "one-file", "args": {"paths": ["fixtures/one-file/a.txt"], "old": "1", "new": "2"}, "expect": [2]}

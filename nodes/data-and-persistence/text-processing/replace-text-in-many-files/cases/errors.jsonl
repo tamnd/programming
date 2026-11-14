@@ -1,0 +1,3 @@
+{"name": "not-found", "args": {"paths": ["fixtures/missing.txt"], "old": "a", "new": "b"}, "error": "not-found"}
+{"name": "empty-old", "args": {"paths": ["fixtures/one-file/a.txt"], "old": "", "new": "b"}, "error": "bad-old"}
+{"name": "stop", "args": {"paths": ["fixtures/stop/a.txt", "fixtures/stop/missing.txt", "fixtures/stop/c.txt"], "old": "a", "new": "b"}, "error": "not-found"}
