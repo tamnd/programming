@@ -1,0 +1,12 @@
+{"name": "empty", "class": ["empty"], "args": {"text": "", "align": "left"}, "expect": ""}
+{"name": "empty-line", "class": ["empty-line"], "args": {"text": "a$b\n\nccc$d\n", "align": "left"}, "expect": "a   b\n\nccc d\n"}
+{"name": "empty-field", "class": ["empty-field"], "args": {"text": "a$$b\nc$dd$e\n", "align": "left"}, "expect": "a    b\nc dd e\n"}
+{"name": "trailing-dollar", "class": ["trailing-separator"], "args": {"text": "a$b$\ncc$d\n", "align": "left"}, "expect": "a  b\ncc d\n"}
+{"name": "ragged", "class": ["ragged"], "args": {"text": "a$b$c\nddd\n", "align": "right"}, "expect": "  a b c\nddd\n"}
+{"name": "one-column", "class": ["one-column"], "args": {"text": "a\nbbb\ncc\n", "align": "right"}, "expect": "  a\nbbb\n cc\n"}
+{"name": "no-final-newline", "class": ["no-final-newline"], "args": {"text": "a$b\ncc$d", "align": "left"}, "expect": "a  b\ncc d\n"}
+{"name": "center-odd", "class": ["odd-padding"], "args": {"text": "a$b\nbbbb$c\n", "align": "center"}, "expect": " a   b\nbbbb c\n"}
+{"name": "center-last", "class": ["odd-padding"], "args": {"text": "x$a\nx$bbbb\n", "align": "center"}, "expect": "x  a\nx bbbb\n"}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"text": "caf\u00e9$x\nab$y\n", "align": "left"}, "expect": "caf\u00e9 x\nab   y\n"}
+{"name": "outside-the-bmp", "class": ["non-ascii"], "args": {"text": "\ud83d\ude00$x\nab$y\n", "align": "left"}, "expect": "\ud83d\ude00  x\nab y\n"}
+{"name": "spaces-in-field", "class": ["spaces-in-field"], "args": {"text": "a b$c\nd$e\n", "align": "left"}, "expect": "a b c\nd   e\n"}

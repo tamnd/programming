@@ -1,0 +1,16 @@
+# The contract of the task "align columns of text" (spec 10.2). Each solution takes a text in which a dollar sign separates the fields of each line, and returns the text with the fields in columns, aligned to the left, to the right or to the center.
+problem: align-columns-of-text
+entry: align_columns
+params:
+  - name: text
+    type: string
+    pre: "lines that end at LF, the last one with or without an LF; in each line, each $ separates two fields, and a $ at the end of a line does not start a new field; an empty line has no fields"
+  - name: align
+    type: string
+    pre: "left, right or center"
+returns:
+  type: string
+  post: "the same lines with the same fields in the same order. The width of column j is the largest number of Unicode code points of field j of a line. Each field gets spaces to the width of its column, on the right for left, on the left for right, and on the two sides for center, with the odd space on the right. One space separates two fields. The spaces on the right of the last field of a line are not written, so no line ends with a space that the alignment adds. An empty line stays empty. Each line of the result ends with LF, and an empty text gives an empty text"
+checker: exact
+edge_classes: [empty, empty-line, empty-field, trailing-separator, ragged, one-column, no-final-newline, odd-padding, non-ascii, spaces-in-field]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error: bad-align when align is not left, right or center.
