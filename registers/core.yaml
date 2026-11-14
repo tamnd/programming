@@ -12614,7 +12614,7 @@ items:
     group: "dates"
     name: "Get the current date and time"
     target: "get-the-current-date-and-time"
-    status: "planned"
+    status: "node"
     reason: "A job on dates and times. Related titles, found by keyword: Rosetta Code (System time, One time pad); Go by Example (Time, Time Formatting / Parsing)."
   - part: tasks
     group: "dates"

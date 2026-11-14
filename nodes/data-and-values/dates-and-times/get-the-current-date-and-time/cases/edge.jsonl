@@ -1,0 +1,10 @@
+{"name":"truncate-not-round","class":["truncation"],"args":{"epoch_ns":999999},"expect":"1970-01-01T00:00:00.000Z"}
+{"name":"one-ns-before-epoch","class":["before-epoch","epoch","truncation"],"args":{"epoch_ns":-1},"expect":"1969-12-31T23:59:59.999Z"}
+{"name":"one-ms-before-epoch","class":["before-epoch","epoch"],"args":{"epoch_ns":-1000000},"expect":"1969-12-31T23:59:59.999Z"}
+{"name":"just-over-one-ms-before-epoch","class":["before-epoch","truncation"],"args":{"epoch_ns":-1000001},"expect":"1969-12-31T23:59:59.998Z"}
+{"name":"last-ms-of-a-year","class":["truncation"],"args":{"epoch_ns":1704067199999999999},"expect":"2023-12-31T23:59:59.999Z"}
+{"name":"year-2000-is-leap","class":["leap-years"],"args":{"epoch_ns":951782400000000000},"expect":"2000-02-29T00:00:00.000Z"}
+{"name":"year-2100-is-not-leap","class":["leap-years","truncation"],"args":{"epoch_ns":4107542399999999999},"expect":"2100-02-28T23:59:59.999Z"}
+{"name":"after-int32-seconds","class":["int32-limit"],"args":{"epoch_ns":2147483648000000000},"expect":"2038-01-19T03:14:08.000Z"}
+{"name":"int64-max","class":["int64-limit","truncation"],"args":{"epoch_ns":9223372036854775807},"expect":"2262-04-11T23:47:16.854Z"}
+{"name":"int64-min","class":["int64-limit","before-epoch"],"args":{"epoch_ns":-9223372036854775808},"expect":"1677-09-21T00:12:43.145Z"}

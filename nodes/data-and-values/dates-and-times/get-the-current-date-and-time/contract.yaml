@@ -1,0 +1,13 @@
+# The contract of the task "get the current date and time" (spec 10.2). The real clock gives a new value on each run, so the cases test the conversion of one reading of the system clock to a UTC date and time.
+problem: get-the-current-date-and-time
+entry: utc_timestamp
+params:
+  - name: epoch_ns
+    type: int
+    pre: "a reading of the system clock: nanoseconds since 1970-01-01T00:00:00Z without leap seconds (Unix time), from -2^63 to 2^63 - 1"
+returns:
+  type: string
+  post: "the UTC date and time of epoch_ns as YYYY-MM-DDTHH:MM:SS.mmmZ, in the proleptic Gregorian calendar, with exactly three digits of milliseconds; the rest under one millisecond is dropped toward the past, so a reading before 1970 goes to the earlier millisecond"
+checker: exact
+edge_classes: [epoch, truncation, before-epoch, leap-years, int32-limit, int64-limit]
+# The toolchain has one entry for each contract. Each solution also has now_utc(clock), which reads the clock once and returns utc_timestamp of the reading. The test of each language calls now_utc with a fake clock and checks the result, and calls it once with the real clock and checks only the shape of the result and that the year is 2024 or later.
