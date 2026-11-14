@@ -1,0 +1,27 @@
+# The contract of the task "add days to a date" (spec 10.2). A date has no time of day and no time zone, so the result does not depend on the zone of the system.
+problem: add-days-to-a-date
+entry: add_to_date
+params:
+  - name: year
+    type: int
+    pre: "the year of the start date in the proleptic Gregorian calendar, from 1 to 9999"
+  - name: month
+    type: int
+    pre: "the month of the start date, from 1 to 12"
+  - name: day
+    type: int
+    pre: "the day of the start date, from 1 to the number of days in that month"
+  - name: years
+    type: int
+    pre: "the number of years to add; negative to go back"
+  - name: months
+    type: int
+    pre: "the number of months to add; negative to go back"
+  - name: days
+    type: int
+    pre: "the number of days to add; negative to go back; the result and the date after the months are added are in the years 1 to 9999"
+returns:
+  type: string
+  post: "the date as YYYY-MM-DD. First years * 12 + months months are added at once; if the day is after the last day of the new month, the last day is used. Then the days are added"
+checker: exact
+edge_classes: [zero, month-end, negative, leap-years, order, year-boundary, large, year-range]

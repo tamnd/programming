@@ -1,0 +1,4 @@
+{"name":"one-day","args":{"year":2024,"month":3,"day":10,"years":0,"months":0,"days":1},"expect":"2024-03-11"}
+{"name":"one-month","args":{"year":2024,"month":1,"day":15,"years":0,"months":1,"days":0},"expect":"2024-02-15"}
+{"name":"one-year","args":{"year":2023,"month":6,"day":1,"years":1,"months":0,"days":0},"expect":"2024-06-01"}
+{"name":"day-into-next-year","args":{"year":2023,"month":12,"day":31,"years":0,"months":0,"days":1},"expect":"2024-01-01"}
