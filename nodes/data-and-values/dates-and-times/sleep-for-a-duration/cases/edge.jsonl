@@ -1,0 +1,13 @@
+{"name":"negative","class":["negative"],"args":{"duration_ns":-5000000,"start_ns":0,"readings":[]},"expect":[]}
+{"name":"most-negative","class":["negative"],"args":{"duration_ns":-4611686018427387904,"start_ns":0,"readings":[]},"expect":[]}
+{"name":"several-early-wakes","class":["early"],"args":{"duration_ns":10000000,"start_ns":0,"readings":[2000000,5000000,9999999,10000000]},"expect":[10000000,8000000,5000000,1]}
+{"name":"no-progress","class":["early"],"args":{"duration_ns":1000000,"start_ns":0,"readings":[0,1000000]},"expect":[1000000,1000000]}
+{"name":"exact-deadline","class":["boundary"],"args":{"duration_ns":3000000,"start_ns":100,"readings":[3000100]},"expect":[3000000]}
+{"name":"one-ns-short","class":["boundary"],"args":{"duration_ns":3000000,"start_ns":0,"readings":[2999999,3000000]},"expect":[3000000,1]}
+{"name":"extra-readings","class":["boundary"],"args":{"duration_ns":1000000,"start_ns":0,"readings":[1000000,5000000]},"expect":[1000000]}
+{"name":"negative-origin","class":["origin"],"args":{"duration_ns":2000000000,"start_ns":-5000000000,"readings":[-4000000000,-3000000000]},"expect":[2000000000,1000000000]}
+{"name":"origin-after-100-days","class":["origin"],"args":{"duration_ns":1500000,"start_ns":8640000000000000,"readings":[8640000001000000,8640000001500000]},"expect":[1500000,500000]}
+{"name":"one-nanosecond","class":["precision"],"args":{"duration_ns":1,"start_ns":0,"readings":[1000000]},"expect":[1]}
+{"name":"sub-millisecond","class":["precision"],"args":{"duration_ns":1500000,"start_ns":0,"readings":[1000000,1500000]},"expect":[1500000,500000]}
+{"name":"one-hour","class":["large"],"args":{"duration_ns":3600000000000,"start_ns":0,"readings":[3600000000000]},"expect":[3600000000000]}
+{"name":"thirty-days","class":["large"],"args":{"duration_ns":2592000000000000,"start_ns":0,"readings":[2147483647000000,2592000000000000]},"expect":[2592000000000000,444516353000000]}

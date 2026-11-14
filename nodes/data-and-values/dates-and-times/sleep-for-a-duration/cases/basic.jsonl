@@ -1,0 +1,5 @@
+{"name":"one-call","args":{"duration_ns":1000000,"start_ns":0,"readings":[1000000]},"expect":[1000000]}
+{"name":"woke-late","args":{"duration_ns":1000000,"start_ns":0,"readings":[1080000]},"expect":[1000000]}
+{"name":"woke-early","args":{"duration_ns":1000000,"start_ns":0,"readings":[600000,1000000]},"expect":[1000000,400000]}
+{"name":"one-second","args":{"duration_ns":1000000000,"start_ns":5000000000,"readings":[6000050000]},"expect":[1000000000]}
+{"name":"zero","args":{"duration_ns":0,"start_ns":0,"readings":[]},"expect":[]}

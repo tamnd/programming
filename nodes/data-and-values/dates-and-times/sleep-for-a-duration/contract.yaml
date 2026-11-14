@@ -1,0 +1,19 @@
+# The contract of the task "sleep for a duration" (spec 10.2). A real sleep takes real time and its length changes on each run, so the cases test the loop of a sleep on a fake monotonic clock and a fake sleep.
+problem: sleep-for-a-duration
+entry: sleep_requests
+params:
+  - name: duration_ns
+    type: int
+    pre: "the duration of the sleep in nanoseconds, from -2^62 to 2^62; zero or a negative duration means no sleep"
+  - name: start_ns
+    type: int
+    pre: "the first reading of a monotonic clock in nanoseconds; the origin of the clock is arbitrary, so a reading can be negative; start_ns + duration_ns is from -2^63 to 2^63 - 1"
+  - name: readings
+    type: "list<int>"
+    pre: "the next readings of the same clock, one after each sleep, in order; each reading is at least the reading before it; if duration_ns > 0, a reading is at least start_ns + duration_ns"
+returns:
+  type: "list<int>"
+  post: "the durations in nanoseconds that the loop asks the sleep for, in order: the deadline is start_ns + duration_ns, and while the last reading is before the deadline, the loop asks for the deadline minus the last reading and then takes the next reading; an empty list if duration_ns <= 0"
+checker: exact
+edge_classes: [negative, early, boundary, origin, precision, large]
+# The toolchain has one entry for each contract. Each solution also has sleep_for(duration_ns), which runs the same loop with the real monotonic clock and the real sleep of the language. The test of each language calls it once with 20 ms and checks that at least 20 ms went by on the monotonic clock, and calls it with zero and a negative duration and checks that it returns at once.

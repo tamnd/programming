@@ -12668,7 +12668,7 @@ items:
     group: "dates"
     name: "Sleep for a duration"
     target: "sleep-for-a-duration"
-    status: "planned"
+    status: "node"
     reason: "A job on dates and times. Related titles, found by keyword: Rosetta Code (Sleep, Sorting algorithms Sleep sort)."
   - part: tasks
     group: "dates"
