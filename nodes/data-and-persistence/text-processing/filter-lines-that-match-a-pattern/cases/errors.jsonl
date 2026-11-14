@@ -1,0 +1,1 @@
+{"name": "not-found", "args": {"path": "fixtures/missing.txt", "pattern": "a"}, "error": "not-found"}

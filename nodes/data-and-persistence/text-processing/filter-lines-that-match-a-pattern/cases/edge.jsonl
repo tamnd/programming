@@ -1,0 +1,10 @@
+{"name": "empty", "class": ["empty"], "args": {"path": "fixtures/empty.txt", "pattern": "a"}, "expect": []}
+{"name": "no-match", "class": ["no-match"], "args": {"path": "fixtures/no-match.txt", "pattern": "x"}, "expect": []}
+{"name": "empty-lines", "class": ["empty-line"], "args": {"path": "fixtures/empty-lines.txt", "pattern": "^$"}, "expect": ["", ""]}
+{"name": "match-all", "class": ["match-all"], "args": {"path": "fixtures/match-all.txt", "pattern": ".*"}, "expect": ["a", "", "b"]}
+{"name": "duplicates", "class": ["duplicates"], "args": {"path": "fixtures/duplicates.txt", "pattern": "a"}, "expect": ["a", "a"]}
+{"name": "no-final-newline", "class": ["no-final-newline"], "args": {"path": "fixtures/no-final-newline.txt", "pattern": "b"}, "expect": ["ab"]}
+{"name": "crlf-end", "class": ["crlf"], "args": {"path": "fixtures/crlf-end.txt", "pattern": "b$"}, "expect": ["ab"]}
+{"name": "crlf-dot", "class": ["crlf"], "args": {"path": "fixtures/crlf-dot.txt", "pattern": "^a.$"}, "expect": ["a\r"]}
+{"name": "case", "class": ["case"], "args": {"path": "fixtures/case.txt", "pattern": "apple"}, "expect": ["apple"]}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"path": "fixtures/non-ascii.txt", "pattern": "\u00e9"}, "expect": ["caf\u00e9"]}

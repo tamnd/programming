@@ -13645,7 +13645,7 @@ items:
     group: "text-processing"
     name: "Filter lines that match a pattern"
     target: "filter-lines-that-match-a-pattern"
-    status: "planned"
+    status: "node"
     reason: "A job that processes text in bulk, as Unix tools do. Related titles, found by keyword: Go by Example (Line Filters)."
   - part: tasks
     group: "text-processing"
