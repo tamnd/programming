@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: an async function awaits a lookup, such as a fetch call to a service, and returns a new object with the spread of the original message and the new fields.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same as JavaScript, with one type for the incoming message and one for the enriched message.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a struct for the enriched message holds the original struct, and a lookup returns an Option or a Result for a miss.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a function fills the extra fields of a struct from a lookup table and returns an error code for a miss.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: std::unordered_map holds the lookup data, and std::optional marks a miss.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a data class copy with the new fields, and a nullable result for a miss; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a JOIN of the incoming rows with a reference table adds the columns, and a LEFT JOIN with a NULL test finds the rows with no match.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: join or a lookup in an associative array adds fields to each line, and date adds a time stamp.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: Select-Object with calculated properties adds fields from a hashtable lookup, and Get-Date gives the time; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern can find a key in a message but cannot get data from another system.
+html:
+  status: n/a
+  reason: markup has no messages and no lookups.
+css:
+  status: n/a
+  reason: style rules have no messages and no lookups.

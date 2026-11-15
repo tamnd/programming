@@ -14432,13 +14432,13 @@ items:
     group: "eip"
     name: "Content Enricher"
     target: "content-enricher"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Enterprise Integration Patterns (Hohpe and Woolf, 2003), a canon book of spec 13.3."
   - part: patterns
     group: "eip"
     name: "Wire Tap"
     target: "wire-tap"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Enterprise Integration Patterns (Hohpe and Woolf, 2003), a canon book of spec 13.3."
   - part: patterns
     group: "ddd"

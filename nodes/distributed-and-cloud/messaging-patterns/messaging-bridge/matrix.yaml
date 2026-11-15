@@ -1,0 +1,45 @@
+javascript:
+  status: library
+  reason: a process with a client library for each broker, such as amqplib and an SDK of the cloud queue, consumes on one side and publishes on the other.
+  alternative: the Python example.
+typescript:
+  status: library
+  reason: the same clients as in JavaScript, with a type for the message on each side.
+  alternative: the C# example.
+rust:
+  status: library
+  reason: a client crate for each broker, such as lapin for AMQP, in one async task that reads, publishes and acks.
+  alternative: the Go example.
+c:
+  status: library
+  reason: a client library for each broker, such as rabbitmq-c; the C standard library has no messaging.
+  alternative: the Go example.
+cpp:
+  status: library
+  reason: a client library for each broker; the standard library has no messaging.
+  alternative: the Java example.
+kotlin:
+  status: library
+  reason: the Java clients of the brokers, or Apache Camel or Spring Integration routes from one broker to another; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a job reads the rows of a queue table, inserts them into the queue table of the other system and deletes or marks them in one transaction when both tables are in one database.
+  alternative: the Python example.
+bash:
+  status: library
+  reason: a loop with the CLI tools of both brokers can move messages, but it has no confirms; a broker plugin such as the RabbitMQ shovel is the better tool.
+  alternative: the Python example.
+powershell:
+  status: library
+  reason: the .NET clients of the brokers from a script; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no brokers and no messages.
+html:
+  status: n/a
+  reason: markup has no brokers and no messages.
+css:
+  status: n/a
+  reason: style rules have no brokers and no messages.
