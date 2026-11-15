@@ -1,0 +1,44 @@
+javascript:
+  status: idiom
+  reason: a Map for the registry and a Map for the installed packages, with a recursive install, as in the Python example.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with the type Map<string, string[]> for the registry.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a HashMap for the registry and a BTreeMap for the installed packages, which keeps the names in order.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: an array of package structs with a flag for each, and a recursive install function.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map for the registry and a std::map for the installed packages.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: mapOf for the registry and a sortedMapOf for the installed packages.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: a query does not install packages; a table of packages and a table of dependencies can store the same data.
+bash:
+  status: idiom
+  reason: the package managers are commands, such as apt install, apt remove and apt autoremove, so a script calls them.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: hashtables for the registry and the installed packages, and a recursive function; Install-Package and winget are commands.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern does not install packages.
+html:
+  status: n/a
+  reason: markup does not install packages.
+css:
+  status: n/a
+  reason: style rules do not install packages.

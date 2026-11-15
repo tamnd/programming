@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: the npm package semver gives satisfies and validRange, and the same parse and compare code is short in plain JavaScript.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with a tuple type [number, number, number] for a version.
+  alternative: the Go example.
+rust:
+  status: idiom
+  reason: the semver crate gives VersionReq and Version, with the same caret and tilde rules as Cargo.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: an array of three ints for a version and a compare function that returns a negative, zero or positive number.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::array<int, 3> for a version; arrays compare element by element with the operator <=>.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a data class that implements Comparable, as in the Java example.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a query can store the major, minor and patch numbers in columns and compare them as a row value.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: sort -V sorts version strings, and a script can split a version on dots with read.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: the [version] type accelerator parses and compares versions, as System.Version does in the C# example.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern can check the syntax of a version, but it does not compare versions.
+html:
+  status: n/a
+  reason: markup does not compare versions.
+css:
+  status: n/a
+  reason: style rules do not compare versions.

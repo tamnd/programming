@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: node:crypto createHash('sha256') hashes the bytes; npm itself stores a sha512 integrity string in package-lock.json.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with an interface for an entry of the lock file.
+  alternative: the Go example.
+rust:
+  status: idiom
+  reason: the sha2 crate hashes the bytes, and Cargo writes the checksum of each crate in Cargo.lock.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a hash library such as OpenSSL gives SHA-256, and an array of structs holds the entries.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a hash library such as OpenSSL gives SHA-256, and a std::vector of structs holds the entries.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: java.security.MessageDigest, as in the Java example, with a data class for an entry.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: a table can store the entries of a lock file, but SQL has no standard SHA-256 function.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: sha256sum -c checks files against a list of hashes, which is the same check as the install step.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: Get-FileHash -Algorithm SHA256 hashes a file, and a hashtable holds the entries.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern does not compute hashes.
+html:
+  status: n/a
+  reason: markup does not compute hashes; the integrity attribute of a script element checks a hash in the browser.
+css:
+  status: n/a
+  reason: style rules do not compute hashes.
