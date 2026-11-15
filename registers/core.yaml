@@ -13609,7 +13609,7 @@ items:
     group: "tools"
     name: "Cross-compile a program"
     target: "cross-compile-a-program"
-    status: "planned"
+    status: "node"
     reason: "A job with the toolchain that each programmer does. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "tools"
