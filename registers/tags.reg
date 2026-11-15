@@ -673,3 +673,7 @@ KQPEKH catch2-and-doctest-cpp
 27B56T googletest
 YR9XNB kotest
 SSDHBW xctest-and-swift-testing
+KW7FR0 autotools
+T78G2P bazel
+HMJXQW meson
+739K0G other-monorepo-build-tools

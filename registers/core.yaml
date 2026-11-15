@@ -15812,7 +15812,7 @@ items:
     group: "by-hand"
     name: "Bazel"
     target: "bazel"
-    status: "card"
+    status: "node"
     reason: "A build system for large multi-language repositories."
   - part: tools
     group: "by-hand"
