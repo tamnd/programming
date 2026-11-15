@@ -11,7 +11,7 @@ summary: >-
   A Python string literal is text in single, double or triple quotes, with an optional prefix such as r, b, f or t. Backslash escapes give special characters, and adjacent literals join into one.
 grammar: "STRING: [stringprefix] (stringcontent) (Language Reference, 2.5.3 Formal grammar)"
 spec: {standard: null, url: "https://docs.python.org/3.15/reference/lexical_analysis.html#string-and-bytes-literals", locator: "2.5 String and Bytes literals"}
-see_also: [python/line-structure, python/source-code-encoding, python/comments-in-python]
+see_also: [python/raw-strings, python/bytes-literals, python/line-structure, python/source-code-encoding]
 sources:
   - url: https://docs.python.org/3.15/reference/lexical_analysis.html#string-and-bytes-literals
     title: The Python Language Reference, Python 3.15
