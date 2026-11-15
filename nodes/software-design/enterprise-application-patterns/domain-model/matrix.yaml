@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: classes with private fields and methods for the rules, and an interface or a subclass for each variant; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: classes with private setters and methods for the rules, mapped to the database by Entity Framework Core.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: classes with private members and virtual functions for the variants; the mapping to a database needs a library or hand-written code.
+  alternative: the Rust example.
+c:
+  status: absent
+  reason: C has no classes; structs with function pointers can hold data and behavior, but there is no encapsulation or polymorphism in the language to keep the rules with the data.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: classes with private set and sealed classes for the variants, often mapped with JPA; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: a domain model is a set of objects in memory; tables and constraints hold the data but not the behavior of the objects.
+bash:
+  status: n/a
+  reason: the shell has no objects.
+powershell:
+  status: idiom
+  reason: PowerShell classes with hidden fields and methods, and subclasses for the variants; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects.
+html:
+  status: n/a
+  reason: markup has no business logic.
+css:
+  status: n/a
+  reason: style rules have no business logic.
