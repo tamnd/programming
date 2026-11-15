@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: Map objects hold the next number for each key and the messages that came too early, as in the Python example.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, Map objects with types for the key and the sequence number.
+  alternative: the Java example.
+rust:
+  status: idiom
+  reason: a BTreeMap of the next numbers and a HashMap of held messages for each key, from std::collections.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: arrays indexed by key and sequence number when the ranges are small, or a hash table written by hand.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: std::map for the next numbers and std::unordered_map for the held messages of each key.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: sortedMapOf for the next numbers and mutableMapOf with getOrPut for the held messages.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of held messages with a key and a sequence column; a query with ORDER BY key and sequence releases the rows up to the first gap.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: associative arrays, declared with declare -A, hold the next numbers and the held messages.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: hashtables, or the .NET dictionaries as in C#.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no messages and no state.
+html:
+  status: n/a
+  reason: markup has no messages.
+css:
+  status: n/a
+  reason: style rules have no messages.
