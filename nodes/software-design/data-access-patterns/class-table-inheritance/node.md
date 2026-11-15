@@ -16,7 +16,7 @@ history:
   year: 2002
   people: [Martin Fowler]
   note: Fowler named the pattern in Patterns of Enterprise Application Architecture (2002). SQLAlchemy calls it joined table inheritance, Entity Framework Core calls it table-per-type, and Django calls it multi-table inheritance.
-see_also: [single-table-inheritance, concrete-table-inheritance, identity-field, foreign-key-mapping, data-mapper, object-relational-impedance-mismatch]
+see_also: [single-table-inheritance, concrete-table-inheritance, inheritance-mappers, identity-field, foreign-key-mapping, data-mapper, object-relational-impedance-mismatch]
 sources:
   - url: https://martinfowler.com/eaaCatalog/classTableInheritance.html
     title: Martin Fowler, Catalog of Patterns of Enterprise Application Architecture, Class Table Inheritance
