@@ -13603,7 +13603,7 @@ items:
     group: "tools"
     name: "Package a program for release"
     target: "package-a-program-for-release"
-    status: "planned"
+    status: "node"
     reason: "A job with the toolchain that each programmer does. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "tools"
@@ -15830,19 +15830,19 @@ items:
     group: "by-hand"
     name: "npm"
     target: "npm-pm"
-    status: "card"
+    status: "node"
     reason: "The package manager of Node.js."
   - part: tools
     group: "by-hand"
     name: "pip"
     target: "pip-tool"
-    status: "planned"
+    status: "node"
     reason: "The package installer of Python."
   - part: tools
     group: "by-hand"
     name: "uv"
     target: "uv"
-    status: "planned"
+    status: "node"
     reason: "A fast package and project manager of Python."
   - part: tools
     group: "by-hand"
