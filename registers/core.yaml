@@ -15602,7 +15602,7 @@ items:
     group: "tier-1-toolchains"
     name: "\"node:test\""
     target: "node-test"
-    status: "planned"
+    status: "node"
     reason: "The test framework of JavaScript in the language register (spec 08.2), a tier-1 language."
   - part: tools
     group: "tier-1-toolchains"
@@ -15926,13 +15926,13 @@ items:
     group: "by-hand"
     name: "Jest"
     target: "jest"
-    status: "planned"
+    status: "node"
     reason: "A test framework of JavaScript."
   - part: tools
     group: "by-hand"
     name: "Vitest"
     target: "vitest"
-    status: "planned"
+    status: "node"
     reason: "A test framework of JavaScript and TypeScript."
   - part: tools
     group: "by-hand"
