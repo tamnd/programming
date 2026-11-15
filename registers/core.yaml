@@ -865,19 +865,19 @@ items:
     group: "errors-and-control"
     name: "Loop"
     target: "loop"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Functional (\"Use of recursion vs loops vs pipelining (map/reduce)\"). It is in 5 of the 7 language references: Rust Reference (\"Loop expressions\"); Java Language Specification (\"Iteration of for Statement\"); C++ working draft (\"Iteration statements\"); and 2 more. It is in the canon books: SICP index (\"driver loop\"); HtDP contents (\"ISL for Loops\")."
   - part: concepts
     group: "errors-and-control"
     name: "For loop"
     target: "for-loop"
-    status: "planned"
+    status: "node"
     reason: "It is in 5 of the 7 language references: Python Language Reference (\"The for statement\"); Go spec (\"For statements\"); Java Language Specification (\"for Statements\"); and 2 more. It is in the canon books: HtDP contents (\"ISL for Loops\")."
   - part: concepts
     group: "errors-and-control"
     name: "For-each loop"
     target: "for-each-loop"
-    status: "planned"
+    status: "node"
     reason: "It is in 3 of the 7 language references: Go spec (\"For statements with range clause\"); Java Language Specification (\"The enhanced for statement\"); ECMAScript 2027 (\"For-In Iterator Objects\"). It is in the canon books: SICP index (\"for-each , [2]\")."
   - part: concepts
     group: "errors-and-control"

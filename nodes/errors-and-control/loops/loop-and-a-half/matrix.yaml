@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript uses the forms of JavaScript, an endless loop with break or an assignment in the condition. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin uses while (true) with break, because an assignment is not an expression in Kotlin. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: In while IFS= read -r line, the read command is the condition, and its exit status ends the loop at the end of the input. No example file exists.
+powershell:
+  status: idiom
+  reason: PowerShell uses while ($true) with break in the middle of the body. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A query has no loops. A cursor loop in PL/pgSQL fetches a row, leaves with EXIT WHEN NOT FOUND, and then processes the row.
+regex:
+  status: n/a
+  reason: A regular expression has no loops with a body.
+html:
+  status: n/a
+  reason: HTML has no loops.
+css:
+  status: n/a
+  reason: CSS has no loops.
