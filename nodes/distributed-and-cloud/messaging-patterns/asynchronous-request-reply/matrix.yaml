@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a server returns 202 with a Location header, and the client polls the status URL with fetch and setTimeout until it gets the result.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with a type for each state of the status resource.
+  alternative: the C# example.
+rust:
+  status: library
+  reason: a web framework such as axum for the server and an HTTP client such as reqwest for the polls.
+  alternative: the Go example.
+c:
+  status: library
+  reason: an HTTP library such as libcurl for the client; the C standard library has no HTTP.
+  alternative: the Go example.
+cpp:
+  status: library
+  reason: an HTTP library for the server and the client; the standard library has no HTTP.
+  alternative: the Java example.
+kotlin:
+  status: library
+  reason: a JVM web framework for the server and the JDK HttpClient for the polls, as in Java.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL has no HTTP; a table of jobs with a state column can hold the status resource.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a loop that calls curl on the status URL and waits with sleep between the calls.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: Invoke-WebRequest returns the status code and the headers, and a loop with Start-Sleep polls the status URL.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no requests and no replies.
+html:
+  status: n/a
+  reason: markup has no requests and no replies.
+css:
+  status: n/a
+  reason: style rules have no requests and no replies.

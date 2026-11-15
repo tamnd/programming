@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: the standard library has no heap, so a small binary heap on an array, or a library, orders the messages by level and arrival number.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, a binary heap on an array, with a type for the message and its key.
+  alternative: the Java example.
+rust:
+  status: stdlib
+  reason: std::collections::BinaryHeap is a max-heap; std::cmp::Reverse around the key of level and arrival number makes the smallest key pop first.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: the C standard library has no heap, so a binary heap on an array of structs, with a compare function on level and arrival number.
+  alternative: the Go example.
+cpp:
+  status: stdlib
+  reason: std::priority_queue with a compare function on the level and the arrival number; by default it puts the largest element on top.
+  alternative: the Java example.
+kotlin:
+  status: stdlib
+  reason: java.util.PriorityQueue with compareBy on the level and then the arrival number, as in Java.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of messages with a priority column and an arrival column; the consumer selects the first row by ORDER BY priority, arrival.
+  alternative: the Python example.
+bash:
+  status: absent
+  reason: Bash has no heap; sort can order a file of lines by a priority field and an arrival field, but it does not update as new lines arrive.
+  alternative: the Python example.
+powershell:
+  status: stdlib
+  reason: PowerShell 7 runs on .NET, so System.Collections.Generic.PriorityQueue is available, as in C#.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no queue and no priority.
+html:
+  status: n/a
+  reason: markup has no queue and no priority.
+css:
+  status: n/a
+  reason: style rules have no queue and no priority.
