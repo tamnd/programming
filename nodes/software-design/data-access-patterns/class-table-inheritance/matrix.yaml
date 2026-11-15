@@ -1,0 +1,40 @@
+typescript:
+  status: idiom
+  reason: a class hierarchy mapped to a table for each class with a shared key by hand or by an ORM; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: Entity Framework Core maps a hierarchy to a table for each type with UseTptMappingStrategy (table-per-type).
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a class hierarchy with virtual functions, mapped to a table for each class with a shared key by the program; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: C has no inheritance; a tagged struct or a struct that embeds a base struct is mapped to a table for each class with a shared key with the SQLite C API.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a sealed class hierarchy and a mapper that writes a table for each class with a shared key; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: the table design is the database side of the pattern; the class hierarchy belongs to the client language.
+  alternative: the Python example, which declares the tables in SQLite.
+bash:
+  status: n/a
+  reason: the shell has no classes or inheritance to map.
+powershell:
+  status: idiom
+  reason: PowerShell classes support inheritance, and a function can write each object to a table for each class with a shared key; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: markup has no class hierarchy mapped to database rows.
+css:
+  status: n/a
+  reason: style rules have no data access.
