@@ -14306,13 +14306,13 @@ items:
     group: "poeaa"
     name: "Plugin"
     target: "plugin"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
     name: "Service Stub"
     target: "service-stub"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "eip"

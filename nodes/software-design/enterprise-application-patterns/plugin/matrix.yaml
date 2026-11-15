@@ -1,0 +1,40 @@
+typescript:
+  status: idiom
+  reason: a map of named constructors, or a module path from the configuration that a dynamic import() loads.
+  alternative: the JavaScript example.
+csharp:
+  status: stdlib
+  reason: Type.GetType and Activator.CreateInstance create a type from a name in the configuration; an assembly can be loaded at run time.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a table of named factory functions that each plugin fills, or a shared library that the program loads with the functions of the platform.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a shared library that the program loads with dlopen and dlsym on POSIX systems, or a static table of named functions.
+  alternative: the Go example.
+kotlin:
+  status: stdlib
+  reason: the Java class loading and ServiceLoader work the same in Kotlin; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL has no classes to link at run time.
+bash:
+  status: idiom
+  reason: a script sources the file that a configuration variable names, and calls the functions that the file defines.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: Import-Module with a module name from the configuration, or New-Object with a type name; no example is executed here because the test image has no pwsh.
+  alternative: the Python example.
+regex:
+  status: n/a
+  reason: a pattern has no classes.
+html:
+  status: n/a
+  reason: markup has no classes.
+css:
+  status: n/a
+  reason: style rules have no classes.
