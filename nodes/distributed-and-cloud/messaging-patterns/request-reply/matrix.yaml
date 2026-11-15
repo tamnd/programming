@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a Map from a request id to the resolve function of a Promise, and a timer for the timeout; a broker client such as amqplib is a library.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same Map of Promises as JavaScript, with types for the request and the reply.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: std::sync::mpsc channels give the two channels, and recv_timeout gives the timeout; broker clients such as lapin are crates.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: two queues with a mutex and a condition variable, and pthread_cond_timedwait for the timeout.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::promise for each request, and std::future::wait_for for the timeout.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: the BlockingQueue of the Java example, or coroutine channels with withTimeout; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a request table and a reply table with a key of the request id; the requestor polls the reply table until a deadline.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: two named pipes for the request and the reply, and read -t for the timeout.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: the .NET BlockingCollection type of the C# example; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no messages and no channels.
+html:
+  status: n/a
+  reason: markup has no messages and no channels.
+css:
+  status: n/a
+  reason: style rules have no messages and no channels.

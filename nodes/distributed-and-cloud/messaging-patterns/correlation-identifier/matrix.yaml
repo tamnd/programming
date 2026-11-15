@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a Map from the request id to a pending Promise, and crypto.randomUUID for the ids.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same Map as JavaScript, with types for the request and the reply.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a HashMap from the request id to a oneshot sender; random UUIDs need the uuid crate.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a hash table or an array of the requests that wait, with a key of the request id; C has no standard hash table.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::unordered_map from the request id to a std::promise.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: the HashMap of the Java example, or a map to CompletableDeferred values; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a reply table with a column for the correlation id and a join on the id of the request table.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: an associative array from the request id to the request, with declare -A in Bash 4 or later.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a hashtable from the request id to the request, and New-Guid for the ids; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern can find an id in the text of a message, but it cannot keep the requests that wait.
+html:
+  status: n/a
+  reason: markup has no messages.
+css:
+  status: n/a
+  reason: style rules have no messages.

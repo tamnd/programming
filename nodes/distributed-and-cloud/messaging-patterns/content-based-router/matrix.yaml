@@ -1,0 +1,46 @@
+javascript:
+  status: idiom
+  reason: an object or a Map from a field value to a channel, or a list of predicate functions in order, with a default.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: a switch on a discriminated union of the message types, with a default case.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a match expression on the field, which must cover all the values, so the compiler asks for a default arm.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a switch on a type code or an array of a test function and a channel for each rule.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::vector of pairs of a std::function predicate and a channel, tested in order.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a when expression on the field with an else branch; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a CASE expression that computes the name of the output table or queue for each row.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a case statement on a field of each line, which appends the line to the file of a channel.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a switch statement on a property of each object, with a default clause; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: idiom
+  reason: a pattern can be the test of a rule, for example a match on the type field of a text message, but the router itself needs a language.
+  alternative: the Python example.
+html:
+  status: n/a
+  reason: markup has no messages and no channels.
+css:
+  status: n/a
+  reason: style rules have no messages and no channels.
