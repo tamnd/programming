@@ -1,0 +1,15 @@
+{"name": "no-change", "class": ["no-change"], "args": {"path": "followed.txt", "initial": "x\n", "steps": ["poll", "poll"]}, "expect": [[], []]}
+{"name": "partial-line", "class": ["partial-line"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:ab", "poll", "append:c\nd", "poll", "append:\n", "poll"]}, "expect": [[], ["abc"], ["d"]]}
+{"name": "empty-line", "class": ["empty-line"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:\n\na\n", "poll"]}, "expect": [["", "", "a"]]}
+{"name": "crlf", "class": ["crlf"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:a\r\nb\r\n", "poll"]}, "expect": [["a\r", "b\r"]]}
+{"name": "truncate-and-write", "class": ["truncate"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:aaaa\n", "poll", "truncate:b\n", "poll"]}, "expect": [["aaaa"], ["b"]]}
+{"name": "truncate-partial", "class": ["truncate-partial"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:abc", "poll", "truncate:d\n", "poll"]}, "expect": [[], ["abc", "d"]]}
+{"name": "rotate-late-writes", "class": ["rotate-late-writes"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:1\n", "poll", "rotate", "append-old:2\n", "append:3\n", "poll"]}, "expect": [["1"], ["2", "3"]]}
+{"name": "rotate-partial", "class": ["rotate-partial"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:a", "poll", "rotate", "append:b\n", "poll"]}, "expect": [[], ["a", "b"]]}
+{"name": "rotate-twice", "class": ["rotate"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:1\n", "poll", "rotate", "append:2\n", "poll", "rotate", "append:3\n", "poll"]}, "expect": [["1"], ["2"], ["3"]]}
+{"name": "delete", "class": ["delete"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:1\n", "poll", "delete", "poll", "poll"]}, "expect": [["1"], [], []]}
+{"name": "delete-partial", "class": ["delete-partial"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:x", "poll", "delete", "poll"]}, "expect": [[], ["x"]]}
+{"name": "delete-and-create", "class": ["delete-and-create"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:1\n", "poll", "delete", "poll", "create:2\n", "poll"]}, "expect": [["1"], [], ["2"]]}
+{"name": "delete-and-create-between-polls", "class": ["delete-and-create"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:1\n", "poll", "delete", "create:2\n", "poll"]}, "expect": [["1"], ["2"]]}
+{"name": "start-mid-line", "class": ["start-mid-line"], "args": {"path": "followed.txt", "initial": "abc", "steps": ["append:d\ne\n", "poll"]}, "expect": [["d", "e"]]}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:caf\u00e9\nna\u00efve\n", "poll"]}, "expect": [["caf\u00e9", "na\u00efve"]]}
