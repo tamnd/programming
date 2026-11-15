@@ -1,0 +1,12 @@
+{"name": "old-empty", "class": ["empty"], "args": {"file": "fixtures/empty.txt", "patch": "fixtures/old-empty.patch"}, "expect": "a\nb\n"}
+{"name": "delete-all", "class": ["empty"], "args": {"file": "fixtures/delete-all.txt", "patch": "fixtures/delete-all.patch"}, "expect": ""}
+{"name": "no-count", "class": ["no-count"], "args": {"file": "fixtures/no-count.txt", "patch": "fixtures/no-count.patch"}, "expect": "a\nx\nc\n"}
+{"name": "zero-context", "class": ["empty-range"], "args": {"file": "fixtures/zero-context.txt", "patch": "fixtures/zero-context.patch"}, "expect": "apple\nbanana\ncoconut\ndate\nelder\ngrape\nhoneydew\n"}
+{"name": "insert-at-start", "class": ["empty-range"], "args": {"file": "fixtures/insert-at-start.txt", "patch": "fixtures/insert-at-start.patch"}, "expect": "a\nb\n"}
+{"name": "old-no-final-newline", "class": ["incomplete-line"], "args": {"file": "fixtures/old-no-final-newline.txt", "patch": "fixtures/old-no-final-newline.patch"}, "expect": "a\nb\n"}
+{"name": "new-no-final-newline", "class": ["incomplete-line"], "args": {"file": "fixtures/new-no-final-newline.txt", "patch": "fixtures/new-no-final-newline.patch"}, "expect": "a\nb"}
+{"name": "empty-context-line", "class": ["empty-line"], "args": {"file": "fixtures/empty-context-line.txt", "patch": "fixtures/empty-context-line.patch"}, "expect": "a\n\nc\n"}
+{"name": "space-context-line", "class": ["empty-line"], "args": {"file": "fixtures/space-context-line.txt", "patch": "fixtures/space-context-line.patch"}, "expect": "a\n\nc\n"}
+{"name": "crlf", "class": ["crlf"], "args": {"file": "fixtures/crlf.txt", "patch": "fixtures/crlf.patch"}, "expect": "a\r\nc\r\n"}
+{"name": "header-like-line", "class": ["header-like"], "args": {"file": "fixtures/header-like-line.txt", "patch": "fixtures/header-like-line.patch"}, "expect": "x\n"}
+{"name": "non-ascii", "class": ["non-ascii"], "args": {"file": "fixtures/non-ascii.txt", "patch": "fixtures/non-ascii.patch"}, "expect": "naïve\n"}
