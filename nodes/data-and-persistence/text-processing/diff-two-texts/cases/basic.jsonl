@@ -1,0 +1,4 @@
+{"name": "simple", "args": {"old": "fixtures/simple-old.txt", "new": "fixtures/simple-new.txt"}, "expect": " a\n-b\n c\n+d\n"}
+{"name": "change-a-line", "args": {"old": "fixtures/change-a-line-old.txt", "new": "fixtures/change-a-line-new.txt"}, "expect": " one\n-two\n+2\n three\n"}
+{"name": "identical", "args": {"old": "fixtures/identical-old.txt", "new": "fixtures/identical-new.txt"}, "expect": " a\n b\n"}
+{"name": "lines-of-a-poem", "args": {"old": "fixtures/lines-of-a-poem-old.txt", "new": "fixtures/lines-of-a-poem-new.txt"}, "expect": " The cat sat\n-on the mat.\n+on the hat.\n It was flat.\n+The end.\n"}

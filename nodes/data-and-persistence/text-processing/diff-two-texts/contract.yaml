@@ -1,0 +1,16 @@
+# The contract of the task "diff two texts" (spec 10.2). Each solution reads two UTF-8 files, splits each one into lines, and returns a shortest edit script that changes the lines of the first file into the lines of the second.
+problem: diff-two-texts
+entry: diff_files
+params:
+  - name: old
+    type: string
+    pre: "the path of the first file, relative to the node directory; the file holds valid UTF-8"
+  - name: new
+    type: string
+    pre: "the path of the second file, relative to the node directory; the file holds valid UTF-8"
+returns:
+  type: string
+  post: "the edit script, one line for each line of the two files that it uses. A line of old that stays is a space and the line, a line of old that goes is a - and the line, and a line of new that comes is a + and the line, each with an LF at the end. The lines that stay are a longest common subsequence of the two lists of lines, so the script has the smallest number of - and + lines. The script walks the two files from the first line: a line that is the same in the two files stays, and when a - and a + make equally short scripts, the - comes first. Two lines are equal if their bytes are equal. A line ends at LF, and the LF is not part of it; a CR before the LF stays in the line. A last line with no LF is a line too. Two empty files give an empty script"
+checker: exact
+edge_classes: [empty, all-different, insert, delete, tie, repeated-lines, empty-line, no-final-newline, crlf, whitespace, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when a file does not exist.
