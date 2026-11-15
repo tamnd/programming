@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: one process runs one event loop, so competing consumers are many processes or worker threads on one broker queue, each with a limit on unacknowledged messages.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same broker client and worker processes as in JavaScript, with a type for the job message.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: threads that share the receiver of a channel behind an Arc and a Mutex, or the multi-consumer channel of a crate such as crossbeam.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: POSIX threads that take jobs from a queue protected by a mutex and a condition variable.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: std::thread workers that take jobs from a std::queue under a std::mutex and a std::condition_variable.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: coroutines that receive from one Channel are competing consumers; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of jobs that workers claim with SELECT ... FOR UPDATE SKIP LOCKED, where the database supports it, so that two workers do not take the same row.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: xargs -P or GNU parallel runs many workers on one list of jobs; a shell has no broker client of its own.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: ForEach-Object -Parallel with -ThrottleLimit runs many workers on one list of jobs; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no queues and no consumers.
+html:
+  status: n/a
+  reason: markup has no messages and no consumers.
+css:
+  status: n/a
+  reason: style rules have no messages and no consumers.

@@ -1,0 +1,45 @@
+javascript:
+  status: library
+  reason: a client of an object store, such as an S3 or Blob Storage SDK, writes the payload, and the message carries the key; crypto.createHash gives a content hash in Node.js.
+  alternative: the Python example.
+typescript:
+  status: library
+  reason: the same object store client as in JavaScript, with a type for the claim check message.
+  alternative: the C# example.
+rust:
+  status: library
+  reason: an object store crate holds the payload, and the sha2 crate gives the hash; the standard library has no hash of this kind.
+  alternative: the Go example.
+c:
+  status: library
+  reason: a client library of the store and a hash from a library such as OpenSSL; the C standard library has neither.
+  alternative: the Go example.
+cpp:
+  status: library
+  reason: a client library of the store and a hash from a library such as OpenSSL.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: MessageDigest from the JDK, as in Java, with an SDK of the store; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of payloads keyed by an id or a hash, and a message that carries only the key; a scheduled DELETE removes old rows.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a script can copy a file to a store with a CLI, compute sha256sum, and send only the key and the size.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: Get-FileHash -Algorithm SHA256 gives the key, and a cmdlet of the store uploads the file; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no store and no messages.
+html:
+  status: n/a
+  reason: markup has no messages and no store.
+css:
+  status: n/a
+  reason: style rules have no messages and no store.
