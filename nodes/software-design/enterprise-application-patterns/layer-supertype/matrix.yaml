@@ -1,0 +1,40 @@
+typescript:
+  status: native
+  reason: an abstract base class with abstract methods; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: native
+  reason: an abstract base class that overrides Equals and GetHashCode and declares abstract methods.
+  alternative: the Java example.
+cpp:
+  status: native
+  reason: a base class with virtual functions and an operator== for the identity.
+  alternative: the Java example.
+c:
+  status: idiom
+  reason: C has no inheritance; each struct of the layer puts a common header struct as its first member, and shared functions take a pointer to the header.
+  alternative: the Go example.
+kotlin:
+  status: native
+  reason: an abstract class that overrides equals and hashCode; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: tables have no supertype; the shared columns of a layer are repeated in each table.
+bash:
+  status: absent
+  reason: a shell has no types to share a supertype.
+  alternative: the Python example.
+powershell:
+  status: native
+  reason: a PowerShell class can inherit from a base class; no example is executed here because the test image has no pwsh.
+  alternative: the Python example.
+regex:
+  status: n/a
+  reason: a pattern has no types.
+html:
+  status: n/a
+  reason: markup has no types.
+css:
+  status: n/a
+  reason: style rules have no types; a shared class name in CSS is a different idea.

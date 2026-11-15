@@ -505,7 +505,7 @@
 {"id":"MACRO-11","name":"MACRO-11","scope":"languages","outcome":"card","target":"macro-11"}
 {"id":"MAD","name":"MAD","scope":"languages","outcome":"card","target":"mad"}
 {"id":"MANOOL","name":"MANOOL","scope":"languages","outcome":"card","target":"manool"}
-{"id":"MAPPER","name":"MAPPER","scope":"languages","outcome":"card","target":"mapper"}
+{"id":"MAPPER","name":"MAPPER","scope":"languages","outcome":"card","target":"mapper-language"}
 {"id":"MATLAB","name":"MATLAB","scope":"languages","outcome":"card","target":"matlab"}
 {"id":"MAXScript","name":"MAXScript","scope":"languages","outcome":"card","target":"maxscript"}
 {"id":"MBS","name":"MBS","scope":"languages","outcome":"card","target":"mbs"}
