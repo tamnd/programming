@@ -15626,7 +15626,7 @@ items:
     group: "tier-1-toolchains"
     name: "go test"
     target: "go-test"
-    status: "planned"
+    status: "node"
     reason: "The test framework of Go in the language register (spec 08.2), a tier-1 language."
   - part: tools
     group: "tier-1-toolchains"
@@ -15644,7 +15644,7 @@ items:
     group: "tier-1-toolchains"
     name: "cargo test"
     target: "cargo-test"
-    status: "planned"
+    status: "node"
     reason: "The test framework of Rust in the language register (spec 08.2), a tier-1 language."
   - part: tools
     group: "tier-1-toolchains"
