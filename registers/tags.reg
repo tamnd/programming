@@ -594,3 +594,7 @@ XTRFFG diff-two-texts
 HNJB56 data-transfer-object
 YDEMBE remote-facade
 Z57N8A service-layer
+85CQYF coarse-grained-lock
+XWFNBA implicit-lock
+2A1PFZ optimistic-offline-lock
+92KTZK pessimistic-offline-lock

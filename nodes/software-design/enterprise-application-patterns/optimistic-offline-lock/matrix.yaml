@@ -1,0 +1,41 @@
+typescript:
+  status: library
+  reason: object-relational mappers such as TypeORM have a version column for optimistic locking; by hand, an UPDATE with the version in the WHERE clause. The JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: library
+  reason: Entity Framework Core has concurrency tokens, such as a rowversion column, and throws DbUpdateConcurrencyException on a conflict.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: an UPDATE with the version in the WHERE clause through a database client library, and a check of the number of rows changed.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: an UPDATE with the version in the WHERE clause through the SQLite C API, and a check of sqlite3_changes.
+  alternative: the Go example.
+kotlin:
+  status: library
+  reason: Jakarta Persistence and Spring Data support a field with the Version annotation; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: an UPDATE with the version in the WHERE clause, which sets the version to version + 1, followed by a check of the number of rows changed.
+  alternative: the Python example.
+bash:
+  status: absent
+  reason: the shell has no records or transactions; a script can only call a database client that runs the SQL.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: an UPDATE with the version in the WHERE clause through ADO.NET, and a check of the number of rows changed; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no data to lock.
+html:
+  status: n/a
+  reason: markup has no data to lock; a form can only carry the version in a hidden field.
+css:
+  status: n/a
+  reason: style rules have no data to lock.

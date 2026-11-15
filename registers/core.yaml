@@ -14252,13 +14252,13 @@ items:
     group: "poeaa"
     name: "Optimistic Offline Lock"
     target: "optimistic-offline-lock"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
     name: "Pessimistic Offline Lock"
     target: "pessimistic-offline-lock"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
