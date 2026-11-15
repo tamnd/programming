@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: Promise.allSettled on the requests, raced with a timer through Promise.race, or Promise.any for the first reply.
+  alternative: the C# example.
+typescript:
+  status: idiom
+  reason: the same Promise combinators as in JavaScript, with a type for the quote.
+  alternative: the C# example.
+rust:
+  status: library
+  reason: the standard library has threads and mpsc channels with recv_timeout; with the tokio crate, a JoinSet and tokio::time::timeout are the common form.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: one thread for each request with POSIX threads, and a condition variable with pthread_cond_timedwait for the deadline.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: std::async for each request and std::future::wait_until with one deadline for all of them.
+  alternative: the Java example.
+kotlin:
+  status: library
+  reason: kotlinx.coroutines with async for each request and withTimeoutOrNull around awaitAll, or a select; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: absent
+  reason: a query does not send requests to many outside systems and wait for their replies.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: start each request in the background with the timeout command, each one into its own file, then wait and read the files that are there.
+  alternative: the Go example.
+powershell:
+  status: idiom
+  reason: Start-ThreadJob for each request, then Wait-Job with -Timeout and Receive-Job; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern cannot send requests or wait for replies.
+html:
+  status: n/a
+  reason: markup has no messages and no channels.
+css:
+  status: n/a
+  reason: style rules have no messages and no channels.

@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a Map from the correlation id to a Map of the parts, with a setTimeout for each group to close it after a timeout.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same Map of groups as in JavaScript, with a type for the part message.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a HashMap from the correlation id to a BTreeMap of the parts, which keeps the parts in order of the sequence number.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a hash table or an array of group structs, each with a bit set of the parts that have come and a time of the last part.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::unordered_map from the correlation id to a std::map of the parts.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a mutableMapOf from the correlation id to a sortedMapOf of the parts, with getOrPut for a new group; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of parts with a GROUP BY on the correlation id and a HAVING COUNT that equals the size, which finds the complete groups.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: an associative array from the correlation id to the parts, with a count for each group; for real messages, a language with timers is a better fit.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a hashtable of groups with Group-Object on the correlation id for a batch; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: an aggregator keeps state across messages, which a pattern cannot do.
+html:
+  status: n/a
+  reason: markup has no messages and no channels.
+css:
+  status: n/a
+  reason: style rules have no messages and no channels.

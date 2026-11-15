@@ -1,0 +1,46 @@
+javascript:
+  status: idiom
+  reason: a function that takes the parsed object of one format and returns a new object in the other format.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: a function with one interface type for the source and one for the target, so the compiler checks each field of the mapping.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: an implementation of the TryFrom trait from the source struct to the target struct, which returns an error for a value that it cannot map.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a function that reads one struct or one line and fills a second struct, and returns an error code.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a function that returns a std::optional or a std::expected of the target struct.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a data class for the target and a function or an extension function that maps to it; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: an INSERT INTO the target table with a SELECT that renames, casts and computes the columns of the source table.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a filter such as awk or jq between two files or two pipes, which reads one format and writes the other.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: ConvertFrom-Csv or ConvertFrom-Json, then Select-Object with calculated properties, then ConvertTo-Json; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: idiom
+  reason: a pattern with groups can read one field, as the amount check of the examples does, but the translator itself needs a language.
+  alternative: the Python example.
+html:
+  status: n/a
+  reason: markup has no messages and no channels.
+css:
+  status: n/a
+  reason: style rules have no messages and no channels.

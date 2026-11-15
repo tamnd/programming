@@ -1,0 +1,46 @@
+javascript:
+  status: idiom
+  reason: Array.prototype.map with the index makes one part object for each item, and a generator function gives the parts of a stream one at a time.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same map as in JavaScript, with an interface for the part message.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: iter().enumerate().map() into a Vec of part structs, or an iterator that is not collected, for a stream.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a loop over an array of items that fills a part struct for each item and sends it.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a range-for loop with an index over a std::vector of items, which builds a part struct for each one.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: mapIndexed over the list of items, or a Sequence for a stream; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a lateral join or UNNEST on an array column, or a join to the line table, gives one row for each item with ROW_NUMBER and COUNT over the order.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: split, or a while read loop, makes one file or one message for each line of the input.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: ForEach-Object on the array of items, with a counter for the sequence number; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: idiom
+  reason: a pattern can find the repeated elements, as a split on a separator does, but the splitter itself needs a language.
+  alternative: the Python example.
+html:
+  status: n/a
+  reason: markup has no messages and no channels.
+css:
+  status: n/a
+  reason: style rules have no messages and no channels.
