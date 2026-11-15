@@ -16088,19 +16088,19 @@ items:
     group: "by-hand"
     name: "Homebrew"
     target: "homebrew-pm"
-    status: "card"
+    status: "node"
     reason: "A package manager of macOS and Linux."
   - part: tools
     group: "by-hand"
     name: "apt"
     target: "apt-tool"
-    status: "planned"
+    status: "node"
     reason: "The package manager of Debian and Ubuntu."
   - part: tools
     group: "by-hand"
     name: "Nix"
     target: "nix"
-    status: "card"
+    status: "node"
     reason: "A package manager with reproducible builds."
   - part: tools
     group: "by-hand"
