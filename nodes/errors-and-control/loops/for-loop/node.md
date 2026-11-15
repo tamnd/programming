@@ -15,7 +15,7 @@ history:
   year: 1960
   people: [Stephen C. Johnson]
   note: ALGOL 60 had a for statement with step and until. The three-part for loop of B, and then of C, came from Stephen C. Johnson.
-see_also: [loop, while-loop, for-each-loop, iterators, block]
+see_also: [loop, while-loop, for-each-loop, iterators, off-by-one-errors, loop-variable-capture, block]
 same_as:
   wikidata: Q838119
   wikipedia: For_loop
@@ -149,11 +149,11 @@ The example files show these differences. Python shows that adding 0.1 ten times
 
 ## Pitfalls
 
-- **Off-by-one bounds.** `for (i = 0; i <= n; i++)` runs n + 1 times and reads `a[n]`, one past the end. Use the half-open form `i < n`.
+- **Off-by-one bounds.** `for (i = 0; i <= n; i++)` runs n + 1 times and reads `a[n]`, one past the end. Use the half-open form `i < n`. See [off-by-one errors](/off-by-one-errors/).
 - **Unsigned counters that count down.** In C and C++, `for (size_t i = n - 1; i >= 0; i--)` never ends, because an unsigned value is always 0 or more. Test before the decrement: `for (size_t i = n; i-- > 0; )`.
 - **Floating-point counters.** The Control flow article warns that a loop from 0.1 to 1.0 by 0.1 "might iterate 9 or 10 times, depending on various factors such as rounding error, hardware, compiler"[^5]. Count with an integer and compute the value from it.
 - **A changed bound.** In C and Java, the condition runs again before each pass, so a loop that adds elements to a list while it tests `i < list.size()` can run forever.
-- **Closures over the counter.** A closure made in the body can see a later value of the counter. This depends on the language and the version, as described in the section on scope.
+- **Closures over the counter.** A closure made in the body can see a later value of the counter. This depends on the language and the version, as described in the section on scope. See [loop variable capture](/loop-variable-capture/).
 
 ## Cost
 

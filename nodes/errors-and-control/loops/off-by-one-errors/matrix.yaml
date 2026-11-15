@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: TypeScript has the half-open slice and substring methods of JavaScript, and an index past the end gives undefined. The compiler option noUncheckedIndexedAccess adds undefined to the type of an indexed element. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin writes 1..10 for a range that includes the end and until or ..< for a range that excludes it, and the JVM checks each array index. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: The brace expansion {1..10} includes both ends, and ${s:offset:length} takes a length, not an end. Bash does not stop a read past the end of an array. No example file exists.
+powershell:
+  status: idiom
+  reason: The range operator 1..10 includes both ends. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: BETWEEN includes both ends, so a query writes the half-open form with >= and <, for example on dates.
+regex:
+  status: n/a
+  reason: A regular expression has no indexes. The quantifier {m,n} includes both counts.
+html:
+  status: n/a
+  reason: HTML has no loops or indexes.
+css:
+  status: n/a
+  reason: CSS has no loops. The selector :nth-child() counts from 1.

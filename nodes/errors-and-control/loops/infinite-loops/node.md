@@ -11,7 +11,7 @@ summary: >-
 applies_to: core-languages
 viz: optional
 formal: none
-see_also: [loop, while-loop, for-loop, do-while-loop, loop-and-a-half, recursion, control-flow]
+see_also: [loop, while-loop, for-loop, do-while-loop, loop-and-a-half, off-by-one-errors, recursion, control-flow]
 same_as:
   wikidata: Q862372
   wikipedia: Infinite_loop

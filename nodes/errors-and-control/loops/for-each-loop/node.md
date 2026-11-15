@@ -14,7 +14,7 @@ formal: none
 history:
   year: 2004
   note: Java 5, released in September 2004, added the enhanced for statement (JSR 201). Perl and C# call the loop foreach.
-see_also: [loop, for-loop, iterators, while-loop, loop-and-a-half, higher-order-functions, array]
+see_also: [loop, for-loop, iterators, iterator-invalidation, while-loop, loop-and-a-half, higher-order-functions, array]
 same_as:
   wikidata: Q3273595
   wikipedia: Foreach_loop
@@ -157,7 +157,7 @@ The example files show these differences. Python loops over a dictionary and get
 
 ## Pitfalls
 
-- **Changing the collection.** Adding or removing elements during the loop raises an error or skips elements. Loop over a copy, collect the changes and apply them after the loop, or use a method such as `removeIf`.
+- **Changing the collection.** Adding or removing elements during the loop raises an error or skips elements. Loop over a copy, collect the changes and apply them after the loop, or use a method such as `removeIf`. See [iterator invalidation](/iterator-invalidation/).
 - **A copy instead of the element.** In Go and in C++ with `auto`, a change to the loop variable changes a copy, and the collection stays the same. Use the index in Go and `auto&` in C++.
 - **`for...in` on arrays in JavaScript.** It gives the keys as strings, and it includes other enumerable properties. Use `for...of`.
 - **Map order.** Do not depend on the order of a hash map. Sort the keys when the output must be stable.

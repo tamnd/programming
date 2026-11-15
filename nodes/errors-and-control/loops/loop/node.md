@@ -155,10 +155,10 @@ The example files show these differences. Python uses `for ... else`, replaces a
 
 ## Pitfalls
 
-- **Off by one.** `i <= n` instead of `i < n` runs one pass too many and can read past the end of an array. Half-open ranges such as `range(0, n)` help.
+- **Off by one.** `i <= n` instead of `i < n` runs one pass too many and can read past the end of an array. Half-open ranges such as `range(0, n)` help. See [off-by-one errors](/off-by-one-errors/).
 - **A condition that never becomes false.** If the body does not change the values that the condition tests, the loop never ends.
-- **Changing a collection while looping over it.** Adding or removing elements during a for-each loop raises an error for a Java list or a Python dictionary, and it can be undefined behavior for a C++ container.
-- **Capture of the loop variable.** A closure made in a loop can see the last value of the variable. In Go, "Prior to [Go 1.22], iterations share one set of variables"[^4]. A `var` variable in a JavaScript loop has the same trap.
+- **Changing a collection while looping over it.** Adding or removing elements during a for-each loop raises an error for a Java list or a Python dictionary, and it can be undefined behavior for a C++ container. See [iterator invalidation](/iterator-invalidation/).
+- **Capture of the loop variable.** A closure made in a loop can see the last value of the variable. In Go, "Prior to [Go 1.22], iterations share one set of variables"[^4]. A `var` variable in a JavaScript loop has the same trap. See [loop variable capture](/loop-variable-capture/).
 - **Floating-point counters.** `for (x = 0.1; x != 1.0; x += 0.1)` may never stop, because 0.1 is not exact in binary. Count with integers and compute the floating-point value from the count.
 
 ## Cost
