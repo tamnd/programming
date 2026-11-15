@@ -1,0 +1,41 @@
+typescript:
+  status: library
+  reason: a database driver keeps the session tables; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: library
+  reason: ADO.NET gives the database access, and a database provider package connects to the database.
+  alternative: the Java example.
+cpp:
+  status: library
+  reason: the standard library has no database access, so the program uses the client library of the database.
+  alternative: the Rust example.
+c:
+  status: library
+  reason: the program uses the C client library of the database, such as the SQLite library.
+  alternative: the Go example.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses JDBC from the Java standard library; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: native
+  reason: the session tables, the move of the pending rows into the order tables and the purge of idle sessions are SQL statements.
+  alternative: the Python example.
+bash:
+  status: absent
+  reason: a shell script has no long-running server to keep the sessions; it can only call a database client.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a long-running PowerShell process can use the .NET database classes; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no session state.
+html:
+  status: n/a
+  reason: markup runs on the client and cannot write to a database.
+css:
+  status: n/a
+  reason: style rules have no session state.

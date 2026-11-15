@@ -1,0 +1,40 @@
+typescript:
+  status: library
+  reason: web frameworks such as Express use a session middleware with a store in memory or in a cache; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: library
+  reason: ASP.NET Core has session middleware that keeps the data in an IDistributedCache, in memory or in a shared cache.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a map from the session ID to the serialized state in the server process, with a lock around it.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a hash table from the session ID to the serialized state in the server process.
+  alternative: the Go example.
+kotlin:
+  status: library
+  reason: on the JVM, the HttpSession of a servlet container or Spring Session keeps the state; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: state in the database is the database session state pattern, not the server session state pattern.
+bash:
+  status: absent
+  reason: a shell script has no long-running server process to keep the sessions.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a hashtable from the session ID to the state, in a long-running PowerShell process; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no session state.
+html:
+  status: n/a
+  reason: markup runs on the client and cannot keep state on the server.
+css:
+  status: n/a
+  reason: style rules have no session state.

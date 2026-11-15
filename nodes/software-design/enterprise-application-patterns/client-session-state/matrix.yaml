@@ -1,0 +1,40 @@
+typescript:
+  status: stdlib
+  reason: the node:crypto module of Node.js has createHmac and timingSafeEqual; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: stdlib
+  reason: System.Security.Cryptography has HMACSHA256 and CryptographicOperations.FixedTimeEquals; ASP.NET Core protects cookie data with its Data Protection API.
+  alternative: the Java example.
+cpp:
+  status: library
+  reason: the C++ standard library has no HMAC; a program uses a library such as OpenSSL to sign the state.
+  alternative: the Rust example.
+c:
+  status: library
+  reason: the C standard library has no HMAC; a program uses a library such as OpenSSL to sign the state.
+  alternative: the Go example.
+kotlin:
+  status: stdlib
+  reason: on the JVM, javax.crypto.Mac gives HmacSHA256; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: the database is on the server side and has no client to keep the state.
+bash:
+  status: absent
+  reason: the shell has no HMAC; a script can call an external tool such as openssl to sign the state.
+  alternative: the Python example.
+powershell:
+  status: stdlib
+  reason: the .NET class System.Security.Cryptography.HMACSHA256 signs the state; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no session state.
+html:
+  status: native
+  reason: a hidden input field sends the state back to the server with the form; the server must sign the value, because the user can change it.
+css:
+  status: n/a
+  reason: style rules have no session state.
