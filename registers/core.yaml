@@ -15596,7 +15596,7 @@ items:
     group: "tier-1-toolchains"
     name: "dotnet build"
     target: "dotnet-build"
-    status: "planned"
+    status: "node"
     reason: "The linter of C# in the language register (spec 08.2), a tier-1 language."
   - part: tools
     group: "tier-1-toolchains"
@@ -16106,13 +16106,13 @@ items:
     group: "by-hand"
     name: "Webpack"
     target: "webpack"
-    status: "planned"
+    status: "node"
     reason: "A module bundler of JavaScript."
   - part: tools
     group: "by-hand"
     name: "Vite"
     target: "vite"
-    status: "planned"
+    status: "node"
     reason: "A build tool and development server of the web."
   - part: tools
     group: "by-hand"
