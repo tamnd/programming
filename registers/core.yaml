@@ -15542,7 +15542,7 @@ items:
     group: "tier-1-toolchains"
     name: "pytest"
     target: "pytest"
-    status: "planned"
+    status: "node"
     reason: "The test framework of Python in the language register (spec 08.2), a tier-1 language."
   - part: tools
     group: "tier-1-toolchains"

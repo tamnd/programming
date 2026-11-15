@@ -629,3 +629,7 @@ M5QTGV aggregator
 V6N3XH message-translator
 CDA0NF scatter-gather
 A019X3 splitter
+45DB1H doctest-python
+YHMGX5 pytest
+R4NH59 python-unittest
+P32KX6 test-framework

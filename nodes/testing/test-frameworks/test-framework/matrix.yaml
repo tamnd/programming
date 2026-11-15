@@ -1,0 +1,41 @@
+typescript:
+  status: stdlib
+  reason: Node.js runs TypeScript test files with node:test when it strips the types; the TypeScript compiler itself has no test runner.
+  alternative: node:test, or the libraries Vitest and Jest.
+csharp:
+  status: library
+  reason: the .NET base class library has no test framework; dotnet test runs the tests of a framework library.
+  alternative: xUnit.net, NUnit or MSTest, run by dotnet test.
+cpp:
+  status: library
+  reason: the C++ standard library has no test framework.
+  alternative: GoogleTest, Catch2 or doctest, often run through CTest.
+c:
+  status: idiom
+  reason: the C standard library has only the assert macro; a test is a program that checks results and returns a nonzero status.
+  alternative: a test program with assert, or the libraries Unity, CMocka and Check.
+kotlin:
+  status: library
+  reason: the Kotlin standard library has no test runner; kotlin.test is a separate library that runs on JUnit or TestNG.
+  alternative: kotlin.test or JUnit Jupiter, or Kotest, run by Gradle.
+sql:
+  status: library
+  reason: standard SQL has no test framework.
+  alternative: pgTAP for PostgreSQL, tSQLt for SQL Server, or queries that compare results with expected rows.
+bash:
+  status: library
+  reason: Bash has no test framework; a test is a script that checks exit statuses.
+  alternative: bats-core, which reports in TAP, or a script with set -e and the test command.
+powershell:
+  status: library
+  reason: PowerShell has no test framework in the language or its core modules.
+  alternative: the Pester module, with Describe, It, BeforeEach and Should.
+regex:
+  status: n/a
+  reason: a pattern is tested through the language that uses it.
+html:
+  status: n/a
+  reason: markup has no units to call; it is tested through a browser.
+css:
+  status: n/a
+  reason: style rules have no units to call; they are tested through a browser.
