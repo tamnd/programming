@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript writes an infinite loop as while (true) or for (;;), like JavaScript, and a function that never returns can have the return type never. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin writes an infinite loop as while (true), and a function that never returns has the type Nothing. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash writes an infinite loop as while true or while :, because the command true always succeeds. No example file exists.
+powershell:
+  status: idiom
+  reason: PowerShell writes an infinite loop as while ($true) with break as the exit. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A query has no loops. A recursive common table expression with no stop condition repeats until the database stops it or a LIMIT ends it.
+regex:
+  status: idiom
+  reason: A regular expression has no loops, but nested quantifiers such as (a+)+ can make a backtracking matcher run for a very long time.
+html:
+  status: n/a
+  reason: HTML has no loops.
+css:
+  status: n/a
+  reason: CSS has no loops. The property animation-iteration-count with the value infinite repeats an animation without end.
