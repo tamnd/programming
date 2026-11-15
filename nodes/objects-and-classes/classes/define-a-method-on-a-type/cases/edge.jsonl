@@ -1,0 +1,4 @@
+{"name":"zero-move","class":["zero-move"],"args":{"x":7,"y":-3,"dx":0,"dy":0},"expect":[7,-3,0,10]}
+{"name":"negative","class":["negative"],"args":{"x":-2,"y":-5,"dx":-3,"dy":-1},"expect":[-5,-6,4,11]}
+{"name":"origin","class":["origin"],"args":{"x":2,"y":3,"dx":-2,"dy":-3},"expect":[0,0,5,0]}
+{"name":"limit","class":["limit"],"args":{"x":100000000,"y":-100000000,"dx":100000000,"dy":-100000000},"expect":[200000000,-200000000,200000000,400000000]}

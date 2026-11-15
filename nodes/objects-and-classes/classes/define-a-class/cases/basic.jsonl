@@ -1,0 +1,2 @@
+{"name":"three-by-four","args":{"width":3,"height":4,"factor":2},"expect":[12,14,48,28]}
+{"name":"square","args":{"width":5,"height":5,"factor":3},"expect":[25,20,225,60]}

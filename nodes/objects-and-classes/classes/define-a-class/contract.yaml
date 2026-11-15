@@ -1,0 +1,18 @@
+# The contract of the task "define a class" (spec 10.2). The function makes one Rectangle, reads its area and perimeter, scales it, and reads them again.
+problem: define-a-class
+entry: rectangle_report
+params:
+  - name: width
+    type: "int"
+    pre: "0 or more"
+  - name: height
+    type: "int"
+    pre: "0 or more"
+  - name: factor
+    type: "int"
+    pre: "0 or more; the area after the scale, width * height * factor * factor, fits in a signed 32-bit integer"
+returns:
+  type: "list<int>"
+  post: "[area, perimeter, area after scale(factor), perimeter after scale(factor)], where scale multiplies both sides by factor"
+checker: exact
+edge_classes: [zero-side, zero-factor, identity, limit]
