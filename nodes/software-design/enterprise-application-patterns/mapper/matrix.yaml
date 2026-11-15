@@ -1,0 +1,41 @@
+typescript:
+  status: idiom
+  reason: a class or a function that takes the types of both subsystems; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a mapper class by hand, or a library such as AutoMapper or Mapperly for the copy of the fields.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a class or a free function that includes the headers of both subsystems.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a source file that includes the headers of both subsystems and converts one struct to the other.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: an object or an extension function in a third module; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a view or an INSERT ... SELECT can map the rows of one schema to the shape of another, while neither schema knows the other.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a pipeline of awk or jq between two programs maps the output of one to the input of the other.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a function that builds the objects of one command from the output objects of another; no example is executed here because the test image has no pwsh.
+  alternative: the Python example.
+regex:
+  status: n/a
+  reason: a pattern has no objects to connect.
+html:
+  status: n/a
+  reason: markup has no objects to connect.
+css:
+  status: n/a
+  reason: style rules have no objects to connect.

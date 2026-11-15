@@ -968,7 +968,7 @@
 {"id":"Q3273110","name":"MOLOG","scope":"languages","outcome":"card","target":"molog"}
 {"id":"Q3277979","name":"OpenMusic","scope":"languages","outcome":"card","target":"openmusic"}
 {"id":"Q3279945","name":"Unicon","scope":"languages","outcome":"card","target":"unicon"}
-{"id":"Q3287251","name":"MAPPER","scope":"languages","outcome":"card","target":"mapper"}
+{"id":"Q3287251","name":"MAPPER","scope":"languages","outcome":"card","target":"mapper-language"}
 {"id":"Q3294091","name":"Gödel","scope":"languages","outcome":"card","target":"godel"}
 {"id":"Q3304832","name":"Maya Embedded Language","scope":"languages","outcome":"card","target":"maya"}
 {"id":"Q3312001","name":"MicroMondes","scope":"languages","outcome":"card","target":"micromondes"}

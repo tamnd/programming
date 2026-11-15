@@ -1,0 +1,40 @@
+typescript:
+  status: idiom
+  reason: a class or a module of functions with types of its own wraps the foreign API; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a class behind an interface wraps the foreign API, and a delegate or an HttpClient handler can be the connection.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a class wraps the foreign API, and a std::function can be the connection.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a header with functions in the terms of the program wraps the foreign API, and a function pointer can be the connection.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a class with a function-typed connection; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL has no objects to wrap an external system; a view can hide the shape of tables, but that is not this pattern.
+bash:
+  status: idiom
+  reason: a shell function can wrap a command with awkward options, such as curl with its flags, and return a simple result.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a function or a class wraps the foreign command or REST API; no example is executed here because the test image has no pwsh.
+  alternative: the Python example.
+regex:
+  status: n/a
+  reason: a pattern cannot wrap an external system.
+html:
+  status: n/a
+  reason: markup cannot wrap an external system.
+css:
+  status: n/a
+  reason: style rules cannot wrap an external system.

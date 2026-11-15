@@ -1,0 +1,40 @@
+typescript:
+  status: native
+  reason: an interface type in the module of the client, which the implementing class satisfies by its shape; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: native
+  reason: an interface in the assembly of the client, implemented in another assembly that references it.
+  alternative: the Java example.
+cpp:
+  status: native
+  reason: an abstract class with pure virtual functions in the header of the client, implemented in another library; concepts check a shape at compile time.
+  alternative: the Java example.
+c:
+  status: idiom
+  reason: a struct of function pointers in the header of the client, filled in by the implementation in another library.
+  alternative: the Go example.
+kotlin:
+  status: native
+  reason: an interface in the module of the client; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL has no interfaces and packages in this sense.
+bash:
+  status: idiom
+  reason: a script can call a command by a name that the caller sets, such as a variable that holds the name of a function; the interface is the arguments and the output.
+  alternative: the Python example.
+powershell:
+  status: native
+  reason: PowerShell classes can implement .NET interfaces; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no interfaces.
+html:
+  status: n/a
+  reason: markup has no interfaces.
+css:
+  status: n/a
+  reason: style rules have no interfaces.
