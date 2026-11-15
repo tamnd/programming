@@ -59,20 +59,20 @@ Many results do not need the whole file. A line count, a sum, a maximum, a filte
 
 ## Example
 
-In Python. The program writes a file of 1000000 lines with the numbers 0 to 999, and then gets the number of lines, their sum and their maximum in two ways. `read_all` reads the whole file and makes a list. `stream` reads one line at a time and keeps three numbers. `tracemalloc.get_traced_memory` gives "the current size and peak size of memory blocks traced by the tracemalloc module".[^3] The two functions give the same result, but only `stream` stays under 1 MiB, for a file of about 3.7 MiB:
+In Python. The program writes a file of 200000 lines with the numbers 0 to 999, and then gets the number of lines, their sum and their maximum in two ways. `read_all` reads the whole file and makes a list. `stream` reads one line at a time and keeps three numbers. `tracemalloc.get_traced_memory` gives "the current size and peak size of memory blocks traced by the tracemalloc module".[^3] The two functions give the same result. The peak memory of `read_all` is more than 5 times the size of the file, and the peak memory of `stream` is less than a tenth of it:
 
 ```python run id=python-stream
 import os
 import tempfile
 import tracemalloc
 
-MiB = 1024 * 1024
 directory = tempfile.mkdtemp()
 path = os.path.join(directory, 'numbers.txt')
 with open(path, 'w', encoding='utf-8') as f:
-    for i in range(1_000_000):
+    for i in range(200_000):
         f.write(f'{i % 1000}\n')
-print('file size:', os.path.getsize(path), 'bytes')
+size = os.path.getsize(path)
+print('file size:', size, 'bytes')
 
 
 def read_all(path):
@@ -98,16 +98,16 @@ for function in (read_all, stream):
     result = function(path)
     peak = tracemalloc.get_traced_memory()[1]
     tracemalloc.stop()
-    print(f'{function.__name__}: {result}, peak above 10 MiB: {peak > 10 * MiB}, peak below 1 MiB: {peak < MiB}')
+    print(f'{function.__name__}: {result}, peak above 5 times the file size: {peak > 5 * size}, peak below 1/10 of the file size: {peak < size / 10}')
 
 os.remove(path)
 os.rmdir(directory)
 ```
 
 ```output for=python-stream
-file size: 3890000 bytes
-read_all: (1000000, 499500000, 999), peak above 10 MiB: True, peak below 1 MiB: False
-stream: (1000000, 499500000, 999), peak above 10 MiB: False, peak below 1 MiB: True
+file size: 778000 bytes
+read_all: (200000, 99900000, 999), peak above 5 times the file size: True, peak below 1/10 of the file size: False
+stream: (200000, 99900000, 999), peak above 5 times the file size: False, peak below 1/10 of the file size: True
 ```
 
 The example files do the same in Go, Rust, JavaScript, Java, C and Bash. Each file writes the same file of numbers, and reads it again one line at a time.
