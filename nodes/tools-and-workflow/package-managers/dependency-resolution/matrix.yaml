@@ -1,0 +1,44 @@
+javascript:
+  status: idiom
+  reason: a Map for the versions and a recursive solve that returns null on failure, as in the Python example.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with a type for a requirement and the return type Map<string, string> | null.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a recursive function that returns Option<BTreeMap<String, String>> and clones the map for each try.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: arrays of structs for the versions and an array of chosen indexes, with an undo step after each failed try.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map for the chosen versions and a recursive function that returns std::optional.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a data class for a requirement and a recursive function that returns a nullable sorted map.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: a recursive query can walk a dependency table, but a search that goes back on a conflict is not a natural fit for SQL.
+bash:
+  status: idiom
+  reason: the resolver is part of the package manager, such as pip, npm or apt, so a script calls the tool.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: hashtables for the versions and a recursive function, as in the C# example.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern does not choose versions.
+html:
+  status: n/a
+  reason: markup does not choose versions.
+css:
+  status: n/a
+  reason: style rules do not choose versions.

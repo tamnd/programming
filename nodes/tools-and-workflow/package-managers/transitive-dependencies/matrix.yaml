@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: an object or a Map for the graph and a Set for the shown packages; npm ls prints the real tree of a project.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with the type Record<string, string[]> for the graph.
+  alternative: the Go example.
+rust:
+  status: idiom
+  reason: a HashMap for the graph and a BTreeSet for the shown packages; cargo tree prints the real tree of a project.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: an array of structs with child indexes, and an array of flags for the shown packages.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map<std::string, std::vector<std::string>> for the graph and a std::set for the shown packages.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: mapOf for the graph, a sortedSetOf for the shown packages and groupBy for the versions.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a recursive common table expression walks a table of dependency edges and finds all transitive dependencies.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: the tools print the tree, for example npm ls, cargo tree, go mod graph and mvn dependency:tree.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: hashtables for the graph and a recursive function, as in the C# example.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern does not walk a graph.
+html:
+  status: n/a
+  reason: markup does not walk a graph.
+css:
+  status: n/a
+  reason: style rules do not walk a graph.
