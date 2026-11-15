@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a Set of processed ids, or a Map with a time for each id to remove old ones; with a database, the id and the effect go in one transaction.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same Set or Map of ids as in JavaScript, with a type for the message.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a HashSet of ids with a VecDeque that keeps their order, so that the oldest id can be removed.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a hash table or a ring buffer of ids; in practice, a database table with a unique key on the message id.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::unordered_set of ids with a std::deque that keeps their order.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a LinkedHashMap with removeEldestEntry, as in Java, or a mutableSetOf ids; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of processed ids with a primary key; an INSERT of the id in the same transaction as the update fails for a duplicate, which rolls back the update.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: an associative array of ids, or grep -qx on a file of ids, for a script that processes files or lines once.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a HashSet of ids from .NET in a script; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern cannot remember which messages it has seen.
+html:
+  status: n/a
+  reason: markup has no messages and no receivers.
+css:
+  status: n/a
+  reason: style rules have no messages and no receivers.

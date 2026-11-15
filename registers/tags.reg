@@ -633,3 +633,7 @@ A019X3 splitter
 YHMGX5 pytest
 R4NH59 python-unittest
 P32KX6 test-framework
+83HZ5D claim-check
+0FHWAR competing-consumers
+B9TJ6Z idempotent-receiver
+BR46VV polling-consumer

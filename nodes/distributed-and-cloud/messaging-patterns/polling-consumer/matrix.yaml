@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: an async loop that awaits a receive call of a broker client, or an HTTP long poll, then processes the batch before it calls again.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same async poll loop as in JavaScript, with a type for the message.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: std::sync::mpsc::Receiver has try_recv for no wait and recv_timeout for a wait with a limit.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a loop that calls a receive function of a client library with a timeout, or pthread_cond_timedwait on an in-process queue.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a queue with std::condition_variable::wait_for gives a receive with a timeout.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: Channel.tryReceive for no wait and withTimeoutOrNull around receive for a wait with a limit; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a worker that runs a SELECT for the next unprocessed row at an interval; some databases add a wait for a notification.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a while loop with read -t on a named pipe, or a loop that calls a broker CLI and sleeps between calls.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a loop that calls a receive cmdlet or a .NET BlockingCollection with a timeout; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no channels and no receive call.
+html:
+  status: n/a
+  reason: markup has no messages and no consumers.
+css:
+  status: n/a
+  reason: style rules have no messages and no consumers.
