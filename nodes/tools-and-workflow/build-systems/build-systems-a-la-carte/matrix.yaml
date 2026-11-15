@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a Map from each key to a function that takes fetch, a closure for the suspending fetch, and arrays for the traces.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with a function type for a task that takes the fetch callback and returns a value.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a HashMap of boxed closures for the tasks. A suspending fetch that calls itself needs a function with the state passed in, or RefCell for the store.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: keys as array indices, tasks as function pointers that take a fetch callback and a context pointer, and arrays for the traces.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map of std::function tasks, and a recursive std::function or a member function for the suspending fetch.
+  alternative: the C# example.
+kotlin:
+  status: idiom
+  reason: a map of lambdas that take fetch, and data classes for the traces, as in the Java example.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: tables of keys, values and traces can store the persistent build information. The tasks themselves need a host language.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: make, ninja and other build tools are the usual way to run a build from the shell. A model of the scheduler and the rebuilder needs a general language.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: hashtables of script blocks for the tasks, and a recursive function for the suspending fetch.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no tasks or stored build information.
+html:
+  status: n/a
+  reason: markup has no tasks or stored build information.
+css:
+  status: n/a
+  reason: style rules have no tasks or stored build information.
