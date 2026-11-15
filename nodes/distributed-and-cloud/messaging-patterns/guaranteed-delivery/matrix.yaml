@@ -1,0 +1,45 @@
+javascript:
+  status: library
+  reason: broker clients give persistence; with amqplib, a durable queue, the persistent option on publish and a confirm channel; Node.js can also call fs.fsyncSync on a log file.
+  alternative: the Python example.
+typescript:
+  status: library
+  reason: the same broker clients and file calls as JavaScript.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a log file and File::sync_all from the standard library give the store, as in the Go example; broker clients such as lapin are crates.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: write and fsync from POSIX give the store; broker clients such as librabbitmq are libraries.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: the standard streams have no fsync, so a program calls the POSIX fsync on the file descriptor, or uses a broker library.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: the Java file calls, as in the Java example; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a queue table in a database is persistent when the transaction that inserts the message commits; the database does the writes and the recovery.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a script can write each message to a file and call sync before it reports success; there is no broker.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: the .NET FileStream calls of the C# example; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no messages and no store.
+html:
+  status: n/a
+  reason: markup has no messages and no store.
+css:
+  status: n/a
+  reason: style rules have no messages and no store.

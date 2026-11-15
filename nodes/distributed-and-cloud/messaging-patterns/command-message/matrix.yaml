@@ -1,0 +1,45 @@
+javascript:
+  status: stdlib
+  reason: JSON.stringify and JSON.parse give the body, and an object from the name of a command to a function is the dispatcher; a broker client such as amqplib is a library.
+  alternative: the Python example.
+typescript:
+  status: stdlib
+  reason: the same JSON calls as JavaScript, with a union type of the commands and a switch on the name.
+  alternative: the C# example.
+rust:
+  status: library
+  reason: an enum with one variant for each command is the dispatcher, but JSON needs the serde and serde_json crates.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a struct with a command code and a union of the arguments, and a switch on the code; the bytes on the wire are hand-written.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::variant of the command structs and std::visit give the dispatcher; the standard library has no JSON.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a sealed interface and a when expression give the dispatcher; JSON needs kotlinx.serialization, and no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of commands with a name and arguments, and a worker that reads each row and calls a stored procedure for its name.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a case statement on the first word of each line of a named pipe gives the dispatcher; there is no type for the arguments.
+  alternative: the Python example.
+powershell:
+  status: stdlib
+  reason: ConvertTo-Json and ConvertFrom-Json give the body, and a switch on the name gives the dispatcher; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern can match the text of a command, but it cannot run it.
+html:
+  status: n/a
+  reason: markup has no messages and no operations.
+css:
+  status: n/a
+  reason: style rules have no messages and no operations.

@@ -1,0 +1,44 @@
+javascript:
+  status: idiom
+  reason: a Map from a message type to an array of functions gives a bus inside one process; between processes, a broker client such as amqplib is a library.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same Map as JavaScript, with an interface for the common message, so that the compiler checks each adapter.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a HashMap from a message type to a Vec of boxed closures, with a struct for the common message; broker clients such as lapin are crates.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a table of function pointers for each message type gives a bus inside one process; libdbus gives D-Bus between processes.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map from a message type to a std::vector of std::function, with a struct for the common message.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a map of lists of functions and a data class for the common message, as in the Java example; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL can store the messages of a bus in a table, but it has no subscribers and no adapters.
+bash:
+  status: idiom
+  reason: dbus-send and dbus-monitor send and watch messages on D-Bus from a shell; there is no common data model of the programs.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: the .NET Dictionary and Action types of the C# example; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no messages and no programs to connect.
+html:
+  status: n/a
+  reason: markup has no messages and no programs to connect.
+css:
+  status: n/a
+  reason: style rules have no messages and no programs to connect.
