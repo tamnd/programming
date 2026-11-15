@@ -1,0 +1,41 @@
+typescript:
+  status: idiom
+  reason: one version column on the root row of the group, checked and increased by each save of any member; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: library
+  reason: Entity Framework Core can use a concurrency token on the root entity of the group; the code must change the token when only a member changes.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: one version column on the root row of the group, checked with an UPDATE that has the version in its WHERE clause, through a database client library.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: one version column on the root row of the group, checked with an UPDATE that has the version in its WHERE clause, through the SQLite C API.
+  alternative: the Go example.
+kotlin:
+  status: library
+  reason: Jakarta Persistence can lock the root entity with OPTIMISTIC_FORCE_INCREMENT, so its version changes when only a member changes; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: an UPDATE of the version on the root row, with the version in the WHERE clause, in the same transaction as the writes of the members.
+  alternative: the Python example.
+bash:
+  status: absent
+  reason: the shell has no records or transactions; a script can only call a database client that runs the SQL.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: one version column on the root row of the group, checked through ADO.NET; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no data to lock.
+html:
+  status: n/a
+  reason: markup has no data to lock.
+css:
+  status: n/a
+  reason: style rules have no data to lock.

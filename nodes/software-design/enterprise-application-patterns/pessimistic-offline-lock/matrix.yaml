@@ -1,0 +1,41 @@
+typescript:
+  status: idiom
+  reason: a lock table in the database with the resource as its primary key, used through a database client; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a lock table in the database with the resource as its primary key, used through ADO.NET or Entity Framework Core, with a timeout column for abandoned locks.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a lock table in the database with the resource as its primary key, used through a database client library.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a lock table with the resource as its primary key, used through the SQLite C API; a failed INSERT means that another session holds the lock.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a lock table in the database used through JDBC or Jakarta Persistence; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a lock table with the resource as its primary key; an INSERT takes the lock and fails when another session holds it, and a DELETE releases it.
+  alternative: the Python example.
+bash:
+  status: absent
+  reason: the shell has no transactions; a script can only call a database client that runs the SQL.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a lock table in the database used through ADO.NET; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no data to lock.
+html:
+  status: n/a
+  reason: markup has no data to lock.
+css:
+  status: n/a
+  reason: style rules have no data to lock.

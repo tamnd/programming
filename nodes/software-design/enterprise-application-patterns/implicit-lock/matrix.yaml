@@ -1,0 +1,41 @@
+typescript:
+  status: idiom
+  reason: a mapper that wraps another mapper and takes the lock in each find, behind one interface; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a decorator that implements the mapper interface and takes the lock before each find, given to the code through dependency injection.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a mapper class that wraps another mapper behind an abstract base class and takes the lock in each find.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a struct of function pointers for the mapper, and a locking version of the struct that takes the lock and then calls the plain functions.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a class that implements the mapper interface with by delegation and overrides find to take the lock; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: absent
+  reason: SQL has no layer of code above the queries that the application calls; the locks are rows or statements that each caller must use.
+  alternative: the Python example.
+bash:
+  status: absent
+  reason: the shell has no mappers or business transactions.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a class that wraps the mapper and takes the lock in each find; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no data to lock.
+html:
+  status: n/a
+  reason: markup has no data to lock.
+css:
+  status: n/a
+  reason: style rules have no data to lock.
