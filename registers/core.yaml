@@ -15566,7 +15566,7 @@ items:
     group: "tier-1-toolchains"
     name: "JUnit 5"
     target: "junit-5"
-    status: "planned"
+    status: "node"
     reason: "The test framework of Java in the language register (spec 08.2), a tier-1 language."
   - part: tools
     group: "tier-1-toolchains"
@@ -16130,7 +16130,7 @@ items:
     group: "by-hand"
     name: "JUnit"
     target: "junit"
-    status: "planned"
+    status: "node"
     reason: "The main test framework of Java."
   - part: tools
     group: "by-hand"
