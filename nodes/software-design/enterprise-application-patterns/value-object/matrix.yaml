@@ -1,0 +1,41 @@
+typescript:
+  status: idiom
+  reason: a class with readonly fields and an equals method; objects compare by identity, so a map key must be a string or number made from the value.
+  alternative: the JavaScript example.
+csharp:
+  status: native
+  reason: a record or a readonly record struct gets value equality, a hash and a with expression for changed copies.
+  alternative: the Java example.
+cpp:
+  status: native
+  reason: a class with const members and a defaulted operator==, copied by value; a std::hash specialization makes it a key of an unordered map.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a struct passed by value; C has no == for structs, so the code writes a function that compares the fields.
+  alternative: the Go example.
+kotlin:
+  status: native
+  reason: a data class with val properties gets equals, hashCode and copy; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: native
+  reason: a row value or a composite type compares by its fields, and SQL values have no identity.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: strings are values that compare with = and are copied on assignment; a compound value is a string with a fixed format.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a class that overrides Equals and GetHashCode; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects.
+html:
+  status: n/a
+  reason: markup has no objects.
+css:
+  status: n/a
+  reason: style rules have no objects.
