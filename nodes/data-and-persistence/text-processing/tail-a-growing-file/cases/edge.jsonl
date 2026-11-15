@@ -1,4 +1,5 @@
 {"name": "no-change", "class": ["no-change"], "args": {"path": "followed.txt", "initial": "x\n", "steps": ["poll", "poll"]}, "expect": [[], []]}
+{"name": "partial-line", "class": ["partial-line"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:ab", "poll", "append:c\nd", "poll", "append:\n", "poll"]}, "expect": [[], ["abc"], ["d"]]}
 {"name": "empty-line", "class": ["empty-line"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:\n\na\n", "poll"]}, "expect": [["", "", "a"]]}
 {"name": "crlf", "class": ["crlf"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:a\r\nb\r\n", "poll"]}, "expect": [["a\r", "b\r"]]}
 {"name": "truncate-and-write", "class": ["truncate"], "args": {"path": "followed.txt", "initial": "", "steps": ["append:aaaa\n", "poll", "truncate:b\n", "poll"]}, "expect": [["aaaa"], ["b"]]}
