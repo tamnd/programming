@@ -1192,14 +1192,14 @@ items:
     area: "getting-started"
     name: "Argument Passing"
     target: "python/getting-started/argument-passing"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Argument Passing\", in \"Using the Python Interpreter\")."
   - part: features
     group: "python"
     area: "getting-started"
     name: "Interactive Mode"
     target: "python/getting-started/interactive-mode"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Interactive Mode\", in \"Using the Python Interpreter\")."
   - part: features
     group: "python"
@@ -1213,14 +1213,14 @@ items:
     area: "syntax"
     name: "Source Code Encoding"
     target: "python/syntax/source-code-encoding"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Source Code Encoding\", in \"Using the Python Interpreter\")."
   - part: features
     group: "python"
     area: "values-and-types"
     name: "Numbers"
     target: "python/values-and-types/numbers"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Numbers\", in \"An Informal Introduction to Python\")."
   - part: features
     group: "python"
