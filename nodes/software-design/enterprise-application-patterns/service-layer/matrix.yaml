@@ -1,0 +1,40 @@
+typescript:
+  status: idiom
+  reason: a class with one method for each operation, often a NestJS provider with the Injectable decorator; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: an application service class with one method for each operation, registered in the ASP.NET Core container and used by the controllers, with a TransactionScope or a database transaction in each method.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a class with one member function for each operation, which calls the domain classes and a database client library.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a set of functions for each operation over the domain structs, with BEGIN and COMMIT around the database calls.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a Spring service class with the Service annotation and Transactional methods; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL has no layer of operations over domain objects; a stored procedure for each operation is a transaction script.
+bash:
+  status: absent
+  reason: the shell has no objects, no transactions and no error types, so it cannot hold a layer over a domain model.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a class or a module with one function for each operation; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no operations and no transactions.
+html:
+  status: n/a
+  reason: markup has no business logic.
+css:
+  status: n/a
+  reason: style rules have no business logic.

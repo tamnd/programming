@@ -124,7 +124,7 @@ The loaded `Money` is a new object, but it is equal to `Money(5000, "EUR")` beca
 
 ## Example
 
-Each example file saves two employments, one with an end date and one without, and prints the flat rows. A missing end date is a null column. It loads both and builds new `DateRange` and `Money` values from the columns. Ann gets a raise: the program puts a new `Money` value into her employment and saves it, and the salary of Bo does not change. The last query finds the salaries above 4500 EUR with the columns of the value, which the database can read and index as other columns. The Python file uses SQLite. The JavaScript, Java, Go and Rust files keep the table in memory as flat rows of columns.
+Each example file saves two employments, one with an end date and one without, and prints the flat rows. A missing end date is a null column. It loads both and builds new `DateRange` and `Money` values from the columns. Ann gets a raise: the program puts a new `Money` value into the employment of Ann and saves it, and the salary of Bo does not change. The last query finds the salaries above 4500 EUR with the columns of the value, which the database can read and index as other columns. The Python file uses SQLite. The JavaScript, Java, Go and Rust files keep the table in memory as flat rows of columns.
 
 ## Consequences
 

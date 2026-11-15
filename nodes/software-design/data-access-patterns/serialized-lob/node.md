@@ -53,7 +53,7 @@ Serialized LOB "Saves a graph of objects by serializing them into a single large
 
 ## Problem
 
-Fowler starts from a graph of small objects: "Object models often contain complicated graphs of small objects. Much of the information in these structures isn't in the objects but in the links between them."[^1] His example is the organization hierarchy of each customer. In memory it is a simple tree. In tables it is a department table with a parent key, and a walk up or down the tree needs one query or one join for each level. But the program only reads and writes the tree as a whole, together with its customer.
+Fowler starts from a graph of small objects: "Object models often contain complicated graphs of small objects. Much of the information in these structures isn't in the objects but in the links between them."[^1] Fowler's example is the organization hierarchy of each customer. In memory it is a simple tree. In tables it is a department table with a parent key, and a walk up or down the tree needs one query or one join for each level. But the program only reads and writes the tree as a whole, together with its customer.
 
 ## Solution
 

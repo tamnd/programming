@@ -45,9 +45,9 @@ sources:
 
 ## Idea
 
-An enterprise application is the kind of program that a business runs on: a payroll system, a booking system, an accounting system or a web shop. Martin Fowler chose the term for the systems in his book on their architecture, and he says that "there is no formal definition for this term".[^1] His catalog of the book's patterns gives a short description: "Enterprise applications are about the display, manipulation, and storage of large amounts of often complex data; together with the support or automation of business processes with that data."[^2] Fowler also says what they are not: "they are different from embedded systems, control systems, telecoms, or desktop productivity software."[^2]
+An enterprise application is the kind of program that a business runs on: a payroll system, a booking system, an accounting system or a web shop. Martin Fowler chose the term for the systems in the book Patterns of Enterprise Application Architecture, and says that "there is no formal definition for this term".[^1] The catalog of the book's patterns gives a short description: "Enterprise applications are about the display, manipulation, and storage of large amounts of often complex data; together with the support or automation of business processes with that data."[^2] Fowler also says what they are not: "they are different from embedded systems, control systems, telecoms, or desktop productivity software."[^2]
 
-The name is about the kind of problem, not the size of the company. Fowler: "Enterprise applications can be large or small."[^1] In his view, "even small start-ups rely on software that I would call an enterprise application".[^1]
+The name is about the kind of problem, not the size of the company. Fowler: "Enterprise applications can be large or small."[^1] In Fowler's view, "even small start-ups rely on software that I would call an enterprise application".[^1]
 
 The program below shows one of the marks of an enterprise application. Two users want the last seat on a flight. The program does not use threads or locks to protect the seat. The transaction of the database does it.
 
@@ -103,8 +103,8 @@ The Python, Java and Go examples of this page show the same booking system. Only
 
 ## Variations and related ideas
 
-- **Enterprise software.** In general use, the word enterprise means a large company. Wikipedia defines enterprise software as "computer software that has been specially developed or adapted to meet the complex requirements of larger organizations".[^7] Fowler's term is wider, and he notes that the word "has taken on connotations which don't quite fit my usage."[^1]
-- **Information systems.** Fowler's working title for the book was Information Systems Architecture. He did not use it because the term information systems also had connotations that he did not want.[^1]
+- **Enterprise software.** In general use, the word enterprise means a large company. Wikipedia defines enterprise software as "computer software that has been specially developed or adapted to meet the complex requirements of larger organizations".[^7] Fowler's term is wider. Fowler notes that the word "has taken on connotations which don't quite fit my usage."[^1]
+- **Information systems.** Fowler's working title for the book was Information Systems Architecture. Fowler did not use it, because the term information systems also had connotations that did not fit.[^1]
 - **Domain logic.** The patterns for the business logic are [[transaction-script]], [[domain-model]] and [[table-module]], often with a [[service-layer]] on top.[^2]
 - **Data source.** The patterns that connect the logic to the database are [[active-record]], [[data-mapper]], [[table-data-gateway]] and [[row-data-gateway]], with the behavioral patterns [[unit-of-work]] and [[identity-map]].[^2] The [[object-relational-impedance-mismatch]] is the reason that this part is hard.
 
@@ -121,6 +121,6 @@ Fowler gives the main cost of a rich object model: "The primary cost is the awkw
 
 ## History
 
-Fowler wrote Patterns of Enterprise Application Architecture with Dave Rice and others, and it was published in 2002.[^3] The book has a short tutorial part and a reference part of about forty patterns, with code examples in Java and C#.[^3] Its introduction defines the term enterprise application.[^1][^9] In 2014, Fowler wrote a post with the definition, and he said that "enterprise application" still seemed better to him than any other term he could think of.[^1]
+Fowler wrote Patterns of Enterprise Application Architecture with Dave Rice and others, and it was published in 2002.[^3] The book has a short tutorial part and a reference part of about forty patterns, with code examples in Java and C#.[^3] Its introduction defines the term enterprise application.[^1][^9] In 2014, Fowler wrote a post with the definition, and said that no other term that came to mind was better than "enterprise application".[^1]
 
 ## References

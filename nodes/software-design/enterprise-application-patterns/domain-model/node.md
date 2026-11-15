@@ -14,7 +14,7 @@ intent: "An object model of the domain that incorporates both behavior and data.
 history:
   year: 2002
   people: [Martin Fowler]
-  note: Fowler named the pattern in Patterns of Enterprise Application Architecture (2002). Eric Evans built his book Domain-Driven Design on the same idea.
+  note: Fowler named the pattern in Patterns of Enterprise Application Architecture (2002). The book Domain-Driven Design by Eric Evans is built on the same idea.
 see_also: [transaction-script, table-module, enterprise-application, data-mapper, active-record, replace-conditional-with-polymorphism, strategy-pattern, unit-of-work]
 sources:
   - url: https://martinfowler.com/eaaCatalog/domainModel.html
