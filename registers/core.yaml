@@ -15590,7 +15590,7 @@ items:
     group: "tier-1-toolchains"
     name: "dotnet"
     target: "dotnet"
-    status: "card"
+    status: "node"
     reason: "The formatter of C# in the language register (spec 08.2), a tier-1 language."
   - part: tools
     group: "tier-1-toolchains"
@@ -15818,13 +15818,13 @@ items:
     group: "by-hand"
     name: "Maven"
     target: "maven"
-    status: "planned"
+    status: "node"
     reason: "The build tool and package manager of Java."
   - part: tools
     group: "by-hand"
     name: "Gradle"
     target: "gradle"
-    status: "card"
+    status: "node"
     reason: "The build tool of Kotlin, of Android and of many Java projects."
   - part: tools
     group: "by-hand"
