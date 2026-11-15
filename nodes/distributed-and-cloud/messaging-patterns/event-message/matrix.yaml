@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: an EventEmitter of Node.js or an EventTarget gives events inside one process; between processes, a broker client such as amqplib is a library.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same EventEmitter as JavaScript, with a union type of the events, so that the compiler checks each handler.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a Vec of boxed closures gives a topic, and an enum gives the event types; JSON needs the serde crates.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: an array of function pointers gives a topic, and a struct with a type code gives the event; there is no JSON in the standard library.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::vector of std::function gives a topic, and a std::variant of the event structs gives the types.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a list of functions and a sealed interface of the events, as in the Java example; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: an outbox table with one row for each event, and a reader that copies new rows to the broker.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: tee can copy each line of an event stream to many named pipes, one for each subscriber; there is no type or id of an event.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: Register-ObjectEvent and Register-EngineEvent give events inside one session; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern can match the type of an event, but it cannot send or receive events.
+html:
+  status: n/a
+  reason: markup has no messages; DOM events belong to the JavaScript of the page.
+css:
+  status: n/a
+  reason: style rules have no messages.
