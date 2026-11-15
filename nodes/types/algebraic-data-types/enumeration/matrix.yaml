@@ -1,0 +1,21 @@
+kotlin:
+  status: native
+  reason: an enum class has one object for each constant, and its entries property lists them; no example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: native
+  reason: the enum keyword declares a set of named integer constants; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: idiom
+  reason: Bash has no enumeration type, but a set of readonly variables can name the values.
+sql:
+  status: idiom
+  reason: a CHECK constraint or a lookup table limits a column to a fixed set of values, and some systems have an ENUM type.
+regex:
+  status: n/a
+  reason: a pattern has no types.
+html:
+  status: n/a
+  reason: markup has no types.
+css:
+  status: n/a
+  reason: style rules have no types.

@@ -1,0 +1,21 @@
+kotlin:
+  status: native
+  reason: a class or a sealed interface can have properties of its own type, such as a Cons class with a tail of the list type. No example file because kotlinc is not installed on the machine that recorded the examples.
+powershell:
+  status: idiom
+  reason: an object property can hold another object of the same shape, so nested hashtables or custom objects form lists and trees; no example file because pwsh is not installed on the machine that recorded the examples.
+bash:
+  status: n/a
+  reason: Bash has no types that can refer to themselves.
+sql:
+  status: idiom
+  reason: a table can have a foreign key to itself, and a recursive common table expression walks the rows; no example file because the examples use the core languages.
+regex:
+  status: n/a
+  reason: a pattern has no types.
+html:
+  status: n/a
+  reason: markup has no types; a document is a tree of elements.
+css:
+  status: n/a
+  reason: style rules have no types.

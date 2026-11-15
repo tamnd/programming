@@ -762,3 +762,7 @@ EWXKGS python/atoms-and-primaries
 Z0P99C python/numeric-literals
 X3K37K python/operators-and-delimiters
 VTP0B6 python/raw-strings
+DS22BP enumeration
+S5GV9J recursive-type
+66NR5A row-polymorphism
+N42S89 union-type
