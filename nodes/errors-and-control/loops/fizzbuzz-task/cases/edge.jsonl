@@ -1,0 +1,4 @@
+{"name":"zero","class":["empty"],"args":{"n":0},"expect":[]}
+{"name":"one","class":["single"],"args":{"n":1},"expect":["1"]}
+{"name":"three","class":["boundary"],"args":{"n":3},"expect":["1","2","Fizz"]}
+{"name":"five","class":["boundary"],"args":{"n":5},"expect":["1","2","Fizz","4","Buzz"]}

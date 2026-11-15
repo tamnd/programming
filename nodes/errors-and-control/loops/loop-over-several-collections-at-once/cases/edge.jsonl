@@ -1,0 +1,6 @@
+{"name":"shorter-first","class":["shortest"],"args":{"lower":["a"],"upper":["A","B"],"digits":[1,2,3]},"expect":["aA1"]}
+{"name":"shorter-last","class":["shortest"],"args":{"lower":["a","b","c"],"upper":["A","B","C"],"digits":[1]},"expect":["aA1"]}
+{"name":"one-empty","class":["empty"],"args":{"lower":["a","b"],"upper":[],"digits":[1,2]},"expect":[]}
+{"name":"all-empty","class":["empty"],"args":{"lower":[],"upper":[],"digits":[]},"expect":[]}
+{"name":"negative","class":["negative"],"args":{"lower":["a"],"upper":["A"],"digits":[-5]},"expect":["aA-5"]}
+{"name":"empty-strings","class":["empty-string"],"args":{"lower":["","b"],"upper":["A",""],"digits":[1,2]},"expect":["A1","b2"]}

@@ -1,0 +1,12 @@
+# The contract of the task "write a while loop" (spec 10.2). The function halves n with integer division while it is greater than 0.
+problem: write-a-while-loop
+entry: halvings
+params:
+  - name: n
+    type: int
+    pre: "0 <= n <= 2147483647"
+returns:
+  type: "list<int>"
+  post: "the values n, n / 2, n / 4, ... while the value is greater than 0, where / drops the remainder; the empty list when n is 0"
+checker: exact
+edge_classes: [empty, single, odd, limit]

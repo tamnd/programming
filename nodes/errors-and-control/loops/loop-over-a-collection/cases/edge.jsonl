@@ -1,0 +1,5 @@
+{"name":"empty","class":["empty"],"args":{"items":[]},"expect":0}
+{"name":"single","class":["single"],"args":{"items":[7]},"expect":7}
+{"name":"negative","class":["negative"],"args":{"items":[-5,2,-1]},"expect":-4}
+{"name":"limit","class":["limit"],"args":{"items":[2147483647,2147483647,2]},"expect":4294967296}
+{"name":"limit-low","class":["limit"],"args":{"items":[-2147483648,-2147483648]},"expect":-4294967296}

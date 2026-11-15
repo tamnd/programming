@@ -1,0 +1,18 @@
+# The contract of the task "loop with a step or downward" (spec 10.2). The function counts from start by step while the value has not passed stop.
+problem: loop-with-a-step
+entry: count_by
+params:
+  - name: start
+    type: int
+    pre: "a 32-bit signed integer"
+  - name: stop
+    type: int
+    pre: "a 32-bit signed integer"
+  - name: step
+    type: int
+    pre: "a 32-bit signed integer that is not 0; the result has at most 10000 values"
+returns:
+  type: "list<int>"
+  post: "the values start + k * step for k = 0, 1, 2, ... that are <= stop when step > 0, or >= stop when step < 0; the empty list when start is already past stop"
+checker: exact
+edge_classes: [empty, single, negative, limit]
