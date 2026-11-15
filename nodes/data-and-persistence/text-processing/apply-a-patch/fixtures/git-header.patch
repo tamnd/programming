@@ -1,0 +1,8 @@
+diff --git a/main.py b/main.py
+index 1234567..89abcde 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,2 @@ def main():
+ def main():
+-    print(1)
++    print(2)

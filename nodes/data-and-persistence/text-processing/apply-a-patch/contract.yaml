@@ -1,0 +1,16 @@
+# The contract of the task "apply a patch" (spec 10.2). Each solution reads a UTF-8 file and a unified diff, and returns the text that the diff makes from the file.
+problem: apply-a-patch
+entry: apply_patch_file
+params:
+  - name: file
+    type: string
+    pre: "the path of the old file, relative to the node directory; the file holds valid UTF-8"
+  - name: patch
+    type: string
+    pre: "the path of a unified diff for one file, relative to the node directory; the file holds valid UTF-8"
+returns:
+  type: string
+  post: "the new text. The lines of the patch outside the hunks, such as the --- and +++ lines, are skipped. Each hunk starts with a line @@ -start,count +start,count @@, where a missing count is 1 and text after the second @@ is skipped. A space line is a line that stays, a - line is a line that goes, a + line is a line that comes, and an empty line is an empty line that stays. A line that starts with a backslash removes the LF of the line before it. The counts give the end of each hunk. The space and - lines of each hunk must be equal to the lines of the old file at the start of the old range, or after the line start if the old range is empty, with no fuzz and no offset. The hunks are in order, and the lines of the old file between them stay. A line ends after LF, and a CR stays in the line"
+checker: exact
+edge_classes: [empty, no-count, empty-range, incomplete-line, empty-line, crlf, header-like, non-ascii]
+# The toolchain has no field for errors yet. cases/errors.jsonl holds the input on which each solution must report an error and return no result: not-found when a file does not exist, mismatch when a hunk does not match the old file at its place, and malformed when the patch has no hunk, a hunk header that is not valid, a line with another mark, or fewer lines than the counts of a hunk.

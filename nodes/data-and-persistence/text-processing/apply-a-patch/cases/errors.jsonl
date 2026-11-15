@@ -1,0 +1,3 @@
+{"name": "not-found", "args": {"file": "fixtures/missing.txt", "patch": "fixtures/change-a-line.patch"}, "error": "not-found"}
+{"name": "mismatch", "args": {"file": "fixtures/mismatch.txt", "patch": "fixtures/mismatch.patch"}, "error": "mismatch"}
+{"name": "malformed", "args": {"file": "fixtures/malformed.txt", "patch": "fixtures/malformed.patch"}, "error": "malformed"}
