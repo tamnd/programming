@@ -1,0 +1,2 @@
+{"name":"two-matches","args":{"items":["a","b","a","c"],"target":"a"},"expect":[0,2]}
+{"name":"words","args":{"items":["red","green","blue","green"],"target":"green"},"expect":[1,3]}

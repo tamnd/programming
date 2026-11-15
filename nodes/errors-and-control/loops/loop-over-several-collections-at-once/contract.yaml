@@ -1,0 +1,18 @@
+# The contract of the task "loop over several collections at once" (spec 10.2). The function walks three lists side by side and stops at the end of the shortest one.
+problem: loop-over-several-collections-at-once
+entry: zip_join
+params:
+  - name: lower
+    type: "list<string>"
+    pre: "0 to 1000 strings"
+  - name: upper
+    type: "list<string>"
+    pre: "0 to 1000 strings"
+  - name: digits
+    type: "list<int>"
+    pre: "0 to 1000 items; each item is a 32-bit signed integer"
+returns:
+  type: "list<string>"
+  post: "for each index i below the smallest length, lower[i] + upper[i] + the decimal form of digits[i]"
+checker: exact
+edge_classes: [shortest, empty, negative, empty-string]

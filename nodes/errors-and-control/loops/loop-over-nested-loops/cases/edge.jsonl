@@ -1,0 +1,8 @@
+{"name":"first-cell","class":["first"],"args":{"grid":[[9,1],[2,3]],"target":9},"expect":[0,0]}
+{"name":"last-cell","class":["last"],"args":{"grid":[[1,2],[3,9]],"target":9},"expect":[1,1]}
+{"name":"row-major","class":["order"],"args":{"grid":[[1,2,9],[9,3,4]],"target":9},"expect":[0,2]}
+{"name":"missing","class":["missing"],"args":{"grid":[[1,2],[3,4]],"target":9},"expect":[-1,-1]}
+{"name":"empty-grid","class":["empty"],"args":{"grid":[],"target":1},"expect":[-1,-1]}
+{"name":"empty-rows","class":["empty"],"args":{"grid":[[],[],[5]],"target":5},"expect":[2,0]}
+{"name":"ragged","class":["ragged"],"args":{"grid":[[1],[2,3,4],[5,6]],"target":6},"expect":[2,1]}
+{"name":"negative","class":["negative"],"args":{"grid":[[-1,-2],[-3,-4]],"target":-3},"expect":[1,0]}

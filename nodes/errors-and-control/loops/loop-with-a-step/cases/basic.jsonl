@@ -1,0 +1,5 @@
+{"name":"by-two","args":{"start":2,"stop":8,"step":2},"expect":[2,4,6,8]}
+{"name":"down","args":{"start":10,"stop":0,"step":-1},"expect":[10,9,8,7,6,5,4,3,2,1,0]}
+{"name":"uneven","args":{"start":1,"stop":10,"step":3},"expect":[1,4,7,10]}
+{"name":"past-stop","args":{"start":0,"stop":9,"step":4},"expect":[0,4,8]}
+{"name":"down-by-three","args":{"start":10,"stop":1,"step":-3},"expect":[10,7,4,1]}

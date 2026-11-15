@@ -1,0 +1,7 @@
+{"name":"empty-up","class":["empty"],"args":{"start":5,"stop":1,"step":1},"expect":[]}
+{"name":"empty-down","class":["empty"],"args":{"start":1,"stop":5,"step":-1},"expect":[]}
+{"name":"single","class":["single"],"args":{"start":3,"stop":3,"step":7},"expect":[3]}
+{"name":"negative","class":["negative"],"args":{"start":-3,"stop":3,"step":2},"expect":[-3,-1,1,3]}
+{"name":"limit-up","class":["limit"],"args":{"start":2147483640,"stop":2147483647,"step":5},"expect":[2147483640,2147483645]}
+{"name":"limit-down","class":["limit"],"args":{"start":-2147483640,"stop":-2147483648,"step":-5},"expect":[-2147483640,-2147483645]}
+{"name":"big-step","class":["limit"],"args":{"start":0,"stop":10,"step":2147483647},"expect":[0]}

@@ -1,0 +1,12 @@
+# The contract of the task "write a counted loop" (spec 10.2). The function counts with a loop from 1 to n.
+problem: write-a-counted-loop
+entry: count_to
+params:
+  - name: n
+    type: int
+    pre: "0 <= n <= 1000"
+returns:
+  type: "list<int>"
+  post: "the list [1, 2, ..., n]; the empty list when n is 0"
+checker: exact
+edge_classes: [empty, single, boundary]

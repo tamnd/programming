@@ -1,0 +1,12 @@
+# The contract of the task "loop over a collection" (spec 10.2). The function adds the items of a list with a for-each loop.
+problem: loop-over-a-collection
+entry: total
+params:
+  - name: items
+    type: "list<int>"
+    pre: "0 to 1000 items; each item is a 32-bit signed integer"
+returns:
+  type: int
+  post: "the sum of the items as a 64-bit integer; 0 for the empty list"
+checker: exact
+edge_classes: [empty, single, negative, limit]

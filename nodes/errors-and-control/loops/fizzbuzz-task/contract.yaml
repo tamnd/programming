@@ -1,0 +1,12 @@
+# The contract of the task "FizzBuzz" (spec 10.2). The function counts from 1 to n and replaces the multiples of 3 and 5 with words.
+problem: fizzbuzz-task
+entry: fizzbuzz
+params:
+  - name: n
+    type: int
+    pre: "0 <= n <= 10000"
+returns:
+  type: "list<string>"
+  post: "for each i from 1 to n: FizzBuzz when 15 divides i, else Fizz when 3 divides i, else Buzz when 5 divides i, else i in decimal"
+checker: exact
+edge_classes: [empty, single, boundary]

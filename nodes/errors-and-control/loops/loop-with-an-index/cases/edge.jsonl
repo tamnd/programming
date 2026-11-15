@@ -1,0 +1,6 @@
+{"name":"empty","class":["empty"],"args":{"items":[],"target":"a"},"expect":[]}
+{"name":"none","class":["none"],"args":{"items":["a","b"],"target":"z"},"expect":[]}
+{"name":"all","class":["all"],"args":{"items":["x","x","x"],"target":"x"},"expect":[0,1,2]}
+{"name":"last","class":["last"],"args":{"items":["a","b","c"],"target":"c"},"expect":[2]}
+{"name":"case","class":["case"],"args":{"items":["A","a"],"target":"a"},"expect":[1]}
+{"name":"empty-string","class":["empty-string"],"args":{"items":["","a",""],"target":""},"expect":[0,2]}

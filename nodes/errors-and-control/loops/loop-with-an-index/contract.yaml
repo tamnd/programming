@@ -1,0 +1,15 @@
+# The contract of the task "loop with an index" (spec 10.2). The function loops with the index and the item, and collects the index of each match.
+problem: loop-with-an-index
+entry: positions
+params:
+  - name: items
+    type: "list<string>"
+    pre: "0 to 1000 strings"
+  - name: target
+    type: string
+    pre: "any string"
+returns:
+  type: "list<int>"
+  post: "the 0-based index of each item that equals target, in increasing order; empty when no item matches"
+checker: exact
+edge_classes: [empty, none, all, last, case, empty-string]

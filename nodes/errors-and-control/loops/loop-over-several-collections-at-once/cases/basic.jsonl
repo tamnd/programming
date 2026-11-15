@@ -1,0 +1,2 @@
+{"name":"rosetta","args":{"lower":["a","b","c"],"upper":["A","B","C"],"digits":[1,2,3]},"expect":["aA1","bB2","cC3"]}
+{"name":"words","args":{"lower":["x","y"],"upper":["X","Y"],"digits":[10,20]},"expect":["xX10","yY20"]}
