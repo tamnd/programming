@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a Map from each target to its inputs, and the hash function of the crypto module of Node.js for the traces.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with types for the rules and the traces.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a HashMap of rules and a HashMap of traces per target. The standard library has no SHA-256, so a hash needs a crate.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: arrays of times and of hashes per target. The standard library has no SHA-256, so a hash needs a library.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map of rules and of traces. The standard library has no SHA-256, so a hash needs a library.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: maps of rules and traces, with java.security.MessageDigest for the hash.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of inputs per target with the hash at the last build, joined with a table of the current hashes, lists the targets that are out of date.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: the test operator -nt of the shell compares the modification times of two files, as make does.
+  alternative: the make run on this page.
+powershell:
+  status: idiom
+  reason: Get-FileHash computes a hash of a file, and the LastWriteTime property gives its time.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no build steps.
+html:
+  status: n/a
+  reason: markup has no build steps.
+css:
+  status: n/a
+  reason: style rules have no build steps.

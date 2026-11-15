@@ -1,0 +1,44 @@
+javascript:
+  status: idiom
+  reason: a Map of rules and a recursive function, as in the Python example.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with types for a rule and a store entry.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a HashMap of rules and a recursive function that returns a Result.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: an array of rule structs and a recursive function.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map of rules and a recursive function.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a map of data classes and a recursive function.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: a query has no build steps.
+bash:
+  status: idiom
+  reason: a shell script can run build steps in order, and make runs the steps of a makefile, as in the run on this page.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a hashtable of rules and a recursive function, or a script that runs the build steps in order.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no build steps.
+html:
+  status: n/a
+  reason: markup has no build steps.
+css:
+  status: n/a
+  reason: style rules have no build steps.

@@ -1,0 +1,169 @@
+---
+tag: CAQ8P1
+kind: concept
+slug: build-system-concept
+name: Build system
+aliases: [build system, build tool, build automation, makefile, build file, target, recipe]
+area: tools-and-workflow/build-systems
+level: intro
+summary: >-
+  A build system runs the steps that turn source files into programs and libraries. It reads the targets, their dependencies and the action for each, and runs only the steps that are out of date.
+applies_to: core-languages
+viz: optional
+formal: none
+history:
+  year: 1975
+  people: [Stuart Feldman]
+  note: Make was in use on Unix systems from 1975, and Stuart Feldman described it in a paper of 1979.
+see_also: [build-graph, incremental-builds, build-a-project, compilers-and-interpreters]
+sources:
+  - url: https://bazel.build/basics/build-systems
+    title: Bazel documentation, Why a Build System?
+    locator: What is a build system; Can't I just use a compiler; What about shell scripts
+  - url: https://www.gnu.org/software/make/manual/html_node/Overview.html
+    title: GNU make manual (version 4.4.1), 1 Overview of make
+    locator: first paragraph; the authors of GNU make; conformance to POSIX.2
+  - url: https://www.gnu.org/software/make/manual/html_node/Rule-Introduction.html
+    title: GNU make manual (version 4.4.1), 2.1 What a Rule Looks Like
+    locator: target, prerequisite and recipe
+  - url: https://www.gnu.org/software/make/manual/html_node/How-Make-Works.html
+    title: GNU make manual (version 4.4.1), 2.3 How make Processes a Makefile
+    locator: the default goal; when an object file is recompiled
+  - paper: doi:10.1145/3236774
+    title: Andrey Mokhov, Neil Mitchell and Simon Peyton Jones, Build Systems à la Carte, Proceedings of the ACM on Programming Languages 2 (ICFP), Article 79, 2018
+    locator: 1 Introduction; 2.1 Make (Definition 2.1, Minimality); 3.1 Common Vocabulary for Build Systems; Table 1
+  - url: https://bazel.build/basics/task-based-builds
+    title: Bazel documentation, Task-Based Build Systems
+    locator: understanding task-based build systems; the dark side of task-based build systems
+  - url: https://bazel.build/basics/artifact-based-builds
+    title: Bazel documentation, Artifact-Based Build Systems
+    locator: understanding artifact-based build systems (Blaze, BUILD files, the steps of bazel build); a functional perspective
+  - url: https://github.com/Kitware/CMake/blob/v3.28.3/Help/manual/cmake.1.rst
+    title: CMake 3.28.3 documentation source, cmake(1)
+    locator: Description; Introduction to CMake Buildsystems
+  - url: https://ninja-build.org/manual.html
+    title: The Ninja build system manual (version 1.13.1)
+    locator: Introduction; Philosophical overview; Design goals
+  - url: https://www.gnu.org/software/make/manual/html_node/Automatic-Prerequisites.html
+    title: GNU make manual (version 4.4.1), 4.14 Generating Prerequisites Automatically
+    locator: first paragraphs
+  - url: https://bazel.build/basics/hermeticity
+    title: Bazel documentation, Hermeticity
+    locator: Overview; Identifying non-hermeticity
+  - paper: doi:10.1002/spe.4380090402
+    title: Stuart I. Feldman, Make, a program for maintaining computer programs, Software, Practice and Experience 9(4), pages 255 to 265, 1979
+    locator: abstract
+  - url: https://pubs.opengroup.org/onlinepubs/9799919799/utilities/make.html
+    title: The Open Group Base Specifications Issue 8 (IEEE Std 1003.1-2024), make
+    locator: NAME; DESCRIPTION
+---
+
+## Idea
+
+A program is rarely one file. It has many source files, generated files, libraries and resources, and each part needs its own command to turn it into the next part. A **build system** is the tool that knows these steps and runs them in the right order. The Bazel documentation says that all build systems transform the source code written by engineers into executable binaries.[^1] The GNU Make manual says that make "automatically determines which pieces of a large program need to be recompiled, and issues commands to recompile them."[^2]
+
+Two jobs make a build system more than a list of commands:
+
+- **Order.** A step can run only after the steps that make its inputs. A link step needs the object files, and a compile step can need a generated header.
+- **Skip.** A step that is up to date does not run again. After a change to one file, only the steps that depend on that file run.
+
+A compiler alone does neither job. The Bazel documentation gives the example of `javac *.java`: it is enough for one directory of Java code, but it cannot find code in other parts of the file system, and it builds only one language.[^1] Shell scripts can put the steps in order, but a script that builds everything each time is slow, and logic in a script that finds what to rebuild is complex, and it is hard to get right.[^1]
+
+## How it works
+
+**The description.** The user writes a build file that names the things to build. GNU Make calls each entry a rule with three parts.[^3]
+
+- A **target** "is usually the name of a file that is generated by a program". A target can also be the name of an action, such as `clean`.[^3]
+- A **prerequisite** "is a file that is used as input to create the target".[^3] Other tools call it a dependency.
+- A **recipe** "is an action that make carries out".[^3] Other tools call it a command, a task or an action.
+
+**The build.** The user asks for one target, or the tool takes a default. Make starts with the first target in the makefile, which is the default goal.[^4] Before it can process that rule, it must process the rules for the files that the target depends on.[^4] An object file is compiled again "if the source file, or any of the header files named as prerequisites, is more recent than the object file, or if the object file does not exist."[^4] A rule that the goal does not depend on is not processed.[^4]
+
+The run below builds a small C program with GNU Make on Linux. `app` depends on `main.o` and `util.o`, and each object file depends on its `.c` file and on `util.h`. The first `make` runs the three commands. The second `make` finds that all the targets are up to date and runs nothing. After `touch util.c`, only the steps that depend on `util.c` run.
+
+```bash run id=make-first-build
+d=$(mktemp -d)
+cd "$d"
+cat >util.h <<'END'
+int util(void);
+END
+cat >util.c <<'END'
+#include "util.h"
+int util(void) { return 42; }
+END
+cat >main.c <<'END'
+#include <stdio.h>
+#include "util.h"
+int main(void) { printf("%d\n", util()); return 0; }
+END
+cat >Makefile <<'END'
+app: main.o util.o
+	cc -o app main.o util.o
+main.o: main.c util.h
+	cc -c main.c
+util.o: util.c util.h
+	cc -c util.c
+END
+echo '$ make'
+make
+./app
+echo '$ make'
+make
+echo '$ touch util.c; make'
+touch util.c
+make
+cd /
+rm -rf "${d:?}"
+```
+
+```output for=make-first-build
+$ make
+cc -c main.c
+cc -c util.c
+cc -o app main.o util.o
+42
+$ make
+make: 'app' is up to date.
+$ touch util.c; make
+cc -c util.c
+cc -o app main.o util.o
+```
+
+**A common vocabulary.** Mokhov, Mitchell and Peyton Jones describe all build systems with the same few parts.[^5] A **store** maps **keys** to **values**: for a software build, the store is the file system, the keys are file names and the values are file contents.[^5] Some values are inputs that the user writes, such as `main.c`, and the other values are made by tasks.[^5] A **task** computes one value from the values of other keys. The paper separates two choices inside a build system: the order in which the tasks run (the scheduler) and the decision whether a task runs again (the rebuilder).[^5] The [[build-graph]] page explains the order, and the [[incremental-builds]] page explains the decision.
+
+The paper names the aim of the skip step. "A build system is minimal if it executes tasks at most once per build and only if they transitively depend on inputs that changed since the previous build."[^5] Make tries to be minimal with two ideas: it uses file modification times to find the files that changed, and it runs the tasks in a topological order of the dependency graph.[^5]
+
+## In languages
+
+The examples build a tiny build system in memory. Three rules describe a C program, and a clock gives each value a time, as a file system does. `build` visits the dependencies of a target first, keeps a set of the targets that it visited in this build, and runs a rule only if the target is missing or a dependency is newer than the target. The output shows the same pattern as the Make run: a first build runs all the steps, a second build runs none, and a change to one input runs only the steps that depend on it. A missing input with no rule stops the build with an error, as Make does.
+
+## Variations and related ideas
+
+- **Task-based build systems.** The build file names tasks, and each task is a script that can do anything and can depend on other tasks. The Bazel documentation lists Ant, Maven, Gradle, Grunt and Rake as task based.[^6] Because the tool cannot see what a script does, it must be careful when it runs tasks in parallel, and it cannot always tell whether a task is already done.[^6]
+- **Artifact-based build systems.** The build file is a declarative list of the artifacts to build, their dependencies and a limited set of options. The user says what to build, and the tool decides how.[^7] Each Bazel target has a `name`, its `srcs` and its `deps`.[^7] The Bazel documentation compares this to functional programming, where a program is more like a set of equations than a list of statements.[^7]
+- **Build system generators.** CMake does not build the program itself. A project describes its build in the CMake language, and CMake generates a buildsystem, such as a `Makefile`, for a build tool through a backend called a generator.[^8]
+- **Low-level build tools.** Ninja reads a file that describes the dependency graph and runs the commands. Its manual says that Ninja aims to be an assembler, where other build systems are high-level languages, and that another program should generate its input files.[^9]
+- **Language build tools.** `go build`, `cargo build` and `dotnet build` know the layout of a project in one language. The build file is a short project file, such as `go.mod`, `Cargo.toml` or a `.csproj` file. The [[build-a-project]] page uses them.
+- **Spreadsheets.** The paper treats Excel as a build system: the cells are the keys, and a formula is a task that depends on other cells.[^5]
+
+## Pitfalls
+
+- **A missing dependency.** If the build file does not name an input of a step, the tool does not rebuild the step when that input changes. The result is a stale output that looks correct. Header files are the usual case in C. The GNU Make manual says that you must update the makefile each time you add or remove an `#include`, and it shows how a compiler can write these rules for you.[^10]
+- **A clean build as a habit.** When an incremental build gives a wrong result, a common reaction is to delete all the outputs and build again. This hides the missing dependency, and each build then takes the full time.
+- **Steps that read hidden inputs.** A step that reads the clock, a tool installed on the host or a file outside the build description can give a different output for the same inputs. The tool cannot see these inputs, so it cannot rebuild when they change. The Bazel documentation lists timestamps and system binaries that differ between hosts as common causes.[^11]
+- **Order from the file, not from the dependencies.** If a step works only because it comes after another step in the build file, it breaks when the tool runs steps in parallel or in a different order. Name each dependency.
+- **Tabs in a makefile.** Each recipe line must start with a tab character. The GNU Make manual calls this "an obscurity that catches the unwary".[^3]
+
+## Cost
+
+A build system adds a step before the real work: it reads the build file, makes the graph and checks each target. Even when nothing changed, the tool must do this work to find that nothing needs to run. The Ninja manual says that build systems get slow when they need to make decisions, so Ninja leaves the decisions to the program that generates its input.[^9] Ninja was made for this cost. Its author writes that on the Chromium project, other build systems took ten seconds to start building after a change to one file, and that Ninja takes under a second.[^9]
+
+In return, the tool saves the time of the steps that it skips, and it can run independent steps at the same time. The work to write and maintain the build file is the other cost. The Bazel documentation says that build scripts can grow until engineers spend almost as much time on them as on the code.[^1]
+
+## History
+
+Stuart Feldman described Make in a paper of 1979. The paper says that Make "has been in use on UNIX systems since 1975".[^12] The paper describes a program that keeps track of the relationships between the parts of a program, and that issues the commands needed to make the parts consistent after changes.[^12] Make became part of POSIX, which describes it as a utility to "maintain, update, and regenerate files".[^13] GNU Make was written by Richard Stallman and Roland McGrath, and it conforms to section 6.2 of POSIX.2.[^2]
+
+Large projects later moved to tools with stronger guarantees. Google's Blaze was the first artifact-based build system, and Bazel is its open-source version.[^7] Ninja came from the work on the Chromium browser.[^9] In 2018, Mokhov, Mitchell and Peyton Jones gave a framework that describes Make, Excel, Shake and Bazel as combinations of a scheduler and a rebuilder.[^5]
+
+## References
