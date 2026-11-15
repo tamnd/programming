@@ -1,5 +1,5 @@
 ---
-tag: NEW-reproducible-builds
+tag: 595JTP
 kind: practice
 slug: reproducible-builds
 name: Reproducible builds
@@ -26,18 +26,18 @@ sources:
   - url: https://reproducible-builds.org/docs/timestamps/
     title: reproducible-builds.org, Timestamps
     locator: the introduction and the second section
-  - url: https://reproducible-builds.org/specs/source-date-epoch/
-    title: Chris Lamb and Ximin Luo, SOURCE_DATE_EPOCH specification, revision 1.1
-    locator: Revision History; Specification
-  - url: https://www.gnu.org/software/tar/manual/html_node/Reproducibility.html
-    title: GNU tar manual, 8.4 Making tar Archives More Reproducible
-    locator: the list of options
   - url: https://reproducible-builds.org/docs/stable-outputs/
     title: reproducible-builds.org, Stable order for outputs
     locator: the introduction; Perl; Python
+  - url: https://www.gnu.org/software/tar/manual/html_node/Reproducibility.html
+    title: GNU tar manual, 8.4 Making tar Archives More Reproducible
+    locator: the list of options
   - url: https://reproducible-builds.org/docs/build-path/
     title: reproducible-builds.org, Build path
     locator: the compiler flags -fdebug-prefix-map, -fmacro-prefix-map and -ffile-prefix-map
+  - url: https://reproducible-builds.org/specs/source-date-epoch/
+    title: Chris Lamb and Ximin Luo, SOURCE_DATE_EPOCH specification, revision 1.1
+    locator: Revision History; Specification
   - url: https://github.com/golang/go/blob/go1.26.5/src/cmd/go/alldocs.go
     title: Go 1.26.5 source, cmd/go documentation (alldocs.go)
     locator: Compile packages and dependencies, the -trimpath flag
@@ -57,6 +57,7 @@ sources:
     title: reproducible-builds.org, History
     locator: An old idea; Private property + Snowden effect; Kick-off
 ---
+
 ## Statement
 
 "A build is reproducible if given the same source code, build environment and build instructions, any party can recreate bit-by-bit identical copies of all specified artifacts."[^1] The authors or distributors of the software decide which attributes of the environment, the instructions and the source are relevant, and which artifacts must be identical.[^1]
@@ -67,8 +68,8 @@ Most people install software as compiled binaries, which are much harder to insp
 
 Russ Cox calls an input relevant when the output of a build can change with it, and he calls a build reproducible when it can run again with all the same relevant inputs.[^2] The hard part is the unintentional inputs, which the build uses but nobody meant it to use. "The most common unintentional input in build systems is the current time."[^2] The file system records a time for each file that a build writes, and most archive formats record those times again.[^4] Other unintentional inputs are:
 
-- **Order.** Python sets and dictionaries, Perl hashes, Rust `HashMap` and Ruby `Hash` objects can list their keys in a different order on each run.[^7] The order of entries in a directory is another source, and GNU tar has an option to remove it from an archive.[^6]
-- **Paths.** Compilers can record the build directory in debug information, and the C macro `__FILE__` expands to a path.[^8]
+- **Order.** Python sets and dictionaries, Perl hashes, Rust `HashMap` and Ruby `Hash` objects can list their keys in a different order on each run.[^5] The order of entries in a directory is another source, and GNU tar has an option to remove it from an archive.[^6]
+- **Paths.** Compilers can record the build directory in debug information, and the C macro `__FILE__` expands to a path.[^7]
 - **The environment.** The relevant attributes of the environment usually include the dependencies and their versions, the build flags, and the environment variables that the build uses.[^1]
 
 ## Examples
@@ -113,7 +114,7 @@ archive 2: differ
 archive 3: identical
 ```
 
-Archive 1 differs because tar records the modification time of each file. Archive 2 uses options from the list that the GNU tar manual gives for reproducible archives. `--sort=name` removes the order of the directory entries, `--mtime` sets one time for all members, and `--owner=0 --group=0 --numeric-owner` remove the owner and the user and group names.[^6] The archives still differ, because the build wrote its path and the current time into `build-info.txt`. Archive 3 is identical, because the build took its date from `SOURCE_DATE_EPOCH`. The specification defines this variable as a UNIX timestamp, and says that its value "MUST be reproducible (deterministic) across different executions of the build, depending only on the source code."[^5] It "SHOULD be set to the last modification time of the source", and build processes must use it in place of the current date and time for timestamps that they embed.[^5]
+Archive 1 differs because tar records the modification time of each file. Archive 2 uses options from the list that the GNU tar manual gives for reproducible archives. `--sort=name` removes the order of the directory entries, `--mtime` sets one time for all members, and `--owner=0 --group=0 --numeric-owner` remove the owner and the user and group names.[^6] The archives still differ, because the build wrote its path and the current time into `build-info.txt`. Archive 3 is identical, because the build took its date from `SOURCE_DATE_EPOCH`. The specification defines this variable as a UNIX timestamp, and says that its value "MUST be reproducible (deterministic) across different executions of the build, depending only on the source code."[^8] It "SHOULD be set to the last modification time of the source", and build processes must use it in place of the current date and time for timestamps that they embed.[^8]
 
 The second example runs one build step twice in a child process, with the hash seed `PYTHONHASHSEED` set to 1 and to 2. The step writes a manifest of package names, first in the order of a set and then sorted.
 
@@ -151,13 +152,13 @@ sorted seed 1 and seed 2: identical
 bzip2,expat,gdbm,gettext,libffi,libxcrypt,mpdecimal,ncurses,openssl,readline,sqlite,tcl,tk,uuid,xz,zlib
 ```
 
-A fixed `PYTHONHASHSEED` makes the order of dictionaries and sets the same on every run.[^7] For Perl, reproducible-builds.org gives the sort of the keys as the first fix, because then the output does not depend on the seed at all.[^7]
+A fixed `PYTHONHASHSEED` makes the order of dictionaries and sets the same on every run.[^5] For Perl, reproducible-builds.org gives the sort of the keys as the first fix, because then the output does not depend on the seed at all.[^5]
 
 Compilers and build tools have settings for these inputs:
 
 | Tool | Setting | Effect |
 | --- | --- | --- |
-| GCC and Clang | `-ffile-prefix-map=OLD=NEW` | rewrites path prefixes in debug information and in `__FILE__`[^8] |
+| GCC and Clang | `-ffile-prefix-map=OLD=NEW` | rewrites path prefixes in debug information and in `__FILE__`[^7] |
 | Go | `go build -trimpath` | "remove all file system paths from the resulting executable"[^9] |
 | rustc | `--remap-path-prefix FROM=TO` | rewrites source path prefixes in all output, including diagnostics and debug information[^10] |
 | C# compiler | `Deterministic` | "Produce byte-for-byte equivalent output from the same input source."[^11] |
@@ -174,6 +175,6 @@ Compilers and build tools have settings for these inputs:
 
 ## History
 
-GNU tools had reproducible builds in the early 1990s. In Debian, the idea came up in 2000 and again in 2007, and both times it got little support.[^14] Interest came back with Bitcoin, whose users needed to trust their downloads: the first versions of Gitian, which drives builds with virtual machines and Git, date from 2011.[^14] After the surveillance disclosures of 2013, Mike Perry made the Tor Browser build reproducibly, and Lunar then organized a discussion at DebConf13 in July 2013.[^14] A first mass rebuild found 24% of 5240 Debian source packages reproducible. A second one, made before FOSDEM 2014 with binutils in deterministic mode, found 67% of 6887.[^14] Version 1.0 of the `SOURCE_DATE_EPOCH` specification is dated 1 September 2015.[^5] Cox reports that Thompson told him that his compiler attack was found, because the build of the compiler stopped being reproducible.[^2]
+GNU tools had reproducible builds in the early 1990s. In Debian, the idea came up in 2000 and again in 2007, and both times it got little support.[^14] Interest came back with Bitcoin, whose users needed to trust their downloads: the first versions of Gitian, which drives builds with virtual machines and Git, date from 2011.[^14] After the surveillance disclosures of 2013, Mike Perry made the Tor Browser build reproducibly, and Lunar then organized a discussion at DebConf13 in July 2013.[^14] A first mass rebuild found 24% of 5240 Debian source packages reproducible. A second one, made before FOSDEM 2014 with binutils in deterministic mode, found 67% of 6887.[^14] Version 1.0 of the `SOURCE_DATE_EPOCH` specification is dated 1 September 2015.[^8] Cox reports that Thompson told him that his compiler attack was found, because the build of the compiler stopped being reproducible.[^2]
 
 ## References

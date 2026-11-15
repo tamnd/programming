@@ -1,5 +1,5 @@
 ---
-tag: NEW-remote-caching-and-execution
+tag: SM46N3
 kind: technique
 slug: remote-caching-and-execution
 name: Remote caching and execution
@@ -19,12 +19,12 @@ sources:
   - url: https://github.com/bazelbuild/remote-apis/blob/v2.12.0/build/bazel/remote/execution/v2/remote_execution.proto
     title: Remote Execution API v2.12.0, remote_execution.proto
     locator: the services Execution, ActionCache and ContentAddressableStorage; the messages Action and Digest
-  - url: https://bazel.build/remote/rbe
-    title: Bazel documentation, Remote Execution Overview
-    locator: the introduction
   - url: https://abseil.io/resources/swe-book/html/ch18.html
     title: Erik Kuefler, Build Systems and Build Philosophy, chapter 18 of Software Engineering at Google, edited by Lisa Carey
     locator: Remote caching; Remote execution; Distributed builds at Google
+  - url: https://bazel.build/remote/rbe
+    title: Bazel documentation, Remote Execution Overview
+    locator: the introduction
   - url: https://bazel.build/docs/sandboxing
     title: Bazel documentation, Sandboxing
     locator: the introduction (undeclared inputs and remote caching)
@@ -38,6 +38,7 @@ sources:
     title: Go 1.26.5 source, cmd/go documentation (alldocs.go)
     locator: Build and test caching; Environment variables (GOCACHEPROG)
 ---
+
 ## Purpose
 
 A team builds the same code on many machines: the workstation of each developer and each continuous integration (CI) job. Without a shared cache, each machine compiles every file that it has not compiled before, even if another machine compiled the same file from the same inputs a minute earlier. A remote cache lets the team share build outputs, and "If your build is reproducible, the outputs from one machine can be safely reused on another machine".[^1] Remote execution goes one step further and runs the actions themselves on a pool of workers, not on the machine of the user.[^2]
@@ -367,8 +368,8 @@ shared remote cache
 
 - Many machines build the same code: developers, CI jobs, or both. At Google, many artifacts come from a cache and are not built from scratch.[^2]
 - The build is hermetic, so that each action declares all of its inputs. For a remote cache to work, the build system must guarantee that the same set of inputs gives exactly the same output on any machine.[^2]
-- The build is large enough that the network is faster than a local compile. The latency of the network and the distance to the cache server decide whether the cache helps.[^5]
-- Remote execution helps when one machine is too slow for the whole build. It also gives the team one consistent environment in which actions run.[^4]
+- The build is large enough that the network is faster than a local compile. The latency of the network and the distance to the cache server decide whether the cache helps.[^4]
+- Remote execution helps when one machine is too slow for the whole build. It also gives the team one consistent environment in which actions run.[^5]
 
 ## Pitfalls
 
@@ -382,11 +383,11 @@ shared remote cache
 
 | Tool | Cache | Remote use |
 | --- | --- | --- |
-| Bazel | action cache and CAS; `--disk_cache` uses a local directory[^1] | `--remote_cache` with any HTTP/1.1 server that supports `PUT` and `GET`; remote execution over gRPC[^1][^4] |
+| Bazel | action cache and CAS; `--disk_cache` uses a local directory[^1] | `--remote_cache` with any HTTP/1.1 server that supports `PUT` and `GET`; remote execution over gRPC[^1][^5] |
 | Remote Execution API | the services `ActionCache` and `ContentAddressableStorage`[^3] | the service `Execution`, which runs an action on remote workers[^3] |
 | Gradle | task outputs, under a key from the task inputs; enable with `--build-cache`[^7] | a remote HTTP build cache[^7] |
 | ccache | results of previous C and C++ compilations[^8] | `remote_storage`, which ccache queries after the local cache[^8] |
 | Go | `go` caches build outputs in `GOCACHE`[^9] | `GOCACHEPROG` names a command that implements an external build cache[^9] |
-| Google internal | ObjFS stores build outputs; Forge runs actions[^5] | the Forge Scheduler keeps a cache of action results and queues other actions for executors[^5] |
+| Google internal | ObjFS stores build outputs; Forge runs actions[^4] | the Forge Scheduler keeps a cache of action results and queues other actions for executors[^4] |
 
 ## References

@@ -1,5 +1,5 @@
 ---
-tag: NEW-hermetic-builds
+tag: NDCT0C
 kind: practice
 slug: hermetic-builds
 name: Hermetic builds
@@ -26,9 +26,6 @@ sources:
   - url: https://github.com/containers/bubblewrap/blob/v0.9.0/bwrap.xml
     title: bubblewrap 0.9.0, the bwrap manual page source
     locator: the options --ro-bind, --bind, --symlink, --proc, --dev, --unshare-all, --die-with-parent, --clearenv and --setenv
-  - url: https://github.com/containers/bubblewrap/blob/v0.9.0/README.md
-    title: bubblewrap 0.9.0, README
-    locator: Sandbox security
   - url: https://bazel.build/remote/caching
     title: Bazel documentation, Remote Caching
     locator: Known issues (Environment variables leaking into an action; Bazel does not track tools outside a workspace)
@@ -44,7 +41,11 @@ sources:
   - url: https://docs.npmjs.com/cli/v11/commands/npm-ci
     title: npm Docs, npm ci
     locator: Description
+  - url: https://github.com/containers/bubblewrap/blob/v0.9.0/README.md
+    title: bubblewrap 0.9.0, README
+    locator: Sandbox security
 ---
+
 ## Statement
 
 "When given the same input source code and product configuration, a hermetic build system always returns the same output by isolating the build from changes to the host system."[^1] A hermetic build does not depend on the libraries and other software that happen to be on the host. It depends on specific versions of the build tools and of the dependencies.[^1]
@@ -121,18 +122,18 @@ flags: none
 flags: -O2
 ```
 
-Bazel puts only the environment variables that `--action_env` allows into an action definition, so that machines with different values of a variable such as `PATH` can share cache hits.[^6]
+Bazel puts only the environment variables that `--action_env` allows into an action definition, so that machines with different values of a variable such as `PATH` can share cache hits.[^5]
 
 Most language tools have a file in the repository that pins the tool or the dependencies:
 
 | Tool | File | Effect |
 | --- | --- | --- |
-| Go | `go.mod`, the `go` and `toolchain` lines | the `go` line sets the minimum Go version, the `toolchain` line sets a preferred toolchain, and the `go` command can download that toolchain[^7] |
-| Rust | `rust-toolchain.toml` | the `channel` key of the `[toolchain]` table names the toolchain for the directory tree[^8] |
-| .NET | `global.json` | selects the version of the .NET SDK, and `rollForward` sets the range of versions that it accepts[^9] |
-| npm | `package-lock.json` with `npm ci` | `npm ci` stops with an error if the lock file does not match `package.json`, and "It will never write to package.json or any of the package-locks"[^10] |
+| Go | `go.mod`, the `go` and `toolchain` lines | the `go` line sets the minimum Go version, the `toolchain` line sets a preferred toolchain, and the `go` command can download that toolchain[^6] |
+| Rust | `rust-toolchain.toml` | the `channel` key of the `[toolchain]` table names the toolchain for the directory tree[^7] |
+| .NET | `global.json` | selects the version of the .NET SDK, and `rollForward` sets the range of versions that it accepts[^8] |
+| npm | `package-lock.json` with `npm ci` | `npm ci` stops with an error if the lock file does not match `package.json`, and "It will never write to package.json or any of the package-locks"[^9] |
 
-The last script asks for a Go version that is not installed. With `GOTOOLCHAIN=local`, the `go` command uses only its bundled toolchain.[^7] It does not build with the wrong version: it stops.
+The last script asks for a Go version that is not installed. With `GOTOOLCHAIN=local`, the `go` command uses only its bundled toolchain.[^6] It does not build with the wrong version: it stops.
 
 ```bash run id=go-toolchain
 d=$(mktemp -d)
@@ -150,17 +151,17 @@ go: go.mod requires go >= 1.99 (running go 1.26.5; GOTOOLCHAIN=local)
 exit status: 1
 ```
 
-With the default setting `GOTOOLCHAIN=auto`, the same `go` command looks for the requested toolchain in the `PATH`, or downloads and caches a copy of it.[^7]
+With the default setting `GOTOOLCHAIN=auto`, the same `go` command looks for the requested toolchain in the `PATH`, or downloads and caches a copy of it.[^6]
 
 ## Criticism and limits
 
-- **Hermeticity is a matter of degree.** Bazel does not track tools outside the workspace, such as a compiler in `/usr/bin/`. Two users with different compilers can then share cache hits wrongly, because the outputs differ but the action hash is the same.[^6] The example above also binds the `/usr` of the host into the sandbox, so the tools there are undeclared inputs.
+- **Hermeticity is a matter of degree.** Bazel does not track tools outside the workspace, such as a compiler in `/usr/bin/`. Two users with different compilers can then share cache hits wrongly, because the outputs differ but the action hash is the same.[^5] The example above also binds the `/usr` of the host into the sandbox, so the tools there are undeclared inputs.
 - **A sandbox costs time and caches.** On Linux, sandboxed builds are rarely more than a few percent slower, but sandboxing effectively turns off any cache that a tool keeps for itself.[^3]
-- **Sandboxes depend on the platform.** `linux-sandbox` and `darwin-sandbox` do not work when they are nested, because of limits in the mechanisms of the operating system.[^3] bubblewrap is not a complete sandbox with a security policy; the program that calls it must choose the options.[^5]
+- **Sandboxes depend on the platform.** `linux-sandbox` and `darwin-sandbox` do not work when they are nested, because of limits in the mechanisms of the operating system.[^3] bubblewrap is not a complete sandbox with a security policy; the program that calls it must choose the options.[^10]
 - **Every tool and dependency must be declared.** The Bazel documentation says that a move to Bazel is easier when the existing build is made more hermetic first. Common sources of non-hermeticity are actions that write build IDs or timestamps, system binaries that differ between hosts, and builds that write to the source tree.[^1]
 
 ## History
 
-At Google, Blaze is the main component of the build system. In 2015, Google released an implementation of Blaze as open source, with the name Bazel.[^2] The book chapter describes how its sandboxed actions and its hashed external dependencies make builds hermetic.[^2] Starting with Go 1.21, the Go distribution consists of a `go` command and a bundled toolchain, and the `go` command selects a toolchain from the `go` and `toolchain` lines.[^7]
+At Google, Blaze is the main component of the build system. In 2015, Google released an implementation of Blaze as open source, with the name Bazel.[^2] The book chapter describes how its sandboxed actions and its hashed external dependencies make builds hermetic.[^2] Starting with Go 1.21, the Go distribution consists of a `go` command and a bundled toolchain, and the `go` command selects a toolchain from the `go` and `toolchain` lines.[^6]
 
 ## References

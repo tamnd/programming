@@ -1,5 +1,5 @@
 ---
-tag: NEW-build-systems-a-la-carte
+tag: FQQR5F
 kind: concept
 slug: build-systems-a-la-carte
 name: Build system models
@@ -20,18 +20,18 @@ sources:
   - paper: doi:10.1145/3236774
     title: Andrey Mokhov, Neil Mitchell and Simon Peyton Jones, Build Systems à la Carte, Proceedings of the ACM on Programming Languages 2 (ICFP), Article 79, 2018
     locator: 1 Introduction; 2 Background (Table 1); 3.1 Common Vocabulary; 3.4 and 3.5 (applicative and monadic tasks); 3.6 Correctness; 4.1 The Scheduler; 4.2 The Rebuilder; 4.4 (Table 2); 6.2 Parallelism; 6.3 Impure Computations; 6.4 Cloud Implementation; 8 Conclusions
-  - paper: doi:10.1017/S0956796820000088
-    title: Andrey Mokhov, Neil Mitchell and Simon Peyton Jones, Build systems à la carte, Theory and practice, Journal of Functional Programming 30, e11, 2020
-    locator: the abstract and the publication record
-  - paper: doi:10.1145/2364527.2364538
-    title: Neil Mitchell, Shake before building, replacing make with Haskell, Proceedings of the 17th ACM SIGPLAN International Conference on Functional Programming (ICFP 2012), pages 55 to 66
-    locator: the publication record
   - url: https://ninja-build.org/manual.html
     title: The Ninja build system manual
     locator: The Ninja log; Rule variables (restat)
   - url: https://bazel.build/remote/caching
     title: Bazel documentation, Remote Caching
     locator: the two types of data in the remote cache (the action cache and the CAS)
+  - paper: doi:10.1145/2364527.2364538
+    title: Neil Mitchell, Shake before building, replacing make with Haskell, Proceedings of the 17th ACM SIGPLAN International Conference on Functional Programming (ICFP 2012), pages 55 to 66
+    locator: the publication record
+  - paper: doi:10.1017/S0956796820000088
+    title: Andrey Mokhov, Neil Mitchell and Simon Peyton Jones, Build systems à la carte, Theory and practice, Journal of Functional Programming 30, e11, 2020
+    locator: the abstract and the publication record
 ---
 
 ## Idea
@@ -77,7 +77,7 @@ The paper puts the pairs in a table. Eight of the twelve cells hold a real build
 
 The authors say that each empty cell gives a build system that works. They call the suspending scheduler with constructive traces Cloud Shake, because it would join the dynamic dependencies of Shake with the shared cache of Bazel.[^1]
 
-**Early cutoff.** When a task runs again and gives the same value as before, the tasks that depend on it do not need to run. Shake and Bazel stop the build there, and Make and Excel do not.[^1] With file times, Make cannot mark a file clean without marking the files that depend on it dirty.[^1] Ninja gives a form of early cutoff with the `restat` rule variable: after the command runs, "Each output whose modification time the command did not change will be treated as though it had never needed to be built."[^4]
+**Early cutoff.** When a task runs again and gives the same value as before, the tasks that depend on it do not need to run. Shake and Bazel stop the build there, and Make and Excel do not.[^1] With file times, Make cannot mark a file clean without marking the files that depend on it dirty.[^1] Ninja gives a form of early cutoff with the `restat` rule variable: after the command runs, "Each output whose modification time the command did not change will be treated as though it had never needed to be built."[^2]
 
 ## In languages
 
@@ -99,8 +99,8 @@ At the end, both systems hold the same values. Both are correct, and only the Sh
 
 - **Parallel builds.** The paper models one thread, and says that all the build systems that it covers can build independent keys in parallel. The extra complexity stays in the scheduler.[^1]
 - **Impure tasks.** Real tasks are not always functions. A task can read a dependency that the build system does not track, such as the version of the compiler. It can be non-deterministic, as when a parallel compiler gives different but equal results. It can be volatile, as when it must run in every build. The paper models a volatile task as one that depends on a special key whose value changes in each build.[^1]
-- **Cloud builds.** Constructive traces lead to more design questions: how much data to send, workers in the cloud that run the tasks, eviction of old values from the cache, and shallow builds that download only the final products.[^1] Bazel keeps an action cache, "a map of action hashes to action result metadata", and a content-addressable store of output files.[^5] See [[remote-caching-and-execution]].
-- **Self-tracking.** Most build systems track changes to the inputs but not to the tasks. Excel and Ninja also notice a change to a task.[^1] Ninja keeps a log of the command that built each file, and builds the file again when the command line changed.[^4]
+- **Cloud builds.** Constructive traces lead to more design questions: how much data to send, workers in the cloud that run the tasks, eviction of old values from the cache, and shallow builds that download only the final products.[^1] Bazel keeps an action cache, "a map of action hashes to action result metadata", and a content-addressable store of output files.[^3] See [[remote-caching-and-execution]].
+- **Self-tracking.** Most build systems track changes to the inputs but not to the tasks. Excel and Ninja also notice a change to a task.[^1] Ninja keeps a log of the command that built each file, and builds the file again when the command line changed.[^2]
 
 ## Pitfalls
 
@@ -118,6 +118,6 @@ A suspending scheduler needs tasks that can wait in the middle. Shake first used
 
 ## History
 
-Make was the main build tool for many years. The paper says that the challenges of scale then led large firms such as Microsoft, Facebook and Google to write their own build systems.[^1] Neil Mitchell presented Shake, a build system written in Haskell, at ICFP 2012.[^3] The paper says that Shake was made to handle dynamic dependencies without the loss of minimality.[^1] Mokhov, Mitchell and Peyton Jones presented *Build Systems à la Carte* at ICFP 2018. They wrote all the models in Haskell, so each model runs.[^1] The paper ends with a plan to build the monadic suspending cloud build system that the table suggests.[^1] An extended version, *Build systems à la carte: Theory and practice*, appeared in the Journal of Functional Programming in 2020.[^2]
+Make was the main build tool for many years. The paper says that the challenges of scale then led large firms such as Microsoft, Facebook and Google to write their own build systems.[^1] Neil Mitchell presented Shake, a build system written in Haskell, at ICFP 2012.[^4] The paper says that Shake was made to handle dynamic dependencies without the loss of minimality.[^1] Mokhov, Mitchell and Peyton Jones presented *Build Systems à la Carte* at ICFP 2018. They wrote all the models in Haskell, so each model runs.[^1] The paper ends with a plan to build the monadic suspending cloud build system that the table suggests.[^1] An extended version, *Build systems à la carte: Theory and practice*, appeared in the Journal of Functional Programming in 2020.[^5]
 
 ## References
