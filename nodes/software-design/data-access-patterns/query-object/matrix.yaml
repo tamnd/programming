@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: the same tree of criteria classes with types for the fields; query builders such as Knex and Kysely have this design; the JavaScript example shows it without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: LINQ is the query object of the language; a provider such as Entity Framework Core turns a query expression into SQL.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a tree of condition classes with virtual functions, or a std::variant of node types; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a tagged union for the nodes of the query, written to SQL text with placeholders and bound with the SQLite C API.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a sealed class hierarchy for the nodes, and a builder function with a lambda for the where clause; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: the query object writes SQL; in SQL itself the query is already text in the database language.
+bash:
+  status: n/a
+  reason: the shell has no objects to hold the criteria of a query.
+powershell:
+  status: idiom
+  reason: PowerShell classes can hold the criteria, and a script block can test objects in memory, as Where-Object does; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: markup has no query objects.
+css:
+  status: n/a
+  reason: style rules have no data access.

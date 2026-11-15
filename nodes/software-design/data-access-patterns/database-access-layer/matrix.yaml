@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: an interface for each physical view and a class for the logical layer, with the logical views as types; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: the physical views wrap ADO.NET commands and the logical layer is a class that the application gets by dependency injection; Entity Framework Core is a full layer of this kind.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: an abstract class for the physical view and a class for each layout; the standard library has no database access, so the physical classes call a C API such as SQLite.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a struct of function pointers for the physical view, with one set of functions for each table layout over the SQLite C API.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: an interface for the physical view and a class for the logical layer, as in Java; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: the layer hides the SQL from the application; SQL is what the physical layer sends, and views in SQL can only rename tables, not hold a transaction cache.
+bash:
+  status: n/a
+  reason: the shell has no objects or interfaces for the two layers.
+powershell:
+  status: idiom
+  reason: PowerShell classes for the physical views and the logical layer; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no layers and no storage.
+html:
+  status: n/a
+  reason: markup has no database access.
+css:
+  status: n/a
+  reason: style rules have no database access.
