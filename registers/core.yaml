@@ -14204,7 +14204,7 @@ items:
     group: "poeaa"
     name: "Query Object"
     target: "query-object"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
