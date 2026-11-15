@@ -15584,7 +15584,7 @@ items:
     group: "tier-1-toolchains"
     name: "xUnit"
     target: "xunit"
-    status: "planned"
+    status: "node"
     reason: "The test framework of C# in the language register (spec 08.2), a tier-1 language."
   - part: tools
     group: "tier-1-toolchains"
@@ -16142,7 +16142,7 @@ items:
     group: "by-hand"
     name: "xUnit.net"
     target: "xunit-net"
-    status: "planned"
+    status: "node"
     reason: "A test framework of .NET."
   - part: tools
     group: "by-hand"
