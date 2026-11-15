@@ -16058,7 +16058,7 @@ items:
     group: "by-hand"
     name: "Dependabot"
     target: "dependabot"
-    status: "planned"
+    status: "node"
     reason: "A service that updates the dependencies of a repository."
   - part: tools
     group: "by-hand"
