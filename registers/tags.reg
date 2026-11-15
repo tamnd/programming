@@ -599,3 +599,7 @@ XWFNBA implicit-lock
 2A1PFZ optimistic-offline-lock
 92KTZK pessimistic-offline-lock
 X4069W apply-a-patch
+97M5AX enterprise-integration-patterns
+DABD4B message-channel
+M7J197 point-to-point-channel
+8TWJAY publish-subscribe-channel
