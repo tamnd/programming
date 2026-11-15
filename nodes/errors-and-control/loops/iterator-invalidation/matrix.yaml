@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the arrays, maps and sets of JavaScript, so a change during a loop follows the rules of JavaScript. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin uses the collections of Java, so a change to a list in a for loop throws ConcurrentModificationException, and MutableIterator.remove and removeAll are safe. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash has no iterators. The loop for x in "${a[@]}" expands the array once, before the loop starts.
+powershell:
+  status: native
+  reason: A foreach loop over a .NET list uses its enumerator, so a change to the list fails with an error that the collection was modified. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query has no iterators. UPDATE and DELETE work on a set of rows.
+regex:
+  status: n/a
+  reason: A regular expression has no collections.
+html:
+  status: n/a
+  reason: HTML has no collections or loops.
+css:
+  status: n/a
+  reason: CSS has no collections or loops.

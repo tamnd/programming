@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the loops of JavaScript, so let and const in the loop head give each pass its own binding, and var shares one variable. No example file exists.
+kotlin:
+  status: native
+  reason: The variable of for (x in xs) is read-only, and a lambda in the body sees the value of its pass. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash has no closures. A function reads the global value of a variable when it runs.
+powershell:
+  status: idiom
+  reason: A script block reads variables when it runs, and the method GetNewClosure() copies them when it is made. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL has no closures.
+regex:
+  status: n/a
+  reason: A regular expression has no closures or loop variables.
+html:
+  status: n/a
+  reason: HTML has no closures or loops.
+css:
+  status: n/a
+  reason: CSS has no closures or loops.
