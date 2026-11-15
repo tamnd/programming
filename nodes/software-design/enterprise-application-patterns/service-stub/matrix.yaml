@@ -1,0 +1,41 @@
+typescript:
+  status: idiom
+  reason: an object that satisfies the interface of the service by its shape, given to the code in place of the real client.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a class that implements the interface of the service, registered in place of the real client in the tests.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a class that implements the abstract interface of the service, or a template parameter that the test fills with a stub type.
+  alternative: the Java example.
+c:
+  status: idiom
+  reason: a struct of function pointers that the test fills with stub functions, or a stub source file that the test build links in place of the real one.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: an object that implements the interface of the service; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a test database or schema with a stub table or view in place of data that comes from another system.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a function or a script earlier in PATH with the name of the real command, which prints canned output.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a function with the name of the real command, or Pester mocks in tests; no example is executed here because the test image has no pwsh.
+  alternative: the Python example.
+regex:
+  status: n/a
+  reason: a pattern calls no services.
+html:
+  status: n/a
+  reason: markup calls no services.
+css:
+  status: n/a
+  reason: style rules call no services.
