@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: abstract mapper classes with typed save and load methods that call super; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: an abstract generic mapper class with virtual Save and Load methods that each mapper overrides and calls base; Entity Framework Core has this structure inside it.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a hierarchy of mapper classes with virtual save and load functions that call the base class version; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: C has no inheritance; each mapper function calls the function for the fields of the base struct, and a table of function pointers chooses the mapper by type code.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: open or abstract mapper classes whose overrides call super, and a when expression on a sealed class that chooses the mapper; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL has no mapper classes; the tables belong to the inheritance mapping pattern that the mappers use.
+bash:
+  status: n/a
+  reason: the shell has no classes or inheritance to map.
+powershell:
+  status: idiom
+  reason: PowerShell classes support inheritance, so mapper classes can override Save and Load and call the base class; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no objects and no storage.
+html:
+  status: n/a
+  reason: markup has no mapper classes.
+css:
+  status: n/a
+  reason: style rules have no data access.

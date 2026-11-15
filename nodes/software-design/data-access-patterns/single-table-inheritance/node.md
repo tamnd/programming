@@ -16,7 +16,7 @@ history:
   year: 2002
   people: [Martin Fowler]
   note: Fowler named the pattern in Patterns of Enterprise Application Architecture (2002). Entity Framework Core calls it table-per-hierarchy, and Jakarta Persistence calls it the SINGLE_TABLE strategy.
-see_also: [class-table-inheritance, concrete-table-inheritance, identity-field, data-mapper, object-relational-impedance-mismatch]
+see_also: [class-table-inheritance, concrete-table-inheritance, inheritance-mappers, identity-field, data-mapper, object-relational-impedance-mismatch]
 sources:
   - url: https://martinfowler.com/eaaCatalog/singleTableInheritance.html
     title: Martin Fowler, Catalog of Patterns of Enterprise Application Architecture, Single Table Inheritance

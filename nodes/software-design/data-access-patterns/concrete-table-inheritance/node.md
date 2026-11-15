@@ -16,7 +16,7 @@ history:
   year: 2002
   people: [Martin Fowler]
   note: Fowler named the pattern in Patterns of Enterprise Application Architecture (2002) and notes that it is also called leaf table inheritance. Entity Framework Core calls it table-per-concrete-type, and Jakarta Persistence calls it the TABLE_PER_CLASS strategy.
-see_also: [single-table-inheritance, class-table-inheritance, identity-field, data-mapper, object-relational-impedance-mismatch]
+see_also: [single-table-inheritance, class-table-inheritance, inheritance-mappers, identity-field, data-mapper, object-relational-impedance-mismatch]
 sources:
   - url: https://martinfowler.com/eaaCatalog/concreteTableInheritance.html
     title: Martin Fowler, Catalog of Patterns of Enterprise Application Architecture, Concrete Table Inheritance

@@ -577,3 +577,6 @@ CDC2SN class-table-inheritance
 2N96RH concrete-table-inheritance
 8P897X single-table-inheritance
 09XWYW tail-a-growing-file
+HV8WRK inheritance-mappers
+PC8KPH metadata-mapping
+4N50T2 serialized-lob

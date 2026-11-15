@@ -5,7 +5,7 @@ slug: dependent-mapping
 name: Dependent Mapping
 aliases: [dependent mapping pattern, dependent object mapping, owned collection mapping]
 area: software-design/data-access-patterns
-level: core
+level: advanced
 summary: >-
   In Dependent Mapping, the mapper of an owner class also loads, saves and deletes the child objects that belong only to that owner, such as the tracks of an album.
 family: architectural
