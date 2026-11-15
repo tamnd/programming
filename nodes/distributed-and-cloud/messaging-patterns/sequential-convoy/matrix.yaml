@@ -1,0 +1,48 @@
+javascript:
+  status: library
+  reason: a client library of a broker with sessions or message groups, such as the Service Bus SDK, accepts a session and receives its messages in order.
+  alternative: the Python example.
+typescript:
+  status: library
+  reason: the same clients as in JavaScript, with a type for the operation in each message.
+  alternative: the C# example.
+rust:
+  status: library
+  reason: a client crate for the broker; one task for each locked session keeps the order inside the session.
+  alternative: the Go example.
+c:
+  status: library
+  reason: a client library for the broker; the C standard library has no messaging and no map.
+  alternative: the Go example.
+cpp:
+  status: library
+  reason: a client library for the broker; the standard library gives the map of queues for a local model.
+  alternative: the Java example.
+kotlin:
+  status: library
+  reason: a JVM client of the broker, as in Java, with a coroutine for each locked session.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of messages with a session column; a consumer takes the lock of one session with SELECT ... FOR UPDATE SKIP LOCKED and reads its rows by sequence number.
+  alternative: the Python example.
+bash:
+  status: absent
+  reason: a shell has no locks on groups of messages; use a broker client or one of the examples.
+  alternative: the Python example.
+powershell:
+  status: library
+  reason: the .NET client of the broker, as in C#, called from a script.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a regular expression matches text; it does not process messages.
+  alternative: the Python example.
+html:
+  status: n/a
+  reason: HTML is markup; it does not process messages.
+  alternative: the Python example.
+css:
+  status: n/a
+  reason: CSS styles documents; it does not process messages.
+  alternative: the Python example.

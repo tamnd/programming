@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a function sends the message to the main handler and a structuredClone copy to the tap handler; an EventEmitter can be the tap channel.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: the same as JavaScript, with one message type for both channels.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a clone of the message goes to a second std::sync::mpsc sender; the type system makes the copy explicit.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: a function writes the message to the main queue and a memcpy copy, with copies of the pointed-to data, to the tap queue.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a copy constructor gives the tap its own message, and two queues stand for the channels.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a data class copy goes to a second Channel of kotlinx.coroutines; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: an AFTER INSERT trigger copies each new row of a queue table to an audit table.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: tee copies each line of a pipe to a file and passes it on to the next command, as a wire tap does.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: Tee-Object copies the objects in a pipeline to a file or a variable and passes them on; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no channels and no messages.
+html:
+  status: n/a
+  reason: markup has no channels and no messages.
+css:
+  status: n/a
+  reason: style rules have no channels and no messages.
