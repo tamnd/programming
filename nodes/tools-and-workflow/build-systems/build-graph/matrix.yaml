@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a Map from each target to an array of dependencies, Kahn's method with an array of ready nodes, and a recursive search for a cycle.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with the type Map<string, string[]> for the rules.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a BTreeMap of rules keeps the names in order, and a BinaryHeap with Reverse or a BTreeSet holds the ready nodes.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: nodes as array indices, an adjacency list in arrays, and a queue of ready nodes in an array.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map of rules and a std::set or std::priority_queue of ready nodes.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a map of rules, a java.util.TreeSet or sortedSetOf for the ready nodes, and a recursive search for a cycle.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of edges and a recursive common table expression find the depth of each node, which gives the waves. A cycle needs a guard in the recursive query.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: the tsort utility of POSIX writes a topological order of the pairs in its input.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: hashtables for the rules and the counts, as in the C# example.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no graph of steps.
+html:
+  status: n/a
+  reason: markup has no graph of steps.
+css:
+  status: n/a
+  reason: style rules have no graph of steps.

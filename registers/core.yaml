@@ -13539,7 +13539,7 @@ items:
     group: "tools"
     name: "Build a project"
     target: "build-a-project"
-    status: "planned"
+    status: "node"
     reason: "A job with the toolchain that each programmer does. Related titles, found by keyword: Rust by Example (Cargo, Build Scripts)."
   - part: tasks
     group: "tools"
