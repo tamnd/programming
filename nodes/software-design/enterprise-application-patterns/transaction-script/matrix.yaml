@@ -1,0 +1,41 @@
+typescript:
+  status: idiom
+  reason: one exported async function for each request, often in an Express or NestJS handler, with the database calls in one transaction; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: one method for each request, often in an ASP.NET Core controller or a handler class, inside a TransactionScope or a database transaction.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: one function for each request over a database client library; the standard library has no database access.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: one function for each request over the SQLite C API, with BEGIN and COMMIT around the statements.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: one function for each request, often in a Spring service with @Transactional; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a stored procedure in PL/pgSQL, T-SQL or PL/SQL is a transaction script that runs in the database; this project has no example in a procedural SQL dialect.
+  alternative: the Python example.
+bash:
+  status: absent
+  reason: a shell script for each job can call a database client such as sqlite3 or psql, but the shell has no transactions or error types of its own.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a function or a script file for each job, with the database calls through ADO.NET; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no procedures and no database.
+html:
+  status: n/a
+  reason: markup has no business logic.
+css:
+  status: n/a
+  reason: style rules have no business logic.

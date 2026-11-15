@@ -14090,19 +14090,19 @@ items:
     group: "poeaa"
     name: "Transaction Script"
     target: "transaction-script"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
     name: "Domain Model"
     target: "domain-model"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
     name: "Table Module"
     target: "table-module"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"

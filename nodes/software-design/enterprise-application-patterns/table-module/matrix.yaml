@@ -1,0 +1,39 @@
+typescript:
+  status: idiom
+  reason: a class for each table over arrays of row objects from a query; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a class for each table over an ADO.NET DataSet or DataTable, filled by a DataAdapter.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a class for each table over a vector of row structs that a database library fills.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a set of functions for each table that take an array of row structs and an id.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a class for each table over a list of data classes for the rows; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL works on whole tables already; a table module is the object in the program that holds the logic for the rows that a query returned.
+bash:
+  status: n/a
+  reason: the shell has no objects to hold the logic of a table.
+powershell:
+  status: idiom
+  reason: a class for each table over the rows of a DataTable, or over the objects that Import-Csv returns; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern has no tables.
+html:
+  status: n/a
+  reason: markup has no business logic.
+css:
+  status: n/a
+  reason: style rules have no business logic.
