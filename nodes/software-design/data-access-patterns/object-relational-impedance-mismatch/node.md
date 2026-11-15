@@ -128,9 +128,9 @@ The mismatch is not one problem. The Hibernate documentation divides it into fiv
 
 Other sources add more differences. Wikipedia lists data types, encapsulation, constraints and transactions. In the relational model, "Links are reversible (INNER JOIN is symmetric to follow foreign keys backward), forming undirected graphs".[^3] The two sides also disagree about which copy of the data is the real one: "Relational says the DBMS is authoritative and the OO program's objects are temporary copies (possibly outdated if the database is modified concurrently). OO says the objects are authoritative, and the DBMS is just for persistence."[^3]
 
-Ambler gives the root cause. The object-oriented paradigm "is based on proven software engineering principles", and the relational paradigm "is based on proven mathematical principles".[^2] He also names a second, cultural mismatch between developers and data professionals, apart from the technical one.[^2]
+Ambler gives the root cause. The object-oriented paradigm "is based on proven software engineering principles", and the relational paradigm "is based on proven mathematical principles".[^2] Ambler also names a second, cultural mismatch between developers and data professionals, apart from the technical one.[^2]
 
-Martin Fowler adds that the problem is not about objects. "By rights it should be referred to as in-memory/relational mapping problem, because it's true of mapping RDBMSs to any in-memory data structure."[^4] He gives two more causes of difficulty: "you can make changes on either side that have to be mapped to the other", and many users can change the database at the same time, but "in most cases, you can't hold transactions open while you fiddle with the data in-memory."[^4]
+Martin Fowler adds that the problem is not about objects. "By rights it should be referred to as in-memory/relational mapping problem, because it's true of mapping RDBMSs to any in-memory data structure."[^4] Fowler gives two more causes of difficulty: "you can make changes on either side that have to be mapped to the other", and many users can change the database at the same time, but "in most cases, you can't hold transactions open while you fiddle with the data in-memory."[^4]
 
 ## In languages
 
@@ -147,11 +147,11 @@ The Python, Java and Go examples of this page show all five problems with one cu
 ## Variations and related ideas
 
 - **Mapping layers.** The data access patterns each solve a part of the problem. An [[identity-map|Identity map]] keeps one object for each row. A [[unit-of-work|Unit of work]] collects the changes and writes them in one transaction. A [[data-mapper|Data mapper]] keeps the objects and the tables independent, while an [[active-record|Active record]] puts the mapping into the object. Lazy loading delays the load of an association until the program uses it.[^12]
-- **A more relational model in memory.** Fowler: "you either have to make your in-memory model more relational, or you complicate your mapping code." In many cases he suggests "Row Data Gateways that are just the relational tables wrapped in simple objects."[^4] See [[row-data-gateway|Row data gateway]].
+- **A more relational model in memory.** Fowler: "you either have to make your in-memory model more relational, or you complicate your mapping code." In many cases Fowler suggests "Row Data Gateways that are just the relational tables wrapped in simple objects."[^4] See [[row-data-gateway|Row data gateway]].
 - **Avoiding the problem.** "Either you use the relational model in memory, or you don't use it in the database."[^4] A NoSQL database helps "If you have an application problem that maps well to a NoSQL data model - such as aggregates or graphs", but "it only works when the fit between the application model and the NoSQL data model is good."[^4]
 - **One-way mapping.** "ORMs are complex because they have to handle a bi-directional mapping. A uni-directional problem is much easier to work with".[^4] Fowler gives this as one of the arguments for CQRS.[^4]
 - **Functional-relational mapping.** "Comprehensions in functional programming languages are isomorphic with relational queries."[^3] Some functional languages use this to avoid the object mapping.[^3]
-- **The relational view.** Christopher J. Date "says a true relational DBMS overcomes the problem", because in his view domains and classes are equivalent.[^3]
+- **The relational view.** Christopher J. Date "says a true relational DBMS overcomes the problem", because, in the view of Date, domains and classes are equivalent.[^3]
 
 ## Pitfalls
 
@@ -187,6 +187,6 @@ The mapping costs code and round trips. Fowler: "Mapping to a relational databas
 
 Ambler writes: "In the early 1990s, the differences between the two approaches were labelled the “object-relational impedance mismatch”, or simply “impedance mismatch” for short."[^2] The name comes from electrical engineering: "The term impedance mismatch comes from impedance matching in electrical engineering ."[^3]
 
-Fowler remembers the 1990s: "For much of the 90's I saw project after project deal with the object/relational mapping problem by writing their own framework - it was always much tougher than people imagined."[^4] In 2006, Ted Neward published the essay The Vietnam of Computer Science about the problem.[^3] Fowler wrote that he sympathizes "greatly with Ted Neward's famous quote that object-relational mapping is the Vietnam of Computer Science".[^4] Open source tools changed the work: "The widely available open source ORMs (such as iBatis, Hibernate, and Active Record) did a great deal to remove this problem".[^4] The Hibernate documentation now says that the mapping "is a difficult and subtle problem, and used to be a major source of anguish for enterprise developers."[^1]
+Fowler remembers the 1990s: "For much of the 90's I saw project after project deal with the object/relational mapping problem by writing their own framework - it was always much tougher than people imagined."[^4] In 2006, Ted Neward published the essay The Vietnam of Computer Science about the problem.[^3] Fowler mentions the title of this essay in the same post.[^4] Open source tools changed the work: "The widely available open source ORMs (such as iBatis, Hibernate, and Active Record) did a great deal to remove this problem".[^4] The Hibernate documentation now says that the mapping "is a difficult and subtle problem, and used to be a major source of anguish for enterprise developers."[^1]
 
 ## References

@@ -14108,7 +14108,7 @@ items:
     group: "poeaa"
     name: "Service Layer"
     target: "service-layer"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
@@ -14240,13 +14240,13 @@ items:
     group: "poeaa"
     name: "Remote Facade"
     target: "remote-facade"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"
     name: "Data Transfer Object"
     target: "data-transfer-object"
-    status: "planned"
+    status: "node"
     reason: "A pattern of Patterns of Enterprise Application Architecture (Fowler, 2002), a canon book of spec 13.3."
   - part: patterns
     group: "poeaa"

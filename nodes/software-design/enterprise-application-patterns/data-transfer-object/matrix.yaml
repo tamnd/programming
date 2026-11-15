@@ -1,0 +1,40 @@
+typescript:
+  status: idiom
+  reason: an interface or a type for each DTO, with a function that maps the domain object to it before JSON.stringify; the JavaScript example shows the same design without the types.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a record or a class for each DTO, serialized by System.Text.Json, with the mapping written by hand or done by a library such as AutoMapper.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a plain struct for each DTO, serialized with a library such as Protocol Buffers or a JSON library; the standard library has no serialization.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a plain struct for each DTO, with functions that encode and decode it by hand or with a library.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a data class for each DTO, serialized with kotlinx.serialization or Jackson; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: n/a
+  reason: SQL has no objects; the columns of a query result are already only data.
+bash:
+  status: absent
+  reason: the shell has no records or objects, so it cannot hold a DTO; a script can only write the values as text.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a PSCustomObject or a class with only the fields for the call, serialized with ConvertTo-Json; no example is executed here because the test image has no pwsh.
+  alternative: the Python example.
+regex:
+  status: n/a
+  reason: a pattern has no objects to carry data.
+html:
+  status: n/a
+  reason: markup has no objects to carry data.
+css:
+  status: n/a
+  reason: style rules have no objects to carry data.
