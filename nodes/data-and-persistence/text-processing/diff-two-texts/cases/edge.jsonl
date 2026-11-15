@@ -1,0 +1,13 @@
+{"name": "both-empty", "class": ["empty"], "args": {"old": "fixtures/empty.txt", "new": "fixtures/empty.txt"}, "expect": ""}
+{"name": "old-empty", "class": ["empty"], "args": {"old": "fixtures/empty.txt", "new": "fixtures/old-empty-new.txt"}, "expect": "+a\n+b\n"}
+{"name": "new-empty", "class": ["empty"], "args": {"old": "fixtures/new-empty-old.txt", "new": "fixtures/empty.txt"}, "expect": "-a\n-b\n"}
+{"name": "all-different", "class": ["all-different"], "args": {"old": "fixtures/all-different-old.txt", "new": "fixtures/all-different-new.txt"}, "expect": "-a\n-b\n+c\n+d\n"}
+{"name": "insert-at-start", "class": ["insert"], "args": {"old": "fixtures/insert-at-start-old.txt", "new": "fixtures/insert-at-start-new.txt"}, "expect": "+a\n b\n c\n"}
+{"name": "delete-at-end", "class": ["delete"], "args": {"old": "fixtures/delete-at-end-old.txt", "new": "fixtures/delete-at-end-new.txt"}, "expect": " a\n b\n-c\n"}
+{"name": "swap", "class": ["tie"], "args": {"old": "fixtures/swap-old.txt", "new": "fixtures/swap-new.txt"}, "expect": "-a\n b\n+a\n"}
+{"name": "repeated-lines", "class": ["repeated-lines"], "args": {"old": "fixtures/repeated-lines-old.txt", "new": "fixtures/repeated-lines-new.txt"}, "expect": " a\n-a\n b\n+b\n"}
+{"name": "empty-line", "class": ["empty-line"], "args": {"old": "fixtures/empty-line-old.txt", "new": "fixtures/empty-line-new.txt"}, "expect": " a\n-\n b\n"}
+{"name": "no-final-newline", "class": ["no-final-newline"], "args": {"old": "fixtures/no-final-newline-old.txt", "new": "fixtures/no-final-newline-new.txt"}, "expect": " a\n b\n"}
+{"name": "crlf", "class": ["crlf"], "args": {"old": "fixtures/crlf-old.txt", "new": "fixtures/crlf-new.txt"}, "expect": "-a\r\n+a\n b\n"}
+{"name": "trailing-space", "class": ["whitespace"], "args": {"old": "fixtures/trailing-space-old.txt", "new": "fixtures/trailing-space-new.txt"}, "expect": "-a \n+a\n b\n"}
+{"name": "normalization", "class": ["non-ascii"], "args": {"old": "fixtures/normalization-old.txt", "new": "fixtures/normalization-new.txt"}, "expect": "-café\n+café\n"}
