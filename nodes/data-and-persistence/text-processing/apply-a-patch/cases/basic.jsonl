@@ -1,0 +1,4 @@
+{"name": "change-a-line", "args": {"file": "fixtures/change-a-line.txt", "patch": "fixtures/change-a-line.patch"}, "expect": "a\nB\nc\n"}
+{"name": "two-hunks", "args": {"file": "fixtures/two-hunks.txt", "patch": "fixtures/two-hunks.patch"}, "expect": "apple\nblueberry\ncherry\ndate\nelder\nfig\nguava\n"}
+{"name": "git-header", "args": {"file": "fixtures/git-header.txt", "patch": "fixtures/git-header.patch"}, "expect": "def main():\n    print(2)\n"}
+{"name": "add-at-end", "args": {"file": "fixtures/add-at-end.txt", "patch": "fixtures/add-at-end.patch"}, "expect": "a\nb\n"}
