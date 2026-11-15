@@ -1,0 +1,27 @@
+typescript:
+  status: native
+  reason: as JavaScript, and a function can declare a this parameter so that the compiler checks the receiver; no example file because it would repeat the JavaScript one.
+kotlin:
+  status: native
+  reason: member functions, bound references such as r::area and extension functions; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: idiom
+  reason: a function that takes a pointer to a struct as its first parameter plays the part of a method, and a struct of function pointers gives dispatch at run time.
+bash:
+  status: n/a
+  reason: Bash has functions but no types that own them.
+powershell:
+  status: native
+  reason: methods in class definitions, with the receiver as $this; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: some databases let user-defined types declare methods, and most SQL code uses functions that take the value as an argument.
+regex:
+  status: n/a
+  reason: a pattern has no functions.
+html:
+  status: n/a
+  reason: HTML has no functions; methods of DOM elements belong to JavaScript classes.
+css:
+  status: n/a
+  reason: CSS has functions on values, such as calc(), but no types that own them.

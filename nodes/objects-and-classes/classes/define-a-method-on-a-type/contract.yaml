@@ -1,0 +1,21 @@
+# The contract of the task "define a method on a type" (spec 10.2). The function makes one Point, moves it with the method translate, and measures with the method manhattan.
+problem: define-a-method-on-a-type
+entry: point_report
+params:
+  - name: x
+    type: "int"
+    pre: "absolute value 100000000 or less"
+  - name: y
+    type: "int"
+    pre: "absolute value 100000000 or less"
+  - name: dx
+    type: "int"
+    pre: "absolute value 100000000 or less"
+  - name: dy
+    type: "int"
+    pre: "absolute value 100000000 or less"
+returns:
+  type: "list<int>"
+  post: "[q.x, q.y, p.manhattan(q), q.manhattan(origin)], where p is the point (x, y), q = p.translate(dx, dy), and manhattan(a, b) = |a.x - b.x| + |a.y - b.y|"
+checker: exact
+edge_classes: [zero-move, negative, origin, limit]

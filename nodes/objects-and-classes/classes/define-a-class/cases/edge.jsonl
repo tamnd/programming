@@ -1,0 +1,4 @@
+{"name":"zero-side","class":["zero-side"],"args":{"width":0,"height":7,"factor":2},"expect":[0,14,0,28]}
+{"name":"zero-factor","class":["zero-factor"],"args":{"width":3,"height":4,"factor":0},"expect":[12,14,0,0]}
+{"name":"identity","class":["identity"],"args":{"width":3,"height":4,"factor":1},"expect":[12,14,12,14]}
+{"name":"limit","class":["limit"],"args":{"width":1000,"height":1000,"factor":46},"expect":[1000000,4000,2116000000,184000]}

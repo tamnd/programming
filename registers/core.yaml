@@ -775,7 +775,7 @@ items:
     group: "objects-and-classes"
     name: "Field and property"
     target: "field-and-property"
-    status: "planned"
+    status: "node"
     reason: "It is in 4 of the 7 language references: Rust Reference (\"Field access expressions\"); Java Language Specification (\"Field Declarations\"); C# standard (\"Field ref safe context\"); and 1 more. It is in the canon books: SICP index (\"type field\")."
   - part: concepts
     group: "objects-and-classes"
@@ -11684,7 +11684,7 @@ items:
     group: "basics"
     name: "Define a method on a type"
     target: "define-a-method-on-a-type"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rosetta Code (Ranking methods, Monte Carlo methods); Go by Example (Methods); Rust by Example (Methods)."
   - part: tasks
     group: "basics"
@@ -13355,7 +13355,7 @@ items:
     group: "objects"
     name: "Define a class"
     target: "define-a-class"
-    status: "planned"
+    status: "node"
     reason: "A job of the object model of a language. Related titles, found by keyword: Rosetta Code (Classes, Inner classes)."
   - part: tasks
     group: "objects"

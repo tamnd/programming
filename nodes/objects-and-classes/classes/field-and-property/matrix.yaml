@@ -1,0 +1,27 @@
+typescript:
+  status: native
+  reason: as JavaScript, with typed fields, readonly fields that the compiler checks, access modifiers and parameter properties; no example file because it would repeat the JavaScript one.
+kotlin:
+  status: native
+  reason: every val and var member is a property with a generated getter and setter, and custom accessors reach the backing field with the field keyword; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: idiom
+  reason: struct members are fields, and functions that take a pointer to the struct play the part of accessors.
+bash:
+  status: n/a
+  reason: Bash has variables and arrays but no objects with fields.
+powershell:
+  status: native
+  reason: classes declare properties, and Add-Member adds note and script properties to objects; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: idiom
+  reason: a column of a table is a field of each row, and generated columns are computed from other columns.
+regex:
+  status: n/a
+  reason: a pattern has no data members.
+html:
+  status: idiom
+  reason: element attributes hold values, and the DOM exposes them as properties of element objects in JavaScript.
+css:
+  status: idiom
+  reason: CSS properties set the style of elements, which is a different idea; custom properties hold values that other declarations read.
