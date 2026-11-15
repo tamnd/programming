@@ -13597,7 +13597,7 @@ items:
     group: "tools"
     name: "Write a Makefile"
     target: "write-a-makefile"
-    status: "planned"
+    status: "node"
     reason: "A job with the toolchain that each programmer does. Related titles, found by keyword: Rosetta Code (Make a backup file, Make directory path)."
   - part: tasks
     group: "tools"
@@ -15800,13 +15800,13 @@ items:
     group: "by-hand"
     name: "Make"
     target: "make"
-    status: "card"
+    status: "node"
     reason: "The classic build tool of Unix."
   - part: tools
     group: "by-hand"
     name: "CMake"
     target: "cmake"
-    status: "card"
+    status: "node"
     reason: "The common build system generator of C and C++."
   - part: tools
     group: "by-hand"
