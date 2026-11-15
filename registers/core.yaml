@@ -16136,7 +16136,7 @@ items:
     group: "by-hand"
     name: "GoogleTest"
     target: "googletest"
-    status: "planned"
+    status: "node"
     reason: "A test framework of C++."
   - part: tools
     group: "by-hand"
