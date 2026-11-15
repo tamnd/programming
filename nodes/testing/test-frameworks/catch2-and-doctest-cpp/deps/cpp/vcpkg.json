@@ -1,0 +1,5 @@
+{
+  "name": "catch2-and-doctest-cpp",
+  "version": "1.0.0",
+  "dependencies": ["catch2"]
+}
