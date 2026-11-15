@@ -599,3 +599,6 @@ XWFNBA implicit-lock
 2A1PFZ optimistic-offline-lock
 92KTZK pessimistic-offline-lock
 X4069W apply-a-patch
+67ATSC client-session-state
+9YAYMG database-session-state
+K194TS server-session-state
