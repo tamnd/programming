@@ -3,7 +3,7 @@ tag: P8S1JD
 kind: concept
 slug: sum-types
 name: Sum types
-aliases: [tagged union, variant type, discriminated union, algebraic data type, variant record, sealed class hierarchy]
+aliases: [tagged union, variant type, discriminated union, variant record, sealed class hierarchy]
 area: types/algebraic-data-types
 level: core
 summary: >-
