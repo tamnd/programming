@@ -1,0 +1,41 @@
+typescript:
+  status: idiom
+  reason: a class with an integer or bigint amount in the minor unit and a currency code; the number type is binary floating point.
+  alternative: the JavaScript example.
+csharp:
+  status: idiom
+  reason: a record struct with a decimal amount and a currency code; decimal is a base-10 type of the language.
+  alternative: the Java example.
+cpp:
+  status: idiom
+  reason: a class with a std::int64_t amount in the minor unit and a currency code; the standard library has no decimal type.
+  alternative: the Rust example.
+c:
+  status: idiom
+  reason: a struct with an int64_t amount in the minor unit and a currency code, with functions that check the currency.
+  alternative: the Go example.
+kotlin:
+  status: idiom
+  reason: a data class with a Long or BigDecimal amount and a java.util.Currency; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: native
+  reason: DECIMAL and NUMERIC columns keep exact amounts with a fixed scale; a second column keeps the currency code.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: shell arithmetic uses integers only, so a script keeps amounts in cents and adds the decimal point when it prints them.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: the .NET decimal type keeps exact amounts, and a class adds the currency; no example is executed here because the test image has no pwsh.
+  alternative: the Java example.
+regex:
+  status: n/a
+  reason: a pattern can match the text of an amount but does no arithmetic.
+html:
+  status: n/a
+  reason: markup has no arithmetic.
+css:
+  status: n/a
+  reason: style rules have no money values.
