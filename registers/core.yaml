@@ -11726,7 +11726,7 @@ items:
     group: "basics"
     name: "Use a third-party package"
     target: "use-a-third-party-package"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rust by Example (Using a Library, Dependencies)."
   - part: tasks
     group: "strings"
@@ -13545,13 +13545,13 @@ items:
     group: "tools"
     name: "Add a dependency"
     target: "add-a-dependency"
-    status: "planned"
+    status: "node"
     reason: "A job with the toolchain that each programmer does. Related titles, found by keyword: Rust by Example (Dependencies, Dev-dependencies)."
   - part: tasks
     group: "tools"
     name: "Pin dependency versions"
     target: "pin-dependency-versions"
-    status: "planned"
+    status: "node"
     reason: "A job with the toolchain that each programmer does. Related titles, found by keyword: Rust by Example (Dependencies, Dev-dependencies)."
   - part: tasks
     group: "tools"

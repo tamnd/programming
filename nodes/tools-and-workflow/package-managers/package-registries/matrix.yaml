@@ -1,0 +1,45 @@
+javascript:
+  status: idiom
+  reason: a Map from a name to a Map from a version to a yanked flag, as in Python; npm reads the public registry at registry.npmjs.org.
+  alternative: the Python example.
+typescript:
+  status: idiom
+  reason: as in JavaScript, with a type for the map of versions.
+  alternative: the Go example.
+rust:
+  status: idiom
+  reason: a HashMap of HashMaps and an Option for the found version; Cargo reads crates.io by default.
+  alternative: the Go example.
+c:
+  status: idiom
+  reason: an array of structs with a name, a version and a yanked flag, and a compare function for versions.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::map of std::map and std::optional for the found version.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: a MutableMap of MutableMap and maxWithOrNull with a version comparator; Gradle and Maven read Maven Central.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a table of (package, version, yanked) with a primary key on (package, version) refuses a second publish, and a query with ORDER BY finds the newest version.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: an associative array keyed by package and version, and sort -V for the newest version.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: a hashtable of hashtables and [version] casts to compare versions.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern can match a version string, but it does not store or compare versions.
+html:
+  status: n/a
+  reason: markup does not store packages.
+css:
+  status: n/a
+  reason: style rules do not store packages.
