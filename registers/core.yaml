@@ -15848,13 +15848,13 @@ items:
     group: "by-hand"
     name: "Cargo"
     target: "cargo"
-    status: "planned"
+    status: "node"
     reason: "The build tool and package manager of Rust."
   - part: tools
     group: "by-hand"
     name: "NuGet"
     target: "nuget-pm"
-    status: "card"
+    status: "node"
     reason: "The package manager of .NET."
   - part: tools
     group: "by-hand"
