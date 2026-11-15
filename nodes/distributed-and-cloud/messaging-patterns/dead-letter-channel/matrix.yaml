@@ -1,0 +1,45 @@
+javascript:
+  status: library
+  reason: a broker client gives the dead letter channel; with amqplib, a consumer calls nack with requeue false, and RabbitMQ moves the message to the dead-letter exchange of the queue.
+  alternative: the Python example.
+typescript:
+  status: library
+  reason: the same broker clients as JavaScript; the reason and the source can be a typed header.
+  alternative: the C# example.
+rust:
+  status: idiom
+  reason: a VecDeque, a count in each message and a Vec of dead letters, as in the Go example; broker clients such as lapin are crates.
+  alternative: the Go example.
+c:
+  status: library
+  reason: a broker library such as librabbitmq gives the reject call, and the broker does the move; inside one process, the queue and the count are hand-written.
+  alternative: the Go example.
+cpp:
+  status: idiom
+  reason: a std::deque, a count in each message and a std::vector of dead letters; broker clients are libraries.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: an ArrayDeque and a count, as in the Java example; no example is executed here because the test image has no kotlinc.
+  alternative: the Java example.
+sql:
+  status: idiom
+  reason: a queue table can have a column for the attempts; a worker that fails adds one, and a statement moves the rows over the limit to a dead letter table in the same transaction.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a script can move a file that fails a number of times from an incoming directory to a failed directory; there is no broker.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: the .NET Queue and List types give the same structure as the C# example; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no messages and no channels.
+html:
+  status: n/a
+  reason: markup has no messages and no channels.
+css:
+  status: n/a
+  reason: style rules have no messages and no channels.

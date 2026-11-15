@@ -610,3 +610,7 @@ M7J197 point-to-point-channel
 B6CMAT layer-supertype
 34ESVJ mapper
 VFYRRQ separated-interface
+3P6MZR command-message
+XMPVT7 dead-letter-channel
+DBNWZH guaranteed-delivery
+VFFEC5 message-bus
