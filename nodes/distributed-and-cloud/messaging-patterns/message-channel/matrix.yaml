@@ -1,0 +1,45 @@
+javascript:
+  status: library
+  reason: a broker client such as amqplib for RabbitMQ or kafkajs gives send and receive by channel name; inside one process, an array with a promise that resolves on the next message can stand for a channel, and a worker thread can read it through a MessagePort.
+  alternative: the Python example.
+typescript:
+  status: library
+  reason: the same broker clients as JavaScript, with a type for the messages of each channel.
+  alternative: the C# example, which has a typed channel.
+rust:
+  status: idiom
+  reason: std::sync::mpsc::channel gives a typed channel between threads, and a HashMap of senders by name gives named channels; broker clients such as lapin for RabbitMQ are crates.
+  alternative: the Go example, which also has typed channels.
+c:
+  status: library
+  reason: a channel needs a broker library such as librabbitmq or librdkafka, or a queue protected by a mutex and a condition variable inside one process.
+  alternative: the Go example.
+cpp:
+  status: library
+  reason: the standard library has no concurrent queue; a std::deque with std::mutex and std::condition_variable gives one, and broker clients are libraries.
+  alternative: the Java example.
+kotlin:
+  status: idiom
+  reason: kotlinx.coroutines has Channel, a typed channel between coroutines, and a map of channels by name gives named channels; no example is executed here because the test image has no kotlinc.
+  alternative: the Go example.
+sql:
+  status: idiom
+  reason: a table can be a queue, with SELECT ... FOR UPDATE SKIP LOCKED in PostgreSQL to take one row, and PostgreSQL LISTEN and NOTIFY give named channels; the programs still need a client language.
+  alternative: the Python example.
+bash:
+  status: idiom
+  reason: a named pipe made with mkfifo is a named channel between two processes on one computer, with no buffer that survives the processes.
+  alternative: the Python example.
+powershell:
+  status: idiom
+  reason: System.Collections.Concurrent.BlockingCollection or System.Threading.Channels from .NET gives the channel; no example is executed here because the test image has no pwsh.
+  alternative: the C# example.
+regex:
+  status: n/a
+  reason: a pattern has no messages and no programs to connect.
+html:
+  status: n/a
+  reason: markup has no messages and no programs to connect.
+css:
+  status: n/a
+  reason: style rules have no messages and no programs to connect.
