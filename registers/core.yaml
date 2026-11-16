@@ -379,7 +379,7 @@ items:
     group: "types"
     name: "Composite type"
     target: "composite-type"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Functional (\"Functions defined over compound data in terms of functions ...\"). It is in the canon books: SICP index (\"restrictions on compound data\")."
   - part: concepts
     group: "types"

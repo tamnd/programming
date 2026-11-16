@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the same split as JavaScript; primitives are copied and objects are shared. No example file exists.
+kotlin:
+  status: native
+  reason: Classes are reference types, and the basic types such as Int act as values. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Every Bash variable holds a string, and assignment copies it, so there are no references between variables.
+powershell:
+  status: native
+  reason: PowerShell uses the .NET value types and reference types, as in C#. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query works on values in rows, and SQL has no references between variables.
+regex:
+  status: n/a
+  reason: A regular expression has no variables.
+html:
+  status: n/a
+  reason: HTML has no variables.
+css:
+  status: n/a
+  reason: CSS custom properties hold values, not references.

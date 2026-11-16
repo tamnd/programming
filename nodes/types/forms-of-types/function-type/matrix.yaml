@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript writes function types as function type expressions, which look like arrow functions, and as call signatures in object types. A function with fewer parameters fits a type with more parameters. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has function types such as (Int) -> String and Int.() -> Unit, and lambdas and function references have these types. On the JVM, they compile to the interfaces Function0, Function1 and so on. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: A Bash function is a command, not a value. A script passes the name of a function as a string and calls it with "$f" args, and there are no parameter or result types. No example file exists.
+powershell:
+  status: native
+  reason: A script block such as { param($x) $x + 1 } is a value that a script stores, passes and calls with & or .Invoke(). PowerShell also converts script blocks to .NET delegate types such as [Func[int,int]]. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: Standard SQL has functions, but they are not values, so a query cannot pass a function to another function or store one in a column. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no functions and no function values.
+html:
+  status: n/a
+  reason: HTML has no functions. An event handler attribute such as onclick holds JavaScript code, and the function type belongs to JavaScript.
+css:
+  status: n/a
+  reason: CSS uses functional notation such as calc(), rgb() and var(), but these are fixed parts of the value syntax, not function values that a style sheet passes around.

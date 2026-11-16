@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: never is the bottom type. TypeScript infers it for a function whose end cannot be reached and for a value after narrowing has removed every case of a union, and an assignment to never checks that a switch is exhaustive. No example file exists.
+kotlin:
+  status: native
+  reason: Nothing has no instances, and a function that always throws has the result type Nothing. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash has no static types, so it has no type for code that does not return. The exit builtin ends the script.
+powershell:
+  status: absent
+  reason: PowerShell has no bottom type. The throw keyword and the exit keyword stop the normal flow, but no type describes them. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL has no result type for code that does not return. A failed statement raises an error, which the database reports.
+regex:
+  status: n/a
+  reason: A regular expression has no values and no types.
+html:
+  status: n/a
+  reason: HTML has no types of values.
+css:
+  status: n/a
+  reason: CSS has no types of values in this sense.
