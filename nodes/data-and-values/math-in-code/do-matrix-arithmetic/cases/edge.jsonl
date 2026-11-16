@@ -1,0 +1,8 @@
+{"name":"one-by-one","class":["one-by-one"],"args":{"a":[[3]],"b":[[4]]},"expect":[[12]]}
+{"name":"row-times-column","class":["inner-product"],"args":{"a":[[1,2,3]],"b":[[4],[5],[6]]},"expect":[[32]]}
+{"name":"column-times-row","class":["outer-product"],"args":{"a":[[1],[2],[3]],"b":[[4,5,6]]},"expect":[[4,5,6],[8,10,12],[12,15,18]]}
+{"name":"identity","class":["identity"],"args":{"a":[[1,0],[0,1]],"b":[[5,6],[7,8]]},"expect":[[5,6],[7,8]]}
+{"name":"other-order","class":["order"],"args":{"a":[[5,6],[7,8]],"b":[[1,2],[3,4]]},"expect":[[23,34],[31,46]]}
+{"name":"zero-matrix","class":["zero"],"args":{"a":[[0,0],[0,0]],"b":[[1,2],[3,4]]},"expect":[[0,0],[0,0]]}
+{"name":"negative-numbers","class":["negative"],"args":{"a":[[-1,2],[3,-4]],"b":[[2,0],[1,-1]]},"expect":[[0,-2],[2,4]]}
+{"name":"beyond-32-bit","class":["beyond-int32"],"args":{"a":[[100000,0],[0,100000]],"b":[[100000],[3]]},"expect":[[10000000000],[300000]]}

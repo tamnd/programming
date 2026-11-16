@@ -1,0 +1,33 @@
+javascript:
+  status: absent
+  reason: JavaScript has no complex type. A program uses an object or an array with two numbers and its own functions, or a library. No example file exists.
+typescript:
+  status: absent
+  reason: TypeScript has no complex type, as JavaScript. A pair type such as [number, number] with its own functions is the usual form. No example file exists.
+java:
+  status: absent
+  reason: The Java standard library has no complex type. A program defines a record with two double fields, or uses a library such as Apache Commons Numbers. No example file exists.
+kotlin:
+  status: absent
+  reason: The Kotlin standard library has no complex type. A data class with two Double values and operator functions gives the operators. No example file exists because kotlinc is not installed.
+rust:
+  status: library
+  reason: The Rust standard library has no complex type. The crate num-complex has Complex<T> with the operators and the functions, and its layout is the same as [T; 2]. No example file exists because the examples use no crates.
+bash:
+  status: absent
+  reason: Bash arithmetic has only integers, so it has no complex numbers. A script uses awk or bc. No example file exists.
+powershell:
+  status: stdlib
+  reason: PowerShell uses the .NET struct [System.Numerics.Complex], with the same operators and properties as C#. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: Standard SQL has no complex type. A table stores the real part and the imaginary part in two columns. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text and has no numbers.
+html:
+  status: n/a
+  reason: HTML is markup and has no numbers to compute with.
+css:
+  status: n/a
+  reason: CSS computes with lengths and other real numbers in calc(), but it has no complex numbers.

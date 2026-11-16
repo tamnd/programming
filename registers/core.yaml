@@ -12080,13 +12080,13 @@ items:
     group: "numbers"
     name: "Do complex number arithmetic"
     target: "do-complex-number-arithmetic"
-    status: "planned"
+    status: "node"
     reason: "A job on numbers that each program does. Related titles, found by keyword: Rosetta Code (Arithmetic Complex)."
   - part: tasks
     group: "numbers"
     name: "Do matrix arithmetic"
     target: "do-matrix-arithmetic"
-    status: "planned"
+    status: "node"
     reason: "A job on numbers that each program does. Related titles, found by keyword: Rosetta Code (Matrix multiplication, Matrix transposition)."
   - part: tasks
     group: "numbers"

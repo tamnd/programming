@@ -1,0 +1,15 @@
+# The contract of the task "do matrix arithmetic" (spec 10.2). The function multiplies two matrices of integers. A matrix is a list of rows, and each row is a list of numbers.
+problem: do-matrix-arithmetic
+entry: matrix_multiply
+params:
+  - name: a
+    type: matrix<int>
+    pre: "n rows of m numbers each, with n >= 1 and m >= 1"
+  - name: b
+    type: matrix<int>
+    pre: "m rows of p numbers each, with p >= 1: the number of rows of b is the number of columns of a; the results fit in a 64-bit signed integer"
+returns:
+  type: matrix<int>
+  post: "n rows of p numbers; the item in row i and column j is the sum over k of a[i][k] * b[k][j]; a and b do not change"
+checker: exact
+edge_classes: [one-by-one, inner-product, outer-product, identity, order, zero, negative, beyond-int32]

@@ -1,0 +1,18 @@
+# The contract of the task "do complex number arithmetic" (spec 10.2). The function takes two complex numbers as pairs [real, imaginary] and returns the sum, the product, the quotient, the absolute value of the first number and its phase. The results are floating-point numbers, so the checker has a tolerance.
+problem: do-complex-number-arithmetic
+entry: complex_arithmetic
+params:
+  - name: a
+    type: list<float>
+    pre: "two finite numbers [re, im], the first complex number"
+  - name: b
+    type: list<float>
+    pre: "two finite numbers [re, im], the second complex number; it is not 0"
+returns:
+  type: list<float>
+  post: "[re(a + b), im(a + b), re(a * b), im(a * b), re(a / b), im(a / b), abs(a), phase(a)], where the phase is in the range [-pi, pi]"
+checker:
+  kind: float
+  abs: 1e-9
+  rel: 1e-12
+edge_classes: [real-only, i-squared, phase-pi, zero, negative-phase, imaginary-divisor, overflow]

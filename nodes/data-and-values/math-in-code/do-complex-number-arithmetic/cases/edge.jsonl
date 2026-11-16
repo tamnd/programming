@@ -1,0 +1,7 @@
+{"name":"real-only","class":["real-only"],"args":{"a":[6,0],"b":[3,0]},"expect":[9,0,18,0,2,0,6,0]}
+{"name":"imaginary-unit","class":["i-squared"],"args":{"a":[0,1],"b":[0,1]},"expect":[0,2,-1,0,1,0,1,1.5707963267948966]}
+{"name":"negative-real","class":["phase-pi"],"args":{"a":[-2,0],"b":[1,0]},"expect":[-1,0,-2,0,-2,0,2,3.141592653589793]}
+{"name":"zero","class":["zero"],"args":{"a":[0,0],"b":[2,-3]},"expect":[2,-3,0,0,0,0,0,0]}
+{"name":"negative-phase","class":["negative-phase"],"args":{"a":[1,-1],"b":[-1,-1]},"expect":[0,-2,-2,0,0,1,1.4142135623730951,-0.7853981633974483]}
+{"name":"imaginary-divisor","class":["imaginary-divisor"],"args":{"a":[2,4],"b":[0,2]},"expect":[2,6,-8,4,2,-1,4.47213595499958,1.1071487177940904]}
+{"name":"large-divisor","class":["overflow"],"args":{"a":[1e150,1e150],"b":[1e155,1e155]},"expect":[1.00001e+155,1.00001e+155,0.0,2e+305,9.999999999999999e-06,0.0,1.414213562373095e+150,0.7853981633974483]}
