@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript numbers are the binary64 numbers of JavaScript, so the same sums give the same errors. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin Double is the binary64 double of the JVM, and java.math.BigDecimal is available for exact decimal work. No example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash arithmetic expansion works on integers only, so a script has no floats and no float rounding error. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell [double] is the binary64 System.Double of .NET, and [decimal] is System.Decimal. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has REAL and DOUBLE PRECISION, which round like binary floats, and NUMERIC and DECIMAL, which hold decimal values exactly. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern matches text and does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: n/a
+  reason: CSS computes lengths, but a page does not do the sums of this page.

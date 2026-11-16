@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript numbers are JavaScript numbers, with NaN, Infinity and -0, and Number.isNaN. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin Double has Double.NaN, Double.POSITIVE_INFINITY and isNaN(), and the boxed Double follows the equals rules of the JVM. No example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash arithmetic expansion has integers only, so there is no NaN and no infinity, and a division by zero is an error. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell [double] is System.Double, with [double]::NaN, [double]::PositiveInfinity and [double]::IsNaN. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: PostgreSQL accepts 'NaN', 'Infinity' and '-Infinity' in its float types and in numeric, and it sorts NaN above all other values. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern matches text and does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: native
+  reason: CSS has the constants infinity, -infinity and NaN inside calc(), and calc() follows the IEEE 754 rules for them, so 0 / 0 gives NaN. No example file exists.
