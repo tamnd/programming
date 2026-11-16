@@ -1227,7 +1227,7 @@ items:
     area: "strings-and-text"
     name: "Strings"
     target: "python/strings-and-text/strings"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Text\", in \"An Informal Introduction to Python\")."
   - part: features
     group: "python"
@@ -1549,21 +1549,21 @@ items:
     area: "strings-and-text"
     name: "Formatted string literals"
     target: "python/strings-and-text/formatted-string-literals"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Formatted string literals\", in \"Input and output\")."
   - part: features
     group: "python"
     area: "strings-and-text"
     name: "The string format() method"
     target: "python/strings-and-text/the-string-format-method"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"The string format() method\", in \"Input and output\")."
   - part: features
     group: "python"
     area: "strings-and-text"
     name: "Manual string formatting"
     target: "python/strings-and-text/manual-string-formatting"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Manual string formatting\", in \"Input and output\")."
   - part: features
     group: "python"
