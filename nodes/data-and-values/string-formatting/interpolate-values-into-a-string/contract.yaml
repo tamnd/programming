@@ -1,0 +1,18 @@
+# The contract of the task "interpolate values into a string" (spec 10.2). The function builds one sentence from three values. The sentence has the name in literal braces, the count, the word item or items, and the total count * price with 2 decimals. The name is a value, so its characters are copied as they are, even braces, percent signs and dollar signs.
+problem: interpolate-values-into-a-string
+entry: describe_order
+params:
+  - name: name
+    type: string
+    pre: "ASCII text"
+  - name: count
+    type: int
+    pre: "0 <= count <= 1000000"
+  - name: price
+    type: float
+    pre: "a finite number with abs(count * price) < 1e9, and count * price not halfway between two values with 2 decimals"
+returns:
+  type: string
+  post: "\"Order {\" + name + \"}: \" + count + \" item\" + (\"\" if count == 1 else \"s\") + \", total \" + count * price rounded to 2 decimals"
+checker: exact
+edge_classes: [zero, singular, empty, format-characters, rounding, large, negative]

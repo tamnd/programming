@@ -216,7 +216,6 @@ A 1 x 2 matrix times a 3 x 1 matrix has no product, but the function returns `[[
 - **A jagged array is not a matrix.** In Java, C#, Go and JavaScript, the rows are separate arrays, so they can have different lengths. The solutions read the length of the first row only. Check all rows if the input comes from outside the program.
 - **Column-major libraries.** A library in Fortran order, such as a BLAS routine, reads a flat array as columns. A flat C array in row-major order is the transpose for such a library.
 
-
 ## Related tasks
 
 - [[do-complex-number-arithmetic]]: another task with a type that some languages do not have.

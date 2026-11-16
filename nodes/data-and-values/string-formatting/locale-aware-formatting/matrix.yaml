@@ -1,0 +1,24 @@
+typescript:
+  status: stdlib
+  reason: TypeScript uses the JavaScript object Intl, with Intl.NumberFormat, Intl.DateTimeFormat and toLocaleString, and has types for their options. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin uses the Java classes, such as String.format(Locale.GERMANY, "%,.2f", x) and NumberFormat.getInstance(locale). No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The Bash builtin printf takes the POSIX flag ' in %'d and uses the locale in LC_NUMERIC or LC_ALL, such as LC_NUMERIC=en_US.UTF-8 printf "%'d" 1234567. No example file exists.
+powershell:
+  status: stdlib
+  reason: PowerShell uses the .NET class CultureInfo. The operator -f and the method ToString use the current culture, and a program can pass a culture, such as $x.ToString("N2", [cultureinfo]"de-DE"). No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: Standard SQL has no locale formatting. PostgreSQL and Oracle have to_char with the patterns G and D for the group and decimal symbols of the session locale, and SQL Server has FORMAT with a culture argument. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text and does not format values.
+html:
+  status: n/a
+  reason: The attribute lang names the language of the text, but HTML does not format numbers or dates.
+css:
+  status: n/a
+  reason: CSS does not format numbers or dates.

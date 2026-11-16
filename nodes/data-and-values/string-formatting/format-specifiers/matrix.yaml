@@ -1,0 +1,24 @@
+typescript:
+  status: absent
+  reason: TypeScript has no format strings, as JavaScript. A program uses toFixed, padStart and Intl.NumberFormat. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin calls java.util.Formatter through String.format and the extension function format, so the specifiers are those of Java. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: The Bash builtin printf takes the conversion specifications of C, such as %5d, %-8s and %.2f, and repeats the format when more arguments remain. No example file exists.
+powershell:
+  status: native
+  reason: The PowerShell operator -f takes .NET format items, such as "{0,8:F2}" -f $x, and the method ToString takes a .NET format string. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: Standard SQL has no format strings. Databases add functions such as to_char in PostgreSQL and Oracle, FORMAT in SQL Server and MySQL, and printf in SQLite. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression matches text and does not format values.
+html:
+  status: n/a
+  reason: HTML shows text and has no format codes for values.
+css:
+  status: n/a
+  reason: CSS does not format numbers. The list-style-type of a counter, such as decimal-leading-zero or lower-roman, is the closest feature.

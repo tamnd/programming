@@ -1,0 +1,3 @@
+{"name":"apple","args":{"name":"apple","qty":3,"price":1.5},"expect":"apple     |    3|    1.50"}
+{"name":"widget","args":{"name":"widget","qty":12,"price":19.99},"expect":"widget    |   12|   19.99"}
+{"name":"laptop","args":{"name":"laptop","qty":1,"price":1234.5},"expect":"laptop    |    1| 1234.50"}
