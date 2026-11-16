@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no BCD type, so a program packs the nibbles with shifts and masks, as in JavaScript. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin has no BCD type, so a program packs the nibbles with shl, or and and on Int and Byte values. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash has no BCD type, but arithmetic expansion has shifts and masks, and printf with %X shows the packed digits. No example file exists.
+powershell:
+  status: idiom
+  reason: PowerShell has no BCD type, so a script packs the nibbles with -shl, -bor and -band. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: Standard SQL has no BCD type. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern can check that a hexadecimal string has only the digits 0 to 9 and a sign letter, but it does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: n/a
+  reason: CSS has no arithmetic on encoded digits.

@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no rational type, so a program keeps a pair of bigint values in lowest terms, as in JavaScript. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin has no rational type, so a program keeps a pair of java.math.BigInteger values and uses gcd to reduce them. No example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash arithmetic expansion has integers only, with no fraction type. No example file exists.
+powershell:
+  status: idiom
+  reason: PowerShell has no rational type, so a script keeps a pair of [bigint] values and reduces them with the .NET GreatestCommonDivisor method. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: SQL has no rational type; NUMERIC and DECIMAL are decimal types with a declared precision. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: n/a
+  reason: CSS has no rational type.

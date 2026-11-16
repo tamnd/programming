@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no fixed-point type, so a program keeps a number or a bigint with a scale, as in JavaScript. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin has no fixed-point type, so a program keeps a Long with a scale or uses java.math.BigDecimal at a set scale. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash arithmetic expansion has integers only, so a script keeps an amount in cents and prints the two parts with a division and a remainder. No example file exists.
+powershell:
+  status: idiom
+  reason: PowerShell has no fixed-point type; a script uses the .NET decimal type or an integer with a scale. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has NUMERIC and DECIMAL, which are fixed-point decimal types with a declared precision and scale. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: n/a
+  reason: CSS has no fixed-point number type that a style sheet can use for arithmetic.

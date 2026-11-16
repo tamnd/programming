@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the bigint type of JavaScript, with literals such as 10n. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM uses java.math.BigInteger from the Java class library. No example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash arithmetic expansion uses fixed-width integers, so a script calls an external tool for big values. No example file exists.
+powershell:
+  status: stdlib
+  reason: PowerShell has the [bigint] type, which is System.Numerics.BigInteger from .NET. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: The SQL integer types have a fixed width, and NUMERIC and DECIMAL have a declared precision. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: n/a
+  reason: CSS math functions work on numbers and dimensions, and there is no big integer type.
