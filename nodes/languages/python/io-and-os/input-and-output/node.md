@@ -11,7 +11,7 @@ summary: >-
   print() writes values as text to standard output or to a file, and input() reads one line from standard input. Files and the json module keep data for later use.
 grammar: "print(*objects, sep=' ', end='\\n', file=None, flush=False); input(prompt, /)"
 spec: {standard: null, url: "https://docs.python.org/3.15/builtins/functions.html#print", locator: "print()"}
-see_also: [python/fancier-output-formatting, python/reading-and-writing-files, python/standard-streams, read-from-standard-input, print-formatted-output]
+see_also: [python/fancier-output-formatting, python/reading-and-writing-files, python/standard-streams, python/saving-structured-data-with-json, read-from-standard-input, print-formatted-output]
 sources:
   - url: https://docs.python.org/3.15/tutorial/inputoutput.html
     title: The Python Tutorial, 7. Input and output
@@ -69,7 +69,7 @@ a-b-c!
 
 **r6.** `input(prompt)` writes the prompt "to standard output without a trailing newline. The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that. When EOF is read, EOFError is raised."[^3] Example: [`read-all`](#read-all).
 
-**r7.** The other pages of this group cover the rest of the tutorial chapter: [fancier output formatting](python/fancier-output-formatting), [reading and writing files](python/reading-and-writing-files), [methods of file objects](python/methods-of-file-objects) and saving structured data with the json module.[^1]
+**r7.** The other pages of this group cover the rest of the tutorial chapter: [fancier output formatting](python/fancier-output-formatting), [reading and writing files](python/reading-and-writing-files), [methods of file objects](python/methods-of-file-objects) and [saving structured data with json](python/saving-structured-data-with-json).[^1]
 
 ## Examples
 

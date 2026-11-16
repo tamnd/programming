@@ -11,7 +11,7 @@ summary: >-
   open(name, mode) returns a file object. The mode picks reading, writing or appending, and text or binary. Use a with statement so that the file closes, and give the encoding of text files.
 grammar: "open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)"
 spec: {standard: null, url: "https://docs.python.org/3.15/builtins/functions.html#open", locator: "open()"}
-see_also: [python/methods-of-file-objects, python/encoding-and-decoding, read-a-whole-file, read-a-file-line-by-line, write-a-file, append-to-a-file]
+see_also: [python/methods-of-file-objects, python/text-and-binary-io, python/saving-structured-data-with-json, python/pathlib, python/encoding-and-decoding, read-a-whole-file, read-a-file-line-by-line, write-a-file]
 sources:
   - url: https://docs.python.org/3.15/tutorial/inputoutput.html#reading-and-writing-files
     title: The Python Tutorial, 7. Input and output
@@ -81,7 +81,7 @@ Mode `'w'` makes a new file, mode `'a'` adds to the end, and the default mode `'
 
 **r7.** "After a file object is closed, either by a with statement or by calling f.close(), attempts to use the file object will automatically fail."[^1] Example: [`closed`](#closed).
 
-**r8.** The type of the file object depends on the mode: text modes give an `io.TextIOWrapper`, and binary modes give an `io.BufferedReader`, `io.BufferedWriter` or `io.BufferedRandom`.[^2]
+**r8.** The type of the file object depends on the mode: text modes give an `io.TextIOWrapper`, and binary modes give an `io.BufferedReader`, `io.BufferedWriter` or `io.BufferedRandom`.[^2] See [text and binary I/O](python/text-and-binary-io).
 
 ## Examples
 
@@ -186,4 +186,4 @@ Leave out `encoding` only when the code runs on Python 3.15 or later, or in UTF-
 
 ## Comparison
 
-Go has one-call helpers for small files. "ReadFile reads the named file and returns the contents."[^4] `os.WriteFile` writes a whole file in the same way. Python reaches the same result with `pathlib.Path.read_text()` and `write_text()`, or with `open()` and `with` when it reads a file in parts.
+Go has one-call helpers for small files. "ReadFile reads the named file and returns the contents."[^4] `os.WriteFile` writes a whole file in the same way. Python reaches the same result with `pathlib.Path.read_text()` and `write_text()`, or with `open()` and `with` when it reads a file in parts. See [the pathlib module](python/pathlib).

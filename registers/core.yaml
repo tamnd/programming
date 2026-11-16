@@ -1591,7 +1591,7 @@ items:
     area: "io-and-os"
     name: "Saving structured data with json"
     target: "python/io-and-os/saving-structured-data-with-json"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Saving structured data with json\", in \"Input and output\")."
   - part: features
     group: "python"
@@ -1780,14 +1780,14 @@ items:
     area: "io-and-os"
     name: "Operating system interface"
     target: "python/io-and-os/operating-system-interface"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Operating system interface\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
     area: "io-and-os"
     name: "File wildcards"
     target: "python/io-and-os/file-wildcards"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"File wildcards\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
