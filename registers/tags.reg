@@ -1072,3 +1072,11 @@ CT7Y2C thread-interruption
 10A3P5 single-assignment
 MA9Q4F uninitialized-variables
 FGQ4Y5 variable-lifetime
+HQTP5Q python/errors-and-exceptions
+PN6WTE python/exception-chaining
+V7V0KA python/exceptions
+AG87XE python/handling-exceptions
+65ZGE1 python/raising-exceptions
+6ZS3BB python/syntax-errors
+65Z2GH python/the-exception-hierarchy
+QVY55R python/user-defined-exceptions
