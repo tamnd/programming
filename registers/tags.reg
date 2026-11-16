@@ -1002,3 +1002,11 @@ ZNQ468 format-a-number-with-separators
 30T0B3 pad-a-string
 ZT1PKS use-a-text-template
 KBZ8FA wrap-text-to-a-width
+129FHG python/building-strings
+K6NJVP python/bytes-and-bytearray
+T6N0E9 python/encoding-and-decoding
+98GRPJ python/memoryview-and-the-buffer-protocol
+2KMHH1 python/old-string-formatting
+WXEEBG python/string-pattern-matching
+7VS1XP python/templating
+N9BA9V python/unicode-in-python
