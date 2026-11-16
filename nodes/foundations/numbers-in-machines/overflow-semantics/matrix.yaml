@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has the number and bigint types of JavaScript, so a sum is rounded, not wrapped, and a program checks the range by hand, as in the JavaScript example. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin integers wrap on overflow, as in Java. On the JVM a program can call Math.addExact to trap. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash arithmetic uses fixed-width integers with no check for overflow, so a script tests the range by hand. No example file exists.
+powershell:
+  status: idiom
+  reason: PowerShell widens the type of a result that is too large, so [int]::MaxValue + 1 is not wrapped. A script that needs a fixed width converts and checks by hand. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL integer types have fixed ranges, and a value out of range is an error. PostgreSQL says that attempts to store such a value result in an error.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: n/a
+  reason: CSS has calc(), but its numbers are not integer types with a fixed width.

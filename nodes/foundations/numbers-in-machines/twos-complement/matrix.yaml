@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the 32-bit bitwise operators and BigInt.asIntN of JavaScript, but no example file exists.
+kotlin:
+  status: native
+  reason: Kotlin's Byte, Short, Int and Long are two's complement types, as in Java. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash arithmetic in $(( )) uses the signed integers of the machine, so $(( ~5 )) is -6. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell uses the .NET signed types, such as [int] and [long]. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL integer types have ranges, but SQL has no operators that show the bits of a value.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but has no integer types.
+html:
+  status: n/a
+  reason: HTML has no numbers.
+css:
+  status: n/a
+  reason: CSS has integer values, such as z-index, but no integer types with a width.
