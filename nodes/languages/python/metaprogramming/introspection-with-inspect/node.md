@@ -12,7 +12,7 @@ summary: >-
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/library/inspect.html", locator: "inspect — Inspect live objects"}
 proposals: [pep-362]
-see_also: [runtime-reflection, python/dynamic-attribute-access, python/the-dir-function, python/function-objects, python/decorators]
+see_also: [runtime-reflection, python/dynamic-attribute-access, python/the-dir-function, python/function-objects, python/decorators, python/code-and-frame-objects]
 sources:
   - url: https://docs.python.org/3.15/library/inspect.html
     title: inspect — Inspect live objects, Python 3.15 documentation
@@ -187,4 +187,4 @@ print(inspect.signature(dict.update))
 
 ## Comparison
 
-`dir()` and `getattr()` give names and values. `inspect` adds structure on top of them: the parameters of a function, the kind of each member, and the frames of the stack (rules r2, r4 and r6). See [[python/the-dir-function]] and [[python/dynamic-attribute-access]].
+`dir()` and `getattr()` give names and values. `inspect` adds structure on top of them: the parameters of a function, the kind of each member, and the frames of the stack (rules r2, r4 and r6). See [[python/the-dir-function]] and [[python/dynamic-attribute-access]], and [[python/code-and-frame-objects]] for the frame objects themselves.
