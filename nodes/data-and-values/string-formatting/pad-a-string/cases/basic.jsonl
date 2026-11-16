@@ -1,0 +1,3 @@
+{"name":"zeros","args":{"s":"7","width":3,"fill":"0"},"expect":["007","700"]}
+{"name":"spaces","args":{"s":"abc","width":6,"fill":" "},"expect":["   abc","abc   "]}
+{"name":"stars","args":{"s":"abc","width":6,"fill":"*"},"expect":["***abc","abc***"]}

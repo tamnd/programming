@@ -1,0 +1,15 @@
+# The contract of the task "format a number with fixed decimals" (spec 10.2). The function writes x in decimal notation, without an exponent, with exactly digits digits after the decimal point. It rounds the exact binary value of x, not the decimal text that was written in the program. The decimal point is a dot on each computer.
+problem: format-a-number-with-fixed-decimals
+entry: fixed
+params:
+  - name: x
+    type: float
+    pre: "a finite number with abs(x) < 1e21, and the exact value of x is not halfway between two results"
+  - name: digits
+    type: int
+    pre: "0 <= digits <= 20"
+returns:
+  type: string
+  post: "the exact binary value of x rounded to the nearest number with digits decimals, written with a minus sign if it is negative, the integer digits, and a dot and the decimals if digits > 0"
+checker: exact
+edge_classes: [no-decimals, binary, negative, small, large, precision, integer]

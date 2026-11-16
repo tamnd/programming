@@ -1,0 +1,15 @@
+# The contract of the task "wrap text to a width" (spec 10.2). The function splits the text into words at runs of white space (space, tab, carriage return and newline), and puts the words into lines with the greedy method: a word goes on the current line if the line stays at most width characters long, else it starts a new line. One space separates two words on a line. A word longer than width is not cut: it is a line of its own.
+problem: wrap-text-to-a-width
+entry: wrap
+params:
+  - name: text
+    type: string
+    pre: "ASCII text; the white space characters are space, tab, carriage return and newline"
+  - name: width
+    type: int
+    pre: "1 <= width <= 1000"
+returns:
+  type: "list<string>"
+  post: "the lines, in order, without newlines; the words of the lines, in order, are the words of text; each line with two or more words is at most width characters long; no line is empty; and a line is not followed by a first word that would fit on it"
+checker: exact
+edge_classes: [empty, one-line, exact-width, long-word, spaces, small]

@@ -1,0 +1,3 @@
+{"name":"million","args":{"n":1234567},"expect":"1,234,567"}
+{"name":"thousand","args":{"n":1000},"expect":"1,000"}
+{"name":"small","args":{"n":42},"expect":"42"}

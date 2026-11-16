@@ -1,0 +1,3 @@
+{"name":"pi-two","args":{"x":3.14159,"digits":2},"expect":"3.14"}
+{"name":"pad-zeros","args":{"x":1.0,"digits":3},"expect":"1.000"}
+{"name":"round-up","args":{"x":1234.5678,"digits":2},"expect":"1234.57"}

@@ -1,0 +1,8 @@
+{"name":"empty-string","class":["empty"],"args":{"s":"","width":3,"fill":"-"},"expect":["---","---"]}
+{"name":"width-zero","class":["no-padding"],"args":{"s":"abc","width":0,"fill":" "},"expect":["abc","abc"]}
+{"name":"exact-width","class":["no-padding"],"args":{"s":"abcd","width":4,"fill":"."},"expect":["abcd","abcd"]}
+{"name":"shorter-width","class":["no-truncation"],"args":{"s":"hello","width":3,"fill":" "},"expect":["hello","hello"]}
+{"name":"negative-number-text","class":["sign"],"args":{"s":"-42","width":6,"fill":"0"},"expect":["000-42","-42000"]}
+{"name":"fill-same-as-text","class":["fill"],"args":{"s":"aa","width":5,"fill":"a"},"expect":["aaaaa","aaaaa"]}
+{"name":"one-char-wide","class":["small"],"args":{"s":"x","width":1,"fill":"_"},"expect":["x","x"]}
+{"name":"spaces-inside","class":["spaces"],"args":{"s":"a b","width":7,"fill":"."},"expect":["....a b","a b...."]}

@@ -1,0 +1,18 @@
+# The contract of the task "use a text template" (spec 10.2). The template is text with placeholders, as in Python string.Template: $name and ${name} are changed to the value of name, and $$ is changed to one $. A name starts with a letter or an underscore, and has letters, digits and underscores. The template is read once from left to right, so a value that has a $ is not read as a template. A placeholder with a name that is not in names is an error, and each solution has a test for it.
+problem: use-a-text-template
+entry: substitute
+params:
+  - name: template
+    type: string
+    pre: "ASCII text; each $ starts $$, ${name} or $name, and each name is in names"
+  - name: names
+    type: "list<string>"
+    pre: "names that are not the same, each [A-Za-z_][A-Za-z0-9_]*"
+  - name: values
+    type: "list<string>"
+    pre: "the same length as names; values[i] is the value of names[i]"
+returns:
+  type: string
+  post: "template with each $$ changed to $, and each $name and ${name} changed to the value of name"
+checker: exact
+edge_classes: [plain, empty, escape, braces, value-not-template, names, extra]

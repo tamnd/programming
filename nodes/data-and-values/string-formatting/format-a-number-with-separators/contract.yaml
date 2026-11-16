@@ -1,0 +1,12 @@
+# The contract of the task "format a number with separators" (spec 10.2). The function writes an integer in decimal with a comma between each group of 3 digits, counted from the right, as in en-US. A negative number has a minus sign before the first digit. The result does not depend on the locale of the computer.
+problem: format-a-number-with-separators
+entry: group_thousands
+params:
+  - name: n
+    type: int
+    pre: "-2^63 <= n <= 2^63 - 1"
+returns:
+  type: string
+  post: "the decimal digits of abs(n), with a comma before each group of 3 digits counted from the right, except before the first digit, and a minus sign first if n < 0"
+checker: exact
+edge_classes: [zero, no-separator, negative, largest, smallest, group-boundary]

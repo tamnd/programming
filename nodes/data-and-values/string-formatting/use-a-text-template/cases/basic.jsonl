@@ -1,0 +1,3 @@
+{"name":"greeting","args":{"template":"Hello, $name!","names":["name"],"values":["Ada"]},"expect":"Hello, Ada!"}
+{"name":"braces","args":{"template":"${item}s cost $$${price}","names":["item","price"],"values":["Apple","3"]},"expect":"Apples cost $3"}
+{"name":"two-uses","args":{"template":"$a and $a again","names":["a"],"values":["x"]},"expect":"x and x again"}

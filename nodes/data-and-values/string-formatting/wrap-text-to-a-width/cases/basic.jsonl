@@ -1,0 +1,3 @@
+{"name":"fox-ten","args":{"text":"The quick brown fox jumps over the lazy dog","width":10},"expect":["The quick","brown fox","jumps over","the lazy","dog"]}
+{"name":"fox-twenty","args":{"text":"The quick brown fox jumps over the lazy dog","width":20},"expect":["The quick brown fox","jumps over the lazy","dog"]}
+{"name":"sentence","args":{"text":"Wrap text to a width with a greedy loop.","width":15},"expect":["Wrap text to a","width with a","greedy loop."]}
