@@ -601,7 +601,7 @@ items:
     group: "data-and-values"
     name: "Lazy sequence and stream"
     target: "lazy-sequence"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Constructs (\"Lazy evaluation and infinite streams\"). It is in the canon books: SICP index (\"joint, modeled with streams\")."
   - part: concepts
     group: "functions-and-abstraction"
@@ -715,7 +715,7 @@ items:
     group: "functions-and-abstraction"
     name: "Strict evaluation"
     target: "strict-evaluation"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Functional (\"Lazy versus eager evaluation\"). It is in the canon books: SICP index (\"applicative order vs. , [2] , [3]\")."
   - part: concepts
     group: "functions-and-abstraction"

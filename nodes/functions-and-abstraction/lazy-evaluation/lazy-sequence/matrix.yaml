@@ -1,0 +1,18 @@
+kotlin:
+  status: stdlib
+  reason: Sequence<T>, generateSequence and the sequence builder give lazy sequences, and asSequence turns a collection into one; no example file because kotlinc is not installed on the machine that records the examples.
+powershell:
+  status: idiom
+  reason: the pipeline passes objects one at a time, and Select-Object -First stops the earlier commands when it has enough objects; no example file because pwsh is not installed on the machine that records the examples.
+sql:
+  status: n/a
+  reason: a query describes a result set, and the database decides how to produce it; a cursor that fetches rows on demand is the nearest idea.
+regex:
+  status: n/a
+  reason: a regular expression has no sequences of values.
+html:
+  status: n/a
+  reason: HTML has no evaluation of expressions.
+css:
+  status: n/a
+  reason: CSS has no evaluation of expressions.

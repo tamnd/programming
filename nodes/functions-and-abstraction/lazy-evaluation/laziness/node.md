@@ -3,7 +3,7 @@ tag: 2EHE06
 kind: concept
 slug: laziness
 name: Lazy evaluation
-aliases: [lazy evaluation, laziness, call by need, non-strict evaluation, deferred execution, lazy initialization, thunk, delayed evaluation]
+aliases: [lazy evaluation, laziness, call by need, non-strict evaluation, deferred execution, lazy initialization, delayed evaluation]
 area: functions-and-abstraction/lazy-evaluation
 level: core
 summary: >-

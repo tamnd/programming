@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: arguments are evaluated before the call, and a parameter of a function type such as () -> T is a thunk; no example file because kotlinc is not installed on the machine that records the examples.
+powershell:
+  status: native
+  reason: the arguments of a command are evaluated before the command runs; no example file because pwsh is not installed on the machine that records the examples.
+sql:
+  status: n/a
+  reason: a query states the result, and the optimizer decides when and if each part of an expression is evaluated.
+regex:
+  status: n/a
+  reason: a regular expression has no function calls and no arguments.
+html:
+  status: n/a
+  reason: HTML has no evaluation of expressions.
+css:
+  status: n/a
+  reason: CSS has no function calls of the kind that this page describes.
