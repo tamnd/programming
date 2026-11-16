@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: Kotlin declares a function with fun, and a function can be at the top level of a file. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: PowerShell declares a function with the keyword function, and the function writes its result to the output. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has user-defined functions, which CREATE FUNCTION defines. Each database has its own languages for the body. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no functions.
+html:
+  status: n/a
+  reason: HTML is a markup language and has no functions. Scripts in a page use JavaScript.
+css:
+  status: absent
+  reason: CSS has built-in functions such as calc() and var(). The draft CSS Custom Functions and Mixins Module Level 1 adds the at-rule @function, which defines a custom function, but it is an Editor's Draft, not a standard.
