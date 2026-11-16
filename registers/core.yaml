@@ -1822,7 +1822,7 @@ items:
     area: "io-and-os"
     name: "Internet access"
     target: "python/io-and-os/internet-access"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Internet access\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
@@ -1871,7 +1871,7 @@ items:
     area: "io-and-os"
     name: "Binary data record layouts"
     target: "python/io-and-os/binary-data-record-layouts"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Working with binary data record layouts\", in \"Brief tour of the standard library — part II\")."
   - part: features
     group: "python"
@@ -1885,7 +1885,7 @@ items:
     area: "io-and-os"
     name: "Logging"
     target: "python/io-and-os/logging"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Logging\", in \"Brief tour of the standard library — part II\")."
   - part: features
     group: "python"
