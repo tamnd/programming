@@ -1,0 +1,17 @@
+# The contract of the task "take the first n items" (spec 10.2). The function returns a copy of the first n items of a list; a list with fewer items gives all of them.
+problem: take-the-first-n-items
+entry: take
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 32-bit signed integer; the list can be empty"
+  - name: n
+    type: "int"
+    pre: "n >= 0"
+returns:
+  type: "list<int>"
+  post: "the first min(n, len(items)) items in input order, as a list that does not share storage with items; n = 0 gives an empty list"
+checker: exact
+edge_classes: [zero, empty, more-than-length, equal-length, one, negative, extremes]
+# The toolchain has one entry for each contract. One more entry is in another case file, and each solution tests it too.
+# cases/infinite.jsonl: take_naturals(start, n) -> list<int>. The first n items of the infinite sequence start, start + 1, start + 2, and so on. The solution makes the infinite sequence lazily and takes n items from it, so it never makes the whole sequence. Pre: 0 <= start, n >= 0, start + n <= 1000000.

@@ -1,0 +1,4 @@
+{"name":"zero","class":["zero"],"args":{"n":0},"expect":[]}
+{"name":"one","class":["one"],"args":{"n":1},"expect":[2]}
+{"name":"two","class":["small"],"args":{"n":2},"expect":[2,3]}
+{"name":"past-a-gap","class":["composite-gaps"],"args":{"n":31},"expect":[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127]}

@@ -1,0 +1,2 @@
+{"name":"first-three","args":{"items":[1,2,3,4,5],"n":3},"expect":[1,2,3]}
+{"name":"first-two","args":{"items":[10,20,30,40],"n":2},"expect":[10,20]}

@@ -1084,3 +1084,7 @@ F834HP declare-a-constant
 DWPRJ5 declare-a-variable
 ZVSAC3 destructuring-assignment
 S47ZZ4 swap-two-values
+K2XY7P space-leak
+H47ZC9 strictness-annotations
+447HCD take-the-first-n-items
+QVNFSC use-lazy-sequences
