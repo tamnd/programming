@@ -1794,14 +1794,14 @@ items:
     area: "io-and-os"
     name: "Command-line arguments"
     target: "python/io-and-os/command-line-arguments"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Command-line arguments\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
     area: "io-and-os"
     name: "Error output redirection and program termination"
     target: "python/io-and-os/error-output-redirection-and-program-termination"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Error output redirection and program termination\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
@@ -1829,7 +1829,7 @@ items:
     area: "io-and-os"
     name: "Dates and times"
     target: "python/io-and-os/dates-and-times"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Dates and times\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
