@@ -1,0 +1,12 @@
+# The contract of the task "use a priority queue" (spec 10.2). Each solution pushes each request with its priority onto a priority queue, then pops the requests one at a time. The largest priority comes out first, and requests with equal priorities come out in arrival order.
+problem: use-a-priority-queue
+entry: serve_order
+params:
+  - name: priorities
+    type: "list<int>"
+    pre: "request i has the priority priorities[i]; each priority fits in a signed 32-bit integer; at most 100000 requests"
+returns:
+  type: "list<int>"
+  post: "the request numbers (0-based) in serve order: a larger priority first, and for equal priorities, the smaller request number first; the list priorities does not change"
+checker: exact
+edge_classes: [empty, one, ties, negative, int32-extremes, sorted, reversed]

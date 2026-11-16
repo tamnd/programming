@@ -1,0 +1,6 @@
+{"name":"empty","class":["empty"],"args":{"work":[],"slice":3},"expect":[]}
+{"name":"one","class":["one"],"args":{"work":[7],"slice":2},"expect":[0]}
+{"name":"big-slice","class":["big-slice"],"args":{"work":[3,1,2],"slice":10},"expect":[0,1,2]}
+{"name":"slice-one","class":["slice-one"],"args":{"work":[2,2,1],"slice":1},"expect":[2,0,1]}
+{"name":"equal-work","class":["equal-work"],"args":{"work":[2,2,2],"slice":1},"expect":[0,1,2]}
+{"name":"long-job-first","class":["long-job-first"],"args":{"work":[10,1,1],"slice":3},"expect":[1,2,0]}

@@ -1,0 +1,15 @@
+# The contract of the task "use a queue" (spec 10.2). Each solution simulates round-robin scheduling: it takes the job at the front of a queue, runs it for one time slice, and puts it at the back if it needs more time.
+problem: use-a-queue
+entry: finish_order
+params:
+  - name: work
+    type: "list<int>"
+    pre: "the time units that each job needs; job i is work[i]; each value is from 1 to 1000; at most 1000 jobs"
+  - name: slice
+    type: int
+    pre: "the time units that a job runs before it goes to the back of the queue; at least 1"
+returns:
+  type: "list<int>"
+  post: "the job numbers (0-based) in the order in which the jobs finish; the list work does not change"
+checker: exact
+edge_classes: [empty, one, big-slice, slice-one, equal-work, long-job-first]

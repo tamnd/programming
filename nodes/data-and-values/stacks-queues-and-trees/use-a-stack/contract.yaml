@@ -1,0 +1,12 @@
+# The contract of the task "use a stack" (spec 10.2). Each solution pushes each opening bracket onto a stack and pops it when the matching closing bracket comes.
+problem: use-a-stack
+entry: balanced
+params:
+  - name: text
+    type: string
+    pre: "any ASCII string; only the six characters ( ) [ ] { } are brackets, and the other characters do not count"
+returns:
+  type: bool
+  post: "true if each opening bracket has a closing bracket of the same kind after it, and the pairs nest without crossing"
+checker: exact
+edge_classes: [empty, no-brackets, unclosed, extra-close, close-first, wrong-kind, deep]
