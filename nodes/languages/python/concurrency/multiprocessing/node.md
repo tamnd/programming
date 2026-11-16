@@ -11,7 +11,7 @@ summary: >-
   The multiprocessing module runs Python code in other processes. Each process has its own interpreter and its own GIL, so CPU-bound work runs in parallel. Arguments and results cross by pickling.
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/library/multiprocessing.html", locator: "multiprocessing — Process-based parallelism"}
-see_also: [python/concurrent-futures, python/multi-threading, python/the-global-interpreter-lock, python/atomicity-and-the-memory-model]
+see_also: [python/concurrent-futures, python/multi-threading, python/subinterpreters, python/the-global-interpreter-lock, python/atomicity-and-the-memory-model]
 sources:
   - url: https://docs.python.org/3.15/library/multiprocessing.html
     title: multiprocessing — Process-based parallelism, Python 3.15 documentation

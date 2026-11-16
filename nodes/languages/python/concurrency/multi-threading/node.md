@@ -11,7 +11,7 @@ summary: >-
   The threading module runs functions in threads of one process. start() begins a thread, join() waits for it, and a daemon thread does not keep the program alive.
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/library/threading.html#thread-objects", locator: "threading, Thread objects"}
-see_also: [python/thread-synchronization, python/the-queue-module, python/the-global-interpreter-lock, python/concurrent-futures, python/multiprocessing, threads]
+see_also: [python/thread-synchronization, python/the-queue-module, python/the-global-interpreter-lock, python/concurrent-futures, python/multiprocessing, python/asyncio, threads]
 sources:
   - url: https://docs.python.org/3.15/library/threading.html#gil-and-performance-considerations
     title: threading, Thread-based parallelism, Python 3.15 documentation

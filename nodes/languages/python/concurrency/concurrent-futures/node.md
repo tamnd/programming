@@ -12,7 +12,7 @@ summary: >-
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/library/concurrent.futures.html", locator: "concurrent.futures — Launching parallel tasks"}
 proposals: [pep-3148]
-see_also: [futures, python/multi-threading, python/multiprocessing, python/the-global-interpreter-lock]
+see_also: [futures, python/multi-threading, python/multiprocessing, python/subinterpreters, python/asyncio, python/the-global-interpreter-lock]
 sources:
   - url: https://docs.python.org/3.15/library/concurrent.futures.html
     title: concurrent.futures — Launching parallel tasks, Python 3.15 documentation

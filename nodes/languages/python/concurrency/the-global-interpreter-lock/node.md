@@ -11,7 +11,7 @@ summary: >-
   In the default CPython build, the global interpreter lock lets only one thread run Python bytecode at a time. Threads still overlap while they wait for I/O or run C code that releases the lock.
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/glossary.html#term-global-interpreter-lock", locator: "Glossary, global interpreter lock"}
-see_also: [python/multi-threading, python/free-threaded-python, python/atomicity-and-the-memory-model, python/multiprocessing, threads]
+see_also: [python/multi-threading, python/free-threaded-python, python/atomicity-and-the-memory-model, python/multiprocessing, python/subinterpreters, threads]
 sources:
   - url: https://docs.python.org/3.15/glossary.html#term-global-interpreter-lock
     title: Glossary, Python 3.15 documentation
