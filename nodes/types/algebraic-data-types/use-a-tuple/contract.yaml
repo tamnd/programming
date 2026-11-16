@@ -1,0 +1,12 @@
+# The contract of the task "use a tuple" (spec 10.2). Each solution returns the smallest and the largest number together as one tuple, or as the nearest form that the language has.
+problem: use-a-tuple
+entry: min_max
+params:
+  - name: numbers
+    type: "list<int>"
+    pre: "at least one number; each number fits in a signed 32-bit integer"
+returns:
+  type: "tuple<int, int>"
+  post: "(the smallest number, the largest number) of the list; the list does not change"
+checker: exact
+edge_classes: [one, negative, all-same, int32-extremes, sorted, reversed]

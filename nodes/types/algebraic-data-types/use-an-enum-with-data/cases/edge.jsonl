@@ -1,0 +1,9 @@
+{"name":"unknown-kind","class":["unknown-kind"],"args":{"kind":"circle","sides":[2]},"expect":null}
+{"name":"wrong-case","class":["wrong-case"],"args":{"kind":"Square","sides":[3]},"expect":null}
+{"name":"too-few-sides","class":["too-few-sides"],"args":{"kind":"rectangle","sides":[4]},"expect":null}
+{"name":"too-many-sides","class":["too-many-sides"],"args":{"kind":"square","sides":[3,3]},"expect":null}
+{"name":"no-sides","class":["no-sides"],"args":{"kind":"triangle","sides":[]},"expect":null}
+{"name":"zero-side","class":["zero-side"],"args":{"kind":"square","sides":[0]},"expect":null}
+{"name":"negative-side","class":["negative-side"],"args":{"kind":"rectangle","sides":[-2,5]},"expect":null}
+{"name":"not-a-triangle","class":["not-a-triangle"],"args":{"kind":"triangle","sides":[1,2,3]},"expect":null}
+{"name":"largest","class":["largest"],"args":{"kind":"triangle","sides":[1000000,1000000,1000000]},"expect":3000000}

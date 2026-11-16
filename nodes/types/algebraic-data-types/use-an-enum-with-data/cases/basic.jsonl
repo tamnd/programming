@@ -1,0 +1,3 @@
+{"name":"square","args":{"kind":"square","sides":[3]},"expect":12}
+{"name":"rectangle","args":{"kind":"rectangle","sides":[2,5]},"expect":14}
+{"name":"triangle","args":{"kind":"triangle","sides":[3,4,5]},"expect":12}

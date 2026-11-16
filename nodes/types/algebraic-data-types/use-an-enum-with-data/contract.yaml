@@ -1,0 +1,15 @@
+# The contract of the task "use an enum with data" (spec 10.2). Each solution defines a shape type with three variants that carry different data (a square with one side, a rectangle with a width and a height, a triangle with three sides), builds a shape from a kind and a list of sides, and computes its perimeter by matching on the variant.
+problem: use-an-enum-with-data
+entry: perimeter
+params:
+  - name: kind
+    type: string
+    pre: "any text with no line break"
+  - name: sides
+    type: "list<int>"
+    pre: "from 0 to 5 numbers; each number is from -1000000 to 1000000"
+returns:
+  type: "option<int>"
+  post: "the perimeter of the shape when kind is square with 1 side, rectangle with 2 sides or triangle with 3 sides, exactly and in lower case, every side is greater than 0, and for a triangle each side is less than the sum of the other two; otherwise null"
+checker: exact
+edge_classes: [unknown-kind, wrong-case, too-few-sides, too-many-sides, no-sides, zero-side, negative-side, not-a-triangle, largest]
