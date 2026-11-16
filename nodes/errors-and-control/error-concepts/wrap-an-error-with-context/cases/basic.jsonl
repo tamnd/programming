@@ -1,0 +1,3 @@
+{"name":"valid","args":{"where":"app.conf:3","text":"8080"},"expect":"port 8080"}
+{"name":"not-a-number","args":{"where":"app.conf:3","text":"x"},"expect":"error: app.conf:3: read port: not a number: 'x'"}
+{"name":"too-large","args":{"where":"app.conf:7","text":"70000"},"expect":"error: app.conf:7: read port: out of range: 70000"}

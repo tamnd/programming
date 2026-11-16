@@ -1,0 +1,12 @@
+# The contract of the task "Define a custom error type" (spec 10.2). The parser reports a bad port with its own error type, and the caller turns the error into a message.
+problem: define-a-custom-error-type
+entry: check_port
+params:
+  - name: text
+    type: string
+    pre: "any string"
+returns:
+  type: string
+  post: "port N when text is one or more ASCII digits with the value N in 1..65535; else invalid port 'text': R, where R is empty when text is empty, not a number when text has a character that is not an ASCII digit, and out of range when the value is 0 or more than 65535"
+checker: exact
+edge_classes: [empty, zero, boundary, negative, whitespace, overflow]

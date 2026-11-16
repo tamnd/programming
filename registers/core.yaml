@@ -12734,13 +12734,13 @@ items:
     group: "errors"
     name: "Define a custom error type"
     target: "define-a-custom-error-type"
-    status: "planned"
+    status: "node"
     reason: "A job of error handling that each program needs. Related titles, found by keyword: Go by Example (Custom Errors); Rust by Example (Defining an error type)."
   - part: tasks
     group: "errors"
     name: "Wrap an error with context"
     target: "wrap-an-error-with-context"
-    status: "planned"
+    status: "node"
     reason: "A job of error handling that each program needs. Related titles, found by keyword: Rust by Example (Wrapping errors)."
   - part: tasks
     group: "errors"
@@ -12789,7 +12789,7 @@ items:
     group: "errors"
     name: "Log an error"
     target: "log-an-error"
-    status: "planned"
+    status: "node"
     reason: "A job of error handling that each program needs. Related titles, found by keyword: Go by Example (Logging)."
   - part: tasks
     group: "system"

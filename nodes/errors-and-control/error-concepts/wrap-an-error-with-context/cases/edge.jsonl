@@ -1,0 +1,6 @@
+{"name":"empty","class":["empty"],"args":{"where":"app.conf:1","text":""},"expect":"error: app.conf:1: read port: not a number: ''"}
+{"name":"zero","class":["zero","boundary"],"args":{"where":"app.conf:2","text":"0"},"expect":"error: app.conf:2: read port: out of range: 0"}
+{"name":"largest","class":["boundary"],"args":{"where":"app.conf:2","text":"65535"},"expect":"port 65535"}
+{"name":"leading-space","class":["whitespace"],"args":{"where":"app.conf:4","text":" 80"},"expect":"error: app.conf:4: read port: not a number: ' 80'"}
+{"name":"overflow","class":["overflow"],"args":{"where":"app.conf:5","text":"99999999999999999999"},"expect":"error: app.conf:5: read port: out of range: 99999999999999999999"}
+{"name":"negative","class":["negative"],"args":{"where":"app.conf:6","text":"-1"},"expect":"error: app.conf:6: read port: not a number: '-1'"}
