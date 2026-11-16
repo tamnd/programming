@@ -1,0 +1,5 @@
+{"name":"origin","class":["zero"],"args":{"x":0,"y":0},"expect":"origin"}
+{"name":"negative-diagonal","class":["negative"],"args":{"x":-2,"y":-2},"expect":"diagonal"}
+{"name":"anti-diagonal","class":["negative"],"args":{"x":3,"y":-3},"expect":"other"}
+{"name":"negative-x-axis","class":["negative"],"args":{"x":-7,"y":0},"expect":"x-axis"}
+{"name":"one-one","class":["boundary"],"args":{"x":1,"y":1},"expect":"diagonal"}

@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: A when expression must be exhaustive, and with a sealed class or an enum the compiler checks that each subclass or entry has a branch, so no else branch is needed. A when statement need not be exhaustive. No example file exists because kotlinc is not installed.
+powershell:
+  status: absent
+  reason: switch has no static check. If no condition matches and there is no default, no action runs. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: Nothing checks that the WHEN clauses of a CASE expression cover each value. With no ELSE clause, a value that matches no WHEN gives NULL. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no match arms to cover.
+html:
+  status: n/a
+  reason: HTML has no match statement.
+css:
+  status: n/a
+  reason: CSS has no match statement.

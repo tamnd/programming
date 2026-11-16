@@ -1,0 +1,18 @@
+kotlin:
+  status: idiom
+  reason: A destructuring declaration such as `val (a, b) = pair` has no test; it calls the componentN() functions. A test that can fail is an `is` check in `if` or `when`, with a smart cast. Kotlin has no form like let-else. No example file exists because kotlinc is not installed.
+powershell:
+  status: absent
+  reason: PowerShell has no patterns that bind names. Multiple assignment such as `$a, $b = 1, 2` has no test. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: SQL has no patterns that bind names. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression can fail to match, but it is not a pattern in a binding of a programming language.
+html:
+  status: n/a
+  reason: HTML has no patterns.
+css:
+  status: n/a
+  reason: CSS has no patterns that bind names.
