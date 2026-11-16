@@ -1,0 +1,8 @@
+{"name":"empty","class":["empty"],"args":{"text":""},"expect":"invalid port '': empty"}
+{"name":"zero","class":["zero","boundary"],"args":{"text":"0"},"expect":"invalid port '0': out of range"}
+{"name":"one","class":["boundary"],"args":{"text":"1"},"expect":"port 1"}
+{"name":"largest","class":["boundary"],"args":{"text":"65535"},"expect":"port 65535"}
+{"name":"leading-zeros","class":["zero"],"args":{"text":"0080"},"expect":"port 80"}
+{"name":"negative","class":["negative"],"args":{"text":"-1"},"expect":"invalid port '-1': not a number"}
+{"name":"leading-space","class":["whitespace"],"args":{"text":" 80"},"expect":"invalid port ' 80': not a number"}
+{"name":"overflow","class":["overflow"],"args":{"text":"99999999999999999999"},"expect":"invalid port '99999999999999999999': out of range"}

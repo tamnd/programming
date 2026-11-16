@@ -924,3 +924,7 @@ QBZ504 binary-coded-decimal
 KZCXPG fixed-point-arithmetic
 7YCVZD integer-division-and-modulo
 6JA921 rational-numbers-in-code
+PHJT60 define-a-custom-error-type
+TFJ8M7 log-an-error
+ZAGNTN wrap-an-error-with-context
+3QKH8F writing-error-messages

@@ -1,0 +1,15 @@
+# The contract of the task "Wrap an error with context" (spec 10.2). The caller of a parser adds the place to its error, keeps the error as the cause, and prints the chain.
+problem: wrap-an-error-with-context
+entry: check_setting
+params:
+  - name: where
+    type: string
+    pre: "a place in a file, such as app.conf:3"
+  - name: text
+    type: string
+    pre: "any string"
+returns:
+  type: string
+  post: "port N when text is one or more ASCII digits with the value N in 1..65535; else error: where: read port: C, where C is not a number: 'text' when text is empty or has a character that is not an ASCII digit, and out of range: text when the value is 0 or more than 65535"
+checker: exact
+edge_classes: [empty, zero, boundary, whitespace, overflow, negative]

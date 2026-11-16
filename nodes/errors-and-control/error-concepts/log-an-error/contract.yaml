@@ -1,0 +1,13 @@
+# The contract of the task "Log an error" (spec 10.2). Each solution reads a list of port settings, logs each bad one at the error level with its line number and its cause, and logs a summary at the info level.
+# Each solution also takes a logger, or a stream for the log, as a second parameter. The string in the result is the text that this logger wrote. It has the logfmt form of the TextHandler of Go's log/slog, without the time.
+problem: log-an-error
+entry: read_ports
+params:
+  - name: texts
+    type: "list<string>"
+    pre: "each text has only printable ASCII characters, line feed, carriage return and tab"
+returns:
+  type: "tuple<list<int>, string>"
+  post: "(ports, log): ports holds the value of each text that is one or more ASCII digits with a value in 1..65535, in order. log has one line for each other text, level=ERROR msg=\"read port failed\" line=I err=Q, where I counts from 1 and Q is the message not a number: 'text' or out of range: text in double quotes, with each backslash, double quote, line feed, carriage return and tab written as \\\\, \\\", \\n, \\r and \\t; then one line level=INFO msg=\"ports read\" ok=K total=N. Each line ends with a line feed."
+checker: exact
+edge_classes: [empty, boundary, zero, control, escapes, crlf]

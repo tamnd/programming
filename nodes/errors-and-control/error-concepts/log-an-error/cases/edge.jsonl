@@ -1,0 +1,7 @@
+{"name":"empty-list","class":["empty"],"args":{"texts":[]},"expect":[[],"level=INFO msg=\"ports read\" ok=0 total=0\n"]}
+{"name":"empty-text","class":["empty"],"args":{"texts":[""]},"expect":[[],"level=ERROR msg=\"read port failed\" line=1 err=\"not a number: ''\"\nlevel=INFO msg=\"ports read\" ok=0 total=1\n"]}
+{"name":"boundary","class":["boundary","zero"],"args":{"texts":["1","65535","0"]},"expect":[[1,65535],"level=ERROR msg=\"read port failed\" line=3 err=\"out of range: 0\"\nlevel=INFO msg=\"ports read\" ok=2 total=3\n"]}
+{"name":"newline","class":["control"],"args":{"texts":["80\nlevel=INFO msg=\"all good\""]},"expect":[[],"level=ERROR msg=\"read port failed\" line=1 err=\"not a number: '80\\nlevel=INFO msg=\\\"all good\\\"'\"\nlevel=INFO msg=\"ports read\" ok=0 total=1\n"]}
+{"name":"backslash","class":["escapes"],"args":{"texts":["C:\\port"]},"expect":[[],"level=ERROR msg=\"read port failed\" line=1 err=\"not a number: 'C:\\\\port'\"\nlevel=INFO msg=\"ports read\" ok=0 total=1\n"]}
+{"name":"carriage-return","class":["crlf"],"args":{"texts":["80\r"]},"expect":[[],"level=ERROR msg=\"read port failed\" line=1 err=\"not a number: '80\\r'\"\nlevel=INFO msg=\"ports read\" ok=0 total=1\n"]}
+{"name":"tab","class":["control"],"args":{"texts":["8\t0"]},"expect":[[],"level=ERROR msg=\"read port failed\" line=1 err=\"not a number: '8\\t0'\"\nlevel=INFO msg=\"ports read\" ok=0 total=1\n"]}
