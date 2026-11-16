@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT
+// Part of https://programming.tamnd.com/pattern-match-on-a-value/.
+
+import assert from "node:assert/strict";
+import { test } from "node:test";
+
+import { classify } from "./classify.ts";
+
+const cases: [string, number, number, string][] = [
+  ["x-axis", 5, 0, "x-axis"],
+  ["y-axis", 0, -3, "y-axis"],
+  ["diagonal", 4, 4, "diagonal"],
+  ["other", 2, 7, "other"],
+  ["origin", 0, 0, "origin"],
+  ["negative-diagonal", -2, -2, "diagonal"],
+  ["anti-diagonal", 3, -3, "other"],
+  ["negative-x-axis", -7, 0, "x-axis"],
+  ["one-one", 1, 1, "diagonal"],
+];
+
+for (const [name, x, y, want] of cases) {
+  test(name, () => {
+    assert.equal(classify(x, y), want);
+  });
+}

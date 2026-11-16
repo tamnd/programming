@@ -13514,13 +13514,13 @@ items:
     group: "meta"
     name: "Destructure a value"
     target: "destructure-a-value"
-    status: "planned"
+    status: "node"
     reason: "A job of metaprogramming and of program structure. Related titles, found by keyword: Rust by Example (Destructuring)."
   - part: tasks
     group: "meta"
     name: "Pattern match on a value"
     target: "pattern-match-on-a-value"
-    status: "planned"
+    status: "node"
     related: "pattern-matching"
     reason: "A job of metaprogramming and of program structure. Related titles, found by keyword: Rust by Example (match)."
   - part: tasks

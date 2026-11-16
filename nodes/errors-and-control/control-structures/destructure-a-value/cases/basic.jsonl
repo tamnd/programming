@@ -1,0 +1,4 @@
+{"name":"first","args":{"p":[1,2],"q":[4,6]},"expect":7}
+{"name":"on-a-line","args":{"p":[0,0],"q":[10,0]},"expect":10}
+{"name":"down-left","args":{"p":[5,5],"q":[2,1]},"expect":7}
+{"name":"mixed-signs","args":{"p":[3,-1],"q":[-2,4]},"expect":10}

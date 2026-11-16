@@ -1,0 +1,15 @@
+# The contract of the task "Pattern match on a value" (spec 10.2). The function matches the pair (x, y) against tuple patterns with a guard and names the place of the point.
+problem: pattern-match-on-a-value
+entry: classify
+params:
+  - name: x
+    type: int
+    pre: "any int"
+  - name: y
+    type: int
+    pre: "any int"
+returns:
+  type: string
+  post: "origin when x = 0 and y = 0, else x-axis when y = 0, else y-axis when x = 0, else diagonal when x = y, else other"
+checker: exact
+edge_classes: [zero, negative, boundary]

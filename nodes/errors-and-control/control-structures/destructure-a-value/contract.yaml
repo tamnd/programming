@@ -1,0 +1,15 @@
+# The contract of the task "Destructure a value" (spec 10.2). The function unpacks two points into names and returns their Manhattan distance.
+problem: destructure-a-value
+entry: manhattan
+params:
+  - name: p
+    type: "list<int>"
+    pre: "exactly 2 items, x and y; each item is between -1000000 and 1000000"
+  - name: q
+    type: "list<int>"
+    pre: "exactly 2 items, x and y; each item is between -1000000 and 1000000"
+returns:
+  type: int
+  post: "|p[0] - q[0]| + |p[1] - q[1]|"
+checker: exact
+edge_classes: [zero, negative, boundary]

@@ -1,0 +1,4 @@
+{"name":"x-axis","args":{"x":5,"y":0},"expect":"x-axis"}
+{"name":"y-axis","args":{"x":0,"y":-3},"expect":"y-axis"}
+{"name":"diagonal","args":{"x":4,"y":4},"expect":"diagonal"}
+{"name":"other","args":{"x":2,"y":7},"expect":"other"}

@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: A branch of a when expression with a subject can have a guard condition after `if`, such as `is Animal.Cat if !animal.mouseHunter`. Kotlin 2.2.0 made guard conditions stable. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: A switch condition can be a scriptblock that returns a boolean value, such as `{ $_ -lt 0 }`, and the action runs when the scriptblock is true. There are no patterns, so the scriptblock does the work of a guard. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A searched CASE expression has a boolean condition in each WHEN clause, and gives the result of the first WHEN that is true. There are no patterns, so each condition does the work of a guard. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no match statement.
+html:
+  status: n/a
+  reason: HTML has no match statement.
+css:
+  status: n/a
+  reason: CSS has no match statement.
