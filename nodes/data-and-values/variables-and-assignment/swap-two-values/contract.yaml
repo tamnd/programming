@@ -1,0 +1,18 @@
+# The contract of the task "swap two values" (spec 10.2). The function returns a copy of the list with the items at the two indexes swapped. The input list does not change.
+problem: swap-two-values
+entry: swap_items
+params:
+  - name: xs
+    type: "list<int>"
+    pre: "1 to 8 items, each a 32-bit signed integer"
+  - name: i
+    type: int
+    pre: "0 <= i < len(xs)"
+  - name: j
+    type: int
+    pre: "0 <= j < len(xs)"
+returns:
+  type: "list<int>"
+  post: "a new list equal to xs, except that the item at i is xs[j] and the item at j is xs[i]; when i == j the list is equal to xs"
+checker: exact
+edge_classes: [single, same-index, order, equal-values, negative, extremes]

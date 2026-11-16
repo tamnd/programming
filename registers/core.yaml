@@ -11552,13 +11552,13 @@ items:
     group: "basics"
     name: "Declare a variable"
     target: "declare-a-variable"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rosetta Code (Variables, History variables); Go by Example (Variables, Environment Variables); Rust by Example (Variable Bindings)."
   - part: tasks
     group: "basics"
     name: "Declare a constant"
     target: "declare-a-constant"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rosetta Code (Real constants and functions); Go by Example (Constants); Rust by Example (constants)."
   - part: tasks
     group: "basics"
@@ -11714,7 +11714,7 @@ items:
     group: "basics"
     name: "Swap two values"
     target: "swap-two-values"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rosetta Code (Generic swap)."
   - part: tasks
     group: "basics"

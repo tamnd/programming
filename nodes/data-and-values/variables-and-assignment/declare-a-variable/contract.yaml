@@ -1,0 +1,12 @@
+# The contract of the task "declare a variable" (spec 10.2). The function declares a variable, initializes it to 0 and reassigns it once for each value, so it returns the sum of the values.
+problem: declare-a-variable
+entry: total
+params:
+  - name: values
+    type: "list<int>"
+    pre: "at most 8 values; each value and each partial sum fit in a 64-bit signed integer"
+returns:
+  type: int
+  post: "the sum of the values; 0 for the empty list"
+checker: exact
+edge_classes: [empty, single, negative, zero, large]

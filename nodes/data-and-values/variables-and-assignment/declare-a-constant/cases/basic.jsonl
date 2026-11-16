@@ -1,0 +1,3 @@
+{"name":"one-day","args":{"days":1},"expect":86400}
+{"name":"one-week","args":{"days":7},"expect":604800}
+{"name":"one-year","args":{"days":365},"expect":31536000}
