@@ -1,0 +1,18 @@
+# The contract of the task "define a function" (spec 10.2). Each solution defines a function with three parameters and one result, and the tests call it.
+problem: define-a-function
+entry: clamp
+params:
+  - name: value
+    type: int
+    pre: "a 32-bit signed integer"
+  - name: low
+    type: int
+    pre: "a 32-bit signed integer, not more than high"
+  - name: high
+    type: int
+    pre: "a 32-bit signed integer, not less than low"
+returns:
+  type: int
+  post: "low when value is less than low; high when value is more than high; else value"
+checker: exact
+edge_classes: [boundary, equal-bounds, negative, zero, extremes]

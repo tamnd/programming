@@ -697,7 +697,7 @@ items:
     group: "functions-and-abstraction"
     name: "Overloading"
     target: "overloading"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Types (\"Definition and advantages of polymorphism: parametric, ...\"). It is in 3 of the 7 language references: Java Language Specification (\"Overloading\"); C++ working draft (\"Overloading\"); C# standard (\"Signatures and overloading\")."
   - part: concepts
     group: "functions-and-abstraction"
@@ -721,7 +721,7 @@ items:
     group: "functions-and-abstraction"
     name: "Method"
     target: "method"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-OOP (\"Definition of classes: fields, methods, and constructors. ...\"). It is in 7 of the 7 language references: Python Language Reference (\"Special method names\"); Go spec (\"Method declarations\"); Rust Reference (\"Method call expressions\"); and 4 more. It is in the canon books: Crafting Interpreters contents (\"Methods and Initializers\"); The Rust Programming Language contents (\"Methods\")."
   - part: concepts
     group: "functions-and-abstraction"
@@ -11624,13 +11624,13 @@ items:
     group: "basics"
     name: "Define a function"
     target: "define-a-function"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rosetta Code (Function definition); Go by Example (Functions); Rust by Example (Functions)."
   - part: tasks
     group: "basics"
     name: "Return multiple values"
     target: "return-multiple-values"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rosetta Code (Return multiple values); Go by Example (Multiple Return Values)."
   - part: tasks
     group: "basics"

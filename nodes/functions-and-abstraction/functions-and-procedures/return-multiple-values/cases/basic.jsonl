@@ -1,0 +1,3 @@
+{"name":"positive","args":{"a":17,"b":5},"expect":[3,2]}
+{"name":"exact","args":{"a":20,"b":4},"expect":[5,0]}
+{"name":"smaller-dividend","args":{"a":3,"b":10},"expect":[0,3]}

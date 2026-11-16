@@ -1,0 +1,12 @@
+{"name":"negative-dividend","class":["negative"],"args":{"a":-17,"b":5},"expect":[-4,3]}
+{"name":"negative-divisor","class":["negative"],"args":{"a":17,"b":-5},"expect":[-4,-3]}
+{"name":"both-negative","class":["negative"],"args":{"a":-17,"b":-5},"expect":[3,-2]}
+{"name":"exact-negative","class":["exact"],"args":{"a":-20,"b":4},"expect":[-5,0]}
+{"name":"small-negative","class":["negative"],"args":{"a":-3,"b":10},"expect":[-1,7]}
+{"name":"zero-dividend","class":["zero"],"args":{"a":0,"b":7},"expect":[0,0]}
+{"name":"zero-negative-divisor","class":["zero"],"args":{"a":0,"b":-7},"expect":[0,0]}
+{"name":"divisor-one","class":["one"],"args":{"a":9,"b":1},"expect":[9,0]}
+{"name":"int-max","class":["extremes"],"args":{"a":2147483647,"b":2},"expect":[1073741823,1]}
+{"name":"int-min","class":["extremes"],"args":{"a":-2147483648,"b":3},"expect":[-715827883,1]}
+{"name":"min-by-max","class":["extremes"],"args":{"a":-2147483648,"b":2147483647},"expect":[-2,2147483646]}
+{"name":"max-by-min","class":["extremes"],"args":{"a":2147483647,"b":-2147483648},"expect":[-1,-1]}

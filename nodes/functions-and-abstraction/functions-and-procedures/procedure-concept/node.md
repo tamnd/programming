@@ -5,7 +5,7 @@ slug: procedure-concept
 name: Procedure and subroutine
 aliases: [procedure, subroutine, void function, command]
 area: functions-and-abstraction/functions-and-procedures
-level: core
+level: intro
 summary: >-
   A procedure, or subroutine, is a named piece of code that a program calls for an effect, such as output or a change of state, not for a result. Many languages write it as a function with no result.
 applies_to: core-languages

@@ -5,7 +5,7 @@ slug: return-value
 name: Return value
 aliases: [return statement, result, function result, early return, implicit return]
 area: functions-and-abstraction/functions-and-procedures
-level: core
+level: intro
 summary: >-
   The return value is the result of a call. A return statement ends the function and gives the value to the caller, and some languages also return the value of the last expression of the body.
 applies_to: core-languages
