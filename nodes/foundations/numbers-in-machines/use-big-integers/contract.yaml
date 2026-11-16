@@ -1,0 +1,15 @@
+# The contract of the task "use big integers" (spec 10.2). The function raises an integer to a power and returns the exact result as decimal text. Most results do not fit in a 64-bit integer, so each solution uses a big integer type, or an array of digit groups where the language has none.
+problem: use-big-integers
+entry: big_power
+params:
+  - name: base
+    type: int
+    pre: "-1000 <= base <= 1000"
+  - name: exp
+    type: int
+    pre: "0 <= exp <= 200"
+returns:
+  type: string
+  post: "the decimal digits of base to the power exp, with no leading zeros and a leading - for a negative value; any base to the power 0 is 1"
+checker: exact
+edge_classes: [zero-exponent, zero-base, minus-one, negative-odd, negative-even, past-int64, past-uint64, largest]
