@@ -1,0 +1,27 @@
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses the module node:child_process, as in the JavaScript example. No example file exists.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses java.lang.ProcessBuilder and Process, as in the Java example; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: stdlib
+  reason: the POSIX functions fork, the exec family, waitpid and posix_spawn, as in the C++ example; no separate example file.
+bash:
+  status: native
+  reason: each external command runs in its own process; & starts it in the background, $! gives its process ID and wait collects its exit status. No example file exists.
+powershell:
+  status: stdlib
+  reason: Start-Process starts a program and Get-Process lists processes; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query runs inside the database server and does not start processes.
+regex:
+  status: n/a
+  reason: a pattern has no processes.
+html:
+  status: n/a
+  reason: markup has no processes.
+css:
+  status: n/a
+  reason: style rules have no processes.

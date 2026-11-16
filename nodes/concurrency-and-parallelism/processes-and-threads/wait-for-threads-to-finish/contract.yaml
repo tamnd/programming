@@ -1,0 +1,12 @@
+# The contract of the task "wait for threads to finish" (spec 10.2). The function sums each chunk on a thread other than the caller, starts all of them before it waits, waits until every one has finished, and returns the sums in the order of the chunks.
+problem: wait-for-threads-to-finish
+entry: parallel_sums
+params:
+  - name: chunks
+    type: "list<list<int>>"
+    pre: "0 to 32 chunks; each has 0 to 10000 items; each item has absolute value 1000000000 or less"
+returns:
+  type: "list<int>"
+  post: "one sum for each chunk, in the order of chunks; item i is the sum of chunks[i], and 0 for an empty chunk; every thread that the function started has finished when it returns"
+checker: exact
+edge_classes: [empty, empty-chunk, single, negative, limit, many]

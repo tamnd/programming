@@ -1,0 +1,6 @@
+{"name":"empty","class":["empty"],"args":{"names":[]},"expect":[]}
+{"name":"single","class":["single"],"args":{"names":["solo"]},"expect":["hello from solo"]}
+{"name":"empty-name","class":["empty-name"],"args":{"names":[""]},"expect":["hello from "]}
+{"name":"duplicate","class":["duplicate"],"args":{"names":["twin","twin"]},"expect":["hello from twin","hello from twin"]}
+{"name":"unicode","class":["unicode"],"args":{"names":["Zoë","李雷"]},"expect":["hello from Zoë","hello from 李雷"]}
+{"name":"many","class":["many"],"args":{"names":["t0","t1","t2","t3","t4","t5","t6","t7","t8","t9","t10","t11","t12","t13","t14","t15","t16","t17","t18","t19","t20","t21","t22","t23","t24","t25","t26","t27","t28","t29","t30","t31"]},"expect":["hello from t0","hello from t1","hello from t2","hello from t3","hello from t4","hello from t5","hello from t6","hello from t7","hello from t8","hello from t9","hello from t10","hello from t11","hello from t12","hello from t13","hello from t14","hello from t15","hello from t16","hello from t17","hello from t18","hello from t19","hello from t20","hello from t21","hello from t22","hello from t23","hello from t24","hello from t25","hello from t26","hello from t27","hello from t28","hello from t29","hello from t30","hello from t31"]}

@@ -1,0 +1,27 @@
+typescript:
+  status: stdlib
+  reason: TypeScript on Node.js uses the Worker class of node:worker_threads, with the exit event and unref, as in the JavaScript example. No example file exists.
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses Thread.join and daemon threads, as in the Java example; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: stdlib
+  reason: pthread_join and pthread_detach in POSIX, and thrd_join and thrd_detach in C11; no separate example file.
+bash:
+  status: native
+  reason: the wait builtin waits for background jobs and gives their exit status. No example file exists.
+powershell:
+  status: stdlib
+  reason: Wait-Job waits for background jobs and Receive-Job gets their output; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query does not start threads, so it has nothing to join or detach.
+regex:
+  status: n/a
+  reason: a pattern has no threads.
+html:
+  status: n/a
+  reason: markup has no threads.
+css:
+  status: n/a
+  reason: style rules have no threads.
