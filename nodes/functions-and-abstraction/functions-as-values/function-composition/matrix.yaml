@@ -1,0 +1,18 @@
+kotlin:
+  status: idiom
+  reason: The Kotlin standard library has no compose function, but a function can take two function values and return a lambda that calls both. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: A PowerShell pipeline passes the output of one command to the next command, and a script block can call two other script blocks. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: Standard SQL nests function calls in an expression, but it has no function values to compose.
+regex:
+  status: n/a
+  reason: A regular expression has no functions.
+html:
+  status: n/a
+  reason: HTML is a markup language and has no functions.
+css:
+  status: n/a
+  reason: CSS functions such as calc() can nest, but they are not values that a style sheet can compose.

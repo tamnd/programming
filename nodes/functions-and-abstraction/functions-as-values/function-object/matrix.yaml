@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: A Kotlin class can declare an operator fun invoke, and then a program calls its objects like functions. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: A PowerShell script block is a value that a program calls with the & operator, and the GetNewClosure method binds it to variables. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: Standard SQL has no objects that a query can call.
+regex:
+  status: n/a
+  reason: A regular expression has no functions or objects.
+html:
+  status: n/a
+  reason: HTML is a markup language and has no functions or objects.
+css:
+  status: n/a
+  reason: CSS has no objects that a style sheet can call.

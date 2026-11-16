@@ -673,7 +673,7 @@ items:
     group: "functions-and-abstraction"
     name: "Anonymous function"
     target: "anonymous-function"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Functional (\"Lambda expressions and evaluation: (See also: AL-Models, ...\"). It is in 6 of the 7 language references: Python Language Reference (\"Lambdas\"); Rust Reference (\"Closure expressions\"); Java Language Specification (\"Lambda Expressions\"); and 3 more. It is in the canon books: SICP index (\"calculus, see lambda calculus\"); HtDP contents (\"Functions from lambda\")."
   - part: concepts
     group: "functions-and-abstraction"
@@ -685,7 +685,7 @@ items:
     group: "functions-and-abstraction"
     name: "Function composition"
     target: "function-composition"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-OOP (\"Composition vs inheritance\"). It is in the canon books: SICP index (\"composition of functions\"); HtDP contents (\"Design by Composition\")."
   - part: concepts
     group: "functions-and-abstraction"
