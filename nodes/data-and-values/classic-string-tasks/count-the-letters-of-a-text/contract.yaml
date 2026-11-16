@@ -1,0 +1,12 @@
+# The contract of the task "count the letters of a text" (spec 10.2). The function counts each ASCII letter of the text, with A to Z counted as a to z, and returns 26 counts in the order of the alphabet. Other characters do not count.
+problem: count-the-letters-of-a-text
+entry: count_letters
+params:
+  - name: text
+    type: string
+    pre: "ASCII text"
+returns:
+  type: "list<int>"
+  post: "26 counts; the count at index i is the number of times the letter with code 'a' + i, or the letter with code 'A' + i, occurs in text; all other characters are not counted"
+checker: exact
+edge_classes: [empty, no-letters, case, first-letter, last-letter, repeats, white-space]

@@ -1,0 +1,15 @@
+# The contract of the task "apply a Caesar or ROT13 cipher" (spec 10.2). The function moves each ASCII letter shift places along the alphabet, from z back to a, and keeps its case. All other characters stay as they are. ROT13 is a shift of 13, and a negative shift decodes.
+problem: apply-a-caesar-or-rot13-cipher
+entry: caesar
+params:
+  - name: text
+    type: string
+    pre: "Unicode text"
+  - name: shift
+    type: int
+    pre: "-(2^53 - 1) <= shift <= 2^53 - 1, so the value is exact in a JavaScript number"
+returns:
+  type: string
+  post: "text with each letter A to Z replaced by the letter (shift mod 26) places after it in A to Z, from Z back to A, and each letter a to z replaced in the same way in a to z, where shift mod 26 is from 0 to 25 also for a negative shift; every other character, also a letter outside ASCII, is unchanged"
+checker: exact
+edge_classes: [empty, zero, full-turn, negative, above-26, wrap, non-letters, non-ascii, large]

@@ -1,0 +1,3 @@
+{"name":"kitten-sitting","args":{"a":"kitten","b":"sitting"},"expect":3}
+{"name":"rosettacode","args":{"a":"rosettacode","b":"raisethysword"},"expect":8}
+{"name":"flaw-lawn","args":{"a":"flaw","b":"lawn"},"expect":2}

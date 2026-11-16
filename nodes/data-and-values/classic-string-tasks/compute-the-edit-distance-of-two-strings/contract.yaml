@@ -1,0 +1,15 @@
+# The contract of the task "compute the edit distance of two strings" (spec 10.2). The function returns the Levenshtein distance: the minimum number of insertions, deletions and substitutions of one character that change a into b. Each character is one ASCII character, and upper and lower case letters are different characters.
+problem: compute-the-edit-distance-of-two-strings
+entry: levenshtein
+params:
+  - name: a
+    type: string
+    pre: "ASCII text of at most 1000 characters"
+  - name: b
+    type: string
+    pre: "ASCII text of at most 1000 characters"
+returns:
+  type: int
+  post: "the minimum number of edits that change a into b, where an edit inserts one character, deletes one character or replaces one character with another; the result is at least the difference of the lengths and at most the longer length"
+checker: exact
+edge_classes: [empty, equal, substitution, transposition, case, prefix, disjoint, spaces]

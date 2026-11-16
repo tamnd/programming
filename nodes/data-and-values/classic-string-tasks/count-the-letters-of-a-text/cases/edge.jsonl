@@ -1,0 +1,7 @@
+{"name":"empty","class":["empty"],"args":{"text":""},"expect":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
+{"name":"no-letters","class":["no-letters"],"args":{"text":"123 !?"},"expect":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
+{"name":"mixed-case","class":["case"],"args":{"text":"AaAa"},"expect":[4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
+{"name":"first-and-last","class":["first-letter","last-letter"],"args":{"text":"aZ"},"expect":[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
+{"name":"only-z","class":["last-letter","repeats"],"args":{"text":"zzz"},"expect":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3]}
+{"name":"white-space","class":["white-space"],"args":{"text":" \t\n"},"expect":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
+{"name":"sentence","class":["case","repeats"],"args":{"text":"Count Each Letter, once."},"expect":[1,0,3,0,4,0,0,1,0,0,0,1,0,2,2,0,0,1,0,3,1,0,0,0,0,0]}

@@ -1,0 +1,15 @@
+# The contract of the task "detect anagrams" (spec 10.2). Two texts are anagrams when they hold the same ASCII letters the same number of times, with case ignored. Spaces, punctuation and digits do not count.
+problem: detect-anagrams
+entry: are_anagrams
+params:
+  - name: a
+    type: string
+    pre: "ASCII text"
+  - name: b
+    type: string
+    pre: "ASCII text"
+returns:
+  type: bool
+  post: "true when, for each letter from a to z, the count of that letter in a, with A to Z counted as a to z, equals its count in b; characters that are not ASCII letters do not count, so two texts with no letters give true"
+checker: exact
+edge_classes: [empty, one-empty, counts, length, case, same-word, spaces, punctuation]

@@ -1,0 +1,3 @@
+{"name":"hello","args":{"text":"hello"},"expect":[0,0,0,0,1,0,0,1,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0]}
+{"name":"pangram","args":{"text":"The quick brown fox jumps over the lazy dog"},"expect":[1,1,1,1,3,1,1,2,1,1,1,1,1,1,4,1,1,2,1,2,2,1,1,1,1,1]}
+{"name":"mississippi","args":{"text":"Mississippi"},"expect":[0,0,0,0,0,0,0,0,4,0,0,0,1,0,0,2,0,0,4,0,0,0,0,0,0,0]}

@@ -1030,3 +1030,8 @@ H0F26W run-tasks-on-a-thread-pool
 18V7W5 thread-local-storage
 QEF7A4 use-thread-local-storage
 G7XJGG work-stealing
+Z13EGF apply-a-caesar-or-rot13-cipher
+ES05X5 check-whether-a-string-is-a-palindrome
+QQS374 compute-the-edit-distance-of-two-strings
+ACKW1C count-the-letters-of-a-text
+55TSM1 detect-anagrams
