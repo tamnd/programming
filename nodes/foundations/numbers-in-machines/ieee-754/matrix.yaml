@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript numbers are JavaScript numbers, so each one is a binary64 value. No example file exists, because the JavaScript example applies.
+kotlin:
+  status: native
+  reason: Kotlin Float and Double are the JVM float and double, so they are binary32 and binary64. No example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash arithmetic expansion has integers only, so it has no IEEE 754 values. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell [float] and [double] are System.Single and System.Double, so they are binary32 and binary64. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: In PostgreSQL, real and double precision are IEEE 754 single and double precision on the supported platforms. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern matches text and has no number formats.
+html:
+  status: n/a
+  reason: HTML has no number formats.
+css:
+  status: absent
+  reason: CSS has no way to choose or to read the binary format of a number. No example file exists.

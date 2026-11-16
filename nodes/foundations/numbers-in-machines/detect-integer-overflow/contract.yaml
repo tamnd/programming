@@ -1,0 +1,15 @@
+# The contract of the task "detect integer overflow" (spec 10.2). The function adds two 64-bit signed integers. It returns the sum when the sum fits in 64 bits, and it reports the overflow when the sum does not fit, instead of a wrong sum.
+problem: detect-integer-overflow
+entry: checked_add
+params:
+  - name: a
+    type: int
+    pre: "-9223372036854775808 <= a <= 9223372036854775807, the range of a 64-bit signed integer"
+  - name: b
+    type: int
+    pre: "-9223372036854775808 <= b <= 9223372036854775807, the range of a 64-bit signed integer"
+returns:
+  type: "option<int>"
+  post: "a + b when the exact sum is from -9223372036854775808 to 9223372036854775807; otherwise null"
+checker: exact
+edge_classes: [int64-max, int64-min, positive-overflow, negative-overflow, mixed-signs]
