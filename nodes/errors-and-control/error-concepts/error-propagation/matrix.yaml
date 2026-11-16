@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: An exception goes up the call stack to the nearest matching catch. Kotlin has no checked exceptions, so a function type does not list the exceptions that pass through it. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: A terminating error goes up to the nearest try/catch or trap. A non-terminating error does not stop the script unless -ErrorAction Stop makes it terminating. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: An error in a statement goes back to the client or to the calling procedure. In procedural dialects, a handler such as a DECLARE ... HANDLER block or an EXCEPTION section can catch it. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no functions or call stack, so there is nothing to propagate.
+html:
+  status: n/a
+  reason: HTML has no functions or call stack.
+css:
+  status: n/a
+  reason: CSS has no functions or call stack.

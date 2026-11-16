@@ -913,7 +913,7 @@ items:
     group: "errors-and-control"
     name: "Error"
     target: "error-concept"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL-Scripting (\"Error/exception handling\"). It is in 3 of the 7 language references: Go spec (\"Errors\"); C++ working draft (\"Value of error codes\"); ECMAScript 2027 (\"SS: Early Errors\"). It is in the canon books: SICP index (\"error handling , [2]\"); HtDP contents (\"Input Errors\")."
   - part: concepts
     group: "errors-and-control"

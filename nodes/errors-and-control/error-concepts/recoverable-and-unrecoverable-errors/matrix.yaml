@@ -1,0 +1,18 @@
+kotlin:
+  status: idiom
+  reason: Kotlin uses exceptions for both kinds. The standard library functions require and check throw an exception for a bad argument or state, and error throws an IllegalStateException. Java Error classes such as OutOfMemoryError also reach Kotlin on the JVM. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: PowerShell separates terminating errors from non-terminating errors, but both are errors to handle, not bugs. A script stops for a bug with throw or exit. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: SQL has no mechanism for bugs. A statement fails with an error code, and the transaction can roll back. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no error mechanism of its own.
+html:
+  status: n/a
+  reason: HTML has no error mechanism for a program.
+css:
+  status: n/a
+  reason: CSS has no error mechanism for a program.

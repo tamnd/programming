@@ -1,0 +1,18 @@
+kotlin:
+  status: idiom
+  reason: Kotlin reports errors with exceptions, so a function that returns a code is a choice of the programmer. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: PowerShell sets $LASTEXITCODE to the exit code of the last native program that ran, and $? to whether the last command succeeded. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The SQL standard defines SQLSTATE, a code of five characters that reports the result of each statement. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no error mechanism of its own.
+html:
+  status: n/a
+  reason: HTML has no error mechanism for a program. HTTP status codes belong to the protocol, not to HTML.
+css:
+  status: n/a
+  reason: CSS has no error mechanism for a program.

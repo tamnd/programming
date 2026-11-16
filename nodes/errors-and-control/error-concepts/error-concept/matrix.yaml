@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: Kotlin reports errors with exceptions, as Java does, but it has no checked exceptions. The standard library also has the type Result for code that returns an error as a value. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: PowerShell has terminating errors, which try and catch handle, and non-terminating errors, which a command writes to the error stream and the program goes on. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: A database reports an error in a statement with a code and a message, and the statement has no effect. The SQL standard defines SQLSTATE codes for these errors. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no error mechanism. A pattern with bad syntax is an error of the host language, which reports it when it compiles the pattern.
+html:
+  status: n/a
+  reason: HTML has no error mechanism for a program. A parser recovers from markup errors and builds a document.
+css:
+  status: n/a
+  reason: CSS has no error mechanism for a program. A parser ignores a declaration that it cannot read.

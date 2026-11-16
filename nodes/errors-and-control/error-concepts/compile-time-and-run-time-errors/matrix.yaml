@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: The Kotlin compiler finds syntax and type errors, and its type system separates nullable types from types that cannot hold null. An index past the end throws an exception at run time. No example file exists because kotlinc is not installed.
+powershell:
+  status: absent
+  reason: PowerShell parses a script before it runs it, but it finds most other errors, such as a call to a command that does not exist, only at run time. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A database parses and checks a statement before it runs it, so a syntax error or an unknown column is found first. A constraint violation is found when the statement runs. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression engine rejects a pattern that is not valid when it compiles the pattern, but a regular expression is not a program that has run-time errors.
+html:
+  status: n/a
+  reason: An HTML parser recovers from markup errors and reports no error to a program.
+css:
+  status: n/a
+  reason: A CSS parser ignores a declaration that it cannot parse and reports no error to a program.
