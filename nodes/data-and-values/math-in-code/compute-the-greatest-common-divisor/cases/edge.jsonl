@@ -1,0 +1,10 @@
+{"name":"zero-and-number","class":["zero"],"args":{"a":0,"b":7},"expect":[7,0]}
+{"name":"both-zero","class":["zero"],"args":{"a":0,"b":0},"expect":[0,0]}
+{"name":"negative","class":["negative"],"args":{"a":-12,"b":18},"expect":[6,36]}
+{"name":"both-negative","class":["negative"],"args":{"a":-4,"b":-6},"expect":[2,12]}
+{"name":"equal","class":["equal"],"args":{"a":9,"b":9},"expect":[9,9]}
+{"name":"one","class":["one"],"args":{"a":1,"b":1000000007},"expect":[1,1000000007]}
+{"name":"multiple","class":["multiple"],"args":{"a":5,"b":25},"expect":[5,25]}
+{"name":"fibonacci","class":["fibonacci"],"args":{"a":832040,"b":514229},"expect":[1,427859097160]}
+{"name":"big-lcm","class":["overflow"],"args":{"a":3000000000000000000,"b":6000000000000000000},"expect":[3000000000000000000,6000000000000000000]}
+{"name":"largest","class":["large"],"args":{"a":9223372036854775807,"b":-9223372036854775807},"expect":[9223372036854775807,9223372036854775807]}

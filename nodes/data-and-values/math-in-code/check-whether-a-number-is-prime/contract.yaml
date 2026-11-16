@@ -1,0 +1,12 @@
+# The contract of the task "check whether a number is prime" (spec 10.2). The function tells whether an integer is prime. Numbers below 2 are not prime.
+problem: check-whether-a-number-is-prime
+entry: is_prime
+params:
+  - name: n
+    type: int
+    pre: "a 64-bit signed integer; it can be 0 or negative; it is less than 2 to the power 42, so trial division is fast"
+returns:
+  type: bool
+  post: "true if n is greater than 1 and its only positive divisors are 1 and n"
+checker: exact
+edge_classes: [negative, zero, one, two, three, square, carmichael, large]

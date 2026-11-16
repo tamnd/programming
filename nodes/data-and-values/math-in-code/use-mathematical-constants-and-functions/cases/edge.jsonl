@@ -1,0 +1,9 @@
+{"name":"diagonal","class":["irrational"],"args":{"r":1,"degrees":45},"expect":[0.7071067811865476,0.7071067811865476]}
+{"name":"thirty-degrees","class":["irrational"],"args":{"r":2,"degrees":30},"expect":[1.7320508075688772,1]}
+{"name":"zero-radius","class":["zero"],"args":{"r":0,"degrees":123},"expect":[0,0]}
+{"name":"south","class":["axis"],"args":{"r":1,"degrees":270},"expect":[0,-1]}
+{"name":"negative-angle","class":["negative-angle"],"args":{"r":1,"degrees":-90},"expect":[0,-1]}
+{"name":"full-turn","class":["full-turn"],"args":{"r":1,"degrees":360},"expect":[1,0]}
+{"name":"two-turns","class":["full-turn"],"args":{"r":3,"degrees":720},"expect":[3,0]}
+{"name":"negative-radius","class":["negative-radius"],"args":{"r":-1,"degrees":0},"expect":[-1,0]}
+{"name":"large-radius","class":["large"],"args":{"r":1000000,"degrees":60},"expect":[500000,866025.4037844386]}

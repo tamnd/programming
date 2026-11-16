@@ -1,0 +1,3 @@
+{"name":"year-1990","args":{"n":1990},"expect":"MCMXC"}
+{"name":"year-2008","args":{"n":2008},"expect":"MMVIII"}
+{"name":"each-symbol-once","args":{"n":1666},"expect":"MDCLXVI"}

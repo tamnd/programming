@@ -1,0 +1,11 @@
+{"name":"negative","class":["negative"],"args":{"n":-7},"expect":false}
+{"name":"zero","class":["zero"],"args":{"n":0},"expect":false}
+{"name":"one","class":["one"],"args":{"n":1},"expect":false}
+{"name":"two","class":["two"],"args":{"n":2},"expect":true}
+{"name":"three","class":["three"],"args":{"n":3},"expect":true}
+{"name":"square-of-prime","class":["square"],"args":{"n":25},"expect":false}
+{"name":"large-square","class":["square"],"args":{"n":4293001441},"expect":false}
+{"name":"carmichael","class":["carmichael"],"args":{"n":561},"expect":false}
+{"name":"large-prime","class":["large"],"args":{"n":1000000007},"expect":true}
+{"name":"mersenne-prime","class":["large"],"args":{"n":2147483647},"expect":true}
+{"name":"large-composite","class":["large"],"args":{"n":2147483649},"expect":false}

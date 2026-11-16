@@ -1,0 +1,9 @@
+{"name":"one","class":["smallest"],"args":{"n":1},"expect":"I"}
+{"name":"four","class":["subtractive"],"args":{"n":4},"expect":"IV"}
+{"name":"nine","class":["subtractive"],"args":{"n":9},"expect":"IX"}
+{"name":"forty-nine","class":["digit-by-digit"],"args":{"n":49},"expect":"XLIX"}
+{"name":"ninety-nine","class":["digit-by-digit"],"args":{"n":99},"expect":"XCIX"}
+{"name":"four-hundred-forty-four","class":["many-subtractive"],"args":{"n":444},"expect":"CDXLIV"}
+{"name":"year-1994","class":["many-subtractive"],"args":{"n":1994},"expect":"MCMXCIV"}
+{"name":"longest","class":["longest"],"args":{"n":3888},"expect":"MMMDCCCLXXXVIII"}
+{"name":"largest","class":["largest"],"args":{"n":3999},"expect":"MMMCMXCIX"}

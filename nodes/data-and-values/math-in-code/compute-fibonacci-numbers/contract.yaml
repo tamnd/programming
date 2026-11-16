@@ -1,0 +1,12 @@
+# The contract of the task "compute Fibonacci numbers" (spec 10.2). The function returns F(n), with F(0) = 0 and F(1) = 1. F(92) is the largest Fibonacci number in a 64-bit signed integer.
+problem: compute-fibonacci-numbers
+entry: fibonacci
+params:
+  - name: n
+    type: int
+    pre: "0 <= n <= 92, so the result fits in a 64-bit signed integer"
+returns:
+  type: int
+  post: "F(n), where F(0) = 0, F(1) = 1 and F(n) = F(n - 1) + F(n - 2)"
+checker: exact
+edge_classes: [zero, one, two, int32-limit, beyond-int32, float-limit, int64-limit]

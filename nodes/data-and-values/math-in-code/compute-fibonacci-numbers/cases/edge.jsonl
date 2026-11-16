@@ -1,0 +1,7 @@
+{"name":"zero","class":["zero"],"args":{"n":0},"expect":0}
+{"name":"one","class":["one"],"args":{"n":1},"expect":1}
+{"name":"two","class":["two"],"args":{"n":2},"expect":1}
+{"name":"largest-32-bit","class":["int32-limit"],"args":{"n":46},"expect":1836311903}
+{"name":"beyond-32-bit","class":["beyond-int32"],"args":{"n":47},"expect":2971215073}
+{"name":"binet-fails","class":["float-limit"],"args":{"n":71},"expect":308061521170129}
+{"name":"largest-64-bit","class":["int64-limit"],"args":{"n":92},"expect":7540113804746346429}

@@ -1,0 +1,12 @@
+# The contract of the task "convert to and from Roman numerals" (spec 10.2). The function returns the Roman numeral of n in the standard form. The tests of each solution also check the conversion back, from_roman, with each number from 1 to 3999 and with invalid strings.
+problem: convert-to-and-from-roman-numerals
+entry: to_roman
+params:
+  - name: n
+    type: int
+    pre: "1 <= n <= 3999"
+returns:
+  type: string
+  post: "the Roman numeral of n in the standard form, with the symbols I, V, X, L, C, D and M and the subtractive pairs IV, IX, XL, XC, CD and CM"
+checker: exact
+edge_classes: [smallest, subtractive, digit-by-digit, many-subtractive, longest, largest]

@@ -1,0 +1,3 @@
+{"name":"ten","args":{"n":10},"expect":55}
+{"name":"twenty","args":{"n":20},"expect":6765}
+{"name":"thirty","args":{"n":30},"expect":832040}

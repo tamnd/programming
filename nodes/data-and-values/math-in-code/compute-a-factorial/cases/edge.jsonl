@@ -1,0 +1,5 @@
+{"name":"zero","class":["zero"],"args":{"n":0},"expect":1}
+{"name":"one","class":["one"],"args":{"n":1},"expect":1}
+{"name":"largest-32-bit","class":["int32-limit"],"args":{"n":12},"expect":479001600}
+{"name":"beyond-32-bit","class":["beyond-int32"],"args":{"n":13},"expect":6227020800}
+{"name":"largest-64-bit","class":["int64-limit"],"args":{"n":20},"expect":2432902008176640000}

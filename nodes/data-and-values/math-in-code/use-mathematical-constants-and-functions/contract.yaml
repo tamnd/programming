@@ -1,0 +1,18 @@
+# The contract of the task "use mathematical constants and functions" (spec 10.2). The function turns a distance and an angle in degrees into the coordinates x and y. The results are floating-point numbers, so the checker has a tolerance.
+problem: use-mathematical-constants-and-functions
+entry: to_cartesian
+params:
+  - name: r
+    type: float
+    pre: "the distance from the origin; it can be 0 or negative"
+  - name: degrees
+    type: float
+    pre: "the angle in degrees, counterclockwise from the positive x axis; it can be negative or larger than 360"
+returns:
+  type: "tuple<float, float>"
+  post: "x = r cos(t) and y = r sin(t), where t = degrees * pi / 180"
+checker:
+  kind: float
+  abs: 1e-9
+  rel: 1e-12
+edge_classes: [axis, irrational, zero, negative-angle, full-turn, negative-radius, large]
