@@ -1,0 +1,3 @@
+{"name":"hi-2","args":{"text":"HI","shift":2},"expect":"JK"}
+{"name":"hi-20","args":{"text":"HI","shift":20},"expect":"BC"}
+{"name":"rot13","args":{"text":"Hello, World!","shift":13},"expect":"Uryyb, Jbeyq!"}

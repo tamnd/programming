@@ -1,0 +1,11 @@
+{"name":"both-empty","class":["empty"],"args":{"a":"","b":""},"expect":0}
+{"name":"empty-left","class":["empty"],"args":{"a":"","b":"abc"},"expect":3}
+{"name":"empty-right","class":["empty"],"args":{"a":"abc","b":""},"expect":3}
+{"name":"equal","class":["equal"],"args":{"a":"same","b":"same"},"expect":0}
+{"name":"one-substitution","class":["substitution"],"args":{"a":"a","b":"b"},"expect":1}
+{"name":"transposition","class":["transposition"],"args":{"a":"ab","b":"ba"},"expect":2}
+{"name":"case","class":["case"],"args":{"a":"Apple","b":"apple"},"expect":1}
+{"name":"disjoint","class":["disjoint"],"args":{"a":"abc","b":"xyz"},"expect":3}
+{"name":"prefix","class":["prefix"],"args":{"a":"abc","b":"abcdef"},"expect":3}
+{"name":"intention","class":["substitution"],"args":{"a":"intention","b":"execution"},"expect":5}
+{"name":"space","class":["spaces"],"args":{"a":"a b","b":"ab"},"expect":1}

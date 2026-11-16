@@ -1,0 +1,12 @@
+{"name":"empty","class":["empty"],"args":{"text":""},"expect":true}
+{"name":"only-punctuation","class":["no-letters"],"args":{"text":"?! ..."},"expect":true}
+{"name":"one-letter","class":["one"],"args":{"text":"a"},"expect":true}
+{"name":"two-letters","class":["two"],"args":{"text":"ab"},"expect":false}
+{"name":"mixed-case","class":["case"],"args":{"text":"Aa"},"expect":true}
+{"name":"nixon","class":["punctuation","case"],"args":{"text":"No 'x' in Nixon"},"expect":true}
+{"name":"cat-i-saw","class":["punctuation","case"],"args":{"text":"Was it a car or a cat I saw?"},"expect":true}
+{"name":"digits","class":["digits"],"args":{"text":"12321"},"expect":true}
+{"name":"digits-not","class":["digits"],"args":{"text":"123"},"expect":false}
+{"name":"zero-p","class":["digit-letter"],"args":{"text":"0P"},"expect":false}
+{"name":"race-a-car","class":["near"],"args":{"text":"race a car"},"expect":false}
+{"name":"even-near","class":["near"],"args":{"text":"abca"},"expect":false}

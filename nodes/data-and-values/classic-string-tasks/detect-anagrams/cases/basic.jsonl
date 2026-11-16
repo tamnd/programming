@@ -1,0 +1,3 @@
+{"name":"listen-silent","args":{"a":"listen","b":"silent"},"expect":true}
+{"name":"dormitory","args":{"a":"Dormitory","b":"dirty room"},"expect":true}
+{"name":"hello-world","args":{"a":"hello","b":"world"},"expect":false}

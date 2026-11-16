@@ -1,0 +1,12 @@
+# The contract of the task "check whether a string is a palindrome" (spec 10.2). The function keeps the ASCII letters and digits of the text, changes A to Z to a to z, and checks that this sequence reads the same backwards. Spaces, punctuation and the other characters do not count.
+problem: check-whether-a-string-is-a-palindrome
+entry: is_palindrome
+params:
+  - name: text
+    type: string
+    pre: "ASCII text"
+returns:
+  type: bool
+  post: "true when the sequence of the ASCII letters and digits of text, with A to Z changed to a to z, is the same as its reverse; a text with no letters and no digits gives true"
+checker: exact
+edge_classes: [empty, no-letters, one, two, case, punctuation, digits, digit-letter, near]

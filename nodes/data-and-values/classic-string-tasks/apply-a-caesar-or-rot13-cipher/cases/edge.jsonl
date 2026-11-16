@@ -1,0 +1,11 @@
+{"name":"empty","class":["empty"],"args":{"text":"","shift":3},"expect":""}
+{"name":"zero","class":["zero"],"args":{"text":"abc","shift":0},"expect":"abc"}
+{"name":"full-turn","class":["full-turn"],"args":{"text":"abc","shift":26},"expect":"abc"}
+{"name":"minus-one","class":["negative"],"args":{"text":"abc","shift":-1},"expect":"zab"}
+{"name":"decode","class":["negative"],"args":{"text":"Uryyb, Jbeyq!","shift":-13},"expect":"Hello, World!"}
+{"name":"above-26","class":["above-26"],"args":{"text":"xyz","shift":27},"expect":"yza"}
+{"name":"wrap","class":["wrap"],"args":{"text":"Zz","shift":1},"expect":"Aa"}
+{"name":"non-letters","class":["non-letters"],"args":{"text":"123 !? [`{@","shift":5},"expect":"123 !? [`{@"}
+{"name":"non-ascii","class":["non-ascii"],"args":{"text":"café ü","shift":1},"expect":"dbgé ü"}
+{"name":"large","class":["large"],"args":{"text":"abc","shift":9007199254740991},"expect":"fgh"}
+{"name":"large-negative","class":["large","negative"],"args":{"text":"abc","shift":-9007199254740991},"expect":"vwx"}

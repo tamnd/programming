@@ -1,0 +1,10 @@
+{"name":"both-empty","class":["empty"],"args":{"a":"","b":""},"expect":true}
+{"name":"one-empty","class":["one-empty"],"args":{"a":"a","b":""},"expect":false}
+{"name":"same-set-other-counts","class":["counts"],"args":{"a":"aab","b":"abb"},"expect":false}
+{"name":"extra-letter","class":["length"],"args":{"a":"abc","b":"abcd"},"expect":false}
+{"name":"same-length-other-letters","class":["length"],"args":{"a":"abc","b":"abd"},"expect":false}
+{"name":"case","class":["case"],"args":{"a":"Listen","b":"SILENT"},"expect":true}
+{"name":"same-word","class":["same-word"],"args":{"a":"stop","b":"stop"},"expect":true}
+{"name":"gentleman","class":["spaces"],"args":{"a":"a gentleman","b":"elegant man"},"expect":true}
+{"name":"they-see","class":["spaces","punctuation","case"],"args":{"a":"The eyes!","b":"They see."},"expect":true}
+{"name":"punctuation-only","class":["punctuation"],"args":{"a":"!?","b":"..."},"expect":true}
