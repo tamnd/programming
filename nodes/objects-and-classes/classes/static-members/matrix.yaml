@@ -1,0 +1,27 @@
+typescript:
+  status: native
+  reason: as JavaScript, and static members can also be private, protected or readonly, which the compiler checks; no example file because it would repeat the JavaScript one.
+kotlin:
+  status: native
+  reason: no static keyword; a companion object holds the class-level functions and properties, and an object declaration holds one shared instance; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: idiom
+  reason: a static variable at file scope is shared by all calls and hidden from other files, and functions named with a prefix, such as order_create, play the part of class methods.
+bash:
+  status: n/a
+  reason: Bash has global variables and functions but no types that own them.
+powershell:
+  status: native
+  reason: static properties and methods in class definitions, called as [Order]::Create(); no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a table has no class-level members; a shared value is a row in another table or a sequence.
+regex:
+  status: n/a
+  reason: a pattern has no types or members.
+html:
+  status: n/a
+  reason: HTML has no types or members; static members of DOM classes belong to JavaScript.
+css:
+  status: n/a
+  reason: CSS has no types or members.

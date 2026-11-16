@@ -13398,7 +13398,7 @@ items:
     group: "objects"
     name: "Use a singleton"
     target: "use-a-singleton"
-    status: "planned"
+    status: "node"
     reason: "A job of the object model of a language. Related titles, found by keyword: Rosetta Code (Singleton)."
   - part: tasks
     group: "objects"

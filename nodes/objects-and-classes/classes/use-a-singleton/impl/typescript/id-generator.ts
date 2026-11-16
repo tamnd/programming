@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: MIT
+// Part of https://programming.tamnd.com/use-a-singleton/.
+
+// A module is evaluated once, and every import gets the same bindings, so a
+// module-level object is a singleton. The class is not exported, so other
+// code cannot make a second instance.
+let constructions = 0;
+
+class IdGenerator {
+  #next = 1;
+
+  constructor() {
+    constructions++;
+  }
+
+  nextId(): number {
+    return this.#next++;
+  }
+}
+
+export const idGenerator: IdGenerator = new IdGenerator();
+
+export function constructionCount(): number {
+  return constructions;
+}
+
+export function singletonReport(calls: number): number[] {
+  const seen = new Set<IdGenerator>();
+  const ids: number[] = [];
+  for (let i = 0; i < calls; i++) {
+    const g = idGenerator;
+    seen.add(g);
+    ids.push(g.nextId());
+  }
+  return [ids[ids.length - 1] - ids[0], constructions, seen.size];
+}
