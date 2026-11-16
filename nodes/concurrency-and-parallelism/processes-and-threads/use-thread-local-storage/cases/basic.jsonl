@@ -1,0 +1,2 @@
+{"name":"three-threads","class":["basic"],"args":{"counts":[1,2,3]},"expect":[1,2,3]}
+{"name":"uneven","class":["basic"],"args":{"counts":[10,0,5,1000]},"expect":[10,0,5,1000]}

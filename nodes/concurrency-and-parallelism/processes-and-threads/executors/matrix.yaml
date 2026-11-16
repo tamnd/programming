@@ -1,0 +1,31 @@
+typescript:
+  status: absent
+  reason: TypeScript runs on a JavaScript engine, which has an event loop but no executor interface. No example file exists.
+  alternative: the event loop queues, as in the JavaScript example
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses the Java executors, as in the Java example; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: absent
+  reason: the C standard library has threads but no executor type. No separate example file.
+  alternative: a fixed set of threads that take jobs from a shared queue, as in the C solution of run-tasks-on-a-thread-pool
+bash:
+  status: absent
+  reason: Bash has no executor. No example file exists.
+  alternative: background jobs with & and wait
+powershell:
+  status: absent
+  reason: PowerShell has no executor type; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: background jobs with Start-Job
+sql:
+  status: n/a
+  reason: the database runs the query; a query does not submit tasks.
+regex:
+  status: n/a
+  reason: a pattern has no tasks.
+html:
+  status: n/a
+  reason: markup has no tasks.
+css:
+  status: n/a
+  reason: style rules have no tasks.

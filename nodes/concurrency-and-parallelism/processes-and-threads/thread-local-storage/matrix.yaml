@@ -1,0 +1,29 @@
+typescript:
+  status: absent
+  reason: TypeScript runs on a JavaScript engine, where threads share no variables. No example file exists.
+  alternative: AsyncLocalStorage in Node.js, as in the JavaScript example
+kotlin:
+  status: stdlib
+  reason: on the JVM, Kotlin uses the Java ThreadLocal, as in the Java example; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: native
+  reason: C11 has the _Thread_local keyword, C23 makes thread_local a keyword, and POSIX has pthread_key_create. No separate example file.
+  alternative: the same storage class as the C++ example
+bash:
+  status: n/a
+  reason: a Bash script runs in one thread for each process.
+powershell:
+  status: absent
+  reason: PowerShell has no thread-local variables in the language; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a query has no threads.
+regex:
+  status: n/a
+  reason: a pattern has no threads.
+html:
+  status: n/a
+  reason: markup has no threads.
+css:
+  status: n/a
+  reason: style rules have no threads.

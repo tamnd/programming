@@ -1,0 +1,6 @@
+{"name":"empty","class":["empty"],"args":{"counts":[]},"expect":[]}
+{"name":"zero","class":["zero"],"args":{"counts":[0]},"expect":[0]}
+{"name":"one-thread","class":["one-thread"],"args":{"counts":[7]},"expect":[7]}
+{"name":"equal-counts","class":["equal-counts"],"args":{"counts":[100,100,100,100]},"expect":[100,100,100,100]}
+{"name":"many-threads","class":["many-threads"],"args":{"counts":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]},"expect":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]}
+{"name":"large","class":["large"],"args":{"counts":[100000,100000]},"expect":[100000,100000]}

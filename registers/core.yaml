@@ -13037,7 +13037,7 @@ items:
     group: "concurrency"
     name: "Run tasks on a thread pool"
     target: "run-tasks-on-a-thread-pool"
-    status: "planned"
+    status: "node"
     reason: "A job of a program that does more than one thing at a time. Related titles, found by keyword: Go by Example (Worker Pools)."
   - part: tasks
     group: "concurrency"
@@ -13115,7 +13115,7 @@ items:
     group: "concurrency"
     name: "Use thread-local storage"
     target: "use-thread-local-storage"
-    status: "planned"
+    status: "node"
     reason: "A job of a program that does more than one thing at a time. No title of Rosetta Code, Go by Example or Rust by Example matches it, so it is on our own list (spec 10.1)."
   - part: tasks
     group: "concurrency"

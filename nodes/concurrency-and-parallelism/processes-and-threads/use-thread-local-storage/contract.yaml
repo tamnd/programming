@@ -1,0 +1,12 @@
+# The contract of the task "use thread-local storage" (spec 10.2). The function starts one thread for each count. Each thread adds 1 to its own thread-local counter as many times as its count says, through a function with no parameters, and returns the final value of its counter.
+problem: use-thread-local-storage
+entry: count_per_thread
+params:
+  - name: counts
+    type: "list<int>"
+    pre: "0 to 16 items; each item is 0 to 100000"
+returns:
+  type: "list<int>"
+  post: "item i is counts[i]: thread i calls bump() counts[i] times, bump adds 1 to the counter of the current thread, and thread i returns its counter at the end; the counter of each thread starts at 0; the threads share no counter and use no lock; the counter of the calling thread does not change"
+checker: exact
+edge_classes: [empty, zero, one-thread, equal-counts, many-threads, large]
