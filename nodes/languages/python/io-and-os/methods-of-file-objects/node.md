@@ -11,7 +11,7 @@ summary: >-
   A file object reads with read(), readline() and iteration, writes with write() and writelines(), and moves with seek() and tell(). Text files and binary files differ in what seek() accepts.
 grammar: "f.read(size=-1); f.readline(size=-1); f.write(s); f.seek(offset, whence=0); f.tell()"
 spec: {standard: null, url: "https://docs.python.org/3.15/library/io.html#io.IOBase", locator: "io.IOBase, io.TextIOBase"}
-see_also: [python/reading-and-writing-files, python/standard-streams, read-a-file-line-by-line, read-a-whole-file, write-a-file]
+see_also: [python/reading-and-writing-files, python/standard-streams, python/text-and-binary-io, read-a-file-line-by-line, read-a-whole-file, write-a-file]
 sources:
   - url: https://docs.python.org/3.15/tutorial/inputoutput.html#methods-of-file-objects
     title: The Python Tutorial, 7. Input and output
