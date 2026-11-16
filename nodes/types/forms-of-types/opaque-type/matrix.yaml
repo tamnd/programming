@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has private class members with # and private, and a module can export an interface without the class. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin has private and internal members, and a factory can return an interface while the class stays private. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash has no user-defined types.
+powershell:
+  status: idiom
+  reason: PowerShell uses .NET access control, as in C#. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query sees the columns of the tables it can read, and SQL has no user types with hidden parts.
+regex:
+  status: n/a
+  reason: A regular expression has no types.
+html:
+  status: n/a
+  reason: HTML has no types.
+css:
+  status: n/a
+  reason: CSS has no types in this sense.

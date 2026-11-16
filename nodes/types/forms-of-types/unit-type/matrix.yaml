@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has void for the result of a function that returns no value, and undefined and null are types with one value each. A function type with a void result accepts a function that returns a value, and the caller ignores that value. No example file exists.
+kotlin:
+  status: native
+  reason: Unit is an object, so it is a type with one value, and a function without a declared result type returns Unit. Unit can be a type argument, as in a function type such as () -> Unit. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: A function always gives an exit status, and it passes data by its output, not by a return value. A function that runs only for its effect returns the status 0 and prints nothing. No example file exists.
+powershell:
+  status: idiom
+  reason: A cast to [void] or a pipe to Out-Null discards a value. A function with no output gives no value, and a variable that stores such a result holds $null. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A stored procedure can run only for its effect and give no result value, while a function must return a value. NULL marks an absent value, which is a different idea. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no values and no types.
+html:
+  status: n/a
+  reason: HTML has no types of values and no functions.
+css:
+  status: n/a
+  reason: CSS has no unit type. Its units, such as px and em, are units of measure for lengths, which is a different idea.

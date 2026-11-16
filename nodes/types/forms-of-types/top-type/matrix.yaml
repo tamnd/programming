@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: unknown is the top type, and the compiler allows operations on it only after narrowing. any also accepts every value, but it turns off the checks. No example file exists.
+kotlin:
+  status: native
+  reason: Any is the root of the Kotlin class hierarchy, and the nullable Any? is the top type. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Every value in Bash is a string, so Bash has no hierarchy of types.
+powershell:
+  status: native
+  reason: PowerShell values are .NET objects, so a variable of type [object] can hold any value. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: Each column has a declared type, and SQL has no type that holds a value of any type. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no values and no types.
+html:
+  status: n/a
+  reason: HTML has no types of values.
+css:
+  status: n/a
+  reason: CSS has no types of values in this sense.
