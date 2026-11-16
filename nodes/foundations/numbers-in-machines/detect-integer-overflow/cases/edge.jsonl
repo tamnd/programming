@@ -1,0 +1,8 @@
+{"name":"max-plus-zero","class":["int64-max"],"args":{"a":9223372036854775807,"b":0},"expect":9223372036854775807}
+{"name":"max-plus-one","class":["positive-overflow"],"args":{"a":9223372036854775807,"b":1},"expect":null}
+{"name":"max-plus-max","class":["positive-overflow"],"args":{"a":9223372036854775807,"b":9223372036854775807},"expect":null}
+{"name":"min-plus-zero","class":["int64-min"],"args":{"a":-9223372036854775808,"b":0},"expect":-9223372036854775808}
+{"name":"min-minus-one","class":["negative-overflow"],"args":{"a":-9223372036854775808,"b":-1},"expect":null}
+{"name":"min-plus-min","class":["negative-overflow"],"args":{"a":-9223372036854775808,"b":-9223372036854775808},"expect":null}
+{"name":"min-plus-max","class":["mixed-signs"],"args":{"a":-9223372036854775808,"b":9223372036854775807},"expect":-1}
+{"name":"max-minus-one","class":["mixed-signs"],"args":{"a":9223372036854775807,"b":-1},"expect":9223372036854775806}
