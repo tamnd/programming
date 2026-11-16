@@ -1152,3 +1152,10 @@ S3E9P1 python/init-subclass-and-set-name
 M1YYG5 python/introspection-with-inspect
 JX2SJH python/metaclasses
 JXYMN7 python/the-dir-function
+0D7NXD python/finalizers-and-del
+699GH8 python/memory-management-in-cpython
+HAW99E python/object-identity-and-interning
+T9ENW8 python/object-sizes-and-tracemalloc
+3QW78B python/reference-counting-in-cpython
+9JNDJF python/the-cyclic-garbage-collector
+0JZ4W0 python/weak-references
