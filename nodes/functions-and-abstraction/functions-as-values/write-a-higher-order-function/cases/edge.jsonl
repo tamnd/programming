@@ -1,0 +1,7 @@
+{"name":"zero-times","class":["zero"],"args":{"start":7,"times":0},"expect":7}
+{"name":"start-one","class":["boundary"],"args":{"start":1,"times":1},"expect":4}
+{"name":"cycle","class":["cycle"],"args":{"start":1,"times":3},"expect":1}
+{"name":"past-one","class":["cycle"],"args":{"start":16,"times":10},"expect":1}
+{"name":"peak-27","class":["large"],"args":{"start":27,"times":77},"expect":9232}
+{"name":"peak-9663","class":["large","limit"],"args":{"start":9663,"times":48},"expect":27114424}
+{"name":"limit","class":["limit"],"args":{"start":10000,"times":1000},"expect":2}

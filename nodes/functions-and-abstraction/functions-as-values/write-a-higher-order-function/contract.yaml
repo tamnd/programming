@@ -1,0 +1,15 @@
+# The contract of the task "write a higher-order function" (spec 10.2). Each solution writes repeat(f, times), which takes a function of one integer and returns a function that applies it times times, and the entry calls repeat with the step of the Collatz problem. The contract has no function type, so the entry takes the start and the count, and the native tests also call repeat with other functions.
+problem: write-a-higher-order-function
+entry: collatz_after
+params:
+  - name: start
+    type: int
+    pre: "1 <= start <= 10000"
+  - name: times
+    type: int
+    pre: "0 <= times <= 1000; with these limits each value on the way is less than 2^31"
+returns:
+  type: int
+  post: "the value after times steps from start, where one step maps an even n to n / 2 and an odd n to 3n + 1; start when times is 0"
+checker: exact
+edge_classes: [zero, boundary, cycle, large, limit]

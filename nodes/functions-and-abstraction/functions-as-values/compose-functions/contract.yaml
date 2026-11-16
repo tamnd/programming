@@ -1,0 +1,15 @@
+# The contract of the task "compose functions" (spec 10.2). Each solution writes a generic compose helper that takes any number of functions and returns their composition, where the last function runs first. The contract has no function type, so the entry takes the names of the functions, from a fixed table of four, and the native tests also call the helper with other functions.
+problem: compose-functions
+entry: compose_all
+params:
+  - name: ops
+    type: "list<string>"
+    pre: "0 to 20 names; each name is inc (x + 1), dec (x - 1), double (2 * x) or negate (-x); a name can repeat"
+  - name: x
+    type: int
+    pre: "-1000 <= x <= 1000, so each result fits in a 32-bit signed integer"
+returns:
+  type: int
+  post: "f1(f2(...fn(x))), where fi is the function that ops[i] names: the last name is applied first; x when ops is empty"
+checker: exact
+edge_classes: [empty, single, order, negative, zero, limit, duplicates]

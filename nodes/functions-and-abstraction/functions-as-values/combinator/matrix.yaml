@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: A Kotlin function can return a lambda with a function type, so identity, const and flip are short generic functions. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: A PowerShell function can take script blocks and return a new script block, and the method GetNewClosure keeps the variables. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: Standard SQL has no function values, so no function can take or return a function.
+regex:
+  status: n/a
+  reason: A regular expression has no functions.
+html:
+  status: n/a
+  reason: HTML is a markup language and has no functions.
+css:
+  status: n/a
+  reason: CSS has no function values.

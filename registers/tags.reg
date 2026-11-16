@@ -1088,3 +1088,8 @@ K2XY7P space-leak
 H47ZC9 strictness-annotations
 447HCD take-the-first-n-items
 QVNFSC use-lazy-sequences
+BJQVD1 combinator
+FAS41G compose-functions
+BP6EDV map-filter-reduce
+KWFBHJ point-free-style
+AX3AFA write-a-higher-order-function
