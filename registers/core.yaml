@@ -13429,7 +13429,7 @@ items:
     group: "objects"
     name: "Add a method to an existing type"
     target: "add-a-method-to-an-existing-type"
-    status: "planned"
+    status: "node"
     reason: "A job of the object model of a language. Related titles, found by keyword: Rosetta Code (Add a variable to a class instance at runtime, Extract file extension)."
   - part: tasks
     group: "objects"

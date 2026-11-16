@@ -1,0 +1,12 @@
+# The contract of the task "add a method to an existing type" (spec 10.2). The function counts the words of a text with a word_count method that the solution adds to the string type of the language, or with the nearest form that the language allows.
+problem: add-a-method-to-an-existing-type
+entry: word_count
+params:
+  - name: text
+    type: "string"
+    pre: "0 to 100000 characters; the only whitespace characters in it are space, tab, newline and carriage return"
+returns:
+  type: "int"
+  post: "the number of words in text, where a word is a run of one or more characters that are not whitespace"
+checker: exact
+edge_classes: [empty, blank, mixed-whitespace, non-ascii]

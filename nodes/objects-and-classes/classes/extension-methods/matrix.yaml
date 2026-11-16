@@ -1,0 +1,33 @@
+javascript:
+  status: absent
+  reason: a plain function is the usual answer; code can also add a method to a prototype, which changes the type for all code, not only for code that imports it.
+typescript:
+  status: absent
+  reason: as JavaScript; declaration merging tells the compiler about a method that code adds to a prototype; no example file because it would repeat the JavaScript answer.
+kotlin:
+  status: native
+  reason: extension functions and extension properties such as fun String.wordCount(), dispatched statically; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: n/a
+  reason: C has no methods; every function is a free function.
+cpp:
+  status: absent
+  reason: a free function that takes the object as a parameter is the usual answer, and argument-dependent lookup finds it, but the call cannot use the dot syntax.
+bash:
+  status: n/a
+  reason: Bash has no types or methods.
+powershell:
+  status: native
+  reason: Update-TypeData with -MemberType ScriptMethod adds a script method to a .NET type for the session; no example file because pwsh is not installed on the machine that recorded the examples.
+sql:
+  status: n/a
+  reason: a user-defined function takes a value as an argument; SQL has no method syntax.
+regex:
+  status: n/a
+  reason: a pattern has no types or methods.
+html:
+  status: n/a
+  reason: HTML has no types or methods.
+css:
+  status: n/a
+  reason: CSS has no types or methods.

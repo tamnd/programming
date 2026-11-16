@@ -1,0 +1,4 @@
+{"name":"empty","class":["empty"],"args":{"text":""},"expect":0}
+{"name":"blank","class":["blank"],"args":{"text":" \t\n "},"expect":0}
+{"name":"mixed-whitespace","class":["mixed-whitespace"],"args":{"text":"  two\twords\r\nand three  "},"expect":4}
+{"name":"non-ascii","class":["non-ascii"],"args":{"text":"naïve café 東京"},"expect":3}
