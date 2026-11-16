@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the rules of JavaScript, and with strict checks the compiler reports a read of a let variable before an assignment, and a class property with no initializer. No example file exists.
+kotlin:
+  status: native
+  reason: A local val or var must have a value before a read, which the compiler checks. A property needs an initializer, a value from the constructor, or the modifier lateinit. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: A variable that was never set expands to the empty string. The option set -u makes the expansion of an unset variable an error, and ${name:-default} gives a value for an unset variable. No example file exists.
+powershell:
+  status: idiom
+  reason: A variable that was never assigned is $null. Set-StrictMode -Version Latest makes a read of it an error. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The DEFAULT clause of a column gives the value of a new row when the insert gives none. Without a default, the value is NULL. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern has no variables to initialize.
+html:
+  status: n/a
+  reason: HTML is markup, with no variables. The value attribute gives a form control its first value.
+css:
+  status: native
+  reason: Each property has an initial value in its definition, and the keyword initial sets a property to it. No example file exists.

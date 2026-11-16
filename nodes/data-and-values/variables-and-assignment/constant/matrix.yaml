@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the const of JavaScript, readonly properties and readonly arrays that the compiler checks, and the assertion as const, which makes the literal types of an object or an array read only. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin val declares a name that is assigned once, and const val declares a compile-time constant of a basic type or String at the top level or in an object. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: readonly NAME=value, or declare -r NAME=value, makes a variable that cannot be assigned or unset. No example file exists.
+powershell:
+  status: native
+  reason: Set-Variable with the option Constant makes a variable that cannot change or be removed in the session, and the option ReadOnly makes one that can be removed with -Force. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A SQL query writes fixed values as literals. Procedural extensions of database systems can declare constants, and a table can hold values that the program treats as fixed. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern has literal characters, but no names for fixed values.
+html:
+  status: n/a
+  reason: HTML is markup, with no names for values.
+css:
+  status: idiom
+  reason: A custom property that the style sheet sets once, such as a brand color on the root element, acts as a named constant, but any rule can set it again. No example file exists.

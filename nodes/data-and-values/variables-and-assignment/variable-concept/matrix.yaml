@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: "TypeScript has the let, const and var of JavaScript, and adds a type annotation such as let n: number = 0, or a type that the compiler infers from the initializer. No example file exists."
+kotlin:
+  status: native
+  reason: Kotlin declares a variable with var and a name that is not reassigned with val, with a type annotation or an inferred type. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: A Bash variable is a parameter with a name, set with n=0 and read with $n. The value is a string, and declare gives attributes such as -i for an integer and -r for read only. No example file exists.
+powershell:
+  status: native
+  reason: A PowerShell variable has a name that starts with $, such as $n = 0. It holds any object, and a type constraint such as [int]$n converts each new value. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: A SQL query has no variables. It uses columns, parameters and the results of subqueries. The procedural extensions of database systems declare local variables with DECLARE. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern has no variables. A capture group keeps the text that it matched, and a backreference such as \1 reads it, which is a related but different idea.
+html:
+  status: n/a
+  reason: HTML is markup and has no variables. Scripts and template engines add them.
+css:
+  status: idiom
+  reason: CSS has custom properties, such as --gap set to 8px and read with var(--gap). They act as named values, but the cascade, not a program step, gives each element its value. No example file exists.
