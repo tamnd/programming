@@ -1,0 +1,12 @@
+# The contract of the task "Write a conditional" (spec 10.2). The function maps a score to a letter grade with one if, else if and else chain.
+problem: write-a-conditional
+entry: grade
+params:
+  - name: score
+    type: int
+    pre: "0 <= score <= 100"
+returns:
+  type: string
+  post: "A when score >= 90, else B when score >= 80, else C when score >= 70, else D when score >= 60, else F"
+checker: exact
+edge_classes: [boundary]

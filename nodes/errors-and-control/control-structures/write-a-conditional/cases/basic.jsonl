@@ -1,0 +1,5 @@
+{"name":"ninety-five","args":{"score":95},"expect":"A"}
+{"name":"eighty-five","args":{"score":85},"expect":"B"}
+{"name":"seventy-five","args":{"score":75},"expect":"C"}
+{"name":"sixty-five","args":{"score":65},"expect":"D"}
+{"name":"forty","args":{"score":40},"expect":"F"}

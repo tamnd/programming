@@ -1,0 +1,18 @@
+kotlin:
+  status: absent
+  reason: when compares the value with each branch in order until one branch condition is satisfied, and runs only that branch; there is no fall-through and no statement for it. No example file exists because kotlinc is not installed.
+powershell:
+  status: absent
+  reason: switch does not fall through, but it runs the action of each condition that matches the value, unless break or continue stops it. No example file exists because pwsh is not installed.
+sql:
+  status: absent
+  reason: A CASE expression gives the result of the first WHEN that is true; there is no fall-through. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no switch statement.
+html:
+  status: n/a
+  reason: HTML has no switch statement.
+css:
+  status: n/a
+  reason: CSS has no switch statement.
