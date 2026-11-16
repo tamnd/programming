@@ -1173,3 +1173,8 @@ XYTX6Y python/bytecode-and-dis
 9JN9TM python/code-and-frame-objects
 7D2HC4 python/the-ast-module
 MDN62G python/tracing-and-monitoring
+SR3BHQ python/optimization-guidance
+ZZG79R python/performance-measurement
+4KE99F python/the-cost-model-of-cpython
+KFNS7V python/the-jit-compiler
+Q08ZKX python/the-specializing-adaptive-interpreter
