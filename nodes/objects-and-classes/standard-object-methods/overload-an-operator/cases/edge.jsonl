@@ -1,0 +1,5 @@
+{"name":"empty","class":["empty"],"args":{"xs":[],"ys":[]},"expect":[0,0]}
+{"name":"single","class":["single"],"args":{"xs":[5],"ys":[-7]},"expect":[5,-7]}
+{"name":"negative","class":["negative"],"args":{"xs":[-1,-2],"ys":[-3,-4]},"expect":[-3,-7]}
+{"name":"cancel","class":["cancel"],"args":{"xs":[3,-3],"ys":[5,-5]},"expect":[0,0]}
+{"name":"limit","class":["limit"],"args":{"xs":[1000000000,1000000000,1000000000],"ys":[-1000000000,-1000000000,-1000000000]},"expect":[3000000000,-3000000000]}

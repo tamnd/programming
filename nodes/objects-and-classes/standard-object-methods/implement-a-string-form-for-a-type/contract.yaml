@@ -1,0 +1,18 @@
+# The contract of the task "implement a string form for a type" (spec 10.2). The function makes one Color value for each triple (reds[i], greens[i], blues[i]) and returns the display form of each one, which the type gives through the string conversion of its language.
+problem: implement-a-string-form-for-a-type
+entry: format_colors
+params:
+  - name: reds
+    type: "list<int>"
+    pre: "0 to 10000 items; each is 0 to 255"
+  - name: greens
+    type: "list<int>"
+    pre: "the same length as reds; each is 0 to 255"
+  - name: blues
+    type: "list<int>"
+    pre: "the same length as reds; each is 0 to 255"
+returns:
+  type: "list<string>"
+  post: "for each index i, the text \"#\" followed by reds[i], greens[i] and blues[i] as two upper-case hexadecimal digits each, in the order of the input"
+checker: exact
+edge_classes: [empty, single, zero, max, padding]

@@ -928,3 +928,9 @@ PHJT60 define-a-custom-error-type
 TFJ8M7 log-an-error
 ZAGNTN wrap-an-error-with-context
 3QKH8F writing-error-messages
+YFXM5G copy-an-object
+Q32DVX data-classes
+EVGWJP implement-a-string-form-for-a-type
+F4T2ZQ object-cloning
+1VVHH0 operator-overloading
+P58DEX overload-an-operator

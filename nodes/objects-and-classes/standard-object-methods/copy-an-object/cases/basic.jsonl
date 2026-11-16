@@ -1,0 +1,2 @@
+{"name":"middle","class":["basic"],"args":{"songs":["Intro","Song","Outro"],"index":1,"title":"Hit"},"expect":[["Intro","Hit","Outro"],["Intro","Hit","Outro"],["Intro","Song","Outro"]]}
+{"name":"two","class":["basic"],"args":{"songs":["A","B"],"index":0,"title":"C"},"expect":[["C","B"],["C","B"],["A","B"]]}

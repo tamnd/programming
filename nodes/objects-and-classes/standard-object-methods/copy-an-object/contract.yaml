@@ -1,0 +1,18 @@
+# The contract of the task "copy an object" (spec 10.2). The function makes a Playlist with a list of songs, makes a shallow copy and a deep copy of it, changes one song through the original, and returns the songs that each of the three objects then sees.
+problem: copy-an-object
+entry: copy_and_change
+params:
+  - name: songs
+    type: "list<string>"
+    pre: "1 to 1000 items"
+  - name: index
+    type: "int"
+    pre: "0 or more, and less than the length of songs"
+  - name: title
+    type: "string"
+    pre: "any string"
+returns:
+  type: "list<list<string>>"
+  post: "three lists: the songs of the original, of the shallow copy and of the deep copy after the original sets item index to title; the first two are songs with item index replaced by title, and the third is songs unchanged"
+checker: exact
+edge_classes: [single, first, last, same-title, duplicates]

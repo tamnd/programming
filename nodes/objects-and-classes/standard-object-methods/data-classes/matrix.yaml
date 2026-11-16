@@ -1,0 +1,27 @@
+typescript:
+  status: absent
+  reason: as JavaScript; a class or an interface describes the fields, but no equality, hash or string form is generated; no example file because it would repeat the JavaScript answer.
+kotlin:
+  status: native
+  reason: a data class gets equals, hashCode, toString, componentN functions and copy from the properties of its primary constructor; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: absent
+  reason: C structs have no methods; a program writes its own functions to compare and print them, and == does not compile for structs.
+bash:
+  status: n/a
+  reason: Bash has no user types.
+powershell:
+  status: idiom
+  reason: a [pscustomobject] holds named values and prints them as a table, but it has no generated equality; a PowerShell class can also hold the data.
+sql:
+  status: n/a
+  reason: SQL keeps data in rows of tables; there are no classes.
+regex:
+  status: n/a
+  reason: regular expressions have no user types.
+html:
+  status: n/a
+  reason: HTML has no user types.
+css:
+  status: n/a
+  reason: CSS has no user types.
