@@ -3,7 +3,7 @@ tag: Z1Y171
 kind: concept
 slug: value
 name: Value
-aliases: [value, data value, r-value, rvalue, l-value, lvalue, value category, place expression, value expression, first-class value, primitive value, reference value, zero value, default value]
+aliases: [value, data value, r-value, rvalue, l-value, lvalue, value category, place expression, value expression, first-class value, primitive value, reference value, zero value]
 area: data-and-values/value-and-reference-semantics
 level: core
 summary: >-
@@ -111,7 +111,7 @@ True False
 
 **Primitive values and reference values.** Java has "two kinds of data values that can be stored in variables, passed as arguments, returned by methods, and operated on"[^7]: primitive values, such as an `int`, and reference values. "The reference values (often just references) are pointers to these objects, and a special null reference, which refers to no object"[^7]. C# puts the line between types: "A variable of a value type contains an instance of the type. This behavior differs from a variable of a reference type, which contains a reference to an instance of the type"[^8]. In JavaScript, "a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties"[^9], and "All primitives are immutable"[^9]. When an assignment copies a reference value, the two variables refer to one object. See [pointers and references](/pointers-and-references/).
 
-**Default values.** Some languages give a value to every variable that has no initializer. In Go, each element "is set to the zero value for its type: false for booleans, 0 for numeric types, "" for strings, and nil for pointers, functions"[^2], and for some other types. Java and C# give default values to fields, and C# `default(T)` gives the default value of a type. C gives no value to a local variable without an initializer, and a read of it gives an indeterminate value.
+**Default values.** Some languages give a value to every variable that has no initializer. In Go, each element "is set to the zero value for its type: false for booleans, 0 for numeric types, "" for strings, and nil for pointers, functions"[^2], and for some other types. Java and C# give default values to fields, and C# `default(T)` gives the default value of a type. C gives no value to a local variable without an initializer, and a read of it gives an indeterminate value. The page [[default-value]] has the details.
 
 **First-class values.** A value is first class when the language lets a program use it in every usual way. Wikipedia says that a first-class citizen "is an entity which supports all the operations generally available to other entities. These operations typically include being passed as an argument, returned from a function, and assigned to a variable"[^10]. Numbers are first class in all the core languages. Functions are first class in Python, JavaScript, Go, Rust and C#, and C and C++ pass them through function pointers and function objects. See [higher-order functions](/higher-order-functions/).
 

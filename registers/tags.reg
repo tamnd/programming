@@ -1068,3 +1068,7 @@ QXSYSW function-pointer-and-delegate
 44BD7Y global-interpreter-lock
 JFNA3W process-based-parallelism
 CT7Y2C thread-interruption
+9A6ECK default-value
+10A3P5 single-assignment
+MA9Q4F uninitialized-variables
+FGQ4Y5 variable-lifetime

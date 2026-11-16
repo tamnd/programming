@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has undefined, default parameters and the operator ?? of JavaScript, and marks an optional parameter or property with ?. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin gives no implicit default to a variable or a property, but a parameter can have a default value, and a property has an initializer. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: A variable that was never set expands to the empty string, and ${name:-default} gives a default for an unset or empty variable. No example file exists.
+powershell:
+  status: idiom
+  reason: A variable that was never assigned is $null, and a parameter of a function or a script can have a default value. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The DEFAULT clause of a column gives the value of a new row when the insert gives none. Without a default, the value is NULL. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern has no variables.
+html:
+  status: n/a
+  reason: HTML is markup, with no variables. The value attribute gives a form control its first value.
+css:
+  status: native
+  reason: Each property has an initial value in its definition, and an inherited property takes the value of the parent. No example file exists.
