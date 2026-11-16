@@ -1,0 +1,6 @@
+{"name":"zero","class":["zero"],"args":{"days":0},"expect":0}
+{"name":"two-days","class":["single"],"args":{"days":2},"expect":172800}
+{"name":"leap-year","class":["single"],"args":{"days":366},"expect":31622400}
+{"name":"last-32-bit-day","class":["large"],"args":{"days":24855},"expect":2147472000}
+{"name":"past-32-bits","class":["large"],"args":{"days":24856},"expect":2147558400}
+{"name":"million-days","class":["large"],"args":{"days":1000000},"expect":86400000000}

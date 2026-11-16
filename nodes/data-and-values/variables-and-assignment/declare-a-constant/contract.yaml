@@ -1,0 +1,12 @@
+# The contract of the task "declare a constant" (spec 10.2). The function multiplies days by named constants: 60 seconds in a minute, 60 minutes in an hour and 24 hours in a day.
+problem: declare-a-constant
+entry: seconds_in
+params:
+  - name: days
+    type: int
+    pre: "0 <= days <= 1000000"
+returns:
+  type: int
+  post: "days * 86400, the number of seconds in that many days of 24 hours"
+checker: exact
+edge_classes: [zero, single, large]
