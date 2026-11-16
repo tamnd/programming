@@ -1,0 +1,4 @@
+{"name":"pair","args":{"text":"()"},"expect":true}
+{"name":"nested","args":{"text":"{[()()]}"},"expect":true}
+{"name":"code","args":{"text":"f(a[0], {b: 1})"},"expect":true}
+{"name":"crossed","args":{"text":"([)]"},"expect":false}

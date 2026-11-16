@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: A Map from each node to an array or a Set of neighbors is an adjacency list, as in the JavaScript example. No example file exists.
+kotlin:
+  status: idiom
+  reason: A Map from each node to a List of neighbors is an adjacency list, as in Java. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: A hashtable from each node to an array of neighbors is an adjacency list. No example file exists because pwsh is not installed.
+bash:
+  status: idiom
+  reason: An associative array can map each node to a string of neighbor names. No example file exists.
+sql:
+  status: idiom
+  reason: An edge table with a source column and a target column stores a graph. Joins follow the edges.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no data structures.
+html:
+  status: n/a
+  reason: HTML is markup. Links between pages form a graph, but HTML has no data structures for a program.
+css:
+  status: n/a
+  reason: CSS style rules have no data structures.

@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: A recursive interface with a children array describes a node, as in the JavaScript example. No example file exists.
+kotlin:
+  status: idiom
+  reason: A data class with a List of children is a node. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: Nested hashtables or custom objects with a children array form a tree. No example file exists because pwsh is not installed.
+bash:
+  status: n/a
+  reason: Bash has no nested data structures. The file system itself is a tree, and find walks it.
+sql:
+  status: idiom
+  reason: A table with a parent id column stores a tree, one row per node. A recursive query walks it.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no data structures.
+html:
+  status: n/a
+  reason: HTML has no data structures for a program. Its nested elements form the DOM tree that scripts walk.
+css:
+  status: n/a
+  reason: CSS style rules have no data structures. Selectors match elements by their place in the DOM tree.

@@ -1,0 +1,7 @@
+{"name":"empty","class":["empty"],"args":{"priorities":[]},"expect":[]}
+{"name":"one","class":["one"],"args":{"priorities":[7]},"expect":[0]}
+{"name":"ties","class":["ties"],"args":{"priorities":[4,4,4,4]},"expect":[0,1,2,3]}
+{"name":"negative","class":["negative"],"args":{"priorities":[-3,-1,-2]},"expect":[1,2,0]}
+{"name":"int32-extremes","class":["int32-extremes"],"args":{"priorities":[-2147483648,2147483647,0,-2147483648]},"expect":[1,2,0,3]}
+{"name":"sorted","class":["sorted"],"args":{"priorities":[1,2,3]},"expect":[2,1,0]}
+{"name":"reversed","class":["reversed"],"args":{"priorities":[3,2,1]},"expect":[0,1,2]}
