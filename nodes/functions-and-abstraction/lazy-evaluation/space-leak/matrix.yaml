@@ -1,0 +1,36 @@
+kotlin:
+  status: idiom
+  reason: a chain of () -> T lambdas, lazy delegates or a Sequence that a variable holds can keep memory alive in the same way as in Java; no example file because kotlinc is not installed on the machine that records the examples.
+csharp:
+  status: idiom
+  reason: a chain of Func<T> or Lazy<T> objects holds memory in the same way as in Java, but a deep force ends the process with a stack overflow that a program cannot catch, so there is no example file.
+go:
+  status: idiom
+  reason: Go is strict, and a chain of closures is rare; a closure or a slice that keeps a large value alive is the usual form of retained memory.
+rust:
+  status: idiom
+  reason: iterator adapters are lazy but do not store their results, and ownership makes long-lived references visible; a chain of boxed closures can still hold memory until it is dropped.
+c:
+  status: n/a
+  reason: C has no closures or lazy values; memory that is held too long is a matter of manual allocation.
+cpp:
+  status: idiom
+  reason: a chain of std::function objects or a view over a large container can keep memory alive; the standard library has no memoized lazy values.
+bash:
+  status: n/a
+  reason: the shell has no lazy values; a pipeline streams its data between processes.
+powershell:
+  status: n/a
+  reason: no example file because pwsh is not installed on the machine that records the examples; a variable that holds the full output of a pipeline keeps all of it in memory.
+sql:
+  status: n/a
+  reason: SQL has no lazy values; the database manages the memory of a query.
+regex:
+  status: n/a
+  reason: a regular expression has no lazy values.
+html:
+  status: n/a
+  reason: HTML has no evaluation of expressions.
+css:
+  status: n/a
+  reason: CSS has no evaluation of expressions.

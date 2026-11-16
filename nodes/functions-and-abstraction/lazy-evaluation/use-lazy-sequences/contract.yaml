@@ -1,0 +1,12 @@
+# The contract of the task "use lazy sequences" (spec 10.2). The function gives the first n prime numbers. It builds a lazy pipeline: the infinite sequence 2, 3, 4, ..., a filter that keeps the primes, and a step that takes n items.
+problem: use-lazy-sequences
+entry: first_primes
+params:
+  - name: n
+    type: "int"
+    pre: "0 <= n <= 1000"
+returns:
+  type: "list<int>"
+  post: "the n smallest prime numbers in increasing order; n = 0 gives an empty list; the pipeline reads the numbers 2, 3, 4, ... only up to the n-th prime, and never makes a list of all the candidates"
+checker: exact
+edge_classes: [zero, one, small, composite-gaps]

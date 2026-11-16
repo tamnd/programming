@@ -1,0 +1,7 @@
+{"name":"zero","class":["zero"],"args":{"items":[1,2],"n":0},"expect":[]}
+{"name":"empty","class":["empty"],"args":{"items":[],"n":3},"expect":[]}
+{"name":"more-than-length","class":["more-than-length"],"args":{"items":[1,2],"n":5},"expect":[1,2]}
+{"name":"equal-length","class":["equal-length"],"args":{"items":[4,5,6],"n":3},"expect":[4,5,6]}
+{"name":"one","class":["one"],"args":{"items":[9,8],"n":1},"expect":[9]}
+{"name":"negative","class":["negative"],"args":{"items":[-1,-2,-3],"n":2},"expect":[-1,-2]}
+{"name":"extremes","class":["extremes"],"args":{"items":[-2147483648,2147483647,0],"n":2},"expect":[-2147483648,2147483647]}

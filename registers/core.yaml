@@ -12332,13 +12332,13 @@ items:
     group: "collections"
     name: "Use lazy sequences"
     target: "use-lazy-sequences"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Iterators); Go by Example (Range over Iterators); Rust by Example (Iterators, Searching through iterators)."
   - part: tasks
     group: "collections"
     name: "Take the first n items"
     target: "take-the-first-n-items"
-    status: "planned"
+    status: "node"
     reason: "A job on the collections of a language. Related titles, found by keyword: Rosetta Code (Iterators); Go by Example (Range over Iterators); Rust by Example (Iterators, Searching through iterators)."
   - part: tasks
     group: "collections"

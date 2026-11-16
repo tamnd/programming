@@ -1,0 +1,5 @@
+{"name":"from-zero","args":{"start":0,"n":5},"expect":[0,1,2,3,4]}
+{"name":"from-ten","args":{"start":10,"n":3},"expect":[10,11,12]}
+{"name":"none","args":{"start":7,"n":0},"expect":[]}
+{"name":"one","args":{"start":0,"n":1},"expect":[0]}
+{"name":"large-start","args":{"start":999998,"n":2},"expect":[999998,999999]}
