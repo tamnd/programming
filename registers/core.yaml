@@ -1682,14 +1682,14 @@ items:
     area: "variables-and-scope"
     name: "A Word About Names and Objects"
     target: "python/variables-and-scope/a-word-about-names-and-objects"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"A Word About Names and Objects\", in \"Classes\")."
   - part: features
     group: "python"
     area: "variables-and-scope"
     name: "Python Scopes and Namespaces"
     target: "python/variables-and-scope/python-scopes-and-namespaces"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Python Scopes and Namespaces\", in \"Classes\")."
   - part: features
     group: "python"
