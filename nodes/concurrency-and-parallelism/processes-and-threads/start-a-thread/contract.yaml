@@ -1,0 +1,12 @@
+# The contract of the task "start a thread" (spec 10.2). The function starts one thread for each name. Each thread builds the greeting "hello from <name>" for its own name and stores it, and the function returns the greetings after every thread has ended.
+problem: start-a-thread
+entry: thread_greetings
+params:
+  - name: names
+    type: "list<string>"
+    pre: "0 to 64 strings; each has 0 to 50 characters"
+returns:
+  type: "list<string>"
+  post: "one greeting for each name, in the order of names; item i is \"hello from \" followed by names[i]; each greeting is built on a thread that the function started for it"
+checker: exact
+edge_classes: [empty, single, empty-name, duplicate, unicode, many]

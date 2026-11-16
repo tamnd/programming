@@ -1,0 +1,2 @@
+{"name":"two","class":["basic"],"args":{"names":["Ada","Linus"]},"expect":["hello from Ada","hello from Linus"]}
+{"name":"three","class":["basic"],"args":{"names":["main","worker","logger"]},"expect":["hello from main","hello from worker","hello from logger"]}

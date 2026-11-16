@@ -1,0 +1,30 @@
+typescript:
+  status: absent
+  reason: TypeScript runs on a JavaScript engine, which has one thread for each event loop and no green threads. No example file exists.
+  alternative: async functions, as in the JavaScript example
+kotlin:
+  status: library
+  reason: coroutines come from the kotlinx.coroutines library, and on the JVM Kotlin can also use Java virtual threads; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: idiom
+  reason: on POSIX systems, makecontext and swapcontext give each green thread its own stack, as in the C++ example; no separate example file.
+bash:
+  status: absent
+  reason: Bash has no threads. No example file exists.
+  alternative: background processes with & and wait
+powershell:
+  status: absent
+  reason: thread jobs and runspaces run on OS threads; no example file because pwsh is not installed on the machine that recorded the examples.
+  alternative: Start-ThreadJob
+sql:
+  status: n/a
+  reason: a query does not start threads.
+regex:
+  status: n/a
+  reason: a pattern has no threads.
+html:
+  status: n/a
+  reason: markup has no threads.
+css:
+  status: n/a
+  reason: style rules have no threads.

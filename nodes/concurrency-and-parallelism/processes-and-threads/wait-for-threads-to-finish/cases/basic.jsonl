@@ -1,0 +1,2 @@
+{"name":"two","class":["basic"],"args":{"chunks":[[1,2,3],[4,5]]},"expect":[6,9]}
+{"name":"three","class":["basic"],"args":{"chunks":[[10],[20,30],[-5,5]]},"expect":[10,50,0]}

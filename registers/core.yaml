@@ -937,7 +937,7 @@ items:
     group: "concurrency-and-parallelism"
     name: "Process"
     target: "process"
-    status: "planned"
+    status: "node"
     reason: "It is in CS2023 FPL (\"management and interplay of concurrent processes ...\"). It is in the canon books: SICP index (\"blocked process\")."
   - part: concepts
     group: "concurrency-and-parallelism"
@@ -13025,13 +13025,13 @@ items:
     group: "concurrency"
     name: "Start a thread"
     target: "start-a-thread"
-    status: "planned"
+    status: "node"
     reason: "A job of a program that does more than one thing at a time. Related titles, found by keyword: Rosetta Code (Concurrent computing); Rust by Example (Threads)."
   - part: tasks
     group: "concurrency"
     name: "Wait for threads to finish"
     target: "wait-for-threads-to-finish"
-    status: "planned"
+    status: "node"
     reason: "A job of a program that does more than one thing at a time. Related titles, found by keyword: Go by Example (WaitGroups); Rust by Example (Wait)."
   - part: tasks
     group: "concurrency"
