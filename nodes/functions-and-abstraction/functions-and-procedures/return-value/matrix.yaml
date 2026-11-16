@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: Kotlin has a return statement, and a function with an expression body returns that expression. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: A PowerShell function returns all the values that it writes to the output, and return can end the function early. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: A user-defined SQL function gives its result with RETURN. Each database has its own languages for the body. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no functions and no return values.
+html:
+  status: n/a
+  reason: HTML is a markup language and has no functions. Scripts in a page use JavaScript.
+css:
+  status: n/a
+  reason: CSS cannot define functions in a standard module, so it has no return values.

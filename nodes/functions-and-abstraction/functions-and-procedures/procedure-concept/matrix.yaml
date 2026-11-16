@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: A Kotlin function with no declared return type returns Unit, so it works as a procedure. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: A PowerShell function can write nothing to the output and only change state, so it works as a procedure. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has stored procedures, which CREATE PROCEDURE defines and CALL runs. Each database has its own languages for the body. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has no procedures.
+html:
+  status: n/a
+  reason: HTML is a markup language and has no procedures. Scripts in a page use JavaScript.
+css:
+  status: n/a
+  reason: CSS is a style sheet language. It declares styles and has no code that a program calls for an effect.
