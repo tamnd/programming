@@ -1,0 +1,18 @@
+kotlin:
+  status: stdlib
+  reason: a value of type () -> T is a plain thunk, and the lazy function returns a memoized, thread-safe thunk for a property; no example file because kotlinc is not installed on the machine that records the examples.
+powershell:
+  status: idiom
+  reason: a script block is a plain thunk that the & operator forces; no example file because pwsh is not installed on the machine that records the examples.
+sql:
+  status: n/a
+  reason: SQL has no values that hold code.
+regex:
+  status: n/a
+  reason: a regular expression has no values that hold code.
+html:
+  status: n/a
+  reason: HTML has no evaluation of expressions.
+css:
+  status: n/a
+  reason: CSS has no evaluation of expressions of this kind.

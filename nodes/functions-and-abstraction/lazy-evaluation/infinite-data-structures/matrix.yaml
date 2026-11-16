@@ -1,0 +1,18 @@
+kotlin:
+  status: stdlib
+  reason: generateSequence and the sequence builder make infinite sequences, and take, takeWhile and first read a finite prefix; no example file because kotlinc is not installed on the machine that records the examples.
+powershell:
+  status: idiom
+  reason: a script block with an endless loop can write objects to the pipeline, and Select-Object -First stops it; no example file because pwsh is not installed on the machine that records the examples.
+sql:
+  status: n/a
+  reason: a table or a query result is finite; a recursive common table expression needs a limit or a condition to stop.
+regex:
+  status: n/a
+  reason: a regular expression has no data structures.
+html:
+  status: n/a
+  reason: HTML has no evaluation of expressions.
+css:
+  status: n/a
+  reason: CSS has no evaluation of expressions.
