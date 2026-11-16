@@ -1,0 +1,27 @@
+typescript:
+  status: idiom
+  reason: as JavaScript; a namespace with the same name as a class can hold types, which gives names such as Playlist.Cursor; no example file because it would repeat the JavaScript one.
+kotlin:
+  status: native
+  reason: a class inside a class is nested and has no outer object, inner class adds one, and an object expression makes an anonymous object; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: absent
+  reason: a struct declared inside a struct is not scoped to it, and C has no member functions to nest.
+bash:
+  status: n/a
+  reason: Bash has no classes.
+powershell:
+  status: absent
+  reason: PowerShell classes cannot contain class definitions; code declares each class at the top level of a script or module.
+sql:
+  status: n/a
+  reason: SQL has no classes.
+regex:
+  status: n/a
+  reason: a pattern has no classes.
+html:
+  status: n/a
+  reason: HTML has no classes in this sense; the class attribute names CSS selectors.
+css:
+  status: n/a
+  reason: CSS has no classes in this sense; a class selector matches elements.

@@ -1,0 +1,12 @@
+# The contract of the task "use a singleton" (spec 10.2). The program has one IdGenerator. The function gets it calls times and takes one id from it each time.
+problem: use-a-singleton
+entry: singleton_report
+params:
+  - name: calls
+    type: "int"
+    pre: "1 to 1000000"
+returns:
+  type: "list<int>"
+  post: "[last id - first id, the number of times the IdGenerator constructor has run in the process, the number of distinct instances that the calls returned]; the ids of one generator are consecutive, so the result is [calls - 1, 1, 1] whatever ran before"
+checker: exact
+edge_classes: [single-call, pair, limit]
