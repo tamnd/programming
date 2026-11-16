@@ -1535,14 +1535,14 @@ items:
     area: "io-and-os"
     name: "Input and output"
     target: "python/io-and-os/input-and-output"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Input and output\")."
   - part: features
     group: "python"
     area: "io-and-os"
     name: "Fancier output formatting"
     target: "python/io-and-os/fancier-output-formatting"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Fancier output formatting\", in \"Input and output\")."
   - part: features
     group: "python"
@@ -1577,14 +1577,14 @@ items:
     area: "io-and-os"
     name: "Reading and writing files"
     target: "python/io-and-os/reading-and-writing-files"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Reading and writing files\", in \"Input and output\")."
   - part: features
     group: "python"
     area: "io-and-os"
     name: "Methods of file objects"
     target: "python/io-and-os/methods-of-file-objects"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Methods of file objects\", in \"Input and output\")."
   - part: features
     group: "python"
@@ -1857,7 +1857,7 @@ items:
     area: "io-and-os"
     name: "Output formatting"
     target: "python/io-and-os/output-formatting"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Output formatting\", in \"Brief tour of the standard library — part II\")."
   - part: features
     group: "python"
