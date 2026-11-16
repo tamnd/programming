@@ -1,0 +1,15 @@
+# The contract of the task "compute the mean and median" (spec 10.2). The function returns the arithmetic mean and the median of a non-empty list of integers. The results are floating-point numbers, so the checker has a tolerance.
+problem: compute-the-mean-and-median
+entry: mean_and_median
+params:
+  - name: items
+    type: "list<int>"
+    pre: "the list is not empty; each item is a 64-bit signed integer"
+returns:
+  type: "tuple<float, float>"
+  post: "the mean is the sum divided by the count; the median is the middle item of the sorted list, or the mean of the two middle items when the count is even; the list of the caller does not change"
+checker:
+  kind: float
+  abs: 1e-9
+  rel: 1e-12
+edge_classes: [single, two, negative, unsorted, duplicates, fraction, overflow]

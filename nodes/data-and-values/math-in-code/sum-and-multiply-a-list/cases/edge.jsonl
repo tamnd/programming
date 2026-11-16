@@ -1,0 +1,10 @@
+{"name":"empty","class":["empty"],"args":{"items":[]},"expect":[0,1]}
+{"name":"single","class":["single"],"args":{"items":[7]},"expect":[7,7]}
+{"name":"with-zero","class":["zero"],"args":{"items":[5,0,9]},"expect":[14,0]}
+{"name":"two-negatives","class":["negative"],"args":{"items":[-2,-3]},"expect":[-5,6]}
+{"name":"three-negatives","class":["negative"],"args":{"items":[-1,-2,-3]},"expect":[-6,-6]}
+{"name":"ones","class":["ones"],"args":{"items":[1,1,1]},"expect":[3,1]}
+{"name":"large-product","class":["large"],"args":{"items":[3037000499,3037000499]},"expect":[6074000998,9223372030926249001]}
+{"name":"to-the-limit","class":["large"],"args":{"items":[9223372036854775806,1]},"expect":[9223372036854775807,9223372036854775806]}
+{"name":"beyond-double","class":["beyond-double"],"args":{"items":[9007199254740993]},"expect":[9007199254740993,9007199254740993]}
+{"name":"min","class":["min"],"args":{"items":[-9223372036854775808]},"expect":[-9223372036854775808,-9223372036854775808]}

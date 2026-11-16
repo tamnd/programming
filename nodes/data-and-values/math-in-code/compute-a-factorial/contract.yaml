@@ -1,0 +1,12 @@
+# The contract of the task "compute a factorial" (spec 10.2). The function returns n!, the product of the integers from 1 to n. 20! is the largest factorial in a 64-bit signed integer.
+problem: compute-a-factorial
+entry: factorial
+params:
+  - name: n
+    type: int
+    pre: "0 <= n <= 20, so the result fits in a 64-bit signed integer"
+returns:
+  type: int
+  post: "the product of the integers from 1 to n; 1 when n is 0"
+checker: exact
+edge_classes: [zero, one, int32-limit, beyond-int32, int64-limit]

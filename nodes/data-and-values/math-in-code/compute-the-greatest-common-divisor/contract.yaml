@@ -1,0 +1,15 @@
+# The contract of the task "compute the greatest common divisor" (spec 10.2). The function returns the greatest common divisor and the least common multiple of two integers. Both results are never negative.
+problem: compute-the-greatest-common-divisor
+entry: gcd_and_lcm
+params:
+  - name: a
+    type: int
+    pre: "a 64-bit signed integer that is not the smallest 64-bit value; it can be 0 or negative"
+  - name: b
+    type: int
+    pre: "a 64-bit signed integer that is not the smallest 64-bit value; it can be 0 or negative; the least common multiple of a and b fits in a 64-bit signed integer"
+returns:
+  type: "tuple<int, int>"
+  post: "the greatest common divisor of |a| and |b|, which is 0 when both are 0, and the least common multiple of |a| and |b|, which is 0 when a or b is 0"
+checker: exact
+edge_classes: [zero, negative, equal, one, multiple, fibonacci, overflow, large]

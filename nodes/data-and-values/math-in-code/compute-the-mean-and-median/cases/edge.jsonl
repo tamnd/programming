@@ -1,0 +1,7 @@
+{"name":"single","class":["single"],"args":{"items":[5]},"expect":[5.0,5.0]}
+{"name":"two-items","class":["two"],"args":{"items":[1,2]},"expect":[1.5,1.5]}
+{"name":"negative","class":["negative"],"args":{"items":[-3,-1,-2]},"expect":[-2.0,-2.0]}
+{"name":"unsorted-even","class":["unsorted"],"args":{"items":[10,2,8,4]},"expect":[6.0,6.0]}
+{"name":"duplicates","class":["duplicates"],"args":{"items":[1,1,1,5]},"expect":[2.0,1.0]}
+{"name":"not-an-integer","class":["fraction"],"args":{"items":[1,2,2]},"expect":[1.6666666666666667,2.0]}
+{"name":"large","class":["overflow"],"args":{"items":[9223372036854775807,9223372036854775807]},"expect":[9.223372036854776e18,9.223372036854776e18]}

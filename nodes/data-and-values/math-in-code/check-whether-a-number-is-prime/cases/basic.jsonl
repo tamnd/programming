@@ -1,0 +1,4 @@
+{"name":"small-prime","args":{"n":17},"expect":true}
+{"name":"small-composite","args":{"n":15},"expect":false}
+{"name":"even","args":{"n":100},"expect":false}
+{"name":"odd-composite","args":{"n":91},"expect":false}

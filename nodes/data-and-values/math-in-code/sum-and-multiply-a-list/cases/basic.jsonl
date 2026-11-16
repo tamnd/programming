@@ -1,0 +1,2 @@
+{"name":"small","args":{"items":[1,2,3,4]},"expect":[10,24]}
+{"name":"mixed","args":{"items":[3,-2,5]},"expect":[6,-30]}

@@ -1,0 +1,12 @@
+# The contract of the task "sum and multiply a list" (spec 10.2). The function returns the sum and the product of a list of integers. The sum of an empty list is 0 and the product is 1.
+problem: sum-and-multiply-a-list
+entry: sum_and_product
+params:
+  - name: items
+    type: "list<int>"
+    pre: "each item is a 64-bit signed integer; each partial sum and each partial product fits in a 64-bit signed integer; the list can be empty"
+returns:
+  type: "tuple<int, int>"
+  post: "the sum and the product of the items; for an empty list, 0 and 1"
+checker: exact
+edge_classes: [empty, single, zero, negative, ones, large, beyond-double, min]

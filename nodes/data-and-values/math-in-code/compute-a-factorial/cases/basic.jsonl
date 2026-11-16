@@ -1,0 +1,2 @@
+{"name":"five","args":{"n":5},"expect":120}
+{"name":"ten","args":{"n":10},"expect":3628800}
