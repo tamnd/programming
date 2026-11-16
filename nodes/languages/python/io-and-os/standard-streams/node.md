@@ -11,7 +11,7 @@ summary: >-
   sys.stdin, sys.stdout and sys.stderr are text files for the input, output and errors of a program. print() writes to sys.stdout unless file= names another stream.
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/library/sys.html#sys.stdin", locator: "sys.stdin, sys.stdout, sys.stderr"}
-see_also: [python/input-and-output, python/text-and-binary-io, read-from-standard-input]
+see_also: [python/input-and-output, python/text-and-binary-io, python/error-output-redirection-and-program-termination, read-from-standard-input]
 sources:
   - url: https://docs.python.org/3.15/library/sys.html#sys.stdin
     title: sys, Python 3.15 documentation
