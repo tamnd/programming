@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript uses a JavaScript array as a deque, with push, pop, shift and unshift. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin has ArrayDeque, a resizable array deque with addFirst, addLast, removeFirst and removeLast. No example file exists because kotlinc is not installed.
+powershell:
+  status: stdlib
+  reason: "[System.Collections.Generic.LinkedList[T]] from .NET adds and removes at both ends. No example file exists because pwsh is not installed."
+bash:
+  status: idiom
+  reason: An indexed array works as a deque, with assignments at both ends and unset to remove an element. No example file exists.
+sql:
+  status: n/a
+  reason: A table is a set of rows with no ends. An order column can emulate a deque, but SQL has no deque type.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no data structures.
+html:
+  status: n/a
+  reason: HTML is markup. It has no data structures for a program.
+css:
+  status: n/a
+  reason: CSS style rules have no data structures.
