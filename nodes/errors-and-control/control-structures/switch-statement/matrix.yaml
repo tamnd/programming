@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: when with a subject compares the value with each branch in order, a branch can list several values with commas, and else takes the other values; when can be a statement or an expression. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: switch converts each value to a string, and it runs the action of each condition that matches, unless break stops it; -Wildcard and -Regex change the comparison. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: The CASE expression chooses a result with WHEN, THEN and ELSE, either by conditions or by comparison of one value with a list of values. No example file exists.
+regex:
+  status: n/a
+  reason: A regular expression has alternation with |, but it has no branch on the value of an expression.
+html:
+  status: n/a
+  reason: HTML has no values to branch on.
+css:
+  status: n/a
+  reason: CSS has no multiway branch on a value; @media and @supports apply rules when a condition is true.

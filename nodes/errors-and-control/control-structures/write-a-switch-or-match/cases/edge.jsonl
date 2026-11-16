@@ -1,0 +1,4 @@
+{"name":"december","class":["boundary"],"args":{"month":12},"expect":31}
+{"name":"zero","class":["zero"],"args":{"month":0},"expect":0}
+{"name":"thirteen","class":["boundary"],"args":{"month":13},"expect":0}
+{"name":"minus-one","class":["negative"],"args":{"month":-1},"expect":0}

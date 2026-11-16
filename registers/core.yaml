@@ -11564,7 +11564,7 @@ items:
     group: "basics"
     name: "Write a conditional"
     target: "write-a-conditional"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rosetta Code (Conditional structures)."
   - part: tasks
     group: "basics"
@@ -11612,7 +11612,7 @@ items:
     group: "basics"
     name: "Write a switch or match"
     target: "write-a-switch-or-match"
-    status: "planned"
+    status: "node"
     reason: "A basic job of a language, of the kind that the tier-3 task set of spec 10.1 holds. Related titles, found by keyword: Rosetta Code (Conditional structures); Go by Example (Switch); Rust by Example (match)."
   - part: tasks
     group: "basics"

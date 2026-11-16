@@ -1,0 +1,6 @@
+{"name":"hundred","class":["boundary"],"args":{"score":100},"expect":"A"}
+{"name":"zero","class":["boundary"],"args":{"score":0},"expect":"F"}
+{"name":"ninety","class":["boundary"],"args":{"score":90},"expect":"A"}
+{"name":"eighty-nine","class":["boundary"],"args":{"score":89},"expect":"B"}
+{"name":"sixty","class":["boundary"],"args":{"score":60},"expect":"D"}
+{"name":"fifty-nine","class":["boundary"],"args":{"score":59},"expect":"F"}

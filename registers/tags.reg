@@ -803,3 +803,7 @@ SPX9Q8 getters-and-setters
 F0YZKX nested-and-inner-classes
 FVBDQB static-members
 1X7NQW use-a-singleton
+PWSEXB fall-through
+547T26 switch-statement
+220A67 write-a-conditional
+7Q1CXC write-a-switch-or-match

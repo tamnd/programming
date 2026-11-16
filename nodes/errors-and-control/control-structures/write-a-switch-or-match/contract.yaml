@@ -1,0 +1,12 @@
+# The contract of the task "Write a switch or match" (spec 10.2). The function maps a month number to the number of days in that month of a common year with one switch or match.
+problem: write-a-switch-or-match
+entry: days_in_month
+params:
+  - name: month
+    type: int
+    pre: "any int"
+returns:
+  type: int
+  post: "28 for 2; 30 for 4, 6, 9 and 11; 31 for 1, 3, 5, 7, 8, 10 and 12; 0 for any other int"
+checker: exact
+edge_classes: [boundary, zero, negative]
