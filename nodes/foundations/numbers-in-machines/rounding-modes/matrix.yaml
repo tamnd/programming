@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript numbers are JavaScript numbers, with Math.round, Math.floor, Math.ceil and Math.trunc. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has round, roundToInt, floor, ceil and truncate for Double, and java.math.RoundingMode for BigDecimal on the JVM. No example file exists because kotlinc is not installed.
+bash:
+  status: absent
+  reason: Bash arithmetic expansion has integers only, so there is no rounding of fractions and no rounding mode to set. No example file exists.
+powershell:
+  status: native
+  reason: PowerShell [math]::Round is System.Math.Round, with half to even by default and the MidpointRounding values. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: PostgreSQL round breaks ties away from zero for numeric, and for double precision the tie rule depends on the platform. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern matches text and does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: native
+  reason: CSS round() takes the strategy nearest, up, down or to-zero, and nearest rounds a tie up, as JavaScript Math.round does. No example file exists.
