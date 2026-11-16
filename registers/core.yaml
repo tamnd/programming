@@ -11792,7 +11792,7 @@ items:
     group: "strings"
     name: "Pad a string"
     target: "pad-a-string"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (One time pad); Go by Example (String Formatting)."
   - part: tasks
     group: "strings"
@@ -11894,7 +11894,7 @@ items:
     group: "strings"
     name: "Wrap text to a width"
     target: "wrap-text-to-a-width"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Rosetta Code (Word wrap)."
   - part: tasks
     group: "strings"
@@ -11924,7 +11924,7 @@ items:
     group: "strings"
     name: "Use a text template"
     target: "use-a-text-template"
-    status: "planned"
+    status: "node"
     reason: "A job on text that each program does. Related titles, found by keyword: Go by Example (Text Templates)."
   - part: tasks
     group: "numbers"
@@ -11942,13 +11942,13 @@ items:
     group: "numbers"
     name: "Format a number with separators"
     target: "format-a-number-with-separators"
-    status: "planned"
+    status: "node"
     reason: "A job on numbers that each program does. Related titles, found by keyword: Rosetta Code (Commatizing numbers, Formatted numeric output)."
   - part: tasks
     group: "numbers"
     name: "Format a number with fixed decimals"
     target: "format-a-number-with-fixed-decimals"
-    status: "planned"
+    status: "node"
     reason: "A job on numbers that each program does. Related titles, found by keyword: Rosetta Code (Formatted numeric output)."
   - part: tasks
     group: "numbers"

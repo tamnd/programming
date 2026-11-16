@@ -1,0 +1,9 @@
+{"name":"zero-digits","class":["no-decimals"],"args":{"x":123.456,"digits":0},"expect":"123"}
+{"name":"float-error","class":["binary"],"args":{"x":0.30000000000000004,"digits":2},"expect":"0.30"}
+{"name":"negative","class":["negative"],"args":{"x":-1.234,"digits":1},"expect":"-1.2"}
+{"name":"rounds-to-zero","class":["small"],"args":{"x":0.0049,"digits":2},"expect":"0.00"}
+{"name":"stored-below-2-675","class":["binary"],"args":{"x":2.675,"digits":2},"expect":"2.67"}
+{"name":"stored-below-1-005","class":["binary"],"args":{"x":1.005,"digits":2},"expect":"1.00"}
+{"name":"large","class":["large"],"args":{"x":1e+20,"digits":2},"expect":"100000000000000000000.00"}
+{"name":"many-digits","class":["precision"],"args":{"x":0.1,"digits":20},"expect":"0.10000000000000000555"}
+{"name":"integer-value","class":["integer"],"args":{"x":42.0,"digits":2},"expect":"42.00"}

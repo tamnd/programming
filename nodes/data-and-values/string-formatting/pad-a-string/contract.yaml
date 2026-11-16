@@ -1,0 +1,18 @@
+# The contract of the task "pad a string" (spec 10.2). The function pads s with the character fill to the length width, once on the left and once on the right, and returns both results. If s has width characters or more, both results are s. The text is ASCII, so a character is one byte and one column.
+problem: pad-a-string
+entry: pad
+params:
+  - name: s
+    type: string
+    pre: "ASCII text"
+  - name: width
+    type: int
+    pre: "0 <= width <= 1000"
+  - name: fill
+    type: string
+    pre: "exactly one ASCII character"
+returns:
+  type: "tuple<string, string>"
+  post: "(fill repeated max(0, width - len(s)) times + s, s + fill repeated max(0, width - len(s)) times)"
+checker: exact
+edge_classes: [empty, no-padding, no-truncation, sign, fill, small, spaces]

@@ -1,0 +1,9 @@
+{"name":"no-placeholders","class":["plain"],"args":{"template":"plain text","names":[],"values":[]},"expect":"plain text"}
+{"name":"empty-template","class":["empty"],"args":{"template":"","names":["x"],"values":["1"]},"expect":""}
+{"name":"dollar-escape","class":["escape"],"args":{"template":"$$name","names":["name"],"values":["Ada"]},"expect":"$name"}
+{"name":"adjacent-text","class":["braces"],"args":{"template":"${n}th","names":["n"],"values":["4"]},"expect":"4th"}
+{"name":"value-with-dollar","class":["value-not-template"],"args":{"template":"$v","names":["v"],"values":["$x and ${y}"]},"expect":"$x and ${y}"}
+{"name":"empty-value","class":["empty"],"args":{"template":"[$v]","names":["v"],"values":[""]},"expect":"[]"}
+{"name":"underscore-name","class":["names"],"args":{"template":"$first_name $last_name","names":["first_name","last_name"],"values":["Grace","Hopper"]},"expect":"Grace Hopper"}
+{"name":"name-ends-at-punct","class":["names"],"args":{"template":"$a.$b","names":["a","b"],"values":["1","2"]},"expect":"1.2"}
+{"name":"unused-value","class":["extra"],"args":{"template":"$a","names":["a","b"],"values":["1","2"]},"expect":"1"}

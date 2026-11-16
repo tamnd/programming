@@ -1,0 +1,8 @@
+{"name":"empty","class":["empty"],"args":{"text":"","width":10},"expect":[]}
+{"name":"only-spaces","class":["empty"],"args":{"text":"   ","width":5},"expect":[]}
+{"name":"fits","class":["one-line"],"args":{"text":"short text","width":20},"expect":["short text"]}
+{"name":"exact-fit","class":["exact-width"],"args":{"text":"abcde fghij","width":5},"expect":["abcde","fghij"]}
+{"name":"long-word","class":["long-word"],"args":{"text":"a supercalifragilistic word","width":10},"expect":["a","supercalifragilistic","word"]}
+{"name":"many-spaces","class":["spaces"],"args":{"text":"one   two\tthree\nfour","width":9},"expect":["one two","three","four"]}
+{"name":"width-one","class":["small"],"args":{"text":"a b c","width":1},"expect":["a","b","c"]}
+{"name":"line-exact","class":["exact-width"],"args":{"text":"ab cd ef","width":5},"expect":["ab cd","ef"]}

@@ -11,7 +11,7 @@ summary: >-
 applies_to: core-languages
 viz: optional
 formal: none
-see_also: [string-concept, format-specifiers, interpolate-values-into-a-string, print-formatted-output, concatenate-strings]
+see_also: [string-concept, format-specifiers, interpolate-values-into-a-string, print-formatted-output, concatenate-strings, use-a-text-template]
 same_as:
   wikidata: Q7623982
   wikipedia: String_interpolation

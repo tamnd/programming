@@ -11,7 +11,7 @@ summary: >-
 applies_to: core-languages
 viz: optional
 formal: none
-see_also: [string-interpolation, print-formatted-output, locale-aware-formatting]
+see_also: [string-interpolation, print-formatted-output, locale-aware-formatting, pad-a-string, format-a-number-with-fixed-decimals, format-a-number-with-separators]
 same_as:
   wikidata: Q838016
   wikipedia: Printf

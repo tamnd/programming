@@ -997,3 +997,8 @@ QS4QVP python/template-string-literals
 FN6HCT python/the-string-format-method
 ACHQHP compare-floating-point-numbers
 5TBHF2 use-big-integers
+QDVN9N format-a-number-with-fixed-decimals
+ZNQ468 format-a-number-with-separators
+30T0B3 pad-a-string
+ZT1PKS use-a-text-template
+KBZ8FA wrap-text-to-a-width

@@ -11,7 +11,7 @@ summary: >-
 applies_to: core-languages
 viz: optional
 formal: none
-see_also: [format-specifiers, string-interpolation, print-formatted-output]
+see_also: [format-specifiers, string-interpolation, print-formatted-output, format-a-number-with-separators, format-a-number-with-fixed-decimals]
 same_as:
   wikidata: Q1202471
   wikipedia: Locale_(computer_software)

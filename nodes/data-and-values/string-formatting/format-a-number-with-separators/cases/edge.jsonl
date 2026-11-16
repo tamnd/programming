@@ -1,0 +1,9 @@
+{"name":"zero","class":["zero"],"args":{"n":0},"expect":"0"}
+{"name":"three-digits","class":["no-separator"],"args":{"n":999},"expect":"999"}
+{"name":"negative","class":["negative"],"args":{"n":-1234567},"expect":"-1,234,567"}
+{"name":"negative-small","class":["negative"],"args":{"n":-999},"expect":"-999"}
+{"name":"negative-thousand","class":["negative"],"args":{"n":-1000},"expect":"-1,000"}
+{"name":"int64-max","class":["largest"],"args":{"n":9223372036854775807},"expect":"9,223,372,036,854,775,807"}
+{"name":"int64-min","class":["smallest"],"args":{"n":-9223372036854775808},"expect":"-9,223,372,036,854,775,808"}
+{"name":"six-digits","class":["group-boundary"],"args":{"n":100000},"expect":"100,000"}
+{"name":"seven-digits","class":["group-boundary"],"args":{"n":1000000},"expect":"1,000,000"}
