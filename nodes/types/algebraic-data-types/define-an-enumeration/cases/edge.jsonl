@@ -1,0 +1,7 @@
+{"name":"zero-steps","class":["zero-steps"],"args":{"start":"monday","steps":0},"expect":[]}
+{"name":"wrap","class":["wrap"],"args":{"start":"friday","steps":4},"expect":["friday","saturday","sunday","monday"]}
+{"name":"more-than-a-week","class":["more-than-a-week"],"args":{"start":"sunday","steps":9},"expect":["sunday","monday","tuesday","wednesday","thursday","friday","saturday","sunday","monday"]}
+{"name":"unknown","class":["unknown"],"args":{"start":"funday","steps":3},"expect":[]}
+{"name":"wrong-case","class":["wrong-case"],"args":{"start":"Friday","steps":2},"expect":[]}
+{"name":"number","class":["number"],"args":{"start":"3","steps":2},"expect":[]}
+{"name":"empty-name","class":["empty-name"],"args":{"start":"","steps":1},"expect":[]}

@@ -1,0 +1,15 @@
+# The contract of the task "define an enumeration" (spec 10.2). Each solution defines a Day enumeration with the seven days from monday to sunday, converts a name to a value, steps through the values by their position and converts each value back to its name.
+problem: define-an-enumeration
+entry: cycle
+params:
+  - name: start
+    type: string
+    pre: "any text with no line break"
+  - name: steps
+    type: int
+    pre: "from 0 to 100"
+returns:
+  type: "list<string>"
+  post: "if start is one of the names monday, tuesday, wednesday, thursday, friday, saturday, sunday, exactly and in lower case, then steps names that begin with start and go on in that order, with monday after sunday; otherwise the empty list"
+checker: exact
+edge_classes: [zero-steps, wrap, more-than-a-week, unknown, wrong-case, number, empty-name]

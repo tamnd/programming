@@ -1,0 +1,15 @@
+# The contract of the task "define a record type" (spec 10.2). Each solution defines a Person record, builds one for each input pair, and makes a changed copy without changing the original.
+problem: define-a-record-type
+entry: birthday
+params:
+  - name: people
+    type: "list<tuple<string, int>>"
+    pre: "each person is (name, age); a name has no line break and no | character; an age is from 0 to 1000; the list can be empty and two people can have one name"
+  - name: name
+    type: string
+    pre: "any name with the same rules as the names in people"
+returns:
+  type: "list<tuple<string, int>>"
+  post: "a new list with the people in the same order, where each person whose name is equal to name, character for character, has age + 1 and every other person is unchanged; the input list and its records do not change"
+checker: exact
+edge_classes: [empty, not-found, duplicate-name, zero-age, non-ascii, case]

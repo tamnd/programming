@@ -1,0 +1,1 @@
+{"name":"weekdays","args":{"start":"monday","steps":3},"expect":["monday","tuesday","wednesday"]}

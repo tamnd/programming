@@ -1,0 +1,6 @@
+{"name":"empty","class":["empty"],"args":{"people":[],"name":"Ada"},"expect":[]}
+{"name":"not-found","class":["not-found"],"args":{"people":[["Ada",36]],"name":"Grace"},"expect":[["Ada",36]]}
+{"name":"duplicate-name","class":["duplicate-name"],"args":{"people":[["Ada",36],["Alan",41],["Ada",9]],"name":"Ada"},"expect":[["Ada",37],["Alan",41],["Ada",10]]}
+{"name":"zero-age","class":["zero-age"],"args":{"people":[["Baby",0]],"name":"Baby"},"expect":[["Baby",1]]}
+{"name":"non-ascii","class":["non-ascii"],"args":{"people":[["Zoë",20],["Zoe",30]],"name":"Zoë"},"expect":[["Zoë",21],["Zoe",30]]}
+{"name":"case","class":["case"],"args":{"people":[["ada",36]],"name":"Ada"},"expect":[["ada",36]]}

@@ -1,0 +1,6 @@
+{"name":"one","class":["one"],"args":{"numbers":[5]},"expect":[5,5]}
+{"name":"negative","class":["negative"],"args":{"numbers":[-3,-1,-7]},"expect":[-7,-1]}
+{"name":"all-same","class":["all-same"],"args":{"numbers":[2,2,2]},"expect":[2,2]}
+{"name":"int32-extremes","class":["int32-extremes"],"args":{"numbers":[2147483647,0,-2147483648]},"expect":[-2147483648,2147483647]}
+{"name":"sorted","class":["sorted"],"args":{"numbers":[1,2,3,4]},"expect":[1,4]}
+{"name":"reversed","class":["reversed"],"args":{"numbers":[4,3,2,1]},"expect":[1,4]}
