@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: Kotlin collections have the functions map, filter, reduce and fold, and a lambda gives the operation. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: The cmdlets ForEach-Object and Where-Object map and filter the objects in a pipeline, and a loop or Measure-Object combines them. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: The SELECT list computes a value for each row, the WHERE clause keeps the rows that pass a test and aggregate functions such as SUM combine the rows. SQL has no function values, so these are clauses, not higher-order functions.
+regex:
+  status: n/a
+  reason: A regular expression has no functions and no collections.
+html:
+  status: n/a
+  reason: HTML is a markup language and has no functions.
+css:
+  status: n/a
+  reason: CSS has no collections of values that a function can map, filter or reduce.
