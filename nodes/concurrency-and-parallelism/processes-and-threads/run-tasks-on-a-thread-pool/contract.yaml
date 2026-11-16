@@ -1,0 +1,15 @@
+# The contract of the task "run tasks on a thread pool" (spec 10.2). The function submits one job for each number to a pool of at most `workers` threads, waits until every job has finished, and returns the results in the order of the numbers.
+problem: run-tasks-on-a-thread-pool
+entry: steps_on_pool
+params:
+  - name: workers
+    type: int
+    pre: "1 to 8"
+  - name: numbers
+    type: "list<int>"
+    pre: "0 to 1000 items; each item is 1 to 1000000"
+returns:
+  type: "list<int>"
+  post: "item i is the number of steps that take numbers[i] to 1, where a step halves an even number and changes an odd number n to 3n + 1; at most `workers` jobs run at the same time; every job has finished and the pool has stopped when the function returns"
+checker: exact
+edge_classes: [empty, one-worker, more-workers-than-jobs, duplicates, wide-intermediate, many]

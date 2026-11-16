@@ -1024,3 +1024,9 @@ HQ9SVE python/instance-objects
 5AW8P8 python/method-objects
 08MQ1M python/multiple-inheritance
 68PTKB python/private-variables
+D8F89R fibers
+EHE1JZ executors
+H0F26W run-tasks-on-a-thread-pool
+18V7W5 thread-local-storage
+QEF7A4 use-thread-local-storage
+G7XJGG work-stealing

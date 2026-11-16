@@ -1,0 +1,2 @@
+{"name":"four-jobs","class":["basic"],"args":{"workers":2,"numbers":[1,2,3,6]},"expect":[0,1,7,8]}
+{"name":"long-runs","class":["basic"],"args":{"workers":3,"numbers":[27,97,871]},"expect":[111,118,178]}
