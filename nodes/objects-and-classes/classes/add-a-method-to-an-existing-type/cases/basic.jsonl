@@ -1,0 +1,3 @@
+{"name":"three-words","args":{"text":"the quick fox"},"expect":3}
+{"name":"one-word","args":{"text":"hello"},"expect":1}
+{"name":"punctuation","args":{"text":"Hello, world! How are you?"},"expect":5}
