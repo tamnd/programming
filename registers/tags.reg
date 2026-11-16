@@ -1035,3 +1035,11 @@ ES05X5 check-whether-a-string-is-a-palindrome
 QQS374 compute-the-edit-distance-of-two-strings
 ACKW1C count-the-letters-of-a-text
 55TSM1 detect-anagrams
+0NJ054 python/attribute-access-customization
+AA8Y3X python/descriptors
+R76J3E python/object-creation
+2KT3HK python/operator-overloading
+PG2FN0 python/properties
+2VJSVH python/rich-comparison-methods
+W9FG9P python/slots
+GP7W2K python/special-methods
