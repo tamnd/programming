@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript uses the bitwise operators of JavaScript, so a program makes the two forms by hand, as in the JavaScript example. No example file exists.
+kotlin:
+  status: idiom
+  reason: Kotlin's integer types are two's complement, as in Java, so a program makes the two forms by hand with or, inv and and. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: Bash arithmetic has the operators |, ~ and &, so a script can make the two forms by hand. No example file exists.
+powershell:
+  status: idiom
+  reason: PowerShell uses the .NET integer types and has the -bor, -bnot and -band operators, so a script makes the two forms by hand. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: SQL integer types have ranges, but SQL does not show the bits of a value.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but has no integer types.
+html:
+  status: n/a
+  reason: HTML has no numbers.
+css:
+  status: n/a
+  reason: CSS has integer values, such as z-index, but no integer types with a width.

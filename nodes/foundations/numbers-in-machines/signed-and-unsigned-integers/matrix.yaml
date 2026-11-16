@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has the number type, the >>> operator and the typed arrays of JavaScript, so it has unsigned views but no unsigned integer type. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has the unsigned types UByte, UShort, UInt and ULong next to its signed types. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: PowerShell uses the .NET types, such as [byte], [uint16], [uint32] and [uint64]. No example file exists because pwsh is not installed.
+bash:
+  status: absent
+  reason: Bash arithmetic uses one signed integer type. A script prints a value as unsigned with printf and the %u format.
+sql:
+  status: absent
+  reason: The SQL integer types SMALLINT, INTEGER and BIGINT are signed. A CHECK constraint can refuse negative values.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but has no integer types.
+html:
+  status: n/a
+  reason: HTML has no numbers.
+css:
+  status: n/a
+  reason: CSS has integer values, such as z-index, but no integer types with a width or a sign rule.
