@@ -34,7 +34,7 @@ The template syntax is the one of Python `string.Template`[^1]:
 
 - "$$ is an escape; it is replaced with a single $."[^1]
 - "$identifier names a substitution placeholder"[^1], and the name is the key of the value. The name starts with a letter or an underscore, and "The first non-identifier character after the $ character terminates this placeholder specification"[^1].
-- "${identifier} is equivalent to $identifier. It is required when valid identifier characters follow the placeholder but are not part of the placeholder"[^1], as in `${noun}ification`.
+- "\${identifier} is equivalent to \$identifier. It is required when valid identifier characters follow the placeholder but are not part of the placeholder"[^1], as in `${noun}ification`.
 
 The function `substitute(template, names, values)` returns the filled text. `values[i]` is the value of `names[i]`.
 
@@ -71,7 +71,7 @@ The regular expression of the solutions is `\$(?:(\$)|\{(NAME)\}|(NAME))?`, wher
 - **Rust.** The standard library has no regular expressions. The scanner finds the next `$` with `find`, copies the text before it, and reads the placeholder.
 - **C.** The scanner looks up each name in the two arrays, and returns -1 for an error.
 - **C++.** The same scanner, with `std::string_view` and a `std::unordered_map`.
-- **Bash.** The shell itself expands `$name`: "The basic form of parameter expansion is ${parameter}, which substitutes the value of parameter"[^3]. But `eval` on a template runs any command in it, so the solution does not use it. A loop takes the text before the first `$` with a regular expression, and adds the value from an associative array.
+- **Bash.** The shell itself expands `$name`: "The basic form of parameter expansion is \${parameter}, which substitutes the value of parameter"[^3]. But `eval` on a template runs any command in it, so the solution does not use it. A loop takes the text before the first `$` with a regular expression, and adds the value from an associative array.
 
 The Python solution, with the errors:
 

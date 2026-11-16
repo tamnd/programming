@@ -53,7 +53,7 @@ A placeholder is `$` and a name. The values come from a mapping or from keyword 
 
 **r1.** "Template strings provide simpler string substitutions as described in PEP 292. A primary use case for template strings is for internationalization (i18n) since in that context, the simpler syntax and functionality makes it easier to translate than other built-in string formatting facilities in Python."[^1] The tutorial calls the syntax "suitable for editing by end-users".[^2]
 
-**r2.** "$$ is an escape; it is replaced with a single $."[^1] `$identifier` "names a substitution placeholder matching a mapping key".[^1] "The first non-identifier character after the $ character terminates this placeholder specification."[^1]
+**r2.** "\$\$ is an escape; it is replaced with a single \$."[^1] `$identifier` "names a substitution placeholder matching a mapping key".[^1] "The first non-identifier character after the \$ character terminates this placeholder specification."[^1]
 
 **r3.** "${identifier} is equivalent to $identifier. It is required when valid identifier characters follow the placeholder but are not part of the placeholder".[^1] "Any other appearance of $ in the string will result in a ValueError being raised."[^1] Example: [`bad-dollar`](#bad-dollar).
 
