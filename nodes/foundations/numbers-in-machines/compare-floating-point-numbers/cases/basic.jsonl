@@ -1,0 +1,4 @@
+{"name":"equal","args":{"a":1.5,"b":1.5,"rel_tol":1e-9,"abs_tol":0.0},"expect":true}
+{"name":"sum-of-tenths","args":{"a":0.30000000000000004,"b":0.3,"rel_tol":1e-9,"abs_tol":0.0},"expect":true}
+{"name":"different","args":{"a":1.0,"b":1.1,"rel_tol":1e-9,"abs_tol":0.0},"expect":false}
+{"name":"large-values","args":{"a":10000000000.0,"b":10000000001.0,"rel_tol":1e-9,"abs_tol":0.0},"expect":true}

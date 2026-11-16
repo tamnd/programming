@@ -1,0 +1,10 @@
+{"name":"zero-and-zero","class":["exact-equal","zero-tolerance"],"args":{"a":0.0,"b":0.0,"rel_tol":0.0,"abs_tol":0.0},"expect":true}
+{"name":"one-ulp-apart","class":["rounding-error","zero-tolerance"],"args":{"a":1.0,"b":1.0000000000000002,"rel_tol":0.0,"abs_tol":0.0},"expect":false}
+{"name":"near-zero-relative","class":["near-zero"],"args":{"a":1e-12,"b":0.0,"rel_tol":1e-9,"abs_tol":0.0},"expect":false}
+{"name":"near-zero-absolute","class":["near-zero"],"args":{"a":1e-12,"b":0.0,"rel_tol":1e-9,"abs_tol":1e-9},"expect":true}
+{"name":"opposite-signs","class":["opposite-signs"],"args":{"a":1e-10,"b":-1e-10,"rel_tol":1e-9,"abs_tol":0.0},"expect":false}
+{"name":"opposite-signs-absolute","class":["opposite-signs"],"args":{"a":1e-10,"b":-1e-10,"rel_tol":1e-9,"abs_tol":1e-9},"expect":true}
+{"name":"on-the-boundary","class":["relative-boundary"],"args":{"a":10.0,"b":9.0,"rel_tol":0.1,"abs_tol":0.0},"expect":true}
+{"name":"swapped-boundary","class":["relative-boundary","asymmetric-test"],"args":{"a":9.0,"b":10.0,"rel_tol":0.1,"abs_tol":0.0},"expect":true}
+{"name":"past-the-boundary","class":["relative-boundary"],"args":{"a":10.0,"b":8.875,"rel_tol":0.1,"abs_tol":0.0},"expect":false}
+{"name":"negative-values","class":["negative"],"args":{"a":-1.0,"b":-1.0000000001,"rel_tol":1e-9,"abs_tol":0.0},"expect":true}

@@ -1,0 +1,21 @@
+# The contract of the task "compare floating-point numbers" (spec 10.2). The function tells whether two floats are close, with a relative and an absolute tolerance, by the rule of math.isclose in Python. The test is symmetric in a and b. NaN and the infinities are outside the contract, because JSON cannot hold them; the native tests check that NaN is close to no value and that an infinity is close only to itself.
+problem: compare-floating-point-numbers
+entry: is_close
+params:
+  - name: a
+    type: float
+    pre: "a is finite"
+  - name: b
+    type: float
+    pre: "b is finite"
+  - name: rel_tol
+    type: float
+    pre: "0 <= rel_tol < 1"
+  - name: abs_tol
+    type: float
+    pre: "abs_tol >= 0"
+returns:
+  type: bool
+  post: "true if a == b or abs(a - b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol), and false otherwise"
+checker: exact
+edge_classes: [exact-equal, rounding-error, near-zero, opposite-signs, zero-tolerance, relative-boundary, asymmetric-test, negative]

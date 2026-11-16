@@ -249,6 +249,6 @@ for x in [0.49999999999999994, 4503599627370497.0]:
 - [[format-a-number]]: print a number with a fixed number of decimal places.
 - [[convert-between-numeric-types]]: convert a float to an integer type.
 
-See also the concepts [[floating-point-arithmetic]], [[ieee-754]] and [[decimal-arithmetic]].
+See also the concepts [[rounding-modes]], [[floating-point-arithmetic]], [[ieee-754]] and [[decimal-arithmetic]].
 
 ## References
