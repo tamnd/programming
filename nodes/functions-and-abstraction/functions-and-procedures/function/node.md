@@ -5,7 +5,7 @@ slug: function
 name: Function
 aliases: [subprogram, callable unit, routine, user-defined function]
 area: functions-and-abstraction/functions-and-procedures
-level: core
+level: intro
 summary: >-
   A function is a named piece of code that takes inputs as parameters, runs its body when a program calls it, and gives back a result. A program defines it once and calls it many times.
 applies_to: core-languages

@@ -1,0 +1,15 @@
+# The contract of the task "return multiple values" (spec 10.2). The function returns two results, the quotient and the remainder of a floor division, and the caller unpacks them.
+problem: return-multiple-values
+entry: div_mod
+params:
+  - name: a
+    type: int
+    pre: "a 32-bit signed integer"
+  - name: b
+    type: int
+    pre: "a 32-bit signed integer, not 0; a is not -2147483648 when b is -1"
+returns:
+  type: "tuple<int, int>"
+  post: "the quotient q, the largest integer not more than a / b, and the remainder r = a - q * b; r is 0 or has the sign of b"
+checker: exact
+edge_classes: [negative, exact, zero, one, extremes]

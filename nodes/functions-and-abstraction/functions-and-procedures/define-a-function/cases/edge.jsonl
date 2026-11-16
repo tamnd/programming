@@ -1,0 +1,8 @@
+{"name":"at-low","class":["boundary"],"args":{"value":0,"low":0,"high":10},"expect":0}
+{"name":"at-high","class":["boundary"],"args":{"value":10,"low":0,"high":10},"expect":10}
+{"name":"equal-bounds","class":["equal-bounds"],"args":{"value":7,"low":3,"high":3},"expect":3}
+{"name":"negative-range","class":["negative"],"args":{"value":-50,"low":-20,"high":-10},"expect":-20}
+{"name":"zero","class":["zero"],"args":{"value":0,"low":-5,"high":5},"expect":0}
+{"name":"int-max","class":["extremes"],"args":{"value":2147483647,"low":-100,"high":100},"expect":100}
+{"name":"int-min","class":["extremes"],"args":{"value":-2147483648,"low":-100,"high":100},"expect":-100}
+{"name":"full-range","class":["extremes"],"args":{"value":-2147483648,"low":-2147483648,"high":2147483647},"expect":-2147483648}

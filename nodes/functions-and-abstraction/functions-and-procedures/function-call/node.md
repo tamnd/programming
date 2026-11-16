@@ -5,7 +5,7 @@ slug: function-call
 name: Function call
 aliases: [call, invocation, function invocation, subroutine call, method call]
 area: functions-and-abstraction/functions-and-procedures
-level: core
+level: intro
 summary: >-
   A function call runs the body of a function with a list of arguments. The program evaluates the arguments, binds them to the parameters, runs the body and goes back with the result.
 applies_to: core-languages
