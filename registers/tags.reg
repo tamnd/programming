@@ -1126,3 +1126,9 @@ HKDT1C python/operating-system-interface
 B8VD8J python/pathlib
 0E3AHP python/saving-structured-data-with-json
 1B6YGJ python/text-and-binary-io
+W525ZC python/async-for-and-async-with
+KV41ZF python/asynchronous-generators
+9YBAAK python/asyncio
+9DM5K0 python/context-variables
+KK2VXS python/coroutines-async-and-await
+DQ1DRQ python/subinterpreters
