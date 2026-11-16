@@ -1,0 +1,3 @@
+{"name":"orange","class":["basic"],"args":{"reds":[255],"greens":[128],"blues":[0]},"expect":["#FF8000"]}
+{"name":"three","class":["basic"],"args":{"reds":[255,0,0],"greens":[0,255,0],"blues":[0,0,255]},"expect":["#FF0000","#00FF00","#0000FF"]}
+{"name":"mixed","class":["basic"],"args":{"reds":[18,171],"greens":[52,205],"blues":[86,239]},"expect":["#123456","#ABCDEF"]}

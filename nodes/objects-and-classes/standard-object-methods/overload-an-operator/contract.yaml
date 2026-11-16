@@ -1,0 +1,15 @@
+# The contract of the task "overload an operator" (spec 10.2). The function makes one Vec2 value for each pair (xs[i], ys[i]) and adds them with the + operator of the type, or with an add method where the language has no user operators.
+problem: overload-an-operator
+entry: vector_sum
+params:
+  - name: xs
+    type: "list<int>"
+    pre: "0 to 10000 items; each has absolute value 1000000000 or less"
+  - name: ys
+    type: "list<int>"
+    pre: "the same length as xs; each has absolute value 1000000000 or less"
+returns:
+  type: "list<int>"
+  post: "two items: the sum of xs and the sum of ys, which is the sum of the vectors, starting from the zero vector"
+checker: exact
+edge_classes: [empty, single, negative, cancel, limit]

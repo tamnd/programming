@@ -1,0 +1,27 @@
+typescript:
+  status: absent
+  reason: as JavaScript; a class cannot define operators; no example file because it would repeat the JavaScript answer.
+kotlin:
+  status: native
+  reason: member or extension functions marked operator, such as plus, minus, get and compareTo, give the operators; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: absent
+  reason: C has no user operators; a program writes functions such as vec2_add.
+bash:
+  status: n/a
+  reason: Bash has no user types.
+powershell:
+  status: idiom
+  reason: PowerShell uses the operators that a .NET type defines, such as the static method op_Addition for +.
+sql:
+  status: n/a
+  reason: standard SQL has no user operators; PostgreSQL adds CREATE OPERATOR as an extension.
+regex:
+  status: n/a
+  reason: regular expressions have no user types.
+html:
+  status: n/a
+  reason: HTML has no operators.
+css:
+  status: n/a
+  reason: calc() and the other CSS math functions have a fixed set of operators.

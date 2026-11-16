@@ -1,0 +1,27 @@
+typescript:
+  status: native
+  reason: as JavaScript; spread syntax copies shallowly and structuredClone copies deeply; no example file because it would repeat the JavaScript answer.
+kotlin:
+  status: native
+  reason: a data class has copy(), which makes a shallow copy and can change some properties; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: idiom
+  reason: assignment copies a struct member by member, and a pointer member copies only the address; a program writes a function that copies the data that the pointers point to.
+bash:
+  status: n/a
+  reason: variables hold strings; an array is copied with b=("${a[@]}"), and there are no objects with references.
+powershell:
+  status: native
+  reason: PowerShell objects are .NET objects, so the .NET rules apply; Clone() on an array or a hash table copies one level.
+sql:
+  status: n/a
+  reason: SQL has no objects; INSERT ... SELECT copies rows into a table.
+regex:
+  status: n/a
+  reason: regular expressions have no objects.
+html:
+  status: n/a
+  reason: HTML has no objects; the DOM method cloneNode copies an element in a script.
+css:
+  status: n/a
+  reason: CSS has no objects to copy.

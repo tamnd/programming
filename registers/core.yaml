@@ -13386,13 +13386,13 @@ items:
     group: "objects"
     name: "Implement a string form for a type"
     target: "implement-a-string-form-for-a-type"
-    status: "planned"
+    status: "node"
     reason: "A job of the object model of a language. Related titles, found by keyword: Rosetta Code (Pinstripe Display, Colour bars Display); Rust by Example (Display)."
   - part: tasks
     group: "objects"
     name: "Copy an object"
     target: "copy-an-object"
-    status: "planned"
+    status: "node"
     reason: "A job of the object model of a language. Related titles, found by keyword: Rosetta Code (Object serialization); Rust by Example (Clone)."
   - part: tasks
     group: "objects"
@@ -13411,7 +13411,7 @@ items:
     group: "objects"
     name: "Overload an operator"
     target: "overload-an-operator"
-    status: "planned"
+    status: "node"
     reason: "A job of the object model of a language. Related titles, found by keyword: Rust by Example (Operator Overloading)."
   - part: tasks
     group: "objects"
