@@ -1,0 +1,15 @@
+# The contract of the task "detect division by zero" (spec 10.2). The function divides two 64-bit signed integers and rounds the quotient toward zero. It reports a zero divisor, and the one quotient that does not fit in 64 bits, instead of a crash or a wrong value.
+problem: detect-division-by-zero
+entry: safe_div
+params:
+  - name: a
+    type: int
+    pre: "-9223372036854775808 <= a <= 9223372036854775807, the range of a 64-bit signed integer"
+  - name: b
+    type: int
+    pre: "-9223372036854775808 <= b <= 9223372036854775807, the range of a 64-bit signed integer"
+returns:
+  type: "option<int>"
+  post: "the quotient a / b rounded toward zero; null when b is 0, and null when a is -9223372036854775808 and b is -1, because the quotient 9223372036854775808 does not fit"
+checker: exact
+edge_classes: [zero-divisor, zero-by-zero, negative-truncation, int64-min-by-minus-one, int64-limits]

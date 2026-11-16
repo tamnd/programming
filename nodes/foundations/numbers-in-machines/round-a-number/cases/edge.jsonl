@@ -1,0 +1,10 @@
+{"name":"half-even-up","class":["half-positive","half-even-differs"],"args":{"x":2.5},"expect":3}
+{"name":"half-odd-up","class":["half-positive"],"args":{"x":1.5},"expect":2}
+{"name":"half-zero","class":["half-positive","half-even-differs"],"args":{"x":0.5},"expect":1}
+{"name":"half-negative","class":["half-negative","half-even-differs"],"args":{"x":-2.5},"expect":-3}
+{"name":"half-negative-small","class":["half-negative","half-even-differs"],"args":{"x":-0.5},"expect":-1}
+{"name":"negative-below-half","class":["negative-below-half"],"args":{"x":-0.4},"expect":0}
+{"name":"near-half","class":["near-half"],"args":{"x":0.49999999999999994},"expect":0}
+{"name":"zero","class":["zero"],"args":{"x":0.0},"expect":0}
+{"name":"large-odd","class":["large"],"args":{"x":4503599627370497.0},"expect":4503599627370497}
+{"name":"large-half-negative","class":["large","half-negative"],"args":{"x":-1000000000000000.5},"expect":-1000000000000001}

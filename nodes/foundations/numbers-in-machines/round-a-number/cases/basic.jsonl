@@ -1,0 +1,4 @@
+{"name":"down","args":{"x":2.4},"expect":2}
+{"name":"up","args":{"x":2.6},"expect":3}
+{"name":"negative","args":{"x":-2.6},"expect":-3}
+{"name":"integer","args":{"x":7.0},"expect":7}

@@ -1,0 +1,8 @@
+{"name":"negative-dividend","class":["negative-dividend"],"args":{"a":-7,"b":2,"n":3},"expect":[-5,-9,-14,-3,-1,-343]}
+{"name":"negative-divisor","class":["negative-divisor"],"args":{"a":7,"b":-2,"n":2},"expect":[5,9,-14,-3,1,49]}
+{"name":"both-negative","class":["both-negative"],"args":{"a":-7,"b":-2,"n":1},"expect":[-9,-5,14,3,-1,-7]}
+{"name":"zero-dividend","class":["zero-dividend","zero-power"],"args":{"a":0,"b":5,"n":0},"expect":[5,-5,0,0,0,1]}
+{"name":"zero-power","class":["zero-power"],"args":{"a":5,"b":3,"n":0},"expect":[8,2,15,1,2,1]}
+{"name":"divisor-larger","class":["divisor-larger"],"args":{"a":3,"b":7,"n":1},"expect":[10,-4,21,0,3,3]}
+{"name":"largest","class":["largest"],"args":{"a":100000,"b":100000,"n":3},"expect":[200000,0,10000000000,1,0,1000000000000000]}
+{"name":"smallest","class":["smallest"],"args":{"a":-100000,"b":1,"n":3},"expect":[-99999,-100001,-100000,-100000,0,-1000000000000000]}
