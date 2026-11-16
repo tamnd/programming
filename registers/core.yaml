@@ -1570,7 +1570,7 @@ items:
     area: "strings-and-text"
     name: "Old string formatting"
     target: "python/strings-and-text/old-string-formatting"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Old string formatting\", in \"Input and output\")."
   - part: features
     group: "python"
@@ -1808,7 +1808,7 @@ items:
     area: "strings-and-text"
     name: "String pattern matching"
     target: "python/strings-and-text/string-pattern-matching"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"String pattern matching\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
@@ -1864,7 +1864,7 @@ items:
     area: "strings-and-text"
     name: "Templating"
     target: "python/strings-and-text/templating"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Templating\", in \"Brief tour of the standard library — part II\")."
   - part: features
     group: "python"
