@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the rules of JavaScript, and the compiler reports a read of a let variable that is used before being assigned, when the type does not include undefined. No example file exists.
+kotlin:
+  status: native
+  reason: The compiler rejects a read of a local variable before an assignment. A lateinit property has no value at first, and a read before an assignment throws an exception at run time. No example file exists because kotlinc is not installed.
+bash:
+  status: idiom
+  reason: A variable that was never set expands to the empty string with no error. The option set -u makes the expansion of an unset variable an error. No example file exists.
+powershell:
+  status: idiom
+  reason: A variable that was never assigned is $null with no error. Set-StrictMode -Version Latest makes the read an error. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: Each column of a row has a value or NULL, so a query cannot read a value that does not exist.
+regex:
+  status: n/a
+  reason: A pattern has no variables.
+html:
+  status: n/a
+  reason: HTML is markup, with no variables.
+css:
+  status: n/a
+  reason: Each property has an initial value, so no property is without a value.

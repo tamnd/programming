@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the lifetimes of JavaScript, with let and const for a block, var for a function, and closures that keep variables alive. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin has the lifetimes of the JVM. Local variables live for their block, properties live with their object, and the garbage collector frees objects. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: A variable is global to the shell unless a function declares it with local, which makes it live for the call. No example file exists.
+powershell:
+  status: native
+  reason: A variable lives in the scope where the program makes it, such as the global scope, a script or a function, and ends when that scope ends. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query has no variables. A temporary table lives for a session or a transaction.
+regex:
+  status: n/a
+  reason: A pattern has no variables.
+html:
+  status: n/a
+  reason: HTML is markup, with no variables.
+css:
+  status: n/a
+  reason: A style sheet has no variables that start and end while a program runs.
