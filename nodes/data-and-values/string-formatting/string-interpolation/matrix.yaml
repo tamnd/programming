@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the template literals of JavaScript, with any expression in ${...}, and template literal types that build string types from other types. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin string templates take a name after $ or an expression in ${...}, in normal and multiline strings. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash expands $name, ${name} and $((expression)) inside double quotes, and single quotes keep the text as it is. No example file exists.
+powershell:
+  status: native
+  reason: A PowerShell string in double quotes is an expandable string, with $name and $(expression) inside, and a string in single quotes is literal. No example file exists because pwsh is not installed.
+sql:
+  status: idiom
+  reason: Standard SQL has no string interpolation. A query joins strings with the operator || or a function such as CONCAT, and some databases add a format function. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern has no values to put into text. A replacement string can refer to groups with $1 or \1, which is a related but different idea.
+html:
+  status: n/a
+  reason: HTML has no expressions. Template engines and frameworks add placeholders such as {{ name }} on top of HTML.
+css:
+  status: n/a
+  reason: CSS has no string interpolation. var() reads a custom property and calc() computes a length, but neither builds a string from values.

@@ -1,0 +1,18 @@
+# The contract of the task "print formatted output" (spec 10.2). The function returns one line of a table, as the format "%-10s|%5d|%8.2f" gives it: the name left-aligned in 10 characters, the quantity right-aligned in 5 characters, and the price right-aligned in 8 characters with 2 digits after the point. A value that is wider than its column is not cut. The program prints the line.
+problem: print-formatted-output
+entry: format_row
+params:
+  - name: name
+    type: string
+    pre: "ASCII text"
+  - name: qty
+    type: int
+    pre: "-99999999 <= qty <= 999999999"
+  - name: price
+    type: float
+    pre: "a finite number with abs(price) < 1e9, and not halfway between two values with 2 decimals"
+returns:
+  type: string
+  post: "name, padded on the right with spaces to 10 characters; a bar; qty in decimal, padded on the left with spaces to 5 characters; a bar; price rounded to 2 decimals, padded on the left with spaces to 8 characters. No value is cut."
+checker: exact
+edge_classes: [empty, exact-width, overflow, negative, rounding, spaces, format-characters]

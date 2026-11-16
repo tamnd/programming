@@ -1,0 +1,10 @@
+{"name":"empty-name","class":["empty"],"args":{"name":"","qty":0,"price":0.0},"expect":"          |    0|    0.00"}
+{"name":"exact-widths","class":["exact-width"],"args":{"name":"abcdefghij","qty":99999,"price":99999.99},"expect":"abcdefghij|99999|99999.99"}
+{"name":"long-name","class":["overflow"],"args":{"name":"watermelonade","qty":5,"price":2.0},"expect":"watermelonade|    5|    2.00"}
+{"name":"wide-quantity","class":["overflow"],"args":{"name":"pen","qty":123456,"price":0.5},"expect":"pen       |123456|    0.50"}
+{"name":"wide-price","class":["overflow"],"args":{"name":"car","qty":1,"price":123456.75},"expect":"car       |    1|123456.75"}
+{"name":"negative-values","class":["negative"],"args":{"name":"refund","qty":-2,"price":-3.5},"expect":"refund    |   -2|   -3.50"}
+{"name":"rounds-up","class":["rounding"],"args":{"name":"nail","qty":1000,"price":0.006},"expect":"nail      | 1000|    0.01"}
+{"name":"rounds-down","class":["rounding"],"args":{"name":"bolt","qty":7,"price":2.344},"expect":"bolt      |    7|    2.34"}
+{"name":"name-with-spaces","class":["spaces"],"args":{"name":"blue pen","qty":4,"price":0.99},"expect":"blue pen  |    4|    0.99"}
+{"name":"name-with-percent","class":["format-characters"],"args":{"name":"100% {x}","qty":1,"price":1.0},"expect":"100% {x}  |    1|    1.00"}

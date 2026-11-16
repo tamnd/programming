@@ -1,0 +1,3 @@
+{"name":"three-items","args":{"name":"Ada","count":3,"price":1.5},"expect":"Order {Ada}: 3 items, total 4.50"}
+{"name":"one-item","args":{"name":"Grace","count":1,"price":19.99},"expect":"Order {Grace}: 1 item, total 19.99"}
+{"name":"many-items","args":{"name":"Linus","count":12,"price":0.25},"expect":"Order {Linus}: 12 items, total 3.00"}

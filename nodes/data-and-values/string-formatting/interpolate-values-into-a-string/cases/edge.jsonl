@@ -1,0 +1,9 @@
+{"name":"zero-items","class":["zero"],"args":{"name":"Ada","count":0,"price":9.99},"expect":"Order {Ada}: 0 items, total 0.00"}
+{"name":"one-item-plural","class":["singular"],"args":{"name":"Bob","count":1,"price":0.5},"expect":"Order {Bob}: 1 item, total 0.50"}
+{"name":"empty-name","class":["empty"],"args":{"name":"","count":2,"price":1.0},"expect":"Order {}: 2 items, total 2.00"}
+{"name":"braces-in-name","class":["format-characters"],"args":{"name":"{x}","count":2,"price":1.25},"expect":"Order {{x}}: 2 items, total 2.50"}
+{"name":"percent-in-name","class":["format-characters"],"args":{"name":"50% off","count":4,"price":2.5},"expect":"Order {50% off}: 4 items, total 10.00"}
+{"name":"dollar-in-name","class":["format-characters"],"args":{"name":"${HOME}","count":1,"price":3.0},"expect":"Order {${HOME}}: 1 item, total 3.00"}
+{"name":"product-rounds","class":["rounding"],"args":{"name":"Cy","count":3,"price":19.99},"expect":"Order {Cy}: 3 items, total 59.97"}
+{"name":"large-total","class":["large"],"args":{"name":"Dee","count":1000,"price":1234.56},"expect":"Order {Dee}: 1000 items, total 1234560.00"}
+{"name":"negative-price","class":["negative"],"args":{"name":"Refund","count":2,"price":-4.5},"expect":"Order {Refund}: 2 items, total -9.00"}
