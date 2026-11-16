@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript uses a JavaScript array as a stack, with push, pop and at(-1). The type of pop() includes undefined. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin has ArrayDeque with addLast and removeLast, and a MutableList works the same way. No example file exists because kotlinc is not installed.
+powershell:
+  status: stdlib
+  reason: "[System.Collections.Generic.Stack[T]] gives the .NET stack with Push, Pop and Peek. No example file exists because pwsh is not installed."
+bash:
+  status: idiom
+  reason: An indexed array works as a stack. A push appends an element, and a pop reads the last element and unsets it. No example file exists.
+sql:
+  status: idiom
+  reason: A table with an order column can hold a stack. A pop reads and deletes the row with the largest order value.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no data structures.
+html:
+  status: n/a
+  reason: HTML is markup. It has no data structures for a program.
+css:
+  status: n/a
+  reason: CSS style rules have no data structures.

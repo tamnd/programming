@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no queue type. A program uses an array with push and shift, or a class with an array and a head index, as in JavaScript. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin has ArrayDeque with addLast and removeFirst, and java.util.ArrayDeque on the JVM. No example file exists because kotlinc is not installed.
+powershell:
+  status: stdlib
+  reason: "[System.Collections.Generic.Queue[T]] gives the .NET queue with Enqueue, Dequeue and Peek. No example file exists because pwsh is not installed."
+bash:
+  status: idiom
+  reason: An indexed array and a front index work as a queue. Bash has no queue type. No example file exists.
+sql:
+  status: idiom
+  reason: A table of jobs with an order column works as a queue. A consumer reads the row with the smallest order value and deletes it or marks it done.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no data structures.
+html:
+  status: n/a
+  reason: HTML is markup. It has no data structures for a program.
+css:
+  status: n/a
+  reason: CSS style rules have no data structures.

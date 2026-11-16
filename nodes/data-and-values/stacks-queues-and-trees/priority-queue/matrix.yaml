@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has no priority queue type. A program writes a binary heap over an array, as in the JavaScript example. No example file exists.
+kotlin:
+  status: stdlib
+  reason: Kotlin on the JVM uses java.util.PriorityQueue with a comparator. No example file exists because kotlinc is not installed.
+powershell:
+  status: stdlib
+  reason: "[System.Collections.Generic.PriorityQueue[TElement,TPriority]] from .NET dequeues the lowest priority first. No example file exists because pwsh is not installed."
+bash:
+  status: n/a
+  reason: Bash has no priority queue. A script can sort lines with sort -n, but that is not a queue.
+sql:
+  status: idiom
+  reason: A table with a priority column and an index works as a queue. ORDER BY priority with LIMIT 1 selects the next row.
+regex:
+  status: n/a
+  reason: A regular expression matches text. It has no data structures.
+html:
+  status: n/a
+  reason: HTML is markup. It has no data structures for a program.
+css:
+  status: n/a
+  reason: CSS style rules have no data structures.
