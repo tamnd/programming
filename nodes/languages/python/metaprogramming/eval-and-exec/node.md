@@ -12,7 +12,7 @@ summary: >-
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/builtins/functions.html#exec", locator: "Built-in Functions: compile(), eval(), exec()"}
 proposals: []
-see_also: [python/dynamic-class-creation, python/scope-and-dynamic-features, python/python-scopes-and-namespaces]
+see_also: [python/dynamic-class-creation, python/scope-and-dynamic-features, python/python-scopes-and-namespaces, python/the-ast-module]
 sources:
   - url: https://docs.python.org/3.15/builtins/functions.html#exec
     title: Built-in Functions, Python 3.15 documentation
@@ -145,4 +145,4 @@ The empty `__builtins__` removed `len` and `open` as names, but the code still r
 
 ## Comparison
 
-`eval` and `exec` make Python act as its own interpreter at run time. Python has no macros, so code that writes code builds a string or an AST (with the `ast` module) and compiles it. See [[syntactic-macros]] for languages that change code at compile time.
+`eval` and `exec` make Python act as its own interpreter at run time. Python has no macros, so code that writes code builds a string or an AST (with [[python/the-ast-module]]) and compiles it. See [[syntactic-macros]] for languages that change code at compile time.
