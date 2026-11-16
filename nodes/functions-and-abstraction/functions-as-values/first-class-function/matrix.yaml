@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: Kotlin has function types such as (Int) -> Int, lambdas and function references such as ::double. No example file exists because kotlinc is not installed.
+powershell:
+  status: idiom
+  reason: A PowerShell function is a command and not a value, but a script block is a value. A program stores a script block in a variable and calls it with the & operator. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: Standard SQL has no function values. A query calls functions by name.
+regex:
+  status: n/a
+  reason: A regular expression has no functions.
+html:
+  status: n/a
+  reason: HTML is a markup language and has no functions. Event handler attributes hold JavaScript code.
+css:
+  status: n/a
+  reason: CSS has functions such as calc(), but they are not values that a style sheet can store or pass.
