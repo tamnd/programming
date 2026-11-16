@@ -1906,7 +1906,7 @@ items:
     area: "values-and-types"
     name: "Decimal floating-point arithmetic"
     target: "python/values-and-types/decimal-floating-point-arithmetic"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Decimal floating-point arithmetic\", in \"Brief tour of the standard library — part II\")."
   - part: features
     group: "python"
@@ -1948,14 +1948,14 @@ items:
     area: "values-and-types"
     name: "Floating-point arithmetic"
     target: "python/values-and-types/floating-point-arithmetic"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Floating-Point Arithmetic: Issues and Limitations\")."
   - part: features
     group: "python"
     area: "values-and-types"
     name: "Representation Error"
     target: "python/values-and-types/representation-error"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Representation Error\", in \"Floating-Point Arithmetic: Issues and Limitations\")."
   - part: features
     group: "python"
