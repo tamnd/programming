@@ -1,0 +1,3 @@
+{"name":"exact","args":{"a":12,"b":4},"expect":3}
+{"name":"remainder-dropped","args":{"a":7,"b":2},"expect":3}
+{"name":"zero-dividend","args":{"a":0,"b":5},"expect":0}

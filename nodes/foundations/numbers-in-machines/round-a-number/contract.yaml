@@ -1,0 +1,12 @@
+# The contract of the task "round a number" (spec 10.2). The function rounds a float to the nearest integer, and a value halfway between two integers goes away from zero. The range keeps each result exact in a 64-bit integer and in a JavaScript number.
+problem: round-a-number
+entry: round_half_away
+params:
+  - name: x
+    type: float
+    pre: "-9007199254740992 <= x <= 9007199254740992"
+returns:
+  type: int
+  post: "the integer nearest to x; when x is halfway between two integers, the one with the larger absolute value; never negative zero"
+checker: exact
+edge_classes: [half-positive, half-negative, half-even-differs, negative-below-half, near-half, zero, large]

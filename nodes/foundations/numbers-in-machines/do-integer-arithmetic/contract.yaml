@@ -1,0 +1,18 @@
+# The contract of the task "do integer arithmetic" (spec 10.2). The function applies the six integer operations to its arguments: the sum, the difference, the product, the quotient rounded toward zero, the remainder with the sign of the dividend, and a power. The ranges keep each result exact in a 64-bit integer and in a JavaScript number.
+problem: do-integer-arithmetic
+entry: arith
+params:
+  - name: a
+    type: int
+    pre: "-100000 <= a <= 100000"
+  - name: b
+    type: int
+    pre: "-100000 <= b <= 100000 and b != 0"
+  - name: n
+    type: int
+    pre: "0 <= n <= 3"
+returns:
+  type: "list<int>"
+  post: "[a + b, a - b, a * b, q, a - b * q, a to the power n], where q is a / b rounded toward zero; a to the power 0 is 1"
+checker: exact
+edge_classes: [negative-dividend, negative-divisor, both-negative, zero-dividend, zero-power, divisor-larger, largest, smallest]
