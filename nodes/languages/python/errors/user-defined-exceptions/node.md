@@ -6,7 +6,7 @@ slug: user-defined-exceptions
 name: User-defined Exceptions
 aliases: [custom exceptions, exception subclass, define an exception class, custom error class, module base exception]
 area: languages/python/errors
-level: intro
+level: core
 summary: >-
   A program can define its own exception classes. Derive them from Exception, give them names that end in Error, and add attributes that tell handlers about the error.
 grammar: null

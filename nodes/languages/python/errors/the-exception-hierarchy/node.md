@@ -3,10 +3,10 @@ tag: 65Z2GH
 kind: feature
 owner: python
 slug: the-exception-hierarchy
-name: The Exception Hierarchy
+name: The exception hierarchy
 aliases: [exception class hierarchy, BaseException, Exception base class, built-in exception tree, LookupError, ArithmeticError]
 area: languages/python/errors
-level: intro
+level: core
 summary: >-
   The built-in exception classes form a tree with BaseException at the root. Exception is the base of the normal errors. An except clause for a class also catches all its subclasses.
 grammar: null
