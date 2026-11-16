@@ -1,0 +1,5 @@
+{"name":"empty","class":["empty"],"args":{"amounts":[],"currencies":[]},"expect":0}
+{"name":"case","class":["case"],"args":{"amounts":[999,999,999],"currencies":["gbp","GBP","Gbp"]},"expect":1}
+{"name":"other-currency","class":["other-currency"],"args":{"amounts":[0,0,0],"currencies":["EUR","USD","JPY"]},"expect":3}
+{"name":"negative","class":["negative"],"args":{"amounts":[-5,5,-5],"currencies":["EUR","EUR","EUR"]},"expect":2}
+{"name":"limit","class":["limit"],"args":{"amounts":[1000000000000,-1000000000000,1000000000000],"currencies":["usd","USD","USD"]},"expect":2}

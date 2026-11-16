@@ -1,0 +1,27 @@
+typescript:
+  status: absent
+  reason: as JavaScript; Map and Set compare object keys by identity, and the types add no hash hook; no example file because it would repeat the JavaScript answer.
+kotlin:
+  status: native
+  reason: Any declares equals and hashCode, and a data class generates both from the same properties; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: absent
+  reason: the C standard library has no hash table; a library hash table takes a hash function and an equality function from the caller.
+bash:
+  status: n/a
+  reason: Bash associative arrays have string keys only, and strings compare by value.
+powershell:
+  status: native
+  reason: PowerShell objects are .NET objects, and hashtables call their Equals and GetHashCode methods; no example file because it would repeat the C# answer.
+sql:
+  status: n/a
+  reason: SQL compares and hashes column values; rows have no user methods.
+regex:
+  status: n/a
+  reason: regular expressions have no objects.
+html:
+  status: n/a
+  reason: HTML has no objects with equality.
+css:
+  status: n/a
+  reason: CSS has no objects with equality.

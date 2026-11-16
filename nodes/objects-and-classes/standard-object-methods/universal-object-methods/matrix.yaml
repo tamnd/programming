@@ -1,0 +1,27 @@
+typescript:
+  status: absent
+  reason: as JavaScript; the types add no equality or hash hook, and === on objects is identity; no example file because it would repeat the JavaScript answer.
+kotlin:
+  status: native
+  reason: Any declares equals, hashCode and toString, and == calls equals; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: absent
+  reason: C has no methods; libraries such as qsort and bsearch take a comparison function as a parameter.
+bash:
+  status: n/a
+  reason: Bash has no objects; all values are strings.
+powershell:
+  status: native
+  reason: PowerShell objects are .NET objects, so they have Equals, GetHashCode and ToString from System.Object.
+sql:
+  status: n/a
+  reason: SQL compares rows and values by value with its own rules; a table has no methods that a user overrides.
+regex:
+  status: n/a
+  reason: a regular expression language has no objects.
+html:
+  status: n/a
+  reason: HTML is a markup language with no objects.
+css:
+  status: n/a
+  reason: CSS is a style language with no objects.
