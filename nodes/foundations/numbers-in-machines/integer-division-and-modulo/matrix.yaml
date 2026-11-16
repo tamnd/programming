@@ -1,0 +1,24 @@
+typescript:
+  status: idiom
+  reason: TypeScript has the number type of JavaScript, so there is no integer division operator; a program uses Math.trunc or Math.floor, and % is truncated. No example file exists.
+kotlin:
+  status: native
+  reason: Kotlin / and % on integers truncate toward zero, rem is truncated, and mod is floored. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: Bash arithmetic has / and % on integers, which truncate toward zero as in the POSIX shell. No example file exists.
+powershell:
+  status: idiom
+  reason: PowerShell / gives a fraction when the division is not exact, so a script uses [Math]::Floor or [Math]::Truncate; % is truncated. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: SQL has MOD(x, y), which is truncated; the result of integer / integer depends on the database. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern matches digits as text but does no arithmetic.
+html:
+  status: n/a
+  reason: HTML has no arithmetic.
+css:
+  status: native
+  reason: CSS has the mod() function, which is floored, and the rem() function, which is truncated. No example file exists.

@@ -919,3 +919,8 @@ ZX1AWQ implement-equality-for-a-type
 RF4SM8 natural-ordering
 H38B5D string-representation
 N257JN universal-object-methods
+85VAST arbitrary-precision-arithmetic
+QBZ504 binary-coded-decimal
+KZCXPG fixed-point-arithmetic
+7YCVZD integer-division-and-modulo
+6JA921 rational-numbers-in-code
