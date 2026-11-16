@@ -1,0 +1,24 @@
+typescript:
+  status: native
+  reason: TypeScript has the assignment expressions and destructuring assignments of JavaScript, and checks that the type of the value fits the type of the variable. No example file exists.
+kotlin:
+  status: native
+  reason: In Kotlin, x = e is a statement and not an expression, so it cannot be a condition. Only a var can be assigned; a val is assigned once. No example file exists because kotlinc is not installed.
+bash:
+  status: native
+  reason: name=value assigns a string, with no spaces around the sign. Arithmetic assignment works inside (( )), as in (( n = n + 1 )). No example file exists.
+powershell:
+  status: native
+  reason: $x = e assigns any value, and $a, $b = $b, $a assigns several variables at once. An assignment in parentheses also gives its value. No example file exists because pwsh is not installed.
+sql:
+  status: native
+  reason: UPDATE with SET column = expression changes the values of stored rows, and procedural extensions of database systems have SET for local variables. No example file exists.
+regex:
+  status: n/a
+  reason: A pattern has no variables to assign.
+html:
+  status: n/a
+  reason: HTML is markup, with no assignment.
+css:
+  status: idiom
+  reason: A declaration such as color set to red gives a property a value, and the cascade picks one value when many rules set the same property. No example file exists.
