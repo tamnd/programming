@@ -1,0 +1,27 @@
+typescript:
+  status: absent
+  reason: as JavaScript; objects have no natural order, and sort needs a comparison function; no example file because it would repeat the JavaScript answer.
+kotlin:
+  status: native
+  reason: a class implements Comparable<T>, and the operators <, <=, > and >= call compareTo; no example file because kotlinc is not installed on the machine that recorded the examples.
+c:
+  status: absent
+  reason: C has no methods; qsort and bsearch take a comparison function that returns a negative number, zero or a positive number.
+bash:
+  status: n/a
+  reason: Bash has no user types; sort and the [[ < ]] test compare strings.
+powershell:
+  status: native
+  reason: PowerShell objects are .NET objects, and a type can implement IComparable; no example file because it would repeat the C# answer.
+sql:
+  status: n/a
+  reason: ORDER BY orders rows by column values; rows have no user methods.
+regex:
+  status: n/a
+  reason: regular expressions have no values to order.
+html:
+  status: n/a
+  reason: HTML has no values to order.
+css:
+  status: n/a
+  reason: CSS has no values to order.

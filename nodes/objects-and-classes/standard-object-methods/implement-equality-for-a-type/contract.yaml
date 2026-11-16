@@ -1,0 +1,15 @@
+# The contract of the task "implement equality for a type" (spec 10.2). The function makes one Money value for each pair (amounts[i], currencies[i]) and counts the different values with a hash set, so it needs both equality and a hash that agrees with it.
+problem: implement-equality-for-a-type
+entry: count_distinct
+params:
+  - name: amounts
+    type: "list<int>"
+    pre: "0 to 10000 items; each has absolute value 1000000000000 or less"
+  - name: currencies
+    type: "list<string>"
+    pre: "the same length as amounts; each item is 3 ASCII letters in upper or lower case"
+returns:
+  type: "int"
+  post: "the number of different values among Money(amounts[i], currencies[i]), where two Money values are equal when their amounts are equal and their currency codes are equal without regard to case"
+checker: exact
+edge_classes: [empty, case, other-currency, negative, limit]

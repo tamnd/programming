@@ -1,0 +1,3 @@
+{"name":"two-equal","args":{"amounts":[1250,1250],"currencies":["EUR","EUR"]},"expect":1}
+{"name":"different-amounts","args":{"amounts":[100,200,100],"currencies":["USD","USD","USD"]},"expect":2}
+{"name":"mixed","args":{"amounts":[500,500,500,700],"currencies":["EUR","USD","EUR","EUR"]},"expect":3}

@@ -913,3 +913,9 @@ BF11PP recoverable-and-unrecoverable-errors
 JV2T7E overflow-semantics
 AV46E1 signed-and-unsigned-integers
 G7KVME twos-complement
+X2FZ6P equality-and-hashing-contract
+ZX1AWQ implement-equality-for-a-type
+8C752V implement-ordering-for-a-type
+RF4SM8 natural-ordering
+H38B5D string-representation
+N257JN universal-object-methods

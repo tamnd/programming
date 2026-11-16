@@ -13373,14 +13373,14 @@ items:
     group: "objects"
     name: "Implement equality for a type"
     target: "implement-equality-for-a-type"
-    status: "planned"
+    status: "node"
     related: "value-equality-and-identity"
     reason: "A job of the object model of a language. Related titles, found by keyword: Rosetta Code (Approximate equality)."
   - part: tasks
     group: "objects"
     name: "Implement ordering for a type"
     target: "implement-ordering-for-a-type"
-    status: "planned"
+    status: "node"
     reason: "A job of the object model of a language. Related titles, found by keyword: Rosetta Code (Sort using a custom comparator)."
   - part: tasks
     group: "objects"

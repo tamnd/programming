@@ -1,0 +1,12 @@
+# The contract of the task "implement ordering for a type" (spec 10.2). The function parses each string into a Version value, sorts the values with the natural ordering of the type, and formats them back, so it needs a comparison that orders the fields as numbers.
+problem: implement-ordering-for-a-type
+entry: sort_versions
+params:
+  - name: versions
+    type: "list<string>"
+    pre: "0 to 10000 items; each is MAJOR.MINOR.PATCH, three decimal integers from 0 to 1000000 with no sign and no leading zeros, joined by dots"
+returns:
+  type: "list<string>"
+  post: "the same strings, sorted by the major number, then the minor number, then the patch number, each compared as a number; duplicates are kept"
+checker: exact
+edge_classes: [empty, single, numeric-not-text, duplicates, zero, limit]
