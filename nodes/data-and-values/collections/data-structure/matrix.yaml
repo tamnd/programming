@@ -1,0 +1,18 @@
+kotlin:
+  status: stdlib
+  reason: Kotlin has ArrayList, ArrayDeque, HashMap and LinkedHashMap, and it can use the Java classes on the JVM. No example file exists because kotlinc is not installed.
+powershell:
+  status: stdlib
+  reason: PowerShell has arrays and hash tables, and it can use the .NET classes such as a LinkedList. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: The database chooses how to store a table, and a query does not name a data structure.
+regex:
+  status: n/a
+  reason: A regular expression does not store data.
+html:
+  status: n/a
+  reason: HTML has no data structures in program code.
+css:
+  status: n/a
+  reason: CSS has no data structures in program code.
