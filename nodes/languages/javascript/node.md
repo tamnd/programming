@@ -233,11 +233,11 @@ sources:
 
 JavaScript is the language that the standard ECMA-262 defines under the name ECMAScript. The standard calls it an object-oriented programming language "for performing computations and manipulating computational objects within a host environment".[^1] It was first a scripting language, and the standard now calls it "a fully featured general-purpose programming language".[^1]
 
-The standard has no provisions for input or output. The host environment supplies them.[^1] A web browser is one host. It gives objects for windows, menus, dialog boxes and input and output, and it attaches scripts to events. The scripts react to the user, so there is "no need for a main program".[^2] A server runtime such as Node.js is another host.[^3]
+The standard has no provisions for input or output. The host environment supplies them.[^1] A web browser is one host. It gives objects for windows, menus, dialog boxes and input and output, and it attaches scripts to events. The scripts react to the user, so there is "no need for a main program".[^2] A server runtime such as Node.js is another host.[^3] What ECMA-262 leaves to the host, and the host hooks of its Annex D, are the subject of [[javascript/language-and-host]].
 
 Brendan Eich designed and implemented the language at Netscape in May 1995. Its first purpose was to put small pieces of code in Web pages.[^4] The management of Sun and Netscape required that it "look like Java". Eich took a prototype-based object model from Self, and he used first-class functions for idioms from Scheme.[^4]
 
-The standard describes the language as object-based. A program is a cluster of communicating objects.[^5] The Ecma technical committee TC39 develops the standard, and an edition comes out each year.[^6]
+The standard describes the language as object-based. A program is a cluster of communicating objects.[^5] The Ecma technical committee TC39 develops the standard, and an edition comes out each year.[^6] The guide has a longer answer to the question [[javascript/what-is-javascript]], a page on [[javascript/javascript-and-the-ecmascript-specification]], and a page on the [[javascript/notational-conventions-of-ecma-262]] for readers of the standard.
 
 ## A first program
 
@@ -329,11 +329,11 @@ TypeError Cannot mix BigInt and other types, use explicit conversions
 
 ## The guide
 
-The guide to JavaScript has the 25 parts of the language template. Each row says what the part covers for JavaScript. Four pages exist so far, and the table links them.
+The guide to JavaScript has the 25 parts of the language template. Each row says what the part covers for JavaScript. Seven pages exist so far, and the table links them.
 
 | Part | What it covers in JavaScript |
 |---|---|
-| Overview and history | this page: the design goals, the editions, the implementations, the history; [what JavaScript is](/javascript/what-is-javascript/), [the history of JavaScript](/javascript/history-of-javascript/), [JavaScript and the ECMAScript specification](/javascript/javascript-and-the-ecmascript-specification/), [TC39 and the proposal process](/javascript/tc39-and-the-proposal-process/) |
+| Overview and history | this page: the design goals, the editions, the implementations, the history; [what JavaScript is](/javascript/what-is-javascript/), [the history of JavaScript](/javascript/history-of-javascript/), [JavaScript and the ECMAScript specification](/javascript/javascript-and-the-ecmascript-specification/), [TC39 and the proposal process](/javascript/tc39-and-the-proposal-process/), [JavaScript engines](/javascript/javascript-engines/), [the language and the host](/javascript/language-and-host/), [the notational conventions of ECMA-262](/javascript/notational-conventions-of-ecma-262/) |
 | Getting started | installing Node.js, the `node` command and the REPL, running a script, the console of a browser |
 | Lexical structure and syntax | Unicode source text, automatic semicolon insertion, literals, template literals, operator precedence |
 | Values and types | the seven primitive types and objects, `typeof`, Number and BigInt, `null` and `undefined` |
@@ -400,7 +400,7 @@ ECMA-262 defines the language, and engines implement it. A host embeds an engine
 | GraalJS | GraalVM, embedded in Java applications | GraalJS, written in Java | 25.5.5.0.3 (2026-11-03) | UPL-1.0 |
 | QuickJS | C programs that embed it | QuickJS | 2026-06-04 | MIT |
 
-V8 is the engine of Google Chrome and Node.js.[^19] SpiderMonkey is the JavaScript and WebAssembly engine of Firefox.[^31] JavaScriptCore is the built-in JavaScript engine of WebKit, and in the context of Safari it also has the name Nitro.[^32] Bun statically links JavaScriptCore.[^33] Deno is built on V8, Rust and Tokio.[^34] GraalJS states compatibility with ECMAScript 2026.[^35] QuickJS states support for ES2025.[^36] The other projects do not state one edition, so the table has no edition column.
+V8 is the engine of Google Chrome and Node.js.[^19] SpiderMonkey is the JavaScript and WebAssembly engine of Firefox.[^31] JavaScriptCore is the built-in JavaScript engine of WebKit, and in the context of Safari it also has the name Nitro.[^32] Bun statically links JavaScriptCore.[^33] Deno is built on V8, Rust and Tokio.[^34] GraalJS states compatibility with ECMAScript 2026.[^35] QuickJS states support for ES2025.[^36] The other projects do not state one edition, so the table has no edition column. The engines, their compiler tiers and their extensions are compared in [[javascript/javascript-engines]].
 
 Sources: Node.js[^29] and its licences[^37][^38], Firefox[^39] and the licence of SpiderMonkey[^40], Safari[^41] and the licences of WebKit[^42], Bun[^43], Deno[^44], GraalJS[^45] and QuickJS[^36]. The compat tables of the feature pages have columns for V8 (Node.js), SpiderMonkey, JavaScriptCore, Bun and Deno, next to the ECMAScript edition.
 
@@ -421,7 +421,7 @@ The guide's Ecosystem part lists the main libraries by need, as library cards.
 
 ## History and influence
 
-Brendan Eich wrote the first implementation, called Mocha, in ten days in May 1995 at Netscape.[^4] The language appeared in public as LiveScript in the first beta of Netscape Navigator 2.0 in September 1995. Netscape and Sun announced the name JavaScript on December 4, 1995.[^52] The standard is based on several technologies, mainly JavaScript of Netscape and JScript of Microsoft.[^6] TC39 met for the first time on November 21 and 22, 1996.[^53] Sun held the trademark "JavaScript", so the standard got the name ECMAScript.[^53]
+Brendan Eich wrote the first implementation, called Mocha, in ten days in May 1995 at Netscape.[^4] The language appeared in public as LiveScript in the first beta of Netscape Navigator 2.0 in September 1995. Netscape and Sun announced the name JavaScript on December 4, 1995.[^52] The standard is based on several technologies, mainly JavaScript of Netscape and JScript of Microsoft.[^6] TC39 met for the first time on November 21 and 22, 1996.[^53] Sun held the trademark "JavaScript", so the standard got the name ECMAScript.[^53] The page [[javascript/history-of-javascript]] has the longer story.
 
 | Date | Event |
 |---|---|
@@ -432,7 +432,7 @@ Brendan Eich wrote the first implementation, called Mocha, in ten days in May 19
 | June 2015 | the sixth edition (ES2015), with modules, classes, block scoping and promises[^6] |
 | June 2016 | ES2016, the first edition of the yearly cadence[^6][^25] |
 
-Work on a fourth edition stopped, and that edition was never published.[^6] Ecma TC39 decides the changes today. A proposal moves through the stages 0, 1, 2, 2.7, 3 and 4, and the committee decides each step by consensus.[^24] Stage 4 needs two compatible implementations that pass the Test262 tests.[^24]
+Work on a fourth edition stopped, and that edition was never published.[^6] Ecma TC39 decides the changes today. A proposal moves through the stages 0, 1, 2, 2.7, 3 and 4, and the committee decides each step by consensus.[^24] Stage 4 needs two compatible implementations that pass the Test262 tests.[^24] The stages, the champions and the yearly timeline are in [[javascript/tc39-and-the-proposal-process]].
 
 The statement syntax follows C, and the `for`-`in` statement comes from AWK.[^52] The syntax "intentionally resembles Java syntax".[^5] The prototype objects follow Self, and the first-class functions support idioms from Scheme.[^4]
 
