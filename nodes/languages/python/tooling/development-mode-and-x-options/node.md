@@ -6,7 +6,7 @@ slug: development-mode-and-x-options
 name: Development Mode and -X Options
 aliases: [Python Development Mode, "-X dev", PYTHONDEVMODE, sys.flags.dev_mode, "-X options", sys._xoptions, "-X utf8", "-X int_max_str_digits", "-X faulthandler", "-X importtime", "-X tracemalloc", ResourceWarning]
 area: languages/python/tooling
-level: core
+level: advanced
 summary: >-
   -X passes implementation-specific options to CPython. -X dev turns on development mode: more warnings, faulthandler, asyncio debug mode and argument checks, with no extra output for correct code.
 grammar: null

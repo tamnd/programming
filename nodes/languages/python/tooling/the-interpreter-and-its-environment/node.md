@@ -6,7 +6,7 @@ slug: the-interpreter-and-its-environment
 name: The Interpreter and Its Environment
 aliases: [source code encoding, encoding declaration, "# -*- coding: -*-", coding cookie, PEP 263, tokenize.detect_encoding, PYTHONPATH, PYTHONDONTWRITEBYTECODE, PYTHONWARNINGS, python -E, sys.flags.ignore_environment, PYTHON environment variables]
 area: languages/python/tooling
-level: intro
+level: core
 summary: >-
   Source files are UTF-8 unless a coding comment on line 1 or 2 names another encoding. PYTHON* environment variables set interpreter options, command-line switches win, and -E or -I ignore them.
 grammar: null
