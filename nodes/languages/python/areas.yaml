@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: CC0-1.0
+# The sub-areas that Python adds to the language template of topics/languages.yaml (spec 05.3).
+- id: static-typing
+  name: Type hints and static typing
+  summary: Type hints, the type checkers, generics, protocols, TypedDict, narrowing, overloads, stub files and the typing specification.
+  reason: Python's type hints are a second, static language layer with their own specification (the typing spec), their own checkers and about 40 constructs. They do not fit values-and-types, which holds the run-time types.
