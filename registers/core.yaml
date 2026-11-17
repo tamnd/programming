@@ -6043,7 +6043,7 @@ items:
     area: "collections"
     name: "JavaScript typed arrays"
     target: "javascript/collections/javascript-typed-arrays"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"JavaScript typed arrays\")."
   - part: features
     group: "javascript"
