@@ -5511,7 +5511,7 @@ items:
     area: "syntax"
     name: "Logical operators"
     target: "javascript/syntax/logical-operators"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Logical operators\", in \"Expressions and operators\")."
   - part: features
     group: "javascript"
