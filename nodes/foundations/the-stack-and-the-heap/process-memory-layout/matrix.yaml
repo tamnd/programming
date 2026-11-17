@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: Kotlin on the JVM runs in a process with the same regions as Java, and it can read /proc/self/maps as a file. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: PowerShell runs on .NET in a process with the same regions, and Get-Content can read /proc/self/maps. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query does not see memory.
+regex:
+  status: n/a
+  reason: A regular expression does not see memory.
+html:
+  status: n/a
+  reason: A document does not see memory.
+css:
+  status: n/a
+  reason: A style sheet does not see memory.

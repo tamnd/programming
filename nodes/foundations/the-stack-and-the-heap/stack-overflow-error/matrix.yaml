@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: Kotlin on the JVM gets the same StackOverflowError as Java, and the program can catch it. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: Functions can call themselves, and each call uses stack space. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A plain query has no recursion of functions.
+regex:
+  status: n/a
+  reason: A regular expression has no calls.
+html:
+  status: n/a
+  reason: HTML has no calls.
+css:
+  status: n/a
+  reason: CSS has no calls.
