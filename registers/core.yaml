@@ -5462,14 +5462,14 @@ items:
     area: "user-types"
     name: "Querying object properties"
     target: "javascript/user-types/querying-object-properties"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Querying object properties\", in \"Enumerability and ownership of properties\")."
   - part: features
     group: "javascript"
     area: "user-types"
     name: "Traversing object properties"
     target: "javascript/user-types/traversing-object-properties"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Traversing object properties\", in \"Enumerability and ownership of properties\")."
   - part: features
     group: "javascript"
@@ -5616,14 +5616,14 @@ items:
     area: "user-types"
     name: "Inheritance and the prototype chain"
     target: "javascript/user-types/inheritance-and-the-prototype-chain"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Inheritance and the prototype chain\")."
   - part: features
     group: "javascript"
     area: "user-types"
     name: "Constructors"
     target: "javascript/user-types/constructors"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Constructors\", in \"Inheritance and the prototype chain\")."
   - part: features
     group: "javascript"
@@ -6120,7 +6120,7 @@ items:
     area: "user-types"
     name: "Comparing objects"
     target: "javascript/user-types/comparing-objects"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Comparing objects\", in \"Working with objects\")."
   - part: features
     group: "typescript"
