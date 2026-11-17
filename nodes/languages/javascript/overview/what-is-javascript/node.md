@@ -42,7 +42,7 @@ sources:
 
 ## Synopsis
 
-ECMA-262 describes the language in one sentence: "ECMAScript is an object-oriented programming language for performing computations and manipulating computational objects within a host environment."[^1] MDN calls JavaScript "a prototype-based , garbage-collected , dynamic language, supporting multiple paradigms such as imperative, functional, and object-oriented".[^2]
+ECMA-262 describes the language in one sentence: "ECMAScript is an object-oriented programming language for performing computations and manipulating computational objects within a host environment."[^1] MDN calls JavaScript "a prototype-based, garbage-collected, dynamic language, supporting multiple paradigms such as imperative, functional, and object-oriented".[^2]
 
 | Trait | What it means in JavaScript | Rule |
 |---|---|---|
@@ -56,7 +56,7 @@ ECMA-262 describes the language in one sentence: "ECMAScript is an object-orient
 
 **r1.** The language does no input or output by itself. ECMA-262 says that "there are no provisions in this specification for input of external data or output of computed results." The host environment provides those objects.[^1] MDN puts it this way: without APIs of the runtime, "most notably console.log() ", "a JavaScript program's behavior is entirely unobservable."[^3]
 
-**r2.** MDN describes JavaScript as "a lightweight interpreted (or just-in-time compiled ) programming language with first-class functions" ([[just-in-time-compilation]]).[^2] Whether the code is interpreted or compiled is a choice of the engine, not of the language.
+**r2.** MDN describes JavaScript as "a lightweight interpreted (or just-in-time compiled) programming language with first-class functions" ([[just-in-time-compilation]]).[^2] Whether the code is interpreted or compiled is a choice of the engine, not of the language.
 
 **r3.** Types belong to values. In MDN's words, types "are only associated with values, but not with variables", so a `let` variable can hold a number and then a string.[^3] ECMA-262 says the syntax is relaxed: "a variable is not required to have its type declared nor are types associated with properties" ([[static-and-dynamic-typing]]).[^1] Example: [`dynamic`](#dynamic).
 
@@ -70,7 +70,7 @@ ECMA-262 describes the language in one sentence: "ECMAScript is an object-orient
 
 **r8.** "JavaScript is single-threaded by nature." Asynchronous code runs on an event loop, with callbacks, promises or `async` and `await` ([[event-driven-programming]]).[^3] Memory is managed by a garbage collector ([[garbage-collection]]).[^2]
 
-**r9.** The language was first meant for web pages. In a browser, "there is no need for a main program": the code reacts to events from the user.[^1] It also runs outside browsers, "such as Node.js , Apache CouchDB and Adobe Acrobat".[^2] The engines of the main browsers are V8 (Chrome), SpiderMonkey (Firefox) and JavaScriptCore (Safari); Node.js and Deno use V8, and Bun uses JavaScriptCore.[^4]
+**r9.** The language was first meant for web pages. In a browser, "there is no need for a main program": the code reacts to events from the user.[^1] It also runs outside browsers, "such as Node.js, Apache CouchDB and Adobe Acrobat".[^2] The engines of the main browsers are V8 (Chrome), SpiderMonkey (Firefox) and JavaScriptCore (Safari); Node.js and Deno use V8, and Bun uses JavaScriptCore.[^4]
 
 **r10.** The syntax looks like Java on purpose: "ECMAScript syntax intentionally resembles Java syntax."[^1] The type system and the object model are not Java's. MDN says JavaScript "does not have Java's static typing and strong type checking", and that it "has a prototype-based object model instead of the more common class-based object model."[^5]
 

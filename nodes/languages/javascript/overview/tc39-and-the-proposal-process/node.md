@@ -61,7 +61,7 @@ sources:
 
 ## Synopsis
 
-"Ecma Technical Committee 39 ( TC39 ) is responsible for evolving the ECMAScript programming language and authoring the specification."[^1] A change to the language is a proposal, and a proposal moves through these stages. "The committee must approve proposals for progression to each stage."[^1]
+"Ecma Technical Committee 39 (TC39) is responsible for evolving the ECMAScript programming language and authoring the specification."[^1] A change to the language is a proposal, and a proposal moves through these stages. "The committee must approve proposals for progression to each stage."[^1]
 
 | Stage | Status | Entrance criteria |
 |---|---|---|
