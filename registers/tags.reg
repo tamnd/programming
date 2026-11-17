@@ -1283,3 +1283,5 @@ A0WHSC python/round-half-to-even
 A2G6A2 python/shadowing-names
 PY0RER call-stack
 SJGB98 stack-frame
+1J4BHR stack-overflow-error
+T638CX process-memory-layout
