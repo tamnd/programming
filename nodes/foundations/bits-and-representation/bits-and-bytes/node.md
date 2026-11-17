@@ -15,7 +15,7 @@ history:
   year: 1956
   people: [Claude Shannon, John Tukey, Werner Buchholz, Danny Cohen]
   note: Shannon used the word bit in 1948, Buchholz coined byte in 1956, the System/360 fixed it at 8 bits in 1964, and Cohen named big-endian and little-endian in 1980.
-see_also: [integer-overflow, floating-point-arithmetic, utf-8, base64-encode-and-decode, parse-an-integer, characters-and-code-points, call-stack-and-heap]
+see_also: [integer-overflow, floating-point-arithmetic, utf-8, base64-encode-and-decode, parse-an-integer, characters-and-code-points, stack-and-heap]
 same_as:
   wikidata: Q879126
   wikipedia: Bitwise_operation

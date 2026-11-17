@@ -15,7 +15,7 @@ history:
   year: 1945
   people: [John von Neumann, Tom Kilburn, Frederic Williams, Fritz-Rudolf Güntsch]
   note: The EDVAC report of 1945 described one memory of numbered words for both code and data. Virtual memory, which gives each program its own addresses, came with the Atlas computer in 1962.
-see_also: [pointers-and-references, processor-and-memory, bits-and-bytes, call-stack-and-heap, stack-and-heap, use-after-free, out-of-bounds-read, garbage-collection]
+see_also: [pointers-and-references, processor-and-memory, bits-and-bytes, stack-and-heap, call-stack, use-after-free, out-of-bounds-read, garbage-collection]
 same_as:
   wikidata: Q835713
   wikipedia: Memory_address

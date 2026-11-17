@@ -3,7 +3,7 @@ tag: 8WW7BE
 kind: concept
 slug: stack-and-heap
 name: Stack and heap
-aliases: [call stack, stack frame, activation record, automatic storage, heap allocation, dynamic storage, escape analysis]
+aliases: [call stack and heap, call stack, stack frame, activation record, automatic storage, stack allocation, heap allocation, dynamic storage, escape analysis]
 area: foundations/the-stack-and-the-heap
 level: core
 summary: >-
@@ -13,9 +13,9 @@ viz: optional
 formal: none
 history:
   year: 1960
-  people: [Edsger W. Dijkstra]
-  note: In "Recursive Programming" Dijkstra described a stack with a stack pointer that holds the working space of each subroutine call, so that a subroutine can call itself, and applied it to the object programs of an ALGOL 60 compiler.
-see_also: [explicit-memory-management, garbage-collection, pointers-and-references, use-after-free, closures, threads, memory-leaks, reference-counting]
+  people: [Klaus Samelson, Friedrich L. Bauer, Edsger W. Dijkstra]
+  note: Samelson and Bauer proposed a stack, the Operationskeller, in 1955 and filed a patent in 1957. In "Recursive Programming" Dijkstra described a stack with a stack pointer that holds the working space of each subroutine call, so that a subroutine can call itself, and applied it to the object programs of an ALGOL 60 compiler.
+see_also: [call-stack, stack-frame, explicit-memory-management, garbage-collection, pointers-and-references, use-after-free, closures, threads]
 same_as:
   wikidata: Q7595944
   wikipedia: Stack-based_memory_allocation
@@ -113,6 +113,18 @@ sources:
   - url: https://doc.rust-lang.org/std/thread/index.html#stack-size
     title: The Rust Standard Library, module std::thread
     locator: Stack size
+  - url: https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+    title: The Rust Programming Language, What Is Ownership?
+    locator: The Stack and the Heap
+  - url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model
+    title: MDN Web Docs, JavaScript execution model
+    locator: The engine and the host
+  - url: https://learn.microsoft.com/en-us/archive/blogs/ericlippert/the-stack-is-an-implementation-detail-part-one
+    title: Eric Lippert, The Stack Is An Implementation Detail, Part One, Fabulous Adventures In Coding
+    locator: the whole post
+  - url: https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+    title: Stack (abstract data type), Wikipedia
+    locator: History
 ---
 
 ## Idea
@@ -150,7 +162,7 @@ frames at module level: 1
 
 ## How it works
 
-**The call stack.** Each thread has a stack of its own.[^8] A register, the stack pointer, holds the address of the top. A call moves the stack pointer to make room for a frame, and the return moves it back. Dijkstra described this scheme in 1960. A block of storage holds the stack, and the stack pointer points to the first free place in it.[^1] A frame usually holds these items:
+**The call stack.** Each thread has a stack of its own.[^8] The Rust book describes the order: "The stack stores values in the order it gets them and removes the values in the opposite order."[^32] A register, the stack pointer, holds the address of the top. A call moves the stack pointer to make room for a frame, and the return moves it back. Dijkstra described this scheme in 1960. A block of storage holds the stack, and the stack pointer points to the first free place in it.[^1] A frame usually holds these items:
 
 - the return address, the place in the caller where execution goes on after the call;
 - the registers of the caller that the called function must save before it uses them;
@@ -176,7 +188,7 @@ stack                                         heap
 
 Frames come and go in last-in, first-out order, so the lifetime of each frame lies inside the lifetime of its caller's frame. A function can pass the address of a local variable to the functions that it calls. It cannot use that address after it returns, because the next call reuses the same memory. A recursive call gets a frame of its own, so each level has its own copy of the locals. The C standard says this directly: a block that is entered recursively gets a separate instance of each of its automatic objects.[^3]
 
-**The heap.** Heap blocks have no such order. The allocator keeps track of the free parts of the heap. For each request it finds a free block that is large enough, marks it as used, and returns its address. A release marks the block as free again. The block lives from the allocation until the release, no matter which functions do them.[^3][^5] The internals of allocators, such as free lists and size classes, are on [[explicit-memory-management]]. The pseudocode puts the two side by side.
+**The heap.** Heap blocks have no such order. The allocator keeps track of the free parts of the heap. For each request it finds a free block that is large enough, marks it as used, and returns its address. A release marks the block as free again. The block lives from the allocation until the release, no matter which functions do them.[^3][^5] MDN calls the heap of a JavaScript engine "just a name to denote a large (mostly unstructured) region of memory".[^33] The word names a pool of memory here, not the heap data structure. The internals of allocators, such as free lists and size classes, are on [[explicit-memory-management]]. The pseudocode puts the two side by side.
 
 ```pseudo
 CALL f(arguments)
@@ -200,6 +212,8 @@ L9  mark b as free                       ▷ by the program, the owner, or a col
 - In C, C++, Rust and C#, the program says it. C has automatic storage for locals and allocated storage for `malloc` blocks, and its standard never uses the words stack or heap.[^3] C++ calls the second kind dynamic storage, which `new` and `delete` manage.[^4][^5] Rust keeps values in the frame unless the program puts them in a `Box`, a `Vec` or another owner of a heap block.[^30] In C#, a variable of a value type holds an instance of the type. A variable of a class type holds a reference to an instance.[^25] Boxing stores a value type on the managed heap.[^26]
 - In Go and Java, the compiler decides. The Go FAQ says that the program does not need to know: each variable exists as long as there are references to it. The compiler keeps a local in the frame when it can prove that no reference outlives the call. Otherwise it moves the local to the garbage-collected heap.[^12] The compiler flag `-m` prints these decisions.[^18] For `newOrder` in the Go example, `go build -gcflags=-m` reports `moved to heap: o`. The Java Virtual Machine allocates every class instance and array on the heap.[^8] The HotSpot compiler runs escape analysis and can remove the allocation of an object that does not escape. It does not move such an object to the stack.[^9]
 - In Python and JavaScript, the program has no say. Objects live on the heap of the runtime, and the engine manages the frames.
+
+In the managed languages the place is a detail of the implementation. Eric Lippert argued that it is the wrong thing to teach about C# value types: "Surely the most relevant fact about value types is not the implementation detail of how they are allocated". What matters is that they are always copied by value.[^34]
 
 ## In languages
 
@@ -293,7 +307,7 @@ int main(void) {
 5
 ```
 
-Go needs no fix for the same code: the compiler moves the local to the heap.[^12]
+Go needs no fix for the same code: the compiler moves the local to the heap.[^12] Rust and C# reject such a program at compile time. The Rust example returns a reference to a local, and the borrow checker stops it with E0515. The C# example returns a `Span<int>` over `stackalloc` memory, and the compiler stops it too.
 
 ### Deep recursion overflows the stack
 
@@ -387,9 +401,9 @@ Boxing has the same trap. A boxed struct is a separate copy on the heap, so a ch
 
 ## Cost
 
-**A stack allocation.** A call moves the stack pointer by the size of the frame, and the return moves it back. The JVM specification notes that the sizes of the local variable array and the operand stack are known at compile time. So the whole frame can be allocated at once at the call.[^8] The release costs nothing more than the return.
+**A stack allocation.** A call moves the stack pointer by the size of the frame, and the return moves it back. The JVM specification notes that the sizes of the local variable array and the operand stack are known at compile time. So the whole frame can be allocated at once at the call.[^8] The release costs nothing more than the return. The Rust book says that "Pushing to the stack is faster than allocating on the heap", because the allocator never has to search for a place: the place is always the top of the stack.[^32]
 
-**A heap allocation.** The program calls the allocator. The allocator searches its free blocks and updates its records, and it can ask the operating system for more memory. Later a release, a reference count, or a collector gives the block back. The C# guide calls boxing computationally expensive compared with a plain assignment, because it must allocate and build an object.[^26] CPython uses pymalloc for objects of 512 bytes or less, and pymalloc takes them from arenas of 1 MiB on 64-bit platforms.[^21] In a collected language each heap allocation also adds work for the collector, so fewer allocations mean fewer collections.
+**A heap allocation.** The program calls the allocator. The allocator searches its free blocks and updates its records, and it can ask the operating system for more memory. Later a release, a reference count, or a collector gives the block back. The C# guide calls boxing computationally expensive compared with a plain assignment, because it must allocate and build an object.[^26] CPython uses pymalloc for objects of 512 bytes or less, and pymalloc takes them from arenas of 1 MiB on 64-bit platforms.[^21] In a collected language each heap allocation also adds work for the collector, so fewer allocations mean fewer collections. Reads cost more too: "Accessing data in the heap is generally slower than accessing data on the stack because you have to follow a pointer to get there."[^32]
 
 **Counting allocations.** Go gives an exact count. `testing.AllocsPerRun` runs a function many times and returns the average number of heap allocations per run, which is always a whole number.[^17] In this run, returning a value allocates nothing. Returning a pointer to a local allocates the local. Returning a closure allocates the function value and the captured variable.
 
@@ -445,6 +459,8 @@ This page shows no allocation count for Java. HotSpot escape analysis can remove
 
 ## History
 
+- **1946.** Stacks "entered the computer science literature in 1946", when Alan Turing used the words bury and unbury for the call of a subroutine and the return from it.[^35]
+- **1955.** Klaus Samelson and Friedrich L. Bauer "proposed the idea of a stack called Operationskeller", and they filed a patent in 1957.[^35]
 - **1960.** Edsger Dijkstra published "Recursive Programming". He described a stack with a stack pointer that holds the working space of each subroutine call. With it, a subroutine can be called again before its earlier calls end. He applied it to the object programs of an ALGOL 60 compiler.[^1]
 - **1999.** Choi, Gupta, Serrano, Sreedhar and Midkiff presented escape analysis for Java at OOPSLA.[^2] The HotSpot server compiler implements their flow-insensitive algorithm and has it on by default from Java SE 6u23.[^9]
 - **2014.** Go 1.3, released on 18 June 2014, replaced segmented goroutine stacks with contiguous stacks. A goroutine that needs more stack gets a larger single block, and the runtime copies the old stack into it.[^14][^15]

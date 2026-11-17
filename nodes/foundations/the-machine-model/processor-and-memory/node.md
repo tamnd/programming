@@ -15,7 +15,7 @@ history:
   year: 1945
   people: [John von Neumann, J. Presper Eckert, John Mauchly, Alan Turing]
   note: The 1945 First Draft of a Report on the EDVAC described a computer that keeps its program and its data in one memory, and the Manchester Baby ran the first stored program in 1948.
-see_also: [bits-and-bytes, call-stack-and-heap, compilers-and-interpreters, bytecode, characters-and-code-points, integer-overflow, functional-programming]
+see_also: [bits-and-bytes, stack-and-heap, compilers-and-interpreters, bytecode, characters-and-code-points, integer-overflow, functional-programming]
 same_as:
   wikidata: Q189088
   wikipedia: Von_Neumann_architecture
@@ -100,7 +100,7 @@ The machine has one accumulator register, a program counter, and 23 cells of mem
 
 **Processor and memory.** John Backus described the model in his 1977 Turing Award lecture: "In its simplest form a von Neumann computer has three parts: a central processing unit (or CPU), a store, and a connecting tube that can transmit a single word between the CPU and the store (and send an address to the store)."[^1] The C++ standard gives programs the same view of memory: "The memory available to a C++ program is one or more contiguous sequences of bytes. Each byte in memory has a unique address."[^2] A word is the unit that the processor handles in one step, 64 bits on most processors today, and the width of an address limits how much memory a program can reach.
 
-**The instruction cycle.** The processor repeats one cycle. It fetches the instruction at the address in the program counter, decodes the operation and its operands, executes it, and advances the program counter, unless the instruction was a jump that set the program counter to another address. A conditional jump, which jumps only if a register holds zero or a comparison came out a certain way, is enough to build `if` statements and loops. Function calls are jumps that save the return address, usually on the call stack; see [the call stack and heap](/call-stack-and-heap/).
+**The instruction cycle.** The processor repeats one cycle. It fetches the instruction at the address in the program counter, decodes the operation and its operands, executes it, and advances the program counter, unless the instruction was a jump that set the program counter to another address. A conditional jump, which jumps only if a register holds zero or a comparison came out a certain way, is enough to build `if` statements and loops. Function calls are jumps that save the return address, usually on the call stack; see [the call stack](/call-stack/).
 
 **The stored program.** Instructions are numbers in memory, so a program can be loaded, copied, generated and changed like any other data. Loaders, compilers, linkers and JIT compilers all depend on this. Abstract machines follow the same plan. The Java Virtual Machine specification says: "Each Java Virtual Machine thread has its own pc (program counter) register."[^3] It holds the address of the JVM instruction that the thread is executing. Bytecode interpreters for Python, Java and .NET run the same fetch, decode and execute loop in software; see [compilers and interpreters](/compilers-and-interpreters/).
 

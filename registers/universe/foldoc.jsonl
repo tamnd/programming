@@ -11738,7 +11738,7 @@
 {"id":"head-strict","name":"head-strict","scope":"terms","outcome":"out-of-scope","reason":"too-small","rule":"terms-glossary"}
 {"id":"header","name":"header","scope":"terms","outcome":"out-of-scope","reason":"too-small","rule":"terms-glossary"}
 {"id":"heads down","name":"heads down","scope":"terms","outcome":"out-of-scope","reason":"too-small","rule":"terms-glossary"}
-{"id":"heap","name":"heap","scope":"terms","outcome":"alias","target":"call-stack-and-heap"}
+{"id":"heap","name":"heap","scope":"terms","outcome":"alias","target":"stack-and-heap"}
 {"id":"heartbeat","name":"heartbeat","scope":"terms","outcome":"out-of-scope","reason":"not-programming"}
 {"id":"heat sink","name":"heat sink","scope":"terms","outcome":"out-of-scope","reason":"not-programming"}
 {"id":"heat slug","name":"heat slug","scope":"terms","outcome":"out-of-scope","reason":"not-programming"}
@@ -14292,7 +14292,7 @@
 {"id":"stack","name":"stack","scope":"terms","outcome":"out-of-scope","reason":"too-small","rule":"terms-glossary"}
 {"id":"stack frame","name":"stack frame","scope":"terms","outcome":"alias","target":"stack-and-heap"}
 {"id":"stack loader","name":"stack loader","scope":"terms","outcome":"out-of-scope","reason":"not-programming"}
-{"id":"stack overflow","name":"stack overflow","scope":"terms","outcome":"alias","target":"call-stack-and-heap"}
+{"id":"stack overflow","name":"stack overflow","scope":"terms","outcome":"alias","target":"stack-overflow-error"}
 {"id":"stack pointer","name":"stack pointer","scope":"terms","outcome":"out-of-scope","reason":"too-small","rule":"terms-glossary"}
 {"id":"stack puke","name":"stack puke","scope":"terms","outcome":"out-of-scope","reason":"too-small","rule":"terms-glossary"}
 {"id":"stack traceback","name":"stack traceback","scope":"terms","outcome":"out-of-scope","reason":"too-small","rule":"terms-glossary"}
