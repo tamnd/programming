@@ -5665,14 +5665,14 @@ items:
     area: "collections"
     name: "Iterators and generators"
     target: "javascript/collections/iterators-and-generators"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Iterators and generators\")."
   - part: features
     group: "javascript"
     area: "collections"
     name: "Iterators"
     target: "javascript/collections/iterators"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Iterators\", in \"Iterators and generators\")."
   - part: features
     group: "javascript"
@@ -5686,7 +5686,7 @@ items:
     area: "collections"
     name: "Iterables"
     target: "javascript/collections/iterables"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Iterables\", in \"Iterators and generators\")."
   - part: features
     group: "javascript"
@@ -5714,7 +5714,7 @@ items:
     area: "collections"
     name: "Key and value equality of Map and Set"
     target: "javascript/collections/key-and-value-equality-of-map-and-set"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Key and value equality of Map and Set\", in \"Keyed collections\")."
   - part: features
     group: "javascript"
@@ -5749,7 +5749,7 @@ items:
     area: "collections"
     name: "Loops and iteration"
     target: "javascript/collections/loops-and-iteration"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Loops and iteration\")."
   - part: features
     group: "javascript"
