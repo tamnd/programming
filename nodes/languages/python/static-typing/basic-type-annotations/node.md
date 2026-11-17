@@ -1,10 +1,10 @@
 ---
-tag: NEW-python-basic-type-annotations
+tag: DD6ZFJ
 kind: feature
 owner: python
 slug: basic-type-annotations
 name: Basic type annotations
-aliases: [list[int], dict[str, int], tuple[int, ...], Optional, X | None, Union, Any, Callable, object type, built-in generics, PEP 585, PEP 604]
+aliases: ["list[int]", "dict[str, int]", "tuple[int, ...]", Optional, X | None, Union, Any, Callable, object type, built-in generics, PEP 585, PEP 604]
 area: languages/python/static-typing
 level: core
 summary: >-
@@ -14,33 +14,33 @@ spec: {standard: null, url: "https://docs.python.org/3.15/library/typing.html", 
 proposals: [pep-484, pep-585, pep-604]
 see_also: [python/type-hints, python/type-checkers, python/function-annotations, python/collections-abc, python/sequence-types, top-type, function-type]
 sources:
+  - url: https://docs.python.org/3.15/whatsnew/3.9.html#type-hinting-generics-in-standard-collections
+    title: What’s New In Python 3.9
+    locator: Type Hinting Generics in Standard Collections
+    accessed: 2026-11-18
   - url: https://docs.python.org/3.15/library/typing.html
     title: typing, Support for type hints, Python 3.15 documentation
     locator: Annotating tuples; Annotating callable objects; typing.Any; typing.Union; typing.Optional; typing.List
-    accessed: 2026-11-18
-  - url: https://peps.python.org/pep-0585/
-    title: "PEP 585: Type Hinting Generics In Standard Collections"
-    locator: Abstract
     accessed: 2026-11-18
   - url: https://peps.python.org/pep-0604/
     title: "PEP 604: Allow writing union types as X | Y"
     locator: Abstract
     accessed: 2026-11-18
-  - url: https://docs.python.org/3.15/whatsnew/3.9.html#type-hinting-generics-in-standard-collections
-    title: What’s New In Python 3.9
-    locator: Type Hinting Generics in Standard Collections
-    accessed: 2026-11-18
-  - url: https://docs.python.org/3.15/whatsnew/3.10.html#pep-604-new-type-union-operator
-    title: What’s New In Python 3.10
-    locator: "PEP 604: New Type Union Operator"
+  - url: https://peps.python.org/pep-0484/
+    title: "PEP 484: Type Hints"
+    locator: Union types
     accessed: 2026-11-18
   - url: https://mypy.readthedocs.io/en/stable/dynamic_typing.html#any-vs-object
     title: Dynamically typed code, mypy documentation
     locator: Any vs. object
     accessed: 2026-11-18
-  - url: https://peps.python.org/pep-0484/
-    title: "PEP 484: Type Hints"
-    locator: Union types
+  - url: https://docs.python.org/3.15/whatsnew/3.10.html#pep-604-new-type-union-operator
+    title: What’s New In Python 3.10
+    locator: "PEP 604: New Type Union Operator"
+    accessed: 2026-11-18
+  - url: https://peps.python.org/pep-0585/
+    title: "PEP 585: Type Hinting Generics In Standard Collections"
+    locator: Abstract
     accessed: 2026-11-18
 ---
 
@@ -75,17 +75,17 @@ Each parameter has a hint: a list of strings, a dictionary from strings to integ
 
 **r1.** A class is a type. Use `int`, `str`, `float`, `bool`, `bytes` and your own classes directly as hints.
 
-**r2.** A collection class takes the types of its items in square brackets: `list[int]`, `set[str]`, `dict[str, int]`. "In type annotations you can now use built-in collection types such as list and dict as generic types instead of importing the corresponding capitalized types (e.g. List or Dict) from typing."[^4] The old names are deprecated: `typing.List` is a "Deprecated alias to list."[^1]
+**r2.** A collection class takes the types of its items in square brackets: `list[int]`, `set[str]`, `dict[str, int]`. "In type annotations you can now use built-in collection types such as list and dict as generic types instead of importing the corresponding capitalized types (e.g. List or Dict) from typing."[^1] The old names are deprecated: `typing.List` is a "Deprecated alias to list."[^2]
 
-**r3.** A tuple is a special case. "tuple accepts any number of type arguments".[^1] "To denote a tuple which could be of any length, and in which all elements are of the same type T, use the literal ellipsis ...: tuple[T, ...]. To denote an empty tuple, use tuple[()]."[^1] Other containers take a fixed number of arguments: "list only accepts one type argument".[^1] Example: [`two-args`](#two-args).
+**r3.** A tuple is a special case. "tuple accepts any number of type arguments".[^2] "To denote a tuple which could be of any length, and in which all elements are of the same type T, use the literal ellipsis ...: tuple[T, ...]. To denote an empty tuple, use tuple[()]."[^2] Other containers take a fixed number of arguments: "list only accepts one type argument".[^2] Example: [`two-args`](#two-args).
 
-**r4.** A union is a value of one of several types. "Union[X, Y] is equivalent to X | Y and means either X or Y."[^1] "Using that shorthand is recommended."[^1] For a value that can be `None`, write `X | None`. "Optional[X] is equivalent to X | None (or Union[X, None])."[^1] Example: [`union-runtime`](#union-runtime).
+**r4.** A union is a value of one of several types. "Union[X, Y] is equivalent to X | Y and means either X or Y."[^2] "Using that shorthand is recommended."[^2] PEP 604 "proposes overloading the | operator on types to allow writing Union[X, Y] as X | Y, and allows it to appear in isinstance and issubclass calls."[^3] For a value that can be `None`, write `X | None`. "Optional[X] is equivalent to X | None (or Union[X, None])."[^2] Example: [`union-runtime`](#union-runtime).
 
-**r5.** `Optional` does not mean an optional argument. "Note that this is not the same concept as an optional argument, which is one that has a default."[^1] A default of `None` needs `X | None` in the hint. PEP 484 says of the old shortcut: "This is no longer the recommended behavior. Type checkers should move towards requiring the optional type to be made explicit."[^7] Example: [`default-none`](#default-none).
+**r5.** `Optional` does not mean an optional argument. "Note that this is not the same concept as an optional argument, which is one that has a default."[^2] A default of `None` needs `X | None` in the hint. PEP 484 says of the old shortcut: "This is no longer the recommended behavior. Type checkers should move towards requiring the optional type to be made explicit."[^4] Example: [`default-none`](#default-none).
 
-**r6.** A function value has the type `Callable[[A, B], R]`. "Callable[[int], str] signifies a function that takes a single parameter of type int and returns a str."[^1] "The subscription syntax must always be used with exactly two values: the argument list and the return type."[^1] Import `Callable` from `collections.abc`, because `typing.Callable` is a "Deprecated alias to collections.abc.Callable."[^1] Example: [`callback`](#callback).
+**r6.** A function value has the type `Callable[[A, B], R]`. "Callable[[int], str] signifies a function that takes a single parameter of type int and returns a str."[^2] "The subscription syntax must always be used with exactly two values: the argument list and the return type."[^2] Import `Callable` from `collections.abc`, because `typing.Callable` is a "Deprecated alias to collections.abc.Callable."[^2] Example: [`callback`](#callback).
 
-**r7.** `Any` turns the checks off. "Every type is assignable to Any. Any is assignable to every type."[^1] `object` is a normal type that holds every value: "Unlike Any, object is an ordinary static type (it is similar to Object in Java), and only operations valid for all types are accepted for object values."[^6] Example: [`any-vs-object`](#any-vs-object).
+**r7.** `Any` turns the checks off. "Every type is assignable to Any. Any is assignable to every type."[^2] `object` is a normal type that holds every value: "Unlike Any, object is an ordinary static type (it is similar to Object in Java), and only operations valid for all types are accepted for object values."[^5] Example: [`any-vs-object`](#any-vs-object).
 
 ## Examples
 
@@ -105,7 +105,7 @@ True
 True False
 ```
 
-The `|` form and the `typing` forms make equal objects. A union also works in `isinstance`: "This new syntax is also accepted as the second argument to isinstance() and issubclass()".[^5]
+The `|` form and the `typing` forms make equal objects. A union also works in `isinstance`: "This new syntax is also accepted as the second argument to isinstance() and issubclass()".[^6]
 
 ```python fails id=callback expect=exception:AttributeError
 from collections.abc import Callable
@@ -139,10 +139,10 @@ Found 1 error in 1 file (checked 1 source file)
 ## Versions
 
 > [!since v="3.9"]
-> The built-in collections take type arguments, as in `list[int]`, from PEP 585.[^2][^4]
+> The built-in collections take type arguments, as in `list[int]`, from PEP 585.[^7][^1]
 
 > [!since v="3.10"]
-> The `X | Y` form of a union is added, from PEP 604. "A new type union operator was introduced which enables the syntax X | Y."[^5]
+> The `X | Y` form of a union is added, from PEP 604. "A new type union operator was introduced which enables the syntax X | Y."[^6]
 
 ## Pitfalls
 

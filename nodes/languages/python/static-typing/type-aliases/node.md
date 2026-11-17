@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-type-aliases
+tag: V0GR37
 kind: feature
 owner: python
 slug: type-aliases
@@ -19,25 +19,25 @@ sources:
     title: The Python Language Reference, 7.14 The type statement
     locator: "7.14"
     accessed: 2026-11-18
-  - url: https://docs.python.org/3.15/reference/compound_stmts.html#generic-type-aliases
-    title: The Python Language Reference, 8.10.3 Generic type aliases
-    locator: "8.10.3"
-    accessed: 2026-11-18
   - url: https://docs.python.org/3.15/library/typing.html#type-aliases
     title: typing, Support for type hints, Python 3.15 documentation
     locator: Type aliases; typing.TypeAlias; typing.TypeAliasType
+    accessed: 2026-11-18
+  - url: https://docs.python.org/3.15/reference/compound_stmts.html#generic-type-aliases
+    title: The Python Language Reference, 8.10.3 Generic type aliases
+    locator: "8.10.3"
     accessed: 2026-11-18
   - url: https://peps.python.org/pep-0695/
     title: "PEP 695: Type Parameter Syntax"
     locator: Generic Type Alias
     accessed: 2026-11-18
-  - url: https://docs.python.org/3.15/whatsnew/3.12.html#pep-695-type-parameter-syntax
-    title: What’s New In Python 3.12
-    locator: "PEP 695: Type Parameter Syntax"
-    accessed: 2026-11-18
   - url: https://peps.python.org/pep-0613/
     title: "PEP 613: Explicit Type Aliases"
     locator: Abstract
+    accessed: 2026-11-18
+  - url: https://docs.python.org/3.15/whatsnew/3.12.html#pep-695-type-parameter-syntax
+    title: What’s New In Python 3.12
+    locator: "PEP 695: Type Parameter Syntax"
     accessed: 2026-11-18
 ---
 
@@ -68,15 +68,15 @@ TypeAliasType Point tuple[float, float]
 
 ## Semantics
 
-**r1.** "The type statement declares a type alias, which is an instance of typing.TypeAliasType."[^1] An alias and its value are the same type for the checker: "In this example, Vector and list[float] will be treated equivalently by static type checkers".[^3] An alias does not make a new type. For a distinct type, see `NewType`.
+**r1.** "The type statement declares a type alias, which is an instance of typing.TypeAliasType."[^1] An alias and its value are the same type for the checker: "In this example, Vector and list[float] will be treated equivalently by static type checkers".[^2] An alias does not make a new type. For a distinct type, see `NewType`.
 
 **r2.** The value is lazy. "It is not evaluated when the type alias is created, but only when the value is accessed through the type alias’s __value__ attribute (see Lazy evaluation). This allows the type alias to refer to names that are not yet defined."[^1] So an alias can refer to itself, which makes a recursive type. Example: [`recursive`](#recursive).
 
-**r3.** An alias can be generic. "Type aliases may be made generic by adding a type parameter list after the name."[^1] "The type statement can also be used to create a generic type alias: type ListOrSet[T] = list[T] | set[T]".[^2] Example: [`generic`](#generic).
+**r3.** An alias can be generic. "Type aliases may be made generic by adding a type parameter list after the name."[^1] "The type statement can also be used to create a generic type alias: type ListOrSet[T] = list[T] | set[T]".[^3] PEP 695 says: "Similar to class and def statements, a type statement defines a scope for type parameters."[^4] Example: [`generic`](#generic).
 
 **r4.** "type is a soft keyword."[^1] A program can still use `type` as a name, and the built-in `type()` works as before. For soft keywords, see [[python/soft-keywords]].
 
-**r5.** The old forms still work. "For backwards compatibility, type aliases can also be created through simple assignment: Vector = list[float]".[^3] `TypeAlias` makes the intent clear: it is a "Special annotation for explicitly declaring a type alias."[^3] An alias made by assignment is a normal variable that holds the type object, and its value is evaluated at once. Example: [`old-style`](#old-style).
+**r5.** The old forms still work. "For backwards compatibility, type aliases can also be created through simple assignment: Vector = list[float]".[^2] `TypeAlias` makes the intent clear: it is a "Special annotation for explicitly declaring a type alias."[^2] An alias made by assignment is a normal variable that holds the type object, and its value is evaluated at once. Example: [`old-style`](#old-style).
 
 **r6.** A `TypeAliasType` is not a class. It is for hints only, so `isinstance` and calls do not accept it. Example: [`not-a-class`](#not-a-class).
 
@@ -150,10 +150,10 @@ GenericAlias list[float]
 ## Versions
 
 > [!since v="3.10"]
-> `typing.TypeAlias` is added, from PEP 613.[^3][^6]
+> `typing.TypeAlias` is added, from PEP 613.[^2][^5]
 
 > [!since v="3.12"]
-> The `type` statement and `TypeAliasType` are added, from PEP 695. "In addition, the PEP introduces a new way to declare type aliases using the type statement, which creates an instance of TypeAliasType".[^5] `TypeAlias` is deprecated: "TypeAlias is deprecated in favor of the type statement, which creates instances of TypeAliasType and which natively supports forward references."[^3]
+> The `type` statement and `TypeAliasType` are added, from PEP 695. "In addition, the PEP introduces a new way to declare type aliases using the type statement, which creates an instance of TypeAliasType".[^6] `TypeAlias` is deprecated: "TypeAlias is deprecated in favor of the type statement, which creates instances of TypeAliasType and which natively supports forward references."[^2]
 
 ## Pitfalls
 

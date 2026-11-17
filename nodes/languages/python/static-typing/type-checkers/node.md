@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-type-checkers
+tag: 9Y4Q3D
 kind: feature
 owner: python
 slug: type-checkers
@@ -14,25 +14,13 @@ spec: {standard: null, url: "https://mypy.readthedocs.io/en/stable/getting_start
 proposals: [pep-484]
 see_also: [python/type-hints, python/basic-type-annotations, python/annotations-at-runtime, python/linters-and-formatters, python/editors-and-language-servers, static-and-dynamic-typing, gradual-types]
 sources:
-  - url: https://mypy.readthedocs.io/en/stable/getting_started.html
-    title: Getting started, mypy documentation
-    locator: Dynamic vs static typing; Strict mode and configuration
-    accessed: 2026-11-18
-  - url: https://mypy.readthedocs.io/en/stable/command_line.html#cmdoption-mypy-strict
-    title: The mypy command line, mypy documentation
-    locator: "--strict"
+  - url: https://github.com/microsoft/pyright/blob/main/docs/mypy-comparison.md
+    title: Differences Between Pyright and Mypy
+    locator: Why Does Pyright’s Behavior Differ from Mypy’s?; Type Checking Unannotated Code; Inferred Return Types
     accessed: 2026-11-18
   - url: https://github.com/microsoft/pyright/blob/main/README.md
     title: Pyright, README
     locator: Static Type Checker for Python
-    accessed: 2026-11-18
-  - url: https://github.com/microsoft/pyright/blob/main/docs/configuration.md
-    title: Pyright configuration
-    locator: typeCheckingMode
-    accessed: 2026-11-18
-  - url: https://github.com/microsoft/pyright/blob/main/docs/mypy-comparison.md
-    title: Differences Between Pyright and Mypy
-    locator: Why Does Pyright’s Behavior Differ from Mypy’s?; Type Checking Unannotated Code; Inferred Return Types
     accessed: 2026-11-18
   - url: https://pyrefly.org/
     title: "Pyrefly: A Fast Python Type Checker and Language Server"
@@ -41,6 +29,18 @@ sources:
   - url: https://docs.astral.sh/ty/
     title: ty, Introduction
     locator: Introduction; Highlights
+    accessed: 2026-11-18
+  - url: https://mypy.readthedocs.io/en/stable/getting_started.html
+    title: Getting started, mypy documentation
+    locator: Dynamic vs static typing; Strict mode and configuration
+    accessed: 2026-11-18
+  - url: https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+    title: Pyright configuration
+    locator: typeCheckingMode
+    accessed: 2026-11-18
+  - url: https://mypy.readthedocs.io/en/stable/command_line.html#cmdoption-mypy-strict
+    title: The mypy command line, mypy documentation
+    locator: "--strict"
     accessed: 2026-11-18
   - url: https://docs.python.org/3.15/library/typing.html#typing.reveal_type
     title: typing, Support for type hints, Python 3.15 documentation
@@ -88,16 +88,16 @@ Success: no issues found in 1 source file
 
 **r2.** The main checkers:
 
-- mypy. "Mypy is the “OG” in the world of Python type checkers. It was started by Jukka Lehtosalo in 2012".[^5]
-- pyright. "Pyright is a full-featured, standards-based static type checker for Python. It is designed for high performance and can be used with large Python source bases."[^3]
-- Pyrefly: "A fast type checker and language server for Python with powerful IDE features".[^6]
-- ty: "An extremely fast Python type checker and language server, written in Rust."[^7]
+- mypy. "Mypy is the “OG” in the world of Python type checkers. It was started by Jukka Lehtosalo in 2012".[^1]
+- pyright. "Pyright is a full-featured, standards-based static type checker for Python. It is designed for high performance and can be used with large Python source bases."[^2]
+- Pyrefly: "A fast type checker and language server for Python with powerful IDE features".[^3]
+- ty: "An extremely fast Python type checker and language server, written in Rust."[^4]
 
-**r3.** The checkers follow the typing specification, but each checker has its own behavior where the specification is silent. "Although PEP 484 spells out many type checking behaviors, it intentionally leaves many other behaviors undefined. This approach has allowed different type checkers to innovate and differentiate."[^5] So one program can pass one checker and fail another.
+**r3.** The checkers follow the typing specification, but each checker has its own behavior where the specification is silent. "Although PEP 484 spells out many type checking behaviors, it intentionally leaves many other behaviors undefined. This approach has allowed different type checkers to innovate and differentiate."[^1] So one program can pass one checker and fail another.
 
-**r4.** The defaults differ. "By default, mypy will not type check dynamically typed functions."[^1] "By default, pyright performs type checking for all code regardless of whether it contains type annotations."[^5] Pyright has the modes "off", "basic", "standard" and "strict", and "The default value for this setting is "standard"."[^4]
+**r4.** The defaults differ. "By default, mypy will not type check dynamically typed functions."[^5] "By default, pyright performs type checking for all code regardless of whether it contains type annotations."[^1] Pyright has the modes "off", "basic", "standard" and "strict", and "The default value for this setting is "standard"."[^6]
 
-**r5.** The strict mode of mypy "enables a defined subset of optional error-checking flags. This subset primarily includes checks for inadvertent type unsoundness".[^2] "If you run mypy with the --strict flag, you will basically never get a type related error at runtime without a corresponding mypy error, unless you explicitly circumvent mypy somehow."[^1] Example: [`none-attr`](#none-attr).
+**r5.** The strict mode of mypy "enables a defined subset of optional error-checking flags. This subset primarily includes checks for inadvertent type unsoundness".[^7] "If you run mypy with the --strict flag, you will basically never get a type related error at runtime without a corresponding mypy error, unless you explicitly circumvent mypy somehow."[^5] Example: [`none-attr`](#none-attr).
 
 **r6.** Tools that talk to the checker:
 
@@ -211,7 +211,7 @@ print(result + 1)
 9
 ```
 
-The function has no return hint. Mypy treats its result as `Any`, and strict mode reports the missing hint. "By comparison, mypy never infers return types and assumes that functions without a return type annotation have a return type of Any."[^5] Pyright infers the return type `int` from the `return` statement.[^5]
+The function has no return hint. Mypy treats its result as `Any`, and strict mode reports the missing hint. "By comparison, mypy never infers return types and assumes that functions without a return type annotation have a return type of Any."[^1] Pyright infers the return type `int` from the `return` statement.[^1]
 
 ```text
 $ mypy noreturn.py

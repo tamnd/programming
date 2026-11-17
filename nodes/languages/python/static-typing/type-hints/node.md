@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-type-hints
+tag: TC8NPD
 kind: feature
 owner: python
 slug: type-hints
@@ -14,13 +14,13 @@ spec: {standard: null, url: "https://typing.python.org/en/latest/spec/concepts.h
 proposals: [pep-484, pep-526, pep-649]
 see_also: [python/function-annotations, python/annotated-assignment, python/annotations-at-runtime, python/annotation-scopes, python/duck-typing, python/dynamic-and-strong-typing, gradual-types, static-and-dynamic-typing]
 sources:
-  - url: https://docs.python.org/3.15/library/typing.html
-    title: typing, Support for type hints, Python 3.15 documentation
-    locator: introduction, Note
-    accessed: 2026-11-18
   - url: https://docs.python.org/3.15/glossary.html#term-type-hint
     title: Glossary, Python 3.15 documentation
     locator: annotation; static type checker; type hint
+    accessed: 2026-11-18
+  - url: https://docs.python.org/3.15/library/typing.html
+    title: typing, Support for type hints, Python 3.15 documentation
+    locator: introduction, Note
     accessed: 2026-11-18
   - url: https://peps.python.org/pep-0484/
     title: "PEP 484: Type Hints"
@@ -70,11 +70,11 @@ Found 1 error in 1 file (checked 1 source file)
 
 ## Semantics
 
-**r1.** A type hint is "An annotation that specifies the expected type for a variable, a class attribute, or a function parameter or return value."[^2] An annotation is "A label associated with a variable, a class attribute or a function parameter or return value, used by convention as a type hint."[^2]
+**r1.** A type hint is "An annotation that specifies the expected type for a variable, a class attribute, or a function parameter or return value."[^1] An annotation is "A label associated with a variable, a class attribute or a function parameter or return value, used by convention as a type hint."[^1]
 
-**r2.** Python does not check hints. "The Python runtime does not enforce function and variable type annotations. They can be used by third party tools such as type checkers, IDEs, linters, etc."[^1] PEP 484 says: "no type checking happens at runtime. Instead, the proposal assumes the existence of a separate off-line type checker which users can run over their source code voluntarily."[^3] Example: [`not-enforced`](#not-enforced).
+**r2.** Python does not check hints. "The Python runtime does not enforce function and variable type annotations. They can be used by third party tools such as type checkers, IDEs, linters, etc."[^2] PEP 484 says: "no type checking happens at runtime. Instead, the proposal assumes the existence of a separate off-line type checker which users can run over their source code voluntarily."[^3] Example: [`not-enforced`](#not-enforced).
 
-**r3.** A static type checker is "An external tool that reads Python code and analyzes it, looking for issues such as incorrect types."[^2] For the tools, see [[python/type-checkers]].
+**r3.** A static type checker is "An external tool that reads Python code and analyzes it, looking for issues such as incorrect types."[^1] For the tools, see [[python/type-checkers]].
 
 **r4.** Hints are optional. "It should also be emphasized that Python will remain a dynamically typed language, and the authors have no desire to ever make type hints mandatory, even by convention."[^3]
 
@@ -88,7 +88,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 For the syntax, see [[python/function-annotations]] and [[python/annotated-assignment]].
 
-**r7.** Hints of modules, classes and functions are kept, and a program can read them. "Type hints of global variables, class attributes, and functions, but not local variables, can be accessed using typing.get_type_hints()."[^2] "Annotations for local variables will not be evaluated".[^5] Examples: [`stored`](#stored), [`local-not-evaluated`](#local-not-evaluated).
+**r7.** Hints of modules, classes and functions are kept, and a program can read them. "Type hints of global variables, class attributes, and functions, but not local variables, can be accessed using typing.get_type_hints()."[^1] "Annotations for local variables will not be evaluated".[^5] Examples: [`stored`](#stored), [`local-not-evaluated`](#local-not-evaluated).
 
 **r8.** A checker treats a function with no hints as dynamic code. "By default, mypy will not type check dynamically typed functions. This means that with a few exceptions, mypy will not report any errors with regular unannotated Python."[^6] Strict mode adds checks: "If you run mypy with the --strict flag, you will basically never get a type related error at runtime without a corresponding mypy error, unless you explicitly circumvent mypy somehow."[^6] Example: [`untyped`](#untyped).
 
@@ -170,7 +170,7 @@ Found 2 errors in 1 file (checked 1 source file)
 ## Versions
 
 > [!since v="3.5"]
-> The `typing` module is added, from PEP 484.[^1][^3]
+> The `typing` module is added, from PEP 484.[^2][^3]
 
 > [!since v="3.6"]
 > Variable annotations are added, from PEP 526.[^5]
