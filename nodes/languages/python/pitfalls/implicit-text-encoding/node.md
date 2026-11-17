@@ -11,7 +11,7 @@ summary: >-
   open() in text mode with no encoding argument used the locale encoding before 3.15, so the same code read UTF-8 files wrong on some systems. Pass encoding="utf-8", or encoding="locale" on purpose.
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/library/io.html#text-encoding", locator: "io, Text Encoding"}
-proposals: [PEP 597, PEP 686]
+proposals: [pep-597, pep-686]
 see_also: [python/reading-and-writing-files, python/text-and-binary-io, python/encoding-and-decoding, python/unicode-in-python, python/development-mode-and-x-options, python/warnings, python/subprocess, python/saving-structured-data-with-json]
 sources:
   - url: https://docs.python.org/3.15/whatsnew/3.10.html#optional-encodingwarning-and-encoding-locale-option
