@@ -6001,14 +6001,14 @@ items:
     area: "strings-and-text"
     name: "Strings"
     target: "javascript/strings-and-text/strings"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Strings\", in \"Numbers and strings\")."
   - part: features
     group: "javascript"
     area: "strings-and-text"
     name: "Template literals"
     target: "javascript/strings-and-text/template-literals"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Template literals\", in \"Numbers and strings\")."
   - part: features
     group: "javascript"
