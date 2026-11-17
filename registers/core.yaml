@@ -5420,21 +5420,21 @@ items:
     area: "values-and-types"
     name: "JavaScript data types and data structures"
     target: "javascript/values-and-types/javascript-data-types-and-data-structures"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"JavaScript data types and data structures\")."
   - part: features
     group: "javascript"
     area: "values-and-types"
     name: "Dynamic and weak typing"
     target: "javascript/values-and-types/dynamic-and-weak-typing"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Dynamic and weak typing\", in \"JavaScript data types and data structures\")."
   - part: features
     group: "javascript"
     area: "values-and-types"
     name: "Primitive values"
     target: "javascript/values-and-types/primitive-values"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Primitive values\", in \"JavaScript data types and data structures\")."
   - part: features
     group: "javascript"
@@ -5987,7 +5987,7 @@ items:
     area: "values-and-types"
     name: "Numbers"
     target: "javascript/values-and-types/numbers"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Numbers\", in \"Numbers and strings\")."
   - part: features
     group: "javascript"
