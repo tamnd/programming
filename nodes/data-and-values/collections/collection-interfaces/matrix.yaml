@@ -1,0 +1,18 @@
+kotlin:
+  status: stdlib
+  reason: Kotlin has Iterable, Collection, List, Set and Map, each with a Mutable form. Map does not extend Collection. No example file exists because kotlinc is not installed.
+powershell:
+  status: stdlib
+  reason: PowerShell can use the .NET interfaces, such as IEnumerable and ICollection. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query works on tables, not on collection interfaces.
+regex:
+  status: n/a
+  reason: A regular expression has no collections.
+html:
+  status: n/a
+  reason: HTML has no collections in program code.
+css:
+  status: n/a
+  reason: CSS has no collections in program code.

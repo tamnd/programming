@@ -1,0 +1,18 @@
+kotlin:
+  status: native
+  reason: Kotlin has interfaces and classes with private properties. No example file exists because kotlinc is not installed.
+powershell:
+  status: native
+  reason: PowerShell has classes with hidden members, and modules that export only some functions. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query works on tables and views, not on abstract types in program code.
+regex:
+  status: n/a
+  reason: A regular expression has no types.
+html:
+  status: n/a
+  reason: HTML has no types.
+css:
+  status: n/a
+  reason: CSS has no types.
