@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-naive-datetimes
+tag: W7D4W0
 kind: feature
 owner: python
 slug: naive-datetimes
@@ -18,10 +18,6 @@ sources:
     title: datetime, Basic date and time types, Python 3.15 documentation
     locator: Aware and naive objects; datetime.utcnow(); datetime.timestamp(); Supported operations
     accessed: 2026-11-18
-  - url: https://docs.python.org/3.15/whatsnew/3.12.html#deprecated
-    title: What’s New In Python 3.12
-    locator: Deprecated, datetime
-    accessed: 2026-11-18
   - url: https://docs.python.org/3.15/library/zoneinfo.html
     title: zoneinfo, IANA time zone support, Python 3.15 documentation
     locator: Introduction
@@ -37,6 +33,10 @@ sources:
   - url: https://docs.astral.sh/ruff/rules/call-datetime-without-tzinfo/
     title: call-datetime-without-tzinfo (DTZ001), Ruff documentation
     locator: What it does
+    accessed: 2026-11-18
+  - url: https://docs.python.org/3.15/whatsnew/3.12.html#deprecated
+    title: What’s New In Python 3.12
+    locator: Deprecated, datetime
     accessed: 2026-11-18
 ---
 
@@ -64,15 +64,15 @@ The first `datetime` is naive and the second is aware. The `==` test gives `Fals
 
 **r4.** The documentation gives the fix: "Because naive datetime objects are treated by many datetime methods as local times, it is preferred to use aware datetimes to represent times in UTC. As such, the recommended way to create an object representing the current time in UTC is by calling datetime.now(timezone.utc)."[^1] Example: [`aware-now`](#aware-now).
 
-**r5.** For a named zone, use `zoneinfo`: "The zoneinfo module provides a concrete time zone implementation to support the IANA time zone database".[^3] Store and compute in UTC, and convert to a local zone for display. Example: [`zoneinfo-dst`](#zoneinfo-dst).
+**r5.** For a named zone, use `zoneinfo`: "The zoneinfo module provides a concrete time zone implementation to support the IANA time zone database".[^2] Store and compute in UTC, and convert to a local zone for display. Example: [`zoneinfo-dst`](#zoneinfo-dst).
 
 **r6.** Arithmetic in one zone ignores offset changes. "If both are naive, or both are aware and have the same tzinfo attribute, the tzinfo attributes are ignored, and the result is a timedelta object t such that datetime2 + t == datetime1. No time zone adjustments are done in this case."[^1] So a day in a local zone can be 23 or 25 hours long, and the subtraction still says one day. Example: [`same-zone-math`](#same-zone-math).
 
 **r7.** The linters:
 
-- Ruff DTZ005 "Checks for usages of datetime.datetime.now() that do not specify a timezone."[^4]
-- Ruff DTZ003 "Checks for usage of datetime.datetime.utcnow()."[^5] Its reason: "datetime.datetime.utcnow() returns a naive datetime object; instead, use datetime.datetime.now(tz=...) to create a timezone-aware object."[^5]
-- Ruff DTZ001 "Checks for datetime instantiations that do not specify a timezone."[^6]
+- Ruff DTZ005 "Checks for usages of datetime.datetime.now() that do not specify a timezone."[^3]
+- Ruff DTZ003 "Checks for usage of datetime.datetime.utcnow()."[^4] Its reason: "datetime.datetime.utcnow() returns a naive datetime object; instead, use datetime.datetime.now(tz=...) to create a timezone-aware object."[^4]
+- Ruff DTZ001 "Checks for datetime instantiations that do not specify a timezone."[^5]
 
 ## Examples
 
@@ -120,7 +120,7 @@ One hour later in UTC is two hours later on the clock in New York, because dayli
 > `datetime.UTC` is an "Alias for the UTC time zone singleton datetime.timezone.utc."[^1]
 
 > [!since v="3.12"]
-> "datetime.datetime’s utcnow() and utcfromtimestamp() are deprecated and will be removed in a future version. Instead, use timezone-aware objects to represent datetimes in UTC: respectively, call now() and fromtimestamp() with the tz parameter set to datetime.UTC."[^2] Example: [`utcnow-warns`](#utcnow-warns).
+> "datetime.datetime’s utcnow() and utcfromtimestamp() are deprecated and will be removed in a future version. Instead, use timezone-aware objects to represent datetimes in UTC: respectively, call now() and fromtimestamp() with the tz parameter set to datetime.UTC."[^6] Example: [`utcnow-warns`](#utcnow-warns).
 
 ## Pitfalls
 
@@ -182,7 +182,7 @@ print(caught[0].category.__name__)
 DeprecationWarning
 ```
 
-From Python 3.12, `utcnow` emits a `DeprecationWarning`.[^2]
+From Python 3.12, `utcnow` emits a `DeprecationWarning`.[^6]
 
 ## Comparison
 

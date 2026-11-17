@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-eval-of-untrusted-input
+tag: VP1W49
 kind: feature
 owner: python
 slug: eval-of-untrusted-input
@@ -18,6 +18,10 @@ sources:
     title: Built-in Functions, Python 3.15 documentation
     locator: eval(); exec()
     accessed: 2026-11-18
+  - url: https://cwe.mitre.org/data/definitions/95.html
+    title: CWE-95, Improper Neutralization of Directives in Dynamically Evaluated Code
+    locator: Description
+    accessed: 2026-11-18
   - url: https://docs.python.org/3.15/library/ast.html#ast.literal_eval
     title: ast, Abstract syntax trees, Python 3.15 documentation
     locator: ast.literal_eval()
@@ -29,10 +33,6 @@ sources:
   - url: https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/eval-used.html
     title: eval-used / W0123, Pylint documentation
     locator: Message emitted
-    accessed: 2026-11-18
-  - url: https://cwe.mitre.org/data/definitions/95.html
-    title: CWE-95, Improper Neutralization of Directives in Dynamically Evaluated Code
-    locator: Description
     accessed: 2026-11-18
 ---
 
@@ -58,20 +58,20 @@ The "calculator" also imported a module and read from it. Any text that a user t
 
 **r1.** The documentation of `eval` and `exec` says: "This function executes arbitrary code. Calling it with untrusted user-supplied input will lead to security vulnerabilities."[^1] Example: [`calculator`](#calculator).
 
-**r2.** This is CWE-95. "The product receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before using the input in a dynamic evaluation call (e.g. "eval")."[^5] For the general class of flaw, see [[code-injection]].
+**r2.** This is CWE-95. "The product receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before using the input in a dynamic evaluation call (e.g. "eval")."[^2] For the general class of flaw, see [[code-injection]].
 
 **r3.** A restricted namespace is not a fix. "Overriding __builtins__ can be used to restrict or change the available names, but this is not a security mechanism: the executed code can still access all builtins."[^1] Code can reach classes and functions through the attributes of any object, such as `().__class__`. Example: [`empty-builtins`](#empty-builtins).
 
-**r4.** For Python literals, use `ast.literal_eval`. It accepts "a string containing only a Python literal or container display", made of "strings, bytes, numbers, tuples, lists, dicts, sets, booleans, None and Ellipsis."[^2] "This is specifically designed not to execute Python code, unlike the more general eval(). There is no namespace, no name lookups, or ability to call out."[^2] Example: [`literal-eval`](#literal-eval).
+**r4.** For Python literals, use `ast.literal_eval`. It accepts "a string containing only a Python literal or container display", made of "strings, bytes, numbers, tuples, lists, dicts, sets, booleans, None and Ellipsis."[^3] "This is specifically designed not to execute Python code, unlike the more general eval(). There is no namespace, no name lookups, or ability to call out."[^3] Example: [`literal-eval`](#literal-eval).
 
-**r5.** `ast.literal_eval` is still not free of risk: "A relatively small input can lead to memory exhaustion or to C stack exhaustion, crashing the process."[^2] Limit the length of the input. For data that crosses a network, a format such as JSON with its own parser is often the better choice.
+**r5.** `ast.literal_eval` is still not free of risk: "A relatively small input can lead to memory exhaustion or to C stack exhaustion, crashing the process."[^3] Limit the length of the input. For data that crosses a network, a format such as JSON with its own parser is often the better choice.
 
 **r6.** For a small expression language, parse with `ast.parse(text, mode="eval")` and walk the tree. Accept only the node types and operators on an allow list, and compute the result yourself. Nothing in the text runs. Example: [`allow-list`](#allow-list).
 
 **r7.** The linters:
 
-- Ruff S307 "Checks for uses of the builtin eval() function."[^3] Its reason: "The eval() function is insecure as it enables arbitrary code execution."[^3]
-- Pylint W0123 `eval-used` has the message "Use of eval".[^4]
+- Ruff S307 "Checks for uses of the builtin eval() function."[^4] Its reason: "The eval() function is insecure as it enables arbitrary code execution."[^4]
+- Pylint W0123 `eval-used` has the message "Use of eval".[^5]
 
 ## Examples
 

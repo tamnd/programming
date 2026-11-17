@@ -1285,3 +1285,9 @@ PY0RER call-stack
 SJGB98 stack-frame
 1J4BHR stack-overflow-error
 T638CX process-memory-layout
+BBP77R python/asyncio-traps
+VP1W49 python/eval-of-untrusted-input
+HWYW0D python/implicit-text-encoding
+W7D4W0 python/naive-datetimes
+G637BG python/pickle-of-untrusted-data
+3BD228 python/shell-true-injection

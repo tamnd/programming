@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-implicit-text-encoding
+tag: HWYW0D
 kind: feature
 owner: python
 slug: implicit-text-encoding
@@ -14,29 +14,25 @@ spec: {standard: null, url: "https://docs.python.org/3.15/library/io.html#text-e
 proposals: [PEP 597, PEP 686]
 see_also: [python/reading-and-writing-files, python/text-and-binary-io, python/encoding-and-decoding, python/unicode-in-python, python/development-mode-and-x-options, python/warnings, python/subprocess, python/saving-structured-data-with-json]
 sources:
-  - url: https://docs.python.org/3.15/library/functions.html#open
-    title: Built-in Functions, Python 3.15 documentation
-    locator: open()
-    accessed: 2026-11-18
-  - url: https://docs.python.org/3.15/library/io.html#text-encoding
-    title: io, Core tools for working with streams, Python 3.15 documentation
-    locator: Text Encoding; Opt-in EncodingWarning; io.text_encoding()
-    accessed: 2026-11-18
   - url: https://docs.python.org/3.15/whatsnew/3.10.html#optional-encodingwarning-and-encoding-locale-option
     title: What’s New In Python 3.10
     locator: Optional EncodingWarning and encoding="locale" option
     accessed: 2026-11-18
-  - url: https://docs.python.org/3.15/whatsnew/3.15.html
-    title: What’s New In Python 3.15
-    locator: "PEP 686: Python now uses UTF-8 as the default encoding"
+  - url: https://peps.python.org/pep-0597/
+    title: PEP 597, Add optional EncodingWarning
+    locator: Motivation
+    accessed: 2026-11-18
+  - url: https://docs.python.org/3.15/library/functions.html#open
+    title: Built-in Functions, Python 3.15 documentation
+    locator: open()
     accessed: 2026-11-18
   - url: https://docs.python.org/3.15/library/os.html#python-utf-8-mode
     title: os, Miscellaneous operating system interfaces, Python 3.15 documentation
     locator: Python UTF-8 Mode
     accessed: 2026-11-18
-  - url: https://peps.python.org/pep-0597/
-    title: PEP 597, Add optional EncodingWarning
-    locator: Motivation
+  - url: https://docs.python.org/3.15/library/io.html#text-encoding
+    title: io, Core tools for working with streams, Python 3.15 documentation
+    locator: Text Encoding; Opt-in EncodingWarning; io.text_encoding()
     accessed: 2026-11-18
   - url: https://docs.astral.sh/ruff/rules/unspecified-encoding/
     title: unspecified-encoding (PLW1514), Ruff documentation
@@ -45,6 +41,10 @@ sources:
   - url: https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/unspecified-encoding.html
     title: unspecified-encoding / W1514, Pylint documentation
     locator: Message emitted; Description
+    accessed: 2026-11-18
+  - url: https://docs.python.org/3.15/whatsnew/3.15.html
+    title: What’s New In Python 3.15
+    locator: "PEP 686: Python now uses UTF-8 as the default encoding"
     accessed: 2026-11-18
 ---
 
@@ -74,22 +74,22 @@ The first read decodes UTF-8 bytes with a Windows code page, which is what an `o
 
 ## Semantics
 
-**r1.** Before Python 3.15, "The default encoding of TextIOWrapper and open() is platform and locale dependent. Since UTF-8 is used on most Unix platforms, omitting encoding option when opening UTF-8 files (e.g. JSON, YAML, TOML, Markdown) is a very common bug."[^3] The code works on one computer and gives wrong text or an error on another. Example: [`wrong-codec`](#wrong-codec).
+**r1.** Before Python 3.15, "The default encoding of TextIOWrapper and open() is platform and locale dependent. Since UTF-8 is used on most Unix platforms, omitting encoding option when opening UTF-8 files (e.g. JSON, YAML, TOML, Markdown) is a very common bug."[^1] The code works on one computer and gives wrong text or an error on another. Example: [`wrong-codec`](#wrong-codec).
 
-**r2.** PEP 597 gives a case: "using long_description = open("README.md").read() in setup.py is a common mistake. Many Windows users cannot install such packages if there is at least one non-ASCII character (e.g. emoji, author names, copyright symbols, and the like) in their UTF-8-encoded README.md file."[^6]
+**r2.** PEP 597 gives a case: "using long_description = open("README.md").read() in setup.py is a common mistake. Many Windows users cannot install such packages if there is at least one non-ASCII character (e.g. emoji, author names, copyright symbols, and the like) in their UTF-8-encoded README.md file."[^2]
 
-**r3.** In Python 3.15, the default is UTF-8: "The default encoding is UTF-8; if Python UTF-8 Mode is disabled, the default is platform-dependent (whatever locale.getencoding() returns)."[^1] The mode can still be turned off: "It may be disabled by setting PYTHONUTF8=0 as an environment variable or by using the -X utf8=0 command line option."[^5] So code with no encoding still depends on how Python starts. Example: [`text-encoding`](#text-encoding).
+**r3.** In Python 3.15, the default is UTF-8: "The default encoding is UTF-8; if Python UTF-8 Mode is disabled, the default is platform-dependent (whatever locale.getencoding() returns)."[^3] The mode can still be turned off: "It may be disabled by setting PYTHONUTF8=0 as an environment variable or by using the -X utf8=0 command line option."[^4] So code with no encoding still depends on how Python starts. Example: [`text-encoding`](#text-encoding).
 
-**r4.** The fix is to name the encoding. Use `encoding="utf-8"` for files that the program owns, and for formats such as JSON. When the locale encoding is the intent, "encoding="locale" specifies the current locale encoding explicitly."[^1] For bytes with no fixed text encoding, open the file in binary mode, with `"rb"`.
+**r4.** The fix is to name the encoding. Use `encoding='utf-8'` for files that the program owns, and for formats such as JSON. When the locale encoding is the intent, the documentation says that `encoding='locale'` "specifies the current locale encoding explicitly."[^3] For bytes with no fixed text encoding, open the file in binary mode, with `"rb"`.
 
-**r5.** The warning finds the calls. "To find where the default encoding is used, you can enable the -X warn_default_encoding command line option or set the PYTHONWARNDEFAULTENCODING environment variable, which will emit an EncodingWarning when the default encoding is used."[^2] Example: [`find-with-warning`](#find-with-warning).
+**r5.** The warning finds the calls. "To find where the default encoding is used, you can enable the -X warn_default_encoding command line option or set the PYTHONWARNDEFAULTENCODING environment variable, which will emit an EncodingWarning when the default encoding is used."[^5] Example: [`find-with-warning`](#find-with-warning).
 
-**r6.** A library function that takes `encoding=None` and passes it to `open` can call `io.text_encoding`, so that the warning points at the caller. The function "returns encoding if it is not None. Otherwise, it returns "locale" or "utf-8" depending on UTF-8 Mode."[^2] The documentation adds: "please consider using UTF-8 by default (i.e. encoding="utf-8") for new APIs."[^2]
+**r6.** A library function that takes `encoding=None` and passes it to `open` can call `io.text_encoding`, so that the warning points at the caller. The function "returns encoding if it is not None. Otherwise, it returns "locale" or "utf-8" depending on UTF-8 Mode."[^5] The documentation adds: "please consider using UTF-8 by default (i.e. encoding="utf-8") for new APIs."[^5]
 
 **r7.** The linters:
 
-- Ruff PLW1514 "Checks for uses of open and related calls without an explicit encoding argument."[^7] Its reason: "Using open in text mode without an explicit encoding can lead to non-portable code, with differing behavior across platforms."[^7]
-- Pylint W1514 `unspecified-encoding` has the message "Using open without explicitly specifying an encoding".[^8]
+- Ruff PLW1514 "Checks for uses of open and related calls without an explicit encoding argument."[^6] Its reason: "Using open in text mode without an explicit encoding can lead to non-portable code, with differing behavior across platforms."[^6]
+- Pylint W1514 `unspecified-encoding` has the message "Using open without explicitly specifying an encoding".[^7]
 
 ## Examples
 
@@ -139,10 +139,10 @@ The default of `open` depends on the UTF-8 Mode, and the mode depends on how Pyt
 ## Versions
 
 > [!since v="3.10"]
-> `encoding="locale"` and `EncodingWarning` are new. The warning "is emitted when sys.flags.warn_default_encoding is true and locale-specific default encoding is used."[^3]
+> `encoding='locale'` and `EncodingWarning` are new. The warning "is emitted when sys.flags.warn_default_encoding is true and locale-specific default encoding is used."[^1]
 
 > [!since v="3.15"]
-> "Python now uses UTF-8 as the default encoding, independent of the system’s environment. This means that I/O operations without an explicit encoding, for example, open('flying-circus.txt'), will use UTF-8."[^4]
+> "Python now uses UTF-8 as the default encoding, independent of the system’s environment. This means that I/O operations without an explicit encoding, for example, open('flying-circus.txt'), will use UTF-8."[^8]
 
 ## Pitfalls
 
@@ -158,7 +158,7 @@ with tempfile.TemporaryDirectory() as folder:
         print(f.read())
 ```
 
-A file that an older program wrote in a locale encoding is not valid UTF-8. With the UTF-8 default of Python 3.15, or with `encoding="utf-8"`, the read raises `UnicodeDecodeError`. Name the encoding that the file really has, here `encoding="cp1252"` (rule r4).
+A file that an older program wrote in a locale encoding is not valid UTF-8. With the UTF-8 default of Python 3.15, or with `encoding='utf-8'`, the read raises `UnicodeDecodeError`. Name the encoding that the file really has, here `encoding='cp1252'` (rule r4).
 
 ```python run id=bytes-for-unknown
 import pathlib

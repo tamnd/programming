@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-asyncio-traps
+tag: BBP77R
 kind: feature
 owner: python
 slug: asyncio-traps

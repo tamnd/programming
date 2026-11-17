@@ -1,5 +1,5 @@
 ---
-tag: NEW-python-shell-true-injection
+tag: 3BD228
 kind: feature
 owner: python
 slug: shell-true-injection
@@ -18,6 +18,10 @@ sources:
     title: subprocess, Subprocess management, Python 3.15 documentation
     locator: Frequently Used Arguments; Popen Constructor; Security Considerations
     accessed: 2026-11-18
+  - url: https://cwe.mitre.org/data/definitions/78.html
+    title: CWE-78, Improper Neutralization of Special Elements used in an OS Command
+    locator: Description
+    accessed: 2026-11-18
   - url: https://docs.python.org/3.15/library/shlex.html#shlex.quote
     title: shlex, Simple lexical analysis, Python 3.15 documentation
     locator: shlex.quote()
@@ -29,10 +33,6 @@ sources:
   - url: https://docs.astral.sh/ruff/rules/subprocess-popen-with-shell-equals-true/
     title: subprocess-popen-with-shell-equals-true (S602), Ruff documentation
     locator: What it does; Why is this bad?
-    accessed: 2026-11-18
-  - url: https://cwe.mitre.org/data/definitions/78.html
-    title: CWE-78, Improper Neutralization of Special Elements used in an OS Command
-    locator: Description
     accessed: 2026-11-18
 ---
 
@@ -68,15 +68,15 @@ The shell read the `;` in the name as the end of one command and ran a second co
 
 **r3.** The responsibility then moves to the program: "If the shell is invoked explicitly, via shell=True, it is the application’s responsibility to ensure that all whitespace and metacharacters are quoted appropriately to avoid shell injection vulnerabilities."[^1]
 
-**r4.** This is CWE-78: "The product constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command before it is sent to a downstream component."[^5] For the general class of flaw, see [[os-command-injection]].
+**r4.** This is CWE-78: "The product constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command before it is sent to a downstream component."[^2] For the general class of flaw, see [[os-command-injection]].
 
 **r5.** Fix 1, pass a list and no shell. "Unless otherwise stated, it is recommended to pass args as a sequence."[^1] Each item reaches the program as one argument, so a `;` in a name is only a character. Example: [`list-args`](#list-args).
 
-**r6.** Fix 2, when a shell is needed, quote each part from outside with `shlex.quote`. The documentation shows the hole and the fix: "quote() lets you plug the security hole".[^2] But "The shlex module is only designed for Unix shells."[^2] and "Executing commands quoted by this module on such shells can open up the possibility of a command injection vulnerability."[^2] It advises: "Consider using functions that pass command arguments with lists such as subprocess.run() with shell=False."[^2] Example: [`quoted`](#quoted).
+**r6.** Fix 2, when a shell is needed, quote each part from outside with `shlex.quote`. The documentation shows the hole and the fix: "quote() lets you plug the security hole".[^3] But "The shlex module is only designed for Unix shells."[^3] and "Executing commands quoted by this module on such shells can open up the possibility of a command injection vulnerability."[^3] It advises: "Consider using functions that pass command arguments with lists such as subprocess.run() with shell=False."[^3] Example: [`quoted`](#quoted).
 
-**r7.** Other calls also use a shell. `os.system` will "Execute the command (a string) in a subshell."[^3] A list such as `["sh", "-c", text]` also gives the text to a shell. Example: [`sh-c`](#sh-c).
+**r7.** Other calls also use a shell. `os.system` will "Execute the command (a string) in a subshell."[^4] A list such as `["sh", "-c", text]` also gives the text to a shell. Example: [`sh-c`](#sh-c).
 
-**r8.** Ruff S602 checks "for method calls that initiate a subprocess with a shell."[^4] Its reason: "Starting a subprocess with a shell can allow attackers to execute arbitrary shell commands."[^4]
+**r8.** Ruff S602 checks "for method calls that initiate a subprocess with a shell."[^5] Its reason: "Starting a subprocess with a shell can allow attackers to execute arbitrary shell commands."[^5]
 
 ## Examples
 
@@ -120,7 +120,10 @@ The quoted name is one word for a Unix shell (rule r6).
 
 ## Versions
 
-The rules are the same in all Python 3 versions. `shlex.quote` is in the module since Python 3.3.[^2]
+The rules are the same in all Python 3 versions.
+
+> [!since v="3.3"]
+> `shlex.quote` is added to the `shlex` module.[^3]
 
 ## Pitfalls
 
