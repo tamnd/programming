@@ -45,6 +45,18 @@ sources:
     title: Node-API
     locator: introduction; Implications of ABI stability
     accessed: 2026-11-17
+  - url: https://docs.python.org/3/c-api/list.html
+    title: List Objects
+    locator: PyList_GetItemRef; PyList_GetItem; PyList_GET_ITEM
+    accessed: 2026-11-18
+  - url: https://docs.python.org/3/c-api/refcounting.html
+    title: Reference Counting
+    locator: Py_IncRef; Py_DecRef
+    accessed: 2026-11-18
+  - url: https://docs.python.org/3/howto/free-threading-python.html
+    title: Python support for free threading
+    locator: Identifying free-threaded Python
+    accessed: 2026-11-18
 ---
 
 ## Synopsis
@@ -80,9 +92,9 @@ The limited API is a subset of the Python C API. The stable ABI is the promise t
 
 **r3.** To use the limited API, define `Py_LIMITED_API` (for abi3) or `Py_TARGET_ABI3T` (for abi3t). Define it "to the lowest Python version your extension should support, in Py_PACK_VERSION format."[^1] "The macros must be defined before including Python.h."[^1] The value for Python 3.13 is `0x30d0000`, and the value for 3.15 is `0x30f0000`.[^1] "When one of the macros is defined, Python.h will only expose API that is compatible with the given Stable ABI".[^1] An older form is the value 3: it "works the same as 0x03020000 (Python 3.2, the version that introduced Stable ABI)."[^1] Example: [`exported`](#exported).
 
-**r4.** "Each Stable ABI is versioned using the first two numbers of the Python version."[^1] "An extension compiled for Stable ABI 3.x is ABI-compatible with Python 3.x and above."[^1] The promise is for one major version: "It will not necessarily be compatible with CPython 4.0".[^2] The run-time version is in `Py_Version`, which is in the stable ABI from Python 3.11 on.[^7]
+**r4.** "Each Stable ABI is versioned using the first two numbers of the Python version."[^1] "An extension compiled for Stable ABI 3.x is ABI-compatible with Python 3.x and above."[^1] The promise is for one major version: "It will not necessarily be compatible with CPython 4.0".[^2] The run-time version is in `Py_Version`, which is in the stable ABI from Python 3.11 on.[^7] It uses the encoding of `Py_PACK_FULL_VERSION`, with 8 bits each for the major, minor and micro numbers, 4 bits for the release level and 4 bits for the serial. The documentation uses 3.4.1a2 as its example, and gives the levels "0xA for alpha, 0xB for beta, 0xC for release candidate or 0xF for final."[^7] Example: [`hexversion`](#hexversion).
 
-**r5.** The limited API leaves out the parts of the C API that depend on the layout of a structure. "For example, while PyList_GetItem() is available, its “unsafe” macro variant PyList_GET_ITEM() is not. The macro can be faster because it can rely on version-specific implementation details of the list object."[^1] "Compiling for Stable ABI disables this inlining, allowing stability as Python’s data structures are improved, but possibly reducing performance."[^1] "All functions in Stable ABI are present as functions in Python’s shared library, not solely as macros. This makes them usable in languages that don’t use the C preprocessor, including Python’s ctypes."[^1] Example: [`exported`](#exported).
+**r5.** The limited API leaves out the parts of the C API that depend on the layout of a structure. "For example, while PyList_GetItem() is available, its “unsafe” macro variant PyList_GET_ITEM() is not. The macro can be faster because it can rely on version-specific implementation details of the list object."[^1] "Compiling for Stable ABI disables this inlining, allowing stability as Python’s data structures are improved, but possibly reducing performance."[^1] "All functions in Stable ABI are present as functions in Python’s shared library, not solely as macros. This makes them usable in languages that don’t use the C preprocessor, including Python’s ctypes."[^1] For example, `Py_IncRef` is "A function version of Py_XINCREF()", and "It can be used for runtime dynamic embedding of Python."[^10] The function form also checks its arguments. `PyList_GetItem` sets an `IndexError` when the index is out of bounds, and `PyList_GET_ITEM` is "Similar to PyList_GetItem(), but without error checking."[^9] Examples: [`exported`](#exported), [`incref`](#incref), [`range`](#range).
 
 **r6.** The file name and the wheel tag tell which ABI a binary uses. "On some platforms, Python will look for and load shared library files named with the abi3 or abi3t tag (for example, mymodule.abi3.so)."[^1] "On Windows, extensions that use a Stable ABI should be linked against python3.dll rather than a version-specific library such as python39.dll."[^1] For wheels, "The CPython stable ABI is abi3 as in the shared library suffix."[^6] The Python tag of an abi3 wheel gives the lowest version, so a wheel tagged `cp311-abi3` installs on 3.11 and later. Example: [`tags`](#tags).
 
@@ -90,9 +102,9 @@ The limited API is a subset of the Python C API. The stable ABI is the promise t
 
 **r8.** The stable ABI keeps the binary interface, not the behavior. "Note that compiling for Stable ABI is not a complete guarantee that code will be compatible with the expected Python versions."[^1] "For these reasons, we recommend testing an extension with all minor Python versions it supports."[^1] Also, "the same source will not necessarily compile with Py_LIMITED_API set to 3.12", and "parts of the Limited API may be deprecated and removed, provided that Stable ABI stays stable."[^1]
 
-**r9.** The free-threaded build had no stable ABI before 3.15. "Extensions built for GIL-enabled builds of CPython will fail to load (or crash) on free-threaded builds."[^4] PEP 803 adds abi3t: it "will be based on the existing Stable ABI (abi3), but make the PyObject structure opaque."[^4] With an opaque `PyObject`, "Expressions such as sizeof(PyObject) will no longer work."[^4] The source changes are "Switching to API introduced in PEP 697 (Python 3.12), such as negative basicsize and PyObject_GetTypeData(), rather than making PyObject part of the instance struct" and "Switching from a PyInit_ function to a new export hook, PyModExport_*".[^5] A wheel for both builds uses the compressed tag `abi3.abi3t`: "a wheel tagged cp315-abi3.abi3t will be compatible with 3.15, 3.16, and later versions".[^4]
+**r9.** The free-threaded build had no stable ABI before 3.15. "Extensions built for GIL-enabled builds of CPython will fail to load (or crash) on free-threaded builds."[^4] PEP 803 adds abi3t: it "will be based on the existing Stable ABI (abi3), but make the PyObject structure opaque."[^4] With an opaque `PyObject`, "Expressions such as sizeof(PyObject) will no longer work."[^4] The source changes are "Switching to API introduced in PEP 697 (Python 3.12), such as negative basicsize and PyObject_GetTypeData(), rather than making PyObject part of the instance struct" and "Switching from a PyInit_ function to a new export hook, PyModExport_*".[^5] A build script can ask if the current Python is a free-threaded build: "The sysconfig.get_config_var("Py_GIL_DISABLED") configuration variable can be used to determine whether the build supports free threading."[^11] Example: [`build`](#build). A wheel for both builds uses the compressed tag `abi3.abi3t`: "a wheel tagged cp315-abi3.abi3t will be compatible with 3.15, 3.16, and later versions".[^4]
 
-**r10.** PEP 384 defined the stable ABI in 2009 for Python 3.2.[^3] Its reason was: "The primary source of ABI incompatibility are changes to the lay-out of in-memory structures."[^3] PEP 652, for Python 3.10, says that the limited API and the stable ABI "will be formalized in a single definitive file, tested, and documented."[^2]
+**r10.** PEP 384 defined the stable ABI in 2009 for Python 3.2.[^3] Its reason was: "The primary source of ABI incompatibility are changes to the lay-out of in-memory structures."[^3] A binary that reads a field at a fixed offset reads the wrong field when a new version adds a field before it. A binary that calls a function of the library does not depend on the layout. Examples: [`layout`](#layout), [`stale`](#stale), [`opaque`](#opaque). PEP 652, for Python 3.10, says that the limited API and the stable ABI "will be formalized in a single definitive file, tested, and documented."[^2]
 
 ## Examples
 
@@ -133,11 +145,7 @@ PyInit_spam(void)
 }
 ```
 
-Compile it one time with the headers of Python 3.13, and name the result `spam.abi3.so`:
-
-```sh norun reason=platform
-cc -shared -fPIC -O2 -I"$(python3.13 -c 'import sysconfig; print(sysconfig.get_path("include"))')" spam.c -o spam.abi3.so
-```
+Compile it one time with the headers of Python 3.13, which are in the directory that `sysconfig.get_path('include')` gives for that version. Use the options `-shared -fPIC`, and name the result `spam.abi3.so`.
 
 On Linux, the same file then imports on CPython 3.13, 3.14 and 3.15, because `.abi3.so` is in the list `importlib.machinery.EXTENSION_SUFFIXES` of each version (rule r6). Python 3.15 also has `.abi3t.so` in the list. On Python 3.12, the import fails with `SystemError: module spam uses unknown slot ID 4`, because Python 3.13 added the slot `Py_mod_gil`. The file is for 3.13 and later only, and nothing stops a user from putting it on 3.12 (rule r7).
 
@@ -175,6 +183,169 @@ cp315-abi3.abi3t 3.15t True
 
 The model is simple. A real installer makes the full list of the tags that the interpreter supports, in order of preference, and picks the first wheel that matches.[^6]
 
+This model packs a version in the format of `Py_PACK_FULL_VERSION` (rule r4). The result for the documentation's example 3.4.1a2 is `0x30401a2`, and the result for the running interpreter is equal to `sys.hexversion`:
+
+```python run id=hexversion
+import sys
+
+LEVELS = {'alpha': 0xA, 'beta': 0xB, 'candidate': 0xC, 'final': 0xF}
+
+
+def pack_full(major, minor, micro, level, serial):
+    return (major << 24) | (minor << 16) | (micro << 8) | (level << 4) | serial
+
+
+v = sys.version_info
+print(hex(pack_full(3, 4, 1, 0xA, 2)))
+print(pack_full(v.major, v.minor, v.micro, LEVELS[v.releaselevel], v.serial) == sys.hexversion)
+```
+
+```output for=hexversion
+0x30401a2
+True
+```
+
+`Py_IncRef` and `Py_DecRef` are functions in the library, so `ctypes` can call them. `Py_INCREF` is a macro, and the library does not export it (rule r5):
+
+```python run id=incref
+import ctypes
+import sys
+
+api = ctypes.pythonapi
+api.Py_IncRef.argtypes = [ctypes.py_object]
+api.Py_DecRef.argtypes = [ctypes.py_object]
+
+item = object()
+before = sys.getrefcount(item)
+api.Py_IncRef(item)
+print(sys.getrefcount(item) - before)
+api.Py_DecRef(item)
+print(sys.getrefcount(item) - before)
+print(hasattr(api, 'Py_IncRef'), hasattr(api, 'Py_INCREF'))
+```
+
+```output for=incref
+1
+0
+True False
+```
+
+The function `PyList_GetItem` checks the index. Index 1 gives the address of the item, and index 5 sets an `IndexError`, which `ctypes.pythonapi` raises (rule r5). The macro `PyList_GET_ITEM` does no check:
+
+```python fails expect=exception:IndexError id=range
+import ctypes
+
+api = ctypes.pythonapi
+api.PyList_GetItem.restype = ctypes.c_void_p
+api.PyList_GetItem.argtypes = [ctypes.py_object, ctypes.c_ssize_t]
+
+items = ['first', 'second']
+print(api.PyList_GetItem(items, 1) == id(items[1]))
+api.PyList_GetItem(items, 5)
+```
+
+A build script picks the ABI tag from the build configuration (rule r9). The interpreter of this site has the GIL, so it needs `abi3`:
+
+```python run id=build
+import sysconfig
+
+free_threaded = bool(sysconfig.get_config_var('Py_GIL_DISABLED'))
+print(free_threaded)
+print('abi3t' if free_threaded else 'abi3')
+```
+
+```output for=build
+False
+abi3
+```
+
+The next three C programs show the reason for the stable ABI (rule r10). Version 2 of a structure adds the field `y`, so the field `count` moves:
+
+```c run id=layout
+#include <stddef.h>
+#include <stdio.h>
+
+struct point_v1 { long x; long count; };
+struct point_v2 { long x; long y; long count; };
+
+int
+main(void)
+{
+    printf("count at byte %zu in version 1\n", offsetof(struct point_v1, count));
+    printf("count at byte %zu in version 2\n", offsetof(struct point_v2, count));
+    return 0;
+}
+```
+
+```output for=layout
+count at byte 8 in version 1
+count at byte 16 in version 2
+```
+
+Code that was compiled with version 1 reads the bytes of a version 2 object at the old offset. It gets the value of `y`, which is 2, and not the value of `count`, which is 3. Nothing reports an error:
+
+```c wrong id=stale
+#include <stdio.h>
+#include <string.h>
+
+struct point_v1 { long x; long count; };   /* the layout at build time */
+struct point_v2 { long x; long y; long count; };   /* the layout at run time */
+
+static long
+count_built_for_v1(const void *object)
+{
+    struct point_v1 view;
+    memcpy(&view, object, sizeof view);
+    return view.count;
+}
+
+int
+main(void)
+{
+    struct point_v2 object = {1, 2, 3};
+    printf("count = %ld\n", count_built_for_v1(&object));
+    return 0;
+}
+```
+
+```output for=stale
+count = 2
+```
+
+When the extension calls a function of the library to read the field, only the library uses the layout. The extension gets the correct value with each version of the library. This is how the limited API works: the extension calls `PyList_GetItem`, and only the library knows the layout of a list (rule r5):
+
+```c run id=opaque
+#include <stdio.h>
+
+/* The library. Only the library knows the fields. */
+struct point { long x; long y; long count; };
+
+long
+point_count(const struct point *p)
+{
+    return p->count;
+}
+
+/* The extension. It uses only the function. */
+static long
+count_from_extension(const struct point *p)
+{
+    return point_count(p);
+}
+
+int
+main(void)
+{
+    struct point object = {1, 2, 3};
+    printf("count = %ld\n", count_from_extension(&object));
+    return 0;
+}
+```
+
+```output for=opaque
+count = 3
+```
+
 ## Pitfalls
 
 Set `Py_LIMITED_API` to the lowest version that you support, not to the version of the headers that you build with. The documentation says: "Typically, you should choose a specific value rather than the version of the Python headers you are compiling against."[^1]
@@ -201,3 +372,6 @@ Node.js has a similar layer for native add-ons. "This API will be Application Bi
 [^6]: [Platform compatibility tags](https://packaging.python.org/en/latest/specifications/platform-compatibility-tags/)
 [^7]: [API and ABI Versioning](https://docs.python.org/3/c-api/apiabiversion.html)
 [^8]: [Node-API](https://nodejs.org/api/n-api.html)
+[^9]: [List Objects](https://docs.python.org/3/c-api/list.html)
+[^10]: [Reference Counting](https://docs.python.org/3/c-api/refcounting.html)
+[^11]: [Python support for free threading](https://docs.python.org/3/howto/free-threading-python.html)
