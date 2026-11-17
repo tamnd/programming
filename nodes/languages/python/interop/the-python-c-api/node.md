@@ -93,13 +93,13 @@ The Python C API is the set of C functions, macros and types that CPython gives 
 
 **r1.** Most C API functions take and give `PyObject *`. "This type is a pointer to an opaque data type representing an arbitrary Python object."[^1] "All Python objects (even Python integers) have a type and a reference count."[^1] In a release build, the `PyObject` structure contains "only the object’s reference count and a pointer to the corresponding type object."[^2] "The members must not be accessed directly"; the C code uses macros such as `Py_REFCNT` and `Py_TYPE`.[^2] In CPython, `id()` gives the same pointer: "This is the address of the object in memory."[^9] Example: [`address`](#address).
 
-**r2.** "Ownership pertains to references, never to objects (objects are not owned: they are always shared)."[^1] To own a reference "means being responsible for calling Py_DECREF on it when the reference is no longer needed."[^1] "When a function passes ownership of a reference on to its caller, the caller is said to receive a new reference. When no ownership is transferred, the caller is said to borrow the reference. Nothing needs to be done for a borrowed reference."[^1] The documentation of each function tells which kind of reference it returns. For `PyList_GetItem` it says "Return value: Borrowed reference."[^3]
+**r2.** "Ownership pertains to references, never to objects (objects are not owned: they are always shared)."[^1] To own a reference "means being responsible for calling Py_DECREF on it when the reference is no longer needed."[^1] "When a function passes ownership of a reference on to its caller, the caller is said to receive a new reference. When no ownership is transferred, the caller is said to borrow the reference. Nothing needs to be done for a borrowed reference."[^1] Example: [`refmodel`](#refmodel). The documentation of each function tells which kind of reference it returns. For `PyList_GetItem` it says "Return value: Borrowed reference."[^3]
 
-**r3.** "Stealing a reference means that when you pass a reference to a function, that function assumes that it now owns that reference."[^1] "Few functions steal references; the two notable exceptions are PyList_SetItem() and PyTuple_SetItem()".[^1] `PyList_SetItem` steals the reference to the item "even on error."[^3] To keep an object that you give to such a function, take one more reference first. Example: [`steal`](#steal).
+**r3.** "Stealing a reference means that when you pass a reference to a function, that function assumes that it now owns that reference."[^1] "Few functions steal references; the two notable exceptions are PyList_SetItem() and PyTuple_SetItem()".[^1] `PyList_SetItem` steals the reference to the item "even on error."[^3] To keep an object that you give to such a function, take one more reference first. Examples: [`steal`](#steal), [`setitem`](#setitem).
 
-**r4.** A borrowed reference is safe only while another reference keeps the object alive. "However, a common pitfall is to extract an object from a list and hold on to it for a while without taking a new reference."[^1] "The real danger is that innocent-looking operations may invoke arbitrary Python code which could do this".[^1] The generic functions, whose names start with `PyObject_`, `PyNumber_`, `PySequence_` or `PyMapping_`, "always create a new strong reference (i.e. increment the reference count) of the object they return."[^1]
+**r4.** A borrowed reference is safe only while another reference keeps the object alive. "However, a common pitfall is to extract an object from a list and hold on to it for a while without taking a new reference."[^1] "The real danger is that innocent-looking operations may invoke arbitrary Python code which could do this".[^1] The generic functions, whose names start with `PyObject_`, `PyNumber_`, `PySequence_` or `PyMapping_`, "always create a new strong reference (i.e. increment the reference count) of the object they return."[^1] Example: [`newref`](#newref).
 
-**r5.** "For C programmers, however, error checking always has to be explicit."[^1] "In general, when a function encounters an error, it sets an exception, discards any object references that it owns, and returns an error indicator. If not documented otherwise, this indicator is either NULL or -1, depending on the function’s return type."[^1] A function that gets an error value from a call returns an error value too, so the error goes up to the caller. "Once the error reaches the Python interpreter’s main loop, this aborts the currently executing Python code and tries to find an exception handler specified by the Python programmer."[^13] Example: [`errors`](#errors).
+**r5.** "For C programmers, however, error checking always has to be explicit."[^1] "In general, when a function encounters an error, it sets an exception, discards any object references that it owns, and returns an error indicator. If not documented otherwise, this indicator is either NULL or -1, depending on the function’s return type."[^1] A function that gets an error value from a call returns an error value too, so the error goes up to the caller. "Once the error reaches the Python interpreter’s main loop, this aborts the currently executing Python code and tries to find an exception handler specified by the Python programmer."[^13] Examples: [`errors`](#errors), [`seterror`](#seterror).
 
 **r6.** On a build with the GIL, "only a thread that holds the GIL may operate on Python objects or invoke Python’s C API."[^4] The C code releases the lock around slow work that does not touch objects, with the macros `Py_BEGIN_ALLOW_THREADS` and `Py_END_ALLOW_THREADS`.[^4] On the free-threaded build there is no GIL, but "it is still required to have an attached thread state, as the interpreter needs to keep track of which threads may access Python objects."[^4] Example: [`gil`](#gil).
 
@@ -111,7 +111,7 @@ The Python C API is the set of C functions, macros and types that CPython gives 
 
 ## Examples
 
-This C function shows the rules r2, r4 and r5. It returns the first item of a list in upper case:
+These two C functions show the rules r2, r4, r5 and r6. The first one returns the first item of a list in upper case. The second one reads bytes from a file:
 
 ```c norun reason=fragment
 static PyObject *
@@ -126,9 +126,22 @@ first_upper(PyObject *self, PyObject *list)
     Py_DECREF(item);
     return result;                              /* the caller owns the result */
 }
+
+static PyObject *
+read_bytes(int fd, char *buffer, size_t size)
+{
+    ssize_t n;
+    Py_BEGIN_ALLOW_THREADS
+    n = read(fd, buffer, size);                 /* no Python objects here */
+    Py_END_ALLOW_THREADS
+    if (n < 0) {
+        return PyErr_SetFromErrno(PyExc_OSError);
+    }
+    return PyBytes_FromStringAndSize(buffer, n);
+}
 ```
 
-The reference from `PyList_GetItem` is borrowed, so the function takes its own reference before it calls Python code. The result of `PyObject_CallMethod` is a new reference, and the function gives it to its caller. If a call fails, the function returns `NULL` and the exception stays set.
+The reference from `PyList_GetItem` is borrowed, so the function takes its own reference before it calls Python code. The result of `PyObject_CallMethod` is a new reference, and the function gives it to its caller. If a call fails, the function returns `NULL` and the exception stays set. The function `read_bytes` releases the GIL while it waits for the file, and it does not touch a Python object between the two macros (rule r6).
 
 `ctypes.pythonapi` calls the same functions from Python. Its functions are "assumed to return C int, which is of course not always the truth, so you have to assign the correct restype attribute to use these functions."[^8] The type `ctypes.py_object` makes a Python object from the result and takes ownership of the reference, so use it only for a function that returns a new reference.
 
@@ -184,19 +197,6 @@ TypeError
 OverflowError
 ```
 
-The C code below releases the GIL while it waits for a file. It does not touch a Python object between the two macros (rule r6):
-
-```c norun reason=fragment
-ssize_t n;
-Py_BEGIN_ALLOW_THREADS
-n = read(fd, buffer, size);
-Py_END_ALLOW_THREADS
-if (n < 0) {
-    return PyErr_SetFromErrno(PyExc_OSError);
-}
-return PyBytes_FromStringAndSize(buffer, n);
-```
-
 `ctypes` shows the same two cases. For a `CDLL`, "The Python global interpreter lock is released before calling any function exported by these libraries, and reacquired afterwards."[^8] For a `PyDLL`, "the Python GIL is not released during the function call".[^8] `PyGILState_Check` returns 1 when the thread holds the GIL:
 
 ```python run id=gil
@@ -213,6 +213,143 @@ PyDLL call holds the GIL: 1
 CDLL call holds the GIL: 0
 ```
 
+`PyList_SetItem` steals the reference even when it fails (rule r3). Here the index is out of bounds, so the function sets an `IndexError`. The code gave the function one extra reference first, so the item stays valid:
+
+```python fails expect=exception:IndexError id=setitem
+import ctypes
+
+api = ctypes.pythonapi
+api.PyList_New.restype = ctypes.py_object
+api.PyList_New.argtypes = [ctypes.c_ssize_t]
+api.PyList_SetItem.argtypes = [ctypes.py_object, ctypes.c_ssize_t, ctypes.py_object]
+api.Py_IncRef.argtypes = [ctypes.py_object]
+
+new_list = api.PyList_New(1)
+item = object()
+api.Py_IncRef(item)      # the call steals this reference, even on error
+api.PyList_SetItem(new_list, 5, item)
+```
+
+`PyObject_GetItem` is a generic function, so it returns a new reference (rule r4). With `restype = ctypes.py_object`, `ctypes` takes ownership of that reference, and it releases the reference when the result is deleted:
+
+```python run id=newref
+import ctypes
+import sys
+
+api = ctypes.pythonapi
+api.PyObject_GetItem.restype = ctypes.py_object
+api.PyObject_GetItem.argtypes = [ctypes.py_object, ctypes.py_object]
+
+items = [object()]
+before = sys.getrefcount(items[0])
+got = api.PyObject_GetItem(items, 0)
+print(got is items[0], sys.getrefcount(items[0]) - before)
+del got
+print(sys.getrefcount(items[0]) - before)
+```
+
+```output for=newref
+True 1
+0
+```
+
+`PyErr_SetString` sets the exception state of the thread, which is "the most common (though not the most general) function to set the exception state".[^1] After the call, the `PyDLL` sees the error flag and raises the exception (rule r5):
+
+```python run id=seterror
+import ctypes
+
+api = ctypes.pythonapi
+api.PyErr_SetString.argtypes = [ctypes.py_object, ctypes.c_char_p]
+api.PyErr_SetString.restype = None
+
+try:
+    api.PyErr_SetString(ValueError, b'set by C code')
+except ValueError as error:
+    print('ValueError:', error)
+```
+
+```output for=seterror
+ValueError: set by C code
+```
+
+The documentation of `sys.getrefcount` warns that immortal objects have "a very high refcount that does not reflect the actual number of references."[^10] In the CPython of this site, `None` and `True` are such objects:
+
+```python run id=immortal
+import sys
+
+print(sys.getrefcount(None) > 10**6)
+print(sys.getrefcount(True) > 10**6)
+```
+
+```output for=immortal
+True
+True
+```
+
+This C program is a model of the reference rules (rule r2). It is not the C API. A container owns its item and gives a borrowed reference. The code takes its own reference with `incref`, so the item stays alive when the container drops its reference. The last `decref` frees the item:
+
+```c run id=refmodel
+#include <stdio.h>
+#include <stdlib.h>
+
+struct object {
+    long refcnt;
+    const char *name;
+};
+
+static struct object *
+new_object(const char *name)          /* returns a new reference */
+{
+    struct object *o = malloc(sizeof *o);
+    o->refcnt = 1;
+    o->name = name;
+    return o;
+}
+
+static void
+incref(struct object *o)
+{
+    o->refcnt++;
+}
+
+static void
+decref(struct object *o)
+{
+    if (--o->refcnt == 0) {
+        printf("free %s\n", o->name);
+        free(o);
+    }
+}
+
+static struct object *slot;           /* a container with one item */
+
+static struct object *
+get_item(void)                        /* returns a borrowed reference */
+{
+    return slot;
+}
+
+int
+main(void)
+{
+    slot = new_object("item");        /* the container owns it */
+    struct object *borrowed = get_item();
+    incref(borrowed);                 /* now this code owns one too */
+    printf("refcnt %ld\n", borrowed->refcnt);
+    decref(slot);                     /* the container drops its reference */
+    slot = NULL;
+    printf("still alive: %s, refcnt %ld\n", borrowed->name, borrowed->refcnt);
+    decref(borrowed);
+    return 0;
+}
+```
+
+```output for=refmodel
+refcnt 2
+still alive: item, refcnt 1
+free item
+```
+
 ## Pitfalls
 
 Do not keep a borrowed reference across a call that can run Python code. The call can free the object, and the pointer then points to freed memory (rule r4). Take a new reference with `Py_INCREF`, or use a function that returns a new reference.
@@ -223,7 +360,7 @@ Check the result of each call. A `NULL` or `-1` result means that an exception i
 
 Do not touch Python objects between `Py_BEGIN_ALLOW_THREADS` and `Py_END_ALLOW_THREADS`, or in a thread that has no attached thread state (rule r6).
 
-Do not trust the exact value of `sys.getrefcount`. The documentation says: "do not rely on the returned value to be accurate, other than a value of 0 or 1."[^10] It also says that "some objects are immortal and have a very high refcount that does not reflect the actual number of references."[^10]
+Do not trust the exact value of `sys.getrefcount`. The documentation says: "do not rely on the returned value to be accurate, other than a value of 0 or 1."[^10] It also says that "some objects are immortal and have a very high refcount that does not reflect the actual number of references."[^10] Example: [`immortal`](#immortal).
 
 Do not use names that start with `_Py` or `PyUnstable` in code that must build on the next minor version without changes (rule r7).
 

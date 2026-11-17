@@ -1843,7 +1843,7 @@ items:
     area: "performance"
     name: "Performance measurement"
     target: "python/performance/performance-measurement"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Performance measurement\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
