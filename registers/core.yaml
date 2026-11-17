@@ -5441,7 +5441,7 @@ items:
     area: "user-types"
     name: "Objects"
     target: "javascript/user-types/objects"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Objects\", in \"JavaScript data types and data structures\")."
   - part: features
     group: "javascript"
@@ -5455,7 +5455,7 @@ items:
     area: "user-types"
     name: "Enumerability and ownership of properties"
     target: "javascript/user-types/enumerability-and-ownership-of-properties"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Enumerability and ownership of properties\")."
   - part: features
     group: "javascript"
@@ -6106,14 +6106,14 @@ items:
     area: "user-types"
     name: "Defining methods"
     target: "javascript/user-types/defining-methods"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Defining methods\", in \"Working with objects\")."
   - part: features
     group: "javascript"
     area: "user-types"
     name: "Defining getters and setters"
     target: "javascript/user-types/defining-getters-and-setters"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Defining getters and setters\", in \"Working with objects\")."
   - part: features
     group: "javascript"
