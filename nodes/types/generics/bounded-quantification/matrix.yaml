@@ -1,0 +1,27 @@
+javascript:
+  status: n/a
+  reason: JavaScript has no static types and no type parameters, so there is nothing to bound.
+kotlin:
+  status: native
+  reason: A Kotlin type parameter can have an upper bound, such as Comparable<T> after a colon, and a where clause gives more than one bound. No example file exists because kotlinc is not installed.
+c:
+  status: absent
+  reason: C has no type parameters. Generic code uses void pointers or macros, and the compiler cannot check a bound.
+bash:
+  status: n/a
+  reason: Bash has no types for its values.
+powershell:
+  status: absent
+  reason: A PowerShell script can use the generic types of .NET, but it cannot declare its own type parameters or their bounds. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query has no type parameters.
+regex:
+  status: n/a
+  reason: A regular expression has no types.
+html:
+  status: n/a
+  reason: HTML has no types of values.
+css:
+  status: n/a
+  reason: CSS has no types in this sense.

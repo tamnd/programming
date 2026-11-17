@@ -1,0 +1,24 @@
+javascript:
+  status: n/a
+  reason: JavaScript has no type parameters, so there is no generic code to compile.
+kotlin:
+  status: native
+  reason: Kotlin generics on the JVM are erased, as in Java, and an inline function can have a reified type parameter. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash has no types for its values.
+powershell:
+  status: n/a
+  reason: A PowerShell script can use the generic types of .NET, but it cannot declare its own generic functions or types. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query has no type parameters.
+regex:
+  status: n/a
+  reason: A regular expression has no types.
+html:
+  status: n/a
+  reason: HTML has no types of values.
+css:
+  status: n/a
+  reason: CSS has no types in this sense.

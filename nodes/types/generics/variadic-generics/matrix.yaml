@@ -1,0 +1,40 @@
+javascript:
+  status: n/a
+  reason: JavaScript has no type parameters. A rest parameter takes any number of values, with no types.
+java:
+  status: absent
+  reason: A varargs parameter takes any number of values of one type, and a generic type has a fixed number of type parameters.
+  alternative: one interface or class for each number of type parameters, or a list of values of a common supertype.
+kotlin:
+  status: absent
+  reason: A vararg parameter takes any number of values of one type, and a generic type has a fixed number of type parameters.
+  alternative: one declaration for each number of type parameters. No example file exists because kotlinc is not installed.
+csharp:
+  status: absent
+  reason: A params parameter takes any number of values of one type, and a generic type has a fixed number of type parameters.
+  alternative: one overload for each number of type parameters, as the Func and Action delegates do, or a ValueTuple.
+go:
+  status: absent
+  reason: A variadic parameter takes any number of values of one type, and a generic function has a fixed number of type parameters.
+  alternative: one function for each number of type parameters, or a slice of an interface type.
+c:
+  status: n/a
+  reason: C has no generics. A variadic function with va_list takes any number of arguments, with no types.
+bash:
+  status: n/a
+  reason: Bash has no types for its values.
+powershell:
+  status: n/a
+  reason: A PowerShell script cannot declare its own generic code. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query has no type parameters.
+regex:
+  status: n/a
+  reason: A regular expression has no types.
+html:
+  status: n/a
+  reason: HTML has no types of values.
+css:
+  status: n/a
+  reason: CSS has no types in this sense.
