@@ -5637,7 +5637,7 @@ items:
     area: "strings-and-text"
     name: "Internationalization"
     target: "javascript/strings-and-text/internationalization"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Internationalization\")."
   - part: features
     group: "javascript"
@@ -5651,7 +5651,7 @@ items:
     area: "strings-and-text"
     name: "Formatting data"
     target: "javascript/strings-and-text/formatting-data"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Formatting data\", in \"Internationalization\")."
   - part: features
     group: "javascript"
@@ -5994,7 +5994,7 @@ items:
     area: "strings-and-text"
     name: "BigInts"
     target: "javascript/strings-and-text/bigints"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"BigInts\", in \"Numbers and strings\")."
   - part: features
     group: "javascript"
