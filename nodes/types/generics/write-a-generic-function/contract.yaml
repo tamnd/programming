@@ -1,0 +1,15 @@
+# The contract of the task "write a generic function" (spec 10.2). Each solution writes count_greater(items, limit) with a type parameter T and the constraint that values of T can be ordered. The contract has no type parameter, so it tests the function with T = int, and the native tests also call it with strings.
+problem: write-a-generic-function
+entry: count_greater
+params:
+  - name: items
+    type: "list<int>"
+    pre: "0 <= length <= 10000; each item fits in a signed 32-bit integer"
+  - name: limit
+    type: int
+    pre: "fits in a signed 32-bit integer"
+returns:
+  type: int
+  post: "the number of items that are greater than limit; an item equal to limit does not count; the list does not change"
+checker: exact
+edge_classes: [empty, equal, duplicates, negative, int32-extremes, single]
