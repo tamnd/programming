@@ -11,7 +11,7 @@ summary: >-
   pytest runs plain functions named test_* as tests. A bare assert reports the values that failed, fixtures arrive as arguments, parametrize repeats a test over a table, and marks skip or xfail tests.
 grammar: null
 spec: {standard: null, url: "https://docs.pytest.org/en/stable/getting-started.html", locator: "Get Started"}
-see_also: [pytest, python/unittest, python/quality-control, python/unittest-mock, python/assert-statement]
+see_also: [pytest, python/unittest, python/quality-control, python/unittest-mock, python/assert-statement, python/testing-async-code]
 sources:
   - url: https://docs.pytest.org/en/stable/getting-started.html
     title: Get Started, pytest documentation
