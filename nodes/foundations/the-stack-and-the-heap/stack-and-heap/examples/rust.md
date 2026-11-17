@@ -40,7 +40,24 @@ fn main() {
 }
 ```
 
+```rust fails expect=error:E0515 id=return-reference-to-local
+fn largest(values: &[i32]) -> &i32 {
+    let mut best = values[0];
+    for &v in values {
+        if v > best {
+            best = v;
+        }
+    }
+    &best // best lives in this frame
+}
+
+fn main() {
+    println!("{}", largest(&[3, 9, 4]));
+}
+```
+
 - Verdict: native. A value lives in the frame of its owner by default. A `Box`, a `Vec` or another type that owns a heap block puts it on the heap.
 - The array `buffer` takes 1024 bytes in the frame. The `Box` takes one pointer in the frame, and its 1024 bytes are on the heap.
 - A recursive type needs a `Box`: without it, the size of `List` would have no limit.
 - A stack overflow is not a panic. The runtime prints that the thread has overflowed its stack and aborts the process. A thread from `std::thread` gets 2 MiB of stack by default.
+- The second fails block returns a reference to a local variable. The variable dies with the frame, so the borrow checker rejects the program with E0515. Return the value itself, or a reference into the argument.

@@ -15,7 +15,7 @@ history:
   year: 1972
   people: [Brian Kernighan, Dennis Ritchie]
   note: Kernighan wrote the first known hello world in a 1972 tutorial on B, and the 1978 book The C Programming Language made it the first program of every language.
-see_also: [compilers-and-interpreters, call-stack-and-heap, characters-and-code-points, parse-command-line-arguments, read-from-standard-input, run-a-subprocess]
+see_also: [compilers-and-interpreters, stack-and-heap, characters-and-code-points, parse-command-line-arguments, read-from-standard-input, run-a-subprocess]
 same_as:
   wikidata: Q131303
   wikipedia: Hello,_world
@@ -116,7 +116,7 @@ The cost of the first program differs much more than the programs do. A Python, 
 - **Reading input.** A program that reads a name from standard input and greets it uses the input stream as well. See [read from standard input](/read-from-standard-input/).
 - **The read-eval-print loop.** An interactive interpreter runs `print("Hello, world!")` as soon as the user types it, with no file and no build step.
 - **Quines.** A quine is a program that prints its own source, a classic puzzle that grew out of the same interest in the smallest programs.
-- **Programs as processes.** The program runs as a process, with its own memory, streams and exit status. See [run a subprocess](/run-a-subprocess/) and [the call stack and heap](/call-stack-and-heap/).
+- **Programs as processes.** The program runs as a process, with its own memory, streams and exit status. See [run a subprocess](/run-a-subprocess/) and [the stack and the heap](/stack-and-heap/).
 
 ## Pitfalls
 

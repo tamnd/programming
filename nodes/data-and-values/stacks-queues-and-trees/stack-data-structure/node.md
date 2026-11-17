@@ -15,7 +15,7 @@ history:
   year: 1955
   people: [Klaus Samelson, Friedrich L. Bauer]
   note: Samelson and Bauer proposed the stack principle in 1955 under the name Operationskeller and filed a patent in 1957. Turing had used the terms bury and unbury for subroutine calls in 1946.
-see_also: [call-stack-and-heap, recursion, dynamic-array, linked-list, list, abstract-syntax-tree, recursive-descent-parsing, iterators]
+see_also: [call-stack, recursion, dynamic-array, linked-list, list, abstract-syntax-tree, recursive-descent-parsing, iterators]
 same_as:
   wikidata: Q177929
   wikipedia: Stack_(abstract_data_type)
@@ -119,7 +119,7 @@ Wikipedia says that a peek operation "can, without modifying the stack, return t
 - In an array, the top is the last used slot. Wikipedia notes that adding items to or removing items from the end of a dynamic array "requires amortized O(1) time".[^1] This is the usual choice.
 - In a singly linked list, the top is the head of the list. Wikipedia: "A stack may be implemented as, for example, a singly linked list with a pointer to the top element."[^1] Each push allocates a node.
 
-**Where programs use stacks.** A stack holds the work that is still open: the open brackets in a parser, the steps to undo in an editor, and the places to go back to in a search. Wikipedia names backtracking as an "important application of stacks", and it calls depth-first search "The prototypical example of a backtracking algorithm".[^1] The call stack of a running program is also a stack. Each call pushes a frame and each return pops it. See [call-stack-and-heap](/call-stack-and-heap/) and [recursion](/recursion/). A loop with an explicit stack can do the work of a recursive function without deep calls.
+**Where programs use stacks.** A stack holds the work that is still open: the open brackets in a parser, the steps to undo in an editor, and the places to go back to in a search. Wikipedia names backtracking as an "important application of stacks", and it calls depth-first search "The prototypical example of a backtracking algorithm".[^1] The call stack of a running program is also a stack. Each call pushes a frame and each return pops it. See [the call stack](/call-stack/) and [recursion](/recursion/). A loop with an explicit stack can do the work of a recursive function without deep calls.
 
 ## In languages
 

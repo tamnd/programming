@@ -1,0 +1,2 @@
+# Each line is an old slug and the slug it moved to (spec 04.2). prog mv writes it. The site redirects each old URL, so a line is never removed.
+call-stack-and-heap stack-and-heap

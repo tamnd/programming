@@ -11,7 +11,7 @@ summary: >-
 applies_to: core-languages
 viz: optional
 formal: none
-see_also: [pointers-and-references, value-equality-and-identity, parameter-passing, immutability, call-stack-and-heap, composite-type, top-type, in-place-and-copying-operations]
+see_also: [pointers-and-references, value-equality-and-identity, parameter-passing, immutability, stack-and-heap, composite-type, top-type, in-place-and-copying-operations]
 same_as:
   wikidata: Q59627259
   wikipedia: Value_type_and_reference_type
@@ -137,7 +137,7 @@ The example files show these differences. Python shows that a list is shared and
 
 ## Pitfalls
 
-- **Calling value types stack types.** A value type is not a type whose values live on the stack. Eric Lippert wrote that "value types are allocated on the stack sometimes", and that "the memory for an integer field in a class type is part of the class instance"[^10]. The useful fact about a value type is "that they are always copied" by value[^10]. See [the call stack and the heap](/call-stack-and-heap/).
+- **Calling value types stack types.** A value type is not a type whose values live on the stack. Eric Lippert wrote that "value types are allocated on the stack sometimes", and that "the memory for an integer field in a class type is part of the class instance"[^10]. The useful fact about a value type is "that they are always copied" by value[^10]. See [the stack and the heap](/stack-and-heap/).
 - **Changing a copy.** In C#, reading a struct from a `List<T>` gives a copy, so a change to that copy does not change the list. The C# example shows this. Make structs immutable, or use a class when the program must change a shared object.
 - **Unexpected sharing.** "If a reference type is mutable, then mutations made via one reference are visible via any other"[^1]. A list that two parts of a program share can change under one of them. Copy the object at the boundary, or make it immutable.
 - **Rebinding a parameter.** A function that assigns a different object to its parameter does not change the caller's variable[^1]. Return the new object, or change the existing one.

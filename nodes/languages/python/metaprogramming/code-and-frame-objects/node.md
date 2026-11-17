@@ -12,7 +12,7 @@ summary: >-
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/reference/datamodel.html#internal-types", locator: "3.2.13 Internal types"}
 proposals: []
-see_also: [call-stack-and-heap, runtime-reflection, python/introspection-with-inspect, python/function-objects, python/closures-and-nonlocal, python/tracebacks-and-exception-objects]
+see_also: [stack-frame, runtime-reflection, python/introspection-with-inspect, python/function-objects, python/closures-and-nonlocal, python/tracebacks-and-exception-objects]
 sources:
   - url: https://docs.python.org/3.15/reference/datamodel.html#internal-types
     title: The Python Language Reference, Python 3.15
@@ -194,4 +194,4 @@ f()
 
 ## Comparison
 
-Code and frame objects are the data that a debugger and a profiler use. See [[python/tracing-and-monitoring]] for the hooks that get frames, [[python/bytecode-and-dis]] for the instructions in `co_code`, and [[call-stack-and-heap]] for the general model of frames.
+Code and frame objects are the data that a debugger and a profiler use. See [[python/tracing-and-monitoring]] for the hooks that get frames, [[python/bytecode-and-dis]] for the instructions in `co_code`, and [[stack-frame]] for the general model of frames.
