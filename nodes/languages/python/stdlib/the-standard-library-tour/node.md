@@ -12,7 +12,7 @@ summary: >-
 grammar: null
 spec: {standard: null, url: "https://docs.python.org/3.15/tutorial/stdlib.html", locator: "10. Brief tour of the standard library"}
 proposals: []
-see_also: [python/standard-library-map, python/the-python-package-index, python/operating-system-interface, python/mathematics, python/multi-threading, python/decimal-floating-point-arithmetic]
+see_also: [python/standard-library-map, python/the-python-package-index, python/operating-system-interface, python/mathematics, python/data-compression, python/multi-threading, python/decimal-floating-point-arithmetic]
 sources:
   - url: https://docs.python.org/3.15/library/index.html
     title: The Python standard library, Python 3.15 documentation
@@ -143,4 +143,4 @@ The tour says: "Be sure to use the import os style instead of from os import *. 
 
 ## Comparison
 
-Each tour section has its own page in this guide, for example [[python/operating-system-interface]], [[python/file-wildcards]], [[python/string-pattern-matching]], [[python/mathematics]], [[python/output-formatting]], [[python/templating]], [[python/multi-threading]], [[python/tools-for-working-with-lists]] and [[python/decimal-floating-point-arithmetic]]. See [[python/standard-library-map]] for all the chapters of the library reference.
+Each tour section has its own page in this guide, for example [[python/operating-system-interface]], [[python/file-wildcards]], [[python/string-pattern-matching]], [[python/mathematics]], [[python/data-compression]], [[python/output-formatting]], [[python/templating]], [[python/multi-threading]], [[python/tools-for-working-with-lists]] and [[python/decimal-floating-point-arithmetic]]. See [[python/standard-library-map]] for all the chapters of the library reference.
