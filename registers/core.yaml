@@ -1850,7 +1850,7 @@ items:
     area: "testing"
     name: "Quality control"
     target: "python/testing/quality-control"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Quality control\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
