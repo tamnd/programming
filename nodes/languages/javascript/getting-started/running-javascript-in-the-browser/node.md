@@ -70,7 +70,7 @@ A browser runs JavaScript that a page names in `<script>` elements. The code can
 
 **r6. DOMContentLoaded.** The event fires when the document "has been completely parsed, and all deferred scripts" have run, which includes modules. It does not wait for `async` scripts, so an `async` script may run after it.[^5] The first example shows the order.
 
-**r7. One global scope for classic scripts.** MDN: "all classic scripts attached to the webpage are executed under the same scope—the global scope."[^4] In ECMA-262 that scope is one global environment record with two parts. Function and `var` declarations become properties of the global object, and `let`, `const` and `class` declarations go in a separate declarative part.[^6] A later script sees both kinds of names. Example: [`shared-global`](#shared-global).
+**r7. One global scope for classic scripts.** MDN: "all classic scripts attached to the webpage are executed under the same scope", the global scope.[^4] In ECMA-262 that scope is one global environment record with two parts. Function and `var` declarations become properties of the global object, and `let`, `const` and `class` declarations go in a separate declarative part.[^6] A later script sees both kinds of names. Example: [`shared-global`](#shared-global).
 
 **r8. A clash stops the whole script.** A `let`, `const` or `class` name that an earlier script declared is an error. ECMA-262 says that such conflicts "that span more than one Script are detected as runtime errors" before the script runs, and then "no bindings are instantiated for the script".[^7] Not one statement of that script runs. Example: [`shared-global`](#shared-global).
 

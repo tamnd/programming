@@ -232,17 +232,17 @@ Code after a call to an `async` function runs before the code after its first `a
 
 ## Comparison
 
-MDN compares JavaScript with Python and Java at several points of its tour.[^1] [^3] A dash means that the source makes no comparison for that row.
+MDN compares JavaScript with Python and Java at several points of its tour.[^1] [^3] A cell says not compared where the source makes no comparison for that row.
 
 | Topic | JavaScript | Python | Java |
 |---|---|---|---|
-| typing | dynamic | — | static |
-| object model | prototypes, with `class` syntax | — | classes |
+| typing | dynamic | not compared | static |
+| object model | prototypes, with `class` syntax | not compared | classes |
 | key-value data | an object | a dictionary | a `HashMap` |
-| embedded expressions in text | template literals in backticks | f-strings | — |
-| extra arguments | a rest parameter, `...args` | `*args` | — |
-| chained conditions | `else if` | `elif` | — |
-| comments | `//` and `/* */` | `#` | — |
+| embedded expressions in text | template literals in backticks | f-strings | not compared |
+| extra arguments | a rest parameter, `...args` | `*args` | not compared |
+| chained conditions | `else if` | `elif` | not compared |
+| comments | `//` and `/* */` | `#` | not compared |
 
 For the reasons JavaScript looks like Java in its syntax and differs in its object model, see [[javascript/what-is-javascript]].
 

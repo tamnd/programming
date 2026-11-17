@@ -254,10 +254,10 @@ The format of `stack` differs between engines (rule r8). MDN labels the property
 |---|---|---|---|
 | open | Control+Shift+J | Ctrl+Shift+K | `node` |
 | last result | `$_` | `$_` | `_` |
-| selected element | `$0` | `$0` | — |
+| selected element | `$0` | `$0` | not given |
 | another line | Shift+Enter | Shift+Enter | an unfinished line continues |
 | where `console.log` goes | the console panel | the console panel | standard output |
 
-The rows come from MDN, the Chrome and Firefox documentation and the Node.js pages.[^4] [^2] [^3] [^6] [^7] [^8] [^13] [^11] A dash means that the sources above give no entry for that tool. The REPL of Node.js is covered in [[javascript/running-javascript-with-node-js]], and the debugger that pauses code is covered in [[interactive-debugging]].
+The rows come from MDN, the Chrome and Firefox documentation and the Node.js pages.[^4] [^2] [^3] [^6] [^7] [^8] [^13] [^11] A cell says not given where the sources above give no entry for that tool. The REPL of Node.js is covered in [[javascript/running-javascript-with-node-js]], and the debugger that pauses code is covered in [[interactive-debugging]].
 
 ## References
