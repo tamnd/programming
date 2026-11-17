@@ -1,0 +1,48 @@
+python:
+  status: absent
+  reason: Python has no generic code that the compiler specializes. Type parameters are for static checkers only.
+  alternative: functools.singledispatch, which picks a function by the type of the first argument when the program runs.
+javascript:
+  status: n/a
+  reason: JavaScript has no type parameters, so there is no generic code to specialize.
+typescript:
+  status: absent
+  reason: TypeScript removes its types before the program runs, so the code cannot depend on a type argument.
+  alternative: overload signatures with one implementation that tests its arguments.
+java:
+  status: absent
+  reason: Java erases type arguments, so a generic class or method has one version for every type argument.
+  alternative: overloaded methods for the types that need special code.
+kotlin:
+  status: absent
+  reason: Kotlin erases type arguments on the JVM, as Java does.
+  alternative: overloaded functions, or a when expression on the type of a value. No example file exists because kotlinc is not installed.
+csharp:
+  status: absent
+  reason: C# has no specialization of generic types or methods.
+  alternative: a test of typeof(T) inside the generic method, or overloads for the types that need special code.
+go:
+  status: absent
+  reason: Go has no specialization of generic functions or types.
+  alternative: a type switch on a value of the type parameter inside the generic function.
+c:
+  status: n/a
+  reason: C has no templates or generics to specialize.
+bash:
+  status: n/a
+  reason: Bash has no types for its values.
+powershell:
+  status: n/a
+  reason: A PowerShell script cannot declare its own generic code. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A query has no type parameters.
+regex:
+  status: n/a
+  reason: A regular expression has no types.
+html:
+  status: n/a
+  reason: HTML has no types of values.
+css:
+  status: n/a
+  reason: CSS has no types in this sense.

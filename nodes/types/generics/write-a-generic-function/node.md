@@ -11,7 +11,7 @@ summary: >-
 contract: contract.yaml
 category: functions
 languages: [python, javascript, typescript, java, c, cpp, csharp, go, rust]
-see_also: [parametric-polymorphism, polymorphism, interfaces, write-a-higher-order-function, find-the-largest-element]
+see_also: [parametric-polymorphism, bounded-quantification, polymorphism, interfaces, write-a-higher-order-function, find-the-largest-element]
 sources:
 - url: https://docs.oracle.com/javase/tutorial/java/generics/boundedTypeParams.html
   title: Generic Methods and Bounded Type Parameters, The Java Tutorials
