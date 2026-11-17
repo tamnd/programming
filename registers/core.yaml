@@ -5658,7 +5658,7 @@ items:
     area: "overview"
     name: "JavaScript and the ECMAScript specification"
     target: "javascript/overview/javascript-and-the-ecmascript-specification"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"JavaScript and the ECMAScript specification\", in \"Introduction\")."
   - part: features
     group: "javascript"

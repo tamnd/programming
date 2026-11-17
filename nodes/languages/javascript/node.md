@@ -329,11 +329,11 @@ TypeError Cannot mix BigInt and other types, use explicit conversions
 
 ## The guide
 
-The guide to JavaScript has the 25 parts of the language template. Each row says what the part covers for JavaScript. No pages exist so far, so the table has no links yet.
+The guide to JavaScript has the 25 parts of the language template. Each row says what the part covers for JavaScript. Four pages exist so far, and the table links them.
 
 | Part | What it covers in JavaScript |
 |---|---|
-| Overview and history | this page: the design goals, the editions, the implementations, the history |
+| Overview and history | this page: the design goals, the editions, the implementations, the history; [what JavaScript is](/javascript/what-is-javascript/), [the history of JavaScript](/javascript/history-of-javascript/), [JavaScript and the ECMAScript specification](/javascript/javascript-and-the-ecmascript-specification/), [TC39 and the proposal process](/javascript/tc39-and-the-proposal-process/) |
 | Getting started | installing Node.js, the `node` command and the REPL, running a script, the console of a browser |
 | Lexical structure and syntax | Unicode source text, automatic semicolon insertion, literals, template literals, operator precedence |
 | Values and types | the seven primitive types and objects, `typeof`, Number and BigInt, `null` and `undefined` |
