@@ -1178,14 +1178,14 @@ items:
     area: "tooling"
     name: "The Python Interpreter"
     target: "python/tooling/the-python-interpreter"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Using the Python Interpreter\")."
   - part: features
     group: "python"
     area: "tooling"
     name: "Invoking the Interpreter"
     target: "python/tooling/invoking-the-interpreter"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Invoking the Interpreter\", in \"Using the Python Interpreter\")."
   - part: features
     group: "python"
@@ -1206,7 +1206,7 @@ items:
     area: "tooling"
     name: "The Interpreter and Its Environment"
     target: "python/tooling/the-interpreter-and-its-environment"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"The Interpreter and Its Environment\", in \"Using the Python Interpreter\")."
   - part: features
     group: "python"
@@ -1493,7 +1493,7 @@ items:
     area: "tooling"
     name: "Compiled Python files"
     target: "python/tooling/compiled-python-files"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"“Compiled” Python files\", in \"Modules\")."
   - part: features
     group: "python"
@@ -1934,14 +1934,14 @@ items:
     area: "tooling"
     name: "Interactive Input Editing and History Substitution"
     target: "python/tooling/interactive-input-editing-and-history-substitution"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Interactive Input Editing and History Substitution\")."
   - part: features
     group: "python"
     area: "tooling"
     name: "Tab Completion and History Editing"
     target: "python/tooling/tab-completion-and-history-editing"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Tab Completion and History Editing\", in \"Interactive Input Editing and History Substitution\")."
   - part: features
     group: "python"
@@ -1962,14 +1962,14 @@ items:
     area: "tooling"
     name: "The Interactive Startup File"
     target: "python/tooling/the-interactive-startup-file"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"The Interactive Startup File\", in \"Appendix\")."
   - part: features
     group: "python"
     area: "tooling"
     name: "The Customization Modules"
     target: "python/tooling/the-customization-modules"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"The Customization Modules\", in \"Appendix\")."
   - part: features
     group: "cpp"
