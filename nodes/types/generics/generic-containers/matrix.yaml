@@ -1,0 +1,24 @@
+javascript:
+  status: absent
+  reason: An Array, a Map or a Set holds values of any type, and the language has no way to give a container an item type.
+kotlin:
+  status: stdlib
+  reason: The Kotlin standard library has generic collections, such as List<T>, MutableList<T>, Map<K, V> and Set<T>. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash arrays hold strings only, so they have no item types.
+powershell:
+  status: stdlib
+  reason: PowerShell can use the generic collections of .NET, such as a List of int. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: A table is not a value with an item type.
+regex:
+  status: n/a
+  reason: A regular expression has no containers.
+html:
+  status: n/a
+  reason: HTML has no containers of typed values.
+css:
+  status: n/a
+  reason: CSS has no containers of typed values.

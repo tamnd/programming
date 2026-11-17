@@ -1,0 +1,21 @@
+kotlin:
+  status: native
+  reason: Kotlin has open classes and interfaces with overridden methods, generic functions and classes, and overloaded functions and operators. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Every Bash variable holds a string or an array of strings, so there are no types for code to choose between.
+powershell:
+  status: native
+  reason: PowerShell classes can inherit and override methods, and PowerShell can call overloaded .NET methods and generic .NET types. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: Built-in functions and operators accept several types, but a query defines no types, subtypes or generic code.
+regex:
+  status: n/a
+  reason: A regular expression has no values and no types.
+html:
+  status: n/a
+  reason: HTML has no types of values.
+css:
+  status: n/a
+  reason: CSS properties take values of fixed types, and a style sheet defines no code that works on many types.

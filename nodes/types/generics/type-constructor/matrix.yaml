@@ -1,0 +1,24 @@
+javascript:
+  status: n/a
+  reason: JavaScript has no static types, so it has no type constructors. An array or a Map can hold values of any type.
+kotlin:
+  status: native
+  reason: Kotlin has generic classes and interfaces, such as List<T> and Map<K, V>, and the program can declare its own. No example file exists because kotlinc is not installed.
+bash:
+  status: n/a
+  reason: Bash has no types for its values, so it has no type constructors.
+powershell:
+  status: native
+  reason: PowerShell can use the generic types of .NET with type arguments, such as a List of int. No example file exists because pwsh is not installed.
+sql:
+  status: n/a
+  reason: The column types of a table are fixed by the database, and a query does not define type constructors.
+regex:
+  status: n/a
+  reason: A regular expression has no values and no types.
+html:
+  status: n/a
+  reason: HTML has no types of values.
+css:
+  status: n/a
+  reason: CSS has no types in this sense.
