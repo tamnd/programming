@@ -1367,7 +1367,7 @@ items:
     area: "idioms-and-style"
     name: "Documentation Strings"
     target: "python/idioms-and-style/documentation-strings"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Documentation Strings\", in \"More Control Flow Tools\")."
   - part: features
     group: "python"
@@ -1381,7 +1381,7 @@ items:
     area: "idioms-and-style"
     name: "Coding style"
     target: "python/idioms-and-style/coding-style"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Intermezzo: Coding Style\", in \"More Control Flow Tools\")."
   - part: features
     group: "python"
@@ -1507,7 +1507,7 @@ items:
     area: "metaprogramming"
     name: "The dir() Function"
     target: "python/metaprogramming/the-dir-function"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"The dir() Function\", in \"Modules\")."
   - part: features
     group: "python"
@@ -1773,7 +1773,7 @@ items:
     area: "stdlib"
     name: "The standard library tour"
     target: "python/stdlib/the-standard-library-tour"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Brief tour of the standard library\")."
   - part: features
     group: "python"
@@ -1815,7 +1815,7 @@ items:
     area: "stdlib"
     name: "Mathematics"
     target: "python/stdlib/mathematics"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Mathematics\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
@@ -1836,7 +1836,7 @@ items:
     area: "stdlib"
     name: "Data compression"
     target: "python/stdlib/data-compression"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Data compression\", in \"Brief tour of the standard library\")."
   - part: features
     group: "python"
@@ -1878,7 +1878,7 @@ items:
     area: "concurrency"
     name: "Multi-threading"
     target: "python/concurrency/multi-threading"
-    status: "planned"
+    status: "node"
     reason: "It is a section of The Python Tutorial (\"Multi-threading\", in \"Brief tour of the standard library — part II\")."
   - part: features
     group: "python"
