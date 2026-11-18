@@ -5630,7 +5630,7 @@ items:
     area: "user-types"
     name: "Creating and changing prototype chains"
     target: "javascript/user-types/creating-and-changing-prototype-chains"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Different ways of creating and mutating prototype chains\", in \"Inheritance and the prototype chain\")."
   - part: features
     group: "javascript"
@@ -5735,7 +5735,7 @@ items:
     area: "user-types"
     name: "Classes"
     target: "javascript/user-types/classes"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Classes\", in \"JavaScript language overview\")."
   - part: features
     group: "javascript"
@@ -6050,14 +6050,14 @@ items:
     area: "user-types"
     name: "Constructor"
     target: "javascript/user-types/constructor"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Constructor\", in \"Using classes\")."
   - part: features
     group: "javascript"
     area: "user-types"
     name: "Instance methods"
     target: "javascript/user-types/instance-methods"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Instance methods\", in \"Using classes\")."
   - part: features
     group: "javascript"
@@ -6078,7 +6078,7 @@ items:
     area: "user-types"
     name: "Public fields"
     target: "javascript/user-types/public-fields"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Public fields\", in \"Using classes\")."
   - part: features
     group: "javascript"
