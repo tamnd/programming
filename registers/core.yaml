@@ -6064,14 +6064,14 @@ items:
     area: "user-types"
     name: "Private fields"
     target: "javascript/user-types/private-fields"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Private fields\", in \"Using classes\")."
   - part: features
     group: "javascript"
     area: "user-types"
     name: "Accessor fields"
     target: "javascript/user-types/accessor-fields"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Accessor fields\", in \"Using classes\")."
   - part: features
     group: "javascript"
@@ -6085,14 +6085,14 @@ items:
     area: "user-types"
     name: "Static properties"
     target: "javascript/user-types/static-properties"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Static properties\", in \"Using classes\")."
   - part: features
     group: "javascript"
     area: "user-types"
     name: "Extends and inheritance"
     target: "javascript/user-types/extends-and-inheritance"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Extends and inheritance\", in \"Using classes\")."
   - part: features
     group: "javascript"
