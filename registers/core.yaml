@@ -5448,7 +5448,7 @@ items:
     area: "values-and-types"
     name: "Type coercion"
     target: "javascript/values-and-types/type-coercion"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Type coercion\", in \"JavaScript data types and data structures\")."
   - part: features
     group: "javascript"
@@ -5476,7 +5476,7 @@ items:
     area: "values-and-types"
     name: "Equality comparisons and sameness"
     target: "javascript/values-and-types/equality-comparisons-and-sameness"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Equality comparisons and sameness\")."
   - part: features
     group: "javascript"
@@ -5581,7 +5581,7 @@ items:
     area: "values-and-types"
     name: "Literals"
     target: "javascript/values-and-types/literals"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Literals\", in \"Grammar and types\")."
   - part: features
     group: "javascript"
