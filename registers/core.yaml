@@ -5371,7 +5371,7 @@ items:
     area: "variables-and-scope"
     name: "Lexical scoping"
     target: "javascript/variables-and-scope/lexical-scoping"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Lexical scoping\", in \"Closures\")."
   - part: features
     group: "javascript"
@@ -5546,7 +5546,7 @@ items:
     area: "variables-and-scope"
     name: "Function scopes and closures"
     target: "javascript/variables-and-scope/function-scopes-and-closures"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Function scopes and closures\", in \"Functions\")."
   - part: features
     group: "javascript"
@@ -5574,7 +5574,7 @@ items:
     area: "variables-and-scope"
     name: "Declarations"
     target: "javascript/variables-and-scope/declarations"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Declarations\", in \"Grammar and types\")."
   - part: features
     group: "javascript"
@@ -5721,7 +5721,7 @@ items:
     area: "variables-and-scope"
     name: "Variables"
     target: "javascript/variables-and-scope/variables"
-    status: "planned"
+    status: "node"
     reason: "It is a section of MDN (\"Variables\", in \"JavaScript language overview\")."
   - part: features
     group: "javascript"
